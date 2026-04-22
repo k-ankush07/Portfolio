@@ -30,7 +30,7 @@ function ToolWeTrust() {
     const [activeIndex, setActiveIndex] = useState(0);
     return (
         <div className='flex relative'>
-            <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[465px] '>
+            <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[300px] xl:w-[468px] '>
                 <div className='flex  justify-center items-end py-6 '>
                      <Swiper
                     modules={[Autoplay]}

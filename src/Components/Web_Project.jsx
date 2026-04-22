@@ -11,18 +11,18 @@ function Web_Project() {
   return (
     <section className="bg-[#000000]">
       <div className="container">
-        <section className=" flex justify-center pb-3 relative rounded-xl border border-white/10">
+        <div className=" flex justify-center pb-3 relative rounded-xl border border-white/10">
 
-          <div className="w-full  relative  pb-10  relative overflow-hidden ">
+          <div className="w-full  relative  pb-10   overflow-hidden ">
             <img src={linepurple} alt="line" className="absolute right-0" />
             {/* Glow top-right */}
             <div className="absolute "></div>
 
             {/* Cards */}
-            <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 pt-[60px] pb-[50px]">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-[60px] pb-[50px] pl-[75px] pr-[76px]">
 
               {/* Card 1 */}
-              <div className="relative rounded-xl p-[1px] w-[220px] ml-10">
+              <div className="relative rounded-xl p-[1px] w-[220px] ml-[120px]">
                 <div className="bg-[#0e0c13] rounded-xl p-5 border border-white/10 ">
                   <div className=""> <img src={Line24} alt="lines" className="mb-3 w-[100%]" /></div>
                   <ul className="text-sm text-gray-300 space-y-2">
@@ -40,7 +40,7 @@ function Web_Project() {
               </div>
 
               {/* Card 2 */}
-              <div className="relative rounded-xl p-[1px] w-[250px] ml-15">
+              <div className="relative rounded-xl p-[1px] w-[250px] ">
                 <div className="bg-[#1d0f10] rounded-xl p-5 border border-white/10">
                   <div className=""><img src={Line25} alt="lines" className="mb-3 w-[100%]" /></div>
 
@@ -102,7 +102,7 @@ function Web_Project() {
               </div>
 
               {/* Card 3 */}
-              <div className="relative rounded-xl p-[1px] w-[220px] ml-35">
+              <div className="relative rounded-xl p-[1px] w-[220px] ">
                 <div className="bg-[#021007] rounded-xl p-5 border border-white/10 ">
                   <div className=""><img src={Line26} alt="lines" className="mb-3 w-[100%]" /></div>
 
@@ -129,7 +129,7 @@ function Web_Project() {
                   </ul>
                 </div>
 
-                <span className="absolute -bottom-4 left-1/30 -translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
+                <span className="absolute -bottom-4 left-1/10 -translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
                   <span className="text-[14px] text-[#00dd51]">●</span>
                   Full Stack Developer
                 </span>
@@ -138,7 +138,7 @@ function Web_Project() {
             </div>
 
             {/* Bottom CTA */}
-            <div className="mt-10 text-center">
+            <div className="mt-8 text-center">
               <h2 className="text-white text-[20px] font-bold">
                 Let’s Build Your Next Web Project
               </h2>
@@ -152,7 +152,7 @@ function Web_Project() {
             </div>
 
           </div>
-        </section>
+        </div>
       </div>
     </section>
   );

@@ -13,10 +13,10 @@ import background1 from '../assets/Images/Background+Blur.png'
 import background2 from '../assets/Images/Background+Blur (1).png'
 function FullStack() {
     return (
-        <section className='bg-[#000000] py-5'>
+        <section className='bg-[#000000] px-3 py-5'>
 
             <div className='container '>
-                <div className='bg-[#000000] md:flex justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px]  '>
+                <div className='bg-[#000000] md:flex justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-2 py-6 '>
                     <img src={background1} alt=' ' className='absolute bottom-0 right-70 opacity-20' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25' />
                     {/* first card section */}
@@ -89,12 +89,12 @@ function FullStack() {
 
 
                     {/* 3rd section */}
-                    <div className='flex justify-center items-center w-[362px]'>
+                    <div className='flex justify-center items-center xl:w-[362px]'>
                         <div>
                             <div>
                                 <h1 className='text-[#FFFFFF] text-[20px] font-bold max-w-[310px]'>Full-Stack Developer and a little bit of everything</h1>
-                               <div className='space-y-2 text-[#BDBDBD] text-[14px]'>
-                                 <p className=' mt-5'>I'm Aayush Bharti, a proactive full-stack developer passionate about  creating dynamic web experiences. From frontend to backend, I thrive on  solving complex problems with clean, efficient code. My expertise spans  React, Next.js, and Node.js, and I'm always eager to learn more.</p>
+                               <div className='space-y-2 text-[#BDBDBD] text-[14px] max-w-[300px]'>
+                                 <p className=' mt-5 '>I'm Aayush Bharti, a proactive full-stack developer passionate about  creating dynamic web experiences. From frontend to backend, I thrive on  solving complex problems with clean, efficient code. My expertise spans  React, Next.js, and Node.js, and I'm always eager to learn more.</p>
                                 <p>When I'm not immersed in work, I'm exploring new ideas and staying curious.  Life's about balance, and I love embracing every part of it.</p>
                                 <p>I believe in waking up each day eager to make a difference!</p>
                                </div>

@@ -19,10 +19,10 @@ function RecruiterOne() {
 
            <section className='bg-[#000000]'>
             <div className='container'>
-                <div className='flex items-center  py-1'>
+                <div className='  py-[6px]'>
 
             {/* Container */}
-            <div className="md:flex justify-around md:p-[40px] pr-[70px]"
+            <div className="md:flex  gap-[75px] md:pl-[40px] md:pb-[40px] md:pt-[40px] pr-[53px]"
                 style={{
                     borderRadius: '15px',
                     backgroundImage: `url(${Background})`,
@@ -33,8 +33,8 @@ function RecruiterOne() {
             >
 
                 {/* First div */}
-                <div className="rounded-xl flex relative">
-                    <div className='text-[#FFFFFF] md:w-[350px] absolute top-[17px] left-[29px]'>
+                <div className="rounded-xl flex relative w-[60%]">
+                    <div className='text-[#FFFFFF] text-[20px] font-bold md:w-[409px] absolute top-[25px] left-[29px]'>
                         <p>Developed a recruitment platform to connect job seekers and recruiters</p>
                     </div>
 
@@ -42,11 +42,11 @@ function RecruiterOne() {
                         <img src={circleImage} alt='circle Image' />
                     </div>
 
-                    <img src={fullImage} alt='background color' />
+                    <img src={fullImage} alt='background color' className='w-full' />
                 </div>
 
                 {/* Second div */}
-                <div className=' flex flex-col justify-center '>
+                <div className=' flex flex-col justify-center  '>
                     <div className='flex items-center gap-3 text-[#FFFFFF]'>
                         <img src={shopify} alt='shopify logo' />
                         <h1 className='text-[40px] font-bold'>

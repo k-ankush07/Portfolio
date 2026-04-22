@@ -9,7 +9,7 @@ import arrow2 from "../assets/Images/SVG (1).png"
 function CustomerReview() {
   return (
    <div className='flex relative '>
-            <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[465px] '>
+            <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[468px] '>
                 <img src={arrow1} alt='phone cll' className='absolute top-0 left-10' />
                 <img src={arrow2} alt='phone cll' className='absolute top-6 right-10' />
                 <div className='flex  justify-center items-end py-6 '>

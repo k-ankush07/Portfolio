@@ -11,18 +11,18 @@ import Background4 from "../assets/Images/Background+Blur (5).png"
 function Developers({ }) {
     return (
         <>
-            <section className='bg-[#000000] pt-6'>
+            <section className='bg-[#000000] px-3 pt-6'>
                 <div className='container'>
                     <div className=''>
 
-                        <h1 className='text-[40px] font-bold text-[#FFFFFF] text-center'>
+                        <h1 className=' text-[30px] xl:text-[40px] font-bold text-[#FFFFFF] xl:text-center'>
                             Loved by 10,000+
                             <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
                                 Developers
                             </span>
                         </h1>
                         <div className='flex justify-center'>
-                            <p className='text-[#BDBDBD] text-[18px]  w-[41%] text-center '>Join thousands of developers who have transformed their coding
+                            <p className='text-[#BDBDBD] text-[18px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
                                 workflow with AI-powered assistance.</p>
                         </div>
 

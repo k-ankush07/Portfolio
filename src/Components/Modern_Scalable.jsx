@@ -7,7 +7,7 @@ import emoji1 from "../assets/Images/emoji1.png"
 function Modern_Scalable() {
   return (
     <>
-    <section  className="bg-[#000000] pt-10 ">
+    <section  className="bg-[#000000] md:pt-10 ">
       <div className="container">
 <section className="relative h-[30%]  flex   justify-center text-center text-white overflow-hidden">
 
@@ -15,7 +15,7 @@ function Modern_Scalable() {
          {/* Background Image */}
     
     <div className="relative flex justify-center items-center">
-  <div className="absolute left-1/2 top-1/6 w-[833px] -translate-x-1/2 -translate-y-1/5">
+  <div className=" w-[100%] absolute xl:left-1/2 xl:top-1/6    xl:-translate-x-1/3 xl:-translate-y-1/10  2xl:left-1/2 2xl:top-1/6    2xl:-translate-x-1/3 2xl:-translate-y-1/9">
     <img
       src={earth}
       alt="earth"
@@ -71,7 +71,7 @@ function Modern_Scalable() {
 
 </div>
 
-<div className="relative  -top-4 sm:-top-7 sm:left-10 lg:left-60">
+<div className="relative  -top-4 sm:-top-9 sm:left-10 lg:left-55">
   <img src={location} alt="location icon" />
 </div>
 

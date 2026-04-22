@@ -9,13 +9,13 @@ function SkillAndMordenPage() {
 
       <section className='bg-[#000000]' >
         <div className='container'>
-          <div className=''>
-            <div className='  py-3 mt-[-86px] flex flex-col px-5 sm:px-0  sm:flex-row sm:justify-center gap-[9px]'>
+        
+            <div className='  py-3 xl:mt-[-70px] flex flex-col px-5 sm:px-0  xl:flex-row sm:justify-center gap-[9px]'>
               <Skills />
               
               <Next_Project />
             </div>
-          </div>
+  
         </div>
       </section>
 

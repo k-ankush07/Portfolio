@@ -16,7 +16,7 @@ function HomePage() {
    <>
    <div className='lato-regular'>
    <Modern_Scalable />
-   <SkillAndMordenPage />
+    <SkillAndMordenPage />
 <Web_Project />
 <Recent__Work />
 <RecruiterOne />
@@ -27,7 +27,7 @@ function HomePage() {
 <FullStack />
 <Developers   />
 <Explore />
-<ConceptToCreation />
+<ConceptToCreation /> 
 </div>
    </>
   )

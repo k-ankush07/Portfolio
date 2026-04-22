@@ -2,7 +2,7 @@ import React from 'react'
 import arrow from "../assets/Images/arrow.png"
 function ViewAll() {
   return (
-    <div className='bg-[#000000] text-[#FFFFFF] text-[16px] py-4  '>
+    <div className='bg-[#000000] text-[#FFFFFF] text-[16px] py-[22px]  '>
           <div className='flex gap-3 justify-center items-center'>
                         <h1>
                             View all Projects
