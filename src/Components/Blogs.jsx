@@ -9,8 +9,8 @@ import fullimage from "../assets/Images/fuulimage.png"
 
 function Blogs() {
   return (
-       <div className='flex relative '>
-                <div className='border-[2px] border-[#292929] rounded-[8px] pt-3  w-[468px] '>
+       <div className='flex relative w-[100%] '>
+                <div className='border-[2px] border-[#292929] rounded-[8px] pt-3  w-[100%] '>
                   
                       <div className='flex items-center justify-between py-5 pl-10 pr-7'>
                         <h1 className='text-[#FFFFFF]  text-[20px] font-bold'>Latest Blogs & Insights</h1>

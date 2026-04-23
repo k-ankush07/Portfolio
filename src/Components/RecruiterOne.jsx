@@ -17,39 +17,35 @@ function RecruiterOne() {
         <>
     
 
-           <section className='bg-[#000000]'>
+           <section className='bg-[#000000] py-3 sm:py-0'>
             <div className='container'>
-                <div className='  py-[6px]'>
+                <div className=' px-2   lg:px-0 py-[6px]'>
 
             {/* Container */}
-            <div className="md:flex  gap-[75px] md:pl-[40px] md:pb-[40px] md:pt-[40px] pr-[53px]"
+            <div className="image_background lg:flex gap-5 lg:gap-[75px] lg:pl-[40px] md:pb-[40px] lg:pt-[40px] lg:pr-[53px]  "
                 style={{
-                    borderRadius: '15px',
-                    backgroundImage: `url(${Background})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize:'cover',
-                    width:'100%'
+                    
                 }}
             >
 
                 {/* First div */}
-                <div className="rounded-xl flex relative w-[60%]">
-                    <div className='text-[#FFFFFF] text-[20px] font-bold md:w-[409px] absolute top-[25px] left-[29px]'>
+                <div className="rounded-xl flex relative lg:w-[60%] ">
+                    <div className='text-[#FFFFFF] text-[14px] w-[300px] sm:text-[20px] lg:text-[16px] font-bold sm:w-[420px] lg:w-[340px] xl:w-[420px] absolute left-[20px] top-[10px] sm:top-[20px]  sm:left-[30px]  lg:top-[30px] lg:left-[40px]'>
                         <p>Developed a recruitment platform to connect job seekers and recruiters</p>
                     </div>
 
-                    <div className=' hidden md:block md:absolute right-[82px] top-[32px]'>
+                    <div className=' hidden md:w-[70px] lg:block md:absolute md:top-[30px] md:right-[20px]  lg:top-[28px] xl:right-[82px] xl:top-[32px]'>
                         <img src={circleImage} alt='circle Image' />
                     </div>
 
-                    <img src={fullImage} alt='background color' className='w-full' />
+                    <img src={fullImage} alt='background color' className='w-full ' />
                 </div>
 
                 {/* Second div */}
-                <div className=' flex flex-col justify-center  '>
+                <div className=' flex flex-col justify-center  mt-10 lg:mt-0 '>
                     <div className='flex items-center gap-3 text-[#FFFFFF]'>
                         <img src={shopify} alt='shopify logo' />
-                        <h1 className='text-[40px] font-bold'>
+                        <h1 className='text-[26px] lg:text-[40px] font-bold'>
                             Recruiter
                             <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
                                 One
@@ -57,7 +53,7 @@ function RecruiterOne() {
                         </h1>
                     </div>
 
-                    <div className='md:max-w-[430px] text-[#BDBDBD]'>
+                    <div className='md:max-w-[430px] hidden lg:block text-[#BDBDBD]'>
                         <p>
                             Developed a recruitment platform to connect job seekers and recruiters.
                             Implemented job posting, candidate profiles, and application tracking.
@@ -65,7 +61,7 @@ function RecruiterOne() {
                         </p>
                     </div>
 
-                    <div>
+                    <div className='hidden lg:block'>
                         <div className="flex gap-2 pt-[11px] text-[#BDBDBD] text-[14px]">
                             <img src={star} alt="star" />
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -83,7 +79,7 @@ function RecruiterOne() {
                     </div>
 
                     {/* skills section */}
-                    <div className='flex flex-wrap gap-2 md:w-[384px] mt-7'>
+                    <div className='flex flex-wrap gap-2 space-y-2  sm:w-[400px] lg:w-[384px] mt-7'>
                         <img src={Bun} alt=' logo' />
                         <img src={Docker} alt=' logo' />
                         <img src={Next} alt=' logo' />

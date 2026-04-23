@@ -43,16 +43,16 @@ import Overlay46 from "../assets/Images/Overlay (46).png"
 
 function Tool() {
     return (
-        <section className='bg-[#000000] py-8'>
+        <section className='bg-[#000000] px-2 md:px-0 py-8'>
             <div className='container'>
                {/* viww all section */}
                 <div className='flex justify-between'>
-                    <h1 className='text-[#FFFFFF] text-[44px]'>
+                    <h1 className='text-[#FFFFFF] text-[30px] lg:text-[44px]'>
                         Tools we{" "}
                         <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
                             trust
                         </span>
-                        <p className='text-[18px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Suspendisse varius enim tristique.</p>
+                        <p className='text-[14px] w-[322px] lg:w-full lg:text-[18px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Suspendisse varius enim tristique.</p>
                     </h1>
                        <div className='flex justify-end items-end'>
                          <div className='bg-[#292929] h-[40px] w-[40px] flex items-center justify-center rounded-full'>
@@ -67,60 +67,71 @@ function Tool() {
             <div className='bg-[#292929] pt-[82px] lg:pt-[212px] rounded-[8px] mt-[30px] flex flex-col px-4  justify-center space-y-3'>
                 <div className='flex justify-center' >
                     <div className='flex gap-2  '>
-                         <img src={Overlay} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay1} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay2} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay3} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay4} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay5} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay6} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay7} alt='' className='w-4 h-4 md:w-full md:h-full' />
+                         <img src={Overlay} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay1} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay2} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay3} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay4} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay5} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay6} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay7} alt='' className=' w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] hidden sm:block object-contain' />
                        
                     </div>
 
                 </div>
+                   <div className='sm:hidden flex justify-center gap-2'>
+                        <img src={Overlay17} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay18} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay19} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay20} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay21} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay22} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay23} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay24} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />
+                        <img src={Overlay25} alt='' className='w-[30px] sm:w-[47px] lg:w-[100%] object-contain' />   
+                    </div>
                  <div >
                     <div className='flex justify-center gap-2'>
-                        <img src={Overlay17} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay18} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay19} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay20} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay21} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay22} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay23} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay24} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay25} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay26} alt='' className='w-4 h-4 md:w-full md:h-full '/>
-                        <img src={Overlay27} alt='' className='w-4 h-4 md:w-full md:h-full '/>
-                        <img src={Overlay28} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay29} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay30} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay31} alt='' className='w-4 h-4 md:w-full md:h-full ' />
+                        <img src={Overlay17} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay18} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay19} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay20} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay21} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay22} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay23} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay24} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay25} alt='' className='image_a w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay26} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay27} alt='' className=' image_a w-[30px] sm:w-[40px] md:w-[50px] lg:w-[100%] object-contain'/>
+                        <img src={Overlay28} alt='' className=' image_a w-[100%] hidden xl:block object-contain' />
+                        <img src={Overlay29} alt='' className=' image_a w-[100%] hidden xl:block object-contain' />
+                        <img src={Overlay30} alt='' className='image_a w-[100%] hidden xl:block object-contain' />
+                        <img src={Overlay31} alt='' className=' image_a w-[100%] hidden xl:block object-contain' />
                        
                          
                     </div>
+                 
 
                 </div>
                  <div className='mb-[20px]' >
-                    <div className='flex justify-center gap-2 items-center w-full'>
-                        <img src={Overlay31} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay32} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay33} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay34} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay35} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay36} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay37} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay38} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay39} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay40} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay41} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay42} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay43} alt='' className='w-4 h-4 md:w-full md:h-full ' />
-                        <img src={Overlay44} alt='' className='w-4 h-4 md:w-full md:h-full' />
-                        <img src={Overlay45} alt=''  className='w-4 h-4 md:w-full md:h-full '/>
-                        <img src={Overlay46} alt='' className='w-4 h-4 md:w-full md:h-full '/>
-                        {/* <img src={Overlay47} alt=''className='w-9 h-9 md:w-full md:h-full hidden md:block' /> */}
-                        {/* <img src={Overlay7} alt='' />    */}
+                    <div className='flex justify-center gap-2 items-center w-full '>
+                        <img src={Overlay31} alt='' className=' w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%] object-contain' />
+                        <img src={Overlay32} alt='' className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay33} alt=''className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay34} alt='' className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay35} alt='' className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay36} alt='' className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay37} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
+                        <img src={Overlay38} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
+                        <img src={Overlay39} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay40} alt='' className=  ' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay41} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay42} alt='' className='w-[100%]  object-contain hidden xl:block' />
+                        <img src={Overlay43} alt='' className='w-[100%]  object-contain hidden xl:block' />
+                        <img src={Overlay44} alt='' className='w-[100%]  object-contain hidden xl:block' />
+                        <img src={Overlay45} alt=''  className='w-[100%]  object-contain hidden xl:block'/>
+                        <img src={Overlay46} alt='' className='w-[100%]  object-contain hidden xl:block'/>
+               
                     </div>
 
                 </div>
