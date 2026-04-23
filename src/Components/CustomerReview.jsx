@@ -10,8 +10,8 @@ function CustomerReview() {
   return (
    <div className='flex relative w-[100%]'>
             <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[100%] '>
-                <img src={arrow1} alt='phone cll' className=' lg:w-[60%] absolute top-0 left-10' />
-                <img src={arrow2} alt='phone cll' className='lg:w-[60%] absolute top-6 right-10 lg:-right-3' />
+                <img src={arrow1} alt='phone cll' className=' lg:w-[40%] absolute top-0 left-10' />
+                <img src={arrow2} alt='phone cll' className='lg:w-[60%] absolute top-6 right-10 lg:-right-0' />
                 <div className='flex  justify-center items-end py-6 '>
                      
                  

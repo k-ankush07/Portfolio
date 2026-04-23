@@ -15,7 +15,7 @@ function Explore() {
         </div>
       <p className='text-[18px] mt-2 text-[#BDBDBD] hidden lg:block'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-      <div className='lg:flex gap-2 justify-around '>
+      <div className='md:flex gap-2 justify-around '>
         <ToolWeTrust />
         <CustomerReview />
         <Blogs />

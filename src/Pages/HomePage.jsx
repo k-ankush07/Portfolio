@@ -15,19 +15,19 @@ function HomePage() {
   return (
    <>
    <div className='lato-regular'>
-   {/* <Modern_Scalable /> */}
-    {/* <SkillAndMordenPage /> */}
-{/* <Web_Project /> */}
-{/* <Recent__Work />
+   <Modern_Scalable />
+    <SkillAndMordenPage />
+<Web_Project />
+<Recent__Work />
 <RecruiterOne />
 <RecruiterOne />
 <RecruiterOne />
 <ViewAll />
 <Tool />
-<FullStack /> */}
-{/* <Developers   /> */}
+<FullStack />
+<Developers   />
 <Explore />
-{/* <ConceptToCreation />  */}
+<ConceptToCreation /> 
 </div>
    </>
   )
