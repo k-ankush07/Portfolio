@@ -16,12 +16,12 @@ function FullStack() {
         <section className='bg-[#000000] px-3 py-5'>
 
             <div className='container '>
-                <div className='bg-[#000000] md:flex justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-2 py-6 '>
-                    <img src={background1} alt=' ' className='absolute bottom-0 right-70 opacity-20' />
-                    <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25' />
+                <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-6 py-6 '>
+                    <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
+                    <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
                     <div className='md:flex  '>
-                        <div className='border md:py-[40px] md:px-[75px] border-[#8F74BF54] rounded-[8px] bg-[#8F74BF1A] '>
+                        <div className='border py-9 md:py-[40px] md:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -54,8 +54,9 @@ function FullStack() {
                     </div>
 
 
-                    {/* second section */}
-                    <div className=' border-r-[1px] border-gray-600 pr-[40px] '>
+                   <div className='md:flex gap-6'>
+                     {/* second section */}
+                    <div className=' sm:flex  lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 lg:mt-0 '>
                         <div >
                             <div>
                                 <h1 className='text-[#FFFFFF] font-bold text-[20px]'>Work</h1>
@@ -66,7 +67,7 @@ function FullStack() {
                                 <h1 className='text-[#FFFFFF] text-[20px] font-bold'>Skills</h1>
                                 <p className='text-[#BDBDBD] text-[14px]'>Osinski, Kohler and Bashirian 74-102565</p>
                             </div>
-                            <div className='flex flex-wrap gap-2 mt-5 w-[350px]  text-[12px]'>
+                            <div className='flex flex-wrap gap-2 mt-5 max-w-[350px]  text-[12px]'>
                                 <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Brand Design </div>
                                 <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>UI Design </div>
                                 <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Figma </div>
@@ -75,7 +76,7 @@ function FullStack() {
                                 <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Pen & Paper</div>
                             </div>
                             <div className='mt-8'>
-                                <h1 className='text-[#FFFFFF] text-[20px] font-bold'>Portfolio Links</h1>
+                                <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
 
                                 <div className='flex gap-2'>
                                     <img src={Overlay12} alt='logo' />
@@ -89,7 +90,7 @@ function FullStack() {
 
 
                     {/* 3rd section */}
-                    <div className='flex justify-center items-center xl:w-[362px]'>
+                    <div className='flex mt-5 lg:mt-0 lg:justify-center items-center xl:w-[362px]'>
                         <div>
                             <div>
                                 <h1 className='text-[#FFFFFF] text-[20px] font-bold max-w-[310px]'>Full-Stack Developer and a little bit of everything</h1>
@@ -101,6 +102,7 @@ function FullStack() {
                             </div>
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
         </section>

@@ -6,9 +6,9 @@ import Background2 from "../assets/Images/Background+Blur (7).png"
 import Background3 from "../assets/Images/Background+Blur (8).png"
 function ConceptToCreation() {
     return (
-        <section className='bg-[#000000]'>
+        <section className='bg-[#000000] py-5 px-2'>
             <div className='container'>
-                <div className=' relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden'>
+                <div className=' relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden py-[43px]' >
                     <img src={Background1} alt='background1' className='absolute left-0 top-0 ' />
                     <img src={Background2} alt='background1' className='absolute xl:left-40 bottom-0 top-0 ' />
                     <img src={Background3} alt='background1' className='absolute right-0 bottom-0 ' />
@@ -25,7 +25,7 @@ function ConceptToCreation() {
                         <div>
                             <h1 className=' text-[15px] text-center lg:text-[24px] font-bold'>I'm available for full-time roles & freelance projects.</h1>
                             <div className='flex justify-center '>
-                                <p className='text-[18px]  max-w-[400px] mt-3 opacity-70 text-center'>I thrive on crafting dynamic web applications, and
+                                <p className='text-[11px]  max-w-[250px] mt-3 opacity-70 text-center'>I thrive on crafting dynamic web applications, and
                                 delivering seamless user experiences.</p>
                             </div>
                             <div className=' text-center mt-7'>

@@ -22,10 +22,10 @@ function Web_Project() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-[60px] pb-[50px] pl-[75px] pr-[76px]">
 
               {/* Card 1 */}
-              <div className="relative rounded-xl p-[1px] w-[220px] ml-[120px]">
-                <div className="bg-[#0e0c13] rounded-xl p-5 border border-white/10 ">
+              <div className="relative rounded-xl w-[33.3%]  p-[1px] w-[220px] ml-[120px]">
+                <div className="bg-[#0e0c13]  rounded-xl w-[200px] p-5 border border-white/10 ">
                   <div className=""> <img src={Line24} alt="lines" className="mb-3 w-[100%]" /></div>
-                  <ul className="text-sm text-gray-300 space-y-2">
+                  <ul className="text-sm text-gray-300 space-y-2 ">
                     <li>• Clean & Modern Code</li>
                     <li>• Full Stack Expertise</li>
                     <li>• Responsive Websites</li>
@@ -33,15 +33,15 @@ function Web_Project() {
                   </ul>
                 </div>
 
-                <span className="absolute -bottom-4 left-1/30 -translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-3 py-1 rounded-md flex items-center gap-1">
+                <span className="absolute -bottom-6 left-1/30 -translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-3 py-1 rounded-md flex items-center gap-1">
                   <span className="text-[#4e0fbf] text-[14px]">●</span>
                   Why Choose Me
                 </span>
               </div>
 
               {/* Card 2 */}
-              <div className="relative rounded-xl p-[1px] w-[250px] ">
-                <div className="bg-[#1d0f10] rounded-xl p-5 border border-white/10">
+              <div className="relative rounded-xl w-[33.3%]  p-[1px] h-[163px] w-[250px] ml-[50px] ">
+                <div className="bg-[#1d0f10] w-[200px] rounded-xl p-4 border border-white/10">
                   <div className=""><img src={Line25} alt="lines" className="mb-3 w-[100%]" /></div>
 
                   <ul className="text-sm text-gray-300 space-y-3">
@@ -95,15 +95,15 @@ function Web_Project() {
                   </ul>
                 </div>
 
-                <span className="absolute -bottom-4 left-1/30 -translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
+                <span className="absolute -bottom-5 left-1/30 -translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
                   <span className="text-[14px] text-[#d70216]">●</span>
                   Business Analytics
                 </span>
               </div>
 
               {/* Card 3 */}
-              <div className="relative rounded-xl p-[1px] w-[220px] ">
-                <div className="bg-[#021007] rounded-xl p-5 border border-white/10 ">
+              <div className="relative rounded-xl w-[33.3%] flex justify-end  p-[1px] h-[163px] w-[220px] ">
+                <div className="bg-[#021007] w-[200px] rounded-xl p-5 border border-white/10 ">
                   <div className=""><img src={Line26} alt="lines" className="mb-3 w-[100%]" /></div>
 
                   <ul className="text-sm text-gray-300 space-y-3">
@@ -129,7 +129,7 @@ function Web_Project() {
                   </ul>
                 </div>
 
-                <span className="absolute -bottom-4 left-1/10 -translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
+                <span className="absolute -bottom-5 left-1/10 -translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-2 py-1 rounded-md flex items-center gap-1">
                   <span className="text-[14px] text-[#00dd51]">●</span>
                   Full Stack Developer
                 </span>

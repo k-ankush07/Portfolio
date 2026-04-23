@@ -66,7 +66,7 @@ function Modern_Scalable() {
 
   {/* Icon Button */}
   <button className=" mt-3 ">
-    <img src={messageIcon} alt="message" className=" w-22" />
+    <img src={messageIcon} alt="message" className=" w-[7rem] h-[6.5rem] " />
   </button>
 
 </div>
