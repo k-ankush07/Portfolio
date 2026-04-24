@@ -21,7 +21,7 @@ function Skills() {
     <>
     
       
- <div className=' relative bg-[#000000] inline-block xl:w-[40%] '>
+ <div className=' relative bg-[#000000] inline-block xl:w-[40%] firsts_slider'>
         <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 ' />
         <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[53px]  pb-[85px]'>
           <div className='text-center py-4'>
@@ -42,6 +42,7 @@ function Skills() {
                   disableOnInteraction: false,
                 }}
                 speed={5000}
+               
               >
                 <SwiperSlide>
                   <img src={Docker} alt="Docker" />

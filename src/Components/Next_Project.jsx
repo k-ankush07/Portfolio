@@ -16,8 +16,8 @@ function Next_Project() {
         <div>
             <img src={users} alt='users' className='' />
         </div>
-        <div className='relative'>
-            <img src={arrow} alt='arrow' className='absolute -right-9  top-1 lg:-right-22' />
+        <div className='relative '>
+            <img src={arrow} alt='arrow' className='absolute -right-9  top-1 lg:-right-22 h-6 w-6 lg:h-full lg:w-full ' />
         </div>
         </div>
     </div>

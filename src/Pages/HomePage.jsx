@@ -24,7 +24,7 @@ function HomePage() {
 <RecruiterOne />
 <ViewAll />
 <Tool />
-<FullStack />
+<FullStack /> 
 <Developers   />
 <Explore />
 <ConceptToCreation /> 

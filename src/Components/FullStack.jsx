@@ -13,7 +13,7 @@ import background1 from '../assets/Images/Background+Blur.png'
 import background2 from '../assets/Images/Background+Blur (1).png'
 function FullStack() {
     return (
-        <section className='bg-[#000000] px-3 py-5'>
+        <section className='bg-[#000000] px-3 md:px-0 py-5'>
 
             <div className='container '>
                 <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-6 py-6 '>

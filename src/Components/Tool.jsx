@@ -43,7 +43,7 @@ import Overlay46 from "../assets/Images/Overlay (46).png"
 
 function Tool() {
     return (
-        <section className='bg-[#000000] px-2 md:px-0 py-8'>
+        <section className='bg-[#000000] px-2 md:px-0 py-4 md:py-8'>
             <div className='container'>
                {/* viww all section */}
                 <div className='flex justify-between'>
@@ -55,8 +55,8 @@ function Tool() {
                         <p className='text-[14px] w-[322px] lg:w-full lg:text-[18px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Suspendisse varius enim tristique.</p>
                     </h1>
                        <div className='flex justify-end items-end'>
-                         <div className='bg-[#292929] h-[40px] w-[40px] flex items-center justify-center rounded-full'>
-                            <img src={arrow} alt='arrow' />
+                         <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px] lg:h-[30px] lg:w-[30px] flex items-center justify-center rounded-full'>
+                            <img src={arrow} alt='arrow' className='h-[50%] w-[50%]' />
                         </div>
                        </div>
                    
@@ -101,8 +101,8 @@ function Tool() {
                         <img src={Overlay23} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay24} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay25} alt='' className='image_a w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
-                        <img src={Overlay26} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
-                        <img src={Overlay27} alt='' className=' image_a w-[30px] sm:w-[40px] md:w-[50px] lg:w-[100%] object-contain'/>
+                        <img src={Overlay26} alt='' className=' image_ab w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay27} alt='' className=' image_ab w-[30px] sm:w-[40px] md:w-[50px] lg:w-[100%] object-contain'/>
                         <img src={Overlay28} alt='' className=' image_a w-[100%] hidden xl:block object-contain' />
                         <img src={Overlay29} alt='' className=' image_a w-[100%] hidden xl:block object-contain' />
                         <img src={Overlay30} alt='' className='image_a w-[100%] hidden xl:block object-contain' />
@@ -124,8 +124,8 @@ function Tool() {
                         <img src={Overlay37} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
                         <img src={Overlay38} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
                         <img src={Overlay39} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
-                        <img src={Overlay40} alt='' className=  ' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
-                        <img src={Overlay41} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay40} alt='' className=  ' image_ab w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay41} alt='' className=' image_ab w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
                         <img src={Overlay42} alt='' className='w-[100%]  object-contain hidden xl:block' />
                         <img src={Overlay43} alt='' className='w-[100%]  object-contain hidden xl:block' />
                         <img src={Overlay44} alt='' className='w-[100%]  object-contain hidden xl:block' />

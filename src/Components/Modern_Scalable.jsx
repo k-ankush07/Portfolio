@@ -9,17 +9,17 @@ function Modern_Scalable() {
     <>
     <section  className="bg-[#000000] md:pt-10 ">
       <div className="container">
-<section className="relative h-[30%]  flex   justify-center text-center text-white overflow-hidden">
+<div className="relative h-[30%]  flex   justify-center text-center text-white overflow-hidden">
 
-     <div className="py-10 sm:py-20">
+     <div className="pt-10 xl:py-20">
          {/* Background Image */}
     
     <div className="relative flex justify-center items-center">
-  <div className=" w-[100%] absolute xl:left-1/2 xl:top-1/6    xl:-translate-x-1/3 xl:-translate-y-1/10  2xl:left-1/2 2xl:top-1/6    2xl:-translate-x-1/3 2xl:-translate-y-1/9">
+  <div className=" h-[100%] w-[100%]  absolute xl:left-1/2 xl:top-1/6  xl:-translate-x-1/3 xl:-translate-y-1/10  2xl:left-1/2 2xl:top-1/6    2xl:-translate-x-1/3 2xl:-translate-y-1/9">
     <img
       src={earth}
       alt="earth"
-      className=""
+      className=" h-[30rem]  w-[100%] sm:h-auto sm:w-auto object-cover opacity-60 "
     />
   </div>
 </div>
@@ -39,45 +39,49 @@ function Modern_Scalable() {
 </div>
 
         {/* Heading */}
-        <h1 className="text-[34px] md:text-[64px] font-bold mt-4 leading-tight">
+       <div className="flex flex-col justify-center">
+           <h1 className="text-[34px] lg:text-[64px] font-bold mt-4 leading-tight">
           Full Stack Developer Building <br />
           <span className="bg-gradient-to-r from-[#8F74BF] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
             Modern & Scalable
           </span>{" "}
           Web Applications
         </h1>
+       </div>
 
         {/* Subtext */}
         <div >
           
-          <p className="mt-4 text-gray-300 text-[16px]  sm:text-[18px]  font-normal flex gap-2 justify-center items-center">
-            <img src={emoji1} alt="emoji" /> 
-           Hello, I'm Aayush Bharti — I build modern and scalable web applications.
+          <div className="flex justify-center items-center ">
+            <p className="md:mt-4 text-gray-300 text-[16px]  max-w-[8000px] sm:text-[18px]  font-normal flex md:gap-2 justify-center items-center">
+            {/* <img src={emoji1} alt="emoji" />  */}
+        👋 Hello, I'm Aayush Bharti a Full Stack Developer Building Modern & Scalable Web Applications
         </p>
+          </div>
         </div>
 
         {/* Buttons */}
-        <div className="mt-6 flex justify-center items-center ">
+        <div className="md:mt-6 flex justify-center  items-center  ">
   
   {/* Main Button */}
-  <button className="px-8 py-4 rounded-full bg-[#e5e5e5] text-black text-[16px] font-medium">
+  <button className="px-3 py-2 sm:px-8 sm:py-4 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
     Let’s Connect
   </button>
 
   {/* Icon Button */}
   <button className=" mt-3 ">
-    <img src={messageIcon} alt="message" className=" w-[7rem] h-[6.5rem] " />
+    <img src={messageIcon} alt="message" className=" h-[4.3rem] w-[4.3rem] sm:w-[7rem] sm:h-[6.5rem] " />
   </button>
 
 </div>
 
-<div className="relative  -top-4 sm:-top-9 sm:left-10 lg:left-55">
+<div className="relative -left-2  -top-5 sm:-bottom-10 sm:left-20 lg:left-95">
   <img src={location} alt="location icon" />
 </div>
 
       </div>
      </div>
-    </section>
+    </div>
       </div>
     </section>
     </>

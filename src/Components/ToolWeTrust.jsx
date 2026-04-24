@@ -29,12 +29,12 @@ function ToolWeTrust() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     return (
-        <div className='flex relative w-[100%]'>
-            <div className='border-[2px] border-[#292929] rounded-[8px] pt-15  w-[100%] '>
-                <div className='flex  justify-center items-end py-6 '>
+        <div className='flex relative w-full md:w-[33.3%]'>
+            <div className='border-[2px] border-[#292929] rounded-[8px] lg:pt-15 w-[100%]   '>
+                <div className='flex  justify-center items-end py-20 lg:py-6 '>
                      <Swiper
                     modules={[Autoplay]}
-                    slidesPerView='auto'
+                    slidesPerView={4}
                     spaceBetween={20}
                     centeredSlides={true}
                     loop={true}
@@ -70,10 +70,10 @@ function ToolWeTrust() {
                 </div>
                    <div className='absolute bottom-0 w-[100%]'>
                 <div className='flex items-center justify-between py-5 px-6'>
-                    <h1 className='text-[#FFFFFF]  text-[20px] font-bold'>Tools we trust</h1>
+                    <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1>
                     <div className='flex justify-end items-end ' >
-                        <div className='bg-[#292929] h-[30px] w-[30px] flex items-center justify-center rounded-full'>
-                            <img src={arrow} alt='arrow' />
+                        <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px]  flex items-center justify-center rounded-full'>
+                            <img src={arrow} alt='arrow' className='w-[50%] h-[50%] ' />
                         </div>
                     </div>
                 </div>

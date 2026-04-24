@@ -6,7 +6,7 @@ import Background2 from "../assets/Images/Background+Blur (7).png"
 import Background3 from "../assets/Images/Background+Blur (8).png"
 function ConceptToCreation() {
     return (
-        <section className='bg-[#000000] py-5 px-2'>
+        <section className='bg-[#000000] py-5 px-2 md:px-0'>
             <div className='container'>
                 <div className=' relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden py-[43px]' >
                     <img src={Background1} alt='background1' className='absolute left-0 top-0 ' />
