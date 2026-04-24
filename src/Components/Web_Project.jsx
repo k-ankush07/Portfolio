@@ -142,7 +142,7 @@ function Web_Project() {
               <h2 className="text-white text-[18px] xl:text-[20px] font-bold">
                 Let’s Build Your Next Web Project
               </h2>
-              <p className="text-[#BDBDBD] text-center mt-2 text-[12px] xl:text-[16px] max-w-[300px]">
+              <p className="text-[#BDBDBD] text-center mt-2 text-[12px] xl:text-[16px] w-[300px] lg:w-full">
                 Need a fast, scalable, and modern web application? I can help turn your idea into a fully functional product.
               </p>
 
