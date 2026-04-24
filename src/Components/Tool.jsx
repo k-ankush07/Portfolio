@@ -98,8 +98,8 @@ function Tool() {
                         <img src={Overlay20} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay21} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay22} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
-                        <img src={Overlay23} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
-                        <img src={Overlay24} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
+                        <img src={Overlay23} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] hidden xl:block object-contain' />
+                        <img src={Overlay24} alt='' className='w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] hidden xl:block object-contain' />
                         <img src={Overlay25} alt='' className='image_a w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay26} alt='' className=' image_ab w-[30px] sm:w-[47px] md:w-[50px] lg:w-[100%] object-contain' />
                         <img src={Overlay27} alt='' className=' image_ab w-[30px] sm:w-[40px] md:w-[50px] lg:w-[100%] object-contain'/>
@@ -123,9 +123,9 @@ function Tool() {
                         <img src={Overlay36} alt='' className='w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
                         <img src={Overlay37} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
                         <img src={Overlay38} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]   object-contain' />
-                        <img src={Overlay39} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay39} alt='' className=' image_a w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%] hidden xl:block  object-contain' />
                         <img src={Overlay40} alt='' className=  ' image_ab w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
-                        <img src={Overlay41} alt='' className=' image_ab w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%]  object-contain' />
+                        <img src={Overlay41} alt='' className=' image_ab w-[30px] sm:w-[47px] md:w-[60px] lg:w-[100%] hidden xl:block  object-contain' />
                         <img src={Overlay42} alt='' className='w-[100%]  object-contain hidden xl:block' />
                         <img src={Overlay43} alt='' className='w-[100%]  object-contain hidden xl:block' />
                         <img src={Overlay44} alt='' className='w-[100%]  object-contain hidden xl:block' />
