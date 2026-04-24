@@ -75,7 +75,7 @@ function Modern_Scalable() {
 
 </div>
 
-<div className="relative -left-2  -top-5 sm:-bottom-10 sm:left-20 lg:left-95">
+<div className="relative -left-2  -top-5 sm:-bottom-10 sm:left-20 lg:left-55">
   <img src={location} alt="location icon" />
 </div>
 
