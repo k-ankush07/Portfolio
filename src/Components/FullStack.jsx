@@ -16,7 +16,7 @@ function FullStack() {
         <section className='bg-[#000000] px-3 md:px-0 py-5'>
 
             <div className='container '>
-                <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-6 py-6 '>
+                <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
