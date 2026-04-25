@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import logo from "../assets/Images/navlogo.png"
-import logo2 from "../assets/Images/logo2.png"
+import logo from "../assets/Images/Vector (3).svg"
+import logo2 from "../assets/Images/Vector (4).svg"
 import { Link } from "react-router-dom"
 
 function Navbar() {
@@ -16,23 +16,23 @@ function Navbar() {
   <div className='hidden md:flex items-center justify-between w-full'>
     
     {/* Logo */}
-    <img src={logo} alt='logo' />
+   <Link to="/"> <img src={logo} alt='logo' /></Link>
 
     {/* Links */}
     <div className='flex gap-7 items-center bg-[#191919] py-[4px] rounded-full px-3'>
       <div className='bg-[#4a4a4a] rounded-full px-5 py-1'>
         <Link to="/" className='text-white'>Home</Link>
       </div>
-      <Link to="/about" className='text-[#BDBDBD]'>About</Link>
-      <Link to="/work" className='text-[#BDBDBD]'>Work</Link>
+      <Link to="/about" className='text-[#BDBDBD] hover:text-gray-100'>About</Link>
+      <Link to="/work" className='text-[#BDBDBD] hover:text-gray-100 '>Work</Link>
 
-      <select className='bg-transparent text-[#BDBDBD] outline-none'>
+      <select className='bg-transparent text-[#BDBDBD] outline-none hover:text-gray-100 cursor-pointer'>
         <option>More</option>
       </select>
     </div>
 
     {/* Right Icon */}
-    <img src={logo2} alt='icon' />
+    <Link to=""><img src={logo2} alt='icon' /></Link>
   </div>
 
   {/* ✅ Mobile Layout (centered pill) */}

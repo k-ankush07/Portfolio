@@ -17,3 +17,18 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
+
+
+<!-- <div className="relative">
+  <div className="h-[300vh]">
+   <RecruiterOne className="z-10" />
+<RecruiterOne className="z-20 " />
+<RecruiterOne className="z-30" />
+  </div>
+</div> -->
+
+           <section className=' h-screen sticky top-0 flex items-center py-3 sm:py-0'>
+
+
+
+

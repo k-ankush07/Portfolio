@@ -4,10 +4,10 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 import React, { useState } from 'react'
-import border from "../assets/Images/Border (2).png"
-import border2 from "../assets/Images/Border (3).png"
-import border3 from "../assets/Images/Border (4).png"
-import arrow from "../assets/Images/smallarrow.png"
+import border from "../assets/Images/Border.svg"
+import border2 from "../assets/Images/Border (1).svg"
+import border3 from "../assets/Images/Border (2).svg"
+import arrow from "../assets/Images/arrow.svg"
 
 function ToolWeTrust() {
 
@@ -72,9 +72,9 @@ function ToolWeTrust() {
                 <div className='flex items-center justify-between py-5 px-6'>
                     <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1>
                     <div className='flex justify-end items-end ' >
-                        <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px]  flex items-center justify-center rounded-full'>
-                            <img src={arrow} alt='arrow' className='w-[50%] h-[50%] ' />
-                        </div>
+                        {/* <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px]  flex items-center justify-center rounded-full'> */}
+                            <img src={arrow} alt='arrow' className='lg:h-10 lg:w-10  cursor-pointer' />
+                        {/* </div> */}
                     </div>
                 </div>
                 </div>

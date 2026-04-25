@@ -1,19 +1,20 @@
 import React from 'react'
-import cardCircle from "../assets/Images/cardCircle.png"
+import cardCircle from "../assets/Images/circlenew.svg"
 import { FaLocationDot } from "react-icons/fa6";
-import Overlay11 from "../assets/Images/Overlay (11).png"
-import Overlay10 from "../assets/Images/Overlay (10).png"
-import Overlay8 from "../assets/Images/Overlay (8).png"
-import Overlay9 from "../assets/Images/Overlay (9).png"
-import Overlay12 from "../assets/Images/Overlay (12).png"
-import Overlay13 from "../assets/Images/Overlay (13).png"
-import Overlay14 from "../assets/Images/Overlay (14).png"
-import Overlay15 from "../assets/Images/Overlay (15).png"
-import background1 from '../assets/Images/Background+Blur.png'
-import background2 from '../assets/Images/Background+Blur (1).png'
+import Overlay11 from "../assets/Images/Overlay (38).svg"
+import Overlay10 from "../assets/Images/Overlay (39).svg"
+import Overlay8 from "../assets/Images/Overlay (40).svg"
+import Overlay9 from "../assets/Images/Overlay (41).svg"
+import Overlay12 from "../assets/Images/Overlay (42).svg"
+import Overlay13 from "../assets/Images/Overlay (43).svg"
+import Overlay14 from "../assets/Images/Overlay (44).svg"
+import Overlay15 from "../assets/Images/Overlay (45).svg"
+import background1 from '../assets/Images/Background+Blur.svg'
+import background2 from '../assets/Images/Background+Blur (1).svg'
+import { Link } from 'react-router-dom';
 function FullStack() {
     return (
-        <section className='bg-[#000000] px-3 md:px-0 py-5'>
+        <section className=' px-3 md:px-0 py-5'>
 
             <div className='container '>
                 <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
@@ -39,15 +40,15 @@ function FullStack() {
                             </div>
 
                             <div className='flex justify-center gap-2 mt-5'>
-                                <img src={Overlay11} alt=' overlay 18' />
-                                <img src={Overlay10} alt=' overlay 18' />
-                                <img src={Overlay8} alt=' overlay 18' />
-                                <img src={Overlay9} alt=' overlay 18' />
+                                <img src={Overlay11} alt=' overlay 18' className='cursor-pointer relative z-1' />
+                                <img src={Overlay10} alt=' overlay 18' className='cursor-pointer relative z-1' />
+                                <img src={Overlay8} alt=' overlay 18' className='cursor-pointer relative z-1' />
+                                <img src={Overlay9} alt=' overlay 18' className='cursor-pointer relative z-1' />
                             </div>
                             <div className='flex justify-center'>
-                                <div className='rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5'>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5'>
                                     Hire Me
-                                </div>
+                                </button></Link>
                             </div>
                         </div>
 
@@ -79,10 +80,10 @@ function FullStack() {
                                 <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
 
                                 <div className='flex gap-2'>
-                                    <img src={Overlay12} alt='logo' />
-                                    <img src={Overlay13} alt='logo' />
-                                    <img src={Overlay14} alt='logo' />
-                                    <img src={Overlay15} alt='logo' />
+                                    <img src={Overlay12} alt='logo' className='cursor-pointer relative z-1' />
+                                    <img src={Overlay13} alt='logo' className='cursor-pointer relative z-1' />
+                                    <img src={Overlay14} alt='logo' className='cursor-pointer relative z-1' />
+                                    <img src={Overlay15} alt='logo' className='cursor-pointer relative z-1' />
                                 </div>
                             </div>
                         </div>

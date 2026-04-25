@@ -1,12 +1,13 @@
 import React from 'react'
-import aicon from "../assets/Images/aIcon.png"
-import group1 from "../assets/Images/group1.png"
-import Background1 from "../assets/Images/Background+Blur (6).png"
-import Background2 from "../assets/Images/Background+Blur (7).png"
-import Background3 from "../assets/Images/Background+Blur (8).png"
+import aicon from "../assets/Images/online.svg"
+import group1 from "../assets/Images/yo.svg"
+import Background1 from "../assets/Images/Background+Blur (2).svg"
+import Background2 from "../assets/Images/Background+Blur (3).svg"
+import Background3 from "../assets/Images/Background+Blur (4).svg"
+import { Link } from 'react-router-dom'
 function ConceptToCreation() {
     return (
-        <section className='bg-[#000000] py-5 px-2 md:px-0'>
+        <section className=' py-5 px-2 md:px-0'>
             <div className='container'>
                 <div className=' relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden py-[43px]' >
                     <img src={Background1} alt='background1' className='absolute left-0 top-0 ' />
@@ -29,7 +30,8 @@ function ConceptToCreation() {
                                 delivering seamless user experiences.</p>
                             </div>
                             <div className=' text-center mt-7'>
-                                <button className='bg-[#FFFFFF] rounded-[500px] text-[16px] text-[#000000] px-7 py-3'> Get in Touch</button>
+                                <Link to=""><button className='btn-slide bg-[#FFFFFF] rounded-[500px] relative z-1 cursor-pointer text-[16px] text-[#000000] px-7 py-3'> Get in Touch</button>
+</Link>
                             </div>
                         </div>
                         <div className='hidden lg:block'>

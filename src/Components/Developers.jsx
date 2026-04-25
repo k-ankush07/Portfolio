@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Cards from './Cards'
-import image from "../assets/Images/Image.png"
-import image2 from "../assets/Images/Testimonial Image (1).png"
-import image3 from "../assets/Images/Testimonial Image (2).png"
-import image4 from "../assets/Images/Container.png"
+import image from "../assets/Images/Container.svg"
+import image2 from "../assets/Images/Testimonial Image.svg"
+import image3 from "../assets/Images/Testimonial Image (1).svg"
+import image4 from "../assets/Images/Container.svg"
 import Background from "../assets/Images/Background+Blur (2).png"
 import Background2 from "../assets/Images/Background+Blur (3).png"
 import Background3 from "../assets/Images/Background+Blur (4).png"
@@ -20,7 +20,7 @@ function Developers({ }) {
             bg: Background,
         },
         {
-            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code.",
+            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code and a lot .",
             name: "Esther Howard",
             picture: image2,
             bg: Background2,
@@ -32,7 +32,7 @@ function Developers({ }) {
             bg: Background3,
         },
         {
-            desc: "CodeGent enables me to write improved, more reusable, and structured code more quickly. CodeGent has transformed how I build UI components, with smart hints saving hours and making ",
+            desc: "CodeGent enables me to write improved, more reusable, and structured code more quickly. CodeGent has transformed how I build UI components, with smart hints saving hours and making   my code cleaner.",
             name: "Albert Flores",
             picture: image4,
             bg: Background4,
@@ -64,12 +64,12 @@ function Developers({ }) {
     ];
     return (
         <>
-            <section className='bg-[#000000] px-3 md:px-0 pt-6 py-3'>
+            <section className=' px-3 md:px-0 pt-6 py-3'>
                 <div className='container'>
                     <div className=''>
 
                         <h1 className=' text-[20px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
-                            Loved by 10,000+
+                            Loved by 10,000+ {' '}
                             <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
                                 Developers
                             </span>

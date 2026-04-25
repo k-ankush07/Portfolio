@@ -2,14 +2,14 @@ import React from "react";
 import Line24 from "../assets/Images/Line 24.png"
 import Line25 from "../assets/Images/Line 25.png"
 import Line26 from "../assets/Images/Line 26.png"
-import arrow from "../assets/Images/arrow.png"
+import arrow from "../assets/Images/arrow.svg"
 import DownArrow from "../assets/Images/Vector.png"
 import vector13 from "../assets/Images/Vector13.png"
 import vector16 from "../assets/Images/Vector16.png"
 import linepurple from "../assets/Images/linepurple.png"
 function Web_Project() {
   return (
-    <section className="bg-[#000000] px-2 md:px-0 xl:px-0">
+    <section className=" px-2 md:px-0 xl:px-0">
       <div className="container">
         <div className=" flex justify-center pb-3 relative rounded-xl border border-white/10">
 
@@ -148,7 +148,7 @@ function Web_Project() {
 
             </div>
             <div className="relative ">
-              <img src={arrow} alt="arrow " className="absolute -top-4 right-4 lg:right-4" />
+              <img src={arrow} alt="arrow " className="absolute -top-4 right-4 lg:right-4 lg:h-10 lg:w-10 cursor-pointer" />
             </div>
 
           </div>

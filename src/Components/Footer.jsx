@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "../assets/Images/navlogo.png"
-import Vector from "../assets/Images/Vector (7).png"
-import Vector1 from "../assets/Images/Vector (5).png"
-import Vector2 from "../assets/Images/Vector (6).png"
+
+import logo from "../assets/Images/Vector (3).svg"
+import Vector from "../assets/Images/Vector (6).svg"
+import Vector1 from "../assets/Images/Vector (7).svg"
+import Vector2 from "../assets/Images/Vector (8).svg"
 function Footer() {
     return (
         <section className="bg-[#000000] py-7 px-2 xl:px-0 ">
@@ -37,10 +38,10 @@ function Footer() {
                         <div>
                             <h3 className=" text-[#FFFFFF] font-bold text-[16px] mb-4 ">General</h3>
                             <ul className="space-y-2 text-[14px] opacity-80 ">
-                                <li className=" text-[#BDBDBD]  cursor-pointer">Home</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">About</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">Projects</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">Blog</li>
+                                <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Home</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">About</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Projects</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Blog</li>
                             </ul>
                         </div>
 
@@ -48,10 +49,10 @@ function Footer() {
                         <div>
                             <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4">Specifics</h3>
                             <ul className="space-y-2 text-[14px] opacity-80">
-                                <li className=" text-[#BDBDBD]  cursor-pointer">Guest Book</li>
-                                <li className=" text-[#BDBDBD]  cursor-pointer">Bucket List</li>
-                                <li className=" text-[#BDBDBD]  cursor-pointer">Uses</li>
-                                <li className=" text-[#BDBDBD]  cursor-pointer">Attribution</li>
+                                <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Guest Book</li>
+                                <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Bucket List</li>
+                                <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Uses</li>
+                                <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Attribution</li>
                             </ul>
                         </div>
 
@@ -59,11 +60,11 @@ function Footer() {
                         <div>
                             <h3 className="text-[#FFFFFF] font-bold text-[16px]">More</h3>
                             <ul className="space-y-2 text-[14px] opacity-80 md:pt-2">
-                                <li className="text-[#BDBDBD]  cursor-pointer">Book a call</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">Links</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">RSS</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">Privacy</li>
-                                <li className="text-[#BDBDBD]  cursor-pointer">Terms</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</li>
+                                <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</li>
                             </ul>
                         </div>
                        </div>
@@ -81,8 +82,8 @@ function Footer() {
                             <p className="text-center">© 2026 Aayush Bharti. All rights reserved</p>
 
                         <div className="flex justify-center mt-2 md:mt-0 gap-6">
-                            <span className=" cursor-pointer">Privacy Policy</span>
-                            <span className="cursor-pointer">Terms of Use</span>
+                            <span className=" cursor-pointer hover:text-gray-100">Privacy Policy</span>
+                            <span className="cursor-pointer hover:text-gray-100">Terms of Use</span>
                         </div>
                         </div>
 

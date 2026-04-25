@@ -1,0 +1,29 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="70" rx="14" fill="white" fill-opacity="0.1"/>
+<g filter="url(#filter0_ii_1_899)">
+<rect width="70" height="70" rx="14" fill="white" fill-opacity="0.01"/>
+</g>
+<g clip-path="url(#clip0_1_899)">
+<path d="M48.3494 38.4785L47.2635 36.5894L42.0123 39.7877L47.8448 32.3619L48.7267 31.8444L48.5085 31.5167L48.9092 31.0048L47.0685 29.4729L46.2262 30.5465L29.2221 40.4948L35.509 32.9344L47.219 26.5156L46.1065 24.3652L39.7283 27.86L42.869 24.0854L41.0696 22.5L34.0013 30.9994L26.9808 34.8494L32.3556 27.744L35.7235 25.991L34.654 23.8165L24.8417 28.9242L27.5175 25.3835L25.6483 23.8865L20 31.3621L20.0875 31.4321L21.1429 33.5808L27.4048 30.3198L21.6973 37.8635L22.6327 38.6129L23.189 39.6883L29.7819 36.0737L22.5219 44.8052L24.3212 46.3904L24.6825 45.9558L42.1965 35.676L36.3817 43.0817L36.4767 43.1608L36.4677 43.1665L37.6731 45.2635L45.4071 40.5519L42.429 45.3575L44.425 46.6667L49.1667 39.0162L48.3494 38.4785Z" fill="#FAFAFA"/>
+</g>
+<defs>
+<filter id="filter0_ii_1_899" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1_899"/>
+<feOffset/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_899"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_1_899" result="effect2_innerShadow_1_899"/>
+</filter>
+<clipPath id="clip0_1_899">
+<rect x="15" y="15" width="40" height="40" rx="6" fill="white"/>
+</clipPath>
+</defs>
+</svg>

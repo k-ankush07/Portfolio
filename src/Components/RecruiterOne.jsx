@@ -1,8 +1,8 @@
 import React from 'react'
-import shopify from "../assets/Images/shopify.png"
+import shopify from "../assets/Images/Vector (5).svg"
 import fullImage from "../assets/Images/fullImage.png"
-import circleImage from "../assets/Images/circleImage.png"
-import Background from "../assets/Images/Background.png"
+import circleImage from "../assets/Images/circlesvg.svg"
+import Background from "../assets/Images/Background.svg"
 import star from "../assets/Images/vector3.png"
 import Bun from "../assets/Images/Bun.png"
 import Docker from "../assets/Images/Docker.png"
@@ -11,13 +11,14 @@ import pnpm from "../assets/Images/pnpm.png"
 import PostgreSQL from "../assets/Images/PostgreSQL.png"
 import Redis from "../assets/Images/Redis.png"
 import Vercel from "../assets/Images/Vercel.png";
+import ViewDetail from './ViewDetail'
 
-function RecruiterOne() {
+function  RecruiterOne() {
     return (
         <>
     
 
-           <section className='bg-[#000000] py-3 sm:py-0'>
+           <section className='  py-3 sm:py-0'>
             <div className='container'>
                 <div className=' px-2   lg:px-0 py-[6px]'>
 
@@ -29,8 +30,8 @@ function RecruiterOne() {
             >
 
                 {/* First div */}
-                <div className="rounded-xl flex relative lg:w-[60%] ">
-                    <div className='text-[#FFFFFF] text-[14px] w-[300px] sm:text-[20px] lg:text-[16px] font-bold sm:w-[420px] lg:w-[340px] xl:w-[420px] absolute left-[20px] top-[10px] sm:top-[20px]  sm:left-[30px]  lg:top-[30px] lg:left-[40px]'>
+                <div className="rounded-xl flex relative w-[100%] lg:w-[60%] ">
+                    {/* <div className='text-[#FFFFFF] text-[14px] max-w-[300px] sm:text-[20px] lg:text-[16px] font-bold sm:w-[420px] lg:w-[340px] xl:w-[420px] absolute left-[20px] top-[10px] sm:top-[20px]  sm:left-[30px]  lg:top-[30px] lg:left-[40px]'>
                         <p>Developed a recruitment platform to connect job seekers and recruiters</p>
                     </div>
 
@@ -38,7 +39,8 @@ function RecruiterOne() {
                         <img src={circleImage} alt='circle Image' />
                     </div>
 
-                    <img src={fullImage} alt='background color' className='w-full ' />
+                    <img src={fullImage} alt='background color' className='w-full ' /> */}
+                    <ViewDetail />
                 </div>
 
                 {/* Second div */}

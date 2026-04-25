@@ -5,7 +5,7 @@ function Recent__Work() {
   <>
   
 
-    <div className='text-center bg-[#000000] text-[#FFFFFF] p-4 md:py-10'>
+    <div className='text-center  text-[#FFFFFF] p-4 md:py-10'>
         <div className='text-[30px] md:text-[44px] font-bold '>
             Recent <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">Work</span>
         </div>

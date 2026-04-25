@@ -1,13 +1,13 @@
 import React from "react"
 import earth from "../assets/Images/earth.png"
-import messageIcon from "../assets/Images/messageIcon.png"
-import location from "../assets/Images/location.png"
+import messageIcon from "../assets/Images/messageIcon.svg"
+import location from "../assets/Images/location.svg"
 import emoji from "../assets/Images/emoji.png"
 import emoji1 from "../assets/Images/emoji1.png"
 function Modern_Scalable() {
   return (
     <>
-    <section  className="bg-[#000000] md:pt-10 ">
+    <section  className=" md:pt-10 ">
       <div className="container">
 <div className="relative h-[30%]  flex   justify-center text-center text-white overflow-hidden">
 
@@ -29,13 +29,36 @@ function Modern_Scalable() {
 
         {/* Badge */}
        
-        <div className="inline-block rounded-[8px] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500">
-  <div className="flex items-center gap-2 rounded-[8px] bg-[#0b0f19] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
-   <div className="bg-[#df7a78] rounded-md text-[#ffffff] px-1 py-1 flex items-center gap-1">  
+        {/* <div className="inline-block rounded-[8px] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 ">
+  <div className=" flex items-center gap-2 rounded-[8px] bg-[#0b0f19] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
+   <div className="bg-[#df7a78] rounded-md text-[#ffffff] px-1 py-1 flex items-center gap-1 text-[12px]">  
     <img src={emoji} alt="emoji" />
     <span > Upcoming</span></div>
-    <span className="text-[#c58962]">Nextnode is launching soon!</span>
+    <span className="text-[#c58962] text-sweep font-bold  ">Nextnode is launching soon!</span>
   </div>
+</div> */}
+
+<div className="inline-block group relative rounded-[8px] cursor-pointer">
+  
+  {/* Gradient border (hidden by default) */}
+  <div className="absolute inset-0 rounded-[8px] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 opacity-0 group-hover:opacity-100 transition duration-600">
+    <div className="w-full h-full rounded-[8px] bg-[#0b0f19]" />
+  </div>
+
+  {/* Content (always visible) */}
+  <div className="relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
+    
+    <div className="bg-[#df7a78] rounded-md px-1 py-1 flex items-center gap-1 text-[12px]">
+      <img src={emoji} alt="emoji" />
+      <span>Upcoming</span>
+    </div>
+
+    <span className="text-[#c58962] font-bold text-sweep">
+      Nextnode is launching soon!
+    </span>
+
+  </div>
+
 </div>
 
         {/* Heading */}
@@ -61,21 +84,26 @@ function Modern_Scalable() {
         </div>
 
         {/* Buttons */}
-        <div className="md:mt-6 flex justify-center  items-center  ">
+        <div className=" mt-2 md:mt-6 flex justify-center  gap-5 items-center  ">
   
   {/* Main Button */}
-  <button className="px-3 py-2 sm:px-8 sm:py-4 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
+  <button className=" btn-slide px-3  cursor-pointer py-2 sm:px-8 sm:py-4 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
     Let’s Connect
   </button>
 
   {/* Icon Button */}
-  <button className=" mt-3 ">
-    <img src={messageIcon} alt="message" className=" h-[4.3rem] w-[4.3rem] sm:w-[7rem] sm:h-[6.5rem] " />
-  </button>
+  <div className="flex justify-center items-center ">
+    <div className="border border-white px-2 cursor-pointer py-2 sm:py-4 sm:px-4 bg-white/20 rounded-full">
+<img src={messageIcon} alt="message" className=" " />
+    </div>
+  </div>
+  {/* <button className=" mt-3 ">
+    
+  </button> */}
 
 </div>
 
-<div className="relative -left-2  -top-5 sm:-bottom-10 sm:left-20 lg:left-55">
+<div className=" location relative left-0  top- sm:-top-1 sm:left-30 sm:-bottom-10 md:left-30 lg:top-0 lg:left-70">
   <img src={location} alt="location icon" />
 </div>
 

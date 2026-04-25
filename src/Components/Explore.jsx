@@ -6,7 +6,7 @@ import Blogs from './Blogs'
 function Explore() {
   return (
    <>
-   <section className='bg-[#000000] px-2  md:px-0 pb-6 pt-5'>
+   <section className=' px-2  md:px-0 pb-6 pt-5'>
 
     <div className='container'>
         <div className='text-center bg-[#000000] text-[#FFFFFF]  py-3 lg:py-8   '>
