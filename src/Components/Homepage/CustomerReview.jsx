@@ -1,11 +1,11 @@
 import React from 'react'
 
-import border from "../assets/Images/Border (2).png"
-import border2 from "../assets/Images/Border (3).png"
-import border3 from "../assets/Images/Border (4).png"
-import arrow from "../assets/Images/arrow.svg"
-import arrow1 from "../assets/Images/SVG (1).svg"
-import arrow2 from "../assets/Images/SVG.svg"
+import border from "../../assets/Images/Border (2).png"
+import border2 from "../../assets/Images/Border (3).png"
+import border3 from "../../assets/Images/Border (4).png"
+import arrow from "../../assets/Images/arrow.svg"
+import arrow1 from "../../assets/Images/SVG (1).svg"
+import arrow2 from "../../assets/Images/SVG.svg"
 function CustomerReview() {
   return (
    <div className='flex relative w-full  sm:w-[49%] md:w-[33.3%] '>

@@ -1,16 +1,16 @@
 import React from 'react'
-import cardCircle from "../assets/Images/circlenew.svg"
+import cardCircle from "../../assets/Images/circlenew.svg"
 import { FaLocationDot } from "react-icons/fa6";
-import Overlay11 from "../assets/Images/Overlay (38).svg"
-import Overlay10 from "../assets/Images/Overlay (39).svg"
-import Overlay8 from "../assets/Images/Overlay (40).svg"
-import Overlay9 from "../assets/Images/Overlay (41).svg"
-import Overlay12 from "../assets/Images/Overlay (42).svg"
-import Overlay13 from "../assets/Images/Overlay (43).svg"
-import Overlay14 from "../assets/Images/Overlay (44).svg"
-import Overlay15 from "../assets/Images/Overlay (45).svg"
-import background1 from '../assets/Images/Background+Blur.svg'
-import background2 from '../assets/Images/Background+Blur (1).svg'
+import Overlay11 from "../../assets/Images/Overlay (38).svg"
+import Overlay10 from "../../assets/Images/Overlay (39).svg"
+import Overlay8 from "../../assets/Images/Overlay (40).svg"
+import Overlay9 from "../../assets/Images/Overlay (41).svg"
+import Overlay12 from "../../assets/Images/Overlay (42).svg"
+import Overlay13 from "../../assets/Images/Overlay (43).svg"
+import Overlay14 from "../../assets/Images/Overlay (44).svg"
+import Overlay15 from "../../assets/Images/Overlay (45).svg"
+import background1 from '../../assets/Images/Background+Blur.svg'
+import background2 from '../../assets/Images/Background+Blur (1).svg'
 import { Link } from 'react-router-dom';
 function FullStack() {
     return (

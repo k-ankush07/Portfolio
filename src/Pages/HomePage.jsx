@@ -1,15 +1,16 @@
 import React from 'react'
-import Modern_Scalable from '../Components/Modern_Scalable'
+import Modern_Scalable from '../Components/Homepage/Modern_Scalable'
+import Web_Project from '../Components/Homepage/Web_Project'
+import Recent__Work from '../Components/Homepage/Recent__Work'
+import RecruiterOne from '../Components/Homepage/RecruiterOne'
+import ViewAll from '../Components/Homepage/ViewAll'
+import Tool from '../Components/Homepage/Tool'
+import FullStack from '../Components/Homepage/FullStack'
+import Developers from '../Components/Homepage/Developers'
+import Explore from '../Components/Homepage/Explore'
+import ConceptToCreation from '../Components/Homepage/ConceptToCreation'
 import SkillAndMordenPage from './SkillAndMordenPage'
-import Web_Project from '../Components/Web_Project'
-import Recent__Work from '../Components/Recent__Work'
-import RecruiterOne from '../Components/RecruiterOne'
-import ViewAll from '../Components/ViewAll'
-import Tool from '../Components/Tool'
-import FullStack from '../Components/FullStack'
-import Developers from '../Components/Developers'
-import Explore from '../Components/Explore'
-import ConceptToCreation from '../Components/ConceptToCreation'
+
 
 function HomePage() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import arrow from "../assets/Images/arrow.svg"
+import arrow from "../../assets/Images/arrow.svg"
 function ViewAll() {
   return (
     <div className=' text-[#FFFFFF] text-[14px] md:text-[16px] py-2 lg:py-[22px]  '>

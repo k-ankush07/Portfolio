@@ -1,10 +1,10 @@
 import React from 'react'
 
-import border from "../assets/Images/Border (2).png"
-import border2 from "../assets/Images/Border (3).png"
-import border3 from "../assets/Images/Border (4).png"
-import arrow from "../assets/Images/arrow.svg"
-import fullimage from "../assets/Images/post.svg"
+import border from "../../assets/Images/Border (2).png"
+import border2 from "../../assets/Images/Border (3).png"
+import border3 from "../../assets/Images/Border (4).png"
+import arrow from "../../assets/Images/arrow.svg"
+import fullimage from "../../assets/Images/post.svg"
 
 
 function Blogs() {

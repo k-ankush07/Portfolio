@@ -1,9 +1,9 @@
 import React from "react";
 
-import logo from "../assets/Images/Vector (3).svg"
-import Vector from "../assets/Images/Vector (6).svg"
-import Vector1 from "../assets/Images/Vector (7).svg"
-import Vector2 from "../assets/Images/Vector (8).svg"
+import logo from "../../assets/Images/Vector (3).svg"
+import Vector from "../../assets/Images/Vector (6).svg"
+import Vector1 from "../../assets/Images/Vector (7).svg"
+import Vector2 from "../../assets/Images/Vector (8).svg"
 function Footer() {
     return (
         <section className="bg-[#000000] py-7 px-2 xl:px-0 ">

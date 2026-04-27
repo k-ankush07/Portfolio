@@ -1,9 +1,9 @@
 import React from 'react'
-import aicon from "../assets/Images/online.svg"
-import group1 from "../assets/Images/yo.svg"
-import Background1 from "../assets/Images/Background+Blur (2).svg"
-import Background2 from "../assets/Images/Background+Blur (3).svg"
-import Background3 from "../assets/Images/Background+Blur (4).svg"
+import aicon from "../../assets/Images/online.svg"
+import group1 from "../../assets/Images/yo.svg"
+import Background1 from "../../assets/Images/Background+Blur (2).svg"
+import Background2 from "../../assets/Images/Background+Blur (3).svg"
+import Background3 from "../../assets/Images/Background+Blur (4).svg"
 import { Link } from 'react-router-dom'
 function ConceptToCreation() {
     return (

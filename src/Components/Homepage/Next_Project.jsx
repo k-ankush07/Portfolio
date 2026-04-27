@@ -1,7 +1,7 @@
 import React from 'react'
-import users from "../assets/Images/onlinedots.png"
-import Blur from "../assets/Images/Gradient+Blur (1).svg"
-import arrow from "../assets/Images/arrow.svg"
+import users from "../../assets/Images/onlinedots.png"
+import Blur from "../../assets/Images/Gradient+Blur (1).svg"
+import arrow from "../../assets/Images/arrow.svg"
 // import arrow from "../assets/Images/smallarrow.png"
 function Next_Project() {
     return (

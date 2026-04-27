@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Skills from '../Components/Skills'
-import Next_Project from '../Components/Next_Project'
+import Skills from "../Components/Homepage/Skills"
+import Next_Project from "../Components/Homepage/Next_Project"
 
 function SkillAndMordenPage() {
   return (

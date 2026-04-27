@@ -2,10 +2,21 @@
 
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 body{
   background-color: #000000;
+}
+/* global.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .lato-regular {
@@ -31,6 +42,9 @@ body{
   width: 100%;
   overflow: hidden;
 }
+.dolor_container .swiper {
+  padding: 15px 0px;
+}
 
 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -49,15 +63,7 @@ body{
   height: auto;
   object-fit: contain;
 }
-/* .card_slider{
-  width: auto !important;
-} */
 
-/* .gradient-box {
-   border: 1px solid;
-  border-image: linear-gradient(121.12deg, #8F74BF 0.62%, #D76D77 49.63%, #FFAF7B 99.12%) 1;
-   border-radius: 12px;
-} */
 
 
 
@@ -149,16 +155,6 @@ img.toolWeTrust {
     width: 70px;
   }
 }
-/* @media(min-width:1024) and (max-width:1280px){
-  .circlelogo{
-   
-    height: 70px;
-    width: 70px;
-  }
-} */
-
-
-
 
 
 /* animations  */

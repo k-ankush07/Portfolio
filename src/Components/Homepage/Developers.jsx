@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Cards from './Cards'
-import image from "../assets/Images/Container.svg"
-import image2 from "../assets/Images/Testimonial Image.svg"
-import image3 from "../assets/Images/Testimonial Image (1).svg"
-import image4 from "../assets/Images/Container.svg"
-import Background from "../assets/Images/Background+Blur (2).png"
-import Background2 from "../assets/Images/Background+Blur (3).png"
-import Background3 from "../assets/Images/Background+Blur (4).png"
-import Background4 from "../assets/Images/Background+Blur (5).png"
+import image from "../../assets/Images/Container.svg"
+import image2 from "../../assets/Images/Testimonial Image.svg"
+import image3 from "../../assets/Images/Testimonial Image (1).svg"
+import image4 from "../../assets/Images/Container.svg"
+import Background from "../../assets/Images/Background+Blur (2).png"
+import Background2 from "../../assets/Images/Background+Blur (3).png"
+import Background3 from "../../assets/Images/Background+Blur (4).png"
+import Background4 from "../../assets/Images/Background+Blur (5).png"
 function Developers({ }) {
     const developersData = [
         {

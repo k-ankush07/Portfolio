@@ -1,6 +1,6 @@
 import React from 'react'
-import mobile from "../assets/Images/image 67.svg"
-import circleImage from "../assets/Images/circlesvg.svg"
+import mobile from "../../assets/Images/image 67.svg"
+import circleImage from "../../assets/Images/circlesvg.svg"
 function ViewDetail() {
     return (
         <div className='w-[100%]'>

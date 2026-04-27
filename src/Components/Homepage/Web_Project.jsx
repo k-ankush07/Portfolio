@@ -1,12 +1,12 @@
 import React from "react";
-import Line24 from "../assets/Images/Line 24.png"
-import Line25 from "../assets/Images/Line 25.png"
-import Line26 from "../assets/Images/Line 26.png"
-import arrow from "../assets/Images/arrow.svg"
-import DownArrow from "../assets/Images/Vector.png"
-import vector13 from "../assets/Images/Vector13.png"
-import vector16 from "../assets/Images/Vector16.png"
-import linepurple from "../assets/Images/linepurple.png"
+import Line24 from "../../assets/Images/Line 24.png"
+import Line25 from "../../assets/Images/Line 25.png"
+import Line26 from "../../assets/Images/Line 26.png"
+import arrow from "../../assets/Images/arrow.svg"
+import DownArrow from "../../assets/Images/Vector.png"
+import vector13 from "../../assets/Images/Vector13.png"
+import vector16 from "../../assets/Images/Vector16.png"
+import linepurple from "../../assets/Images/linepurple.png"
 function Web_Project() {
   return (
     <section className=" px-2 md:px-0 xl:px-0">
