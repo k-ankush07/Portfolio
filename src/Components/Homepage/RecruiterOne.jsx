@@ -114,7 +114,7 @@ import React, { useRef } from "react";
 import shopify from "../../assets/Images/Vector (5).svg";
 import circleImage from "../../assets/Images/circlesvg.svg";
 import Background from "../../assets/Images/Background.svg";
-import star from "../../assets/Images/vector (9).svg";
+import star from "../../assets/Images/star.svg";
 import Bun from "../../assets/Images/rsection (1).svg";
 import Docker from "../../assets/Images/rsection (2).svg";
 import Next from "../../assets/Images/rsection (3).svg";
