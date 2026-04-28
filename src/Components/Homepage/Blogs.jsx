@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import border from "../../assets/Images/Border (2).png"
 import border2 from "../../assets/Images/Border (3).png"
@@ -8,11 +8,17 @@ import fullimage from "../../assets/Images/post.svg"
 
 
 function Blogs() {
+        const [isHovered, setIsHovered] = useState(false);
   return (
-       <div className='flex relative w-full sm:w-[49%] md:w-[33.3%]'>
+       <div className='flex relative w-full sm:w-[49%] md:w-[33.3%] cursor-pointer'
+          onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}    
+       >
                 <div className='border-[2px] border-[#292929] rounded-[8px] pt-3  w-[100%] '>
                   
-                      <div className='flex items-center justify-between py-5 px-3 lg:pl-10 lg:pr-7'>
+                      <div className={`flex items-center justify-between py-5 px-3 lg:pl-10 lg:pr-7 transition-all duration-400
+                         ${isHovered ? "   -translate-y-2" : "-translate-y-0"}
+                        `}>
                         <h1 className='text-[#FFFFFF]  text-[10px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
                             {/* <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px] lg:h-[30px] lg:w-[30px] flex items-center justify-center rounded-full'> */}
@@ -21,7 +27,8 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className='flex  justify-center items-end px-2 pb-8 '>
+                    <div className={`flex  justify-center items-end px-2 pb-8 transition-all duration-400
+                         ${isHovered ? "scale-110" : "scale-100"} `}>
                          <img src={fullimage} alt='image' className='' />
                      
                     </div>

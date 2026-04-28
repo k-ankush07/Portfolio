@@ -7,13 +7,15 @@ html {
 }
 
 
-body{
+body {
   background-color: #000000;
 }
+
 /* global.css */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -42,6 +44,7 @@ body{
   width: 100%;
   overflow: hidden;
 }
+
 .dolor_container .swiper {
   padding: 15px 0px;
 }
@@ -55,12 +58,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .firsts_slider .swiper-slide img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 100% !important ;
   object-fit: contain;
 }
 
@@ -91,85 +95,149 @@ img.toolWeTrust {
     flex-wrap: wrap;
   }
 }
-@media(max-width: 540px){
-  .tool_div{
-    max-width:281px;
+
+@media(max-width: 540px) {
+  .tool_div {
+    max-width: 281px;
   }
 }
 
 
-@media(max-width:299px){
-  .image_ab{
+@media(max-width:299px) {
+  .image_ab {
     /* display: none; */
     height: 18px;
     width: 18px;
   }
 }
-@media(min-width:300px) and (max-width:350px){
-  .image_ab{
+
+@media(min-width:300px) and (max-width:350px) {
+  .image_ab {
     /* display: none; */
     height: 20px;
     width: 20px;
   }
 }
-@media (min-width:351px) and (max-width:402px){
-  .image_ab{
+
+@media (min-width:351px) and (max-width:402px) {
+  .image_ab {
     /* display: none; */
     height: 25px;
     width: 25px;
   }
 }
-@media(min-width:411px) and (max-width:529px){
-  .image_ab{
+
+@media(min-width:411px) and (max-width:529px) {
+  .image_ab {
     /* display: none; */
     height: 30px;
     width: 30px;
   }
 }
-@media(min-width:530px) and (max-width:600px){
-  .image_ab{
+
+@media(min-width:530px) and (max-width:600px) {
+  .image_ab {
     /* display: none; */
     height: 40px;
     width: 40px;
   }
 }
-@media(min-width:601px) and (max-width:639px){
-  .image_ab{
-    /* display: none; */
-    height: 50px;
-    width: 50px;
-  }
-}
-@media(min-width:640px) and (max-width:750px){
-  .image_ab{
+
+@media(min-width:601px) and (max-width:639px) {
+  .image_ab {
     /* display: none; */
     height: 50px;
     width: 50px;
   }
 }
 
-@media(min-width:751px) and (max-width:1024px){
-  .image_ab{
+@media(min-width:640px) and (max-width:750px) {
+  .image_ab {
+    /* display: none; */
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media(min-width:751px) and (max-width:1024px) {
+  .image_ab {
     /* display: none; */
     height: 70px;
     width: 70px;
   }
 }
 
+@media (max-width: 480px) {
+  .xs\:top-\[15px\] {
+    top: 15px;
+  }
+}
+
+@theme {
+  --breakpoint-xs: 480px;
+}
+
+
+
+@media screen and (max-width:400px) {
+  .full_image {
+    top: 18px!important;
+  }
+
+  .left-center {
+    top: 27px!important;
+  }
+
+  .left-center-5 {
+    top: 27px!important;
+    right: 51px!important;
+  }
+}
+
+
+@media screen and (max-width:430px) {
+  .left-center {
+    top: 30px;
+  }
+
+  .left-center-5 {
+    right: 55px;
+    top: 33px;
+  }
+
+  .full_image {
+    top: 24px;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  .left-center-5 {
+    right: 63px;
+    top: 39px;
+  }
+
+  .left-center {
+    top: 39px;
+  }
+
+}
+
+
+
+
 
 /* animations  */
- 
+
 
 /* next launching effect  */
 .text-sweep {
-  background: linear-gradient(
-    90deg,
-    #c58962 0%,
-    #c58962 40%,
-    rgba(74, 74, 74, 0.6) 50%,
-    #c58962 60%,
-    #c58962 100%
-  );
+  background: linear-gradient(90deg,
+      #c58962 0%,
+      #c58962 40%,
+      rgba(74, 74, 74, 0.6) 50%,
+      #c58962 60%,
+      #c58962 100%);
 
   background-size: 200% 100%;
 
@@ -186,6 +254,7 @@ img.toolWeTrust {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -206,9 +275,10 @@ img.toolWeTrust {
   position: absolute;
   inset: 0;
 
-  background: #d0cac1; /* hover color */
+  background: #d0cac1;
+  /* hover color */
 
-  
+
   transform: translateX(-100%);
   transition: transform 0.4s ease;
 
@@ -220,4 +290,20 @@ img.toolWeTrust {
   transform: translateX(0);
 }
 
-/* optional text color change */
+/* concept section aanimation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 6s linear infinite;
+}
+
+
+

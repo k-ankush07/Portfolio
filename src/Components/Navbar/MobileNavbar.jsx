@@ -36,6 +36,7 @@ export default function MobileNavbar() {
 
   return (
     <>
+    <div className="lato-regular ">
       {/* TOP BAR */}
       <motion.div
         initial={{ opacity: 0, y: -20, scale: 0.9 }}
@@ -176,6 +177,7 @@ export default function MobileNavbar() {
           </>
         )}
       </AnimatePresence>
+      </div>
     </>
   );
 }

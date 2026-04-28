@@ -4,15 +4,18 @@ import logo from "../../assets/Images/Vector (3).svg"
 import logo2 from "../../assets/Images/Vector (4).svg"
 import { motion } from "framer-motion";
 import MobileNavbar from "./MobileNavbar";
+import { IoLink } from "react-icons/io5";
+import { FaBook } from "react-icons/fa";
+import { FaCreditCard } from "react-icons/fa";
 const menuItems = [
   { label: "Guestbook", desc: "Let me know you were here", img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80" },
   { label: "Bucket List", desc: "Things to do at least once in my life", img: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80" },
 ];
 
 const listItems = [
-  { icon: "🔗", label: "Links", desc: "All my links are here" },
-  { icon: "📖", label: "Uses", desc: "A peek into my digital..." },
-  { icon: "💳", label: "Attribution", desc: "Journey to create this site" },
+  { icon: <IoLink />, label: "Links", desc: "All my links are here" },
+  { icon: <FaBook />, label: "Uses", desc: "A peek into my digital..." },
+  { icon: <FaCreditCard />, label: "Attribution", desc: "Journey to create this site" },
 ];
 
 export default function Navbar() {
@@ -60,7 +63,7 @@ const handleMouseLeave = () => {
   };
 
   return (
-    <section className="bg-[#000000] sticky top-0 z-50"
+    <section className="lato-regular  sticky top-0 z-50"
     >
       <div className="container ">
         <MobileNavbar />
@@ -93,7 +96,7 @@ const handleMouseLeave = () => {
       ? "150px" 
       : open 
         ? "700px" 
-        : "350px", 
+        : "380px", 
     }}
     transition={{ duration: 0.4, ease: "easeInOut" }}
     className="bg-[rgba(38,38,38,0.92)] backdrop-blur-2xl border border-white/10 
@@ -102,7 +105,7 @@ const handleMouseLeave = () => {
     
     {/* TOP NAV (CENTER FIXED) */}
    <div className="flex justify-center relative overflow-hidden">
-  <div className="flex items-center justify-center gap-1 px-3 py- min-h-[40px]">
+  <div className="flex items-center justify-center gap-1 px-3 py-[3px] min-h-[40px]">
 
     {/* GREETING */}
     <motion.span
@@ -112,7 +115,7 @@ const handleMouseLeave = () => {
         y: showGreeting ? 0 : -10,
       }}
       transition={{ duration: 0.25 }}
-      className="absolute text-white text-[14px] font-medium whitespace-nowrap"
+      className="absolute text-white text-[16px] font-medium whitespace-nowrap"
     >
       {getGreeting()}
     </motion.span>
@@ -131,7 +134,7 @@ const handleMouseLeave = () => {
         <button
           key={link}
           onClick={() => setActive(link)}
-          className="relative px-[14px] py-[6px] cursor-pointer rounded-full text-[13.5px] font-medium text-white/70"
+          className="relative px-[14px] py-[6px] cursor-pointer rounded-[22px] lg:text-[16px] font-medium text-white/70"
         >
           {active === link && (
             <motion.div
@@ -158,7 +161,7 @@ const handleMouseLeave = () => {
           setIsPinned((prev) => !prev);
           setOpen((prev) => !prev);
         }}
-        className="flex items-center gap-1 cursor-pointer px-[14px] py-[6px] rounded-full text-[13.5px] font-medium text-white/65 hover:bg-white/8 hover:text-white"
+        className="flex items-center gap-1 cursor-pointer px-[14px] py-[6px] rounded-full text-[16px] font-medium text-white/65 hover:bg-white/8 hover:text-white"
       >
         More
         <span
@@ -192,7 +195,7 @@ const handleMouseLeave = () => {
   <div
     key={item.label}
     className={`
-      relative rounded-[13px] overflow-hidden h-[200px]
+      relative rounded-[13px] cursor-pointer overflow-hidden h-[200px]
       transition-all duration-500
       ${open
         ? "opacity-100 translate-y-0"
@@ -221,7 +224,7 @@ const handleMouseLeave = () => {
     key={item.label}
     className={`
       flex items-center gap-3 p-3 rounded-xl
-      bg-white/7 hover:bg-white/12 transition-all duration-500
+      bg-white/7 hover:bg-white/12 cursor-pointer transition-all duration-500
       ${open
         ? "opacity-100 translate-y-0"
         : "opacity-0 translate-y-4"

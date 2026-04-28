@@ -166,15 +166,15 @@ const item = {
       <section
         ref={ref}
         className="sticky    py-3 sm:py-0"
-        style={{
-          top: isMobile
-            ? `${40 + index * 30}px` // 📱 mobile
-            : `${100 + index * 80}px`, // 💻 desktop
-          zIndex: 10 + index,
-        }}
+        // style={{
+        //   top: isMobile
+        //     ? `${40 + index * 30}px` //  mobile
+        //     : `${100 + index * 80}px`, //  desktop
+        //   zIndex: 10 + index,
+        // }}
       >
         <div className="container">
-          <motion.div style={{ scale, opacity, y }} className=" lg:px-0">
+          <motion.div  className=" lg:px-0">
             <div className=" px-2   lg:px-0 py-[6px]">
               {/* Container */}
               <div

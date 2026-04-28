@@ -12,24 +12,102 @@ import Overlay15 from "../../assets/Images/Overlay (45).svg"
 import background1 from '../../assets/Images/Background+Blur.svg'
 import background2 from '../../assets/Images/Background+Blur (1).svg'
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+
+
+// for images
+const container = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.15,
+        },
+    },
+};
+
+const item = {
+    hidden: { opacity: 0, y: 20, scale: 0.9 },
+    show: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+            type: "spring",
+            stiffness: 120,
+            damping: 10,
+        },
+    },
+};
+
+
+
+// for text
+const textContainer = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.25,
+        },
+    },
+};
+
+const textItem = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeOut",
+        },
+    },
+};
+const mainContainer = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.4, // section-level delay
+        },
+    },
+};
+
 function FullStack() {
+    const skills = [
+        "Brand Design",
+        "UI Design",
+        "Figma",
+        "Adobe After Effects",
+        "Sketch",
+        "Pen & Paper",
+    ];
+    const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
+    const socialIcons = [Overlay11, Overlay10, Overlay8, Overlay9];
     return (
         <section className=' px-3 md:px-0 py-5'>
 
             <div className='container '>
-                <div className='bg-[#000000] lg:flex lg:gap-5 justify-around border items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
+                <div className='bg-[#000000] lg:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
-                    <div className='md:flex  '>
-                        <div className='border py-9 md:py-[40px] md:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                    <div className='md:flex xl:pl-[20px] xl:pr-[40px]  xl:w-[30%] '>
+                        <div className='border py-9 md:py-[40px] md:px-[70px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
-                            <div className='text-center mt-4'>
-                                <h1 className='text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</h1>
-                                <p className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</p>
-                            </div>
+                            <motion.div
+                             variants={textContainer}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.3 }}
+                            className='text-center mt-4'>
+                                <motion.h1
+                               variants={textItem}
+                                 className='text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                <motion.p
+                                variants={textItem}
+                                className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                            </motion.div>
                             <div className='flex justify-center'>
                                 <div className="inline-block mt-3 rounded-md p-[2px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]">
                                     <div className="flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
@@ -38,13 +116,26 @@ function FullStack() {
                                     </div>
                                 </div>
                             </div>
+                            <motion.div
+                                className="flex justify-center gap-2 mt-5"
+                                variants={container}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true, amount: 0.3 }}
+                            >
+                                {socialIcons.map((img, i) => (
+                                    <motion.img
+                                        key={i}
+                                        src={img}
+                                        alt="logo"
+                                        variants={item}
+                                        className="cursor-pointer relative z-[1]"
+                                        whileHover={{ scale: 1.1 }}
+                                    />
+                                ))}
+                            </motion.div>
 
-                            <div className='flex justify-center gap-2 mt-5'>
-                                <img src={Overlay11} alt=' overlay 18' className='cursor-pointer relative z-1' />
-                                <img src={Overlay10} alt=' overlay 18' className='cursor-pointer relative z-1' />
-                                <img src={Overlay8} alt=' overlay 18' className='cursor-pointer relative z-1' />
-                                <img src={Overlay9} alt=' overlay 18' className='cursor-pointer relative z-1' />
-                            </div>
+
                             <div className='flex justify-center'>
                                 <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5'>
                                     Hire Me
@@ -55,55 +146,120 @@ function FullStack() {
                     </div>
 
 
-                   <div className='md:flex gap-6'>
-                     {/* second section */}
-                    <div className=' sm:flex  lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 lg:mt-0 '>
-                        <div >
-                            <div>
-                                <h1 className='text-[#FFFFFF] font-bold text-[20px]'>Work</h1>
-                                <p className='text-[#BDBDBD]'>Osinski, Kohler and Bashirian 74-102565</p>
-                            </div>
+                    <div className='md:flex  gap-6 xl:w-[70%]'>
+                        {/* second section */}
+                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 lg:mt-0 '>
+                            <div className='w-[100%]'>
+                                <motion.div
+                                    variants={textContainer}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.3 }}
+                                >
+                                    <motion.h1
+                                        variants={textItem}
+                                        className='text-[#FFFFFF] font-bold text-[20px]'
+                                    >
+                                        Work
+                                    </motion.h1>
 
-                            <div className='mt-5'>
-                                <h1 className='text-[#FFFFFF] text-[20px] font-bold'>Skills</h1>
-                                <p className='text-[#BDBDBD] text-[14px]'>Osinski, Kohler and Bashirian 74-102565</p>
-                            </div>
-                            <div className='flex flex-wrap gap-2 mt-5 max-w-[350px]  text-[12px]'>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Brand Design </div>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>UI Design </div>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Figma </div>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Adobe After Effects </div>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Sketch</div>
-                                <div className='px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]'>Pen & Paper</div>
-                            </div>
-                            <div className='mt-8'>
-                                <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
+                                    <motion.p
+                                        variants={textItem}
+                                        className='text-[#BDBDBD]'
+                                    >
+                                        Osinski, Kohler and Bashirian 74-102565
+                                    </motion.p>
 
-                                <div className='flex gap-2'>
-                                    <img src={Overlay12} alt='logo' className='cursor-pointer relative z-1' />
-                                    <img src={Overlay13} alt='logo' className='cursor-pointer relative z-1' />
-                                    <img src={Overlay14} alt='logo' className='cursor-pointer relative z-1' />
-                                    <img src={Overlay15} alt='logo' className='cursor-pointer relative z-1' />
+
+                                    <motion.div className='mt-5'
+                                        variants={textContainer}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: true, amount: 0.3 }}>
+                                        <motion.h1
+                                            variants={textItem} className='text-[#FFFFFF] text-[20px] font-bold'>Skills</motion.h1>
+                                        <motion.p variants={textItem} className='text-[#BDBDBD] text-[14px]'>Osinski, Kohler and Bashirian 74-102565</motion.p>
+                                    </motion.div>
+                                </motion.div>
+                                <motion.div
+                                    className="flex flex-wrap gap-2 mt-5 max-w-[350px] text-[12px]"
+                                    variants={container}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.3 }}
+                                >
+                                    {skills.map((itemText, i) => (
+                                        <motion.div
+                                            key={i}
+                                            variants={item}
+                                            className="px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]"
+                                        >
+                                            {itemText}
+                                        </motion.div>
+                                    ))}
+                                </motion.div>
+                                <div className='mt-8'>
+                                    <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
+
+                                    <motion.div
+                                        className="flex gap-2"
+                                        variants={container}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: true, amount: 0.3 }}
+                                    >
+                                        {logos.map((img, i) => (
+                                            <motion.img
+                                                key={i}
+                                                src={img}
+                                                alt="logo"
+                                                variants={item}
+                                                className="cursor-pointer relative z-[1]"
+                                                whileHover={{ scale: 1.1 }}
+                                            />
+                                        ))}
+                                    </motion.div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    {/* 3rd section */}
-                    <div className='flex mt-5 lg:mt-0 lg:justify-center items-center xl:w-[362px]'>
-                        <div>
+                        {/* 3rd section */}
+                        <motion.div
+                            className='flex mt-5 lg:mt-0 lg:justify-center items-center lg:pl-[50px]'
+                            variants={textContainer}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.3 }}
+                        >
                             <div>
-                                <h1 className='text-[#FFFFFF] text-[20px] font-bold max-w-[310px]'>Full-Stack Developer and a little bit of everything</h1>
-                               <div className='space-y-2 text-[#BDBDBD] text-[14px] max-w-[300px]'>
-                                 <p className=' mt-5 '>I'm Aayush Bharti, a proactive full-stack developer passionate about  creating dynamic web experiences. From frontend to backend, I thrive on  solving complex problems with clean, efficient code. My expertise spans  React, Next.js, and Node.js, and I'm always eager to learn more.</p>
-                                <p>When I'm not immersed in work, I'm exploring new ideas and staying curious.  Life's about balance, and I love embracing every part of it.</p>
-                                <p>I believe in waking up each day eager to make a difference!</p>
-                               </div>
+                                <div>
+                                    <motion.h1
+                                        variants={textItem}
+                                        className='text-[#FFFFFF] text-[20px] font-bold max-w-[310px]'
+                                    >
+                                        Full-Stack Developer and a little bit of everything
+                                    </motion.h1>
+
+                                    <div className='space-y-2 text-[#BDBDBD] text-[14px] max-w-[400px]'>
+
+                                        <motion.p variants={textItem} className='mt-5'>
+                                            I'm Aayush Bharti, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
+                                        </motion.p>
+
+                                        <motion.p variants={textItem}>
+                                            When I'm not immersed in work, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.
+                                        </motion.p>
+
+                                        <motion.p variants={textItem}>
+                                            I believe in waking up each day eager to make a difference!
+                                        </motion.p>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
-                   </div>
                 </div>
             </div>
         </section>

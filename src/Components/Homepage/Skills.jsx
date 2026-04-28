@@ -1,22 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, FreeMode } from "swiper/modules";
-import skills1 from "../../assets/Images/skill1.png"
-import skills2 from "../../assets/Images/skill2.png"
-import skills3 from "../../assets/Images/skill3.png"
 import Blur from "../../assets/Images/Gradient+Blur.svg"
-import Border from "../../assets/Images/Border.png"
-import Border1 from "../../assets/Images/Border1.png"
-import Bun from "../../assets/Images/Bun.png"
-import Docker from "../../assets/Images/Docker.png"
-import Next from "../../assets/Images/Next.js.png"
-import pnpm from "../../assets/Images/pnpm.png"
-import PostgreSQL from "../../assets/Images/PostgreSQL.png"
-import Redis from "../../assets/Images/Redis.png"
-import Vercel from "../../assets/Images/Vercel.png"
-// import Border4 from "../../assets/Images/skills4.png"
-import Border4 from "../../assets/Images/gp.png"
-
+import Border4 from "../../assets/Images/linesbg.svg"
 import image1 from "../../assets/Images/TypeScript.svg"
 import image2 from "../../assets/Images/skillsimage (1).svg"
 import image3 from "../../assets/Images/skillsimage (2).svg"
@@ -46,7 +32,7 @@ function Skills() {
             <h1 className='text-[#FFFFFF] text-[24px] font-bold'>Skills / Tech Stack</h1>
             <p className='text-[#BDBDBD]   text-[12px] xl:text-[16px] '>Tools and Technologies I Work With</p>
           </div>
-          <div className='flex flex-col  space-y-[27px] lg:space-y-[45px] mt-6'>
+          <div className='flex flex-col  space-y-[27px] lg:space-y-[40px] mt-6'>
             <div className='slider'>
               <Swiper
                 modules={[Autoplay, FreeMode]}
@@ -70,58 +56,58 @@ function Skills() {
                 }}
               >
                 <SwiperSlide>
-                  <img src={image1} alt="Docker" />
+                  <img src={image1} alt="Docker" className="h-20 w-20" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image2} alt="Next.js" />
+                  <img src={image2} alt="Next.js" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" />
+                  <img src={image3} alt="pnpm" className="h-4 w-5" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image4} alt="Docker" />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <img src={image5} alt="Next.js" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image1} alt="Docker" />
+                  <img src={image4} alt="Docker" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image2} alt="Next.js" />
+                  <img src={image5} alt="Next.js" className="h-4 w-5" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={image1} alt="Docker" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image4} alt="Docker" />
+                  <img src={image2} alt="Next.js" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image5} alt="Next.js" />
+                  <img src={image3} alt="pnpm" className="h-4 w-5" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image1} alt="Docker" />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <img src={image2} alt="Next.js" />
+                  <img src={image4} alt="Docker" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" />
+                  <img src={image5} alt="Next.js" className="h-4 w-5" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image4} alt="Docker" />
+                  <img src={image1} alt="Docker" className="h-4 w-5" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image5} alt="Next.js" />
+                  <img src={image2} alt="Next.js" className="h-4 w-5" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={image3} alt="pnpm" className="h-4 w-5" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={image4} alt="Docker" className="h-4 w-5" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={image5} alt="Next.js" className="h-4 w-5" />
                 </SwiperSlide>
 
 

@@ -52,22 +52,17 @@ function ToolWeTrust() {
                     >
                         {images.map((img, index) => (
                             <SwiperSlide key={index} className="flex justify-center">
-                                {/* <div
-                                className={`transition-all duration-500 rounded-xl border p-1 ${activeIndex === index
-                                        ? "scale-105  "
-                                        : "scale-90"
-                                    }`}
-                            > */}
+                            
                                 <div
-                                    className={`transition-all duration-500 rounded-xl border p-1
-                                        ${activeIndex === index ? "scale-105" : "scale-90"}
-                                        ${isHovered ? "border-purple-500 -translate-y-2" : "border-transparent"}
+                                    className={`transition-all duration-400 rounded-xl border p-1
+                                         ${activeIndex === index ? "scale-105" : "scale-90"}
+                                         ${isHovered ? "border-purple-500 -translate-y-2" : "border-transparent"}
                                     `}
-                                      style={{
-    transitionDelay: isHovered
-      ? `${index * 50}ms`
-      : `${(images.length - index) * 50}ms`
-  }}
+                                    style={{
+                                        transitionDelay: isHovered
+                                            ? `${index * 40}ms`
+                                            : `${(images.length - index) * 30}ms`
+                                    }}
                                 >
                                     <img
                                         src={img}
@@ -81,19 +76,20 @@ function ToolWeTrust() {
 
                 </div>
                 <div className='absolute bottom-0 w-[100%]'>
-                    <div className='flex items-center justify-between py-5 px-6'>
+                    <div className={`flex items-center justify-between py-5 px-6 transition-all duration-400
+                         ${isHovered ? " -translate-y-2" : "scale-100"}
+                        `}>
                         {/* <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1> */}
                         <h1
-                            className={`text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold transition-all duration-300
-                            ${isHovered ? " -translate-y-2" : "scale-100"}
+                            className={`text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold 
+                           
                         `}
                         >
                             Tools we trust
                         </h1>
                         <div className='flex justify-end items-end ' >
-                            {/* <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px]  flex items-center justify-center rounded-full'> */}
-                            <img src={arrow} alt='arrow' className={`lg:h-10 lg:w-10  cursor-pointer transition-all duration-300
-                                 ${isHovered ? " -translate-y-2" : "scale-100"}`} />
+                            <img src={arrow} alt='arrow' className={`lg:h-10 lg:w-10  cursor-pointer 
+                                 `} />
                             {/* </div> */}
                         </div>
                     </div>

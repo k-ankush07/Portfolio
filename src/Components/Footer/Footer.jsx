@@ -6,7 +6,7 @@ import Vector1 from "../../assets/Images/Vector (7).svg"
 import Vector2 from "../../assets/Images/Vector (8).svg"
 function Footer() {
     return (
-        <section className="bg-[#000000] py-7 px-2 xl:px-0 ">
+        <section className="py-7 px-2 xl:px-0 ">
             <div className="container">
                 <footer className=" lato-regular text-gray-400 px-3 md:px-15 py-10 rounded-[16px] border border-[#292929]  mx-auto ">
 

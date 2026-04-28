@@ -1,8 +1,16 @@
 import React from 'react'
 import arrow from "../../assets/Images/arrow.svg"
+import RecruiterOne from "./RecruiterOne"
 function ViewAll() {
   return (
-    <div className=' text-[#FFFFFF] text-[14px] md:text-[16px] py-2 lg:py-[22px]  '>
+   <>
+   
+   <div>
+    <RecruiterOne />
+    <RecruiterOne />
+    <RecruiterOne />
+
+     <div className=' text-[#FFFFFF] text-[14px] md:text-[16px] py-2 lg:py-[22px]  '>
           <div className='flex gap-3 justify-center items-center'>
                         <h1>
                             View all Projects
@@ -12,6 +20,8 @@ function ViewAll() {
                     </div>
       
     </div>
+   </div>
+   </>
   )
 }
 
