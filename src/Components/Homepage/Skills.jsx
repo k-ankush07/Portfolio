@@ -56,58 +56,90 @@ function Skills() {
                 }}
               >
                 <SwiperSlide>
-                  <img src={image1} alt="Docker" className="h-20 w-20" />
+                  <div className="main-class">
+                    <img src={image1} alt="Docker" className="skill_slider" />
+                  </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image2} alt="Next.js" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image2} alt="Next.js" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image3} alt="pnpm" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image4} alt="Docker" className="h-4 w-5" />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <img src={image5} alt="Next.js" className="h-4 w-5" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image1} alt="Docker" className="h-4 w-5" />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <img src={image2} alt="Next.js" className="h-4 w-5" />
+                  <div className="main-class">
+                         <img src={image4} alt="Docker" className=" skill_slider" />
+                  </div>
+             
+                  
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image5} alt="Next.js" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image4} alt="Docker" className="h-4 w-5" />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <img src={image5} alt="Next.js" className="h-4 w-5" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image1} alt="Docker" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image1} alt="Docker" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image2} alt="Next.js" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image2} alt="Next.js" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image3} alt="pnpm" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image3} alt="pnpm" className=" skill_slider" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={image4} alt="Docker" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image4} alt="Docker" className="skill_slider" />
+                  </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={image5} alt="Next.js" className="h-4 w-5" />
+                  <div className="main-class">
+                  <img src={image5} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                  <img src={image1} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                  <img src={image2} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                  <img src={image3} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                  <img src={image4} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                  <img src={image5} alt="Next.js" className="skill_slider" />
+                  </div>
                 </SwiperSlide>
 
 
@@ -135,173 +167,245 @@ function Skills() {
                     swiper.autoplay.start();
                   }, 100);
                 }}
+                
               >
-                <SwiperSlide>
-                  <img src={image6} alt="Docker" />
-                </SwiperSlide>
+          
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image6} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image7} alt="Next.js" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image7} alt="Next.js" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image8} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image9} alt="Docker" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image8} alt="pnpm" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image9} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image10} alt="Next.js" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image6} alt="Docker" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image10} alt="Next.js" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image6} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image7} alt="Next.js" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image7} alt="Next.js" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image8} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image9} alt="Docker" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image8} alt="pnpm" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image9} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image10} alt="Next.js" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image6} alt="Docker" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image10} alt="Next.js" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image6} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image7} alt="Next.js" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image7} alt="Next.js" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image8} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image9} alt="Docker" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image8} alt="pnpm" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image9} alt="Docker" className="skill_slider" />
+                     </div>
+                  </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image10} alt="Next.js" />
-                </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="main-class">
+                    <img src={image10} alt="Next.js" className="skill_slider" />
+                    </div>
+                  </SwiperSlide>
               </Swiper>
-            </div>
-            <div className='slider'>
-              <Swiper
-                modules={[Autoplay, FreeMode]}
-                spaceBetween={5}
-                slidesPerView="auto"
-                loop={true}
-                freeMode={{
-                  enabled: true,
-                  momentum: false,
-                }}
-                loopAdditionalSlides={10}
-                autoplay={{
-                  delay: 1,
-                  disableOnInteraction: false,
-                }}
-                speed={5000}
-                onSwiper={(swiper) => {
-                  setTimeout(() => {
-                    swiper.autoplay.start();
-                  }, 100);
-                }}
-              >
-                <SwiperSlide>
-                  <img src={image11} alt="Docker" />
-                </SwiperSlide>
+          </div>
+          <div className='slider'>
+            <Swiper
+              modules={[Autoplay, FreeMode]}
+              spaceBetween={5}
+              slidesPerView="auto"
+              loop={true}
+              freeMode={{
+                enabled: true,
+                momentum: false,
+              }}
+              loopAdditionalSlides={10}
+              autoplay={{
+                delay: 1,
+                disableOnInteraction: false,
+              }}
+              speed={5000}
+              onSwiper={(swiper) => {
+                setTimeout(() => {
+                  swiper.autoplay.start();
+                }, 100);
+              }}
+            >
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image11} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image12} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image12} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image13} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image14} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image13} alt="pnpm" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image14} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image15} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image15} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image11} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image11} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image12} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image12} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image13} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image14} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image13} alt="pnpm" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image14} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image15} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image15} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image11} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image11} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image12} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image12} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image13} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image14} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image13} alt="pnpm" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image14} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image15} alt="Next.js" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image11} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image15} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image11} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image12} alt="Next.js" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image12} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image13} alt="pnpm" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={image14} alt="Docker" />
-                </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image13} alt="pnpm" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image14} alt="Docker" className="skill_slider" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src={image15} alt="Next.js" />
-                </SwiperSlide>
-              </Swiper>
-            </div>
-            {/* <img src={skills1} alt='skills logo' />
+              <SwiperSlide>
+                  <div className="main-class">
+                <img src={image15} alt="Next.js" className="skill_slider" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          {/* <img src={skills1} alt='skills logo' />
           <img src={skills2} alt='skills logo' />
           <img src={skills3} alt='skills logo' /> */}
 
-          </div>
-          <div className='absolute bottom-0 left-0 w-[100%] -z-0'>
-            <img src={Border4} alt='border line' className="w-full" />
-
-          </div>
         </div>
+        <div className='absolute bottom-0 left-0 w-[100%] -z-0'>
+          <img src={Border4} alt='border line' className="w-full" />
 
+        </div>
       </div>
+
+    </div >
 
     </>
   )

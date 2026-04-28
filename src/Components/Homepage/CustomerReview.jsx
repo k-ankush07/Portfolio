@@ -14,11 +14,11 @@ function CustomerReview() {
             onMouseLeave={() => setIsHovered(false)}
    >
             <div className='border-[2px] border-[#292929] rounded-[8px] py-30 sm:pt-15  w-[100%]  '>
-                <img src={arrow1} alt='phone cll' className={` w-[40%] sm:w-[40%] absolute top-[2.4px] left-10 transition-all duration-400
+                <img src={arrow1} alt='phone cll' className={` w-[40%] sm:w-[40%] absolute top-[2.4px] overflow-hidden left-10 transition-all duration-400
                     ${isHovered ? " -translate-x-1 rotate-1" : "-translate-y-0 rotate-0"}
                 `}
                  />
-                <img src={arrow2} alt='phone cll' className= {` w-[55%] sm:w-[60%] top-1 right-20  absolute  sm:top-10 sm:right-4   transition-all duration-400 lg:top-4
+                <img src={arrow2} alt='phone cll' className= {` bottom-image w-[55%] sm:w-[60%] top-1 right-20  absolute  sm:top-10 sm:right-4   transition-all duration-400 lg:top-4
                   ${isHovered ? " translate-x-1 rotate-2" : "border-transparent"}
                   `} />
                 <div className='flex  justify-center items-end py-6 '>

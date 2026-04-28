@@ -48,9 +48,32 @@ body {
 .dolor_container .swiper {
   padding: 15px 0px;
 }
+.main-class{
+  height: 21px;
+}
+.skill_slider{
+  height: 100%;
+}
 
 .swiper-wrapper {
   transition-timing-function: linear !important;
+  /* height: 20px !important; */
+}
+@media (min-width:768px) and (max-width:1023px){
+ .main-class{
+  height: 25px!important;
+}
+.skill_slider{
+  height: 100%!important;
+}
+}
+@media (min-width:1024px){
+  .main-class{
+    height: 30px !important;
+  }
+  .skill_slider{
+  height: 100%!important;
+}
 }
 
 .firsts_slider .swiper-slide {
@@ -208,7 +231,11 @@ img.toolWeTrust {
   .full_image {
     top: 24px;
   }
-
+  .bottom-image
+ {
+    right: 30px;
+    top: 29px;
+ }
 }
 
 @media screen and (max-width:480px) {

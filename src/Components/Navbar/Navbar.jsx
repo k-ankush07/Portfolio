@@ -7,6 +7,7 @@ import MobileNavbar from "./MobileNavbar";
 import { IoLink } from "react-icons/io5";
 import { FaBook } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
 const menuItems = [
   { label: "Guestbook", desc: "Let me know you were here", img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80" },
   { label: "Bucket List", desc: "Things to do at least once in my life", img: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80" },
@@ -168,7 +169,7 @@ const handleMouseLeave = () => {
           className="text-[10px] opacity-55 transition-transform duration-200"
           style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
         >
-          ▾
+          <MdKeyboardArrowDown />
         </span>
       </button>
     </motion.nav>
