@@ -19,7 +19,7 @@ import {
   useSpring,
 } from "framer-motion";
 
-function RecruiterOne({ index }) {
+function RecruiterOne({ index,desc }) {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -107,7 +107,7 @@ function RecruiterOne({ index }) {
 
                 <div className="md:max-w-[430px] hidden lg:block text-[#BDBDBD]">
                   <p>
-                    Developed a recruitment platform to connect job seekers and recruiters. Implemented job posting, candidate profiles, and application tracking. Built secure user authentication and role-based dashboards.
+                   {desc}
                   </p>
                 </div>
 

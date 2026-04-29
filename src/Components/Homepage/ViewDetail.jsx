@@ -147,10 +147,10 @@ function ViewDetail() {
 
 
            {/* main div for images */}
-<div className="relative flex justify-center overflow-hidden items-end px-6">
+<div className="relative flex justify-center  overflow-hidden items-end px-6">
   
   {/* Left Image */}
-  <div className="w-[32.3%]">
+  <div className="w-[33%]">
     <img
       src={leftimage}
       alt="left Image"
@@ -163,7 +163,7 @@ function ViewDetail() {
   </div>
 
   {/* Center Image */}
-  <div className="w-[36%] z-[99] overflow-hidden">
+  <div className="w-[34%] z-[99] overflow-hidden">
     <img
       src={centerimage}
       alt="center Image"
@@ -174,14 +174,12 @@ function ViewDetail() {
   </div>
 
   {/* Right Image */}
-  <div className="w-[32%]">
+  <div className="w-[33%]">
     <img
       src={rightimage}
       alt="right Image"
       className="
-        right-image  h-full w-full absolute -z-0
-        
-       
+        right-image  h-full w-full absolute -z-0 
       "
     />
   </div>

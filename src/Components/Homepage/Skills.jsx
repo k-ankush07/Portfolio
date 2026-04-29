@@ -25,8 +25,8 @@ function Skills() {
     <>
 
 
-      <div className=' relative bg-[#000000] inline-block xl:w-[40%] firsts_slider'>
-        <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 ' />
+      <div className=' relative bg-[#000000] inline-block xl:w-[40%] firsts_slider group '>
+        <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 opacity-85 transition-all duration-400 group-hover:opacity-100 ' />
         <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[15px] lg:pt-[53px] pb-[37px] lg:pb-[85px]'>
           <div className='text-center py-4'>
             <h1 className='text-[#FFFFFF] text-[24px] font-bold'>Skills / Tech Stack</h1>
@@ -408,7 +408,7 @@ function Skills() {
           <img src={skills3} alt='skills logo' /> */}
 
         </div>
-        <div className='absolute bottom-0 left-0 w-[100%] -z-0'>
+        <div className='absolute bottom-0 left-0 w-[100%] -z-0 '>
           <img src={Border4} alt='border line' className="w-full" />
 
         </div>

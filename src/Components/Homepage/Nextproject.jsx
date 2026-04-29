@@ -48,11 +48,11 @@ const item = {
   return (
    <>
   <div className='bg-[#000000] xl:w-[60%]'>
-     <div className=' bg-[#000000] h-[100%] relative flex flex-col justify-center items-center  md:px-15 py-4 rounded-[8px] border border-[#292929]  mx-auto px-[39px] cursor-pointer'
+     <div className=' group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center  md:px-15 py-4 rounded-[8px] border border-[#292929]  mx-auto px-[39px] cursor-pointer'
      onMouseEnter={() => setShow(true)}
     onMouseLeave={() => setShow(false)}
      >
-    <img src={Blur} alt='blur gradient' className='absolute right-0 overflow-hidden top-0' />
+    <img src={Blur} alt='blur gradient' className='absolute right-0 overflow-hidden top-0 opacity-85 transition-all duration-400 group-hover:opacity-100' />
      <div className="text-[#FFFFFF] lg:pt-10 relative z-50">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
@@ -123,7 +123,7 @@ const item = {
     "--y": "80px",
     animationDelay: "0.1s",
   }}  /> */}
-      <img src={curveLine}  alt='curve line' className=""  />
+      <img src={curveLine}  alt='curve line' className=" "  />
       
     </div> 
     </motion.div>
