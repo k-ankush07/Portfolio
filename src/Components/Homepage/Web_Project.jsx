@@ -211,7 +211,7 @@ function Web_Project() {
             />
 
             {/* Cards */}
-            <div className="flex gap-1 sm:flex-row justify-center lg:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pl-[75px] lg:pr-[76px]">
+            <div className="flex gap-1 px-3 sm:px-0 sm:flex-row justify-center lg:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pl-[75px] lg:pr-[76px]">
 
               {/* Card 1 */}
               <motion.div
@@ -220,14 +220,10 @@ function Web_Project() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.35 }}
-                whileHover={{
-                  y: -10,
-                  scale: 1.03,
-                  transition: { duration: 0.3 },
-                }}
                 className="relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[120px]"
               >
-                <div className="bg-[#0e0c13] rounded-xl w-full lg:w-[200px] p-2 sm:p-5 border border-white/10">
+                <div className= " transition-all duration-300 hover:scale-105">
+                  <div className="bg-[#0e0c13] rounded-xl w-full lg:w-[200px] p-2 sm:p-5 border border-white/10 ">
                   <img src={Line24} alt="lines" className="mb-3 w-full" />
 
                   <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3 sm:space-y-2">
@@ -244,6 +240,7 @@ function Web_Project() {
                     Why Choose Me
                   </h1>
                 </span>
+                </div>
               </motion.div>
 
               {/* Card 2 */}
@@ -253,14 +250,11 @@ function Web_Project() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.35 }}
-                whileHover={{
-                  y: -10,
-                  scale: 1.03,
-                  transition: { duration: 0.3 },
-                }}
+                
                 className="relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[50px]"
               >
-                <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
+               <div className="transition-all duration-300 hover:scale-105">
+                 <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                   <img src={Line25} alt="lines" className="mb-3 w-full" />
 
                   <ul className="text-gray-300 space-y-3">
@@ -334,6 +328,7 @@ function Web_Project() {
                     Business Analytics
                   </p>
                 </span>
+               </div>
               </motion.div>
 
               {/* Card 3 */}

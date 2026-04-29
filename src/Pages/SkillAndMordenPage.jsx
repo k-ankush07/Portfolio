@@ -13,7 +13,7 @@ function SkillAndMordenPage() {
         
             <div className='  py-3 xl:mt-[-70px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[9px]'>
               <Skills />
-              
+               
               {/* <Next_Project /> */}
               <Nextproject />
             </div>

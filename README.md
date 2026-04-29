@@ -20,17 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-<!-- @media (min-width: 1280px) and (max-width: 1535px) {
-  .center-image { margin-bottom: -59px; margin-top: 56px; }
-
-  .left-image  { width: 28%; left: -19%; top: 60px; }
-  .right-image { width: 28%; right: -19%; top: 60px; }
-
-  .group:hover .left-image  { left: -22%; }
-  .group:hover .right-image { right: -22%; }
-} -->
-
-<!--  -->
 overflow-hidden transition-all duration-300 ease-in
         h-full w-full group-hover:scale-97
 
@@ -45,6 +34,8 @@ overflow-hidden transition-all duration-300 ease-in
 
         /* xl: add top margin to match original */
         xl:mt-14
+
+
 
 
 

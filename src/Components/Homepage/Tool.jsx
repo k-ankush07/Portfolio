@@ -59,7 +59,7 @@ function Tool() {
   const images = [
     Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
     Overlay6, Overlay7, Overlay8, Overlay9, Overlay10, Overlay11,
-    Overlay12, Overlay13,Overlay14, Overlay15, Overlay16
+    Overlay12
   ];
   //  const images = [
   //   Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
