@@ -4,12 +4,14 @@ import messageIcon from "../../assets/Images/messageIcon.svg"
 import location from "../../assets/Images/location.svg"
 import emoji from "../../assets/Images/emoji.png"
 import emoji1 from "../../assets/Images/emoji1.png"
+
+
 function Modern_Scalable() {
 
   const [show, setShow] = useState(false);
   
     useEffect(() => {
-      setShow(true); // page load hote hi animation start
+      setShow(true); 
     }, []);
   return (
     <>
@@ -24,8 +26,8 @@ function Modern_Scalable() {
   <div className=" h-[100%] w-[100%]  absolute xl:left-1/2 xl:top-1/6  xl:-translate-x-1/3 xl:-translate-y-1/10  2xl:left-1/2 2xl:top-1/6    2xl:-translate-x-1/3 2xl:-translate-y-1/9">
     <img
       src={earth}
-      alt="earth"
-      className=" h-[30rem]  w-[100%] sm:h-auto sm:w-auto object-cover opacity-60 "
+      alt="earth" 
+      className="  h-[30rem]  w-[100%] sm:h-auto sm:w-auto object-cover opacity-60 "
     />
   </div>
 </div>

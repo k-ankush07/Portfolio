@@ -97,7 +97,7 @@ const handleMouseLeave = () => {
       ? "150px" 
       : open 
         ? "700px" 
-        : "380px", 
+        : "400px", 
     }}
     transition={{ duration: 0.4, ease: "easeInOut" }}
     className="bg-[rgba(38,38,38,0.92)] backdrop-blur-2xl border border-white/10 
@@ -129,7 +129,7 @@ const handleMouseLeave = () => {
         y: showGreeting ? 10 : 0,
       }}
       transition={{ duration: 0.25 }}
-      className="flex items-center"
+      className="flex items-center gap-1"
     >
       {["Home", "About", "Work", "Blog"].map((link) => (
         <button
@@ -162,14 +162,14 @@ const handleMouseLeave = () => {
           setIsPinned((prev) => !prev);
           setOpen((prev) => !prev);
         }}
-        className="flex items-center gap-1 cursor-pointer px-[14px] py-[6px] rounded-full text-[16px] font-medium text-white/65 hover:bg-white/8 hover:text-white"
+        className="flex items-center  cursor-pointer px-[14px] py-[6px] rounded-full text-[16px] font-medium text-white/65 hover:bg-white/8 hover:text-white"
       >
         More
         <span
           className="text-[10px] opacity-55 transition-transform duration-200"
           style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
         >
-          <MdKeyboardArrowDown />
+          <div className="text-[20px]"><MdKeyboardArrowDown /></div>
         </span>
       </button>
     </motion.nav>

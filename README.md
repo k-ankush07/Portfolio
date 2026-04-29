@@ -19,15 +19,38 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-<!-- <div className="relative">
-  <div className="h-[300vh]">
-   <RecruiterOne className="z-10" />
-<RecruiterOne className="z-20 " />
-<RecruiterOne className="z-30" />
-  </div>
-</div> -->
 
-           <section className=' h-screen sticky top-0 flex items-center py-3 sm:py-0'>
+<!-- @media (min-width: 1280px) and (max-width: 1535px) {
+  .center-image { margin-bottom: -59px; margin-top: 56px; }
+
+  .left-image  { width: 28%; left: -19%; top: 60px; }
+  .right-image { width: 28%; right: -19%; top: 60px; }
+
+  .group:hover .left-image  { left: -22%; }
+  .group:hover .right-image { right: -22%; }
+} -->
+
+<!--  -->
+overflow-hidden transition-all duration-300 ease-in
+        h-full w-full group-hover:scale-97
+
+        /* Mobile: reduce bottom bleed */
+        -mb-6
+
+        /* sm */
+        sm:-mb-10
+
+        /* md+ */
+        md:-mb-[59px]
+
+        /* xl: add top margin to match original */
+        xl:mt-14
+
+
+
+
+
+
 
 
 

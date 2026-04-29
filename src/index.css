@@ -54,6 +54,10 @@ body {
 .skill_slider{
   height: 100%;
 }
+.slider .swiper {
+  touch-action: none;
+  pointer-events: none; /* touch aur mouse dono block */
+}
 
 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -109,6 +113,7 @@ img.toolWeTrust {
 @media (max-width: 1023px) {
   .image_background {
     background-image: none !important;
+    background-color: #000000;
   }
 }
 
@@ -334,3 +339,63 @@ img.toolWeTrust {
 
 
 
+
+
+
+
+
+
+
+
+/* developer section media query */
+.center-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  
+}
+.left-image,
+.right-image {
+  transition: all 0.3s ease-in;
+  z-index: 0;
+}
+.left-image  { transform: rotate(-10deg)  !important; }
+.right-image { transform: rotate(10deg)  !important; }
+
+.group:hover .left-image  { transform: rotate(0deg) !important; }
+.group:hover .right-image { transform: rotate( 0deg) !important; }
+ @media  (min-width: 320px) and (max-width: 549px) {
+  .center-image{ margin-bottom: -25px;}
+  .left-image  {  left: -18%; top: 35px; }
+  .right-image { right: -18%; top: 35px; }
+
+  .group:hover .left-image  { left: -33.5%; }
+  .group:hover .right-image { right: -34%; }
+} 
+ @media  (min-width: 550px) and (max-width: 849px) {
+  .center-image{ margin-bottom: -35px;}
+  .left-image  {  left: -18%; top: 55px; }
+  .right-image { right: -18%; top: 55px; }
+
+  .group:hover .left-image  { left: -33.5%; }
+  .group:hover .right-image { right: -34%; }
+} 
+ @media  (min-width: 850px) and (max-width: 1439px) {
+  .center-image{ margin-bottom: -60px;}
+  .left-image  {  left: -18%; top: 70px; }
+  .right-image { right: -18%; top: 70px; }
+
+  .group:hover .left-image  { left: -33.5%; }
+  .group:hover .right-image { right: -34%; }
+} 
+@media   (min-width: 1440px) {
+  
+  .center-image{ margin-bottom: -60px;}
+  .left-image  {  left: -18%; top: 70px; }
+  .right-image { right: -18%; top: 70px; }
+
+  .group:hover .left-image  { left: -34%; }
+  .group:hover .right-image { right: -34.5%; }
+} 

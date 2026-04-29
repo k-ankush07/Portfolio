@@ -39,6 +39,7 @@ function Skills() {
                 spaceBetween={5}
                 slidesPerView="auto"
                 loop={true}
+                 allowTouchMove={false}  
                 freeMode={{
                   enabled: true,
                   momentum: false,
@@ -50,10 +51,12 @@ function Skills() {
                 }}
                 speed={5000}
                 onSwiper={(swiper) => {
-                  setTimeout(() => {
-                    swiper.autoplay.start();
-                  }, 100);
-                }}
+    setTimeout(() => swiper.autoplay.start(), 100);
+
+    // Touch completely disable karo
+    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+  }}
               >
                 <SwiperSlide>
                   <div className="main-class">
@@ -155,6 +158,7 @@ function Skills() {
                   enabled: true,
                   momentum: false,
                 }}
+                 allowTouchMove={false}  
                 loopAdditionalSlides={10}
                 autoplay={{
                   delay: 1,
@@ -162,11 +166,13 @@ function Skills() {
                 }}
                 dir="rtl"
                 speed={5000}
-                onSwiper={(swiper) => {
-                  setTimeout(() => {
-                    swiper.autoplay.start();
-                  }, 100);
-                }}
+             onSwiper={(swiper) => {
+    setTimeout(() => swiper.autoplay.start(), 100);
+
+    // Touch completely disable karo
+    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+  }}
                 
               >
           
@@ -262,6 +268,7 @@ function Skills() {
               spaceBetween={5}
               slidesPerView="auto"
               loop={true}
+              allowTouchMove={false}  
               freeMode={{
                 enabled: true,
                 momentum: false,
@@ -272,11 +279,13 @@ function Skills() {
                 disableOnInteraction: false,
               }}
               speed={5000}
-              onSwiper={(swiper) => {
-                setTimeout(() => {
-                  swiper.autoplay.start();
-                }, 100);
-              }}
+               onSwiper={(swiper) => {
+    setTimeout(() => swiper.autoplay.start(), 100);
+
+    // Touch completely disable karo
+    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+  }}
             >
               <SwiperSlide>
                   <div className="main-class">

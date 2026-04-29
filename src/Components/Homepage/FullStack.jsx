@@ -91,7 +91,7 @@ function FullStack() {
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
                     <div className='md:flex xl:pl-[20px] xl:pr-[40px]  xl:w-[30%] '>
-                        <div className='border py-9 md:py-[40px] md:px-[70px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                        <div className='border py-9 md:py-[40px] md:px-[65px] xl:px-[70px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -137,7 +137,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5'>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-8 mt-5'>
                                     Hire Me
                                 </button></Link>
                             </div>
