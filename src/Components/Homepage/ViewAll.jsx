@@ -1,6 +1,7 @@
 import React from 'react'
 import arrow from "../../assets/Images/arrow.svg"
 import RecruiterOne from "./RecruiterOne"
+import {motion} from "framer-motion"
 function ViewAll() {
   
   return (
@@ -19,7 +20,16 @@ function ViewAll() {
                             View all Projects
                            
                         </h1>
-                         <img src={arrow} alt='arrow' className='lg:h-10 lg:w-10 cursor-pointer' />
+                         <motion.img
+              src={arrow}
+              alt="arrow" 
+              className='lg:h-10 lg:w-10 cursor-pointer'
+               initial={{ opacity: 0, scale: 0.4, rotate: -90 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              whileHover={{ scale: 1.15, rotate: 10 }}
+              transition={{ duration: 0.8 }}
+              />
                     </div>
       
     </div>

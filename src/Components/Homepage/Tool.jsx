@@ -39,111 +39,115 @@ import Overlay34 from "../../assets/Images/Overlay (34).svg";
 import Overlay35 from "../../assets/Images/Overlay (35).svg";
 import Overlay36 from "../../assets/Images/Overlay (36).svg";
 import Overlay37 from "../../assets/Images/Overlay (37).svg";
-// import Overlay38 from "../../assets/Images/Overlay (29).svg"
-// import Overlay39 from "../../assets/Images/Overlay (30).svg"
-// import Overlay40 from "../../assets/Images/Overlay (31).svg"
-// import Overlay41 from "../../assets/Images/Overlay (32).svg"
-// import Overlay42 from "../../assets/Images/Overlay (33).svg"
-// import Overlay43 from "../../assets/Images/Overlay (34).svg"
-// import Overlay44 from "../../assets/Images/Overlay (35).svg"
-// import Overlay45 from "../../assets/Images/Overlay (36).svg"
-// import Overlay46 from "../assets/Images/Overlay (46).svg"
-
+import { motion } from "framer-motion";
 function Tool() {
   const sceneRef = useRef(null);
-  const renderRef = useRef(null);
+  const engineRef = useRef(null);
   const runnerRef = useRef(null);
+  const animFrameRef = useRef(null);
 
   const [start, setStart] = useState(false);
 
   const images = [
     Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
-    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10, Overlay11,
-    Overlay12
+    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10
   ];
-  //  const images = [
-  //   Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
-  //   Overlay6, Overlay7, Overlay8, Overlay9, Overlay10, Overlay11,
-  //   Overlay12, Overlay13, Overlay14, Overlay15, Overlay16, Overlay17,
-  //   Overlay18, Overlay19, Overlay20, Overlay21, Overlay22, Overlay23,
-  //   Overlay24, Overlay25, Overlay26, Overlay27, Overlay28, Overlay29,
-  //   Overlay30, Overlay31, Overlay32, Overlay33, Overlay34, Overlay35,
-  //   Overlay36, Overlay37
-  // ];
+  const trustText = "trust";
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.06,
+    },
+  },
+};
+
+const letter = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.25, 0.8, 0.25, 1],
+    },
+  },
+};
+
+  // Trigger when section enters viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setStart(true),
       { threshold: 0.2 }
     );
-
     if (sceneRef.current) observer.observe(sceneRef.current);
-
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     if (!start) return;
 
-    const {
-      Engine,
-      Render,
-      Runner,
-      Bodies,
-      Composite,
-      Mouse,
-      MouseConstraint,
-    } = Matter;
-
+    const { Engine, Runner, Bodies, Composite, Mouse, MouseConstraint } = Matter;
     const container = sceneRef.current;
+    const imgRefs = [];
 
     const createWorld = () => {
-      const width = container.offsetWidth;
-      const height = container.offsetHeight;
-
-      if (renderRef.current) {
-        Render.stop(renderRef.current);
+      // Cleanup previous world
+      if (engineRef.current) {
         Runner.stop(runnerRef.current);
-        renderRef.current.canvas.remove();
+        cancelAnimationFrame(animFrameRef.current);
+        Matter.World.clear(engineRef.current.world);
+        Matter.Engine.clear(engineRef.current);
       }
 
-      const engine = Engine.create();
-      engine.gravity.y = 0.8;
+      // Remove old injected imgs
+      container.querySelectorAll(".physics-img").forEach((el) => el.remove());
+      imgRefs.length = 0;
 
-      const render = Render.create({
-        element: container,
-        engine,
-        options: {
-          width,
-          height,
-          wireframes: false,
-          background: "#181818",
-        },
+      const width = container.offsetWidth;
+      const height = container.offsetHeight;
+      const SIZE = width > 1024 ? 70 : width > 768 ? 65 : 50;
+
+      // Inject DOM <img> elements directly
+      // Browser renders SVG natively = always sharp, zero blur
+      images.forEach((src) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.className = "physics-img";
+        img.draggable = false;
+        Object.assign(img.style, {
+          position: "absolute",
+          width: SIZE + "px",
+          height: SIZE + "px",
+          userSelect: "none",
+          pointerEvents: "none",
+          willChange: "transform",
+        });
+        container.appendChild(img);
+        imgRefs.push(img);
       });
 
-      const logos = images.map((img) =>
+      // Physics engine
+      const engine = Engine.create();
+      engine.gravity.y = 0.8;
+      engineRef.current = engine;
+
+      const logos = images.map(() =>
         Bodies.rectangle(
           Math.random() * (width - 100) + 50,
           Math.random() * 150,
-          width > 1024 ? 70 : width > 768 ? 65 : 50,
-          width > 1024 ? 70 : width > 768 ? 65 : 50,
+          SIZE,
+          SIZE,
           {
             chamfer: { radius: 14 },
             restitution: 0.8,
             friction: 0.01,
-            render: {
-              sprite: {
-                texture: img,
-                xScale: width > 1024 ? 0.9 : width > 768 ? 0.72 : 0.55,
-                yScale: width > 1024 ? 0.9 : width > 768 ? 0.72 : 0.55,
-              },
-            },
           }
         )
       );
 
       const t = 100;
-
       const walls = [
         Bodies.rectangle(width / 2, height + t / 2, width + t * 2, t, { isStatic: true }),
         Bodies.rectangle(width / 2, -t / 2, width + t * 2, t, { isStatic: true }),
@@ -153,50 +157,53 @@ function Tool() {
 
       Composite.add(engine.world, [...logos, ...walls]);
 
-      // scroll + drag fix
-      const mouse = Mouse.create(render.canvas);
-
+      // Mouse drag attached to container div
+      const mouse = Mouse.create(container);
+      mouse.element.removeEventListener("wheel", mouse.mousewheel);
       mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
       mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
-      mouse.element.removeEventListener("wheel", mouse.mousewheel);
 
-      render.canvas.style.pointerEvents = "auto";
-      render.canvas.style.touchAction = "pan-y";
-
-      const mouseConstraint = MouseConstraint.create(engine, {
-        mouse,
-        constraint: {
-          stiffness: 0.2,
-          render: { visible: false },
-        },
-      });
-
-      Composite.add(engine.world, mouseConstraint);
-
-      Render.run(render);
+      Composite.add(
+        engine.world,
+        MouseConstraint.create(engine, {
+          mouse,
+          constraint: { stiffness: 0.2, render: { visible: false } },
+        })
+      );
 
       const runner = Runner.create();
       Runner.run(runner, engine);
-
-      renderRef.current = render;
       runnerRef.current = runner;
+
+      // RAF loop — direct DOM update, ZERO React re-renders
+      const loop = () => {
+        logos.forEach((body, i) => {
+          const el = imgRefs[i];
+          if (!el) return;
+          el.style.left = body.position.x - SIZE / 2 + "px";
+          el.style.top = body.position.y - SIZE / 2 + "px";
+          el.style.transform = `rotate(${body.angle}rad)`;
+        });
+        animFrameRef.current = requestAnimationFrame(loop);
+      };
+      loop();
     };
 
     createWorld();
 
-    const resizeObserver = new ResizeObserver(() => {
-      createWorld();
-    });
-
+    const resizeObserver = new ResizeObserver(createWorld);
     resizeObserver.observe(container);
 
     return () => {
       resizeObserver.disconnect();
-
-      if (renderRef.current) {
-        Render.stop(renderRef.current);
-        Runner.stop(runnerRef.current);
-        renderRef.current.canvas.remove();
+      cancelAnimationFrame(animFrameRef.current);
+      if (runnerRef.current) Matter.Runner.stop(runnerRef.current);
+      if (engineRef.current) {
+        Matter.World.clear(engineRef.current.world);
+        Matter.Engine.clear(engineRef.current);
+      }
+      if (container) {
+        container.querySelectorAll(".physics-img").forEach((el) => el.remove());
       }
     };
   }, [start]);
@@ -207,25 +214,44 @@ function Tool() {
 
         <div className="flex justify-between items-end mb-8">
           <div>
-            <h1 className="text-white text-[30px] lg:text-[44px]">
-              Tools we{" "}
-              <span className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
-                trust
-              </span>
-            </h1>
+         <h1 className="text-white text-[30px] lg:text-[44px]">
+  Tools we{" "}
 
-            <p className="text-[14px] lg:text-[18px] text-gray-300 max-w-[420px]">
+  <motion.span
+    className="inline-block bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
+    variants={container}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+  >
+    {trustText.split("").map((char, index) => (
+      <motion.span key={index} variants={letter} className="inline-block">
+        {char}
+      </motion.span>
+    ))}
+  </motion.span>
+</h1>
+            <p className="text-[14px] lg:text-[18px] max-w-[550px] text-gray-300 max-w-[420px]">
               Powerful tools and technologies I use in modern web development.
             </p>
           </div>
-
-          <img src={arrow} alt="" className="w-10 h-10 cursor-pointer" />
+           <motion.img
+           src={arrow} alt="arrow"  src={arrow} alt="" className="w-10 h-10 cursor-pointer"
+            initial={{ opacity: 0, scale: 0.4, rotate: -90 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              whileHover={{ scale: 1.15, rotate: 10 }}
+              transition={{ duration: 0.8 }}
+           />
         </div>
 
+        {/* No canvas. No React state updates. Pure DOM + Matter.js physics. */}
         <div
           ref={sceneRef}
-          className="w-full h-[350px] sm:h-[500px] rounded-2xl border border-gray-700 bg-[#111] overflow-hidden"
+          className="w-full h-[350px] sm:h-[500px] rounded-2xl border cursor-pointer border-gray-700 bg-[#181818] overflow-hidden relative"
+          style={{ touchAction: "pan-y", cursor: "grab" }}
         />
+
       </div>
     </section>
   );

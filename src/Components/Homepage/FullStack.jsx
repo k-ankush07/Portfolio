@@ -70,6 +70,19 @@ const mainContainer = {
         },
     },
 };
+const skillItem = {
+    hidden: { opacity: 0, y: 30, scale: 0.7 },
+    show: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+            type: "spring",
+            stiffness: 180,
+            damping: 12,
+        },
+    },
+};
 
 function FullStack() {
     const skills = [
@@ -96,25 +109,45 @@ function FullStack() {
                                 <img src={cardCircle} alt='card circle' />
                             </div>
                             <motion.div
-                             variants={textContainer}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true, amount: 0.3 }}
-                            className='text-center mt-4'>
+                                variants={textContainer}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true, amount: 0.3 }}
+                                className='text-center mt-4'>
                                 <motion.h1
-                               variants={textItem}
-                                 className='text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    variants={textItem}
+                                    className='text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
                                 <motion.p
-                                variants={textItem}
-                                className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                                    variants={textItem}
+                                    className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
-                                <div className="inline-block mt-3 rounded-md p-[2px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]">
-                                    <div className="flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
+                                {/* <div className="inline-block mt-3 rounded-md p-[2px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]"> */}
+                                    {/* <div className="flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
                                         <span className="text-[#FFAF7B] px-1 py-1"><FaLocationDot /> </span>
                                         <span className="text-[#c58962]">London, United Kingdom</span>
+                                    </div> */}
+                                    <div className="relative inline-block mt-3 rounded-md overflow-hidden p-[2px]">
+
+                                        {/* ROTATING GRADIENT */}
+                                        <div className="absolute inset-0 animate-spin-slow 
+                                         bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]" />
+
+                                        {/* CONTENT */}
+                                        <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
+
+                                            <span className="text-[#FFAF7B] px-1 py-1">
+                                                <FaLocationDot />
+                                            </span>
+
+                                            <span className="text-[#c58962]">
+                                                London, United Kingdom
+                                            </span>
+
+                                        </div>
+
                                     </div>
-                                </div>
+                                {/* </div> */}
                             </div>
                             <motion.div
                                 className="flex justify-center gap-2 mt-5"
@@ -191,8 +224,13 @@ function FullStack() {
                                     {skills.map((itemText, i) => (
                                         <motion.div
                                             key={i}
-                                            variants={item}
-                                            className="px-2 py-1 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54]"
+                                            variants={skillItem}
+                                            whileHover={{
+                                                scale: 1.1,
+                                                y: -3
+                                            }}
+                                            whileTap={{ scale: 0.95 }}
+                                            className="px-3 py-1.5 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54] cursor-pointer"
                                         >
                                             {itemText}
                                         </motion.div>

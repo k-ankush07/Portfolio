@@ -147,10 +147,10 @@ function ViewDetail() {
 
 
            {/* main div for images */}
-<div className="relative flex justify-center  overflow-hidden items-end px-6">
+<div className="relative flex justify-center  overflow-hidden items-end px-6 mt-7 lg:mt-[50px]">
   
   {/* Left Image */}
-  <div className="w-[33%]">
+  <div className="w-[33%]  ">
     <img
       src={leftimage}
       alt="left Image"

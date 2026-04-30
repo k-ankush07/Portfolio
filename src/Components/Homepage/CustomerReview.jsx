@@ -1,47 +1,67 @@
+
 import React, { useState } from 'react'
-
-import border from "../../assets/Images/Border (2).png"
-import border2 from "../../assets/Images/Border (3).png"
-import border3 from "../../assets/Images/Border (4).png"
 import arrow from "../../assets/Images/arrow.svg"
-import arrow1 from "../../assets/Images/SVG (1).svg"
+import customercard from "../../assets/Images/customercard.svg"
 import arrow2 from "../../assets/Images/SVG.svg"
+import {motion} from "framer-motion"
 function CustomerReview() {
-      const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-   <div className='flex relative w-full  sm:w-[49%] md:w-[33.3%] cursor-pointer '
-        onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-   >
-            <div className='border-[2px] border-[#292929] rounded-[8px] py-30 sm:pt-15  w-[100%]  '>
-                <img src={arrow1} alt='phone cll' className={` w-[40%] sm:w-[40%] absolute top-[2.4px] overflow-hidden left-10 transition-all duration-500
-                    ${isHovered ? " -translate-x-1 rotate-2" : "-translate-y-0 rotate-0"}
-                `}
-                 />
-                <img src={arrow2} alt='phone cll' className= {` bottom-image w-[55%] sm:w-[60%] top-1 right-20  absolute  sm:top-10 sm:right-4   transition-all duration-500 lg:top-4
-                  ${isHovered ? " translate-x-1 rotate-2" : "border-transparent"}
-                  `} />
-                <div className='flex  justify-center items-end py-6 '>
-                     
-                 
-                </div>
-              <div className='absolute bottom-0 w-[100%]'>
-                  <div className={`flex items-center justify-between py-5 lg:px-6 px-4 transition-all duration-400
-                     ${isHovered ? " -translate-y-2" : "scale-100"}`}>
-                    <h1 className={`text-[#FFFFFF]  text-[10px] lg:text-[20px] font-bold transition-all duration-400
-                 
-                      `}>Customer reviews/Feedback</h1>
-                    <div className='flex justify-end items-end ' >
-                        {/* <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px] lg:h-[30px] lg:w-[30px]  flex items-center justify-center rounded-full'> */}
-                            <img src={arrow} alt='arrow' className='lg:h-10 lg:w-10  cursor-pointer' />
-                        {/* </div> */}
-                    </div>
-                </div>
-              </div>
-            </div>
+    <div
+      className="flex relative w-full sm:w-[49%] md:w-[33.3%] cursor-pointer group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="border-[2px] border-[#292929] rounded-[8px] py-30 sm:pt-15 w-full overflow-hidden relative">
 
+        {/* LEFT CARD */}
+        <img
+          src={customercard}
+          alt=""
+          className={`absolute left-4  -top-14 xl:-top-16 w-[40%] transition-all duration-500 ease-out
+            ${isHovered ? " translate-y-4 rotate-8 " : "translate-x-0 scale-100 translate-y-0 rotate-0"}
+          `}
+        />
 
+        {/* RIGHT CARD */}
+        <img
+          src={arrow2}
+          alt=""
+          className={`absolute right-10  top-15 xl:top-7 w-[55%] transition-all duration-500 ease-out
+            ${isHovered ? " translate-y-2 -rotate-5 " : "translate-x-0 translate-y-0 rotate-0"}
+          `}
+        />
+
+        {/* BOTTOM TEXT */}
+        <div className="absolute bottom-0 w-full">
+          <div
+            className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-500 ease-out
+             
+            `}
+          >
+            <h1 className="text-white text-[10px] lg:text-[20px] font-bold">
+              Customer reviews/Feedback
+            </h1>
+
+            <motion.img
+              src={arrow}
+              alt="arrow"
+              className={`lg:h-10 lg:w-10 transition-all duration-200 ease-out
+    ${isHovered
+                  ? "translate-y-0 opacity-100"   
+                  : "translate-y-6 opacity-0"  
+                }`}
+                                // Arrow hover animation (only when visible)
+                                whileHover={{ scale: 1.15, rotate: 10 }}
+
+                                transition={{ duration: 0.4 }}
+            />
+          </div>
         </div>
+
+      </div>
+    </div>
   )
 }
 

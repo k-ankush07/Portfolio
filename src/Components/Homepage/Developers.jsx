@@ -11,6 +11,7 @@ import Background from "../../assets/Images/Background+Blur (2).png"
 import Background2 from "../../assets/Images/Background+Blur (3).png"
 import Background3 from "../../assets/Images/Background+Blur (4).png"
 import Background4 from "../../assets/Images/Background+Blur (5).png"
+import { motion } from "framer-motion";
 function Developers({ }) {
     const developersData = [
         {
@@ -62,18 +63,56 @@ function Developers({ }) {
             bg: Background4,
         },
     ];
+
+
+     const trustText = "Developers";
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.06,
+    },
+  },
+};
+
+const letter = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.25, 0.8, 0.25, 1],
+    },
+  },
+};
     return (
         <>
             <section className=' px-3 md:px-0 pt-6 py-3'>
                 <div className='container'>
                     <div className=''>
 
-                        <h1 className=' text-[20px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
-                            Loved by 10,000+ {' '}
-                            <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
-                                Developers
-                            </span>
+
+
+                         <h1 className=' text-[20px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
+                          Loved by 10,000+ {' '}
+                        
+                          <motion.span
+                            className="inline-block bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
+                            variants={container}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                          >
+                            {trustText.split("").map((char, index) => (
+                              <motion.span key={index} variants={letter} className="inline-block">
+                                {char}
+                              </motion.span>
+                            ))}
+                          </motion.span>
                         </h1>
+
                         <div className='flex justify-center'>
                             <p className='text-[#BDBDBD] text-[14px] max-w-[400px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
                                 workflow with AI-powered assistance.</p>

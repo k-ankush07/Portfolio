@@ -369,30 +369,40 @@ img.toolWeTrust {
 .group:hover .center-image{transform: scale(0.90);}
 .group:hover .left-image  { transform: rotate(0deg) !important; }
 .group:hover .right-image { transform: rotate( 0deg) !important; }
+  .group:hover .right-image { transform: scale(0.92) !important;} 
+  .group:hover .left-image { transform: scale(0.92) !important;} 
  @media  (min-width: 320px) and (max-width: 549px) {
   .center-image{ margin-bottom: -25px;}
   .left-image  {  left: -18%; top: 35px;  }
   .right-image { right: -18%; top: 35px; }
 
-  .group:hover .left-image  { left: -33.5%; }
-
-  .group:hover .right-image { right: -34%; }
+  .group:hover .left-image  { left: -31.5%; }
+  .group:hover .right-image { right: -31.5%; }
 } 
  @media  (min-width: 550px) and (max-width: 849px) {
-  .center-image{ margin-bottom: -35px;}
+  .center-image{ margin-bottom: -70px;}
   .left-image  {  left: -18%; top: 55px; }
   .right-image { right: -18%; top: 55px; }
 
-  .group:hover .left-image  { left: -33.5%; }
-  .group:hover .right-image { right: -34%; }
+  .group:hover .left-image  { left: -31.5%; }
+  .group:hover .right-image { right: -32.5%; }
 } 
- @media  (min-width: 850px) and (max-width: 1439px) {
-  .center-image{ margin-bottom: -60px;}
+ @media  (min-width: 850px) and (max-width: 1023px) {
+  .center-image{ margin-bottom: -80px;}
+  .left-image  {  left: -18%; top: 90px; }
+  .right-image { right: -18%; top: 90px; }
+
+  .group:hover .left-image  { left: -31.5%; }
+  .group:hover .right-image { right: -31%; }
+} 
+
+ @media  (min-width: 1024px) and (max-width: 1439px ) {
+  .center-image{ margin-bottom: -70px;}
   .left-image  {  left: -18%; top: 70px; }
   .right-image { right: -18%; top: 70px; }
 
-  .group:hover .left-image  { left: -33.5%; }
-  .group:hover .right-image { right: -34%; }
+  .group:hover .left-image  { left: -31.5%; }
+  .group:hover .right-image { right: -31%; }
 } 
 @media   (min-width: 1440px) {
   
@@ -404,7 +414,54 @@ img.toolWeTrust {
   
   .group:hover .left-image  { left: -31.7%; }
   .group:hover .right-image { right: -32.2%; }
-  .group:hover .right-image { transform: scale(0.92) !important;} 
-  .group:hover .left-image { transform: scale(0.92) !important;} 
+
   
 } 
+
+
+
+/* footer annimation */
+
+
+/* 
+
+Loved by 10,000+ Developers*/
+
+@media (min-width:320px) and (max-width: 499px){
+  .font_section{
+    max-width: 346px; 
+    margin:auto
+  }
+  .section_height{
+    height: 22rem;
+  }
+}
+@media (min-width:500px) and (max-width: 639px){
+  .font_section{
+    max-width: 470px;
+    margin:auto
+  }
+   .section_height{
+    height: 20rem;
+  }
+}
+@media (min-width:640px) and (max-width: 1023px){
+  .font_section{
+    max-width: 629px;
+    margin:auto
+  }
+  .section_height{
+    height: 22rem;
+  }
+}
+
+
+@media (min-width:1024px) {
+  .font_section{
+    max-width: 794px;
+    margin:auto;
+    font-size: 48px
+  }
+}
+
+

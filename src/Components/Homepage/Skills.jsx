@@ -18,6 +18,7 @@ import image12 from "../../assets/Images/skillsimage (11).svg"
 import image13 from "../../assets/Images/skillsimage (12).svg"
 import image14 from "../../assets/Images/skillsimage (13).svg"
 import image15 from "../../assets/Images/skillsimage (14).svg"
+import magnifying from "../../assets/Images/magnifying.svg"
 
 function Skills() {
 
@@ -32,14 +33,21 @@ function Skills() {
             <h1 className='text-[#FFFFFF] text-[24px] font-bold'>Skills / Tech Stack</h1>
             <p className='text-[#BDBDBD]   text-[12px] xl:text-[16px] '>Tools and Technologies I Work With</p>
           </div>
-          <div className='flex flex-col  space-y-[27px] lg:space-y-[40px] mt-6'>
+            <div className="relative">
+          <div className="  absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[6px] sm:mt-2">
+              <img src={magnifying} alt="magnifying image" className="h-12  sm:h-[80px]" />
+            </div>
+          {/* <div className='flex flex-col  space-y-[27px] lg:space-y-[40px]   mt-6 relative'> */}
+          <div className="space-y-[27px] lg:space-y-[40px]">
+
+            
             <div className='slider'>
               <Swiper
                 modules={[Autoplay, FreeMode]}
                 spaceBetween={5}
                 slidesPerView="auto"
                 loop={true}
-                 allowTouchMove={false}  
+                allowTouchMove={false}
                 freeMode={{
                   enabled: true,
                   momentum: false,
@@ -51,12 +59,12 @@ function Skills() {
                 }}
                 speed={5000}
                 onSwiper={(swiper) => {
-    setTimeout(() => swiper.autoplay.start(), 100);
+                  setTimeout(() => swiper.autoplay.start(), 100);
 
-    // Touch completely disable karo
-    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
-    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
-  }}
+                  // Touch completely disable karo
+                  swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+                  swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+                }}
               >
                 <SwiperSlide>
                   <div className="main-class">
@@ -66,82 +74,82 @@ function Skills() {
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image2} alt="Next.js" className=" skill_slider" />
+                    <img src={image2} alt="Next.js" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image3} alt="pnpm" className=" skill_slider" />
+                    <img src={image3} alt="pnpm" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="main-class">
-                         <img src={image4} alt="Docker" className=" skill_slider" />
+                    <img src={image4} alt="Docker" className=" skill_slider" />
                   </div>
-             
-                  
+
+
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image5} alt="Next.js" className=" skill_slider" />
+                    <img src={image5} alt="Next.js" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image1} alt="Docker" className=" skill_slider" />
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="main-class">
-                  <img src={image2} alt="Next.js" className=" skill_slider" />
+                    <img src={image1} alt="Docker" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image3} alt="pnpm" className=" skill_slider" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="main-class">
-                  <img src={image4} alt="Docker" className="skill_slider" />
+                    <img src={image2} alt="Next.js" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image5} alt="Next.js" className="skill_slider" />
+                    <img src={image3} alt="pnpm" className=" skill_slider" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image1} alt="Docker" className="skill_slider" />
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="main-class">
-                  <img src={image2} alt="Next.js" className="skill_slider" />
+                    <img src={image4} alt="Docker" className="skill_slider" />
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image3} alt="pnpm" className="skill_slider" />
+                    <img src={image5} alt="Next.js" className="skill_slider" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image4} alt="Docker" className="skill_slider" />
+                    <img src={image1} alt="Docker" className="skill_slider" />
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <div className="main-class">
-                  <img src={image5} alt="Next.js" className="skill_slider" />
+                    <img src={image2} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image3} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image4} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image5} alt="Next.js" className="skill_slider" />
                   </div>
                 </SwiperSlide>
 
@@ -158,7 +166,7 @@ function Skills() {
                   enabled: true,
                   momentum: false,
                 }}
-                 allowTouchMove={false}  
+                allowTouchMove={false}
                 loopAdditionalSlides={10}
                 autoplay={{
                   delay: 1,
@@ -166,258 +174,271 @@ function Skills() {
                 }}
                 dir="rtl"
                 speed={5000}
-             onSwiper={(swiper) => {
-    setTimeout(() => swiper.autoplay.start(), 100);
+                onSwiper={(swiper) => {
+                  setTimeout(() => swiper.autoplay.start(), 100);
 
-    // Touch completely disable karo
-    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
-    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
-  }}
-                
+                  // Touch completely disable karo
+                  swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+                  swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+                }}
+
               >
-          
-                  <SwiperSlide>
-                    <div className="main-class">
+
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image6} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image7} alt="Next.js" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image8} alt="pnpm" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="main-class">
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image9} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image10} alt="Next.js" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="main-class">
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image6} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image7} alt="Next.js" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image8} alt="pnpm" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="main-class">
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image9} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image10} alt="Next.js" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="main-class">
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image6} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image7} alt="Next.js" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image8} alt="pnpm" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="main-class">
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image9} alt="Docker" className="skill_slider" />
-                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="main-class">
+                <SwiperSlide>
+                  <div className="main-class">
                     <img src={image10} alt="Next.js" className="skill_slider" />
-                    </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
               </Swiper>
+            </div>
+            <div className='slider'>
+              <Swiper
+                modules={[Autoplay, FreeMode]}
+                spaceBetween={5}
+                slidesPerView="auto"
+                loop={true}
+                allowTouchMove={false}
+                freeMode={{
+                  enabled: true,
+                  momentum: false,
+                }}
+                loopAdditionalSlides={10}
+                autoplay={{
+                  delay: 1,
+                  disableOnInteraction: false,
+                }}
+                speed={5000}
+                onSwiper={(swiper) => {
+                  setTimeout(() => swiper.autoplay.start(), 100);
+
+                  // Touch completely disable karo
+                  swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+                  swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+                }}
+              >
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image11} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image12} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image13} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image14} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image15} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image11} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image12} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image13} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image14} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image15} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image11} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image12} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image13} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image14} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image15} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image11} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image12} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image13} alt="pnpm" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image14} alt="Docker" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="main-class">
+                    <img src={image15} alt="Next.js" className="skill_slider" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+
+
           </div>
-          <div className='slider'>
-            <Swiper
-              modules={[Autoplay, FreeMode]}
-              spaceBetween={5}
-              slidesPerView="auto"
-              loop={true}
-              allowTouchMove={false}  
-              freeMode={{
-                enabled: true,
-                momentum: false,
-              }}
-              loopAdditionalSlides={10}
-              autoplay={{
-                delay: 1,
-                disableOnInteraction: false,
-              }}
-              speed={5000}
-               onSwiper={(swiper) => {
-    setTimeout(() => swiper.autoplay.start(), 100);
-
-    // Touch completely disable karo
-    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
-    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
-  }}
-            >
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image11} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image12} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image13} alt="pnpm" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image14} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image15} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image11} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image12} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image13} alt="pnpm" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image14} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image15} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image11} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image12} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image13} alt="pnpm" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image14} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image15} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image11} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image12} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image13} alt="pnpm" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image14} alt="Docker" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                  <div className="main-class">
-                <img src={image15} alt="Next.js" className="skill_slider" />
-                </div>
-              </SwiperSlide>
-            </Swiper>
           </div>
-          {/* <img src={skills1} alt='skills logo' />
-          <img src={skills2} alt='skills logo' />
-          <img src={skills3} alt='skills logo' /> */}
+          <div className='absolute bottom-0 left-0 w-[100%] -z-0 '>
+            <img src={Border4} alt='border line' className="w-full" />
 
+          </div>
         </div>
-        <div className='absolute bottom-0 left-0 w-[100%] -z-0 '>
-          <img src={Border4} alt='border line' className="w-full" />
 
-        </div>
-      </div>
-
-    </div >
+      </div >
 
     </>
   )
 }
 
 export default Skills
+
+
+
+
+
+
+
+
+
+
+
+
+
+

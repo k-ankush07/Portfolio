@@ -4,27 +4,30 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 import React, { useState } from 'react'
-import border from "../../assets/Images/Border.svg"
-import border2 from "../../assets/Images/Border (1).svg"
-import border3 from "../../assets/Images/Border (2).svg"
-import arrow from "../../assets/Images/arrow.svg"
 
+import imagenew1 from "../../assets/Images/slidernew (1).svg"
+import imagenew2 from "../../assets/Images/slidernew (2).svg"
+import imagenew3 from "../../assets/Images/slidernew (3).svg"
+import imagenew4 from "../../assets/Images/slidernew (4).svg"
+import imagenew5 from "../../assets/Images/slidernew (5).svg"
+
+import arrow from "../../assets/Images/arrow.svg"
+import { motion } from "framer-motion"
 function ToolWeTrust() {
     const [isHovered, setIsHovered] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const images = [
-        border2,
-        border3,
-        border,
-        border2,
-        border3,
-        border,
-        border2,
-        border3,
-        border,
-        border2,
-        border3,
-        border,
+        imagenew1,
+        imagenew2,
+        imagenew3,
+        imagenew4,
+        imagenew5,
+        imagenew1,
+        imagenew2,
+        imagenew3,
+        imagenew4,
+        imagenew5,
+        
     ];
 
 
@@ -52,11 +55,11 @@ function ToolWeTrust() {
                     >
                         {images.map((img, index) => (
                             <SwiperSlide key={index} className="flex justify-center">
-                            
+
                                 <div
-                                    className={`transition-all duration-400 rounded-xl border p-1
+                                    className={`transition-all duration-400 rounded-xl border-1 p-1
                                          ${activeIndex === index ? "scale-105" : "scale-90"}
-                                         ${isHovered ? "border-purple-500 -translate-y-2" : "border-transparent"}
+                                         ${isHovered ? " border-purple-500 -translate-y-2" : "border-transparent"}
                                     `}
                                     style={{
                                         transitionDelay: isHovered
@@ -67,7 +70,7 @@ function ToolWeTrust() {
                                     <img
                                         src={img}
                                         alt=""
-                                        className="toolWeTrust"
+                                        className="toolWeTrust "
                                     />
                                 </div>
                             </SwiperSlide>
@@ -77,7 +80,7 @@ function ToolWeTrust() {
                 </div>
                 <div className='absolute bottom-0 w-[100%]'>
                     <div className={`flex items-center justify-between py-5 px-6 transition-all duration-400
-                         ${isHovered ? " -translate-y-2" : "scale-100"}
+                       
                         `}>
                         {/* <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1> */}
                         <h1
@@ -88,8 +91,19 @@ function ToolWeTrust() {
                             Tools we trust
                         </h1>
                         <div className='flex justify-end items-end ' >
-                            <img src={arrow} alt='arrow' className={`lg:h-10 lg:w-10  cursor-pointer 
-                                 `} />
+                           <motion.img
+                                         src={arrow}
+                                         alt="arrow"
+                                         className={`lg:h-10 lg:w-10 transition-all duration-200 ease-out
+                               ${isHovered
+                                             ? "translate-y-0 opacity-100"   
+                                             : "translate-y-6 opacity-0"  
+                                           }`}
+                                                           // Arrow hover animation (only when visible)
+                                                           whileHover={{ scale: 1.15, rotate: 10 }}
+                           
+                                                           transition={{ duration: 0.4 }}
+                                       />
                             {/* </div> */}
                         </div>
                     </div>

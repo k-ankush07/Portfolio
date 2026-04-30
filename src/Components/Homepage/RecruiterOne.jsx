@@ -27,7 +27,7 @@ function RecruiterOne({ index,desc }) {
     offset: ["start end", "start start"],
   });
 
-  // 🔥 Smooth inertia feel
+  //  Smooth inertia feel
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 60,
     damping: 25,
@@ -82,7 +82,7 @@ function RecruiterOne({ index,desc }) {
     >
       <div className="container">
         <motion.div
-          style={{ scale, opacity, y }}
+          style={{ scale, }}
           className="lg:px-0"
         >
           <div className="px-2 lg:px-0 py-[6px]">
@@ -143,3 +143,12 @@ function RecruiterOne({ index,desc }) {
 }
 
 export default RecruiterOne;
+
+
+
+
+
+
+
+
+
