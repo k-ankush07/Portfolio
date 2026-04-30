@@ -34,9 +34,9 @@ function Skills() {
             <p className='text-[#BDBDBD]   text-[12px] xl:text-[16px] '>Tools and Technologies I Work With</p>
           </div>
             <div className="relative">
-          <div className="  absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[6px] sm:mt-2">
+          {/* <div className="  absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[6px] sm:mt-2">
               <img src={magnifying} alt="magnifying image" className="h-12  sm:h-[80px]" />
-            </div>
+            </div> */}
           {/* <div className='flex flex-col  space-y-[27px] lg:space-y-[40px]   mt-6 relative'> */}
           <div className="space-y-[27px] lg:space-y-[40px]">
 
