@@ -15,7 +15,7 @@ function HomePage() {
   return (
    <>
    <div className='lato-regular'>
-   <Modern_Scalable />
+   <Modern_Scalable />  
     <SkillAndMordenPage />
 <Web_Project />
 <Recent__Work />

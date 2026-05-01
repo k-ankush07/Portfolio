@@ -62,7 +62,7 @@ function Footer() {
 
                             {/* COLUMN 3 */}
                             <div>
-                                <h3 className="text-[#FFFFFF] font-bold text-[16px]">More</h3>
+                                <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4 sm:mb-1">More</h3>
                                 <ul className="space-y-2 text-[14px] opacity-80 md:pt-2">
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
