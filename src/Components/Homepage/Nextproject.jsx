@@ -24,7 +24,7 @@ function Nextproject() {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.15, // 👈 delay between each image
+      staggerChildren: 0.15, //  delay between each image
     },
   },
 };

@@ -21,7 +21,7 @@ function Developers({ }) {
             bg: Background,
         },
         {
-            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code and a lot .",
+            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code and a lot less time wasted on repetitive fixes. .",
             name: "Esther Howard",
             picture: image2,
             bg: Background2,
@@ -45,7 +45,7 @@ function Developers({ }) {
             bg: Background,
         },
         {
-            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code, and a lot.",
+            desc: "CodeGent is like a senior developer reviewing my work in real time with highly accurate, time-saving suggestions. CodeGent took my React workflow to another level. Clean, efficient code, and a lot less time wasted on repetitive fixes..",
             name: "Esther Howard",
             picture: image2,
             bg: Background2,
@@ -57,7 +57,7 @@ function Developers({ }) {
             bg: Background3,
         },
         {
-            desc: "CodeGent enables me to write improved, more reusable, and structured code more quickly. CodeGent has transformed how I build UI components, with smart hints saving hours and making my code cleaner.",
+            desc: "CodeGent enables me to write improved, more reusable, and structured code more quickly. CodeGent has transformed how I build UI components, with smart hints saving hours and making my code cleaner. ",
             name: "Albert Flores",
             picture: image4,
             bg: Background4,
@@ -114,7 +114,7 @@ const letter = {
                         </h1>
 
                         <div className='flex justify-center'>
-                            <p className='text-[#BDBDBD] text-[14px] lg:text-[18px] max-w-[550px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
+                            <p className='text-[#BDBDBD] text-[14px] lg:text-[18px]  max-w-[550px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
                                 workflow with AI-powered assistance.</p>
                         </div>
 
@@ -124,11 +124,11 @@ const letter = {
                             modules={[Autoplay]}
                             spaceBetween={20}
                             slidesPerView={1.1}
-                            loop={true}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
+                            // loop={true}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: false,
+                            // }}
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1.2,

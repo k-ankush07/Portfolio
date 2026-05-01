@@ -53,7 +53,7 @@ function Tool() {
 
   const images = [
     Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
-    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10,
+    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10,Overlay11, Overlay12 ,Overlay13 , Overlay14, Overlay15, Overlay16, Overlay17, Overlay18, Overlay19, Overlay20
   ];
 
   const trustText = "trust";
@@ -326,7 +326,7 @@ function Tool() {
                 ))}
               </motion.span>
             </h1>
-            <p className="text-[14px] lg:text-[18px] text-gray-300 max-w-[420px]">
+            <p className="text-[14px] lg:text-[18px] text-gray-300 ">
               Powerful tools and technologies I use in modern web development.
             </p>
           </div>
