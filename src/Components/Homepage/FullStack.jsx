@@ -99,7 +99,7 @@ function FullStack() {
         <section className=' px-3 md:px-0 py-5'>
 
             <div className='container '>
-                <div className='bg-[#000000] lg:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
+                <div className='bg-[#000000] xl:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
@@ -122,11 +122,6 @@ function FullStack() {
                                     className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
-                                {/* <div className="inline-block mt-3 rounded-md p-[2px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]"> */}
-                                    {/* <div className="flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
-                                        <span className="text-[#FFAF7B] px-1 py-1"><FaLocationDot /> </span>
-                                        <span className="text-[#c58962]">London, United Kingdom</span>
-                                    </div> */}
                                     <div className="relative inline-block mt-3 rounded-md overflow-hidden p-[2px]">
 
                                         {/* ROTATING GRADIENT */}
@@ -134,7 +129,7 @@ function FullStack() {
                                          bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]" />
 
                                         {/* CONTENT */}
-                                        <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
+                                        <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] xl:px-4 text-white">
 
                                             <span className="text-[#FFAF7B] px-1 py-1">
                                                 <FaLocationDot />
@@ -170,7 +165,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-8 mt-5'>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5 sm:px-15 xl:px-16 '>
                                     Hire Me
                                 </button></Link>
                             </div>
@@ -181,7 +176,7 @@ function FullStack() {
 
                     <div className='md:flex  gap-6 xl:w-[70%]'>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 lg:mt-0 '>
+                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 xl:mt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}

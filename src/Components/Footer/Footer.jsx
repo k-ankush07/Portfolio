@@ -16,7 +16,7 @@ function Footer() {
                         {/* LEFT */}
                         <div className=" sm:w-[30%] xl:w-[36%] ">
                             {/* <h1 className="text-white text-2xl font-bold mb-4">AK</h1> */}
-                            <img src={logo} alt="icon" className="mb-4" />
+                            <img src={logo} alt="icon" className="mb-4 cursor-pointer" />
 
                             <p className="text-[16px] text-[#BDBDBD] opacity-80  w-[60%] sm:w-[80%]   xl:w-[70%]  mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -83,7 +83,7 @@ function Footer() {
                     <div className="flex flex-col justify-center md:flex-row sm:justify-between  text-[#BDBDBD] items-center gap-4 text-[12px] sm:text-[14px] ">
 
                         <div className="flex flex-col md:flex-row items-center justify-center md:gap-15 opacity-80">
-                            <p className="text-center">© 2026 Aayush Bharti. All rights reserved</p>
+                            <p className="text-center">© 2026 Ankush Kumar. All rights reserved</p>
 
                             <div className="flex justify-center mt-2 md:mt-0 gap-6">
                                 <span className=" cursor-pointer hover:text-gray-100">Privacy Policy</span>
@@ -92,9 +92,9 @@ function Footer() {
                         </div>
 
                         <div className="flex gap-4 mt-2 sm:mt-0 text-white">
-                            <img src={Vector1} alt="icon" className="cursor-pointer" />
-                            <img src={Vector2} alt="icon" className="cursor-pointer" />
-                            <img src={Vector} alt="icon" className="cursor-pointer" />
+                            <img src={Vector1} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
+                            <img src={Vector2} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
+                            <img src={Vector} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
                         </div>
                     </div>
                 </footer>

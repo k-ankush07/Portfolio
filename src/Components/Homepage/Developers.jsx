@@ -95,7 +95,7 @@ const letter = {
 
 
 
-                         <h1 className=' text-[20px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
+                         <h1 className=' text-[25px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
                           Loved by 10,000+ {' '}
                         
                           <motion.span
@@ -114,7 +114,7 @@ const letter = {
                         </h1>
 
                         <div className='flex justify-center'>
-                            <p className='text-[#BDBDBD] text-[14px] max-w-[400px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
+                            <p className='text-[#BDBDBD] text-[14px] lg:text-[18px] max-w-[550px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
                                 workflow with AI-powered assistance.</p>
                         </div>
 

@@ -79,7 +79,7 @@ function ToolWeTrust() {
 
                 </div>
                 <div className='absolute bottom-0 w-[100%]'>
-                    <div className={`flex items-center justify-between py-5 px-6 transition-all duration-400
+                    <div className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
                        
                         `}>
                         {/* <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1> */}

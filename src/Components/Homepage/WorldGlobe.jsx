@@ -1,0 +1,102 @@
+
+
+import React, { useRef, useEffect, useState } from "react";
+import Globe from "react-globe.gl";
+
+const WorldGlobe = () => {
+  const globeRef = useRef();
+
+ const getSize = () => ({
+  width: window.innerWidth   * 1.5,   //  increase width
+  height: window.innerWidth < 768 ? 750 : 1200, // increase height
+});
+
+  const [size, setSize] = useState(getSize);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  // Resize handler
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      setSize(getSize());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Globe controls — runs after mount + on mobile change
+  useEffect(() => {
+    if (!globeRef.current) return;
+
+    const controls = globeRef.current.controls();
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = isMobile ? 1.5 : 1.5;  // rotating speed increase or decrease
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.enableZoom = false;
+    controls.enablePan = false;
+
+    globeRef.current.pointOfView({
+      lat: isMobile ? 10 : 15,
+      lng: 20,
+      altitude: isMobile ? 3 : 2.5,
+    });
+  }, [isMobile]);
+
+  const cities = [
+    { lat: 37.0902,  lng: -95.7129,   label: "USA"       },
+    { lat: 56.1304,  lng: -106.3468,  label: "CANADA"    },
+    { lat: 55.3781,  lng: -3.4360,    label: "UK"        },
+    { lat: 37.2744, lng: 133.7751,   label: "AUSTRALIA" },
+    // { lat: 28.6139,  lng: 77.2090,    label: "INDIA"     },
+  ];
+
+
+  const arcs = [
+    { startLat: 37.0902,  startLng: -95.7129,  endLat: 55.3781,  endLng: -3.4360   },
+    { startLat: 56.1304,  startLng: -106.3468, endLat: -25.2744, endLng: 133.7751  },
+    { startLat: 28.6139,  startLng: 77.2090,   endLat: 37.0902,  endLng: -95.7129  },
+    { startLat: 28.6139,  startLng: 77.2090,   endLat: 55.3781,  endLng: -3.4360   },
+  ];
+
+  return (
+    <Globe
+      ref={globeRef}
+      width={size.width}
+      height={size.height}
+      backgroundColor="rgba(0,0,0,0)"
+
+      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+      bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+
+      showAtmosphere={true}
+      atmosphereColor="#202940"
+      atmosphereAltitude={0.2}
+
+      arcsData={arcs}
+      arcColor={() => "#60a5fa"}
+      arcStroke={isMobile ? 0.4 : 0.6}
+      arcAltitude={0.25}
+      arcDashLength={0.4}
+      arcDashGap={0.2}
+      arcDashAnimateTime={3000}
+
+      pointsData={cities}
+      pointLat="lat"
+      pointLng="lng"
+      pointColor={() => "#60a5fa"}
+      pointRadius={isMobile ? 0.25 : 0.35}
+
+      labelsData={cities}
+      labelLat="lat"
+      labelLng="lng"
+      labelText="label"
+      labelSize={isMobile ? 3 : 3}
+      labelColor={() => "#ffffff"}
+    />
+  );
+};
+
+export default WorldGlobe;

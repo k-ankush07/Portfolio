@@ -3,6 +3,7 @@ import React from 'react'
 import Skills from "../Components/Homepage/Skills"
 import Next_Project from "../Components/Homepage/Next_Project"
 import Nextproject from '../Components/Homepage/Nextproject'
+import SkillsSlick from '../Components/Homepage/SkillsSlick'
 
 function SkillAndMordenPage() {
   return (
@@ -13,6 +14,7 @@ function SkillAndMordenPage() {
         
             <div className='  py-3  xl:mt-[-30px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[9px]'>
               <Skills />
+              {/* <SkillsSlick /> */}
                
               {/* <Next_Project /> */}
               <Nextproject />

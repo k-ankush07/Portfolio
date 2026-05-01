@@ -64,7 +64,7 @@ const handleMouseLeave = () => {
   };
 
   return (
-    <section className="lato-regular  sticky top-0 z-50"
+    <section className="lato-regular  sticky top-0  z-50"
     >
       <div className="container ">
         <MobileNavbar />
@@ -162,7 +162,7 @@ const handleMouseLeave = () => {
           setIsPinned((prev) => !prev);
           setOpen((prev) => !prev);
         }}
-        className="flex items-center  cursor-pointer px-[14px] py-[6px] rounded-full text-[16px] font-medium text-white/65 hover:bg-white/8 hover:text-white"
+        className="flex items-center  cursor-pointer px-[14px] py-[6px] rounded-full text-[16px] font-medium text-white/65 hover:text-white"
       >
         More
         <span

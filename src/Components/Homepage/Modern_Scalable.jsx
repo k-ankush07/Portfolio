@@ -4,6 +4,7 @@ import messageIcon from "../../assets/Images/messageIcon.svg"
 import location from "../../assets/Images/location.svg"
 import emoji from "../../assets/Images/emoji.png"
 import emoji1 from "../../assets/Images/emoji1.png"
+import WorldGlobe from "./WorldGlobe"
 
 
 function Modern_Scalable() {
@@ -15,32 +16,28 @@ function Modern_Scalable() {
   }, []);
   return (
     <>
-      <section className=" pt-13  md:pt-10  ">
+      <section className=" pt-20  md:pt-10">
         <div className="container">
-          <div className="relative h-[30%]  flex   justify-center text-center text-white overflow-hidden -z-0">
+          <div className="relative   flex   justify-center text-center text-white overflow-hidden ">
 
             <div className="pt-10 xl:py-20">
               {/* Background Image */}
 
-              <div className="relative flex justify-center items-center">
-                <div className=" h-[100%] w-[100%] -top- absolute xl:left-1/2 xl:top-1/6  xl:-translate-x-1/3 xl:-translate-y-1/10  2xl:left-1/2 2xl:-top-30   2xl:-translate-x-1/2 2xl:-translate-y-1/">
-                  <img
-                    src={earth}
-                    alt="earth"
-                    className="  h-[30rem]  w-[100%] sm:h-auto sm:w-auto object-cover opacity-60 "
-                  />
-                </div>
-              </div>
+              <div className="absolute inset-0 h-[55rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-80">
+            <div className="" style={{ pointerEvents: "none" }}>
+                {show && <WorldGlobe />} 
+            </div>
+          </div>
 
               {/* Content */}
               <div className="relative z-10 section_height ">
 
                 {/* Badge */}
 
-                <div className="inline-block group relative rounded-[8px] cursor-pointer">
+                <div className="inline-block group relative  rounded-[8px] cursor-pointer z-50">
 
                   {/* Gradient border (hidden by default) */}
-                  <div className="absolute inset-0  rounded-[8px] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 opacity-0 group-hover:opacity-100 transition duration-600 ">
+                  <div className="absolute inset-0  rounded-[8px] h-[100%] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 opacity-0 group-hover:opacity-100 transition duration-600 ">
                     <div className="w-full h-full rounded-[8px] bg-[#0b0f19]" />
                   </div>
 
@@ -78,7 +75,7 @@ function Modern_Scalable() {
                 <div className="px-5" >
 
                   <div className="flex justify-center items-center mt-4 ">
-                    <p className={` md:mt-4 xl:mt-0 text-gray-300 text-[16px]  max-w-[8000px] sm:text-[18px]  font-normal flex md:gap-2 justify-center items-center transition-all duration-700 ease-out
+                    <p className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px]  max-w-[8000px] sm:text-[18px]  font-normal flex md:gap-2 justify-center items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                  
                       👋 Hello, I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
@@ -87,7 +84,7 @@ function Modern_Scalable() {
                 </div>
 
                 {/* Buttons */}
-                <div className={` mt-5  md:mt-6   xl:mt-[43px] flex justify-center  gap-3  items-center transition-all duration-700 ease-out
+                <div className={` mt-7  md:mt-6   xl:mt-[43px] flex justify-center  gap-3  items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}
@@ -107,9 +104,9 @@ function Modern_Scalable() {
 
                 </div>
 
-                <div className=" px-3 location relative left-0   sm:-top-1 sm:left-30 sm:-bottom-10 md:left-30 lg:top-0 lg:left-65 xl:left-35">
+                {/* <div className=" px-3 location relative left-0   sm:-top-1 sm:left-30 sm:-bottom-10 md:left-30 lg:top-0 lg:left-65 xl:left-35">
                   <img src={location} alt="location icon" />
-                </div>
+                </div> */}
 
               </div>
             </div>

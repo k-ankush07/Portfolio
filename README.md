@@ -20,23 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-overflow-hidden transition-all duration-300 ease-in
-        h-full w-full group-hover:scale-97
-
-        /* Mobile: reduce bottom bleed */
-        -mb-6
-
-        /* sm */
-        sm:-mb-10
-
-        /* md+ */
-        md:-mb-[59px]
-
-        /* xl: add top margin to match original */
-        xl:mt-14
-
-
-
 
 
 

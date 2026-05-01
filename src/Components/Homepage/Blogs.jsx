@@ -16,7 +16,7 @@ function Blogs() {
        >
                 <div className='border-[2px] border-[#292929] rounded-[8px] pt-3  w-[100%] '>
                   
-                      <div className={`flex items-center justify-between py-5 px-3 lg:pl-10 lg:pr-7 transition-all duration-400
+                      <div className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
                         `}>
                         <h1 className='text-[#FFFFFF]  text-[10px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >

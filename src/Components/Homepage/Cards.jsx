@@ -28,7 +28,7 @@ function Cards({desc,name , picture,bg }) {
                     <img src={picture} alt='user image' className='w-12 h-12 z-50' />
                     <div className='space-y-2'>
                         <h1 className='text-[#FFFFFF] text-[14px]'>{name}</h1>
-                        <p className='text-[#BDBDBD] text-[12px] '>Senior Frontend Developer</p>
+                        <p className='text-[#BDBDBD] text-[12px]  '>Senior Frontend Developer</p>
                     </div>
                 </div>
 

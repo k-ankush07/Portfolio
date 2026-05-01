@@ -40,10 +40,10 @@ body {
   }
 }
 
-.slider {
+/* .slider {
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .dolor_container .swiper {
   padding: 15px 0px;
@@ -56,7 +56,46 @@ body {
 }
 .slider .swiper {
   touch-action: none;
-  pointer-events: none; /* touch aur mouse dono block */
+  pointer-events: none; 
+} 
+
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* gap between pills */
+.slider .slick-slide {
+  padding: 0 6px;
+}
+.slider .slick-list {
+  margin: 0 -6px;
+}
+
+/* pill style — matches screenshot */
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;          /* fully rounded pill */
+  padding: 8px 16px;
+  height: 44px;
+  white-space: nowrap;
+}
+
+.skill_slider {
+  height: 26px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* disable interaction */
+.slider .slick-track {
+  touch-action: none;
+  pointer-events: none;
 }
 
 .swiper-wrapper {
@@ -66,6 +105,16 @@ body {
 @media (min-width:768px) and (max-width:1023px){
  .main-class{
   height: 25px!important;
+}
+@media (min-width:320px) and (max-width:425px){
+ .name-text{
+  max-width:279px;
+}
+}
+@media (min-width:426px) {
+ .name-text{
+  width: 100%!important;
+}
 }
 .skill_slider{
   height: 100%!important;
@@ -307,7 +356,7 @@ img.toolWeTrust {
   position: absolute;
   inset: 0;
 
-  background: #d0cac1;
+  background: #d0cecb;
   /* hover color */
 
 

@@ -40,42 +40,37 @@ import Overlay35 from "../../assets/Images/Overlay (35).svg";
 import Overlay36 from "../../assets/Images/Overlay (36).svg";
 import Overlay37 from "../../assets/Images/Overlay (37).svg";
 import { motion } from "framer-motion";
+
 function Tool() {
-  const sceneRef = useRef(null);
-  const engineRef = useRef(null);
-  const runnerRef = useRef(null);
+  const sceneRef    = useRef(null);
+  const engineRef   = useRef(null);
+  const runnerRef   = useRef(null);
   const animFrameRef = useRef(null);
+  // Keep a ref to the current logos array so touch handlers can query them
+  const logosRef    = useRef([]);
 
   const [start, setStart] = useState(false);
 
   const images = [
     Overlay, Overlay1, Overlay2, Overlay3, Overlay4, Overlay5,
-    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10
+    Overlay6, Overlay7, Overlay8, Overlay9, Overlay10,
   ];
+
   const trustText = "trust";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.06,
-    },
-  },
-};
+  const containerVariants = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.06 } },
+  };
 
-const letter = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3,
-      ease: [0.25, 0.8, 0.25, 1],
+  const letter = {
+    hidden: { opacity: 0, y: 25 },
+    visible: {
+      opacity: 1, y: 0,
+      transition: { duration: 0.3, ease: [0.25, 0.8, 0.25, 1] },
     },
-  },
-};
+  };
 
-  // Trigger when section enters viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setStart(true),
@@ -88,48 +83,65 @@ const letter = {
   useEffect(() => {
     if (!start) return;
 
-    const { Engine, Runner, Bodies, Composite, Mouse, MouseConstraint } = Matter;
-    const container = sceneRef.current;
+    const { Engine, Runner, Bodies, Composite, Mouse, MouseConstraint, Query } = Matter;
+    const containerEl = sceneRef.current;
     const imgRefs = [];
 
+    // ── Desktop drag state ───────────────────────────────────────────────
+    let isMouseDown = false;
+    let onDocMouseMove    = null;
+    let onDocMouseUp      = null;
+    let onContainerMouseDown  = null;
+    let onContainerMouseLeave = null;
+
+    // ── Touch drag state ─────────────────────────────────────────────────
+    let isTouchDragging   = false; // true only when finger is ON a body
+    let onTouchStart      = null;
+    let onTouchMove       = null;
+    let onTouchEnd        = null;
+
     const createWorld = () => {
-      // Cleanup previous world
+      // Cleanup
       if (engineRef.current) {
         Runner.stop(runnerRef.current);
         cancelAnimationFrame(animFrameRef.current);
         Matter.World.clear(engineRef.current.world);
         Matter.Engine.clear(engineRef.current);
       }
+      if (onDocMouseMove)        document.removeEventListener("mousemove",  onDocMouseMove);
+      if (onDocMouseUp)          document.removeEventListener("mouseup",    onDocMouseUp);
+      if (onContainerMouseDown)  containerEl.removeEventListener("mousedown",  onContainerMouseDown);
+      if (onContainerMouseLeave) containerEl.removeEventListener("mouseleave", onContainerMouseLeave);
+      if (onTouchStart)          containerEl.removeEventListener("touchstart",  onTouchStart);
+      if (onTouchMove)           containerEl.removeEventListener("touchmove",   onTouchMove);
+      if (onTouchEnd)            containerEl.removeEventListener("touchend",    onTouchEnd);
 
-      // Remove old injected imgs
-      container.querySelectorAll(".physics-img").forEach((el) => el.remove());
+      containerEl.querySelectorAll(".physics-img").forEach((el) => el.remove());
       imgRefs.length = 0;
 
-      const width = container.offsetWidth;
-      const height = container.offsetHeight;
-      const SIZE = width > 1024 ? 70 : width > 768 ? 65 : 50;
+      const width  = containerEl.offsetWidth;
+      const height = containerEl.offsetHeight;
+      const SIZE   = width > 1024 ? 70 : width > 768 ? 65 : 50;
 
-      // Inject DOM <img> elements directly
-      // Browser renders SVG natively = always sharp, zero blur
       images.forEach((src) => {
         const img = document.createElement("img");
-        img.src = src;
+        img.src       = src;
         img.className = "physics-img";
         img.draggable = false;
         Object.assign(img.style, {
-          position: "absolute",
-          width: SIZE + "px",
-          height: SIZE + "px",
-          userSelect: "none",
+          position:      "absolute",
+          width:         SIZE + "px",
+          height:        SIZE + "px",
+          userSelect:    "none",
           pointerEvents: "none",
-          willChange: "transform",
+          willChange:    "transform",
         });
-        container.appendChild(img);
+        containerEl.appendChild(img);
         imgRefs.push(img);
       });
 
-      // Physics engine
-      const engine = Engine.create();
+      // Physics
+      const engine     = Engine.create();
       engine.gravity.y = 0.8;
       engineRef.current = engine;
 
@@ -137,51 +149,128 @@ const letter = {
         Bodies.rectangle(
           Math.random() * (width - 100) + 50,
           Math.random() * 150,
-          SIZE,
-          SIZE,
-          {
-            chamfer: { radius: 14 },
-            restitution: 0.8,
-            friction: 0.01,
-          }
+          SIZE, SIZE,
+          { chamfer: { radius: 14 }, restitution: 0.8, friction: 0.01 }
         )
       );
+      logosRef.current = logos;
 
       const t = 100;
       const walls = [
-        Bodies.rectangle(width / 2, height + t / 2, width + t * 2, t, { isStatic: true }),
-        Bodies.rectangle(width / 2, -t / 2, width + t * 2, t, { isStatic: true }),
-        Bodies.rectangle(-t / 2, height / 2, t, height + t * 2, { isStatic: true }),
-        Bodies.rectangle(width + t / 2, height / 2, t, height + t * 2, { isStatic: true }),
+        Bodies.rectangle(width / 2,     height + t / 2, width  + t * 2, t,             { isStatic: true }),
+        Bodies.rectangle(width / 2,     -t / 2,         width  + t * 2, t,             { isStatic: true }),
+        Bodies.rectangle(-t / 2,        height / 2,     t,              height + t * 2, { isStatic: true }),
+        Bodies.rectangle(width + t / 2, height / 2,     t,              height + t * 2, { isStatic: true }),
       ];
-
       Composite.add(engine.world, [...logos, ...walls]);
 
-      // Mouse drag attached to container div
-      const mouse = Mouse.create(container);
-      mouse.element.removeEventListener("wheel", mouse.mousewheel);
-      mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
-      mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
+      // ── Mouse (desktop) ──────────────────────────────────────────────────
+      const mouse = Mouse.create(containerEl);
 
-      Composite.add(
-        engine.world,
-        MouseConstraint.create(engine, {
-          mouse,
-          constraint: { stiffness: 0.2, render: { visible: false } },
-        })
-      );
+      // Remove Matter's built-in touch listeners — we handle touch manually below
+      mouse.element.removeEventListener("touchstart",      mouse.mousedown);
+      mouse.element.removeEventListener("touchmove",       mouse.mousemove);
+      mouse.element.removeEventListener("touchend",        mouse.mouseup);
+      mouse.element.removeEventListener("wheel",           mouse.mousewheel);
+      mouse.element.removeEventListener("mousewheel",      mouse.mousewheel);
+      mouse.element.removeEventListener("DOMMouseScroll",  mouse.mousewheel);
+
+      onContainerMouseDown = () => { isMouseDown = true; };
+
+      onDocMouseMove = (e) => {
+        if (!isMouseDown) return;
+        const rect       = containerEl.getBoundingClientRect();
+        mouse.position.x = e.clientX - rect.left;
+        mouse.position.y = e.clientY - rect.top;
+        mouse.absolute.x = mouse.position.x;
+        mouse.absolute.y = mouse.position.y;
+      };
+
+      onDocMouseUp = () => { isMouseDown = false; mouse.button = -1; };
+      onContainerMouseLeave = () => { isMouseDown = false; mouse.button = -1; };
+
+      containerEl.addEventListener("mousedown",  onContainerMouseDown);
+      document.addEventListener("mousemove",     onDocMouseMove);
+      document.addEventListener("mouseup",       onDocMouseUp);
+      containerEl.addEventListener("mouseleave", onContainerMouseLeave);
+
+      // ── Touch (mobile) ───────────────────────────────────────────────────
+      // Helper: get touch coords relative to container
+      const getTouchPos = (touch) => {
+        const rect = containerEl.getBoundingClientRect();
+        return {
+          x: touch.clientX - rect.left,
+          y: touch.clientY - rect.top,
+        };
+      };
+
+      // Helper: check if a point hits any physics body
+      const bodyAtPoint = (x, y) =>
+        Query.point(logosRef.current, { x, y }).length > 0;
+
+      onTouchStart = (e) => {
+        const touch = e.touches[0];
+        const pos   = getTouchPos(touch);
+
+        if (bodyAtPoint(pos.x, pos.y)) {
+          // Finger is ON a body → start drag, block scroll
+          isTouchDragging  = true;
+          mouse.position.x = pos.x;
+          mouse.position.y = pos.y;
+          mouse.absolute.x = pos.x;
+          mouse.absolute.y = pos.y;
+          mouse.button     = 0; // simulate mousedown for Matter
+          e.preventDefault();   // prevent scroll only when dragging
+        } else {
+          // Finger on empty space → let browser scroll naturally
+          isTouchDragging = false;
+        }
+      };
+
+      onTouchMove = (e) => {
+        if (!isTouchDragging) return; // not dragging a body → don't interfere
+        const touch = e.touches[0];
+        const pos   = getTouchPos(touch);
+        mouse.position.x = pos.x;
+        mouse.position.y = pos.y;
+        mouse.absolute.x = pos.x;
+        mouse.absolute.y = pos.y;
+        e.preventDefault(); // block scroll only while dragging a body
+      };
+
+      onTouchEnd = () => {
+        if (!isTouchDragging) return;
+        isTouchDragging  = false;
+        mouse.button     = -1; // release body
+      };
+
+      // { passive: false } required so we can call preventDefault() inside
+      containerEl.addEventListener("touchstart", onTouchStart, { passive: false });
+      containerEl.addEventListener("touchmove",  onTouchMove,  { passive: false });
+      containerEl.addEventListener("touchend",   onTouchEnd,   { passive: true  });
+
+      // Mouse constraint
+      const mConstraint = MouseConstraint.create(engine, {
+        mouse,
+        constraint: { stiffness: 0.2, render: { visible: false } },
+      });
+      // Remove Matter's own touch listeners from the constraint too
+      mConstraint.mouse.element.removeEventListener("touchstart", mConstraint.mouse.mousedown);
+      mConstraint.mouse.element.removeEventListener("touchmove",  mConstraint.mouse.mousemove);
+      mConstraint.mouse.element.removeEventListener("touchend",   mConstraint.mouse.mouseup);
+
+      Composite.add(engine.world, mConstraint);
 
       const runner = Runner.create();
       Runner.run(runner, engine);
       runnerRef.current = runner;
 
-      // RAF loop — direct DOM update, ZERO React re-renders
       const loop = () => {
         logos.forEach((body, i) => {
           const el = imgRefs[i];
           if (!el) return;
-          el.style.left = body.position.x - SIZE / 2 + "px";
-          el.style.top = body.position.y - SIZE / 2 + "px";
+          el.style.left      = body.position.x - SIZE / 2 + "px";
+          el.style.top       = body.position.y - SIZE / 2 + "px";
           el.style.transform = `rotate(${body.angle}rad)`;
         });
         animFrameRef.current = requestAnimationFrame(loop);
@@ -192,18 +281,25 @@ const letter = {
     createWorld();
 
     const resizeObserver = new ResizeObserver(createWorld);
-    resizeObserver.observe(container);
+    resizeObserver.observe(containerEl);
 
     return () => {
       resizeObserver.disconnect();
+      if (onDocMouseMove)        document.removeEventListener("mousemove",  onDocMouseMove);
+      if (onDocMouseUp)          document.removeEventListener("mouseup",    onDocMouseUp);
+      if (onContainerMouseDown)  containerEl.removeEventListener("mousedown",  onContainerMouseDown);
+      if (onContainerMouseLeave) containerEl.removeEventListener("mouseleave", onContainerMouseLeave);
+      if (onTouchStart)          containerEl.removeEventListener("touchstart",  onTouchStart);
+      if (onTouchMove)           containerEl.removeEventListener("touchmove",   onTouchMove);
+      if (onTouchEnd)            containerEl.removeEventListener("touchend",    onTouchEnd);
       cancelAnimationFrame(animFrameRef.current);
-      if (runnerRef.current) Matter.Runner.stop(runnerRef.current);
+      if (runnerRef.current)  Matter.Runner.stop(runnerRef.current);
       if (engineRef.current) {
         Matter.World.clear(engineRef.current.world);
         Matter.Engine.clear(engineRef.current);
       }
-      if (container) {
-        container.querySelectorAll(".physics-img").forEach((el) => el.remove());
+      if (containerEl) {
+        containerEl.querySelectorAll(".physics-img").forEach((el) => el.remove());
       }
     };
   }, [start]);
@@ -214,42 +310,43 @@ const letter = {
 
         <div className="flex justify-between items-end mb-8">
           <div>
-         <h1 className="text-white text-[30px] lg:text-[44px]">
-  Tools we{" "}
-
-  <motion.span
-    className="inline-block bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
-    variants={container}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-  >
-    {trustText.split("").map((char, index) => (
-      <motion.span key={index} variants={letter} className="inline-block">
-        {char}
-      </motion.span>
-    ))}
-  </motion.span>
-</h1>
-            <p className="text-[14px] lg:text-[18px] max-w-[550px] text-gray-300 max-w-[420px]">
+            <h1 className="text-white text-[30px] lg:text-[44px]">
+              Tools we{" "}
+              <motion.span
+                className="inline-block bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
+                {trustText.split("").map((char, index) => (
+                  <motion.span key={index} variants={letter} className="inline-block">
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.span>
+            </h1>
+            <p className="text-[14px] lg:text-[18px] text-gray-300 max-w-[420px]">
               Powerful tools and technologies I use in modern web development.
             </p>
           </div>
-           <motion.img
-           src={arrow} alt="arrow"  src={arrow} alt="" className="w-10 h-10 cursor-pointer"
+
+          <motion.img
+            src={arrow}
+            alt=""
+            className="w-10 h-10 cursor-pointer"
             initial={{ opacity: 0, scale: 0.4, rotate: -90 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              whileHover={{ scale: 1.15, rotate: 10 }}
-              transition={{ duration: 0.8 }}
-           />
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            whileHover={{ scale: 1.15, rotate: 10 }}
+            transition={{ duration: 0.8 }}
+          />
         </div>
 
-        {/* No canvas. No React state updates. Pure DOM + Matter.js physics. */}
         <div
           ref={sceneRef}
-          className="w-full h-[350px] sm:h-[500px] rounded-2xl border cursor-pointer border-gray-700 bg-[#181818] overflow-hidden relative"
-          style={{ touchAction: "pan-y", cursor: "grab" }}
+          className="w-full h-[350px] sm:h-[500px] rounded-2xl border border-gray-700 bg-[#181818] overflow-hidden relative"
+          style={{ cursor: "grab" }}
         />
 
       </div>

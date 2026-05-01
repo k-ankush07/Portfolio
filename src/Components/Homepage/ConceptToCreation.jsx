@@ -23,13 +23,14 @@ function ConceptToCreation() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
+                       
                     >
                         <img src={aicon} alt='Aicon' />
                     </motion.div>
 
                     {/* Heading */}
                     <motion.div
-                        className='text-[30px] lg:text-[44px] font-bold text-[#FFFFFF] mt-3 w-[321px] lg:w-full'
+                        className='text-[30px] lg:text-[44px] font-bold text-[#FFFFFF] mt-4 sm:mt-7 w-[321px] lg:w-full'
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}

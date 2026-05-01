@@ -47,18 +47,18 @@ const item = {
 };
   return (
    <>
-  <div className='bg-[#000000] xl:w-[60%]'>
+  <div className='bg-[#000000] xl:w-[60%] z-10 group'>
      <div className=' group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center  md:px-15 py-4 rounded-[8px] border border-[#292929]  mx-auto px-[39px] cursor-pointer'
      onMouseEnter={() => setShow(true)}
     onMouseLeave={() => setShow(false)}
      >
     <img src={Blur} alt='blur gradient' className='absolute right-0 overflow-hidden top-0 opacity-85 transition-all duration-400 group-hover:opacity-100' />
-     <div className="text-[#FFFFFF] lg:pt-10 relative z-50">
+     <div className="text-[#FFFFFF] lg:pt-9 relative z-50">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[12px] lg:text-[24px] text-center"
+            className="text-[18px] lg:text-[24px] text-center font-bold"
           >
             Let's work together on your next project
           </motion.h2>
@@ -67,7 +67,7 @@ const item = {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="text-[#BDBDBD] text-[8px] lg:text-[16px] text-center"
+            className="text-[#BDBDBD] text-[12px] lg:text-[16px] text-center"
           >
             Open communication, async updates, zero surprises
           </motion.p>
