@@ -4,6 +4,7 @@ import logo from "../../assets/Images/Vector (3).svg"
 import Vector from "../../assets/Images/Vector (6).svg"
 import Vector1 from "../../assets/Images/Vector (7).svg"
 import Vector2 from "../../assets/Images/Vector (8).svg"
+import GradientBorderButton from "../Homepage/GradientBorderButton";
 function Footer() {
     return (
         <section className="py-7 px-2 xl:px-0 ">
@@ -22,18 +23,15 @@ function Footer() {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Suspendisse varius enim in eros elementum tristique.
                             </p>
-                            <div className="relative inline-block sm:mt-3 rounded-md overflow-hidden p-[2px]">
-
-                                {/* ROTATING GRADIENT */}
+                            {/* <div className="relative inline-block sm:mt-3 rounded-md overflow-hidden p-[2px]">
                                 <div className="absolute inset-0 animate-spin-slow 
                               bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]" />
-
-                                {/* CONTENT */}
                                 <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
                                     <span className="text-[#c58962]">Available for work</span>
                                 </div>
+                            </div> */}
+                             <GradientBorderButton />
 
-                            </div>
 
                         </div>
 

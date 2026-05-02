@@ -122,14 +122,14 @@ function FullStack() {
                                     className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
-                                    <div className="relative inline-block mt-3 rounded-md overflow-hidden p-[2px]">
+                                <div className="flex justify-center">
+                                    <div className="relative inline-block mt-3 rounded-md p-[1.5px] overflow-hidden">
 
-                                        {/* ROTATING GRADIENT */}
-                                        <div className="absolute inset-0 animate-spin-slow 
-                                         bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]" />
+                                        {/* SLOW ROTATING BORDER */}
+                                        <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
                                         {/* CONTENT */}
-                                        <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] xl:px-4 text-white">
+                                        <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] xl:px-4 text-white">
 
                                             <span className="text-[#FFAF7B] px-1 py-1">
                                                 <FaLocationDot />
@@ -140,9 +140,8 @@ function FullStack() {
                                             </span>
 
                                         </div>
-
                                     </div>
-                                {/* </div> */}
+                                </div>
                             </div>
                             <motion.div
                                 className="flex justify-center gap-2 mt-5"

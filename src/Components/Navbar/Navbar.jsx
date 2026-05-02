@@ -97,7 +97,7 @@ const handleMouseLeave = () => {
       ? "150px" 
       : open 
         ? "700px" 
-        : "383px", 
+        : "381px", 
     }}
     transition={{ duration: 0.4, ease: "easeInOut" }}
     className="bg-[rgba(38,38,38,0.92)] backdrop-blur-2xl border border-white/10 
