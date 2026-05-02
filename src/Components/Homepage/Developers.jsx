@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 function Developers({ }) {
     const developersData = [
         {
-            desc: "I used to spend too much time debugging React components — CodeGent made that a thing of the past. The AI suggestions from CodeGent are a game-changer. I get instant feedback that improves both speed.",
+            desc: "I used to spend too much time debugging React components — CodeGent made that a thing of the past. The AI suggestions from CodeGent are a game-changer. I get instant feedback that improves both speed.  ",
             name: "Jaydon Gouse",
             picture: image,
             bg: Background,

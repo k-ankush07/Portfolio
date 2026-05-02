@@ -37,10 +37,10 @@ useEffect(() => {
 const getGreeting = () => {
   const hour = new Date().getHours();
 
-  if (hour < 12) return "Good Morning ";
-  if (hour < 17) return "Good Afternoon ";
-  if (hour < 21) return "Good Evening ";
-  return "Good Night ";
+  if (hour < 12) return "Good Morning ☀️";
+  if (hour < 17) return "Good Afternoon 🌤️";
+  if (hour < 21) return "Good Evening 🌇";
+  return "Good Night 🌌";
 };
   
 
@@ -97,11 +97,11 @@ const handleMouseLeave = () => {
       ? "150px" 
       : open 
         ? "700px" 
-        : "400px", 
+        : "383px", 
     }}
     transition={{ duration: 0.4, ease: "easeInOut" }}
     className="bg-[rgba(38,38,38,0.92)] backdrop-blur-2xl border border-white/10 
-    shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] px-2"
+    shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] px-"
   >
     
     {/* TOP NAV (CENTER FIXED) */}
@@ -134,14 +134,17 @@ const handleMouseLeave = () => {
       {["Home", "About", "Work", "Blog"].map((link) => (
         <button
           key={link}
+           onMouseEnter={() => {
+      if (!isPinned) setOpen(false); //LOSE DROPDOWN HERE
+    }}
           onClick={() => setActive(link)}
-          className="relative px-[14px] py-[6px] cursor-pointer rounded-[22px] lg:text-[16px] font-medium text-white/70"
+        className="relative px-[14px] py-[6px] cursor-pointer transition-all duration-700 rounded-[22px] lg:text-[16px] font-medium text-white/70 hover:text-white hover:bg-white/10"
         >
           {active === link && (
             <motion.div
               layoutId="active-pill"
               className="absolute inset-0  bg-white/15 rounded-full"
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              transition={{ type: "spring", stiffness: 300, damping: 29 }}
             />
           )}
 
@@ -177,8 +180,20 @@ const handleMouseLeave = () => {
 </div>
 
     {/* DROPDOWN */}
+    <div
+  className="relative"
+  onMouseEnter={() => {
+    if (!isPinned) setOpen(true);
+  }}
+  onMouseLeave={() => {
+    if (!isPinned) setOpen(false);
+  }}
+>
    <div
-  onMouseEnter={cancelClose}
+  onClick={() => {
+    setIsPinned((prev) => !prev);
+    setOpen((prev) => !prev);
+  }}
   className={`
     origin-top transform-gpu will-change-transform
     transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]
@@ -207,7 +222,7 @@ const handleMouseLeave = () => {
       transitionDelay: `${i * 100}ms`
     }}
   >
-            <img
+            <img  
               src={item.img}
               className="w-full h-full object-cover brightness-[0.65]"
             />
@@ -225,7 +240,7 @@ const handleMouseLeave = () => {
     key={item.label}
     className={`
       flex items-center gap-3 p-3 rounded-xl
-      bg-white/7 hover:bg-white/12 cursor-pointer transition-all duration-500
+      bg-white/7 hover:bg-white/12 cursor-pointer transition-all duration-200
       ${open
         ? "opacity-100 translate-y-0"
         : "opacity-0 translate-y-4"
@@ -247,6 +262,10 @@ const handleMouseLeave = () => {
         </div>
 
       </div>
+  
+  
+  
+  </div>
     </div>
     </motion.div>
     </motion.div>

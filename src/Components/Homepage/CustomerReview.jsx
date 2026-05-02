@@ -53,7 +53,7 @@ function CustomerReview() {
                   : "translate-y-6 opacity-0"  
                 }`}
                                 // Arrow hover animation (only when visible)
-                                whileHover={{ scale: 1.15, rotate: 10 }}
+                                whileHover={{ scale: 1.15}}
 
                                 transition={{ duration: 0.4 }}
             />

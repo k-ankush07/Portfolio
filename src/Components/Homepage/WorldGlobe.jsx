@@ -41,7 +41,7 @@ const WorldGlobe = () => {
     globeRef.current.pointOfView({
       lat: isMobile ? 10 : 15,
       lng: 20,
-      altitude: isMobile ? 3 : 2.5,
+      altitude: isMobile ? 3 : 2,
     });
   }, [isMobile]);
 
@@ -93,7 +93,7 @@ const WorldGlobe = () => {
       labelLat="lat"
       labelLng="lng"
       labelText="label"
-      labelSize={isMobile ? 3 : 3}
+      labelSize={isMobile ? 1.5 : 1.2}
       labelColor={() => "#ffffff"}
     />
   );

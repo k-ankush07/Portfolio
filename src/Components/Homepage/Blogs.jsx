@@ -29,7 +29,7 @@ function Blogs() {
                   ? "-translate-y-0 opacity-100"   
                   : "-translate-y-6 opacity-0"  
                 }`}
-                                whileHover={{ scale: 1.15, rotate: 10 }}
+                                whileHover={{ scale: 1.15}}
 
                                 transition={{ duration: 0.4 }}
             />

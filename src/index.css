@@ -344,21 +344,25 @@ img.toolWeTrust {
 
 
 
-/*  lets connect button effect */
 .btn-slide {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
+.btn-slide:hover {
+  color: white;
+  background: transparent;
+}
 
-/* sliding layer */
+
 .btn-slide::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  background: #d0cecb;
-  /* hover color */
+   background: linear-gradient( #673272, #E98B7A);
+  transform: translateX(-101%);
+
 
 
   transform: translateX(-100%);
@@ -367,10 +371,13 @@ img.toolWeTrust {
   z-index: -1;
 }
 
-/* hover effect */
+
 .btn-slide:hover::before {
   transform: translateX(0);
+  
 }
+
+ 
 
 /* concept section aanimation */
 @keyframes spinSlow {
@@ -387,7 +394,14 @@ img.toolWeTrust {
   animation: spinSlow 6s linear infinite;
 }
 
+@keyframes borderSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
 
+.border-spin {
+  animation: borderSpin 6s linear infinite;
+}
 
 
 
@@ -515,3 +529,69 @@ Loved by 10,000+ Developers*/
 }
 
 
+
+
+
+
+@keyframes spreadLeft {
+  from { opacity: 0; transform: translateX(160px) translateY(0px); }
+  to   { opacity: 1; transform: translateX(0) translateY(0); }
+}
+
+
+@keyframes spreadUp {
+  from { opacity: 0; transform: translateX(-40px) translateY(100px); }
+  to   { opacity: 1; transform: translateX(0) translateY(0); }
+}
+@keyframes spreadRight {
+  from { opacity: 0; transform: translateX(-160px) translateY(0px); }
+  to   { opacity: 1; transform: translateX(0) translateY(0); }
+}
+
+.animate-spread-left {
+  opacity: 0;
+  animation: spreadLeft 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spread-up {
+  opacity: 0;
+  animation: spreadUp 2s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
+}
+
+.animate-spread-right {
+  opacity: 0;
+  animation: spreadRight 2s cubic-bezier(0.16, 1, 0.3, 1) 0.24s forwards;
+}
+
+
+
+@keyframes spreadLeft-bottom {
+  from { opacity: 0; transform: translateX(-10px) translateY(0px); left: 200px; }
+  to   { opacity: 1; transform: translateX(0) translateY(0); }
+}
+
+
+@keyframes spreadUp-bottom {
+  from { opacity: 0; transform: translateX(-10px) translateY(0px); left: 300px; }
+  to   { opacity: 1; transform: translateX(0) translateY(0); }
+}
+@keyframes spreadRight-bottom {
+  from { opacity: 0; transform: translateX(160px) translateY(20px); right: 800px; }
+  to   { opacity: 1; transform: translateX(0) translateY(0);  }
+}
+
+.animate-spread-left-bottom {
+  opacity: 0;
+  animation: spreadLeft-bottom 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+.animate-spread-right-bottom {
+opacity: 0;
+  animation:  spreadUp-bottom 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spread-center-bottom{
+opacity: 0;
+  animation: spreadRight-bottom 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

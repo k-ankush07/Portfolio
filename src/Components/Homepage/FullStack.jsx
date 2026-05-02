@@ -165,7 +165,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF] border border-[#FCFCFC] py-3 px-15 mt-5 sm:px-15 xl:px-16 '>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-15 mt-5 sm:px-15 xl:px-16 '>
                                     Hire Me
                                 </button></Link>
                             </div>

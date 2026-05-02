@@ -6,7 +6,7 @@ import Background1 from "../../assets/Images/Background+Blur (2).svg"
 import Background2 from "../../assets/Images/Background+Blur (3).svg"
 import Background3 from "../../assets/Images/Background+Blur (4).svg"
 import { Link } from 'react-router-dom'
-
+import { FaArrowRightLong } from "react-icons/fa6";
 function ConceptToCreation() {
     return (
         <section className='py-5 px-2 md:px-0'>
@@ -64,11 +64,13 @@ function ConceptToCreation() {
                                 </p>
                             </div>
 
-                            <div className='text-center mt-7'>
+                            <div className='text-center mt-7 flex justify-center'>
                                 <Link to="">
-                                    <button className='btn-slide cursor-pointer bg-[#FFFFFF] rounded-[500px] text-[16px] text-[#000000] px-7 py-3'>
-                                        Get in Touch
+                                   <button className="btn-slide group rounded-[500px]  bg-[#FFFFFF] cursor-pointer  flex items-center gap-5 text-[#000000]  text-[16px] pl-5 pr-3 py-3">
+                                    Get in Touch
+                                    <FaArrowRightLong className="text-[14.6px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-300 group-hover:opacity-100 group-hover:-translate-x-4" />
                                     </button>
+                                    
                                 </Link>
                             </div>
                         </div>

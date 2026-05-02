@@ -305,7 +305,7 @@ function Tool() {
   }, [start]);
 
   return (
-    <section className="py-10 bg-black px-3 sm:px-0">
+    <section className="pb-10 pt-15 px-3 sm:px-0">
       <div className="container">
 
         <div className="flex justify-between items-end mb-8">
@@ -335,10 +335,10 @@ function Tool() {
             src={arrow}
             alt=""
             className="w-10 h-10 cursor-pointer"
-            initial={{ opacity: 0, scale: 0.4, rotate: -90 }}
+            initial={{ opacity: 0,  }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true, amount: 0.35 }}
-            whileHover={{ scale: 1.15, rotate: 10 }}
+            whileHover={{ scale: 1.15 }}
             transition={{ duration: 0.8 }}
           />
         </div>

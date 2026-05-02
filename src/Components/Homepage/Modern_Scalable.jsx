@@ -5,11 +5,13 @@ import location from "../../assets/Images/location.svg"
 import emoji from "../../assets/Images/emoji.png"
 import emoji1 from "../../assets/Images/emoji1.png"
 import WorldGlobe from "./WorldGlobe"
-
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Modern_Scalable() {
 
   const [show, setShow] = useState(false);
+
+  
 
   useEffect(() => {
     setShow(true);
@@ -23,7 +25,7 @@ function Modern_Scalable() {
             <div className="pt-10 xl:py-20">
               {/* Background Image */}
 
-              <div className="absolute inset-0 h-[55rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-80">
+              <div className="absolute inset-0 h-[55rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-70">
             <div className="" style={{ pointerEvents: "none" }}>
                 {show && <WorldGlobe />} 
             </div>
@@ -84,29 +86,27 @@ function Modern_Scalable() {
                 </div>
 
                 {/* Buttons */}
-                <div className={` mt-7  md:mt-6   xl:mt-[43px] flex justify-center  gap-3  items-center transition-all duration-700 ease-out
+                <div className={` mt-7  md:mt-6  lg:mb-6 xl:mb-0  xl:mt-[43px] flex justify-center  gap-3  items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}
-                  <button className=" btn-slide px-3  cursor-pointer py-2 sm:px-8 sm:py-4 xl:px-11 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
+                  <button className=" btn-slide group  flex justify-center items-center gap-4 lg:gap-6  cursor-pointer py-2   pl-3 pr-2  sm:pl-5 sm:py-3 xl:px-3 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
                     Let’s Connect
+                   
+                     <FaArrowRightLong className="text-[14.6px] md:text-[16px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-800 group-hover:opacity-100 group-hover:-translate-x-5" />
                   </button>
 
                   {/* Icon Button */}
-                  <div className="flex justify-center items-center ">
-                    <div className="border border-white px-2 cursor-pointer py-2 sm:py-4 sm:px-4 bg-white/20 rounded-full">
+                  <div className="flex justify-center items-center group ">
+                    <div className=" btn-slide  border border-white px-2 group-hover:border-transparent cursor-pointer py-2 sm:py-3 sm:px-3 bg-white/20 rounded-full">
                       <img src={messageIcon} alt="message" className=" " />
                     </div>
                   </div>
-                  {/* <button className=" mt-3 ">
-    
-  </button> */}
+           
 
                 </div>
 
-                {/* <div className=" px-3 location relative left-0   sm:-top-1 sm:left-30 sm:-bottom-10 md:left-30 lg:top-0 lg:left-65 xl:left-35">
-                  <img src={location} alt="location icon" />
-                </div> */}
+              
 
               </div>
             </div>

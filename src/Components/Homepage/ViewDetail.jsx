@@ -122,7 +122,7 @@ function ViewDetail() {
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleLeave}
-        className="w-full relative  inline-block sm:mt-3 rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group "
+        className="w-full relative  inline-block sm:mt-3 rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer "
          style={{
                   transform: hovered ? "scale(1.01)" : "scale(1)",
                 }}  
