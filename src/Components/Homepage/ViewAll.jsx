@@ -14,25 +14,6 @@ function ViewAll() {
         <RecruiterOne index={0} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  " />
       </div>
 
-     {/* <div className=' text-[#FFFFFF] text-[14px] md:text-[16px] flex  justify-center  py-2 lg:py-[22px]  group '>
-          <div className='flex gap-3 justify-center items-center  '>
-                        <h1 >
-                            View all Projects
-                           
-                        </h1>
-                         <motion.img
-              src={arrow}
-              alt="arrow" 
-              className='lg:h-10 lg:w-10 cursor-pointer'
-               initial={{ opacity: 0,   }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              whileHover={{ scale: 1.15}}
-              transition={{ duration: 0.8 }}
-              />
-                    </div>
-      
-    </div> */}
 
     <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center py-2 lg:py-0">
   

@@ -64,7 +64,6 @@ function RecruiterOne({ index, desc }) {
     <section
       className="sticky py-0 sm:py-0 flex items-start top-7 " //  MOBILE FIXES
       style={{
-
         zIndex: 10 + index,
       }}
     >

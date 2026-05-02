@@ -32,12 +32,12 @@ function ToolWeTrust() {
 
 
     return (
-        <div className='flex relative w-full md:w-[33.3%] cursor-pointer'
+        <div className='about_class flex relative w-full md:w-[33.3%] cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-        >
-            <div className='border-[2px] border-[#292929] rounded-[8px] lg:pt-15 w-[100%]  '>
-                <div className='flex  justify-center items-end py-20 lg:py-6 '>
+        >   
+            <div className=' about_classinner border-[2px] border-[#292929] rounded-[8px] lg:pt-15 w-[100%]  '>
+                <div className=' about_child flex  justify-center items-end py-20 lg:py-6 '>
                     <Swiper
                         modules={[Autoplay]}
                         slidesPerView={4}
@@ -79,7 +79,7 @@ function ToolWeTrust() {
 
                 </div>
                 <div className='absolute bottom-0 w-[100%]'>
-                    <div className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
+                    <div className={`tool-text flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
                        
                         `}>
                         {/* <h1 className='text-[#FFFFFF] text-[10px] lg:text-[20px] font-bold'>Tools we trust</h1> */}
@@ -94,7 +94,7 @@ function ToolWeTrust() {
                            <motion.img
                                          src={arrow}
                                          alt="arrow"
-                                         className={`lg:h-10 lg:w-10 transition-all duration-200 ease-out
+                                         className={`tool_arrow lg:h-10 lg:w-10 transition-all duration-200 ease-out
                                ${isHovered
                                              ? "translate-y-0 opacity-100"   
                                              : "translate-y-6 opacity-0"  

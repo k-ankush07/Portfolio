@@ -9,12 +9,15 @@ import Developers from '../Components/Homepage/Developers'
 import Explore from '../Components/Homepage/Explore'
 import ConceptToCreation from '../Components/Homepage/ConceptToCreation'
 import SkillAndMordenPage from './SkillAndMordenPage'
+import Journey from '../Components/AboutPage/Journey'
+import Engineer from '../Components/AboutPage/Engineer'
 
 
 function HomePage() {
   return (
    <>
    <div className='lato-regular'>
+    
    <Modern_Scalable />  
     <SkillAndMordenPage />
 <Web_Project />

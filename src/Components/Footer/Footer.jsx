@@ -5,6 +5,7 @@ import Vector from "../../assets/Images/Vector (6).svg"
 import Vector1 from "../../assets/Images/Vector (7).svg"
 import Vector2 from "../../assets/Images/Vector (8).svg"
 import GradientBorderButton from "../Homepage/GradientBorderButton";
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <section className="py-7 px-2 xl:px-0 ">
@@ -84,7 +85,7 @@ function Footer() {
                             <p className="text-center">© 2026 Ankush Kumar. All rights reserved</p>
 
                             <div className="flex justify-center mt-2 md:mt-0 gap-6">
-                                <span className=" cursor-pointer hover:text-gray-100">Privacy Policy</span>
+                                <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link> 
                                 <span className="cursor-pointer hover:text-gray-100">Terms of Use</span>
                             </div>
                         </div>

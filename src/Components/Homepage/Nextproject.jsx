@@ -47,7 +47,7 @@ const item = {
 };
   return (
    <>
-  <div className='bg-[#000000] xl:w-[60%] z-10 group'>
+  <div className=' next-Project bg-[#000000] xl:w-[60%] z-10 group'>
      <div className=' group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center  md:px-15 py-4 rounded-[8px] border border-[#292929]  mx-auto px-[39px] cursor-pointer'
      onMouseEnter={() => setShow(true)}
     onMouseLeave={() => setShow(false)}
