@@ -43,7 +43,7 @@ export default function MobileNavbar() {
   { name: "X (Twitter)", url: "https://twitter.com/yourusername" },
 ];
   const legal = [
-  { name: "Privacy Policy", path: "/privacy-policy" },
+  { name: "Privacy Policy", path: "/privacy" },
   { name: "Terms of Use", path: "/terms" },
 ];
 

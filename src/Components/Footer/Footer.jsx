@@ -20,7 +20,7 @@ function Footer() {
                             {/* <h1 className="text-white text-2xl font-bold mb-4">AK</h1> */}
                             <img src={logo} alt="icon" className="mb-4 cursor-pointer" />
 
-                            <p className="text-[16px] text-[#BDBDBD] opacity-80  w-[60%] sm:w-[80%]   xl:w-[70%]  mb-4">
+                            <p className="text-[16px] text-[#BDBDBD] opacity-80  w-[60%] sm:w-[80%]   xl:w-[70%]  mb-7">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Suspendisse varius enim in eros elementum tristique.
                             </p>
@@ -31,7 +31,7 @@ function Footer() {
                                     <span className="text-[#c58962]">Available for work</span>
                                 </div>
                             </div> */}
-                             <GradientBorderButton />
+                             <GradientBorderButton data="Available for work" />
 
 
                         </div>
