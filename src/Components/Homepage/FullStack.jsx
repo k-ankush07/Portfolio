@@ -276,7 +276,7 @@ function FullStack() {
                                     <div className='space-y-2 text-[#BDBDBD] text-[14px] max-w-[400px]'>
 
                                         <motion.p variants={textItem} className='mt-5'>
-                                            I'm Aayush Bharti, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
+                                            I'm Ankush Kumar, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
                                         </motion.p>
 
                                         <motion.p variants={textItem}>
