@@ -16,7 +16,7 @@ function AboutPage() {
   return (
     <div className='lg:pt-[172px] lato-regular'>
       <FullStack />
-      <ProfileCard />
+      {/* <ProfileCard /> */}
     <Journey />
    <div>
      <Engineer index={0}  date="Jan 2025 – Present" logo={Roboto} heading="Roboto Studio" heading1="Frontend" heading2=" Engineer"
