@@ -24,13 +24,13 @@ function PrivacyPage() {
 
   cards={[
     {
-      icon: <img src={lock} alt="lock" className="w-5 h-5" />,
+      icon: <img src={lock} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Authentication",
       para: "When you sign in via GitHub or Google, I receive your name, email, and avatar. This establishes your public profile for the Guestbook.",
      
     },
      {
-      icon: <img src={privacyicon5} alt="lock" className="w-5 h-5" />,
+      icon: <img src={privacyicon5} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Security Logs",
       para: "To prevent abuse, logs like IP address & user agent are used during sessions.",
      
@@ -46,17 +46,17 @@ function PrivacyPage() {
 
   cards={[
     {
-      icon: <img src={privacyicon4} alt="lock" className="w-5 h-5" />,
+      icon: <img src={privacyicon4} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Vercel Analytics",
       para: "Measures server performance, latency, and load times. Strictly technical data."
     },
      {
-      icon: <img src={privacyicon3} alt="lock" className="w-5 h-5" />,
+      icon: <img src={privacyicon3} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Google Analytics",
       para: "Tracks general page views and geography. IP anonymization is enabled to protect your identity."
     },
      {
-      icon: <img src={privacyicon2} alt="lock" className="w-5 h-5" />,
+      icon: <img src={privacyicon2} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "PostHog",
       para: "Used for feature flagging and product usage insights (e.g., Did people use the dark mode toggle?)"
     },
@@ -72,7 +72,7 @@ function PrivacyPage() {
 
   cards={[
     {
-      icon: <img src={privacyicon1} alt="lock" className="w-5 h-5" />,
+      icon: <img src={privacyicon1} alt="lock" className="w-10 h-10 lg:h-5 lg:w-5" />,
       heading: "Ownership & Deletion",
       para: "You own your data. You retain the right to be forgotten at any time. If  you wish to have your account, guestbook entries, and all associated  metadata permanently deleted, you may do so without hurdles."
     }

@@ -87,14 +87,14 @@ function Tool() {
     const containerEl = sceneRef.current;
     const imgRefs = [];
 
-    // ── Desktop drag state ───────────────────────────────────────────────
+    //  Desktop drag state 
     let isMouseDown = false;
     let onDocMouseMove    = null;
     let onDocMouseUp      = null;
     let onContainerMouseDown  = null;
     let onContainerMouseLeave = null;
 
-    // ── Touch drag state ─────────────────────────────────────────────────
+    // Touch drag state 
     let isTouchDragging   = false; // true only when finger is ON a body
     let onTouchStart      = null;
     let onTouchMove       = null;
@@ -164,7 +164,7 @@ function Tool() {
       ];
       Composite.add(engine.world, [...logos, ...walls]);
 
-      // ── Mouse (desktop) ──────────────────────────────────────────────────
+      // Mouse (desktop)
       const mouse = Mouse.create(containerEl);
 
       // Remove Matter's built-in touch listeners — we handle touch manually below
@@ -194,7 +194,7 @@ function Tool() {
       document.addEventListener("mouseup",       onDocMouseUp);
       containerEl.addEventListener("mouseleave", onContainerMouseLeave);
 
-      // ── Touch (mobile) ───────────────────────────────────────────────────
+      //  Touch (mobile) 
       // Helper: get touch coords relative to container
       const getTouchPos = (touch) => {
         const rect = containerEl.getBoundingClientRect();
@@ -305,7 +305,7 @@ function Tool() {
   }, [start]);
 
   return (
-    <section className="pb-10 pt-15 px-3 sm:px-0">
+    <section className="pb-10 pt-15 px-2 sm:px-0">
       <div className="container">
 
         <div className="flex justify-between items-end mb-8">

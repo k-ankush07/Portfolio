@@ -18,7 +18,7 @@ function CustomerReview() {
         <img
           src={customercard}
           alt=""
-          className={` card1-about absolute left-4  -top-14 xl:-top-16 w-[40%] transition-all duration-500 ease-out
+          className={` card1-about cardsimp  absolute left-4  -top-14 xl:-top-16 w-[40%] transition-all duration-500 ease-out
             ${isHovered ? " translate-y-4 rotate-8 " : "translate-x-0 scale-100 translate-y-0 rotate-0"}
           `}
         />
@@ -27,7 +27,7 @@ function CustomerReview() {
         <img
           src={arrow2}
           alt=""
-          className={` card2-about absolute right-10  top-15 xl:top-7 w-[55%] transition-all duration-500 ease-out
+          className={` card2-about cardsimp1 absolute right-10  top-10 sm:top-12 xl:top-7 w-[55%] transition-all duration-500 ease-out
             ${isHovered ? " translate-y-2 -rotate-5 " : "translate-x-0 translate-y-0 rotate-0"}
           `}
         />

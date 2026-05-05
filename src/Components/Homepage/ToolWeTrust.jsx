@@ -52,14 +52,14 @@ function ToolWeTrust() {
                         onSlideChange={(swiper) =>
                             setActiveIndex(swiper.realIndex % images.length)
                         }
+                        className="abs"
                     >
                         {images.map((img, index) => (
                             <SwiperSlide key={index} className="flex justify-center">
 
                                 <div
-                                    className={`transition-all duration-400 rounded-xl border-1 p-1
-                                         ${activeIndex === index ? "scale-105" : "scale-90"}
-                                         ${isHovered ? " border-purple-500 -translate-y-2" : "border-transparent"}
+                                    className={`transition-all duration-400  border-1 p-1
+                                        
                                     `}
                                     style={{
                                         transitionDelay: isHovered
@@ -68,10 +68,13 @@ function ToolWeTrust() {
                                     }}
                                 >
                                     <img
-                                        src={img}
-                                        alt=""
-                                        className="toolWeTrust "
-                                    />
+  src={img}
+  alt=""
+  className={`toolWeTrust p-2 border transition-all duration-400 rounded-xl
+    ${activeIndex === index ? "scale-105" : "scale-90"}
+    ${isHovered ? "border-purple-500 -translate-y-2" : "border-transparent"}
+  `}
+/>
                                 </div>
                             </SwiperSlide>
                         ))}

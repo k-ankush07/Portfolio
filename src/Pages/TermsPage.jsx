@@ -20,7 +20,7 @@ function TermsPage() {
 
   cards={[
     {
-      icon: <img src={terms1} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms1} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Effective Date",
       para: "These terms are effective as of JAN 01, 2025 and may be amended at any time without prior notice.",
      
@@ -36,12 +36,12 @@ function TermsPage() {
 
   cards={[
     {
-      icon: <img src={terms9} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms9} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Restrictions on Use",
       para: "Unauthorized copying, reproduction, cloning, or redistribution of the  website's source code or visual design for commercial purposes is  strictly prohibited. This codebase is proprietary and not open source."
     },
      {
-      icon: <img src={terms3} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms3} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Limited Use",
       para: "You are granted a limited, revocable license to study specific UI  components for educational purposes or personal inspiration. You may not replicate the Site in its entirety. Any substantial usage requires a  visible dofollow backlink to https://aayushbharti.in."
     },
@@ -58,17 +58,17 @@ function TermsPage() {
 
   cards={[
     {
-      icon: <img src={terms4} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms4} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "User Generated Content",
       para: "Certain areas of the Site (e.g., Guestbook) may allow users to post  content. You agree not to post material that is unlawful, defamatory, or abusive. We reserve the right to remove any content at our sole  discretion and without liability."
     },
       {
-      icon: <img src={terms5} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms5} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "No Warranty",
       para: 'This Site is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representations or warranties of any kind, express or implied,  regarding the operation of the Site or the information, content, or  materials included therein. '
     },
       {
-      icon: <img src={terms5} alt="lock" className="w-5 h-5" />,
+      icon: <img src={terms5} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
       heading: "Limitation of Liability",
       para: "In no event shall Aayush Bharti be liable for any damages (including,  without limitation, damages for loss of data or profit, or due to  business interruption) arising out of the use or inability to use the  materials on this website."
     }
