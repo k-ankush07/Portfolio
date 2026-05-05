@@ -20,7 +20,7 @@ import {
 
 function BlogHeading() {
   return (
-    <section className="pt-[100px] lg:pt-[172px] px-2 lg:px-0">
+    <section className="pt-[100px] lg:pt-[172px] px-2 sm:px-0">
       <div className="container text-center  text-white ">
 
         {/* Breadcrumb */}
