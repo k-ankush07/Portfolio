@@ -50,7 +50,7 @@ function Engineer({
 
   return (
     <section
-      className="sticky py-0 flex top-15 lg:pb-[40px]"
+      className="sticky py-0 flex top-15 lg:pt-[33px] lg:pb-[40px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -73,18 +73,18 @@ function Engineer({
             className="lg:w-[30%] text-white space-y-4  sm:space-y-6 pt-[20px] sm:pt-[30px] lg:pt-[60px] px-[15px] sm:px-[25px] lg:pl-[63px]"
           >
 
-            <span className="text-[11px] sm:text-[12px] px-3 py-1 m-0 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
+            <span className="text-[10px] sm:text-[12px] px-3 py-1 m-0 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
               {date}
             </span>
 
             <div className="flex items-center pt-[10px] sm:pt-[15px] sm:m-0 gap-2 sm:gap-3">
               <img src={logo} alt="logo" className="" />
-              <h2 className="text-[20px] sm:text-[26px] lg:text-[40px] font-bold">
+              <h2 className="text-[26px] lg:text-[40px] font-bold">
                 {heading}
               </h2>
             </div>
 
-            <div className="text-[12px] sm:text-[14px] pt-[10px] sm:pt-[15px] m-0 text-[#BDBDBD] space-y-1 sm:space-y-2">
+            <div className="text-[14px] pt-[10px] sm:pt-[15px] m-0 text-[#BDBDBD] space-y-1 sm:space-y-2">
               <p className="flex gap-2 items-center">
                 <img src={newlocation} alt="location" className="" />
                 London Area, United Kingdom
@@ -114,7 +114,7 @@ function Engineer({
 
               <motion.h2
                 variants={item}
-                className="text-[22px] sm:text-[28px] lg:text-[40px] font-bold leading-tight"
+                className="text-[26px] sm:text-[28px] lg:text-[40px] font-bold leading-tight"
               >
                 {heading1}{" "}
                 <span className="bg-[linear-gradient(to_right,#FF9A8B_0%,#FF6A88_50%,#FFB199_100%)] bg-clip-text text-transparent">
@@ -122,25 +122,25 @@ function Engineer({
                 </span>
               </motion.h2>
 
-              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] leading-[22px] sm:leading-[24px] mt-3">
+              <motion.p variants={item} className="para_class text-[12px] sm:text-[14px] leading-[22px] sm:leading-[24px] mt-3">
                 {para1} <span className="text-[#BDBDBD]">{span1}</span>
               </motion.p>
 
-              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] mt-3">
+              <motion.p variants={item} className="para_class text-[12px] sm:text-[14px] leading-[22px] sm:leading-[24px] mt-3">
                 {para2} <span className="text-[#BDBDBD]">{span2}</span>
               </motion.p>
 
-              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] mt-3">
+              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] leading-[22px] sm:leading-[24px] mt-3">
                 {para3} <span className="text-[#BDBDBD]">{span3}</span>
               </motion.p>
 
-              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] mt-3">
+              <motion.p variants={item} className="para_class text-[13px] sm:text-[14px] leading-[22px] sm:leading-[24px] mt-3">
                 {para4} <span className="text-[#BDBDBD]">{span4}</span>
               </motion.p>
 
               {/* Icons */}
               <motion.div
-                className="flex flex-wrap gap-2 mt-4 sm:w-[320px] lg:w-[384px]"
+                className="flex flex-wrap gap-2  pt-[24px] lg:mt-4 sm:w-[320px] lg:w-[384px]"
                 variants={container}
               >
                 {[Docker, Bun, Next, pnpm, PostgreSQL, Redis, Vercel].map((img, i) => (

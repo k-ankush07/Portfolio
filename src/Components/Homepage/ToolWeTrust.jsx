@@ -32,8 +32,8 @@ function ToolWeTrust() {
 
 
     return (
-        <div className='about_class flex relative w-full md:w-[33.3%] cursor-pointer'
-            onMouseEnter={() => setIsHovered(true)}
+        <div className='about_class flex relative w-full md:w-[33.3%] mb-0 cursor-pointer'
+            onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
         >   
             <div className=' about_classinner border-[2px] border-[#292929] rounded-[8px] lg:pt-15 w-[100%]  '>

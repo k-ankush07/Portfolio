@@ -10,13 +10,13 @@ import CustomerReview from '../Components/Homepage/CustomerReview';
 import Github from '../Components/AboutPage/Github';
 import Collaboration from '../Components/AboutPage/Collaboration';
 import GithubStats from '../Components/AboutPage/GithubStats';
-import ProfileCard from '../Components/BlogPage/ProfileCard';
+
 
 function AboutPage() {
   return (
-    <div className='lg:pt-[172px] lato-regular'>
+    <div className='pt-[96px] lg:pt-[172px] lato-regular'>
       <FullStack />
-      {/* <ProfileCard /> */}
+    
     <Journey />
    <div>
      <Engineer index={0}  date="Jan 2025 – Present" logo={Roboto} heading="Roboto Studio" heading1="Frontend" heading2=" Engineer"
@@ -38,10 +38,10 @@ function AboutPage() {
       <Github  />
  
     </div>
-    <div className='container z-50'>
-     <div className='lg:flex gap-3 FR4F34F4ERF '>
+    <div className='container  z-50'>
+     <div className='flex flex-col lg:flex-row gap-3 px-2 lg:px-0 main_about_class '>
        <Nextproject />
-      <div className='lg:w-[35%] space-y-2'>
+      <div className='lg:w-[35%] space-y-2 flex flex-col sm:flex-row lg:flex-col gap-2'>
         <ToolWeTrust />
         <CustomerReview />
       </div>

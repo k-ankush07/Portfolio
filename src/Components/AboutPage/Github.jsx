@@ -12,6 +12,7 @@ function Github() {
   
 
   const [loading, setLoading] = useState(true);
+  const [blockMargin, setBlockMargin] = useState(6);
 
   const [githubData, setGithubData] = useState({
     followers: 0,
@@ -21,6 +22,22 @@ function Github() {
     avatar: "",
     name: "",
   });
+
+  useEffect(() => {
+  const updateMargin = () => {
+    if (window.innerWidth < 640) {
+      setBlockMargin(4);   // mobile
+    } else if (window.innerWidth < 1024) {
+      setBlockMargin(6);   // tablet
+    } else {
+      setBlockMargin(10);  // desktop
+    }
+  };
+
+  updateMargin();
+  window.addEventListener("resize", updateMargin);
+  return () => window.removeEventListener("resize", updateMargin);
+}, []);
 
   useEffect(() => {
     const fetchGithubData = async () => {
@@ -61,83 +78,77 @@ function Github() {
   }, []);
 
   return (
-    <section className="pb-4 px-2 lg:px-0">
-      <div className="container">
-        <div className="relative flex items-center justify-center">
+    <section className="pb-4 px-3 sm:px-0">
+  <div className="container mx-auto">
+    <div className="relative flex items-center justify-center">
 
-          {/* Card */}
-          <div className="github-card w-full lg:pl-[40px] lg:pt-[49px] lg:pb-[37px] lg:pr-[40px] rounded-[8px] border border-[#292929] relative">
+      {/* Card */}
+      <div className="github-card w-full 
+        px-4 py-5 
+        sm:px-6 sm:py-6 
+        lg:pl-[40px] lg:pt-[49px] lg:pb-[37px] lg:pr-[40px] 
+        rounded-[8px] border border-[#292929] relative">
 
-            {/* Blur */}
-            <div className="absolute right-0 overflow-hidden top-0 -z-10">
-              <img src={gitblur} alt="blur image" />
-            </div>
+        {/* Blur */}
+        <div className="absolute right-0 top-0 -z-10 overflow-hidden">
+          <img src={gitblur} alt="blur image" className="w-[150px] sm:w-auto" />
+        </div>
 
-            {/* Header */}
-            <div className="flex justify-between items-center mb-6 flex-wrap gap-4">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 gap-4">
 
-              {/* Left */}
-              <div className="flex items-center gap-3">
-                <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
-                  <img
-                    src={loading ? gitprofile : githubData.avatar || gitprofile}
-                    alt="git logo"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                <div>
-                  <h2 className="text-[#FFFFFF] text-[24px] font-bold">
-                    {loading ? "@loading..." : `@${githubData.name}`}
-                  </h2>
-                  <p className="text-[#BDBDBD] text-[14px]">
-                    Collaboration Graph
-                  </p>
-                </div>
-              </div>
-
-              {/* Right */}
-              <div className="text-right">
-                <h2 className="text-[#FFFFFF] text-[24px] font-bold">
-                  {loading ? "..." : githubData.publicRepos}
-                </h2>
-                <p className="text-[#BDBDBD] text-[14px]">
-                  Public Repositories
-                </p>
-              </div>
-            </div>
-
-            {/* Calendar */}
-            <div className="github-calendar pt-[20px] overflow-x-auto">
-              <GitHubCalendar
-                username={username}
-                blockSize={14}
-                blockMargin={8}
-                theme={{
-                  light: [
-                    "#FFFFFF",
-                    "#c4b5fd",
-                    "#a78bfa",
-                    "#8b5cf6",
-                    "#6d28d9",
-                  ],
-                  dark: [
-                    "#1a1a1a",
-                    "#c4b5fd",
-                    "#a78bfa",
-                    "#8b5cf6",
-                    "#6d28d9",
-                  ],
-                }}
+          {/* Left */}
+          <div className="flex items-center gap-3">
+            <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] rounded-full overflow-hidden">
+              <img
+                src={loading ? gitprofile : githubData.avatar || gitprofile}
+                alt="git logo"
+                className="w-full h-full object-cover"
               />
             </div>
+
+            <div>
+              <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-bold">
+                {loading ? "@loading..." : `@${githubData.name}`}
+              </h2>
+              <p className="text-[#BDBDBD] text-[12px] sm:text-[14px]">
+                Collaboration Graph
+              </p>
+            </div>
+          </div>
+
+          {/* Right */}
+          <div className="text-left sm:text-right">
+            <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-bold">
+              {loading ? "..." : githubData.publicRepos}
+            </h2>
+            <p className="text-[#BDBDBD] text-[12px] sm:text-[14px]">
+              Public Repositories
+            </p>
           </div>
         </div>
 
-        {/* Stats */}
-        <GithubStats githubData={githubData} loading={loading} />
+        {/* Calendar */}
+        <div className="github-calendar pt-4 overflow-x-auto">
+          <div className=" min-w-full">
+           <GitHubCalendar
+  username={username}
+  blockSize={12}
+  blockMargin={blockMargin}
+  theme={{
+    light: ["#FFFFFF","#c4b5fd","#a78bfa","#8b5cf6","#6d28d9"],
+    dark: ["#1a1a1a","#c4b5fd","#a78bfa","#8b5cf6","#6d28d9"],
+  }}
+/>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+
+    {/* Stats */}
+    <GithubStats githubData={githubData} loading={loading} />
+  </div>
+</section>
   );
 }
 

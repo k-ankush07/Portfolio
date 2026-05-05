@@ -611,59 +611,85 @@ opacity: 0;
 
 @media (min-width:1024px) {
   
-.FR4F34F4ERF .next-Project {
-  width: 65%;
+.main_about_class .next-Project {
+  width: 65% !important;
 }
-.FR4F34F4ERF .about_class{
+.main_about_class .about_class{
   width: 100%;
 }
-.FR4F34F4ERF .about_classinner{
+.main_about_class .about_classinner{
   padding: 0px 0;
 }
-.FR4F34F4ERF .about_child{
+.main_about_class .about_child{
   padding:  0;
 }
-.FR4F34F4ERF .swiper-slide {
+.main_about_class .swiper-slide {
   width: auto !important;
 }
-.FR4F34F4ERF .swiper {
+.main_about_class .swiper {
   padding-top: 30px;
   padding-bottom: 65px;
 }
-.FR4F34F4ERF .tool-text{
+.main_about_class .tool-text{
   padding: 15px 20px;
 }
 
-.FR4F34F4ERF .tool_arrow{
+.main_about_class .tool_arrow{
   padding: 0 10px;
     height: 50px !important;
     width: 50px !important ;
 }
-.FR4F34F4ERF .customer_class{
+.main_about_class .customer_class{
   width: 100%;
 }
-.FR4F34F4ERF .main_customerClass{
+.main_about_class .main_customerClass{
       padding: 100px 0;
 }
-.FR4F34F4ERF .card1-about{
+.main_about_class .card1-about{
      height: 169px;
     left: 94px;
     top: -50px;
 }
-.FR4F34F4ERF .arrow_class{
+.main_about_class .arrow_class{
   padding: 0 10px;
   height: 50px !important;
   width: 50px !important ;
 }
-.FR4F34F4ERF .arrow_class_main {
+.main_about_class .arrow_class_main {
          padding: 15px 20px;
 }
-.FR4F34F4ERF .card2-about{
+.main_about_class .card2-about{
        top: -10px;
     height: 199px;
     right: 20px;
    
 }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+ .main_about_class .card2-about {
+    top: 23px;
+    height: 200px;
+}
+  
+ .main_about_class .card1-about {
+        height: 200px;
+       top: -70px;
+
+}
+}
+@media (min-width:640px) and (max-width:1023px) {
+.main_about_class .about_class  {
+  width: 50%;
+
+}
+.main_about_class .customer_class   {
+  width: 50%;
+ 
+}
+  
+}
+
 .github-calendar text {
  fill: #BDBDBD; /* gray-200 */
 }
@@ -675,7 +701,10 @@ opacity: 0;
 .github-calendar div {
   color: #BDBDBD;
 }
-}
+
+
+
+
 
 
 /* gitprofile */
