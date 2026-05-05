@@ -35,7 +35,7 @@ export default function CodePreview() {
   return (
     <div className=" bg-black flex items-center justify-center p-6">
       
-      <div className="w-full  rounded-xl border border-[#292929] bg-[#0d0d0d] p-5 relative shadow-lg">
+      <div className="w-full  rounded-[8px] border border-[#292929] overflow-hidden bg-[#0d0d0d] p-5 relative shadow-lg">
 
         {/* Glow effect */}
         <div className="absolute inset-0 rounded-xl pointer-events-none 

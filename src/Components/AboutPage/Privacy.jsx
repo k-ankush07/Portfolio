@@ -26,7 +26,7 @@ function Privacy({colorText,first_letter,para}) {
   };
 
   return (
-     <div className="text-center text-[#FFFFFF] p-4 mt-15 sm:mt-0 md:pt-10">
+     <div className="text-center text-[#FFFFFF] p-4 mt-0 sm:mt-0 md:pt-10">
         <div className="text-[30px] md:text-[44px] leading-[76px] font-bold">
          {first_letter}{" "}
 

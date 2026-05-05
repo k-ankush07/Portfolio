@@ -8,7 +8,8 @@ import React from "react";
 import image from "../../assets/Images/profile.svg";
 import CodePreview from "./CodeBlock";
 import Blogs from "./Blogs";
-
+import code from "../../assets/Images/code.svg"
+import code1 from "../../assets/Images/code1.svg"
 import {
   Breadcrumb,
   Title,
@@ -19,8 +20,8 @@ import {
 
 function BlogHeading() {
   return (
-    <section className="lg:pt-[172px]">
-      <div className="container text-center  text-white">
+    <section className="pt-[100px] lg:pt-[172px] px-2 lg:px-0">
+      <div className="container text-center  text-white ">
 
         {/* Breadcrumb */}
         <Breadcrumb>
@@ -39,11 +40,11 @@ function BlogHeading() {
         </Subtitle>
 
         {/* Author */}
-        <div className="lg:pt-[41px] flex justify-center items-center gap-[20px]">
+        <div className="pt-[20px] lg:pt-[41px] flex justify-center items-center gap-[20px]">
           <img src={image} alt="author" />
 
           <div className="text-start">
-            <h2 className="text-[24px] leading-[24px] font-bold">
+            <h2 className="text-[18px] lg:text-[24px] leading-[15px] lg:leading-[24px] font-bold">
               Aayush Bharti
             </h2>
             <p className="text-[14px] leading-[24px] text-[#BDBDBD]">
@@ -53,7 +54,7 @@ function BlogHeading() {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col items-center lg:pt-[43px]">
+        <div className="flex flex-col items-center pt-[20px] lg:pt-[43px]">
 
           <Paragraph className="w-full lg:max-w-[1100px] text-center">
             I switched to a terminal-first workflow two years ago and never
@@ -64,7 +65,7 @@ function BlogHeading() {
             faster than I could open the file picker in VS Code.
           </Paragraph>
 
-          <Paragraph className="pt-[20px] max-w-[1100px]">
+          <Paragraph className=" pt-[15px] lg:pt-[20px] max-w-[1100px]">
             I felt slow. Not "I should optimize this" slow — "I'm fighting my own
             tools" slow. So I committed to replacing every GUI developer tool
             with a terminal-native equivalent and gave myself three months to get
@@ -85,7 +86,7 @@ function BlogHeading() {
           </div>
 
           {/* Neovim */}
-          <div className="pt-[40px] max-w-[1100px]">
+          <div className=" pt-[20px] lg:pt-[40px] max-w-[1100px]">
             <Heading>Neovim</Heading>
 
             <Paragraph className="pt-[12px]">
@@ -94,14 +95,14 @@ function BlogHeading() {
               update churn breaking my setup every few weeks.
             </Paragraph>
 
-            <Paragraph className="pt-[20px]">
+            <Paragraph className=" pt-[15px]  lg:pt-[20px]">
               With native LSP support and Treesitter for syntax highlighting, I
               get the same intelligence features — autocomplete,
               go-to-definition, inline diagnostics — but startup takes 40ms
               instead of four seconds.
             </Paragraph>
 
-            <Paragraph className="pt-[20px]">
+            <Paragraph className=" pt-[15px]  lg:pt-[20px]">
               The real unlock was modal editing. Once you internalize that ciw
               replaces a word and dd deletes a line without reaching for the
               mouse, you stop thinking about text manipulation and start
@@ -113,7 +114,7 @@ function BlogHeading() {
           <div className="pt-[40px] max-w-[1100px]">
             <Heading>Wezterm</Heading>
 
-            <Paragraph className="pt-[12px]">
+            <Paragraph className="pt-[12px] ">
               Wezterm is a GPU-accelerated terminal emulator configured
               entirely in Lua. The killer feature is scriptable keybindings:
               opening tabs, navigating directories, and attaching sessions in
@@ -121,7 +122,7 @@ function BlogHeading() {
             </Paragraph>
 
             <div className="pt-[20px]">
-              <CodePreview />
+              <img src={code} alt=" code image" />
             </div>
 
             <Paragraph className="pt-[12px]">
@@ -130,33 +131,34 @@ function BlogHeading() {
           </div>
 
           {/* ZSH */}
-          <div className="pt-[40px] max-w-[1100px]">
+          <div className="pt-[15px]  lg:pt-[40px] max-w-[1100px]">
             <Heading>ZSH + Oh My Zsh</Heading>
 
             <Paragraph className="pt-[12px]">
             ZSH with Oh My Zsh is the shell layer. Bash's autocomplete is embarrassing  in 2025 — no inline suggestions, no syntax highlighting as you type, no  smart history search. ZSH's plugin ecosystem fixes all of that
             </Paragraph>
 
-            <Paragraph className="pt-[20px]">
+            <Paragraph className=" pt-[15px]  lg:pt-[20px]">
               I run three plugins that matter: zsh-autosuggestions (ghost-text completion from your history), zsh-syntax-highlighting (red text when a command doesn't exist, green when it does), and git (aliases like gco for git checkout). The rest of Oh My Zsh I could take or leave. My .zshrc is 80 lines and loads in under 200ms — if yours takes longer, audit your plugins.
             </Paragraph>
           </div>
 
           {/* Tmux */}
-          <div className="pt-[40px] max-w-[1100px]">
+          <div className=" pt-[15px]  lg:pt-[40px] max-w-[1100px]">
             <Heading>Tmux</Heading>
 
             <Paragraph className="pt-[12px]">
               Tmux handles session persistence and workspace organization. When my SSH  connection drops or I close my laptop mid-debug session, Tmux keeps  every pane, every running process, every scroll position alive. I tried  Zellij for the modern UX and floating panes, but it crashed twice during production
             </Paragraph>
 
-            <Paragraph className="pt-[20px]">
+            <Paragraph className=" pt-[15px]  lg:pt-[20px]">
               incident debugging — the one time you absolutely need your  multiplexer to be rock solid. Tmux is boring and that's the point.
 I have three persistent sessions: work, personal, and scratch. Prefix key is rebound to Ctrl+a (closer to home row than the default Ctrl+b), and I use tmux-resurrect to survive full system reboots
             </Paragraph>
 
             <div className="pt-[20px]">
-              <CodePreview />
+              {/* <CodePreview /> */}
+              <img src={code1} alt="coading image" />
             </div>
 
             <Paragraph className="pt-[12px]">

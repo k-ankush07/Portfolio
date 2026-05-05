@@ -6,9 +6,6 @@ function Cards({desc,name , picture,bg }) {
      
             <div className='bg-[#181818] p-6 mb-6 md:mb-0  rounded-[16px] max-h-[300px]  relative overflow-hidden '>
                 <img src={bg } alt='nfs' className='absolute left-0 w-full  -bottom-[0px] -z-0 opacity-30' />
-                {/* <img src={Background2} alt='nfs' className='absolute' />
-                <img src={Background3} alt='nfs' className='absolute' />
-                <img src={Background4} alt='nfs' className='absolute' /> */}
 
                 <div className='flex gap-1 text-yellow-400'>
                     <MdStarRate />
