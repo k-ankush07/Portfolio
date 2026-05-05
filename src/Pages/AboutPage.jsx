@@ -10,11 +10,13 @@ import CustomerReview from '../Components/Homepage/CustomerReview';
 import Github from '../Components/AboutPage/Github';
 import Collaboration from '../Components/AboutPage/Collaboration';
 import GithubStats from '../Components/AboutPage/GithubStats';
+import Profile from '../Components/AboutPage/Profile';
 
 
 function AboutPage() {
   return (
     <div className='pt-[96px] lg:pt-[172px] lato-regular'>
+      {/* <Profile /> */}
       <FullStack />
     
     <Journey />
