@@ -1,54 +1,54 @@
+
+
 import React from "react";
-import gitbottomblur from "../../assets/Images/gitbottomblur.svg"
-function GithubStats() {
+import gitbottomblur from "../../assets/Images/gitbottomblur.svg";
+
+function GithubStats({ githubData = {} }) {
+  console.log(githubData,"jksdcb");
+  
   const stats = [
     {
       label: "Followers",
-      value: 333,
+      value: githubData?.followers || 0,
       color: "text-[#8F74BF]",
     },
     {
-      label: "Forks",
-      value: 333,
+      label: "Following",
+      value: githubData?.following || 0,
       color: "text-[#D76D77]",
     },
     {
       label: "GitHub Stars",
-      value: 333,
+      value: githubData?.totalStars || 0,
       color: "text-[#FFAF7B]",
     },
   ];
 
   return (
-  <div className="container">
+    <div className="mt-[10px] ">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] lg:pb-[40px] relative">
-       
-      
-      {stats.map((item, index) => (
-        <div
-          key={index}
-          className="relative border border-[#292929] rounded-[8px] lg:px-[39px] lg:py-[44px]  overflow-hidden"
-        >
-        <div className="absolute right-0 top-0 overflow-hidden rounded-[8px]">
-            <img src={gitbottomblur} alt=" blur image" />
-        </div>
+        {stats.map((item, index) => (
+          <div
+            key={index}
+            className="relative border border-[#292929] rounded-[8px] lg:px-[39px] lg:py-[44px] p-5 overflow-hidden"
+          >
+            <div className="absolute right-0 top-0 overflow-hidden rounded-[8px]">
+              <img src={gitbottomblur} alt="blur image" />
+            </div>
 
-          {/* Content */}
-          <div className="flex justify-between items-center">
-            <p className="text-[#BDBDBD] text-[14px] ">
-              {item.label}
-            </p>
+            <div className="pt-[15px] pl-[20px] pb-[20px] lg:pt-[0px] lg:pr-[0px] lg:pb-[0px] flex flex-col lg:flex-row lg:justify-between lg:items-center z-10">
+              <p className="text-[#BDBDBD] text-[14px]">
+                {item.label}
+              </p>
 
-            <h2 className={`text-[32px] font-bold ${item.color}`}>
-              {item.value}
-            </h2>
+              <h2 className={`text-[32px] font-bold ${item.color}`}>
+                {item.value}
+              </h2>
+            </div>
           </div>
-        </div>
-      ))}
-
+        ))}
+      </div>
     </div>
-
-  </div>
   );
 }
 

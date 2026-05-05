@@ -1,8 +1,10 @@
 import React from "react";
 import GradientBorderButton from "../Homepage/GradientBorderButton";
 import { IoMdMailOpen } from "react-icons/io";
+import { motion } from "framer-motion";
 
 function Policy({
+  index = 0,
   date,
   heading,
   subheading,
@@ -12,15 +14,29 @@ function Policy({
   cards = [],
 }) {
   return (
-    <section className="pb-[40px]">
+    <section
+      className="sticky top-10 flex items-center pb-[40px]"
+      style={{ zIndex: 10 }}
+    >
       <div className="container">
 
         {/* Main Card */}
-        <div className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden"
+        >
 
           {/* LEFT SIDE */}
-          <div className="lg:w-[35%] text-white space-y-6 pt-[40px] lg:pt-[60px] pl-[30px] lg:pl-[63px]">
-
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+             viewport={{ once: true }} 
+            className="lg:w-[35%] text-white space-y-6 pt-[40px] lg:pt-[60px] pl-[20px] lg:pl-[63px] pr-[20px]"
+          >
             <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[6px] bg-white/10 border border-white/10 inline-block">
               {date}
             </span>
@@ -33,80 +49,86 @@ function Policy({
                 {subheading}
               </h2>
             </div>
-          </div>
-
+          </motion.div>
 
           {/* RIGHT SIDE */}
-          <div className="lg:w-[65%]  text-white px-[20px]  pt-[20px] lg:pt-[50px] pb-[30px] lg:pb-[46px]">
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+             viewport={{ once: true }} 
+            className="lg:w-[65%] text-white px-[20px] pt-[20px] lg:pt-[50px] pb-[30px] lg:pb-[46px]"
+          >
 
             {/* Top paragraph */}
-            <div className=" border-l-2  border-gray-500/30 lg:lg:px-[60px]">
+            <div className="border-l-2 border-gray-500/30 lg:px-[60px] pl-[15px]">
+              <p className="text-[14px] text-[#BDBDBD] leading-[24px] max-w-[630px]">
+                {para1}
+              </p>
 
-                <p className="text-[14px] text-[#BDBDBD] leading-[24px] max-w-[630px]">
-              {para1}
-            </p>
+              {/* Cards */}
+              <div className="mt-[15px] space-y-4">
+                {cards.map((card, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    whileHover={{ scale: 1.02 }}
+                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] border-3 border-dotted border-[#8F74BF54] bg-[#8F74BF54]"
+                  >
+                    {/* Icon */}
+                    <div className="p-4 w-[70px] h-[51px] bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">
+                      <div>{card.icon}</div>
+                    </div>
 
-            {/* Dynamic Cards */}
-            <div className="mt-[15px] space-y-4">
-              {cards.map((card, index) => (
-                <div
-                  key={index}
-                  className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] rounded-[10px] border-3 border-dotted border-[#8F74BF54] bg-[#8F74BF54]"
-                >
-                  {/* Icon */}
-                  <div className="p-3 bg-[#2f2d31] rounded-[6px] flex items-center justify-center">
-                    {card.icon}
-                  </div>
+                    {/* Content */}
+                    <div>
+                      <h3 className="text-[20px] font-semibold text-white">
+                        {card.heading}
+                      </h3>
+                      <p className="text-[14px] text-[#BDBDBD] pr-6 leading-[24px]">
+                        {card.para}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
 
-                  {/* Content */}
-                  <div>
-                    <h3 className="text-[20px] font-semibold text-white">
-                      {card.heading}
-                    </h3>
-                    <p className="text-[14px] text-[#BDBDBD] leading-[24px]">
-                      {card.para}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Bottom Section */}
-            
-
+              {/* Bottom Section */}
               {(query || lastdate) && (
-  <div className="flex justify-between items-end mt-[20px] flex-wrap gap-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-[20px] gap-4">
 
-    {/* Left side */}
-    {query && (
-      <div className="space-y-2">
-        <p>{query}</p>
+                  {/* Left */}
+                  {query && (
+                    <div className="space-y-2 text-[#BDBDBD]">
+                      <p >{query}</p>
 
-        <GradientBorderButton
-          data={
-            <>
-              <IoMdMailOpen className="inline mr-1" />
-              hello@aayushbharti.in
-            </>
-          }
-        />
-      </div>
-    )}
+                      <div className="hover:scale-105 transition">
+                        <GradientBorderButton
+                          data={
+                            <>
+                              <IoMdMailOpen className="inline mr-1" />
+                              hello@aayushbharti.in
+                            </>
+                          }
+                        />
+                      </div>
+                    </div>
+                  )}
 
-    {/* Right side */}
-    {lastdate && (
-      <p className="text-[12px] text-[#BDBDBD]">
-        {lastdate}
-      </p>
-    )}
-
-  </div>
-)}
+                  {/* Right */}
+                  {lastdate && (
+                    <p className="text-[12px] text-[#BDBDBD]">
+                      {lastdate}
+                    </p>
+                  )}
+                </div>
+              )}
             </div>
 
-          
-        </div>
-            </div>
+          </motion.div>
+        </motion.div>
 
       </div>
     </section>

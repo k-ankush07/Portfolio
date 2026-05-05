@@ -65,7 +65,7 @@ function ConceptToCreation() {
                             </div>
 
                             <div className='text-center mt-7 flex justify-center'>
-                                <Link to="">
+                                <Link to="/">
                                    <button className="btn-slide group rounded-[500px]  bg-[#FFFFFF] cursor-pointer  flex items-center gap-5 text-[#000000]  text-[16px] pl-5 pr-3 py-3">
                                     Get in Touch
                                     <FaArrowRightLong className="text-[14.6px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-300 group-hover:opacity-100 group-hover:-translate-x-4" />

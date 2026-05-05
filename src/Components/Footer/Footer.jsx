@@ -40,11 +40,12 @@ function Footer() {
                             {/* COLUMN 1 */}
                             <div>
                                 <h3 className=" text-[#FFFFFF] font-bold text-[16px] mb-4 ">General</h3>
-                                <ul className="space-y-2 text-[14px] opacity-80 ">
-                                    <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Home</li>
-                                    <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">About</li>
-                                    <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Projects</li>
-                                    <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Blog</li>
+                                <ul className="space-y-2 text-[14px] opacity-80 flex flex-col ">
+                                    <Link to="/" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Home</Link>
+                                    <Link to="/about" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > About</Link>
+                                    <Link to="/project" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Projects</Link>
+                                    <Link to="/blog" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Blog</Link>
+                         
                                 </ul>
                             </div>
 
@@ -86,7 +87,8 @@ function Footer() {
 
                             <div className="flex justify-center mt-2 md:mt-0 gap-6">
                                 <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link> 
-                                <span className="cursor-pointer hover:text-gray-100">Terms of Use</span>
+                                <Link to="/terms" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link> 
+                                
                             </div>
                         </div>
 

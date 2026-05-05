@@ -27,7 +27,6 @@ function HomePage() {
 <FullStack /> 
 <Developers   />
 <Explore />
-<ConceptToCreation /> 
 </div>
    </>
   )

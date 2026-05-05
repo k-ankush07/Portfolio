@@ -7,7 +7,7 @@ function Collaboration() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.06, //  faster (was 0.15)
+        staggerChildren: 0.06, 
       },
     },
   };
@@ -24,7 +24,7 @@ function Collaboration() {
     },
   };
   return (
-    <div className="text-center text-[#FFFFFF] p-4 mt-15 sm:mt-0 md:pt-4">
+    <div className="text-center text-[#FFFFFF] p-4  sm:mt-0 md:pt-4">
            <div className="text-[30px] md:text-[44px] font-bold">
            Code &{" "}
    

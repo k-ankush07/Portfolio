@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
-function Privacy() {
+function Privacy({colorText,first_letter,para}) {
 
-       const text = "Policy";
+       const text = `${colorText}`;
 
   const container = {
     hidden: {},
@@ -27,8 +27,8 @@ function Privacy() {
 
   return (
      <div className="text-center text-[#FFFFFF] p-4 mt-15 sm:mt-0 md:pt-10">
-        <div className="text-[30px] md:text-[44px] font-bold">
-         Privacy{" "}
+        <div className="text-[30px] md:text-[44px] leading-[76px] font-bold">
+         {first_letter}{" "}
 
           <motion.span
             className="inline-block bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
@@ -52,7 +52,7 @@ function Privacy() {
 
         <div className="flex justify-center">
           <p className="text-[12px] md:text-[18px] ">
-          Your privacy is our priority. 
+          {para}
           </p>
         </div>
       </div>

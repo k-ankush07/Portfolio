@@ -26,7 +26,7 @@ function Skills() {
     <>
 
 
-      <div className=' relative bg-[#000000] inline-block xl:w-[40%] firsts_slider group '>
+      <div className=' relative bg-[#000000] rounded-[8px] inline-block xl:w-[40%] firsts_slider group '>
         <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 opacity-85 transition-all duration-400 group-hover:opacity-100 ' />
         <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[15px] lg:pt-[45px] pb-[37px] lg:pb-[85px]'>
           <div className='text-center py-4'>

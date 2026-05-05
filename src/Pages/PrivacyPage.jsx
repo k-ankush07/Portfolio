@@ -14,7 +14,7 @@ import privacyicon5 from "../assets/Images/privacyicon (5).svg"
 function PrivacyPage() {
   return (
     <div className='lato-regular'>
-        <Privacy />
+        <Privacy   colorText="Policy"  first_letter="Privacy" para="Your privacy is our priority." />
      <Policy
   date="01"
   heading="Collect."
@@ -26,7 +26,7 @@ function PrivacyPage() {
     {
       icon: <img src={lock} alt="lock" className="w-5 h-5" />,
       heading: "Authentication",
-      para: "When you sign in via GitHub or Google, I receive your name, email, and avatar.",
+      para: "When you sign in via GitHub or Google, I receive your name, email, and avatar. This establishes your public profile for the Guestbook.",
      
     },
      {
@@ -74,7 +74,7 @@ function PrivacyPage() {
     {
       icon: <img src={privacyicon1} alt="lock" className="w-5 h-5" />,
       heading: "Ownership & Deletion",
-      para: "You own your data. You retain the right to be forgotten at any time. If  you wish to have your account, "
+      para: "You own your data. You retain the right to be forgotten at any time. If  you wish to have your account, guestbook entries, and all associated  metadata permanently deleted, you may do so without hurdles."
     }
    
   ]}

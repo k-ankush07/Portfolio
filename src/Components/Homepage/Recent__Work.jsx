@@ -27,7 +27,7 @@ function Recent__Work() {
 
   return (
     <>
-      <div className="text-center text-[#FFFFFF] p-4 md:pt-10">
+      <div className="text-center text-[#FFFFFF] pt-4 md:pt-10">
         <div className="text-[30px] md:text-[44px] font-bold">
           Recent{" "}
 
