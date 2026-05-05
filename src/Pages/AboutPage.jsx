@@ -10,11 +10,13 @@ import CustomerReview from '../Components/Homepage/CustomerReview';
 import Github from '../Components/AboutPage/Github';
 import Collaboration from '../Components/AboutPage/Collaboration';
 import GithubStats from '../Components/AboutPage/GithubStats';
+import ProfileCard from '../Components/BlogPage/ProfileCard';
 
 function AboutPage() {
   return (
     <div className='lg:pt-[172px] lato-regular'>
       <FullStack />
+      <ProfileCard />
     <Journey />
    <div>
      <Engineer index={0}  date="Jan 2025 – Present" logo={Roboto} heading="Roboto Studio" heading1="Frontend" heading2=" Engineer"

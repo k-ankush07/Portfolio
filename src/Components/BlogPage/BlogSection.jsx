@@ -1,6 +1,8 @@
 import React from "react";
 import container from "../../assets/Images/abs.svg"
-import container1 from "../../assets/Images/container (1).svg"
+import container1 from "../../assets/Images/abs (1).svg"
+import container2 from "../../assets/Images/abs (2).svg"
+
 // import container2 from "../../assets/Images/container (2).svg"
 const posts = [
   {
@@ -22,7 +24,7 @@ const posts = [
     desc: "The myths, mistakes, and mindset shifts that separate people who learn to code from people who quit. Hard-won lessons from my first two years.",
     date: "Dec 05, 2024",
     read: "10 min read",
-    image:container1
+    image:container2
   },
   
 ];
@@ -42,7 +44,7 @@ export default function BlogSection() {
               <img
                 src={post.image}
                 alt="blog"
-                className="w-full h-[290px] rounded-[8px] object-cover"
+                className="w-full h-[290px] rounded-[8px]   object-cover"
               />
 
               {/* Badge */}

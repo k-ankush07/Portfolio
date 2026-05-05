@@ -50,7 +50,7 @@ function Engineer({
 
   return (
     <section
-      className="sticky py-0 flex top-10 lg:pb-[40px]"
+      className="sticky py-0 flex top-15 lg:pb-[40px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -61,7 +61,7 @@ function Engineer({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="image_background bg-neutral-900 flex flex-col lg:flex-row rounded-[8px]"
+          className="image_background bg-neutral-900  flex flex-col lg:flex-row rounded-[8px]"
         >
 
           {/* LEFT SIDE */}
@@ -70,27 +70,27 @@ function Engineer({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[30%] text-white space-y-4 sm:space-y-6 pt-[20px] sm:pt-[30px] lg:pt-[60px] px-[15px] sm:px-[25px] lg:pl-[63px]"
+            className="lg:w-[30%] text-white space-y-4  sm:space-y-6 pt-[20px] sm:pt-[30px] lg:pt-[60px] px-[15px] sm:px-[25px] lg:pl-[63px]"
           >
 
-            <span className="text-[11px] sm:text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
+            <span className="text-[11px] sm:text-[12px] px-3 py-1 m-0 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
               {date}
             </span>
 
-            <div className="flex items-center pt-[10px] sm:pt-[15px] gap-2 sm:gap-3">
-              <img src={logo} alt="logo" className="w-[28px] sm:w-[36px]" />
+            <div className="flex items-center pt-[10px] sm:pt-[15px] sm:m-0 gap-2 sm:gap-3">
+              <img src={logo} alt="logo" className="" />
               <h2 className="text-[20px] sm:text-[26px] lg:text-[40px] font-bold">
                 {heading}
               </h2>
             </div>
 
-            <div className="text-[12px] sm:text-sm pt-[10px] sm:pt-[15px] text-[#BDBDBD] space-y-1 sm:space-y-2">
+            <div className="text-[12px] sm:text-[14px] pt-[10px] sm:pt-[15px] m-0 text-[#BDBDBD] space-y-1 sm:space-y-2">
               <p className="flex gap-2 items-center">
-                <img src={newlocation} alt="location" className="w-4 h-4" />
+                <img src={newlocation} alt="location" className="" />
                 London Area, United Kingdom
               </p>
               <p className="flex gap-2 items-center">
-                <img src={work} alt="work" className="w-4 h-4" />
+                <img src={work} alt="work" className="" />
                 Full-time · Remote
               </p>
             </div>
