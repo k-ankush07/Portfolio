@@ -16,6 +16,7 @@ function PrivacyPage() {
     <div className='lato-regular'>
         <Privacy   colorText="Policy"  first_letter="Privacy" para="Your privacy is our priority." />
      <Policy
+     index={0}
   date="01"
   heading="Collect."
   subheading="Only What's Needed"
@@ -39,6 +40,7 @@ function PrivacyPage() {
   ]}
 />
  <Policy
+ index={1}
   date="02"
   heading="Measure."
   subheading="Aggregate, Not Track"
@@ -63,7 +65,8 @@ function PrivacyPage() {
    
   ]}
 />
- <Policy
+ <Policy 
+ index={2}
   date="03"
   heading="Yours."
   subheading="Full Ownership"

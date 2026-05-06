@@ -17,7 +17,7 @@ function AboutPage() {
   return (
     <div className='pt-[96px] lg:pt-[0px] lato-regular'>
       <Profile />
-      <FullStack />
+      {/* <FullStack /> */}
     
     <Journey />
    <div>
@@ -28,7 +28,7 @@ function AboutPage() {
     para4="Accessibility & Engineering Standards: " span4="Shipped WCAG 2.1 AA compliant interfaces for UK/USA clients. Managed high-velocity sprints in Linear/Agile, maintaining 99% compliance with strict international accessibility regulations."
     />
 
-      <Engineer index={0} date="Nov 2024 — Present" logo={newgithub} heading="GitHub" heading1="Open Source" heading2="Developer"
+      <Engineer index={1} date="Nov 2024 — Present" logo={newgithub} heading="GitHub" heading1="Open Source" heading2="Developer"
      span1="Develop and maintain open-source repositories focused on modern web  infrastructure and developer productivity, achieving significant  community adoption (70+ stars on flagship projects)."
    span2="Engineered UI components and technical documentation for a leading React ecosystem (20K+ GitHub stars), expanding the library's collection of  high-performance, accessible components."
     span3="Refined component logic and TypeScript definitions, ensuring seamless  integration, type-safety, and a superior developer experience (DX) for  thousands of downstream users."
