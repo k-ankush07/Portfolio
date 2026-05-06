@@ -88,7 +88,7 @@ function ExperienceTimeline() {
         <section className="relative  px-2 lg:px-0  ">
             <div className="container relative" >
 
-               <div className=" border-t-1  border-white/10 pt-[60px]">
+               <div className=" border-t-1  border-white/10 pt-[10px] lg:pt-[60px]">
                  {/* DESKTOP CENTER LINE */}
                 <div className="hidden lg:block absolute left-[30%] top-15 h-[88%] w-px bg-white/10"></div>
                 <div className="hidden lg:block absolute left-[30%] top-15 h-[40px] w-px bg-white"></div>
@@ -113,13 +113,13 @@ function ExperienceTimeline() {
                                 initial={{ opacity: 0, x: -60 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                className="lg:w-[30%] text-white pt-[10px]  pb-[10px] pr-6 pl-10 lg:pl-0 lg:pt-[0px]"
+                                className="lg:w-[30%] text-white pt-[10px]  pb-[10px] pr-6 pl-10 lg:pl-0 lg:pt-[10px]"
                             >
                                 <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
                                     {exp.date}
                                 </span>
 
-                                <div className="flex items-center gap-3 mt-5">
+                                <div className="flex items-center gap-3 mt-[15px]">
                                     <img src={exp.logo} alt="logo" />
                                     <h2 className="text-[26px] lg:text-[40px] font-semibold">
                                         {exp.company}

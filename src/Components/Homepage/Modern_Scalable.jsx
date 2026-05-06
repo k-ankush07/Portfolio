@@ -25,7 +25,7 @@ function Modern_Scalable() {
             <div className="pt-10 xl:py-20">
               {/* Background Image */}
 
-              <div className="absolute inset-0 h-[55rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-70">
+              <div className="absolute inset-0 h-[40rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-70">
             <div className="" style={{ pointerEvents: "none" }}>
                 {show && <WorldGlobe />} 
             </div>
@@ -80,7 +80,7 @@ function Modern_Scalable() {
                     <p className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px]  max-w-[8000px] sm:text-[18px]  font-normal flex md:gap-2 justify-center items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                  
-                      👋 <span className="">Hello,</span>I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
+                      👋 Hello, I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
                     </p>
                   </div>
                 </div>

@@ -50,7 +50,7 @@ function Engineer({
 
   return (
     <section
-      className="sticky py-0 flex top-15 lg:pt-[20px] lg:pb-[40px]"
+      className="sticky py-0 flex top-15 lg:pt-[0px] lg:pb-[40px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
