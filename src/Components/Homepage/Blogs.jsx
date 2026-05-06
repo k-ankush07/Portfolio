@@ -18,9 +18,9 @@ function Blogs() {
                   
                       <div className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
                         `}>
-                        <h1 className='text-[#FFFFFF]  text-[10px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
+                        <h1 className='text-[#FFFFFF]  text-[16px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
-                            {/* <div className='bg-[#292929] lg:h-[30px] lg:w-[30px] w-[20px] h-[20px] lg:h-[30px] lg:w-[30px] flex items-center justify-center rounded-full'> */}
+                          
         <motion.img
               src={arrow}
               alt="arrow"

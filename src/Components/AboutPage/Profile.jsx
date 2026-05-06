@@ -474,7 +474,7 @@ function Profile() {
 function LocationTag() {
   return (
     <div className="relative inline-block rounded-md p-[1.5px] overflow-hidden lg:mt-4">
-      <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
+      <span className="absolute -inset-[264%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
       <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1 text-[10px] sm:text-sm text-white">
         <FaLocationDot className="text-[#FFAF7B]" />

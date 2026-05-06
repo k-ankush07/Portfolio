@@ -39,7 +39,7 @@ function CustomerReview() {
              
             `}
           >
-            <h1 className=" customer-text text-white text-[10px] lg:text-[20px] font-bold">
+            <h1 className=" customer-text text-white text-[16px] lg:text-[20px] font-bold">
               Customer reviews/Feedback
             </h1>
 

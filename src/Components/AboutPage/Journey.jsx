@@ -25,7 +25,7 @@ function Journey() {
   };
 
   return (
-        <div className="text-center text-[#FFFFFF] p-4 mt-15 sm:mt-0 md:pt-10">
+        <div className="text-center text-[#FFFFFF] pt-4  px-4  md:pt-10 lg:pt-6">
         <div className="text-[30px] md:text-[44px] font-bold">
          The{" "}
 

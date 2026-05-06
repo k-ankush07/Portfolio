@@ -52,7 +52,7 @@ function Recent__Work() {
         </div>
 
         <div className="flex justify-center">
-          <p className="text-[14px] md:text-[18px] w-[70%]">
+          <p className="text-[14px] md:text-[18px] w-[78%]">
             Take a look at some of the applications and websites I’ve recently developed.
           </p>
         </div>

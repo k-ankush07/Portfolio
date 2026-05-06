@@ -334,7 +334,7 @@ function Tool() {
           <motion.img
             src={arrow}
             alt=""
-            className="w-10 h-10 cursor-pointer"
+            className="lg:w-10 lg:h-10 cursor-pointer"
             initial={{ opacity: 0,  }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true, amount: 0.35 }}

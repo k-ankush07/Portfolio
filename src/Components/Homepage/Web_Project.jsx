@@ -37,7 +37,7 @@ import {motion} from "framer-motion"
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="flex gap-1 sm:flex-row justify-center lg:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex  gap-1 sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
@@ -158,7 +158,7 @@ import {motion} from "framer-motion"
                 <motion.img
                    src={arrow}
                    alt="arrow"
-                   className={`absolute bottom-4 right-4 lg:h-10 lg:w-10 cursor-pointer `}
+                   className={`arrow_web absolute bottom-4 right-4 lg:h-10 lg:w-10 cursor-pointer `}
                    initial={{ opacity: 0, }}
                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                    viewport={{ once: true, amount: 0.35 }}

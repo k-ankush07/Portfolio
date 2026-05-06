@@ -170,9 +170,20 @@ img.toolWeTrust {
     background-color: #000000;
   }
 }
+@media (min-width:300px) and (max-width:370px){
+  .cards_section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  .arrow_web {
+        bottom: -1px;
+    right: 4px;
+  }
+}
 
-
-@media (max-width:768px) {
+@media (max-width:767px) {
   .dolor_container {
     flex-wrap: wrap;
   }
@@ -667,7 +678,7 @@ opacity: 0;
 }
 .main_about_class .card1-about{
      height: 169px;
-    left: 94px;
+    left: 34px;
     top: -50px;
 }
 .main_about_class .arrow_class{

@@ -7,7 +7,7 @@ export const Breadcrumb = ({ children }) => (
 );
 
 export const Title = ({ children }) => (
-  <h1 className="text-[20px] lg:text-[44px] leading-[15px] leading-[76.8px] font-bold text-white">
+  <h1 className="text-[15px] lg:text-[44px] leading-[15px] leading-[76.8px] font-bold text-white">
     {children}
   </h1>
 );
