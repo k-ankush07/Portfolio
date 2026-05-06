@@ -257,7 +257,7 @@ export default function Navbar() {
                         setOpen(false);
                         setIsPinned(false);
                       }}
-                      className={`relative rounded-[13px] overflow-hidden h-[200px] cursor-pointer transition-all duration-500 ${
+                      className={`relative rounded-[13px] overflow-hidden h-[200px] cursor-pointer transition-all duration-300 ${
                         open
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 translate-y-4"
@@ -292,7 +292,7 @@ export default function Navbar() {
                             setOpen(false);
                             setIsPinned(false);
                           }}
-                          className={`flex items-center gap-3 p-3 rounded-xl bg-white/7 hover:bg-white/12 cursor-pointer transition-all duration-200 ${
+                          className={`flex items-center gap-3 p-3 rounded-xl bg-white/7 hover:bg-white/12 cursor-pointer transition-all duration-400 ${
                             open
                               ? "opacity-100 translate-y-0"
                               : "opacity-0 translate-y-4"
