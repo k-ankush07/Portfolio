@@ -305,10 +305,10 @@ function Tool() {
   }, [start]);
 
   return (
-    <section className="pb-10 pt-15 px-2 sm:px-0">
+    <section className="pb-[15px] pt-[20px] lg:pt-15  px-2 sm:px-0">
       <div className="container">
 
-        <div className="flex justify-between items-end mb-8">
+        <div className="flex justify-between items-end mb-4 lg:mb-8">
           <div>
             <h1 className="text-white text-[30px] lg:text-[44px]">
               Tools we{" "}
@@ -345,7 +345,7 @@ function Tool() {
 
         <div
           ref={sceneRef}
-          className="w-full h-[350px] sm:h-[500px] rounded-2xl border border-gray-700 bg-[#181818] overflow-hidden relative"
+          className="w-full h-[350px] sm:h-[500px] rounded-[10px] border border-gray-700 bg-[#181818] overflow-hidden relative"
           style={{ cursor: "grab" }}
         />
 

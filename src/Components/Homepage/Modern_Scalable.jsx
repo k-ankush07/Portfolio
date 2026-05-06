@@ -80,7 +80,7 @@ function Modern_Scalable() {
                     <p className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px]  max-w-[8000px] sm:text-[18px]  font-normal flex md:gap-2 justify-center items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                  
-                      👋 Hello, I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
+                      👋 <span className="">Hello,</span>I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
                     </p>
                   </div>
                 </div>

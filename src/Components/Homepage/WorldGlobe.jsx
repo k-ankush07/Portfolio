@@ -158,7 +158,7 @@ const WorldGlobe = () => {
     globeRef.current.pointOfView({
       lat: isMobile ? 10 : 15,
       lng: 20,
-      altitude: isMobile ? 3 : 2,
+      altitude: isMobile ? 3 : 1.8,
     });
   }, [isMobile]);
 

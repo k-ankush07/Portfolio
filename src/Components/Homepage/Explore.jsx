@@ -30,10 +30,10 @@ function Explore() {
   };
   return (
     <>
-      <section className=' px-2  md:px-0 pb-6 pt-5'>
+      <section className=' px-2  md:px-0 pb-[6px] lg:pb-6 lg:pt-5'>
 
         <div className='container'>
-          <div className='text-center bg-[#000000] text-[#FFFFFF]  py-3 lg:py-8   '>
+          <div className='text-center bg-[#000000] text-[#FFFFFF]  pb-3 lg:py-8   '>
             <div className=' text-[30px] lg:text-[44px] font-bold flex  justify-center w-[100%]     '>
 
               <h2 className='tool_div max-w-[700px] '>

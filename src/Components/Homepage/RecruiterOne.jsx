@@ -81,7 +81,7 @@ function RecruiterOne({ index, desc }) {
               transition={{ duration: 0.8 }}
             >
               <div className="pb-4 sm:pb-6 lg:pb-8 sm:pt-2"> {/*  Consistent padding */}
-                <div className="image_background flex flex-col lg:flex-row gap-6 lg:gap-[75px] lg:pl-[40px] pb-8 lg:pb-[40px] pt-4 lg:pt-[30px] lg:pr-[53px]">
+                <div className="image_background flex flex-col lg:flex-row gap-2 lg:gap-6 lg:gap-[75px] lg:pl-[40px] pb-3 lg:pb-8 lg:pb-[40px] pt-4 lg:pt-[30px] lg:pr-[53px]">
 
                   {/* Left */}
                   <motion.div
@@ -92,10 +92,10 @@ function RecruiterOne({ index, desc }) {
                   </motion.div>
 
                   {/* Right */}
-                  <div className="flex flex-col justify-center mt-6 lg:mt-0 w-full lg:w-auto">
+                  <div className="flex flex-col justify-center mt-[10px] lg:mt-0 w-full lg:w-auto">
                     <motion.div
                       variants={itemVariants}
-                      className="flex items-center gap-2 sm:gap-3 text-white mb-6 lg:mb-1 flex-wrap"
+                      className="flex items-center gap-2 sm:gap-3 text-white mb-[10px] lg:mb-6 lg:mb-1 flex-wrap"
                       whileHover={{ y: -3 }}
                     >
                       <img

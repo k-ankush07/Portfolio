@@ -96,7 +96,7 @@ function FullStack() {
     const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
     const socialIcons = [Overlay11, Overlay10, Overlay8, Overlay9];
     return (
-        <section className=' px-3 md:px-0 py-5'>
+        <section className=' px-3 md:px-0 pt-5 lg:pt-[40px]'>
 
             <div className='container '>
                 <div className='bg-[#000000] xl:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>

@@ -298,7 +298,7 @@ function Profile() {
 
   return (
     <motion.section
-      className="py-10 px-2 md:px-0 text-white"
+      className="pt-10 pb-3 md:pb-10 px-2 md:px-0 text-white"
       initial="hidden"
       animate="show"
       variants={container}
@@ -381,7 +381,7 @@ function Profile() {
                   {/* BUTTON */}
                   <motion.div variants={item}>
                     <Link to="/">
-                      <button className="btn-slide text-[14px] lg:text-[16px] cursor-pointer rounded-[500px] text-black bg-white py-2 px-6 lg:py-3 xl:px-16">
+                      <button className="btn-slide text-[14px] lg:text-[16px] cursor-pointer rounded-[500px] text-black bg-white py-2 px-6 sm:px-17 lg:py-3 xl:px-16">
                         Hire Me
                       </button>
                     </Link>
@@ -398,7 +398,7 @@ function Profile() {
             >
 
               {/* WORK */}
-              <motion.div variants={item} className="bg-[#0E0C13] border-1 border-[#201c2c] p-5 rounded-[8px]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:p-5 rounded-[8px]">
                 <h3 className="text-[18px] sm:text-[20px] font-bold mb-2">Work</h3>
                 <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">
                   Osinski, Kohler and Bashirian 74-102565
@@ -406,7 +406,7 @@ function Profile() {
               </motion.div>
 
               {/* SKILLS */}
-              <motion.div variants={item} className="bg-[#0E0C13]  p-5 rounded-[8px] border-1 border-[#201c2c]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:p-5 rounded-[8px] ">
                 <h3 className="text-[18px] sm:text-[20px] font-bold mb-1">Skills</h3>
 
                 <motion.div className="flex flex-wrap gap-2 mt-3" variants={container}>
@@ -424,7 +424,7 @@ function Profile() {
               </motion.div>
 
               {/* PORTFOLIO */}
-              <motion.div variants={item} className="bg-[#0E0C13] border-1 border-[#201c2c] p-5 rounded-[8px]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:p-5 rounded-[8px]">
                 <h3 className="text-[18px] sm:text-[20px] font-bold mb-2">
                   Portfolio Links
                 </h3>

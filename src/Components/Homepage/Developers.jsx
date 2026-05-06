@@ -89,13 +89,13 @@ const letter = {
 };
     return (
         <>
-            <section className=' px-3 md:px-0 pt-6 py-3'>
+            <section className=' px-3 md:px-0 pt-[24px] py-3 lg:pt-[49px]'>
                 <div className='container'>
                     <div className=''>
 
 
 
-                         <h1 className=' text-[25px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
+                         <h1 className=' text-[22px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
                           Loved by 10,000+ {' '}
                         
                           <motion.span
@@ -119,7 +119,7 @@ const letter = {
                         </div>
 
                     </div>
-                    <div className="sm:flex gap-10 mt-9">
+                    <div className="sm:flex gap-10 mt-[10px] ">
                         <Swiper
                             modules={[Autoplay]}
                             spaceBetween={20}
