@@ -85,39 +85,35 @@ function ExperienceTimeline() {
     };
 
     return (
-        <section className="relative ">
-            <div className="container relative pt-10 border-t-1    border-white/10" >
+        <section className="relative  px-2 lg:px-0  ">
+            <div className="container relative" >
 
-               <div className="">
+               <div className=" border-t-1  border-white/10 pt-[60px]">
                  {/* DESKTOP CENTER LINE */}
-                <div className="hidden lg:block absolute left-[30%] top-10 h-[94%] w-px bg-white/10"></div>
-                <div className="hidden lg:block absolute left-[30%] top-10 h-[40px] w-px bg-white"></div>
+                <div className="hidden lg:block absolute left-[30%] top-15 h-[88%] w-px bg-white/10"></div>
+                <div className="hidden lg:block absolute left-[30%] top-15 h-[40px] w-px bg-white"></div>
                 {/* DESKTOP ICON */}
-                <div className="hidden lg:block absolute left-[30%] top-15 -translate-x-1/2 top-6">
+                <div className="hidden lg:block absolute left-[30%] top-20 -translate-x-1/2 top-6">
                     <img src={smallicon} alt="icon" />
                 </div>
                 {/* MOBILE LINE */}
-                        <div className="lg:hidden absolute left-3 top-0 h-full w-px bg-white/10"></div>
+                        <div className="lg:hidden absolute left-3 top-10 h-[97.3%] w-px bg-white/10"></div>
+                        <div className="lg:hidden lg:block absolute left-3 top-10 h-[40px] w-px bg-white"></div>
 
                         {/* MOBILE ICON */}
-                        <div className="lg:hidden absolute left-0 top-6">
+                        <div className="lg:hidden absolute left-0 top-15">
                             <img src={smallicon} alt="icon" />
                         </div>
                 {data.map((exp, index) => (
                     <div key={index} className="relative ">
-
-                        
-
-
-
-                        <div className="flex flex-col lg:flex-row">
+                        <div className="flex flex-col lg:flex-row pt-[20px] lg:pt-[0px]">
 
                             {/* LEFT SIDE */}
                             <motion.div
                                 initial={{ opacity: 0, x: -60 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                className="lg:w-[30%] text-white pt-[40px] pb-[40px] pr-6 pl-10 lg:pl-0"
+                                className="lg:w-[30%] text-white pt-[10px]  pb-[10px] pr-6 pl-10 lg:pl-0 lg:pt-[0px]"
                             >
                                 <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
                                     {exp.date}
@@ -125,7 +121,7 @@ function ExperienceTimeline() {
 
                                 <div className="flex items-center gap-3 mt-5">
                                     <img src={exp.logo} alt="logo" />
-                                    <h2 className="text-[24px] lg:text-[34px] font-semibold">
+                                    <h2 className="text-[26px] lg:text-[40px] font-semibold">
                                         {exp.company}
                                     </h2>
                                 </div>
@@ -151,7 +147,7 @@ function ExperienceTimeline() {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}
-                                className="lg:w-[70%] text-white pt-[20px] pb-[60px] pl-10 lg:pb-[20px]  lg:pl-[102px]"
+                        className="lg:w-[70%] text-white pt-[10px] pb-[10px] lg:pb-[60px] pl-10 lg:pb-[50px] lg:pl-[102px] lg:pt-[0px]"
                             >
                                 <motion.h2
                                     variants={item}
@@ -167,7 +163,7 @@ function ExperienceTimeline() {
                                     <motion.p
                                         key={i}
                                         variants={item}
-                                        className="text-[14px] leading-[24px] mt-4 text-[#D0D0D0]"
+                                        className="text-[12px] lg:text-[14px] leading-[24px] mt-2 lg:mt-4 text-[#D0D0D0]"
                                     >
                                         {pt.p}
                                         <span className="text-[#A0A0A0]">{pt.s}</span>
@@ -176,7 +172,7 @@ function ExperienceTimeline() {
 
                                   {/* Icons */}
                                           <motion.div
-                                            className="flex flex-wrap gap-2  pt-[24px] lg:mt-4 sm:w-[320px] lg:w-[384px]"
+                                            className="flex flex-wrap gap-2  pt-[24px] lg:mt-[10px] sm:w-[320px] lg:w-[384px]"
                                             variants={container}
                                           >
                                             {[Docker, Bun, Next, pnpm, PostgreSQL, Redis, Vercel].map((img, i) => (

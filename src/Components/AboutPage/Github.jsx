@@ -79,7 +79,7 @@ function Github() {
 
   return (
     <section className="pb-4 px-3 sm:px-0">
-  <div className="container mx-auto">
+  <div className="container ">
     <div className="relative flex items-center justify-center">
 
       {/* Card */}

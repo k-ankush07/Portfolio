@@ -355,7 +355,7 @@ function Profile() {
 
                 {/* RIGHT */}
                 <motion.div
-                  className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center xl:gap-15"
+                  className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center xl:gap-[40px]"
                   variants={container}
                 >
 
@@ -408,7 +408,7 @@ function Profile() {
               {/* SKILLS */}
               <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:p-5 rounded-[8px] ">
                 <h3 className="text-[18px] sm:text-[20px] font-bold mb-1">Skills</h3>
-
+                <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">Osinski, Kohler and Bashirian 74-102565</p>
                 <motion.div className="flex flex-wrap gap-2 mt-3" variants={container}>
                   {skills.map((skill, i) => (
                     <motion.div
