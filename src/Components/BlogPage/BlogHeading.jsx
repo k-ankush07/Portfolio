@@ -54,7 +54,7 @@ function BlogHeading() {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col items-center pt-[20px] lg:pt-[43px]">
+        <div className="flex flex-col items-center pt-[20px] lg:pt-[40px]">
 
           <Paragraph className="w-full lg:max-w-[1100px] text-center">
             I switched to a terminal-first workflow two years ago and never
@@ -74,7 +74,7 @@ function BlogHeading() {
           </Paragraph>
 
           {/* Section */}
-          <div className="pt-[27px] space-y-[12px] max-w-[1100px]">
+          <div className=" pt-[17px] lg:pt-[27px] space-y-[12px] max-w-[1100px]">
             <Heading>
               The core four: editor, terminal, shell, multiplexer
             </Heading>
@@ -86,27 +86,19 @@ function BlogHeading() {
           </div>
 
           {/* Neovim */}
-          <div className=" pt-[20px] lg:pt-[40px] max-w-[1100px]">
+          <div className="pt-[20px] lg:pt-[40px] max-w-[1100px]">
             <Heading>Neovim</Heading>
 
             <Paragraph className="pt-[12px]">
-              Neovim is the center of gravity. I moved from VS Code because I
-              was tired of Electron eating memory and the constant extension
-              update churn breaking my setup every few weeks.
+             Neovim is the center of gravity. I moved from VS Code because I was tired of  Electron eating memory and the constant extension update churn breaking  my setup every few weeks. With native LSP support and Treesitter for  syntax highlighting, I get the same intelligence features —  autocomplete, go-to-definition, inline diagnostics — but startup takes  40ms instead of four seconds.
             </Paragraph>
 
             <Paragraph className=" pt-[15px]  lg:pt-[20px]">
-              With native LSP support and Treesitter for syntax highlighting, I
-              get the same intelligence features — autocomplete,
-              go-to-definition, inline diagnostics — but startup takes 40ms
-              instead of four seconds.
+              The real unlock was modal editing. Once you internalize that ciw replaces a word and dd deletes a line without reaching for the mouse, you stop thinking about text manipulation and start thinking about code. I use lazy.nvim for plugin management with about 35 plugins — telescope for fuzzy  finding, nvim-cmp for completion, and conform.nvim for formatting on  save.
             </Paragraph>
 
             <Paragraph className=" pt-[15px]  lg:pt-[20px]">
-              The real unlock was modal editing. Once you internalize that ciw
-              replaces a word and dd deletes a line without reaching for the
-              mouse, you stop thinking about text manipulation and start
-              thinking about code.
+              The honest limitation: the learning curve is brutal for the first two weeks. You will be slower. You will want to quit. That investment in learning your tools deeply pays compound interest, but nobody tells you how bad week one feels.
             </Paragraph>
           </div>
 
@@ -125,7 +117,7 @@ function BlogHeading() {
               <img src={code} alt=" code image" />
             </div>
 
-            <Paragraph className="pt-[12px]">
+            <Paragraph className="">
               One annoyance: Wezterm's multiplexer mode is half-baked compared to Tmux. I stopped trying to replace Tmux with it and let each tool do what it's best at.
             </Paragraph>
           </div>
@@ -161,7 +153,7 @@ I have three persistent sessions: work, personal, and scratch. Prefix key is reb
               <img src={code1} alt="coading image" />
             </div>
 
-            <Paragraph className="pt-[12px] lg:pb-[44px]">
+            <Paragraph className=" lg:pb-[34px]">
             The only complaint is that Tmux's copy mode keybindings are arcane until you configure vi-mode — but once you do, selecting and yanking text  feels like Neovim.
             </Paragraph>
           </div>

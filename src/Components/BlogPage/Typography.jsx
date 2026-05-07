@@ -13,7 +13,7 @@ export const Title = ({ children }) => (
 );
 
 export const Subtitle = ({ children }) => (
-  <p className=" text-[12px] lg:text-[18px] leading-[15px] lgleading-[27px] text-[#BDBDBD] ">
+  <p className=" text-[12px] lg:text-[18px] leading-[15px] lgleading-[27px] text-[#FFFFFF] ">
     {children}
   </p>
 );

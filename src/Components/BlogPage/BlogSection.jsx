@@ -31,8 +31,8 @@ const posts = [
 
 export default function BlogSection() {
   return (
-    <div className=" text-white lg:pt-[8px] ">
-      <div className="  grid md:grid-cols-3 gap-6">
+    <div className=" text-white lg:pt-[4px] lg:pb-[32px] ">
+      <div className="  grid md:grid-cols-3 gap-[32px]">
 
         {posts.map((post, index) => (
           <div
@@ -44,25 +44,25 @@ export default function BlogSection() {
               <img
                 src={post.image}
                 alt="blog"
-                className="w-full h-[290px] rounded-[8px]   object-cover"
+                className="w-full  rounded-[8px]   object-cover"
               />
 
               {/* Badge */}
-             <div className="flex  pt-[21px] ">
-                 <div className=" bg-[#f4a261] text-[#000000] text-[14px] leading-[21px] font-bold px-3 py-1 rounded-[8px] font-medium">
+             <div className="flex  pt-[20px] ">
+                 <div className=" bg-[#f4a261] text-[#000000] text-[14px] leading-[21px] font-bold px-3 py-1 rounded-[8px] ">
                 {post.date}•{post.read}
               </div>
                 </div>
             </div>
 
             {/* Content */}
-            <div className="py-[21px] max-w-[400px] ">
-              <h3 className="text-[24px] text-start font-bold mb-2 leading-[33px]">
+            <div className="pt-[13px] max-w-[350px] ">
+              <h3 className="text-[24px] text-start font-bold leading-[33px]">
                 {post.title}
               </h3>
-              <p className="text-[16px] text-start leading-[24px] text-[#BDBDBD]">
+              <p className="text-[16px] text-start leading-[24px] lg:pt-[7px] text-[#BDBDBD]">
                 {post.desc.split(" ").slice(0, 12).join(" ")}
-  {post.desc.split(" ").length > 12 && " ..."}
+                  {post.desc.split(" ").length > 12 && " ..."}
               </p>
             </div>
           </div>
