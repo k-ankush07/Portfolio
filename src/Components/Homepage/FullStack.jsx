@@ -96,15 +96,15 @@ function FullStack() {
     const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
     const socialIcons = [Overlay11, Overlay10, Overlay8, Overlay9];
     return (
-        <section className=' px-3 md:px-0 pt-5 lg:pt-[40px]'>
+        <section className=' px-3 md:px-0 '>
 
             <div className='container '>
-                <div className='bg-[#000000] xl:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-4 py-6 '>
+                <div className='bg-[#000000] xl:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-[28px] py-[29px]  lg:px-0'>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
-                    <div className='md:flex xl:pl-[20px] xl:pr-[40px]  xl:w-[30%] '>
-                        <div className='border py-9 md:py-[40px] md:px-[65px] xl:px-[70px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                    <div className='md:flex xl:pl-[40px] xl:pr-[59px]  xl:w-[30%] '>
+                        <div className='border py-9 md:pt-[40px] md:px-[65px] xl:px-[65px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -175,7 +175,7 @@ function FullStack() {
 
                     <div className='md:flex  gap-6 xl:w-[70%]'>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[40px] mt-7 xl:mt-0 '>
+                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[67px] mt-7 xl:mt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}
@@ -258,7 +258,7 @@ function FullStack() {
 
                         {/* 3rd section */}
                         <motion.div
-                            className='flex mt-5 lg:mt-0 lg:justify-center items-center lg:pl-[50px]'
+                            className='flex mt-5 lg:mt-0 lg:justify-center items-center lg:pl-[67px]'
                             variants={textContainer}
                             initial="hidden"
                             whileInView="show"

@@ -15,7 +15,7 @@ function ViewAll() {
       </div>
 
 
-    <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center py-2 lg:py-0">
+    <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center py-2 lg:pt-[12px]">
   
   <div className="flex gap-3 justify-center items-center group cursor-pointer">
     
@@ -26,9 +26,9 @@ function ViewAll() {
     <motion.img
       src={arrow}
       alt="arrow"
-      className="lg:h-10 lg:w-10"
-      whileHover={{ scale: 1.15 }}
-      transition={{ duration: 0.3 }}
+      className="lg:h-10 lg:w-10 group-hover:scale-110 transition-all duration-500"
+      // whileHover={{ scale: 1.15 }}
+      // transition={{ duration: 0.3 }}
     />
 
   </div>

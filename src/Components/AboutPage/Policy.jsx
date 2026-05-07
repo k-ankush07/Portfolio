@@ -15,7 +15,7 @@ function Policy({
 }) {
   return (
     <section
-      className="sticky top-10 flex items-center pb-[40px]"
+      className="sticky top-10 flex items-center pb-[20px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -35,7 +35,7 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[35%] text-white space-y-6 pt-[40px] lg:pt-[60px] pl-[20px] lg:pl-[63px] pr-[20px]"
+            className="lg:w-[35%] text-white space-y-6 pt-[40px] lg:pt-[60px] pl-[20px] lg:pl-[63px] lg:pr-[57px] pr-[20px]"
           >
             <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[6px] bg-white/10 border border-white/10 inline-block">
               {date}
@@ -57,11 +57,11 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
              viewport={{ once: true }} 
-            className="lg:w-[65%] text-white px-[20px] pt-[20px] lg:pt-[50px] pb-[30px] lg:pb-[46px]"
+            className="lg:w-[65%] text-white px-[20px] pt-[20px] lg:pt-[50px] pb-[30px] lg:px-0 lg:pb-[46px]"
           >
 
             {/* Top paragraph */}
-            <div className="border-l-2 border-gray-500/30 lg:px-[60px] pl-[15px]">
+            <div className="border-l-2 border-gray-500/30 lg:pr-[60px] pl-[15px] lg:pl-[57px]">
               <p className="text-[14px] text-[#BDBDBD] leading-[24px] max-w-[630px]">
                 {para1}
               </p>
@@ -75,10 +75,10 @@ function Policy({
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     whileHover={{ scale: 1.02 }}
-                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] border-3 border-dotted border-[#8F74BF54] bg-[#8F74BF54]"
+                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] border-3 border-dashed border-[#8F74BF54] bg-[#8F74BF54]"
                   >
                     {/* Icon */}
-                    <div className="p-4 w-[70px] h-[51px] bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">
+                    <div className="w-[44px] h-[44px] bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">
                       <div>{card.icon}</div>
                     </div>
 
@@ -87,7 +87,7 @@ function Policy({
                       <h3 className="text-[20px] font-semibold text-white">
                         {card.heading}
                       </h3>
-                      <p className="text-[14px] text-[#BDBDBD] pr-6 leading-[24px]">
+                      <p className="text-[14px] text-[#BDBDBD]  leading-[24px]">
                         {card.para}
                       </p>
                     </div>

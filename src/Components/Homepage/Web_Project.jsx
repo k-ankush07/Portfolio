@@ -31,13 +31,13 @@ import {motion} from "framer-motion"
         <div className="container">
           <div className="flex justify-center pb-3 relative rounded-xl border border-white/10">
 
-            <div className="w-full relative pb-5 lg:pb-10 overflow-hidden">
+            <div className="w-full relative pb-5  lg:pb-0 overflow-hidden">
 
               {/* Purple Line */}
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex  gap-1 sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex  gap-1 sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
@@ -145,11 +145,11 @@ import {motion} from "framer-motion"
               </div>
 
               {/* Bottom CTA */}
-              <div className="lg:mt-8 text-center flex flex-col items-center w-full">
+              <div className=" lg:pb-[40px] text-center flex flex-col items-center w-full">
                 <h2 className="text-white text-[18px] xl:text-[20px] font-bold">
                   Let's Build Your Next Web Project
                 </h2>
-                <p className="text-[#BDBDBD] text-center mt-2 text-[12px] xl:text-[16px] w-[300px] lg:w-full">
+                <p className="text-[#BDBDBD] text-center mt-[4px] text-[12px] xl:text-[16px] w-[300px] lg:w-full">
                   Need a fast, scalable, and modern web application? I can help
                   turn your idea into a fully functional product.
                 </p>
@@ -158,7 +158,7 @@ import {motion} from "framer-motion"
                 <motion.img
                    src={arrow}
                    alt="arrow"
-                   className={`arrow_web absolute bottom-4 right-4 lg:h-10 lg:w-10 cursor-pointer `}
+                   className={`arrow_web absolute bottom-4 right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
                    initial={{ opacity: 0, }}
                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                    viewport={{ once: true, amount: 0.35 }}

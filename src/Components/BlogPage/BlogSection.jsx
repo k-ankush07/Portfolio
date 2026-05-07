@@ -31,7 +31,7 @@ const posts = [
 
 export default function BlogSection() {
   return (
-    <div className="bg-black text-white ">
+    <div className=" text-white lg:pt-[8px] ">
       <div className="  grid md:grid-cols-3 gap-6">
 
         {posts.map((post, index) => (

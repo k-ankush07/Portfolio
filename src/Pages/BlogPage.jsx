@@ -3,7 +3,7 @@ import BlogHeading from '../Components/BlogPage/BlogHeading'
 
 function BlogPage() {
   return (
-    <div>
+    <div className=''>
         <BlogHeading />
       
     </div>

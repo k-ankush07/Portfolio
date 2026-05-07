@@ -305,10 +305,10 @@ function Tool() {
   }, [start]);
 
   return (
-    <section className="pb-[15px] pt-[20px] lg:pt-15  px-2 sm:px-0">
+    <section className="pb-[20px] pt-[20px] lg:pt-[45px] lg:pb[0px]  px-2 sm:pb-[40px]">
       <div className="container">
 
-        <div className="flex justify-between items-end mb-4 lg:mb-8">
+        <div className="flex justify-between items-end mb-4 lg:mb-[30px">
           <div>
             <h1 className="text-white text-[30px] lg:text-[44px]">
               Tools we{" "}

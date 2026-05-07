@@ -20,7 +20,7 @@ import {
 
 function BlogHeading() {
   return (
-    <section className="pt-[100px] lg:pt-[172px] px-2 sm:px-0">
+    <section className="pt-[100px] lg:pt-[116px] px-2 sm:px-0 lato-regular">
       <div className="container text-center  text-white ">
 
         {/* Breadcrumb */}
@@ -121,7 +121,7 @@ function BlogHeading() {
               one keystroke.
             </Paragraph>
 
-            <div className="pt-[20px]">
+            <div className="pt-[20px] lg:pt-[44px] lg:pb-[40px]">
               <img src={code} alt=" code image" />
             </div>
 
@@ -131,7 +131,7 @@ function BlogHeading() {
           </div>
 
           {/* ZSH */}
-          <div className="pt-[15px]  lg:pt-[40px] max-w-[1100px]">
+          <div className="pt-[15px]  lg:pt-[34px] max-w-[1100px]">
             <Heading>ZSH + Oh My Zsh</Heading>
 
             <Paragraph className="pt-[12px]">
@@ -156,12 +156,12 @@ function BlogHeading() {
 I have three persistent sessions: work, personal, and scratch. Prefix key is rebound to Ctrl+a (closer to home row than the default Ctrl+b), and I use tmux-resurrect to survive full system reboots
             </Paragraph>
 
-            <div className="pt-[20px]">
+            <div className="pt-[20px] lg:pt-[36px] lg:pb-[35px] ">
               {/* <CodePreview /> */}
               <img src={code1} alt="coading image" />
             </div>
 
-            <Paragraph className="pt-[12px]">
+            <Paragraph className="pt-[12px] lg:pb-[44px]">
             The only complaint is that Tmux's copy mode keybindings are arcane until you configure vi-mode — but once you do, selecting and yanking text  feels like Neovim.
             </Paragraph>
           </div>

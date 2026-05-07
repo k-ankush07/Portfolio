@@ -7,10 +7,12 @@ import terms4 from "../assets/Images/Group.svg"
 import terms5 from "../assets/Images/terms4 (2).svg"
 import terms6 from "../assets/Images/terms4 (3).svg"
 import Policy from '../Components/AboutPage/Policy'
+import PrivacyText from '../Components/BlogPage/PrivacyText'
 function TermsPage() {
   return (
     <div className='lato-regular'>
-        <Privacy colorText='Use' first_letter="Terms of" para="Please review the terms that govern your use of this website." />
+        {/* <Privacy colorText='Use' first_letter="Terms of" para="Please review the terms that govern your use of this website." /> */}
+        <PrivacyText  colorText='Use' first_letter="Terms of" para="Please review the terms that govern your use of this website." />
      <Policy
   date="01"
   heading="Terms."

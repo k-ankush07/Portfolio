@@ -4,8 +4,8 @@ import BlogSection from './BlogSection'
 
 function Blogs() {
   return (
-    <div className='px-2  sm:px-0'>
-      <Privacy colorText="More"  first_letter="Posts"  />
+    <div className='px-2  sm:px-0 '>
+      <Privacy colorText="Posts"  first_letter="More"  />
         <BlogSection />
     </div>
   )

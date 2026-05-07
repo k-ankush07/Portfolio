@@ -26,9 +26,9 @@ function Privacy({colorText,first_letter,para}) {
   };
 
   return (
-     <div className="text-center text-[#FFFFFF] p-4 mt-0 sm:mt-0 md:pt-10">
-        <div className="text-[30px] md:text-[44px] leading-[76px] font-bold">
-         {first_letter}{" "}
+     <div className="text-center text-[#FFFFFF]  mt-0 sm:mt-0 md:pt-10 lg:p-0">
+        <div className="text-[30px] md:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
+         <h2>{first_letter}</h2>{" "}
 
           <motion.span
             className="inline-block bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"

@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react'
 import { motion } from "framer-motion";
+function PrivacyText({colorText,first_letter,para}) {
 
-function Recent__Work() {
-  const text = "Work";
+    
+       const text = `${colorText}`;
 
   const container = {
     hidden: {},
@@ -26,10 +27,9 @@ function Recent__Work() {
   };
 
   return (
-    <>
-      <div className="text-center text-[#FFFFFF] pt-4 md:pt-10 lg:pt-[40px] lg:pb-[33px]">
-        <div className="text-[30px] md:text-[44px] font-bold">
-          Recent{" "}
+    <div className="text-center text-[#FFFFFF]  mt-0 sm:mt-0 md:pt-10 lg:pt-[116px] ">
+        <div className="text-[30px] md:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
+         <h2>{first_letter}</h2>{" "}
 
           <motion.span
             className="inline-block bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
@@ -51,14 +51,13 @@ function Recent__Work() {
 
         </div>
 
-        <div className="flex justify-center">
-          <p className="text-[14px] md:text-[18px] w-[78%]">
-            Take a look at some of the applications and websites I’ve recently developed.
+        <div className="flex justify-center lg:pb-[33px]">
+          <p className="text-[12px] md:text-[18px] ">
+          {para}
           </p>
         </div>
       </div>
-    </>
-  );
+  )
 }
 
-export default Recent__Work;
+export default PrivacyText

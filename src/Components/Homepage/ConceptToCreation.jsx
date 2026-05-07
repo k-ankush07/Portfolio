@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom'
 import { FaArrowRightLong } from "react-icons/fa6";
 function ConceptToCreation() {
     return (
-        <section className='py-5 px-2 md:px-0'>
+        <section className='pt-5 px-2 md:px-0 lg:pt-[40px]'>
             <div className='container'>
-                <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden py-[43px]'>
+                <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden py-[43px] lg:pb-[65px] lg:pt-[66px]'>
 
                     <img src={Background1} className='absolute left-0 top-0' />
                     <img src={Background2} className='absolute xl:left-40 bottom-0 top-0' />

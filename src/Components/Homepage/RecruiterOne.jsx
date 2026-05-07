@@ -62,7 +62,7 @@ function RecruiterOne({ index, desc }) {
 
   return (
     <section
-      className="sticky py-0 sm:py-0 flex items-start top-7 " //  MOBILE FIXES
+      className="sticky py-0 sm:py-0 flex items-start top-7 " 
       style={{
         zIndex: 10 + index,
       }}
@@ -80,8 +80,8 @@ function RecruiterOne({ index, desc }) {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="pb-4 sm:pb-6 lg:pb-8 sm:pt-2"> {/*  Consistent padding */}
-                <div className="image_background flex flex-col lg:flex-row gap-2 lg:gap-6 lg:gap-[75px] lg:pl-[40px] pb-3 lg:pb-8 lg:pb-[40px] pt-4 lg:pt-[30px] lg:pr-[53px]">
+              <div className="pb-4 sm:pb-6 lg:pb-[10px] "> 
+                <div className="image_background flex flex-col lg:flex-row gap-2  pb-3 lg:gap-[55px] lg:pl-[20px]  lg:pb-[40px] pt-4 lg:pt-[15px] lg:pr-[64px]">
 
                   {/* Left */}
                   <motion.div

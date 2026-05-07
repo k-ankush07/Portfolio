@@ -42,7 +42,7 @@ function Skills() {
               <img src={magnifying} className="h-[75px]" />
             </div> */}
 
-            <div className="space-y-[27px] lg:space-y-[40px] pt-[20px]">
+            <div className="space-y-[27px] lg:space-y-[28px] pt-[20px]">
 
 
               <div className='slider '>
