@@ -35,7 +35,7 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[35%] text-white space-y-6 pt-[40px] lg:pt-[60px] pl-[20px] lg:pl-[63px] lg:pr-[57px] pr-[20px]"
+            className="lg:w-[35%] text-white space-y-6 pt-[40px] pl-[20px] pr-[20px] lg:pt-[60px] lg:pb-[145px]  lg:pl-[63px] lg:pr-[57px] "
           >
             <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[6px] bg-white/10 border border-white/10 inline-block">
               {date}
@@ -57,12 +57,12 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
              viewport={{ once: true }} 
-            className="lg:w-[65%] text-white px-[20px] pt-[20px] lg:pt-[50px] pb-[30px] lg:px-0 lg:pb-[46px]"
+            className="lg:w-[65%] text-white px-[20px] pt-[20px] pb-[30px] lg:pt-[60px]  lg:px-0 lg:pb-[60px]"
           >
 
             {/* Top paragraph */}
             <div className="border-l-2 border-gray-500/30 lg:pr-[60px] pl-[15px] lg:pl-[57px]">
-              <p className="text-[14px] text-[#BDBDBD] leading-[24px] max-w-[630px]">
+              <p className="text-[14px] text-[#BDBDBD] leading-[24px] ">
                 {para1}
               </p>
 
@@ -75,7 +75,14 @@ function Policy({
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     whileHover={{ scale: 1.02 }}
-                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] border-3 border-dashed border-[#8F74BF54] bg-[#8F74BF54]"
+                    style={{
+    borderWidth: "1px",
+    borderStyle: "dashed",
+    borderColor: "#8F74BF54",
+    borderDasharray: "3 3",
+   
+  }}
+                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] bg-[#8F74BF54]"
                   >
                     {/* Icon */}
                     <div className="w-[44px] h-[44px] bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">

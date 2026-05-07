@@ -26,8 +26,8 @@ function BlogTopText() {
 
   return (
    <section>
-     <div className='container  '>
-          <div className="text-center text-[#FFFFFF] border-t-1 border-white/10  px-0">
+     
+          <div className="text-center text-[#FFFFFF] border-t-1 border-white/10 m-0 px-0">
         <div className="text-[30px] lg:pt-[20px] md:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
          <h2>More</h2>{" "}
 
@@ -54,7 +54,7 @@ function BlogTopText() {
         
       </div>
       
-    </div>
+
    </section>
   )
 }

@@ -27,7 +27,7 @@ function PrivacyText({colorText,first_letter,para}) {
   };
 
   return (
-    <div className="text-center text-[#FFFFFF]  mt-0 sm:mt-0 md:pt-10 lg:pt-[116px] ">
+    <div className="text-center text-[#FFFFFF] lg:pt-[116px] ">
         <div className="text-[30px] md:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
          <h2>{first_letter}</h2>{" "}
 
