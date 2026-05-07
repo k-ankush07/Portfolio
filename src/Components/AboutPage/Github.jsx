@@ -78,15 +78,14 @@ function Github() {
   }, []);
 
   return (
-    <section className="pb-4 px-3 sm:px-0">
+    <section className="pb-[40px] px-3 sm:px-0 sm:pb-0">
   <div className="container ">
     <div className="relative flex items-center justify-center">
 
       {/* Card */}
       <div className="github-card w-full 
-        px-4 py-5 
-        sm:px-6 sm:py-6 
-        lg:pl-[40px] lg:pt-[49px] lg:pb-[37px] lg:pr-[40px] 
+        pt-[18px] pr-[20px] pl-[20px]  pb-[16px]
+        lg:pl-[40px] lg:pt-[40px] lg:pb-[37px] lg:pr-[40px] 
         rounded-[8px] border border-[#292929] relative">
 
         {/* Blur */}
@@ -95,7 +94,7 @@ function Github() {
         </div>
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 gap-4">
+        <div className="flex justify-between sm:items-center pb-[20px] lg:pb-[40px]">
 
           {/* Left */}
           <div className="flex items-center gap-3">
@@ -108,7 +107,7 @@ function Github() {
             </div>
 
             <div>
-              <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-bold">
+              <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px]  font-bold">
                 {loading ? "@loading..." : `@${githubData.name}`}
               </h2>
               <p className="text-[#BDBDBD] text-[12px] sm:text-[14px]">
@@ -118,7 +117,7 @@ function Github() {
           </div>
 
           {/* Right */}
-          <div className="text-left sm:text-right">
+          <div className="text-right">
             <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-bold">
               {loading ? "..." : githubData.publicRepos}
             </h2>
@@ -129,7 +128,7 @@ function Github() {
         </div>
 
         {/* Calendar */}
-        <div className="github-calendar pt-4 overflow-x-auto">
+        <div className="github-calendar lg:pt-4 overflow-x-auto">
           <div className=" min-w-full">
            <GitHubCalendar
   username={username}

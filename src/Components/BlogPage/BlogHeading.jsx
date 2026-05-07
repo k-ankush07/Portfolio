@@ -74,7 +74,7 @@ function BlogHeading() {
           </Paragraph>
 
           {/* Section */}
-          <div className=" pt-[17px] lg:pt-[27px] space-y-[12px] max-w-[1100px]">
+          <div className=" pt-[17px] lg:pt-[27px] space-y-[5px] lg:space-y-[12px] max-w-[1100px]">
             <Heading>
               The core four: editor, terminal, shell, multiplexer
             </Heading>

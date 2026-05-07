@@ -50,7 +50,7 @@ function Engineer({
 
   return (
     <section
-      className="sticky py-0 flex top-15 lg:pt-[0px] lg:pb-[40px]"
+      className="sticky py-0 flex top-15 lg:pt-[0px] lg:pb-[10px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -70,7 +70,7 @@ function Engineer({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[30%] text-white space-y-4  sm:space-y-6 pt-[20px] sm:pt-[30px] lg:pt-[60px] px-[15px] sm:px-[25px] lg:pl-[63px]"
+            className="lg:w-[40%] xl:w-[30%] text-white space-y-4  sm:space-y-6 pt-[20px] sm:pt-[30px] lg:pt-[60px] px-[15px] sm:px-[25px] lg:pl-[63px]"
           >
 
             <span className="text-[10px] sm:text-[12px] px-3 py-1 m-0 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-white/10 inline-block">
@@ -107,7 +107,7 @@ function Engineer({
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="lg:w-[70%] text-white space-y-3 sm:space-y-4 pt-[20px] sm:pt-[30px] lg:pt-[50px] px-[15px] sm:px-[25px] lg:pr-[63px] lg:pl-[53px] pb-[25px] sm:pb-[35px] lg:pb-[46px]"
+            className=" lg:w-[60%] xl:w-[70%] text-white space-y-3 sm:space-y-4 pt-[20px] sm:pt-[30px] lg:pt-[50px] px-[15px] sm:px-[25px] lg:pr-[63px] lg:pl-[53px] pb-[25px] sm:pb-[35px] lg:pb-[46px]"
           >
 
             <div>

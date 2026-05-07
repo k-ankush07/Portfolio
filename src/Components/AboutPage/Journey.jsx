@@ -25,8 +25,8 @@ function Journey() {
   };
 
   return (
-        <div className="text-center text-[#FFFFFF] pt-4  px-4 pb-[15px] lg:pb-[25px] md:pt-10  lg:pt-6">
-        <div className="text-[30px] md:text-[44px] font-bold">
+        <div className="text-center text-[#FFFFFF] pt-[32px]   pb-[15px] lg:pb-[25px] md:pt-10  lg:pb-[33px] lg:pt-[38px]">
+        <div className="text-[30px] md:text-[44px] lg:leading-[76px] font-bold">
          The{" "}
 
           <motion.span

@@ -74,7 +74,8 @@ function Profile() {
       variants={container}
     >
       <div className="container">
-        <div className="border border-[#1f1c1c] rounded-[8px] overflow-hidden">
+        <div className="px-[19px] sm:px-0 ">
+          <div className="border border-[#1f1c1c] rounded-[8px] overflow-hidden">
 
           {/* HEADER BG */}
           <motion.img
@@ -84,14 +85,14 @@ function Profile() {
             variants={item}
           />
 
-          <div className="px-4 sm:px-6 lg:px-[60px]">
+          <div className="px-4  sm:px-[60px]">
 
             {/* HEADER */}
             <motion.div
-              className="relative -mt-10 sm:-mt-14 lg:-mt-20 pb-8 lg:pb-[42px]"
+              className="relative -mt-10 sm:-mt-14 lg:-mt-20 pb-[30px] lg:pb-[40px]"
               variants={container}
             >
-              <div className="flex flex-row lg:items-end lg:justify-between lg:gap-6">
+              <div className="flex flex-row lg:items-end lg:justify-between ">
 
                 {/* LEFT */}
                 <motion.div className="w-full lg:w-auto text-left" variants={container}>
@@ -105,14 +106,14 @@ function Profile() {
 
                   <motion.h2
                     variants={item}
-                    className="mt-3 text-[21px] lg:text-[34px] font-bold"
+                    className=" text-[21px] lg:text-[34px] leading-[42px] font-bold"
                   >
                     Jenny Wilson
                   </motion.h2>
 
                   <motion.p
                     variants={item}
-                    className="text-[#BDBDBD] text-[12px] lg:text-[20px]"
+                    className="text-[#BDBDBD] text-[12px] lg:text-[20px] "
                   >
                     Product Designer @ Google
                   </motion.p>
@@ -125,7 +126,7 @@ function Profile() {
 
                 {/* RIGHT */}
                 <motion.div
-                  className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center xl:gap-[40px]"
+                  className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center xl:gap-[41px]"
                   variants={container}
                 >
 
@@ -135,7 +136,7 @@ function Profile() {
                   </motion.div>
 
                   {/* SOCIAL */}
-                  <motion.div className="flex gap-2 mt-[90px] lg:mt-0" variants={container}>
+                  <motion.div className="flex gap-[10px] mt-[90px] lg:mt-0" variants={container}>
                     {socialIcons.map((icon, i) => (
                       <motion.div
                         key={i}
@@ -163,29 +164,29 @@ function Profile() {
 
             {/* CARDS */}
             <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-[20px] pb-8"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px] lg:gap-[20px] pb-[31px] lg:pb-[30px]"
               variants={container}
             >
 
               {/* WORK */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:p-5 rounded-[8px]">
-                <h3 className="text-[18px] sm:text-[20px] font-bold mb-2">Work</h3>
-                <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px] md:pr-[92px] md:pb-[101px] rounded-[8px]">
+                <h3 className="text-[18px] sm:text-[20px] pb-[4px]  font-bold lg:pb-[8px]">Work</h3>
+                <p className="text-[12px] lg:text-[14px]  text-[#BDBDBD]">
                   Osinski, Kohler and Bashirian 74-102565
                 </p>
               </motion.div>
 
               {/* SKILLS */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:p-5 rounded-[8px] ">
-                <h3 className="text-[18px] sm:text-[20px] font-bold mb-1">Skills</h3>
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:pt-[32px] md:pl-[32px] md:pb-[30px] md:pr-[57px] rounded-[8px] ">
+                <h3 className="text-[18px] pb-[4px] sm:text-[20px] font-bold lg:pb-[8px]">Skills</h3>
                 <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">Osinski, Kohler and Bashirian 74-102565</p>
-                <motion.div className="flex flex-wrap gap-2 mt-3" variants={container}>
+                <motion.div className="flex flex-wrap gap-[10px] pt-[9px]" variants={container}>
                   {skills.map((skill, i) => (
                     <motion.div
                       key={i}
                       variants={skillItem}
                       whileHover={{ scale: 1.05, y: -3 }}
-                      className="px-3 py-1.5 rounded-[8px] text-[12px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#2c273c]"
+                      className="px-3 py-1.5 rounded-[8px] text-[12px] leading-[18px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#2c273c]"
                     >
                       {skill}
                     </motion.div>
@@ -194,12 +195,12 @@ function Profile() {
               </motion.div>
 
               {/* PORTFOLIO */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:p-5 rounded-[8px]">
-                <h3 className="text-[18px] sm:text-[20px] font-bold mb-2">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[32px] md:pb-[30px] md:pr-[57px] rounded-[8px]">
+                <h3 className="text-[18px] sm:text-[20px] font-bold pb-2 md:pb-[10px]">
                   Portfolio Links
                 </h3>
 
-                <motion.div className="flex gap-3 mt-3" variants={container}>
+                <motion.div className="flex gap-[10px]" variants={container}>
                   {logos.map((img, i) => (
                     <motion.img
                       key={i}
@@ -216,25 +217,27 @@ function Profile() {
             </motion.div>
 
             {/* ABOUT */}
-            <motion.div className="pb-10 lg:pb-[42px]" variants={container}>
-              <motion.h3 variants={item} className="text-[18px] lg:text-[20px] font-bold mb-[20px]">
+            <motion.div className="pb-[23px] lg:pb-[42px]" variants={container}>
+              <motion.h3 variants={item} className="text-[18px] lg:text-[20px] leading-[30px] font-bold pb-[16px] lg:pb-[20px]">
                 Full-Stack Developer and a little bit of everything
               </motion.h3>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[25px]">
+              <motion.p variants={item} className="text-[12px] lg:text-[14px] leading-[24px] text-[#BDBDBD]">
               I'm Ankush Kumar, a proactive full-stack developer passionate about  creating dynamic web experiences. From frontend to backend, I thrive on  solving complex problems with clean, efficient code. My expertise spans  React, Next.js, and Node.js, and I'm always eager to learn more.
               </motion.p>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[25px]">
+              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
                When I'm not immersed in work, I'm exploring new ideas and staying curious.  Life's about balance, and I love embracing every part of it.
               </motion.p>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[25px]">
+              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
                 I believe in waking up each day eager to make a difference!
               </motion.p>
             </motion.div>
 
           </div>
+        </div>
+
         </div>
       </div>
     </motion.section>
