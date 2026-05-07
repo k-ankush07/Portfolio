@@ -9,7 +9,7 @@ export default function GradientBorderButton({data}) {
         <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
         {/* Inner Button */}
-        <span className="relative z-10 flex items-center justify-center px-2 py-2 rounded-md bg-[#05070d] text-[10.59px] sm:text-[12px]  text-[12px] text-[#c58962]">
+        <span className="relative z-10 flex items-center justify-center px-2 py-2 rounded-md bg-[#05070d] text-[10.59px]  text-[12px] text-[#c58962]">
          {data}
         </span>
 

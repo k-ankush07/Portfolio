@@ -15,7 +15,7 @@ function Policy({
 }) {
   return (
     <section
-      className="sticky top-10 flex items-center pb-[20px]"
+      className="sticky top-10 flex items-center lg:pb-[20px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -26,7 +26,7 @@ function Policy({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden"
+          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden px-2"
         >
 
           {/* LEFT SIDE */}
@@ -35,19 +35,18 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[35%] text-white space-y-6 pt-[40px] pl-[20px] pr-[20px] lg:pt-[60px] lg:pb-[145px]  lg:pl-[63px] lg:pr-[57px] "
+            className="lg:w-[46%] xl:w-[36%] text-white space-y-[13px] pt-[20px]  lg:pt-[60px] lg:pb-[60px]  lg:pl-[63px] lg:pr-[57px] "
           >
-            <span className="text-[12px] px-3 py-1 text-[#FFAF7B] rounded-[6px] bg-white/10 border border-white/10 inline-block">
+            <span className="text-[12px] px-[5px] py-1 text-[#FFAF7B] rounded-[6px] leading-[18px] bg-[#8F74BF54]/20 border border-[#8F74BF54]/70 inline-block">
               {date}
             </span>
 
             <div>
-              <h2 className="text-[28px] lg:text-[40px] font-bold leading-tight">
-                {heading}
+              <h2 className="text-[28px] leading-[35px] lg:text-[40px] font-bold lg:leading-[48px]">
+                {heading} <br/>  {subheading}
               </h2>
-              <h2 className="text-[28px] lg:text-[40px] font-bold leading-tight">
-                {subheading}
-              </h2>
+              
+             
             </div>
           </motion.div>
 
@@ -57,17 +56,17 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
              viewport={{ once: true }} 
-            className="lg:w-[65%] text-white px-[20px] pt-[20px] pb-[30px] lg:pt-[60px]  lg:px-0 lg:pb-[60px]"
+            className=" lg:w-[54%] xl:w-[64%] text-white  pt-[10px] pb-[30px] sm:pt-[5px] lg:pt-[60px]  lg:px-0 lg:pb-[60px]"
           >
 
             {/* Top paragraph */}
-            <div className="border-l-2 border-gray-500/30 lg:pr-[60px] pl-[15px] lg:pl-[57px]">
-              <p className="text-[14px] text-[#BDBDBD] leading-[24px] ">
+            <div className="lg:border-l-2 border-[#FFFFFF]/10 lg:pr-[60px]  lg:pl-[57px]">
+              <p className="text-[14px] text-[#BDBDBD] leading-[19px] lg:leading-[24px] ">
                 {para1}
               </p>
 
               {/* Cards */}
-              <div className="mt-[15px] space-y-4">
+              <div className=" pt-[10px] sm:pt-[15px] lg:pt-[24px] space-y-[10px] ">
                 {cards.map((card, index) => (
                   <motion.div
                     key={index}
@@ -76,25 +75,25 @@ function Policy({
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     whileHover={{ scale: 1.02 }}
                     style={{
-    borderWidth: "1px",
-    borderStyle: "dashed",
-    borderColor: "#8F74BF54",
-    borderDasharray: "3 3",
-   
-  }}
-                    className="flex gap-4 items-start lg:pt-[35px] lg:pb-[31px] lg:pr-[36px] lg:pl-[30px] pt-[20px] pb-[20px] pr-[15px] pl-[15px] rounded-[10px] bg-[#8F74BF54]"
+                      borderWidth: "1px",
+                      borderStyle: "dashed",
+                      borderColor: "#8F74BF54",
+                      borderDasharray: "3 3",
+                    
+                    }}
+                    className="flex gap-[14px]   rounded-[10px] bg-[#242129] pt-[20px] pl-[15px] pb-[20px] pr-[15px]  lg:pt-[35px] lg:pl-[30px] lg:pb-[31px] lg:pr-[36px]"
                   >
                     {/* Icon */}
-                    <div className="w-[44px] h-[44px] bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">
-                      <div>{card.icon}</div>
+                    <div className="w-[44px] h-[44px]  shrink-0 bg-[#2f2d31]  rounded-[6px] flex items-center justify-center">
+                      {card.icon}
                     </div>
 
                     {/* Content */}
                     <div>
-                      <h3 className="text-[20px] font-semibold text-white">
+                      <h3 className="text-[20px] font-bold text-[#FFFFFF]">
                         {card.heading}
                       </h3>
-                      <p className="text-[14px] text-[#BDBDBD]  leading-[24px]">
+                      <p className="text-[14px] text-[#BDBDBD] leading-[19px]  ">
                         {card.para}
                       </p>
                     </div>
@@ -104,14 +103,14 @@ function Policy({
 
               {/* Bottom Section */}
               {(query || lastdate) && (
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-[20px] gap-4">
+                <div className="flex flex-row justify-between items-end mt-[10px] gap-4">
 
                   {/* Left */}
                   {query && (
-                    <div className="space-y-2 text-[#BDBDBD]">
-                      <p >{query}</p>
+                    <div className="space-y-[3px] text-[#BDBDBD]">
+                      <p className="text-[14px] leading-[24px]">{query}</p>
 
-                      <div className="hover:scale-105 transition">
+                      <div className="hover:scale-105 transition ">
                         <GradientBorderButton
                           data={
                             <>
@@ -126,7 +125,7 @@ function Policy({
 
                   {/* Right */}
                   {lastdate && (
-                    <p className="text-[12px] text-[#BDBDBD]">
+                    <p className="text-[12px] text-[#BDBDBD] leading-[18px] ">
                       {lastdate}
                     </p>
                   )}

@@ -11,27 +11,29 @@ import privacyicon2 from "../assets/Images/privacyicon (2).svg"
 import privacyicon3 from "../assets/Images/privacyicon (3).svg"
 import privacyicon4 from "../assets/Images/privacyicon (4).svg"
 import privacyicon5 from "../assets/Images/privacyicon (5).svg"
+import PrivacyText from '../Components/BlogPage/PrivacyText';
 function PrivacyPage() {
   return (
     <div className='lato-regular'>
-        <Privacy   colorText="Policy"  first_letter="Privacy" para="Your privacy is our priority." />
+        {/* <Privacy   colorText="Policy"  first_letter="Privacy" para="Your privacy is our priority." /> */}
+        <PrivacyText  colorText='Policy' first_letter="Privacy" para="Your privacy is our priority." />
      <Policy
      index={0}
   date="01"
   heading="Collect."
   subheading="Only What's Needed"
-  para1="I believe in the web being open but private. I only collect data that is strictly necessary to provide the functional aspects of this site."
+  para1="I believe in the web being open but private. I only collect data that is strictly necessary to provide the functional aspects of this site, such as authentication and spam prevention."
   
 
   cards={[
     {
-      icon: <img src={lock} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
+      icon: <img src={lock} alt="lock" className="" />,
       heading: "Authentication",
       para: "When you sign in via GitHub or Google, I receive your name, email, and avatar. This establishes your public profile for the Guestbook.",
      
     },
      {
-      icon: <img src={privacyicon5} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
+      icon: <img src={privacyicon5} alt="lock" className="" />,
       heading: "Security Logs",
       para: "To prevent abuse, logs like IP address & user agent are used during sessions.",
      
@@ -48,19 +50,19 @@ function PrivacyPage() {
 
   cards={[
     {
-      icon: <img src={privacyicon4} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
+      icon: <img src={privacyicon4} alt="lock" className="" />,
       heading: "Vercel Analytics",
       para: "Measures server performance, latency, and load times. Strictly technical data."
     },
      {
-      icon: <img src={privacyicon3} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
+      icon: <img src={privacyicon3} alt="lock" className="" />,
       heading: "Google Analytics",
       para: "Tracks general page views and geography. IP anonymization is enabled to protect your identity."
     },
      {
-      icon: <img src={privacyicon2} alt="lock" className="w-10 h-10  lg:h-5 lg:w-5" />,
+      icon: <img src={privacyicon2} alt="lock" className="" />,
       heading: "PostHog",
-      para: "Used for feature flagging and product usage insights (e.g., Did people use the dark mode toggle?)"
+      para: 'Used for feature flagging and product usage insights (e.g., "Did people use the dark mode toggle?").'
     },
    
   ]}

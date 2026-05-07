@@ -101,11 +101,11 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <section className="sticky top-0 z-50">
+    <section className="sticky top-0 z-50  ">
       <div className="container">
         <MobileNavbar />
 
-        <div className="h-18 hidden md:block text-white relative">
+        <div className="h-[72px]  hidden md:block text-white relative">
           {/* LEFT LOGO */}
           <div className="absolute top-5 z-50">
             <Link
