@@ -103,7 +103,7 @@ function BlogHeading() {
           </div>
 
           {/* Wezterm */}
-          <div className="pt-[40px] max-w-[1100px]">
+          <div className=" pt-[20px]  lg:pt-[40px] max-w-[1100px]">
             <Heading>Wezterm</Heading>
 
             <Paragraph className="pt-[12px] ">
@@ -113,7 +113,7 @@ function BlogHeading() {
               one keystroke.
             </Paragraph>
 
-            <div className="pt-[20px] lg:pt-[44px] lg:pb-[40px]">
+            <div className="pt-[20px] pb-[20px] lg:pt-[44px] lg:pb-[40px]">
               <img src={code} alt=" code image" />
             </div>
 
@@ -148,12 +148,12 @@ function BlogHeading() {
 I have three persistent sessions: work, personal, and scratch. Prefix key is rebound to Ctrl+a (closer to home row than the default Ctrl+b), and I use tmux-resurrect to survive full system reboots
             </Paragraph>
 
-            <div className="pt-[20px] lg:pt-[36px] lg:pb-[35px] ">
+            <div className="pt-[20px] pb-[18px] lg:pt-[36px] lg:pb-[35px] ">
               {/* <CodePreview /> */}
               <img src={code1} alt="coading image" />
             </div>
 
-            <Paragraph className=" lg:pb-[34px]">
+            <Paragraph className=" pb-[20px] lg:pb-[34px]">
             The only complaint is that Tmux's copy mode keybindings are arcane until you configure vi-mode — but once you do, selecting and yanking text  feels like Neovim.
             </Paragraph>
           </div>

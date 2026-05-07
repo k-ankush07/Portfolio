@@ -81,7 +81,7 @@ function RecruiterOne({ index, desc }) {
               transition={{ duration: 0.8 }}
             >
               <div className="pb-4 sm:pb-6 lg:pb-[10px] "> 
-                <div className="image_background flex flex-col lg:flex-row gap-2  pb-3 lg:gap-[55px] lg:pl-[20px]  lg:pb-[40px] pt-4 lg:pt-[15px] lg:pr-[64px]">
+                <div className="image_background flex flex-col lg:flex-row gap-2  pb-3 lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px] pt-4 lg:pt-[40px] lg:pr-[53px]">
 
                   {/* Left */}
                   <motion.div
