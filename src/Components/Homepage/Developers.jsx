@@ -122,10 +122,10 @@ const letter = {
                             spaceBetween={20}
                             slidesPerView={1.1}
                             loop={true}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: false,
+                            // }}
                             
                             breakpoints={{
                                 640: {

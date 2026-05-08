@@ -25,7 +25,7 @@ function Modern_Scalable() {
         <div className="container">
           {/* <div className="  "> */}
 
-            <div className="  pt-[60px]  xl:pb-[133px] relative   flex   justify-center text-center text-white overflow-hidden  ">
+            <div className="  pt-[60px] lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-white overflow-hidden  ">
            
 
               <div className="absolute inset-0  top-[250px] lg:top-[270px] flex justify-center items-center opacity-90"
@@ -69,7 +69,7 @@ function Modern_Scalable() {
 
                 {/* Heading */}
                 <div className="flex flex-col justify-center  mt-[11px]">
-                  <h1 className={`font_section text-[34px] sm:text-[38px] lg:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
+                  <h1 className={`font_section text-[34px] sm:text-[38px] px] lg:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     Full Stack Developer Building{" "}
                     <span className="bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] bg-clip-text text-transparent">
@@ -82,8 +82,8 @@ function Modern_Scalable() {
                 {/* Subtext */}
                 <div className="px-5" >
 
-                  <div className="flex justify-center items-center pt-[15px] ">
-                    <p className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
+                  <div className="flex justify-center items-center pt-[15px] md:pt-[21px] ">
+                    <p className={`name-text  text-gray-300 text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                       <span className="font-normal text-white">👋 Hello,</span>{" "}
                       I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
@@ -93,7 +93,7 @@ function Modern_Scalable() {
                
 
                 {/* Buttons */}
-                <div className={` pt-[20px]  pb-[88px] xl:pb-0   xl:pt-[43px] flex justify-center  gap-[10px]  items-center transition-all duration-700 ease-out
+                <div className={` pt-[20px]  pb-[88px] xl:pb-0   lg:pt-[43px] flex justify-center  gap-[10px]  items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}

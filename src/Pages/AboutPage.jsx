@@ -16,10 +16,11 @@ import ExperienceTimeline from '../Components/AboutPage/ExperienceTimeline';
 
 function AboutPage() {
   return (
-    <div className='pt-[96px] lg:pt-[0px] lato-regular'>
+    <div className=' lato-regular'>
       <Profile />
     
        <Journey />
+       {/* <ExperienceTimeline /> */}
     
     
     

@@ -36,10 +36,7 @@ function App() {
       <Navbar />
       <ScrollToTop />
 
-      {/* PAGE CONTENT */}
-      <div className="relative">
-        
-        {/* OLD PAGE (still visible) */}
+     
         <Routes location={displayLocation}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -63,7 +60,7 @@ function App() {
             </div>
           </div>
         )}
-      </div>
+     
 
       <ConceptToCreation />
 

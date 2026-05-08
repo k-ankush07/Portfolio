@@ -37,7 +37,7 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex  justify-center items-end px-2 pb-[25px] transition-all duration-200
+                    <div className={`flex  justify-center items-end px-2 pb-[25px] transition-all duration-400
                          ${isHovered ? "scale-105" : "scale-100"} `}>
                          <img src={fullimage} alt='image' className='w-[288px]' />
                      
