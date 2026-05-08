@@ -31,13 +31,13 @@ import {motion} from "framer-motion"
         <div className="container">
           <div className="flex justify-center pb-3 relative rounded-xl border border-white/10">
 
-            <div className="w-full relative pb-5  lg:pb-0 overflow-hidden">
+            <div className="w-full relative pb-5  pt-[24px] pb-[25px] pl-[18px] pr-[18px] lg:pb-0 overflow-hidden">
 
               {/* Purple Line */}
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex  gap-1 sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8 pt-[60px] pb-[50px] lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex  gap-[6px] sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
@@ -145,7 +145,7 @@ import {motion} from "framer-motion"
               </div>
 
               {/* Bottom CTA */}
-              <div className=" lg:pb-[40px] text-center flex flex-col items-center w-full">
+              <div className=" pt-[29px] lg:pt-[0px] lg:pb-[40px] text-center flex flex-col items-center w-full">
                 <h2 className="text-white text-[18px] xl:text-[20px] font-bold">
                   Let's Build Your Next Web Project
                 </h2>
