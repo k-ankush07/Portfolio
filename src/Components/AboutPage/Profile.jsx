@@ -185,7 +185,6 @@ function Profile() {
                     <motion.div
                       key={i}
                       variants={skillItem}
-                      whileHover={{ scale: 1.05, y: -3 }}
                       className="px-3 py-1.5 rounded-[8px] text-[12px] leading-[18px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#2c273c]"
                     >
                       {skill}
