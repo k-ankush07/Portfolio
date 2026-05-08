@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 import TermsPage from "./Pages/TermsPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
 
+
 function App() {
   const location = useLocation();
 
@@ -65,6 +66,7 @@ function App() {
       </div>
 
       <ConceptToCreation />
+
       <Footer />
     </>
   );

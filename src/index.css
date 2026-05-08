@@ -526,30 +526,24 @@ Loved by 10,000+ Developers*/
 
 @media (min-width:320px) and (max-width: 499px){
   .font_section{
-    max-width: 346px; 
+    max-width: 370px; 
     margin:auto
   }
-  .section_height{
-    height: 22rem;
-  }
+ 
 }
 @media (min-width:500px) and (max-width: 639px){
   .font_section{
     max-width: 470px;
     margin:auto
   }
-   .section_height{
-    height: 20rem;
-  }
+  
 }
 @media (min-width:640px) and (max-width: 1023px){
   .font_section{
     max-width: 629px;
     margin:auto
   }
-  .section_height{
-    height: 22rem;
-  }
+ 
 }
 
 

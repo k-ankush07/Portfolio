@@ -28,21 +28,15 @@ function Skills() {
 
       <div className=' relative bg-[#000000] rounded-[8px] inline-block xl:w-[40%] firsts_slider group '>
         <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 opacity-85 transition-all duration-400 group-hover:opacity-100 ' />
-        <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[15px] lg:pt-[45px] pb-[37px] lg:pb-[85px]'>
-          <div className='text-center py-4'>
+        <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[24px] lg:pt-[53px] pb-[33px] lg:pb-[85px]'>
+          <div className='text-center '>
             <h1 className='text-[#FFFFFF] text-[18px] lg:text-[24px] font-bold'>Skills / Tech Stack</h1>
             <p className='text-[#BDBDBD]   text-[12px] xl:text-[16px] '>Tools and Technologies I Work With</p>
           </div>
           <div className="relative">
-            {/* <div className="  absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-4 sm:mt-[18px]">
-              <img src={magnifying} alt="magnifying image" className="h-12  sm:h-[75px]" />
-            </div> */}
+         
 
-            {/* <div className="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-              <img src={magnifying} className="h-[75px]" />
-            </div> */}
-
-            <div className="space-y-[27px] lg:space-y-[28px] pt-[20px]">
+            <div className="space-y-[10px] lg:space-y-[28px] pt-[12px] lg:pt-[33px]">
 
 
               <div className='slider '>

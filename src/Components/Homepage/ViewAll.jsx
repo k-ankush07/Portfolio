@@ -15,7 +15,7 @@ function ViewAll() {
       </div>
 
 
-    <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center py-2 lg:pt-[12px]">
+    <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center pt-2 lg:pt-[12px]">
   
   <div className="flex gap-3 justify-center items-center group cursor-pointer">
     

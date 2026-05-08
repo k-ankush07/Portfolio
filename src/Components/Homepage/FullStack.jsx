@@ -99,12 +99,12 @@ function FullStack() {
         <section className=' px-3 md:px-0 '>
 
             <div className='container '>
-                <div className='bg-[#000000] xl:flex lg:gap-5  border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-[28px] py-[29px]  lg:px-0'>
+                <div className='bg-[#000000] xl:flex   border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-[28px] py-[29px] lg:py-0  lg:px-0 lg:pt-[39px] lg:pb-[38px] lg:pl-[40px] lg:pr-[59px]'>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
-                    <div className='md:flex xl:pl-[40px] xl:pr-[59px]  xl:w-[30%] '>
-                        <div className='border py-9 md:pt-[40px] md:px-[65px] xl:px-[65px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                    <div className='md:flex  xl:pr-[67px]  xl:w-[30%] '>
+                        <div className='border pt-[40px] pb-[40px] px-[65px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -173,7 +173,7 @@ function FullStack() {
                     </div>
 
 
-                    <div className='md:flex  gap-6 xl:w-[70%]'>
+                    <div className='md:flex   xl:w-[70%]'>
                         {/* second section */}
                         <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[67px] mt-7 xl:mt-0 '>
                             <div className='w-[100%]'>
@@ -209,7 +209,7 @@ function FullStack() {
                                     </motion.div>
                                 </motion.div>
                                 <motion.div
-                                    className="flex flex-wrap gap-2 mt-5 max-w-[350px] text-[12px]"
+                                    className="flex flex-wrap gap-[10px] mt-[9px] max-w-[350px] text-[12px]"
                                     variants={container}
                                     initial="hidden"
                                     whileInView="show"
@@ -230,7 +230,7 @@ function FullStack() {
                                         </motion.div>
                                     ))}
                                 </motion.div>
-                                <div className='mt-8'>
+                                <div className='pt-[39px]'>
                                     <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
 
                                     <motion.div
@@ -268,14 +268,14 @@ function FullStack() {
                                 <div>
                                     <motion.h1
                                         variants={textItem}
-                                        className='text-[#FFFFFF] text-[20px] font-bold max-w-[310px]'
+                                        className='text-[#FFFFFF] text-[20px] leading-[30px] font-bold max-w-[310px]'
                                     >
                                         Full-Stack Developer and a little bit of everything
                                     </motion.h1>
 
-                                    <div className='space-y-2 text-[#BDBDBD] text-[14px] max-w-[400px]'>
+                                    <div className='space-y-1 text-[#BDBDBD] text-[14px] leading-[24px] max-w-[400px]'>
 
-                                        <motion.p variants={textItem} className='mt-5'>
+                                        <motion.p variants={textItem} className='pt-[24px]'>
                                             I'm Ankush Kumar, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
                                         </motion.p>
 

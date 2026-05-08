@@ -6,6 +6,8 @@ import emoji from "../../assets/Images/emoji.png"
 import emoji1 from "../../assets/Images/emoji1.png"
 import WorldGlobe from "./WorldGlobe"
 import { FaArrowRightLong } from "react-icons/fa6";
+import WorldGlobenew from "./WorldGlobenew"
+
 
 function Modern_Scalable() {
 
@@ -18,21 +20,25 @@ function Modern_Scalable() {
   }, []);
   return (
     <>
-      <section className=" pt-[60px] md:pt-10">
+   
+      <section className="pt-[60px] md:pt-[100px] ">
         <div className="container">
-          <div className="relative   flex   justify-center text-center text-white overflow-hidden ">
+          {/* <div className="  "> */}
 
-            <div className="pt-10 xl:py-20">
-              {/* Background Image */}
+            <div className="  pt-[60px]  xl:pb-[133px] relative   flex   justify-center text-center text-white overflow-hidden  ">
+           
 
-              <div className="absolute inset-0 h-[55rem] sm:h-[65rem] lg:h-[70rem]  flex justify-center items-center opacity-70">
-                <div className="" style={{ pointerEvents: "none" }}>
-                  {show && <WorldGlobe />}
-                </div>
+              <div className="absolute inset-0  top-[250px] lg:top-[270px] flex justify-center items-center opacity-90"
+               style={{ pointerEvents: "none" }}
+              >
+                {/* <div className=""> */}
+                  {/* {show && <WorldGlobe />} */}
+                  {show && <WorldGlobenew /> }
+                {/* </div> */}
               </div>
 
               {/* Content */}
-              <div className="relative z-10 section_height ">
+              <div className="relative z-10  ">
 
                 {/* Badge */}
 
@@ -62,8 +68,8 @@ function Modern_Scalable() {
                 </div>
 
                 {/* Heading */}
-                <div className="flex flex-col justify-center">
-                  <h1 className={`font_section text-[28px] sm:text-[38px] lg:text-[64px] font-bold mt-4 leading-[35px] lg:leading-[76px] transition-all duration-700 ease-out
+                <div className="flex flex-col justify-center  mt-[11px]">
+                  <h1 className={`font_section text-[30px] sm:text-[38px] lg:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     Full Stack Developer Building{" "}
                     <span className="bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] bg-clip-text text-transparent">
@@ -76,7 +82,7 @@ function Modern_Scalable() {
                 {/* Subtext */}
                 <div className="px-5" >
 
-                  <div className="flex justify-center items-center mt-4 ">
+                  <div className="flex justify-center items-center pt-[15px] ">
                     <p className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                       <span className="font-normal text-white">👋 Hello,</span>{" "}
@@ -84,21 +90,10 @@ function Modern_Scalable() {
                     </p>
                   </div>
                 </div>
-                {/* <div className="px-5">
-
-  <div className="flex justify-center items-center mt-4">
-    <p
-      className={`name-text md:mt-4 xl:mt-0 text-gray-300 text-[16px] max-w-[8000px] sm:text-[18px] font-normal flex md:gap-2 justify-center items-center transition-all duration-700 ease-out
-      ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-    >
-      👋 <span className="font-bold text-white ">Hello</span>, I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
-    </p>
-  </div> */}
-
-                {/* </div> */}
+               
 
                 {/* Buttons */}
-                <div className={` mt-7  mb-[88px] md:mt-6  lg:mb-6 xl:mb-0   xl:mt-[43px] flex justify-center  gap-3  items-center transition-all duration-700 ease-out
+                <div className={` pt-[20px]  pb-[88px] xl:pb-0   xl:pt-[43px] flex justify-center  gap-[10px]  items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}
@@ -122,7 +117,7 @@ function Modern_Scalable() {
 
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </section>
     </>
