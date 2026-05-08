@@ -158,7 +158,7 @@ import {motion} from "framer-motion"
                 <motion.img
                    src={arrow}
                    alt="arrow"
-                   className={`arrow_web absolute bottom-0 right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
+                   className={`arrow_web absolute bottom-0 lg:bottom-[20px] right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
                    initial={{ opacity: 0, }}
                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                    viewport={{ once: true, amount: 0.35 }}

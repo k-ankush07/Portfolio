@@ -180,10 +180,10 @@ img.toolWeTrust {
   .cards-width{
     width: 100%;
   }
-  .arrow_web {
+  /* .arrow_web {
         bottom: -1px;
     right: 10px;
-  }
+  } */
 }
 
 @media (max-width:767px) {
