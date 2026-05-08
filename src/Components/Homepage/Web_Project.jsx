@@ -59,7 +59,7 @@ import {motion} from "framer-motion"
                 </div>
 
                 {/* Card 2 — starts center, spreads UP */}
-                <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[130px] ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
+                <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[72px] ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
                   <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                     <img src={Line25} alt="lines" className="mb-3 w-full" />
                     <ul className="text-gray-300 space-y-3">
