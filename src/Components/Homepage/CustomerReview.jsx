@@ -12,7 +12,7 @@ function CustomerReview() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px] py-30 sm:pt-15 w-full overflow-hidden relative">
+      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px]   w-full overflow-hidden relative">
 
         {/* LEFT CARD */}
         <img
@@ -33,9 +33,9 @@ function CustomerReview() {
         />
 
         {/* BOTTOM TEXT */}
-        <div className="absolute bottom-0 w-full">
+        <div className="absolute bottom-0  w-full">
           <div
-            className={` arrow_class_main  flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-500 ease-out
+            className={` arrow_class_main  flex items-center justify-between pt-5 px-4 pb-[20px] lg:pl-[28px]  lg:pr-[20px] transition-all duration-500 ease-out
              
             `}
           >

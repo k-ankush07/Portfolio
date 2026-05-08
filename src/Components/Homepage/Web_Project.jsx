@@ -31,13 +31,13 @@ import {motion} from "framer-motion"
         <div className="container">
           <div className="flex justify-center pb-3 relative rounded-xl border border-white/10">
 
-            <div className="w-full relative pb-5  pt-[24px] pb-[25px] pl-[18px] pr-[18px] lg:pb-0 overflow-hidden">
+            <div className="w-full relative   lg:pb-0 overflow-hidden">
 
               {/* Purple Line */}
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex  gap-[6px] sm:flex-row justify-center md:justify-evenly xl:justify-between items-center lg:gap-8   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex   gap-[6px] sm:flex-row justify-center md:justify-evenly xl:justify-center items-center pb-5  pt-[24px] pb-[25px] pl-[18px] pr-[18px] lg:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl lg:w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>

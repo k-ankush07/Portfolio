@@ -14,9 +14,9 @@ function Blogs() {
           onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}    
        >
-                <div className='border-[2px] border-[#292929] rounded-[8px] pt-3  w-[100%] '>
+                <div className='border-[2px] border-[#292929] rounded-[8px]   w-[100%] '>
                   
-                      <div className={`flex items-center justify-between py-5 px-4 lg:px-6 transition-all duration-400
+                      <div className={`flex items-center justify-between pt-5 px-4 lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
                         `}>
                         <h1 className='text-[#FFFFFF]  text-[16px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
@@ -37,9 +37,9 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex  justify-center items-end px-2 pb-8 transition-all duration-200
-                         ${isHovered ? "scale-110" : "scale-100"} `}>
-                         <img src={fullimage} alt='image' className='' />
+                    <div className={`flex  justify-center items-end px-2 pb-[25px] transition-all duration-200
+                         ${isHovered ? "scale-105" : "scale-100"} `}>
+                         <img src={fullimage} alt='image' className='w-[288px]' />
                      
                     </div>
                   
