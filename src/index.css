@@ -170,12 +170,15 @@ img.toolWeTrust {
     background-color: #000000;
   }
 }
-@media (min-width:300px) and (max-width:370px){
+@media (min-width:300px) and (max-width:424px){
   .cards_section{
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding-top: 20px;
+  }
+  .cards-width{
+    width: 100%;
   }
   .arrow_web {
         bottom: -1px;
