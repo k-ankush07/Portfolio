@@ -18,9 +18,9 @@ function AboutPage() {
   return (
     <div className='pt-[96px] lg:pt-[0px] lato-regular'>
       <Profile />
-      {/* <FullStack /> */}
+    
        <Journey />
-      {/* <ExperienceTimeline  /> */}
+    
     
     
    
