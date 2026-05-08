@@ -47,8 +47,8 @@ function Nextproject() {
   };
   return (
     <>
-      <div className=' next-Project bg-[#000000] rounded-[8px] xl:w-[60%] z-10 group'>
-        <div className=' group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center  md:px-15 py-4 rounded-[8px] border border-[#292929]  mx-auto px-[39px] cursor-pointer'
+      <div className=' next-Project bg-[#000000]  rounded-[8px] xl:w-[60%] z-10 group'>
+        <div className=' group bg-[#000000]  relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[54px] lg:pr-[108px] lg:pl-[107px]  rounded-[8px] border border-[#292929]   cursor-pointer'
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >
@@ -58,7 +58,7 @@ function Nextproject() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-[17px] lg:text-[24px] text-center font-bold"
+              className=" w-[305px] sm:w-full text-[17px] lg:text-[24px] text-center font-bold"
             >
               Let's work together on your next project
             </motion.h2>
@@ -75,7 +75,7 @@ function Nextproject() {
 
        
           <motion.div
-            className="relative mt-4 lg:mt-[25px]"
+            className="relative pt-4 lg:pt-[0px]"
             variants={container}
             initial="hidden"
             animate={show ? "show" : "hidden"}
@@ -123,7 +123,7 @@ function Nextproject() {
             <motion.img
               src={arrow}
               alt="arrow"
-              className={`absolute bottom-4 right-4 lg:h-10 lg:w-10 cursor-pointer `}
+              className={`absolute bottom-[20px] right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
               initial={{ opacity: 0, }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true, amount: 0.35 }}
