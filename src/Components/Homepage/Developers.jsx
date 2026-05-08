@@ -92,7 +92,7 @@ const letter = {
             <section className=' px-3 md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
                 <div className='container'>
                     <div className=''>
-                         <h1 className=' text-[22px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
+                         <h1 className=' developer_text text-[28px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
                           Loved by 10,000+ {' '}
                         
                           <motion.span

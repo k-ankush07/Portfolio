@@ -25,8 +25,8 @@ function Collaboration() {
   };
   return (
     <div className='px-[9px]'>
-      <div className="text-center text-[#FFFFFF] pt-[14px]  pb-[10px]  border-t-1 border-[#FFFFFF]/10 sm:border-none lg:pt-[30px] lg:pb-[18px]">
-           <div className="text-[30px] md:text-[44px] font-bold">
+      <div className="text-center text-[#FFFFFF] pt-[14px]    border-t-1 border-[#FFFFFF]/10 sm:border-none lg:pt-[30px] lg:pb-[18px]">
+           <div className="text-[30px] leading-[76px] md:text-[44px] font-bold">
            Code &{" "}
    
              <motion.span

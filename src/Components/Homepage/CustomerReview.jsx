@@ -12,7 +12,7 @@ function CustomerReview() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px] h-[238px]   w-full overflow-hidden relative">
+      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px] h-[238px]  sm:h-[100%]  w-full overflow-hidden relative">
 
         {/* LEFT CARD */}
         <img

@@ -85,7 +85,7 @@ function Profile() {
             variants={item}
           />
 
-          <div className="px-4  sm:px-[60px]">
+          <div className="px-[21px]  sm:px-[60px]">
 
             {/* HEADER */}
             <motion.div
@@ -152,7 +152,7 @@ function Profile() {
                   {/* BUTTON */}
                   <motion.div variants={item}>
                     <Link to="/">
-                      <button className="btn-slide text-[14px] lg:text-[16px] cursor-pointer rounded-[500px] text-black bg-white py-2 px-6 sm:px-17 lg:py-3 xl:px-16">
+                      <button className="btn-slide text-[14px] lg:text-[16px] cursor-pointer rounded-[500px] text-black bg-white py-2 px-7 sm:px-17 lg:py-3 xl:px-16">
                         Hire Me
                       </button>
                     </Link>

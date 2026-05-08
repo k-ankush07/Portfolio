@@ -10,49 +10,44 @@ function Footer() {
     return (
         <section className="pb-[21px] px-2 sm:px-0 pt-[20px]  sm:pt-[40px] ">
             <div className="container">
-                <footer className=" lato-regular text-gray-400 px-3 md:px-15 py-10 rounded-[16px] border border-[#292929]  mx-auto ">
+                <footer className=" lato-regular text-gray-400 pt-[30px] pl-[30px] pr-[31px] pb-[22px] lg:pt-[53px]  lg:pl-[64px]  lg:pr-[98px] lg:pb-[30px] rounded-[16px] border border-[#292929]  mx-auto ">
 
                     {/* TOP SECTION */}
-                    <div className="flex flex-col sm:flex-row sm:justify-between  ">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-[49px] lg:pb-[61px] ">
 
                         {/* LEFT */}
-                        <div className=" sm:w-[30%] xl:w-[36%] ">
-                            {/* <h1 className="text-white text-2xl font-bold mb-4">AK</h1> */}
-                            <img src={logo} alt="icon" className="mb-4 cursor-pointer" />
+                        <div className="w-full lg:w-[36%] flex flex-col">
+                            <img
+                                src={logo}
+                                alt="icon"
+                                className="w-fit  cursor-pointer"
+                            />
 
-                            <p className="text-[16px] text-[#BDBDBD] opacity-80  w-[60%] sm:w-[80%]   xl:w-[70%]  mb-7">
+                            <p className="text-[16px] text-[#BDBDBD] opacity-80 max-w-[320px] pt-[14px] pb-[28px] lg:pt-[24px] lg:pb-[21px] leading-[26px]">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Suspendisse varius enim in eros elementum tristique.
                             </p>
-                            {/* <div className="relative inline-block sm:mt-3 rounded-md overflow-hidden p-[2px]">
-                                <div className="absolute inset-0 animate-spin-slow 
-                              bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78]" />
-                                <div className="relative flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white">
-                                    <span className="text-[#c58962]">Available for work</span>
-                                </div>
-                            </div> */}
-                             <GradientBorderButton data="Available for work" />
 
-
+                            <GradientBorderButton data="Available for work" />
                         </div>
 
-                        <div className="flex w-full justify-between  mt-7  md:w-[64%] xl:pr-20">
+                        <div className="flex w-full justify-between   lg:w-[64%] xl:pr-20">
                             {/* COLUMN 1 */}
                             <div>
-                                <h3 className=" text-[#FFFFFF] font-bold text-[16px] mb-4 ">General</h3>
-                                <ul className="space-y-2 text-[14px] opacity-80 flex flex-col ">
+                                <h3 className=" text-[#FFFFFF] font-bold text-[16px] mb-[16px] ">General</h3>
+                                <ul className="space-y-3 text-[14px] opacity-80 flex flex-col ">
                                     <Link to="/" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Home</Link>
                                     <Link to="/about" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > About</Link>
                                     <Link to="/project" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Projects</Link>
                                     <Link to="/blog" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Blog</Link>
-                         
+
                                 </ul>
                             </div>
 
                             {/* COLUMN 2 */}
                             <div>
                                 <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4">Specifics</h3>
-                                <ul className="space-y-2 text-[14px] opacity-80">
+                                <ul className="space-y-3 text-[14px] opacity-80">
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Guest Book</li>
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Bucket List</li>
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Uses</li>
@@ -63,7 +58,7 @@ function Footer() {
                             {/* COLUMN 3 */}
                             <div>
                                 <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4 sm:mb-1">More</h3>
-                                <ul className="space-y-2 text-[14px] opacity-80 md:pt-2">
+                                <ul className="space-y-3 text-[14px] opacity-80 md:pt-2">
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
@@ -75,27 +70,27 @@ function Footer() {
                     </div>
 
                     {/* DIVIDER */}
-                    {/* <div className="flex justify-center"> */}
-                    <div className=" border-t-2   border-[#292929] pt-[33px" ></div>
-                    {/* </div> */}
+{/* 
+                    <div className="  " ></div> */}
+
 
                     {/* BOTTOM SECTION */}
-                    <div className="flex flex-col justify-center  pt-[23px] pb-[21px] md:flex-row sm:justify-between  text-[#BDBDBD] items-center gap-4 text-[12px] sm:text-[14px] ">
+                    <div className="flex flex-col justify-center border-t-2   border-[#292929] pt-[18px] lg:pt-[21px]  md:flex-row sm:justify-between  text-[#BDBDBD] items-center lg:gap-4 text-[12px] sm:text-[14px] ">
 
                         <div className="flex flex-col md:flex-row items-center justify-center md:gap-[45px] opacity-80">
                             <p className="text-center">© 2026 Ankush Kumar. All rights reserved</p>
 
-                            <div className="flex justify-center mt-2 md:mt-0 gap-[23px]">
-                                <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link> 
-                                <Link to="/terms" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link> 
-                                
+                            <div className="flex justify-center pt-[11px] md:pt-0 gap-[23px]">
+                                <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link>
+                                <Link to="/terms" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link>
+
                             </div>
                         </div>
 
-                        <div className="flex gap-4 mt-2 sm:mt-0 text-white">
-                            <img src={Vector1} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
-                            <img src={Vector2} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
-                            <img src={Vector} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110" />
+                        <div className="flex gap-[15px] lg:gap-[20px] pt-[23px]  sm:pt-0 text-white">
+                            <img src={Vector1} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110 h-[14px] w-[14px] md:w-[18px] md:h-[16px]" />
+                            <img src={Vector2} alt="icon" className= " h-[14px] w-[14px] md:w-[18px] md:h-[16px] cursor-pointer transition-all duration-400 hover:scale-110" />
+                            <img src={Vector} alt="icon" className=" h-[14px] w-[14px] md:w-[18px] md:h-[16px] cursor-pointer transition-all duration-400 hover:scale-110" />
                         </div>
                     </div>
                 </footer>

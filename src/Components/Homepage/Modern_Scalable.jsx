@@ -69,7 +69,7 @@ function Modern_Scalable() {
 
                 {/* Heading */}
                 <div className="flex flex-col justify-center  mt-[11px]">
-                  <h1 className={`font_section text-[30px] sm:text-[38px] lg:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
+                  <h1 className={`font_section text-[34px] sm:text-[38px] lg:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     Full Stack Developer Building{" "}
                     <span className="bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] bg-clip-text text-transparent">

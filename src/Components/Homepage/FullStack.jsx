@@ -175,7 +175,7 @@ function FullStack() {
 
                     <div className='md:flex   xl:w-[70%]'>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[67px] mt-7 xl:mt-0 '>
+                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[67px] pt-[32px] xl:pt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}
@@ -198,7 +198,7 @@ function FullStack() {
                                     </motion.p>
 
 
-                                    <motion.div className='mt-5'
+                                    <motion.div className='pt-[15px]'
                                         variants={textContainer}
                                         initial="hidden"
                                         whileInView="show"
@@ -230,7 +230,7 @@ function FullStack() {
                                         </motion.div>
                                     ))}
                                 </motion.div>
-                                <div className='pt-[39px]'>
+                                <div className='pt-[20px] lg:pt-[39px]'>
                                     <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
 
                                     <motion.div
@@ -275,7 +275,7 @@ function FullStack() {
 
                                     <div className='space-y-1 text-[#BDBDBD] text-[14px] leading-[24px] max-w-[400px]'>
 
-                                        <motion.p variants={textItem} className='pt-[24px]'>
+                                        <motion.p variants={textItem} className=' pt-[16px] lg:pt-[24px]'>
                                             I'm Ankush Kumar, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
                                         </motion.p>
 

@@ -16,7 +16,7 @@ function Blogs() {
        >
                 <div className='border-[2px] border-[#292929] rounded-[8px]   w-[100%] '>
                   
-                      <div className={`flex items-center justify-between pt-5 px-4 lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
+                      <div className={`flex items-center justify-between pt-5 pb-[11px] px-4 lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
                         `}>
                         <h1 className='text-[#FFFFFF]  text-[16px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >

@@ -25,7 +25,7 @@ function GithubStats({ githubData = {} }) {
   ];
 
   return (
-    <div className="mt-[12px] ">
+    <div className="pt-[6px] ">
       <div className="grid grid-cols-3 gap-[7px] lg:gap-[10px] lg:pb-[40px] relative">
         {stats.map((item, index) => (
           <div
