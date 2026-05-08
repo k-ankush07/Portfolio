@@ -104,7 +104,7 @@ function FullStack() {
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
                     <div className='md:flex  xl:pr-[67px]  xl:w-[30%] '>
-                        <div className='border pt-[40px] pb-[40px] px-[65px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                        <div className='border pt-[40px] pb-[40px] px-[55px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
