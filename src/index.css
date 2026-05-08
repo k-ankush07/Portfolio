@@ -182,7 +182,7 @@ img.toolWeTrust {
   }
   .arrow_web {
         bottom: -1px;
-    right: 4px;
+    right: 10px;
   }
 }
 
@@ -527,6 +527,30 @@ img.toolWeTrust {
 
 Loved by 10,000+ Developers*/
 
+@media (min-width:320px) and (max-width: 339px){
+  .font_section{
+   font-size: 26px;
+  }
+  .Recent_text{
+    font-size: 28px;
+  }
+  .tool_text{
+     font-size: 28px;
+  }
+ 
+}
+@media (min-width:340px) and (max-width: 360px){
+  .font_section{
+   font-size: 28px;
+  }
+  .Recent_text{
+    font-size: 28px;
+  }
+   .tool_text{
+     font-size: 28px;
+  }
+ 
+}
 @media (min-width:320px) and (max-width: 499px){
   .font_section{
     max-width: 370px; 

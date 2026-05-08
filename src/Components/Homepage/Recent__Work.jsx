@@ -27,8 +27,8 @@ function Recent__Work() {
 
   return (
     <>
-      <div className="text-center text-[#FFFFFF] pt-4 md:pt-10 lg:pt-[40px] lg:pb-[33px]">
-        <div className="text-[30px] md:text-[44px] font-bold">
+      <div className="text-center text-[#FFFFFF] pt-[40px] lg:pb-[33px]">
+        <div className="Recent_text text-[30px] md:text-[44px] font-bold">
           Recent{" "}
 
           <motion.span

@@ -12,7 +12,7 @@ function CustomerReview() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px]   w-full overflow-hidden relative">
+      <div className=" main_customerClass border-[2px] border-[#292929] rounded-[8px] h-[238px]   w-full overflow-hidden relative">
 
         {/* LEFT CARD */}
         <img
@@ -27,7 +27,7 @@ function CustomerReview() {
         <img
           src={arrow2}
           alt=""
-          className={` card2-about cardsimp1 absolute right-10  top-10 sm:top-12 xl:top-7 w-[55%] transition-all duration-500 ease-out
+          className={` card2-about cardsimp1 absolute right-10  top-5 sm:top-5 md:top-12 xl:top-7 w-[55%] transition-all duration-500 ease-out
             ${isHovered ? " translate-y-2 -rotate-5 " : "translate-x-0 translate-y-0 rotate-0"}
           `}
         />

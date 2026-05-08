@@ -76,16 +76,16 @@ function Footer() {
 
                     {/* DIVIDER */}
                     {/* <div className="flex justify-center"> */}
-                    <div className="" ></div>
+                    <div className=" border-t-2   border-[#292929] pt-[33px" ></div>
                     {/* </div> */}
 
                     {/* BOTTOM SECTION */}
-                    <div className="flex flex-col justify-center border-t-2   border-[#292929] pt-[33px] pb-[21px] md:flex-row sm:justify-between  text-[#BDBDBD] items-center gap-4 text-[12px] sm:text-[14px] ">
+                    <div className="flex flex-col justify-center  pt-[23px] pb-[21px] md:flex-row sm:justify-between  text-[#BDBDBD] items-center gap-4 text-[12px] sm:text-[14px] ">
 
-                        <div className="flex flex-col md:flex-row items-center justify-center md:gap-15 opacity-80">
+                        <div className="flex flex-col md:flex-row items-center justify-center md:gap-[45px] opacity-80">
                             <p className="text-center">© 2026 Ankush Kumar. All rights reserved</p>
 
-                            <div className="flex justify-center mt-2 md:mt-0 gap-6">
+                            <div className="flex justify-center mt-2 md:mt-0 gap-[23px]">
                                 <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link> 
                                 <Link to="/terms" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link> 
                                 

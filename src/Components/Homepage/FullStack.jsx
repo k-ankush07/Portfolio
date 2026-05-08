@@ -104,7 +104,7 @@ function FullStack() {
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
                     <div className='md:flex  xl:pr-[67px]  xl:w-[30%] '>
-                        <div className='border pt-[40px] pb-[40px] px-[55px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                        <div className='border pt-[40px] pb-[40px] px-[49px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -116,14 +116,14 @@ function FullStack() {
                                 className='text-center mt-4'>
                                 <motion.h1
                                     variants={textItem}
-                                    className='text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    className='text-[21px] lg:text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
                                 <motion.p
                                     variants={textItem}
-                                    className='text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                                    className=' text-[12px] lg:text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
                                 <div className="flex justify-center">
-                                    <div className="relative inline-block mt-3 rounded-md p-[1.5px] overflow-hidden">
+                                    <div className="relative inline-block mt-[11px] rounded-md p-[1.5px] overflow-hidden">
 
                                         {/* SLOW ROTATING BORDER */}
                                         <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
@@ -144,7 +144,7 @@ function FullStack() {
                                 </div>
                             </div>
                             <motion.div
-                                className="flex justify-center gap-2 mt-5"
+                                className="flex justify-center gap-[8px] mt-[17px]"
                                 variants={container}
                                 initial="hidden"
                                 whileInView="show"
@@ -164,7 +164,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-15 mt-5 sm:px-15 xl:px-16 '>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-15 mt-[17px] sm:px-15 xl:px-16 '>
                                     Hire Me
                                 </button></Link>
                             </div>

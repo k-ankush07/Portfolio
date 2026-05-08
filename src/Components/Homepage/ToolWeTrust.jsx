@@ -82,7 +82,7 @@ function ToolWeTrust() {
 
                 </div>
                 <div className=' w-[100%]'>
-                    <div className={`tool-text flex items-center justify-between pt-[34px]  lg:pt-[53px] px-[20px] transition-all duration-400
+                    <div className={`tool-text flex items-center justify-between pt-[34px]  sm:pt-[53px] px-[20px] transition-all duration-400
                        
                         `}>
 

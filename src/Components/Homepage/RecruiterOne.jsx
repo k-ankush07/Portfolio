@@ -80,8 +80,8 @@ function RecruiterOne({ index, desc }) {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="pb-4 sm:pb-6 lg:pb-[10px] "> 
-                <div className="image_background flex flex-col lg:flex-row gap-2  pb-3 lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px] pt-4 lg:pt-[40px] lg:pr-[53px]">
+              <div className=" sm:pb-6 lg:pb-[10px] "> 
+                <div className="image_background flex flex-col lg:flex-row  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px] pt-[20px] lg:pt-[40px] lg:pr-[53px]">
 
                   {/* Left */}
                   <motion.div
@@ -92,7 +92,7 @@ function RecruiterOne({ index, desc }) {
                   </motion.div>
 
                   {/* Right */}
-                  <div className="flex flex-col justify-center mt-[10px] lg:mt-0 w-full lg:w-auto">
+                  <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-auto">
                     <motion.div
                       variants={itemVariants}
                       className="flex items-center gap-2 sm:gap-3 text-white mb-[10px] lg:mb-6 lg:mb-1 flex-wrap"
@@ -190,7 +190,7 @@ function RecruiterOne({ index, desc }) {
                       ))}
                     </motion.div>
                     <motion.div
-                      className="flex flex-wrap gap-2 sm:w-[400px] lg:w-[384px] mt-3"
+                      className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px]"
                       variants={container}
                       initial="hidden"
                       whileInView="show"

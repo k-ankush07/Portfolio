@@ -29,7 +29,7 @@ import {motion} from "framer-motion"
     return (
       <section className="px-2 md:px-0 xl:px-0 overflow-hidden" ref={sectionRef}>
         <div className="container">
-          <div className="flex justify-center pb-3 relative rounded-xl border border-white/10">
+          <div className="flex justify-center pb-[25px] lg:pb-0 relative rounded-xl border border-white/10">
 
             <div className="w-full relative   lg:pb-0 overflow-hidden">
 
@@ -37,7 +37,7 @@ import {motion} from "framer-motion"
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row justify-center xl:justify-center items-center pb-5  pt-[24px] pb-[25px] pl-[18px] pr-[18px] lg:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row justify-center xl:justify-center items-center pb-5  pt-[24px] pb-[20px] pl-[18px] pr-[18px] lg:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
@@ -145,7 +145,7 @@ import {motion} from "framer-motion"
               </div>
 
               {/* Bottom CTA */}
-              <div className=" pt-[29px] lg:pt-[0px] lg:pb-[40px] text-center flex flex-col items-center w-full">
+              <div className=" pt-[9px] lg:pt-[0px] lg:pb-[40px] text-center flex flex-col items-center w-full">
                 <h2 className="text-white text-[18px] xl:text-[20px] font-bold">
                   Let's Build Your Next Web Project
                 </h2>
@@ -158,7 +158,7 @@ import {motion} from "framer-motion"
                 <motion.img
                    src={arrow}
                    alt="arrow"
-                   className={`arrow_web absolute bottom-4 right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
+                   className={`arrow_web absolute bottom-0 right-[20px] lg:h-10 lg:w-10 cursor-pointer `}
                    initial={{ opacity: 0, }}
                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                    viewport={{ once: true, amount: 0.35 }}
