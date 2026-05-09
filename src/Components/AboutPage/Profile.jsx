@@ -106,7 +106,7 @@ function Profile() {
 
                   <motion.h2
                     variants={item}
-                    className=" text-[21px] lg:text-[34px] leading-[42px] font-bold"
+                    className=" text-[21px] lg:text-[34px] leading-[42px] lg:pt-[23px] font-bold"
                   >
                     Jenny Wilson
                   </motion.h2>

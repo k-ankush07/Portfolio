@@ -58,7 +58,7 @@ function Nextproject() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="  sm:w-full text-[18px] lg:text-[24px] text-center font-bold"
+              className=" text-next sm:w-full text-[18px] lg:text-[24px] text-center font-bold"
             >
               Let's work together on your next project
             </motion.h2>
