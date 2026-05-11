@@ -35,7 +35,7 @@ function Policy({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
              viewport={{ once: true }} 
-            className="lg:w-[46%] xl:w-[36%] text-white space-y-[13px] pt-[20px]  lg:pt-[60px] lg:pb-[145px]  lg:pl-[63px] lg:pr-[57px] "
+            className="lg:w-[46%] xl:w-[36%] text-white space-y-[13px] pt-[20px]  lg:pt-[60px] lg:pb-[145px]  lg:pl-[63px]  "
           >
             <span className="text-[12px] px-[5px] py-1 text-[#FFAF7B] rounded-[6px] leading-[18px] bg-[#8F74BF54]/20 border border-[#8F74BF54]/70 inline-block">
               {date}

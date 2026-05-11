@@ -46,7 +46,7 @@ function Footer() {
 
                             {/* COLUMN 2 */}
                             <div>
-                                <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4">Specifics</h3>
+                                <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-[16px]">Specifics</h3>
                                 <ul className="text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80">
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Guest Book</li>
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Bucket List</li>
@@ -57,13 +57,14 @@ function Footer() {
 
                             {/* COLUMN 3 */}
                             <div>
-                                <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4 sm:mb-1">More</h3>
-                                <ul className="text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80 md:pt-2">
+                                <h3 className="text-[#FFFFFF] font-bold text-[16px]  mb-[16px]">More</h3>
+                                <ul className="text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80   flex flex-col">
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
-                                    <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</li>
-                                    <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</li>
+                                    <Link to="/privacy" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</Link>
+                                    <Link to="/terms" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</Link>
+                                   
                                 </ul>
                             </div>
                         </div>

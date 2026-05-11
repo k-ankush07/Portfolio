@@ -95,7 +95,7 @@ function RecruiterOne({ index, desc }) {
                   <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-auto">
                     <motion.div
                       variants={itemVariants}
-                      className="flex items-center gap-2 sm:gap-3 text-white  lg:mb-6 lg:mb-1 flex-wrap"
+                      className="flex items-center gap-2 sm:gap-3 text-white   lg:mb-[5px] flex-wrap"
                       whileHover={{ y: -3 }}
                     >
                       <img
@@ -190,7 +190,7 @@ function RecruiterOne({ index, desc }) {
                       ))}
                     </motion.div>
                     <motion.div
-                      className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px]"
+                      className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px] lg:pt-[23px]"
                       variants={container}
                       initial="hidden"
                       whileInView="show"

@@ -99,7 +99,7 @@ function FullStack() {
         <section className=' px-3 md:px-0 '>
 
             <div className='container '>
-                <div className='bg-[#000000] xl:flex   border  items-center  border-[#292929] rounded-[8px] relative md:py-[39px] px-[28px] py-[29px] lg:py-0  lg:px-0 lg:pt-[39px] lg:pb-[38px] lg:pl-[40px] lg:pr-[59px]'>
+                <div className='bg-[#000000] xl:flex   border  items-center  border-[#292929] rounded-[8px] relative pt-[29px] pb-[25px] pr-[28px] pl-[30px]  lg:py-0  lg:px-0 lg:pt-[39px] lg:pb-[38px] lg:pl-[40px] lg:pr-[59px]'>
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
@@ -173,9 +173,9 @@ function FullStack() {
                     </div>
 
 
-                    <div className='md:flex   xl:w-[70%]'>
+                    <div className='md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%]'>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between lg:border-r-[1px]  border-gray-600 pr-[67px] pt-[32px] xl:pt-0 '>
+                        <div className=' sm:flex  justify-between sm:border-r-[1px]  border-gray-600 pr-[67px] pt-[32px] xl:pt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}
@@ -258,7 +258,7 @@ function FullStack() {
 
                         {/* 3rd section */}
                         <motion.div
-                            className='flex mt-5 lg:mt-0 lg:justify-center items-center lg:pl-[67px]'
+                            className='flex mt-5 lg:mt-0 lg:justify-center items-center sm:mt-0 sm:pl-[67px]'
                             variants={textContainer}
                             initial="hidden"
                             whileInView="show"

@@ -335,23 +335,41 @@ opacity: 0;
 
 
 /* media  */
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:300px) and (max-width:424px){
+  .cards_section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  .cards-width{
+    width: 100%;
+  }
+
+}
+@media (min-width:320px) and (max-width:600px){
  .name-text{
   max-width:279px !important;
 }
 }
-@media (min-width:481px) {
+@media (min-width:601px) and (max-width:1023px){
+ .name-text{
+  max-width:500px !important;
+}
+}
+
+@media (min-width:1024px) {
  .name-text{
   width: 100%!important;
 }
 }
+
+
 @media (min-width: 768px) {
   .container {
     padding: 0 10px;
   }
 }
-
-
 @media (min-width:768px) and (max-width:1023px){
  .main-class{
   height: 25px!important;
@@ -376,18 +394,7 @@ opacity: 0;
     background-color: #000000;
   }
 }
-@media (min-width:300px) and (max-width:424px){
-  .cards_section{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 20px;
-  }
-  .cards-width{
-    width: 100%;
-  }
 
-}
 
 @media (max-width:767px) {
   .dolor_container {
@@ -699,16 +706,24 @@ opacity: 0;
   }
   
 }
-@media (min-width:571px) and (max-width: 800px){
+@media (min-width:571px) and (max-width: 639px){
   .font_section{
-    max-width: 629px;
+    max-width: 562px;
+    margin:auto;
+    
+  }
+ 
+}
+@media (min-width:640px) and (max-width: 799px){
+  .font_section{
+    max-width: 628px;
     margin:auto;
     
   }
  
 }
 
-@media (min-width:801px) and (max-width: 1023px){
+@media (min-width:800px) and (max-width: 1023px){
   .font_section{
     max-width: 750px;
     margin:auto;

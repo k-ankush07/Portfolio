@@ -97,7 +97,7 @@ function Modern_Scalable() {
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}
-                  <button className=" btn-slide group  flex justify-center items-center gap-4 lg:gap-6  cursor-pointer py-2   pl-3 pr-2  sm:pl-5 sm:py-3 xl:px-3 rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px] font-medium">
+                  <button className=" btn-slide group  flex justify-center items-center gap-4 lg:gap-6  cursor-pointer py-2   pl-3 pr-2  sm:pl-5 sm:py-3 xl:px-3 leading-[24px] rounded-full bg-[#e5e5e5] text-black text-[14.06px] md:text-[16px]">
                     Let’s Connect
 
                     <FaArrowRightLong className="text-[14.6px] md:text-[16px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-800 group-hover:opacity-100 group-hover:-translate-x-5" />
