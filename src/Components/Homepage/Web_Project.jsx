@@ -42,8 +42,9 @@ import {motion} from "framer-motion"
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
                   <div className="bg-[#0e0c13] rounded-xl w-full lg:w-[200px] p-2 sm:p-5 border border-white/10">
-                    <img src={Line24} alt="lines" className="mb-3 w-full" />
-                    <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3 sm:space-y-[10px]">
+                    {/* <img src={Line24} alt="lines" className="mb-3 w-full" /> */}
+                    <div class="h-4 border-t border-dashed border-[#8F74BF] pb-[10px] w-full">-----------</div>
+                    <ul className="text-[8px] md:text-[12px] text-gray-300 font-bold space-y-3 sm:space-y-[10px]">
                       <li>• Clean & Modern Code</li>
                       <li>• Full Stack Expertise</li>
                       <li>• Responsive Websites</li>
@@ -52,7 +53,7 @@ import {motion} from "framer-motion"
                   </div>
               <span className=" animate-spread-left-bottom absolute left-2 -bottom-4 sm:left-[-10px] xl:-bottom-6  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#4e0fbf]">●</span>
-                    <h1 className="text-[8px] md:text-[14px]">
+                    <h1 className="text-[8px] md:text-[14px] font-bold">
                       Why Choose Me
                     </h1>
                   </span>
@@ -61,10 +62,11 @@ import {motion} from "framer-motion"
                 {/* Card 2 — starts center, spreads UP */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end  ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
                   <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
-                    <img src={Line25} alt="lines" className="mb-3 w-full" />
+                    {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
+                       <div class="h-4 border-t border-dashed border-[#D76D77] pb-[10px] w-full">-----------</div>
                     <ul className="text-gray-300 space-y-3">
                       <li>
-                        <div className="flex items-center text-[8px] md:text-[12px]">
+                        <div className="flex items-center text-[8px] md:text-[12px] font-bold">
                           <div className="w-[40px] md:w-[60px]">3L</div>
                           <div className="flex gap-2 items-center">
                             <img src={DownArrow} alt="arrow" />
@@ -107,7 +109,7 @@ import {motion} from "framer-motion"
                   </div>
                     <span className=" animate-spread-center-bottom bottom_text absolute left-2 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#d70216]">●</span>
-                    <p className="text-[8px] md:text-[14px]">
+                    <p className="text-[8px] md:text-[14px] font-bold">
                       Business Analytics
                     </p>
                   </span>
@@ -116,7 +118,8 @@ import {motion} from "framer-motion"
                 {/* Card 3 — starts center, spreads RIGHT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] flex justify-center xl:justify-end p-[1px] ${visible ? 'animate-spread-right' : 'opacity-0'}`}>
                   <div className="bg-[#021007] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
-                    <img src={Line26} alt="lines" className="mb-3 w-full" />
+                    {/* <img src={Line26} alt="lines" className="mb-3 w-full" /> */}
+                     <div class="h-4 border-t border-dashed border-[#16A34A] pb-[10px] w-full">-----------</div>
                     <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3">
                       <li className="flex justify-between">
                         <span>Projects Completed</span>
