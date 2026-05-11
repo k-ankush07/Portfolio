@@ -42,8 +42,8 @@ export default function MobileNavbar() {
   ];
 
   const legal = [
-    { name: "Privacy Policy", path: "/privacy" },
-    { name: "Terms of Use", path: "/terms" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Terms of Use", path: "/terms&condition" },
   ];
 
   const getGreeting = () => {

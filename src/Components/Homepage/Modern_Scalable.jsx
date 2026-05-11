@@ -68,7 +68,7 @@ function Modern_Scalable() {
                 </div>
 
                 {/* Heading */}
-                <div className="flex flex-col justify-center  mt-[11px]">
+                <div className="flex flex-col justify-center pt-[11px] lg:pt-[19px]">
                   <h1 className={`font_section text-[34px] sm:text-[38px] px] lg:text-[60px] xl:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     Full Stack Developer Building{" "}

@@ -25,7 +25,7 @@ function AboutPage() {
     
     
    
-   <div>
+   {/* <div>
      <Engineer index={0}  date="Jan 2025 – Present" logo={Roboto} heading="Roboto Studio" heading1="Frontend" heading2=" Engineer"
     para1="Architected Headless Systems (Sanity/Contentful):" span1="Designed reusable page-builder blocks and Data Modeling structures. Optimized GROQ queries, improving content delivery speed by 25% across 7+ production sites"
     para2="AI-Native Development & AEO:" span2="Accelerated delivery using an agentic stack (Claude Code, MCP). Implemented Next.js (SSG/ISR) with a focus on Answer Engine Optimization (AEO) and SEO, boosting user engagement by 25%."
@@ -39,7 +39,7 @@ function AboutPage() {
     span3="Refined component logic and TypeScript definitions, ensuring seamless  integration, type-safety, and a superior developer experience (DX) for  thousands of downstream users."
    span4="Collaborated with global maintainers to uphold rigorous engineering  standards, focusing on modern web aesthetics, optimized rendering  patterns, and performance-first architecture"
     />
-   </div>
+   </div> */}
     <Collaboration />
     <div className='github-calendar'>
       <Github  />

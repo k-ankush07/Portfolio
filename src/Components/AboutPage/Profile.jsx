@@ -81,7 +81,7 @@ function Profile() {
           <motion.img
             src={profileblur}
             alt="bg"
-            className="w-full"
+            className="w-full "
             variants={item}
           />
 
@@ -89,7 +89,7 @@ function Profile() {
 
             {/* HEADER */}
             <motion.div
-              className="relative -mt-10 sm:-mt-14 lg:-mt-20 pb-[30px] lg:pb-[40px]"
+              className="relative -mt-10 sm:-mt-14 lg:-mt-20 pb-[28px] lg:pb-[40px]"
               variants={container}
             >
               <div className="flex flex-row lg:items-end lg:justify-between ">
@@ -119,14 +119,14 @@ function Profile() {
                   </motion.p>
 
                   {/* LOCATION MOBILE */}
-                  <motion.div variants={item} className="mt-3 lg:hidden flex">
+                  <motion.div variants={item} className="pt-[10px] lg:hidden flex">
                     <LocationTag />
                   </motion.div>
                 </motion.div>
 
                 {/* RIGHT */}
                 <motion.div
-                  className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center xl:gap-[41px]"
+                  className="flex flex-col sm:flex-row flex-wrap items-center gap-[17px] justify-center xl:gap-[41px]"
                   variants={container}
                 >
 
@@ -177,7 +177,7 @@ function Profile() {
               </motion.div>
 
               {/* SKILLS */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:pt-[32px] md:pl-[32px] md:pb-[30px] md:pr-[57px] rounded-[8px] ">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:pt-[32px] md:pl-[30px] md:pb-[30px] md:pr-[57px] rounded-[8px] ">
                 <h3 className="text-[18px] pb-[4px] sm:text-[20px] font-bold lg:pb-[8px]">Skills</h3>
                 <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">Osinski, Kohler and Bashirian 74-102565</p>
                 <motion.div className="flex flex-wrap gap-[10px] pt-[9px]" variants={container}>
@@ -194,7 +194,7 @@ function Profile() {
               </motion.div>
 
               {/* PORTFOLIO */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[32px] md:pb-[30px] md:pr-[57px] rounded-[8px]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px] md:pb-[30px] md:pr-[154px] rounded-[8px]">
                 <h3 className="text-[18px] sm:text-[20px] font-bold pb-2 md:pb-[10px]">
                   Portfolio Links
                 </h3>

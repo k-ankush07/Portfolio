@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import work from "../../assets/Images/work.svg";
 import newlocation from "../../assets/Images/newlocation.svg";
 import smallicon from "../../assets/Images/smallicon.svg";
-import { motion, useScroll ,useTransform } from "framer-motion";
+import { motion, useScroll, useTransform,useSpring  } from "framer-motion";
 import Bun from "../../assets/Images/rsection (1).svg";
 import Docker from "../../assets/Images/rsection (2).svg";
 import Next from "../../assets/Images/rsection (3).svg";
@@ -81,64 +81,77 @@ function ExperienceTimeline() {
             transition: { duration: 0.5 },
         },
     };
-    console.log("hello",useScroll().scrollYProgress)
-      const sectionRef = useRef(null);
+    console.log("hello", useScroll().scrollYProgress)
+    const sectionRef = useRef(null);
 
-  // section ke andar scroll track karega
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start center", "end end"],
-  });
+    // section ke andar scroll track karega
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start center", "end end"],
+    });
 
-  // line ki height increase hogi
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "87%"]);
+    // line ki height increase hogi
+    const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "87%"]);
+    const mobileLineHeight = useTransform(
+        scrollYProgress,
+        [0, 1],
+        ["0%", "94%"]
+    );
+    const smoothLineHeight = useSpring(lineHeight, {
+  stiffness: 120,
+  damping: 20,
+  mass: 0.5,
+});
 
-  // icon niche move karega
-  const iconY = useTransform(scrollYProgress, [0, 1], [0, 735]);
+const smoothMobileLineHeight = useSpring(mobileLineHeight, {
+  stiffness: 120,
+  damping: 20,
+  mass: 0.5,
+});
 
     return (
-        <section  ref={sectionRef} className="relative  px-2 lg:px-0   ">
-            <div 
-             className="container relative" >
+        <section ref={sectionRef} className="relative  px-2 lg:px-0   ">
+            <div
+                className="container relative" >
 
                 <div
-                
-                 className=" border-t-1  border-white/10  lg:pt-[60px] ">
-                    {/* DESKTOP CENTER LINE */}
+
+                    className=" border-t-1  border-white/10  lg:pt-[60px] ">
                     <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10"></div>
-                    {/* <div className="hidden lg:block absolute left-[30%] top-15 h-[40px] w-px bg-white"></div>
-                   
-                    <div className="hidden lg:block absolute left-[30%] top-20 -translate-x-1/2 top-6">
+                    <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10" />
+                    <motion.div
+                        style={{ height: smoothLineHeight  }}
+                        className="hidden lg:block absolute left-[30%] top-15 w-px bg-white origin-top"
+                    />
+                    <motion.div
+                        style={{
+                            top: smoothLineHeight ,
+                            marginTop: "40px",
+                        }}
+                        className="hidden lg:block absolute left-[30%] top-15 -translate-x-1/2"
+                    >
                         <img src={smallicon} alt="icon" />
-                    </div> */}
-                   {/* Background Line */}
-        <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10" />
+                    </motion.div>
+                    <div className="lg:hidden absolute left-3 top-10 h-[94.5%] w-px bg-white/10" />
 
-        {/* Animated White Line */}
-        <motion.div
-          style={{ height: lineHeight }}
-          className="hidden lg:block absolute left-[30%] top-15 w-px bg-white origin-top"
-        />
+                    {/* MOBILE ANIMATED WHITE LINE */}
+                    <motion.div
+                        style={{ height: smoothMobileLineHeight }}
+                        className="lg:hidden absolute left-3 top-10 w-px bg-white origin-top"
+                    />
 
-        {/* Animated Icon */}
-        <motion.div
-          style={{ y: iconY }}
-          className="hidden lg:block absolute left-[30%] top-15 -translate-x-1/2"
-        >
-          <img src={smallicon} alt="icon" />
-        </motion.div>
-                    {/* MOBILE LINE */}
-                    <div className="lg:hidden absolute left-3 top-10 h-[94.5%] w-px bg-white/10"></div>
-                    <div className="lg:hidden lg:block absolute left-3 top-10 h-[40px] w-px bg-white"></div>
-
-
-                    {/* MOBILE ICON */}
-                    <div className="lg:hidden absolute left-0 top-15">
+                    <motion.div
+                        style={{
+                            top: smoothMobileLineHeight,
+                            marginTop: "40px",
+                        }}
+                        className="lg:hidden absolute left-0 top-10"
+                    >
                         <img src={smallicon} alt="icon" />
-                    </div>
+                    </motion.div>
 
 
-                    
+
                     {data.map((exp, index) => (
                         <div key={index} className="relative ">
                             <div className="flex flex-col lg:flex-row pt-[32px] lg:pt-[0px]">
@@ -148,9 +161,9 @@ function ExperienceTimeline() {
                                     initial={{ opacity: 0, x: -60 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
-                                    className="lg:w-[30%] text-white    pl-[43px] lg:pl-0 lg:pt-[10px] lg:pr-[108px]"
+                                    className="lg:w-[30%] text-white    pl-[43px] lg:pl-0 lg:pt-[0px] lg:pr-[108px]"
                                 >
-                        <span className="text-[12px] leading-[18px] px-3 py-1 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-[#392E4C] inline-block">
+                                    <span className="text-[12px] leading-[18px] px-3 py-1 text-[#FFAF7B] rounded-[8px] bg-white/10 border border-[#392E4C] inline-block">
                                         {exp.date}
                                     </span>
 
@@ -161,7 +174,7 @@ function ExperienceTimeline() {
                                         </h2>
                                     </div>
 
-                                    <div className="text-[14px] pt-[14px] lg:pt-[15px] text-[#BDBDBD] space-y-[6px] lg:space-y-2">
+                                    <div className="text-[14px] pt-[14px] lg:pt-[15px] text-[#BDBDBD] space-y-[6px] ">
                                         <p className="flex gap-[10px] items-center">
                                             <img src={newlocation} alt="" />
                                             London Area, United Kingdom
@@ -182,7 +195,7 @@ function ExperienceTimeline() {
                                     initial="hidden"
                                     whileInView="show"
                                     viewport={{ once: true }}
-                                    className="lg:w-[70%] text-white  pt-[9px] pl-[43px]  lg:pb-[60px]   lg:pl-[102px] lg:pt-[0px]"
+                                    className="lg:w-[70%] text-white  pt-[9px] pl-[43px] pb-[10px]  lg:pb-[60px]   lg:pl-[102px] lg:pt-[0px]"
                                 >
                                     <motion.h2
                                         variants={item}
@@ -198,7 +211,7 @@ function ExperienceTimeline() {
                                         <motion.p
                                             key={i}
                                             variants={item}
-                                            className="text-[12px] lg:text-[14px] leading-[22px] lg:leading-[24px]  lg:pt-[5px] font-bold text-[#FFFFFF]"
+                                            className="text-[12px] lg:text-[14px] leading-[22px] lg:leading-[24px] pb-[7px]  lg:pt-[5px] font-bold text-[#FFFFFF]"
                                         >
                                             {pt.p}
                                             <span className="text-[#A0A0A0]">{pt.s}</span>
@@ -207,7 +220,7 @@ function ExperienceTimeline() {
 
                                     {/* Icons */}
                                     <motion.div
-                                        className="flex flex-wrap gap-[9px]  pt-[24px] lg:pt-[33px] sm:w-[320px] lg:w-[384px]"
+                                        className="flex flex-wrap gap-[9px]  pt-[17px] lg:pt-[33px] sm:w-[320px] lg:w-[384px]"
                                         variants={container}
                                     >
                                         {[Docker, Bun, Next, pnpm, PostgreSQL, Redis, Vercel].map((img, i) => (

@@ -79,8 +79,8 @@ function Footer() {
                             <p className="text-center">© 2026 Ankush Kumar. All rights reserved</p>
 
                             <div className="flex justify-center pt-[11px] md:pt-0 gap-[23px]">
-                                <Link to="/privacy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link>
-                                <Link to="/terms" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link>
+                                <Link to="/privacy-policy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link>
+                                <Link to="/terms&condition" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link>
 
                             </div>
                         </div>

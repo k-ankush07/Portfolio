@@ -178,7 +178,7 @@ img.toolWeTrust {
 
 
 
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: transform 0.4s ease;
 
   z-index: -1;
@@ -733,11 +733,17 @@ opacity: 0;
  
 }
 
-@media (min-width:1024px) {
+@media (min-width:1024px) and (max-width:1279px) {
   .font_section{
-    max-width: 1058px;
+    max-width: 992px;
     margin:auto;
     
+  }
+}
+@media (min-width: 1280px){
+  .font_section{
+    max-width:1058px;
+    margin:auto;
   }
 }
 

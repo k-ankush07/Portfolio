@@ -35,7 +35,7 @@ function CustomerReview() {
         {/* BOTTOM TEXT */}
         <div className="absolute bottom-0  w-full">
           <div
-            className={` arrow_class_main  flex items-center justify-between pt-5 px-4 pb-[20px] lg:pl-[28px]  lg:pr-[20px] transition-all duration-500 ease-out
+            className={` arrow_class_main  flex items-center justify-between pt-5 px-[20px] pb-[16px] lg:pl-[28px]  lg:pr-[20px] transition-all duration-500 ease-out
              
             `}
           >

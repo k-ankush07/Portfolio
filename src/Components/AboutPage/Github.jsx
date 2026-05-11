@@ -78,7 +78,7 @@ function Github() {
   }, []);
 
   return (
-    <section className="pb-[40px] px-3 sm:px-0 sm:pb-0">
+    <section className="pb-[40px] px-2 sm:px-0 sm:pb-0">
   <div className="container ">
     <div className="relative flex items-center justify-center">
 
@@ -106,7 +106,7 @@ function Github() {
               />
             </div>
 
-            <div>
+            <div className="flex flex-col gap-[7px]">
               <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px]  font-bold">
                 {loading ? "@loading..." : `@${githubData.name}`}
               </h2>
@@ -117,7 +117,7 @@ function Github() {
           </div>
 
           {/* Right */}
-          <div className="text-right">
+          <div className="text-right flex flex-col gap-[7px]">
             <h2 className="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-bold">
               {loading ? "..." : githubData.publicRepos}
             </h2>

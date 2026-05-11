@@ -20,7 +20,7 @@ import {
 
 function BlogHeading() {
   return (
-    <section className="pt-[100px] lg:pt-[116px] px-2 sm:px-0 lato-regular">
+    <section className="pt-[96px] lg:pt-[100px] px-2 sm:px-0 lato-regular">
       <div className="container text-center  text-white ">
 
         {/* Breadcrumb */}
@@ -44,7 +44,7 @@ function BlogHeading() {
           <img src={image} alt="author" />
 
           <div className="text-start">
-            <h2 className="text-[18px] lg:text-[24px] leading-[15px] lg:leading-[24px] font-bold">
+            <h2 className="text-[18px] lg:text-[24px] leading-[15px] lg:leading-[48px] font-bold">
               Aayush Bharti
             </h2>
             <p className="text-[14px] leading-[24px] text-[#BDBDBD]">
