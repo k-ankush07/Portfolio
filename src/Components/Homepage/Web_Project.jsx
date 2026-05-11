@@ -37,7 +37,7 @@ import {motion} from "framer-motion"
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center pb-5  pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center   pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
@@ -64,48 +64,57 @@ import {motion} from "framer-motion"
                   <div className="bg-[#1d0f10] w-full sm:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                     {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
                        <div class="h-4 border-t border-dashed border-[#D76D77] pb-[10px] w-full"></div>
-                    <ul className="text-gray-300 space-y-3">
-                      <li>
-                        <div className="flex items-center text-[8px] md:text-[12px] font-bold">
-                          <div className="w-[40px] md:w-[60px]">3L</div>
-                          <div className="flex gap-2 items-center">
-                            <img src={DownArrow} alt="arrow" />
-                            <span>25%</span>
-                            <img src={vector13} alt="graph" className="w-[30px]" />
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="flex items-center text-[8px] md:text-[12px]">
-                          <div className="w-[40px] md:w-[60px]">$11.B3</div>
-                          <div className="flex gap-2 items-center">
-                            <img src={DownArrow} alt="arrow" />
-                            <span>15%</span>
-                            <img src={vector13} alt="graph" className="w-[30px]" />
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="flex items-center text-[8px] md:text-[12px]">
-                          <div className="w-[40px] md:w-[60px]">15.Bk</div>
-                          <div className="flex gap-2 items-center">
-                            <img src={DownArrow} alt="arrow" />
-                            <span>9%</span>
-                            <img src={vector13} alt="graph" className="w-[30px]" />
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="flex items-center text-[8px] md:text-[12px]">
-                          <div className="w-[40px] md:w-[60px]">2.19%</div>
-                          <div className="flex gap-2 items-center">
-                            <img src={DownArrow} alt="arrow" />
-                            <span>2.19%</span>
-                            <img src={vector16} alt="graph" className="w-[25px]" />
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                   <ul className="text-gray-300 space-y-3">
+
+  <li>
+    <div className="flex items-center justify-between w-full text-[8px] md:text-[12px] font-bold">
+      <div className="min-w-[40px] md:min-w-[60px]">3L</div>
+
+      <div className="flex items-center gap-1 md:gap-2">
+        <img src={DownArrow} alt="arrow" />
+        <span>25%</span>
+        <img src={vector13} alt="graph" className="w-[30px]" />
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-center justify-between w-full text-[8px] md:text-[12px] font-bold">
+      <div className="min-w-[40px] md:min-w-[60px]">$11.B3</div>
+
+      <div className="flex items-center gap-1 md:gap-2">
+        <img src={DownArrow} alt="arrow" />
+        <span>15%</span>
+        <img src={vector13} alt="graph" className="w-[30px]" />
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-center justify-between w-full text-[8px] md:text-[12px] font-bold">
+      <div className="min-w-[40px] md:min-w-[60px]">15.Bk</div>
+
+      <div className="flex items-center gap-1 md:gap-2">
+        <img src={DownArrow} alt="arrow" />
+        <span>9%</span>
+        <img src={vector13} alt="graph" className="w-[30px]" />
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-center justify-between w-full text-[8px] md:text-[12px] font-bold">
+      <div className="min-w-[40px] md:min-w-[60px]">2.19%</div>
+
+      <div className="flex items-center gap-1 md:gap-2">
+        <img src={DownArrow} alt="arrow" />
+        <span>2.19%</span>
+        <img src={vector16} alt="graph" className="w-[25px]" />
+      </div>
+    </div>
+  </li>
+
+</ul>
                   </div>
                     <span className=" animate-spread-center-bottom bottom_text absolute left-2 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#d70216]">●</span>

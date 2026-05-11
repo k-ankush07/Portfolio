@@ -13,7 +13,7 @@ function Footer() {
                 <footer className=" lato-regular text-gray-400 pt-[30px] pl-[30px] pr-[31px] pb-[22px] lg:pt-[53px]  lg:pl-[64px]  lg:pr-[98px] lg:pb-[30px] rounded-[16px] border border-[#292929]  mx-auto ">
 
                     {/* TOP SECTION */}
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-[49px] lg:pb-[61px] ">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-[13px] lg:pb-[30px] ">
 
                         {/* LEFT */}
                         <div className="w-full lg:w-[36%] flex flex-col">
@@ -35,7 +35,7 @@ function Footer() {
                             {/* COLUMN 1 */}
                             <div>
                                 <h3 className=" text-[#FFFFFF] font-bold text-[16px] mb-[16px] ">General</h3>
-                                <ul className="space-y-3 text-[14px] opacity-80 flex flex-col ">
+                                <ul className=" text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80 flex flex-col ">
                                     <Link to="/" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Home</Link>
                                     <Link to="/about" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > About</Link>
                                     <Link to="/project" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Projects</Link>
@@ -47,7 +47,7 @@ function Footer() {
                             {/* COLUMN 2 */}
                             <div>
                                 <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4">Specifics</h3>
-                                <ul className="space-y-3 text-[14px] opacity-80">
+                                <ul className="text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80">
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Guest Book</li>
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Bucket List</li>
                                     <li className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Uses</li>
@@ -58,7 +58,7 @@ function Footer() {
                             {/* COLUMN 3 */}
                             <div>
                                 <h3 className="text-[#FFFFFF] font-bold text-[16px] mb-4 sm:mb-1">More</h3>
-                                <ul className="space-y-3 text-[14px] opacity-80 md:pt-2">
+                                <ul className="text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80 md:pt-2">
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
