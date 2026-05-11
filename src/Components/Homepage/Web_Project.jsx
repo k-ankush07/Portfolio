@@ -41,9 +41,9 @@ import {motion} from "framer-motion"
 
                 {/* Card 1 — starts center, spreads LEFT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
-                  <div className="bg-[#0e0c13] rounded-xl w-full lg:w-[200px] p-2 sm:p-5 border border-white/10">
+                  <div className="bg-[#0e0c13] rounded-xl w-full sm:w-[200px] p-2 sm:p-5 border border-white/10">
                     {/* <img src={Line24} alt="lines" className="mb-3 w-full" /> */}
-                    <div class="h-4 border-t border-dashed border-[#8F74BF] pb-[10px] w-full">-----------</div>
+                    <div class="h-4 border-t border-dashed border-[#8F74BF] pb-[10px] w-full"></div>
                     <ul className="text-[8px] md:text-[12px] text-gray-300 font-bold space-y-3 sm:space-y-[10px]">
                       <li>• Clean & Modern Code</li>
                       <li>• Full Stack Expertise</li>
@@ -61,9 +61,9 @@ import {motion} from "framer-motion"
 
                 {/* Card 2 — starts center, spreads UP */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end  ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
-                  <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
+                  <div className="bg-[#1d0f10] w-full sm:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                     {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
-                       <div class="h-4 border-t border-dashed border-[#D76D77] pb-[10px] w-full">-----------</div>
+                       <div class="h-4 border-t border-dashed border-[#D76D77] pb-[10px] w-full"></div>
                     <ul className="text-gray-300 space-y-3">
                       <li>
                         <div className="flex items-center text-[8px] md:text-[12px] font-bold">
@@ -117,9 +117,9 @@ import {motion} from "framer-motion"
 
                 {/* Card 3 — starts center, spreads RIGHT */}
                 <div className={`relative rounded-xl cards-width w-[33.3%] flex justify-center xl:justify-end p-[1px] ${visible ? 'animate-spread-right' : 'opacity-0'}`}>
-                  <div className="bg-[#021007] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
+                  <div className="bg-[#021007] w-full sm:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                     {/* <img src={Line26} alt="lines" className="mb-3 w-full" /> */}
-                     <div class="h-4 border-t border-dashed border-[#16A34A] pb-[10px] w-full">-----------</div>
+                     <div class="h-4 border-t border-dashed border-[#16A34A] pb-[10px] w-full"></div>
                     <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3">
                       <li className="flex justify-between">
                         <span>Projects Completed</span>

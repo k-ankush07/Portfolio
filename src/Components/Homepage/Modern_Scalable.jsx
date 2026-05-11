@@ -28,7 +28,7 @@ function Modern_Scalable() {
             <div className="  pt-[60px] lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-white overflow-hidden  ">
            
 
-              <div className="absolute inset-0  top-[250px] lg:top-[270px] flex justify-center items-center opacity-90"
+              <div className="absolute inset-0  top-[250px] md:top-[300px] lg:top-[270px] flex justify-center items-center opacity-90"
                style={{ pointerEvents: "none" }}
               >
                 {/* <div className=""> */}
