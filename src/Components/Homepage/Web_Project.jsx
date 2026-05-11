@@ -37,10 +37,10 @@ import {motion} from "framer-motion"
               <img src={linepurple} alt="line" className="absolute right-0" />
 
               {/* Cards */}
-              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row justify-center xl:justify-center items-center pb-5  pt-[24px] pb-[20px] pl-[18px] pr-[18px] lg:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+              <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center pb-5  pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
                 {/* Card 1 — starts center, spreads LEFT */}
-                <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] xl:ml-[120px] ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
+                <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
                   <div className="bg-[#0e0c13] rounded-xl w-full lg:w-[200px] p-2 sm:p-5 border border-white/10">
                     <img src={Line24} alt="lines" className="mb-3 w-full" />
                     <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3 sm:space-y-[10px]">
@@ -50,7 +50,7 @@ import {motion} from "framer-motion"
                       <li>• Reliable Support</li>
                     </ul>
                   </div>
-              <span className=" animate-spread-left-bottom absolute left-2 -bottom-4 sm:left-[-22px] xl:-bottom-6  xl:left-1/30 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+              <span className=" animate-spread-left-bottom absolute left-2 -bottom-4 sm:left-[-10px] xl:-bottom-6  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#4e0fbf]">●</span>
                     <h1 className="text-[8px] md:text-[14px]">
                       Why Choose Me
@@ -59,7 +59,7 @@ import {motion} from "framer-motion"
                 </div>
 
                 {/* Card 2 — starts center, spreads UP */}
-                <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] xl:ml-[72px] ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
+                <div className={`relative rounded-xl cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end  ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
                   <div className="bg-[#1d0f10] w-full lg:w-[200px] rounded-xl p-2 sm:p-4 border border-white/10">
                     <img src={Line25} alt="lines" className="mb-3 w-full" />
                     <ul className="text-gray-300 space-y-3">
@@ -105,7 +105,7 @@ import {motion} from "framer-motion"
                       </li>
                     </ul>
                   </div>
-                    <span className=" animate-spread-center-bottom bottom_text absolute left-2 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/30 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                    <span className=" animate-spread-center-bottom bottom_text absolute left-2 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#d70216]">●</span>
                     <p className="text-[8px] md:text-[14px]">
                       Business Analytics
@@ -136,7 +136,7 @@ import {motion} from "framer-motion"
                       </li>
                     </ul>
                   </div>
-                  <span className=" animate-spread-right-bottom absolute left-2 -bottom-4 sm:left-[-22px] xl:-bottom-5 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                  <span className=" animate-spread-right-bottom absolute left-2 -bottom-4 sm:left-[-22px] xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#00dd51]">●</span>
                     <p className="text-[8px] md:text-[14px]">Full Stack Developer</p>
                   </span>

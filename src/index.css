@@ -173,7 +173,6 @@ img.toolWeTrust {
   content: "";
   position: absolute;
   inset: 0;
-
    background: linear-gradient( #673272, #E98B7A);
   transform: translateX(-101%);
 
