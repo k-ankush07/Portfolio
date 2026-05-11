@@ -51,10 +51,10 @@ function Modern_Scalable() {
 
                   {/* Content (always visible) */}
                   {/* <div className="relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white"> */}
-                  <div className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white transition-all duration-700 ease-out
+                  <div className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px]  font-bold leading-[15px] lg:leading-[18px] text-white transition-all duration-700 ease-out
           ${show ? "opacity-100 -translate-y-0" : "opacity-0 -translate-y-10"}`}>
 
-                    <div className="bg-[#df7a78] rounded-md px-1 py-1 flex items-center gap-1 text-[12px]">
+                    <div className="bg-[#df7a78] rounded-md px-1 py-1 flex items-center gap-1 ">
                       <img src={emoji} alt="emoji" />
                       <span>Upcoming</span>
                     </div>

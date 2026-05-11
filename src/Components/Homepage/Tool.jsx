@@ -150,7 +150,7 @@ function Tool() {
           Math.random() * (width - 100) + 50,
           Math.random() * 150,
           SIZE, SIZE,
-          { chamfer: { radius: 14 }, restitution: 0.8, friction: 0.01 }
+          { chamfer: { radius: 14 }, restitution: 0.9, friction: 0.01 }
         )
       );
       logosRef.current = logos;
@@ -310,7 +310,7 @@ function Tool() {
 
         <div className="flex justify-between items-end mb-[20px] lg:mb-[30px]">
           <div>
-            <h1 className="tool_text text-white text-[30px] lg:text-[44px]">
+            <h1 className="tool_text text-white text-[30px] lg:text-[44px] font-bold leading-[30px] lg:leading-[76px]">
               Tools we{" "}
               <motion.span
                 className="inline-block bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
@@ -326,7 +326,7 @@ function Tool() {
                 ))}
               </motion.span>
             </h1>
-            <p className="text-[14px] lg:text-[18px] text-gray-300 ">
+            <p className="text-[14px] lg:text-[18px] text-[#FFFFFF] pt-[6px] lg:pt-0 leading-[20px]">
               Powerful tools and technologies I use in modern web development.
             </p>
           </div>

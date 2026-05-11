@@ -97,10 +97,13 @@ function ExperienceTimeline() {
   const iconY = useTransform(scrollYProgress, [0, 1], [0, 735]);
 
     return (
-        <section ref={sectionRef} className="relative  px-2 lg:px-0   ">
-            <div className="container relative" >
+        <section  ref={sectionRef} className="relative  px-2 lg:px-0   ">
+            <div 
+             className="container relative" >
 
-                <div className=" border-t-1  border-white/10  lg:pt-[60px] ">
+                <div
+                
+                 className=" border-t-1  border-white/10  lg:pt-[60px] ">
                     {/* DESKTOP CENTER LINE */}
                     <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10"></div>
                     {/* <div className="hidden lg:block absolute left-[30%] top-15 h-[40px] w-px bg-white"></div>

@@ -36,9 +36,9 @@ export default function MobileNavbar() {
   ];
 
   const connect = [
-    { name: "GitHub", url: "https://github.com/yourusername" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/yourusername" },
-    { name: "X (Twitter)", url: "https://twitter.com/yourusername" },
+    { name: "GitHub", url: "https://github.com/k-ankush07" },
+    { name: "LinkedIn", url: "" },
+    { name: "X (Twitter)", url: "" },
   ];
 
   const legal = [

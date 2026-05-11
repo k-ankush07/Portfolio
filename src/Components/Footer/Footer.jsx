@@ -62,17 +62,14 @@ function Footer() {
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Book a call</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
-                                    <Link to="/privacy" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</Link>
-                                    <Link to="/terms" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</Link>
+                                    <Link to="/privacy-policy" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</Link>
+                                    <Link to="/terms&condition" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</Link>
                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    {/* DIVIDER */}
-{/* 
-                    <div className="  " ></div> */}
 
 
                     {/* BOTTOM SECTION */}
@@ -89,8 +86,13 @@ function Footer() {
                         </div>
 
                         <div className="flex gap-[15px] lg:gap-[20px] pt-[23px]  sm:pt-0 text-white">
+                            {/* linkdin */}
                             <img src={Vector1} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110 h-[14px] w-[14px] md:w-[18px] md:h-[16px]" />
+                            {/* github */}
+                            <Link to="https://github.com/k-ankush07" target="_blank">
                             <img src={Vector2} alt="icon" className= " h-[14px] w-[14px] md:w-[18px] md:h-[16px] cursor-pointer transition-all duration-400 hover:scale-110" />
+                            </Link>
+                            {/* twiter */}
                             <img src={Vector} alt="icon" className=" h-[14px] w-[14px] md:w-[18px] md:h-[16px] cursor-pointer transition-all duration-400 hover:scale-110" />
                         </div>
                     </div>

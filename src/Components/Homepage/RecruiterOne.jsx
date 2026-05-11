@@ -155,13 +155,13 @@ function RecruiterOne({ index, desc }) {
                   </motion.div> */}
                     <motion.div
                       variants={itemVariants}
-                      className="mb-8 lg:mb-2 space-y-3 w-full hidden lg:block"
+                      className="mb-8 lg:mb-2 space-y-[7px] w-full hidden lg:block"
                     >
                       {[1, 2, 3].map((_, i) => (
                         <motion.div
                           key={i}
                           variants={itemVariants}
-                          className="flex items-center gap-3 text-[#BDBDBD] text-[13px] sm:text-[14px]"
+                          className="flex items-center gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
                         >
                           <motion.img
                             src={star}

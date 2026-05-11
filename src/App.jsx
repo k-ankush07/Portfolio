@@ -25,7 +25,7 @@ function App() {
       const timer = setTimeout(() => {
         setDisplayLocation(location);
         setIsLoading(false);
-      }, 300); 
+      }, 300);
 
       return () => clearTimeout(timer);
     }
@@ -36,13 +36,13 @@ function App() {
       <Navbar />
       <ScrollToTop />
 
-     
-        <Routes location={displayLocation}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-             <Route path="/blog" element={<BlogPage />} />
+
+      <Routes location={displayLocation}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
+        <Route path="/terms&condition" element={<TermsPage />} />
 //         {/* <Route path="/work" element={<Work />} />
 //        
         // <Route path="/guestbook" element={<Guestbook />} />
@@ -50,17 +50,17 @@ function App() {
 //         <Route path="/links" element={<Links />} />
 //         <Route path="/uses" element={<Uses />} />
 //         <Route path="/attribution" element={<Attribution />} /> */}
-        </Routes>
+      </Routes>
 
-        {/* LOADING OVERLAY (only center, not full black) */}
-        {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="px-6 py-3 bg-black/60 backdrop-blur-md  text-white text-sm">
-             
-            </div>
+      {/* LOADING OVERLAY (only center, not full black) */}
+      {isLoading && (
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="px-6 py-3 bg-black/60 backdrop-blur-md  text-white text-sm">
+
           </div>
-        )}
-     
+        </div>
+      )}
+
 
       <ConceptToCreation />
 

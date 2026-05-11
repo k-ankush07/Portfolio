@@ -116,7 +116,7 @@ const letter = {
                         </div>
 
                     </div>
-                    <div className="sm:flex gap-10 mt-[10px] ">
+                    <div className="sm:flex gap-10 pt-[23px] lg:pt-[33px] ">
                         <Swiper
                             modules={[Autoplay]}
                             spaceBetween={20}
