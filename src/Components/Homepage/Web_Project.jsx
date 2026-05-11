@@ -51,7 +51,7 @@ import {motion} from "framer-motion"
                       <li>• Reliable Support</li>
                     </ul>
                   </div>
-              <span className=" animate-spread-left-bottom absolute left-2 -bottom-4 sm:left-[-10px] xl:-bottom-6  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+              <span className=" animate-spread-left-bottom absolute left-5 -bottom-4 sm:left-[-10px] xl:-bottom-6  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#4e0fbf]">●</span>
                     <h1 className="text-[8px] md:text-[14px] font-bold">
                       Why Choose Me
@@ -116,7 +116,7 @@ import {motion} from "framer-motion"
 
 </ul>
                   </div>
-                    <span className=" animate-spread-center-bottom bottom_text absolute left-2 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                    <span className=" animate-spread-center-bottom bottom_text absolute left-4 -bottom-4 sm:left-[-22px]  xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#d70216]">●</span>
                     <p className="text-[8px] md:text-[14px] font-bold">
                       Business Analytics
@@ -148,9 +148,9 @@ import {motion} from "framer-motion"
                       </li>
                     </ul>
                   </div>
-                  <span className=" animate-spread-right-bottom absolute left-2 -bottom-4 sm:left-[-22px] xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                  <span className=" animate-spread-right-bottom absolute left-3 -bottom-4 sm:left-[-22px] xl:-bottom-5 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
                     <span className="text-[#00dd51]">●</span>
-                    <p className="text-[8px] md:text-[14px]">Full Stack Developer</p>
+                    <p className="text-[8px] md:text-[14px] font-bold">Full Stack Developer</p>
                   </span>
                 </div>
 

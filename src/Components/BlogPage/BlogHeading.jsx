@@ -10,6 +10,7 @@ import CodePreview from "./CodeBlock";
 import Blogs from "./Blogs";
 import code from "../../assets/Images/code.svg"
 import code1 from "../../assets/Images/code1.svg"
+import { motion } from "framer-motion";
 import {
   Breadcrumb,
   Title,
@@ -17,6 +18,22 @@ import {
   Heading,
   Paragraph,
 } from "./Typography";
+
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+};
+
 
 function BlogHeading() {
   return (
@@ -40,7 +57,12 @@ function BlogHeading() {
         </Subtitle>
 
         {/* Author */}
-        <div className="pt-[20px] lg:pt-[41px] flex justify-center items-center gap-[20px]">
+        <motion.div 
+         variants={fadeUp}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.5 }}
+        className="pt-[20px] lg:pt-[41px] flex justify-center items-center gap-[20px]">
           <img src={image} alt="author" />
 
           <div className="text-start">
@@ -51,7 +73,7 @@ function BlogHeading() {
               Oct 19, 2025 / 12 min read
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Content */}
         <div className="flex flex-col items-center pt-[20px] lg:pt-[40px]">

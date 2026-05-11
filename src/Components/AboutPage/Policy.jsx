@@ -73,7 +73,7 @@ function Policy({
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    whileHover={{ scale: 1.02 }}
+                    
                     style={{
                       borderWidth: "1px",
                       borderStyle: "dashed",

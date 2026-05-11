@@ -81,7 +81,7 @@ function ExperienceTimeline() {
             transition: { duration: 0.5 },
         },
     };
-    console.log("hello", useScroll().scrollYProgress)
+
     const sectionRef = useRef(null);
 
     // section ke andar scroll track karega
@@ -90,7 +90,6 @@ function ExperienceTimeline() {
         offset: ["start center", "end end"],
     });
 
-    // line ki height increase hogi
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "87%"]);
     const mobileLineHeight = useTransform(
         scrollYProgress,
@@ -98,13 +97,13 @@ function ExperienceTimeline() {
         ["0%", "94%"]
     );
     const smoothLineHeight = useSpring(lineHeight, {
-  stiffness: 120,
+  stiffness: 50,
   damping: 20,
   mass: 0.5,
 });
 
 const smoothMobileLineHeight = useSpring(mobileLineHeight, {
-  stiffness: 120,
+  stiffness: 50,
   damping: 20,
   mass: 0.5,
 });
@@ -118,7 +117,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
 
                     className=" border-t-1  border-white/10  lg:pt-[60px] ">
                     <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10"></div>
-                    <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10" />
+                    {/* <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10" /> */}
                     <motion.div
                         style={{ height: smoothLineHeight  }}
                         className="hidden lg:block absolute left-[30%] top-15 w-px bg-white origin-top"
@@ -154,12 +153,13 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
 
                     {data.map((exp, index) => (
                         <div key={index} className="relative ">
-                            <div className="flex flex-col lg:flex-row pt-[32px] lg:pt-[0px]">
+                            <div className="flex flex-col lg:flex-row pt-[32px] lg:pt-[0px] ">
 
                                 {/* LEFT SIDE */}
                                 <motion.div
                                     initial={{ opacity: 0, x: -60 }}
                                     whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{duration: 0.50}}
                                     viewport={{ once: true }}
                                     className="lg:w-[30%] text-white    pl-[43px] lg:pl-0 lg:pt-[0px] lg:pr-[108px]"
                                 >
