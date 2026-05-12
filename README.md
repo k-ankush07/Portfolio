@@ -22,9 +22,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-about us page ka updated section bnaya scroll line with image up and down lgaya  home page testing bus resolve kre give english
-
-
 
 
 
