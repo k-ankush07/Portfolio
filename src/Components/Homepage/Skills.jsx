@@ -36,7 +36,7 @@ function Skills() {
           <div className="relative">
          
 
-            <div className="space-y-[10px] lg:space-y-[28px] pt-[12px] lg:pt-[33px]">
+            <div className="space-y-[24px] lg:space-y-[45px] pt-[12px] lg:pt-[33px]">
 
 
               <div className='slider '>

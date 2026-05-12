@@ -117,7 +117,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
 
                     className=" border-t-1  border-white/10  lg:pt-[60px] ">
                     <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10"></div>
-                    {/* <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10" /> */}
+                 
                     <motion.div
                         style={{ height: smoothLineHeight  }}
                         className="hidden lg:block absolute left-[30%] top-15 w-px bg-white origin-top"

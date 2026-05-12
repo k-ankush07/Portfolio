@@ -29,7 +29,7 @@ function ViewDetail() {
     } else if (window.innerWidth < 1024) {
       setCircleSize(80); // tablet
     } else {
-      setCircleSize(110); // desktop
+      setCircleSize(90); // desktop
     }
   };
 
@@ -122,7 +122,7 @@ function ViewDetail() {
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleLeave}
-        className="w-full relative  inline-block sm:mt-3 rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer "
+        className="w-full relative  inline-block  rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer "
          style={{
                   transform: hovered ? "scale(1.01)" : "scale(1)",
                 }}  
@@ -133,9 +133,9 @@ function ViewDetail() {
           >
 
             {/* text */}
-            <div className="pt-[17px] pl-[20px] pr-[90px] xl:pl-[36px] xl:pt-[25px]  flex justify-between">
+            <div className="inner_work pt-[17px] pl-[20px] pr-[90px] xl:pl-[36px] xl:pt-[25px]  flex justify-between">
               <p
-                className="max-w-[400px] text-[14px] md:text-[20px] text-white origin-left transition-all duration-300 ease-out"
+                className="text-Web max-w-[400px] text-[14px] md:text-[20px] text-white origin-left transition-all duration-300 ease-out"
                 style={{
                   transform: hovered ? "scale(1.03)" : "scale(1)",
                 }}
@@ -147,7 +147,7 @@ function ViewDetail() {
 
 
            {/* main div for images */}
-<div className="relative flex justify-center  overflow-hidden items-end px-6 mt-7 lg:mt-[50px]">
+<div className="inner_main relative flex justify-center  overflow-hidden items-end px-6 mt-[12px] lg:mt-[27px]">
   
   {/* Left Image */}
   <div className="w-[33%]  ">

@@ -40,8 +40,8 @@ function Web_Project() {
             <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center   pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
               {/* Card 1 — starts center, spreads LEFT */}
-              <div className={`relative  cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
-                <div className="bg-[#0e0c13] rounded-[5px] lg:rounded-[8px] w-full sm:w-[200px] pt-[13px] pl-[11px] pr-[15px] pb-[18px] lg:pt-[22px] lg:pl-[19px] lg:pb-[32px] lg:pr-[25px]  border border-white/10">
+              <div className={`relative  cards-width w-[33.3%] h-[100%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
+                <div className="bg-[#0e0c13] rounded-[5px] lg:rounded-[8px] w-full sm:w-[200px] pt-[13px] pl-[11px] pr-[15px] pb-[18px] lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px]  border border-white/10">
                   {/* <img src={Line24} alt="lines" className="mb-3 w-full" /> */}
                   <div class="h-2 border-t border-dashed border-[#8F74BF] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-[8px] md:text-[12px] text-gray-300 font-bold space-y-3 sm:space-y-[10px]">
@@ -51,7 +51,7 @@ function Web_Project() {
                     <li>• Reliable Support</li>
                   </ul>
                 </div>
-                <span className=" border-1 border-[#4E0FBF] animate-spread-left-bottom absolute left-5 -bottom-3 sm:left-[-10px] xl:-bottom-4  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                <span className=" border-1 border-[#4E0FBF] animate-spread-left-bottom absolute left-4 -bottom-3 sm:left-[-10px] xl:-bottom-4  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center justify-center gap-[6px]">
                   <span className="text-[#4e0fbf]">●</span>
                   <h1 className="text-[8px] md:text-[14px] font-bold">
                     Why Choose Me
@@ -65,7 +65,7 @@ function Web_Project() {
                 lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-white/10">
                   {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
                   <div class="h-2 border-t border-dashed border-[#D76D77] pb-[4px] lg:pb-[10px] w-full"></div>
-                  <ul className="text-gray-300 space-y-3">
+                  <ul className="text-gray-300 space-y-3 sm:space-y-[10px]">
 
                     <li>
                       <div className="flex items-center justify-between w-full text-[8px] md:text-[12px] font-bold">
@@ -131,7 +131,7 @@ function Web_Project() {
                 lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-white/10">
                   {/* <img src={Line26} alt="lines" className="mb-3 w-full" /> */}
                   <div class="h-2 border-t border-dashed border-[#16A34A] pb-[4px] lg:pb-[10px] w-full"></div>
-                  <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3">
+                  <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3 sm:space-y-[10px]">
                     <li className="flex justify-between">
                       <span>Projects Completed</span>
                       <span className="text-green-400">50+</span>
@@ -150,8 +150,8 @@ function Web_Project() {
                     </li>
                   </ul>
                 </div>
-                <span className=" border-1 border-[#00DD51] animate-spread-right-bottom absolute left-3 -bottom-3 sm:left-[-22px] xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
-                  <span className="text-[#00dd51]">●</span>
+                <span className=" border-1 border-[#00DD51] animate-spread-right-bottom absolute left-3 -bottom-3 sm:left-[-22px] xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center  justify-center gap-1">
+                  <span className="  text-[#00dd51]">●</span>
                   <p className="text-[8px] md:text-[14px] font-bold">Full Stack Developer</p>
                 </span>
               </div>

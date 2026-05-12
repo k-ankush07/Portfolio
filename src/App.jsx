@@ -10,6 +10,7 @@ import ConceptToCreation from "./Components/Homepage/ConceptToCreation.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
 import TermsPage from "./Pages/TermsPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
+import WorkPage from "./Pages/WorkPage.jsx";
 
 
 function App() {
@@ -43,13 +44,13 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/terms&condition" element={<TermsPage />} />
-//         {/* <Route path="/work" element={<Work />} />
-//        
-        // <Route path="/guestbook" element={<Guestbook />} />
-//         <Route path="/bucket-list" element={<BucketList />} />
-//         <Route path="/links" element={<Links />} />
-//         <Route path="/uses" element={<Uses />} />
-//         <Route path="/attribution" element={<Attribution />} /> */}
+        <Route path="/work" element={<WorkPage />} />
+{/* 
+        <Route path="/guestbook" element={<Guestbook />} />
+        <Route path="/bucket-list" element={<BucketList />} />
+        <Route path="/links" element={<Links />} />
+        <Route path="/uses" element={<Uses />} />
+        <Route path="/attribution" element={<Attribution />} /> */}
       </Routes>
 
       {/* LOADING OVERLAY (only center, not full black) */}

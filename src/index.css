@@ -332,6 +332,26 @@ opacity: 0;
   height: 100%!important;
 }
 
+/* work section */
+@media (min-width: 320px){
+  .work_class .inner_work {
+    padding: 17px 0 0 20px 
+  }
+  .text-Web{
+    max-width: 276px;
+  }
+  .inner_main{
+    margin-top: 12px;
+  }
+}
+@media (min-width: 1024px){
+  .work_class .inner_work {
+    padding: 19px 0 0 28px 
+  }
+  .inner_main{
+    margin-top: 20px;
+  }
+}
 
 
 /* media  */

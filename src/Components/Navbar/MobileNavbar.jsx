@@ -25,7 +25,7 @@ export default function MobileNavbar() {
   const pages = [
     { name: "Home", path: "/", icon: <FaHome /> },
     { name: "About", path: "/about", icon: <FaRegUserCircle /> },
-    { name: "Projects", path: "/work", icon: <FaProjectDiagram /> },
+    { name: "Work", path: "/work", icon: <FaProjectDiagram /> },
     { name: "Blog", path: "/blog", icon: <FaBlogger /> },
     { name: "Guestbook", path: "/guestbook", icon: <FaAddressBook /> },
     { name: "Bucket List", path: "/bucket-list", icon: <IoLogoBitbucket /> },
