@@ -85,7 +85,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="flex gap-[15px] lg:gap-[20px] pt-[23px]  sm:pt-0 text-white">
+                        <div className="flex gap-[15px] lg:gap-[20px] pt-[23px]  md:pt-0 text-white">
                             {/* linkdin */}
                             <img src={Vector1} alt="icon" className="cursor-pointer transition-all duration-400 hover:scale-110 h-[14px] w-[14px] md:w-[18px] md:h-[16px]" />
                             {/* github */}

@@ -7,7 +7,7 @@ function BlogTopText() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.06, //  faster (was 0.15)
+        staggerChildren: 0.06, 
       },
     },
   };
@@ -18,7 +18,7 @@ function BlogTopText() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.3, // quick animation
+        duration: 0.20, // quick animation
         ease: "easeOut", //  smooth feel
       },
     },

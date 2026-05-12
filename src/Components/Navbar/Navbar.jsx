@@ -161,7 +161,7 @@ export default function Navbar() {
                     initial={false}
                     animate={{
                       opacity: showGreeting ? 1 : 0,
-                      y: showGreeting ? 0 : -10,
+                      y: showGreeting ? 0 : -40,
                     }}
                     transition={{ duration: 0.25 }}
                     className="absolute left-1/2 -translate-x-1/2 text-white text-[16px] font-medium whitespace-nowrap z-20"

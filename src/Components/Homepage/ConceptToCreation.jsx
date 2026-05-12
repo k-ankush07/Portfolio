@@ -14,7 +14,7 @@ function ConceptToCreation() {
                 <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px] lg:pl-[214px] lg:pr-[214px]'>
 
                     <img src={Background1} className='absolute left-0 top-0' />
-                    <img src={Background2} className='absolute xl:left-40 bottom-0 top-0' />
+                    <img src={Background2} className='absolute xl:left-40 bottom-0 top-0 h-[100%]' />
                     <img src={Background3} className='absolute right-0 bottom-0' />
 
                     {/* Icon */}
@@ -68,7 +68,7 @@ function ConceptToCreation() {
                                 <Link to="/">
                                    <button className="btn-slide group rounded-[500px]  bg-[#FFFFFF] cursor-pointer  flex items-center gap-5 text-[#000000]  text-[16px] pl-5 pr-3 py-3">
                                     Get in Touch
-                                    <FaArrowRightLong className="text-[14.6px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-300 group-hover:opacity-100 group-hover:-translate-x-4" />
+                                    <FaArrowRightLong className="text-[16px] mt-[1px] opacity-0 translate-x-[-8px] transition-all opacity-100 duration-300 group-hover:opacity-100 group-hover:-translate-x-4" />
                                     </button>
                                     
                                 </Link>

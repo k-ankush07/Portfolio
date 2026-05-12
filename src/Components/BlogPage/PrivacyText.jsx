@@ -20,7 +20,7 @@ function PrivacyText({colorText,first_letter,para}) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.3, // quick animation
+        duration: 0.10, // quick animation
         ease: "easeOut", //  smooth feel
       },
     },
