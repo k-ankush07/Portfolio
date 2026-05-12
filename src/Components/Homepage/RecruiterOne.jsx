@@ -109,7 +109,7 @@ function RecruiterOne({ index, desc }) {
                       >
                         Recruiter
                         <motion.span
-                          className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block ml-1"
+                          className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
                           whileHover={{ scale: 1.03, rotate: [0, 2, -2, 0] }}
                           transition={{ duration: 0.4 }}
                         >

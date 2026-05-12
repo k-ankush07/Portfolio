@@ -38,7 +38,7 @@ function Footer() {
                                 <ul className=" text-[12px] leading-[26px] lg:text-[14px] lg:leading-[28px] opacity-80 flex flex-col ">
                                     <Link to="/" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Home</Link>
                                     <Link to="/about" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > About</Link>
-                                    <Link to="/project" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Projects</Link>
+                                    <Link to="/work" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Work</Link>
                                     <Link to="/blog" className=" text-[#BDBDBD]  cursor-pointer hover:text-gray-100" > Blog</Link>
 
                                 </ul>

@@ -147,7 +147,7 @@ function ViewDetail() {
 
 
            {/* main div for images */}
-<div className="inner_main relative flex justify-center  overflow-hidden items-end px-6 mt-[12px] lg:mt-[27px]">
+<div className="inner_main relative flex justify-center  overflow-hidden items-end  mt-[12px] lg:mt-[27px]">
   
   {/* Left Image */}
   <div className="w-[33%]  ">

@@ -345,9 +345,9 @@ opacity: 0;
  .work_class .text-Web{
     max-width: 276px;
   }
- .work_class .inner_main{
+ /* .work_class .inner_main{
     margin-top: 12px;
-  }
+  } */
 }
 @media (min-width: 768px){
    .work_class .text-Web{
@@ -359,9 +359,9 @@ opacity: 0;
   .work_class .inner_work {
     padding: 19px 0 0 28px 
   }
-  .inner_main{
+  /* .inner_main{
     margin-top: 20px;
-  }
+  } */
 }
 
 

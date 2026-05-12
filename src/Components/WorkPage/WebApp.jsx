@@ -15,13 +15,16 @@ import new3 from "../../assets/Images/new1 (3).svg";
 import new4 from "../../assets/Images/new1 (4).svg";
 import new5 from "../../assets/Images/new1 (5).svg";
 import new6 from "../../assets/Images/new1 (6).svg";
+import ProjectTitle from './ProjectTitle';
 function WebApp({ single }) {
     const logos = [
-        new1,
+       
         new2,
         new3,
+         new1,
+          new5,
         new4,
-        new5,
+       
          new6,
         new1,
         new2,
@@ -45,8 +48,8 @@ function WebApp({ single }) {
                                 <p className='text-[#BDBDBD] text-[12px]  lg:text-[14px] leading-[24px]'>01-Web App</p>
                                 <p className='border-[1px] border-[#8F74BF54] text-[#FFAF7B] text-[10px] leading-[14px] lg:text-[12px] lg:leading-[18px] px-[9px] py-[4px] rounded-[8px]'>Q4 2024</p>
                             </div>
-                            <div
-                                className="flex items-center   gap-2 sm:gap-3 text-white flex-wrap">
+                            {/* <div
+                                className="flex items-center   pt-[9px]  gap-2 sm:gap-3 text-white flex-wrap">
                                 <img
                                     src={shopify}
                                     alt="shopify logo"
@@ -57,12 +60,13 @@ function WebApp({ single }) {
                                 >
                                     Recruiter
                                     <span
-                                        className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block ml-1" >
+                                        className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block " >
                                         One
                                     </span>
 
                                 </h1>
-                            </div>
+                            </div> */}
+                            <ProjectTitle logo={shopify} title="Recruiter"  highlight =" One" />
                         </div>
                         <div className=' h-0 lg:h-[28px] flex  items-center'> <div className=" hidden lg:block h-[1px] w-full  bg-white/10"></div></div>
                         <div
@@ -76,7 +80,7 @@ function WebApp({ single }) {
                             <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}
-                                <div className="flex flex-wrap gap-[11px]  sm:max-w-[450px] xl:hidden">
+                                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  sm:max-w-[450px] xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
                                         <img key={i} src={img} alt="logo" />
                                     ))}
@@ -118,7 +122,7 @@ function WebApp({ single }) {
                                     >
                                         Recruiter
                                         <span
-                                            className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block ml-1"
+                                            className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
                                            
                                         >
                                             One
@@ -138,7 +142,7 @@ function WebApp({ single }) {
                                 <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}
-                                <div className="flex flex-wrap gap-[11px]  xl:hidden">
+                                <div className="flex flex-wrap gap-[6px] lg:gap-[11px]  xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
                                         <img key={i} src={img} alt="logo" />
                                     ))}
