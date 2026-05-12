@@ -133,7 +133,7 @@ function ViewDetail() {
           >
 
             {/* text */}
-            <div className="pt-2 pl-2 pr-5 lg:pl-[29px] sm:pt-5 sm:px-5 flex justify-between">
+            <div className="pt-[17px] pl-[20px] pr-[90px] xl:pl-[36px] xl:pt-[25px]  flex justify-between">
               <p
                 className="max-w-[400px] text-[14px] md:text-[20px] text-white origin-left transition-all duration-300 ease-out"
                 style={{

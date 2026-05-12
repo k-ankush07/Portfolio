@@ -144,7 +144,7 @@ function FullStack() {
                                 </div>
                             </div>
                             <motion.div
-                                className="flex justify-center gap-[8px] mt-[17px]"
+                                className="flex justify-center gap-[8px] pt-[17px]"
                                 variants={container}
                                 initial="hidden"
                                 whileInView="show"
@@ -198,7 +198,7 @@ function FullStack() {
                                     </motion.p>
 
 
-                                    <motion.div className='pt-[15px]'
+                                    <motion.div className='pt-[15px] lg:pt-[33px]'
                                         variants={textContainer}
                                         initial="hidden"
                                         whileInView="show"
@@ -209,7 +209,7 @@ function FullStack() {
                                     </motion.div>
                                 </motion.div>
                                 <motion.div
-                                    className="flex flex-wrap gap-[10px] mt-[9px] max-w-[350px] text-[12px]"
+                                    className="flex flex-wrap gap-[10px] pt-[9px] max-w-[350px] text-[12px]"
                                     variants={container}
                                     initial="hidden"
                                     whileInView="show"
@@ -258,7 +258,7 @@ function FullStack() {
 
                         {/* 3rd section */}
                         <motion.div
-                            className='flex mt-5 lg:mt-0 lg:justify-center items-center sm:mt-0 sm:pl-[67px]'
+                            className='flex pt-[31px]  lg:justify-center items-center sm:pt-0 sm:pl-[67px]'
                             variants={textContainer}
                             initial="hidden"
                             whileInView="show"

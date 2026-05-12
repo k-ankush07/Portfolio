@@ -80,8 +80,8 @@ function RecruiterOne({ index, desc }) {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8 }}
             >
-              <div className=" sm:pb-6 lg:pb-[10px] "> 
-                <div className="image_background flex flex-col lg:flex-row  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px] pt-[20px] lg:pt-[40px] lg:pr-[53px]">
+              <div className=" lg:pb-[10px] "> 
+                <div className="image_background flex flex-col lg:flex-row pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
 
                   {/* Left */}
                   <motion.div
@@ -132,27 +132,6 @@ function RecruiterOne({ index, desc }) {
                       </motion.p>
                     </motion.div>
 
-                    {/* <motion.div 
-                    variants={itemVariants}
-                    className="mb-8 lg:mb-2 space-y-3 w-full hidden lg:block"
-                  >
-                    {[1, 2, 3].map((_, i) => (
-                      <motion.div 
-                        key={i} 
-                        variants={itemVariants}
-                        className="flex items-center gap-3 text-[#BDBDBD] text-[13px] sm:text-[14px]"
-                        
-                      >
-                        <motion.img 
-                          src={star} 
-                          alt="star" 
-                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 "
-                          
-                        />
-                        <span className="text-[#BDBDBD] text-[14px group-hover:font-normal">Lorem ipsum dolor sit amet consectetur.</span>
-                      </motion.div>
-                    ))}
-                  </motion.div> */}
                     <motion.div
                       variants={itemVariants}
                       className="mb-8 lg:mb-2 space-y-[7px] w-full hidden lg:block"
@@ -196,7 +175,7 @@ function RecruiterOne({ index, desc }) {
                       whileInView="show"
                       viewport={{ once: true, amount: 0.7 }}
                     >
-                      {[Bun, Docker, Next, pnpm, PostgreSQL, Redis, Vercel].map((img, i) => (
+                      {[Bun, Docker, Next, pnpm, PostgreSQL, Redis, Vercel,Bun].map((img, i) => (
                         <motion.img key={i} variants={item} src={img} alt="logo" />
                       ))}
                     </motion.div>

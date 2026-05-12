@@ -89,7 +89,7 @@ const letter = {
 };
     return (
         <>
-            <section className=' px-3 md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
+            <section className=' px-2 md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
                 <div className='container'>
                     <div className=''>
                          <h1 className=' developer_text text-[28px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
@@ -122,10 +122,10 @@ const letter = {
                             spaceBetween={20}
                             slidesPerView={1.1}
                             loop={true}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: false,
+                            // }}
                             
                             breakpoints={{
                                 640: {
