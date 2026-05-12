@@ -9,21 +9,27 @@ import pnpm from "../../assets/Images/rsection (4).svg";
 import PostgreSQL from "../../assets/Images/rsection (1).svg";
 import Redis from "../../assets/Images/rsection (2).svg";
 import Vercel from "../../assets/Images/rsection (3).svg";
+import new1 from "../../assets/Images/new1 (1).svg";
+import new2 from "../../assets/Images/new1 (2).svg";
+import new3 from "../../assets/Images/new1 (3).svg";
+import new4 from "../../assets/Images/new1 (4).svg";
+import new5 from "../../assets/Images/new1 (5).svg";
+import new6 from "../../assets/Images/new1 (6).svg";
 function WebApp({ single }) {
     const logos = [
-        Bun,
-        Docker,
-        Next,
-        pnpm,
-        PostgreSQL,
-        Redis,
-        Vercel,
-        Bun,
-        Docker,
-        Next,
-        pnpm,
-        PostgreSQL,
-        Redis,
+        new1,
+        new2,
+        new3,
+        new4,
+        new5,
+         new6,
+        new1,
+        new2,
+        new3,
+        new4,
+        new5,
+         new6,
+        
     ];
     return (
         <section className='lato-regular'>
@@ -70,16 +76,16 @@ function WebApp({ single }) {
                             <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}
-                                <div className="flex flex-wrap gap-[11px]  sm:hidden">
+                                <div className="flex flex-wrap gap-[11px]  sm:max-w-[450px] xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
                                         <img key={i} src={img} alt="logo" />
                                     ))}
                                 </div>
 
                                 {/* Desktop = 13 */}
-                                <div className="hidden sm:max-w-[640px] sm:flex flex-wrap gap-[11px]">
+                                <div className="hidden xl:max-w-[610px] xl:flex flex-wrap gap-[11px]">
                                     {logos.slice(0, 13).map((img, i) => (
-                                        <img key={i} src={img} alt="logo" />
+                                        <img key={i} src={img} alt="logo" className='' />
                                     ))}
                                 </div>
 
@@ -132,14 +138,14 @@ function WebApp({ single }) {
                                 <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}
-                                <div className="flex flex-wrap gap-[11px]  sm:hidden">
+                                <div className="flex flex-wrap gap-[11px]  xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
                                         <img key={i} src={img} alt="logo" />
                                     ))}
                                 </div>
 
                                 {/* Desktop = 13 */}
-                                <div className="hidden sm:max-w-[640px] sm:flex flex-wrap gap-[11px]">
+                                <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
                                     {logos.slice(0, 13).map((img, i) => (
                                         <img key={i} src={img} alt="logo" />
                                     ))}

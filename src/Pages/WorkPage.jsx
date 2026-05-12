@@ -9,7 +9,7 @@ function WorkPage() {
     <div className='   lg:pb-[15px]'>
         <PrivacyText  colorText='Work' first_letter="Curated" para="A showcase of my best and most impactful projects." />
     </div>
-  <div className='pb-[20px] work_class'>
+  <div className='lg:pb-[20px] work_class'>
      <WebApp />
    <WebApp />
    <WebApp single  />

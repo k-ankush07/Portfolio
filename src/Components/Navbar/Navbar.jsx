@@ -116,7 +116,7 @@ export default function Navbar() {
                 setActive("Home");
               }}
             >
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className="" />
             </Link>
           </div>
 
@@ -139,7 +139,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-1/2 mt-2 -translate-x-1/2 z-[200] motion-layer"
+            className="fixed top-0 left-1/2 mt-[16px] -translate-x-1/2 z-[200] motion-layer"
           >
             <motion.div
               initial={{ width: "150px" }}
@@ -155,7 +155,7 @@ export default function Navbar() {
             >
               {/* TOP NAV */}
               <div className="flex justify-center relative overflow-hidden">
-                <div className="flex items-center justify-center gap-1 px-3 py-[3px] min-h-[42px]">
+                <div className="flex items-center justify-center gap-1 px-3 py-[3px] h-[35px]">
                   {/* GREETING */}
                   <motion.span
                     initial={false}
@@ -191,7 +191,7 @@ export default function Navbar() {
                           setIsPinned(false);
                           navigate(item.path);
                         }}
-                        className="relative px-[14px] py-[6px] cursor-pointer rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-all duration-150"
+                        className="relative px-[14px] py-[3px] cursor-pointer rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-all duration-150"
                       >
                         {active === item.name && (
                           <motion.div
