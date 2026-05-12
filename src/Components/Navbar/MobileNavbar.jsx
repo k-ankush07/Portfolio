@@ -70,7 +70,7 @@ export default function MobileNavbar() {
           <motion.span
             animate={{
               opacity: showGreeting ? 1 : 0,
-              y: showGreeting ? 0 : -10,
+              y: showGreeting ? 0 : -30,
             }}
             className="absolute text-white text-sm font-medium"
           >

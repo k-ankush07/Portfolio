@@ -19,7 +19,7 @@ function Recent__Work() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.3, // quick animation
+        duration: 0.30, // quick animation
         ease: "easeOut", //  smooth feel
       },
     },

@@ -82,7 +82,7 @@ const letter = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.3,
+      duration: 0.30,
       ease: [0.25, 0.8, 0.25, 1],
     },
   },

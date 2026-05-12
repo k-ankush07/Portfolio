@@ -18,7 +18,7 @@ function BlogTopText() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.20, // quick animation
+        duration: 0.40, // quick animation
         ease: "easeOut", //  smooth feel
       },
     },

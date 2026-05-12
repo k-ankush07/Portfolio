@@ -67,7 +67,7 @@ function Tool() {
     hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1, y: 0,
-      transition: { duration: 0.3, ease: [0.25, 0.8, 0.25, 1] },
+      transition: { duration: 0.30, ease: [0.25, 0.8, 0.25, 1] },
     },
   };
 
