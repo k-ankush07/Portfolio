@@ -44,7 +44,7 @@ export default function BlogSection() {
               <img
                 src={post.image}
                 alt="blog"
-                className="w-full  rounded-[8px]   object-cover"
+                className="w-full  rounded-[8px]  cursor-pointer hover:scale-105  transition-all duration-300 object-cover"
               />
 
               {/* Badge */}
@@ -56,11 +56,11 @@ export default function BlogSection() {
             </div>
 
             {/* Content */}
-            <div className="pt-[13px] max-w-[350px] ">
-              <h3 className="text-[24px] text-start font-bold leading-[33px]">
+            <div className="pt-[5px] lg:pt-[13px] max-w-[350px] ">
+              <h3 className=" text-[20px] leading-[25px] lg:text-[24px] text-start font-bold lg:leading-[33px]">
                 {post.title}
               </h3>
-              <p className="text-[16px] text-start leading-[24px] lg:pt-[7px] text-[#BDBDBD]">
+              <p className="text-[16px]  text-start lg:leading-[24px] lg:pt-[7px] text-[#BDBDBD]">
                 {post.desc.split(" ").slice(0, 12).join(" ")}
                   {post.desc.split(" ").length > 12 && " ..."}
               </p>
