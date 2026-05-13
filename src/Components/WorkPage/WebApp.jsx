@@ -16,6 +16,7 @@ import new4 from "../../assets/Images/new1 (4).svg";
 import new5 from "../../assets/Images/new1 (5).svg";
 import new6 from "../../assets/Images/new1 (6).svg";
 import ProjectTitle from './ProjectTitle';
+import { Link } from 'react-router-dom';
 function WebApp({ single }) {
     const logos = [
        
@@ -48,24 +49,6 @@ function WebApp({ single }) {
                                 <p className='text-[#BDBDBD] text-[12px]  lg:text-[14px] leading-[24px]'>01-Web App</p>
                                 <p className='border-[1px] border-[#8F74BF54] text-[#FFAF7B] text-[10px] leading-[14px] lg:text-[12px] lg:leading-[18px] px-[9px] py-[4px] rounded-[8px]'>Q4 2024</p>
                             </div>
-                            {/* <div
-                                className="flex items-center   pt-[9px]  gap-2 sm:gap-3 text-white flex-wrap">
-                                <img
-                                    src={shopify}
-                                    alt="shopify logo"
-                                    className="h-[32px] w-[28px] sm:h-[42px] sm:w-[37px] flex-shrink-0"
-                                />
-                                <h1
-                                    className=" text-[26px] lg:text-[40px] font-bold leading-[48px] text-left lg:text-left"
-                                >
-                                    Recruiter
-                                    <span
-                                        className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block " >
-                                        One
-                                    </span>
-
-                                </h1>
-                            </div> */}
                             <ProjectTitle logo={shopify} title="Recruiter"  highlight =" One" />
                         </div>
                         <div className=' h-0 lg:h-[28px] flex  items-center'> <div className=" hidden lg:block h-[1px] w-full  bg-white/10"></div></div>
@@ -76,7 +59,9 @@ function WebApp({ single }) {
                         </div>
 
                         <div className=' pt-[16px] lg:pt-0 lg:pr-[57px]'>
+                           <Link to="/work-Detail">
                             <ViewDetail />
+                           </Link>
                             <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}
@@ -108,27 +93,7 @@ function WebApp({ single }) {
                                     <p className='text-[#BDBDBD] text-[12px]  lg:text-[14px] leading-[24px]'>01-Web App</p>
                                     <p className='border-[1px] border-[#8F74BF54] text-[#FFAF7B] text-[10px] leading-[14px] lg:text-[12px] lg:leading-[18px] px-[9px] py-[4px] rounded-[8px]'>Q4 2024</p>
                                 </div>
-                                <div
-                                    className="flex items-center gap-2   sm:gap-3 text-white    flex-wrap"
-                                  
-                                >
-                                    <img
-                                        src={shopify}
-                                        alt="shopify logo"
-                                        className="h-[32px] w-[28px] sm:h-[42px] sm:w-[37px] flex-shrink-0"
-                                    />
-                                    <h1
-                                        className="text-[26px] lg:text-[40px] font-bold  leading-[48px] text-left lg:text-left"
-                                    >
-                                        Recruiter
-                                        <span
-                                            className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
-                                           
-                                        >
-                                            One
-                                        </span>
-                                    </h1>
-                                </div>
+                                 <ProjectTitle logo={shopify} title="Recruiter"  highlight =" One" />
                             </div>
 
                             <div className=' h-0 lg:h-[28px] flex  items-center'> <div className="hidden lg:block h-[1px] w-full  bg-white/10"></div></div>
@@ -138,7 +103,9 @@ function WebApp({ single }) {
                                 <img src={smallicon} alt="icon" />
                             </div>
                             <div className=' pt-[16px]  lg:pt-0 lg:pl-[57px]'>
-                                <ViewDetail />
+                               <Link to="/work-Detail">
+                            <ViewDetail />
+                           </Link>
                                 <div className="pt-[20px] lg:pt-[24px]">
 
                                 {/* Mobile = 8 */}

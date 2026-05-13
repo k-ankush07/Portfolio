@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 import TermsPage from "./Pages/TermsPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
 import WorkPage from "./Pages/WorkPage.jsx";
+import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/terms&condition" element={<TermsPage />} />
         <Route path="/work" element={<WorkPage />} />
+        <Route path="/work-Detail" element={<WorkDetailPage />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />
