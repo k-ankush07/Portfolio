@@ -4,19 +4,19 @@ import { Paragraph, Heading } from "./WorkTypo";
 import image85 from "../../assets/Images/image 85.svg"
 function Challenges() {
   return (
-     <section className='pt-[40px]'>
+     <section className='pt-[20px] px-2 sm:px-0 lg:pt-[40px]'>
             
-                <div className=' flex'>
+                <div className=' lg:flex'>
 
 
                     <SectionHeader number="05" title="Challenges" />
 
-                    <div className=' pt-[40px] pb-[40px] w-[67%] border-t border-b border-l border-[#FFFFFF]/10  pl-[51px]'>
+                    <div className=' pb-[20px] lg:pt-[40px] lg:pb-[40px] lg:pl-[51px] lg:w-[67%] lg:border-t border-b lg:border-l border-[#FFFFFF]/10  '>
                        
                        <img src={image85} alt="image" className='' />
                        
                         </div>
-                    </div>
+                    </div>  
 
           
         </section>

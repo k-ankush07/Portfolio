@@ -25,7 +25,6 @@ function WebApp({ single }) {
          new1,
           new5,
         new4,
-       
          new6,
         new1,
         new2,
@@ -67,7 +66,7 @@ function WebApp({ single }) {
                                 {/* Mobile = 8 */}
                                 <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  sm:max-w-[450px] xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
-                                        <img key={i} src={img} alt="logo" />
+                                        <img key={i} src={img} alt="logo"  className=''/>
                                     ))}
                                 </div>
 

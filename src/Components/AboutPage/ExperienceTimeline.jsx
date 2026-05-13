@@ -97,7 +97,7 @@ function ExperienceTimeline() {
         ["0%", "94%"]
     );
     const smoothLineHeight = useSpring(lineHeight, {
-  stiffness: 50,
+  stiffness: 45,
   damping: 20,
   mass: 0.5,
 });

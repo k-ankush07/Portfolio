@@ -16,7 +16,7 @@ function Blogs() {
        >
                 <div className='border-[2px] border-[#292929] rounded-[8px]   w-[100%] '>
                   
-                      <div className={`flex items-center justify-between pt-5 pb-[11px] px-4 lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
+                      <div className={`flex items-center justify-between pt-[16px] pb-[11px] pl-[18px] pr-[20px] lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
                         `}>
                         <h1 className='text-[#FFFFFF]  text-[16px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
@@ -37,7 +37,7 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex  justify-center items-end px-2 pb-[25px] transition-all duration-400
+                    <div className={`flex w-[100%] justify-center items-end px-[93px] sm:px-4 xl:px-[66px] pb-[20px] transition-all duration-400
                          ${isHovered ? "scale-105" : "scale-100"} `}>
                          <img src={fullimage} alt='image' className='w-[288px]' />
                      

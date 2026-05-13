@@ -21,14 +21,14 @@ function Modern_Scalable() {
   return (
     <>
    
-      <section className="pt-[60px] md:pt-[100px] ">
+      <section className="pt-[60px] lg:pt-[100px] ">
         <div className="container">
           {/* <div className="  "> */}
 
             <div className="  pt-[60px] lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-white overflow-hidden  ">
            
 
-              <div className="absolute inset-0  top-[250px] md:top-[300px] lg:top-[270px] flex justify-center items-center opacity-90"
+              <div className="absolute inset-0  top-[250px] md:top-[370px] lg:top-[270px] flex justify-center items-center opacity-90"
                style={{ pointerEvents: "none" }}
               >
                 {/* <div className=""> */}
@@ -93,7 +93,7 @@ function Modern_Scalable() {
                
 
                 {/* Buttons */}
-                <div className={` pt-[20px]  pb-[88px] xl:pb-0   lg:pt-[43px] flex justify-center  gap-[10px]  items-center transition-all duration-700 ease-out
+                <div className={` pt-[25px]  pb-[88px] xl:pb-0   lg:pt-[43px] flex justify-center  gap-[10px]  items-center transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
 
                   {/* Main Button */}
