@@ -59,7 +59,7 @@ function WebApp({ single }) {
                                 </div>
 
                                 {/* Desktop = 13 */}
-                                <div className="hidden xl:max-w-[610px] xl:flex flex-wrap gap-[11px]">
+                                <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
                                     {logos.slice(0, 13).map((img, i) => (
                                         <img key={i} src={img} alt="logo" className='' />
                                     ))}
@@ -95,17 +95,18 @@ function WebApp({ single }) {
                            </Link>
                                 <div className="pt-[20px] lg:pt-[24px]">
 
+                               
                                 {/* Mobile = 8 */}
-                                <div className="flex flex-wrap gap-[6px] lg:gap-[11px]  xl:hidden">
+                                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  sm:max-w-[450px] xl:hidden">
                                     {logos.slice(0, 8).map((img, i) => (
-                                        <img key={i} src={img} alt="logo" />
+                                        <img key={i} src={img} alt="logo"  className=''/>
                                     ))}
                                 </div>
 
                                 {/* Desktop = 13 */}
                                 <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
                                     {logos.slice(0, 13).map((img, i) => (
-                                        <img key={i} src={img} alt="logo" />
+                                        <img key={i} src={img} alt="logo" className='' />
                                     ))}
                                 </div>
 

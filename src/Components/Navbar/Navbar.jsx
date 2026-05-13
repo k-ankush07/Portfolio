@@ -107,7 +107,7 @@ export default function Navbar() {
 
         <div className="h-[72px] bg-[#000000]  hidden md:block text-white relative">
           {/* LEFT LOGO */}
-          <div className="absolute top-5 z-50">
+          <div className="absolute top-[25px] z-50">
             <Link
               to="/"
               onClick={() => {
@@ -121,7 +121,7 @@ export default function Navbar() {
           </div>
 
           {/* RIGHT ICON */}
-          <div className="absolute top-5 right-0 z-50">
+          <div className="absolute top-[23px] right-0 z-50">
             <Link
               to="/contact"
               onClick={() => {
@@ -139,7 +139,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-1/2 mt-[16px] -translate-x-1/2 z-[200] motion-layer"
+            className="fixed top-[16px] left-1/2  -translate-x-1/2 z-[200] motion-layer"
           >
             <motion.div
               initial={{ width: "150px" }}
@@ -151,7 +151,7 @@ export default function Navbar() {
                   : "376px",
               }}
               transition={{ duration: 0.35 }}
-              className="bg-[rgba(38,38,38,0.92)] backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] motion-layer"
+              className="bg-[#191919] backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] motion-layer"
             >
               {/* TOP NAV */}
               <div className="flex justify-center relative overflow-hidden">
@@ -191,12 +191,12 @@ export default function Navbar() {
                           setIsPinned(false);
                           navigate(item.path);
                         }}
-                        className="relative px-[14px] py-[3px] cursor-pointer rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-all duration-150"
+                        className="relative px-[14px] py-[3px]  cursor-pointer rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-all duration-150"
                       >
                         {active === item.name && (
                           <motion.div
                             layoutId="active-pill"
-                            className="absolute inset-0 bg-white/15 rounded-full"
+                            className="absolute inset-0 bg-[#313131] rounded-full"
                             transition={{
                               type: "tween",
                               ease: "linear",
@@ -206,10 +206,10 @@ export default function Navbar() {
                         )}
 
                         <span
-                          className={`relative z-10 ${
+                          className={`relative z-10 text-[16px] leading-[24px]  ${
                             active === item.name
-                              ? "text-white"
-                              : "text-gray-400"
+                              ? "text-[#FFFFFF]"
+                              : "text-[#BDBDBD]"
                           }`}
                         >
                           {item.name}
