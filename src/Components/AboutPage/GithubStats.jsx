@@ -1,10 +1,8 @@
-
-
 import React from "react";
 import gitbottomblur from "../../assets/Images/gitbottomblur.svg";
 
 function GithubStats({ githubData = {} }) {
-  console.log(githubData,"jksdcb");
+
   
   const stats = [
     {

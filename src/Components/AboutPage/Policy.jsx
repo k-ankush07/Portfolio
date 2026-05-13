@@ -15,7 +15,7 @@ function Policy({
 }) {
   return (
     <section
-      className="sticky top-15 flex items-center lg:pb-[20px]"
+      className="sticky top-20 flex items-center lg:pb-[20px]"
       style={{ zIndex: 10 }}
     >
       <div className="container">

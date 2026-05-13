@@ -12,7 +12,7 @@ function SkillAndMordenPage() {
       <section className='' >
         <div className='container'>
         
-            <div className='  pb-[10px] pt-[20px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
+            <div className=' xl:-mt-[49px]  pb-[10px] pt-[20px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
               <Skills />
               {/* <SkillsSlick /> */}
                

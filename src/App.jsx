@@ -16,7 +16,6 @@ import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
 
 function App() {
   const location = useLocation();
-
   const [displayLocation, setDisplayLocation] = useState(location);
   const [isLoading, setIsLoading] = useState(false);
 

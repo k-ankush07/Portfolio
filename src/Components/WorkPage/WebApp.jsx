@@ -19,20 +19,8 @@ import ProjectTitle from './ProjectTitle';
 import { Link } from 'react-router-dom';
 function WebApp({ single }) {
     const logos = [
-       
-        new2,
-        new3,
-         new1,
-          new5,
-        new4,
-         new6,
-        new1,
-        new2,
-        new3,
-        new4,
-        new5,
-         new6,
-        
+        new2,new3,new1,new5,new4,new6,
+        new1,new2,new3,new4,new5,new6,
     ];
     return (
         <section className='lato-regular'>
