@@ -15,21 +15,8 @@ import Challenges from './Challenges';
 import Learned from './Learned';
 function WorkDetail() {
     const logos = [
-
-        new2,
-        new3,
-        new1,
-        new5,
-        new4,
-
-        new6,
-        new1,
-        new2,
-        new3,
-        new4,
-        new5,
-        new6,
-
+        new2,new3,new1,new5,new4,new6,
+        new1,new2,new3,new4,new5,new6,
     ];
     return (
         <section className='pt-[96px] lg:pt-[100px] lato-regular'>

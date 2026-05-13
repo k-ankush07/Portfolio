@@ -37,9 +37,9 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex w-[100%] justify-center items-start px-[93px] sm:px-[10px] xl:px-[66px] pb-[20px] transition-all duration-400
-                        ${isHovered ? "scale-[1.02]" : "scale-100"}`}>
-                         <img src={fullimage} alt='image' className='' />
+                    <div className={`flex w-[100%] justify-center items-start px-[93px] sm:px-[10px] xl:px-[66px] pb-[20px] 
+                      `}>
+                         <img src={fullimage} alt='image' className={` w-[100%] transition-all duration-400  ${isHovered ? "scale-105" : "scale-100"}`} />
                      
                     </div>
                   
