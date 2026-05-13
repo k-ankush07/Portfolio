@@ -41,9 +41,14 @@ function ToolWeTrust() {
                     <Swiper
                         modules={[Autoplay]}
                         slidesPerView={4}
+                        //  slidesPerView={2} 
                         spaceBetween={20}
                         centeredSlides={true}
                         loop={true}
+                         breakpoints={{
+        480: { slidesPerView: 3 },   // small screens
+        1280: { slidesPerView: 4 },   // md and above
+    }}
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,
@@ -87,7 +92,7 @@ function ToolWeTrust() {
                         `}>
 
                         <h1
-                            className={`text-[#FFFFFF] text-[16px] lg:text-[20px] font-bold 
+                            className={`text-[#FFFFFF] text-[16px] sm:text-[13px] lg:text-[18px] xl:text-[20px] font-bold 
                            
                         `}
                         >

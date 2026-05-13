@@ -14,11 +14,11 @@ function Blogs() {
           onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}    
        >
-                <div className='border-[2px] border-[#292929] rounded-[8px]   w-[100%] '>
+                <div className='border-[2px] border-[#292929] rounded-[8px]   w-[100%]  overflow-hidden'>
                   
                       <div className={`flex items-center justify-between pt-[16px] pb-[11px] pl-[18px] pr-[20px] lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
                         `}>
-                        <h1 className='text-[#FFFFFF]  text-[16px] lg:text-[20px] font-bold'>Latest Blogs & Insights</h1>
+                        <h1 className='text-[#FFFFFF]  text-[16px] sm:text-[13px] lg:text-[18px]  xl:text-[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
                           
         <motion.img
@@ -37,9 +37,9 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex w-[100%] justify-center items-end px-[93px] sm:px-4 xl:px-[66px] pb-[20px] transition-all duration-400
-                         ${isHovered ? "scale-105" : "scale-100"} `}>
-                         <img src={fullimage} alt='image' className='w-[288px]' />
+                    <div className={`flex w-[100%] justify-center items-start px-[93px] sm:px-[10px] xl:px-[66px] pb-[20px] transition-all duration-400
+                        ${isHovered ? "scale-[1.02]" : "scale-100"}`}>
+                         <img src={fullimage} alt='image' className='' />
                      
                     </div>
                   
