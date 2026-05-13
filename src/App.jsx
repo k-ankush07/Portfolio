@@ -55,10 +55,10 @@ function App() {
         <Route path="/attribution" element={<Attribution />} /> */}
       </Routes>
 
-      {/* LOADING OVERLAY (only center, not full black) */}
+      
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="px-6 py-3 bg-black/60 backdrop-blur-md  text-white text-sm">
+        <div className=" flex items-center justify-center pointer-events-none">
+          <div className="">
 
           </div>
         </div>
