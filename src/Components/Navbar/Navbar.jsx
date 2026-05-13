@@ -105,7 +105,7 @@ export default function Navbar() {
       <div className="container">
         <MobileNavbar />
 
-        <div className="h-[72px]  hidden md:block text-white relative">
+        <div className="h-[72px] bg-[#000000]  hidden md:block text-white relative">
           {/* LEFT LOGO */}
           <div className="absolute top-5 z-50">
             <Link

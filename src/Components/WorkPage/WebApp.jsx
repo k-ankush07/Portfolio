@@ -58,7 +58,7 @@ function WebApp({ single }) {
                             <img src={smallicon} alt="icon" />
                         </div>
 
-                        <div className=' pt-[16px] lg:pt-0 lg:pr-[57px]'>
+                        <div className=' pt-[16px] lg:pt-0 lg:pr-[57px]  '>
                            <Link to="/work-Detail">
                             <ViewDetail />
                            </Link>
