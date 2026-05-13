@@ -157,7 +157,7 @@ return (
       height: `${size.height}px`,
     }}
   >
-    <Globe
+    {/* <Globe
       ref={globeRef}
       width={size.width}
       height={size.height}
@@ -191,7 +191,50 @@ return (
       labelSize={1.7}
       labelDotRadius={0.25}
       labelColor={() => "#ffffff"}
-    />
+    /> */}
+
+    <Globe
+  ref={globeRef}
+  width={size.width}
+  height={size.height}
+
+  backgroundColor="rgba(0,0,0,0)"
+  animateIn={false}
+
+  globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+
+  // REMOVE DEFAULT LINES
+  showGraticules={false}
+
+  // OPTIONAL CLEANER RENDER
+  rendererConfig={{ antialias: true, alpha: true }}
+
+  showAtmosphere={true}
+  atmosphereColor="#202940"
+  atmosphereAltitude={0.15}
+
+  arcsData={arcs}
+  arcColor={() => "#60a5fa"}
+  arcStroke={0.5}
+  arcAltitude={0.22}
+  arcDashLength={0.35}
+  arcDashGap={0.18}
+  arcDashAnimateTime={4000}
+
+  pointsData={cities}
+  pointLat="lat"
+  pointLng="lng"
+  pointColor={() => "#60a5fa"}
+  pointRadius={0.28}
+
+  labelsData={cities}
+  labelLat="lat"
+  labelLng="lng"
+  labelText="label"
+  labelSize={1.7}
+  labelDotRadius={0.25}
+  labelColor={() => "#ffffff"}
+/>
   </div>
 );
 
