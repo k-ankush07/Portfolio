@@ -8,6 +8,11 @@ import new4 from "../../assets/Images/new1 (4).svg";
 import new5 from "../../assets/Images/new1 (5).svg";
 import new6 from "../../assets/Images/new1 (6).svg";
 import Built from './Built';
+import WorksFull from './WorksFull';
+import Backend_Architecture from './Backend_Architecture';
+import Backend_ArchitectureSecond from './Backend_ArchitectureSecond';
+import Challenges from './Challenges';
+import Learned from './Learned';
 function WorkDetail() {
     const logos = [
 
@@ -47,67 +52,40 @@ function WorkDetail() {
                     {/* 2nd section skills */}
                     <div className='flex'>
                         <div className='  border-b  border-[#FFFFFF]/10 lg:w-[60%]  pr-[80px] pt-[32px] pb-[47px]'>
-                            {/* <div className='flex flex-wrap justify-between '>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>TECH STACK</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>Web App</p>
-                                </div>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>ROLE</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>Full-stack Developer</p>
-                                </div>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>Built</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>Q4 2024</p>
-                                </div>
-                            </div>
-                            <div className='flex  flex-wrap justify-between pt-[24px] '>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>UPDATED</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>Q4 2026</p>
-                                </div>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>VISIT</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>academy.aayushbharti.in</p>
-                                </div>
-                                <div className=''>
-                                    <p className='text-[#BDBDBD] text-[10px] leading-[24px]'>SOURCE</p>
-                                    <p className='text-[14px] leading-[24px] font-semibold text-[#FFFFFF]'>GitHub</p>
-                                </div>
-                            </div> */}
+                           
 
                            <div className='flex justify-between '>
                              <div className='flex flex-col gap-[24px] '>
                                 <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>TECK STACK</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>Web App</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>Web App</p>
                                 </div>
                                 <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>UPDATED</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>Q4 2024</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>Q4 2024</p>
                                 </div>
                               
                             </div>
                              <div className='flex flex-col gap-[24px] '>
                                   <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>ROLE</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>Full-stack Developer</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>Full-stack Developer</p>
                                 </div>
                                
                                 <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>VISIT</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>academy.aayushbharti.in</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>academy.aayushbharti.in</p>
                                 </div>
                                 
                             </div>
                              <div className='flex flex-col gap-[24px] '>
                                  <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>BUILT</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>Q4 2024</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>Q4 2024</p>
                                 </div>
                                 <div>
                                     <p className=' text-[10px] leading-[24px] text-[#BDBDBD] '>SOURCE</p>
-                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF]'>GitHub</p>
+                                    <p className='text-[14px] leading-[24px] text-[#FFFFFF] font-semibold'>GitHub</p>
                                 </div>
                             </div>
                            </div>
@@ -139,6 +117,11 @@ function WorkDetail() {
                         </div>
                     </div>
                     <Built />
+                    <WorksFull />
+                    <Backend_Architecture />
+                    <Backend_ArchitectureSecond />
+                    <Challenges />
+                    <Learned />
 
 
                 </div>

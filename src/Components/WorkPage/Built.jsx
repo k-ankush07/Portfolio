@@ -3,7 +3,7 @@ import React from 'react'
 function Built() {
   return (
     <section>
-        <div className='conatiner'>
+        
             <div className=' flex'>
 
                 <div className=' pt-[42px] pb-[37px] lg:w-[33%]  border-b border-[#FFFFFF]/10'>
@@ -19,7 +19,7 @@ function Built() {
                 </div>
             </div>
 
-        </div>
+     
     </section>
   )
 }
