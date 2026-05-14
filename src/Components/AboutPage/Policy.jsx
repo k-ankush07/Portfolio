@@ -66,7 +66,7 @@ function Policy({
               </p>
 
               {/* Cards */}
-              <div className=" pt-[10px] sm:pt-[15px] lg:pt-[24px] space-y-[10px] ">
+              <div className=" privacy_outter pt-[10px] sm:pt-[15px] lg:pt-[24px] flex flex-col gap-[10px] ">
                 {cards.map((card, index) => (
                   <motion.div
                     key={index}

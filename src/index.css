@@ -335,6 +335,10 @@ opacity: 0;
 .PrivacyPage-page .last-sections {
     padding: 0 !important;
 }
+  .PrivacyPage-page .privacy_outter{
+padding-top: 15px;
+
+      }
 
 /* work section */
 @media (min-width:320px) and (max-width:374px){
