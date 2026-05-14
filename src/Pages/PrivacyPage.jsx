@@ -14,7 +14,7 @@ import privacyicon5 from "../assets/Images/privacyicon (5).svg"
 import PrivacyText from '../Components/BlogPage/PrivacyText';
 function PrivacyPage() {
   return (
-    <div className='lato-regular'>
+    <div className='lato-regular  PrivacyPage-page '>
         {/* <Privacy   colorText="Policy"  first_letter="Privacy" para="Your privacy is our priority." /> */}
         <PrivacyText  colorText='Policy' first_letter="Privacy" para="Your privacy is our priority." />
      <Policy

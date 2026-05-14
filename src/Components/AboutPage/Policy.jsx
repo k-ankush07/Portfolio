@@ -103,7 +103,7 @@ function Policy({
 
               {/* Bottom Section */}
               {(query || lastdate) && (
-                <div className="flex flex-row justify-between items-end mt-[10px] gap-4">
+                <div className=" last-sections lg:pb-[14px] flex flex-row justify-between items-end mt-[10px] gap-4">
 
                   {/* Left */}
                   {query && (

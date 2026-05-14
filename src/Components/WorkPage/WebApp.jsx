@@ -46,7 +46,7 @@ function WebApp({ single }) {
                         </div>
 
                         <div className=' pt-[16px] lg:pt-0 lg:pr-[57px]  '>
-                           <Link to="/work-Detail">
+                           <Link to="/work-detail">
                             <ViewDetail />
                            </Link>
                             <div className="pt-[20px] lg:pt-[24px]">

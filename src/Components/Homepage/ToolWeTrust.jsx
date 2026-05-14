@@ -36,7 +36,7 @@ function ToolWeTrust() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className=' about_classinner border-[2px] border-[#292929] rounded-[8px]   pt-[39px] pb-[16px] lg:pt-[70px] lg:pb-[20px]  w-[100%]  '>
+            <div className=' about_classinner border-[1px] border-[#292929] rounded-[8px]   pt-[39px] pb-[16px] lg:pt-[70px] lg:pb-[20px]  w-[100%]  '>
                 <div className=' about_child flex  justify-center items-end '>
                     <Swiper
                         modules={[Autoplay]}
