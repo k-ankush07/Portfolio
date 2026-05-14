@@ -58,7 +58,7 @@ function Nextproject() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className=" text-next sm:w-full text-[18px] lg:text-[24px] text-center font-bold"
+              className=" text-next sm:w-full text-[18px] sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
             >
               Let's work together on your next project
             </motion.h2>
@@ -67,7 +67,7 @@ function Nextproject() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-[#BDBDBD] text-[12px] lg:text-[16px] text-center"
+              className="text-[#BDBDBD] text-[12px] sm:text-[16px] leading-[12px] sm:leading-[24px] text-center"
             >
               Open communication, async updates, zero surprises
             </motion.p>

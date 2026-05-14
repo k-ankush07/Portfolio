@@ -28,7 +28,7 @@ function Recent__Work() {
   return (
     <>
       <div className="text-center text-[#FFFFFF] pt-[40px] lg:pb-[33px]">
-        <div className="Recent_text text-[30px] md:text-[44px] font-bold">
+        <div className="Recent_text text-[30px] md:text-[44px] sm:leading-[76px] font-bold">
           Recent{" "}
 
           <motion.span
@@ -52,7 +52,7 @@ function Recent__Work() {
         </div>
 
         <div className="flex justify-center">
-          <p className="text-[14px] md:text-[18px] max-w-[258px] sm:max-w-[400px] lg:max-w-full">
+          <p className="text-[14px] sm:text-[18px] leading-[20px] sm:leading-[27px] max-w-[258px] sm:max-w-[400px] lg:max-w-full">
             Take a look at some of the applications and websites I’ve recently developed.
           </p>
         </div>

@@ -124,7 +124,7 @@ function RecruiterOne({ index, desc }) {
                     >
                       <motion.p
                         variants={itemVariants}
-                        className="text-[#BDBDBD] leading-relaxed text-[14px] sm:text-[15px] lg:text-[16px] tracking-wide"
+                        className="text-[#BDBDBD] leading-[24px] text-[14px] "
 
 
                       >
@@ -162,7 +162,7 @@ function RecruiterOne({ index, desc }) {
                               ease: 'easeInOut',
                             }}
                           />
-                          <span className="text-[#BDBDBD] text-[14px] group-hover:font-normal">
+                          <span className="text-[#BDBDBD] text-[14px] leading-[24px] ">
                             Lorem ipsum dolor sit amet consectetur.
                           </span>
                         </motion.div>

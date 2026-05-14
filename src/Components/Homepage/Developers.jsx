@@ -92,7 +92,7 @@ const letter = {
             <section className=' px-2 md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
                 <div className='container'>
                     <div className=''>
-                         <h1 className=' developer_text text-[28px] xl:text-[40px] font-bold text-[#FFFFFF] text-center'>
+                         <h1 className=' developer_text text-[30px] xl:text-[44px] leading-[57px] font-bold text-[#FFFFFF] text-center'>
                           Loved by 10,000+ {' '}
                         
                           <motion.span
@@ -111,7 +111,7 @@ const letter = {
                         </h1>
 
                         <div className='flex justify-center'>
-                            <p className='text-[#BDBDBD] text-[14px] lg:text-[18px]  max-w-[550px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
+                            <p className='text-[#BDBDBD] text-[14px] lg:text-[18px] leading-[24px] lg:leading-[27px]  max-w-[550px]  xl:w-[41%] text-center '>Join thousands of developers who have transformed their coding
                                 workflow with AI-powered assistance.</p>
                         </div>
 
@@ -122,10 +122,10 @@ const letter = {
                             spaceBetween={20}
                             slidesPerView={1.1}
                             loop={true}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: false,
+                            // }}
                             
                             breakpoints={{
                                 640: {

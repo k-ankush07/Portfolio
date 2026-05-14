@@ -116,10 +116,10 @@ function FullStack() {
                                 className='text-center mt-4'>
                                 <motion.h1
                                     variants={textItem}
-                                    className='text-[21px] lg:text-[24px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    className='text-[21px] lg:text-[24px] leading-[42px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
                                 <motion.p
                                     variants={textItem}
-                                    className=' text-[12px] lg:text-[14px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                                    className=' text-[12px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
                                 <div className="flex justify-center">
@@ -129,7 +129,7 @@ function FullStack() {
                                         <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
                                         {/* CONTENT */}
-                                        <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] xl:px-4 text-white">
+                                        <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] leading-[15px] lg:leading-[18px] xl:px-4 text-white">
 
                                             <span className="text-[#FFAF7B] px-1 py-1">
                                                 <FaLocationDot />
@@ -164,7 +164,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-[55px] mt-[17px] sm:px-15 xl:px-16 '>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-[55px] mt-[17px] sm:px-15 xl:px-16 text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] '>
                                     Hire Me
                                 </button></Link>
                             </div>
@@ -185,14 +185,14 @@ function FullStack() {
                                 >
                                     <motion.h1
                                         variants={textItem}
-                                        className='text-[#FFFFFF] font-bold text-[20px]'
+                                        className='text-[#FFFFFF] font-bold text-[18px] lg:text-[20px]'
                                     >
                                         Work
                                     </motion.h1>
 
                                     <motion.p
                                         variants={textItem}
-                                        className='text-[#BDBDBD]'
+                                        className='text-[#BDBDBD] text-[12px] lg:text-[14px]'
                                     >
                                         Osinski, Kohler and Bashirian 74-102565
                                     </motion.p>
@@ -204,8 +204,8 @@ function FullStack() {
                                         whileInView="show"
                                         viewport={{ once: true, amount: 0.3 }}>
                                         <motion.h1
-                                            variants={textItem} className='text-[#FFFFFF] text-[20px] font-bold'>Skills</motion.h1>
-                                        <motion.p variants={textItem} className='text-[#BDBDBD] text-[14px]'>Osinski, Kohler and Bashirian 74-102565</motion.p>
+                                            variants={textItem} className='text-[#FFFFFF] text-[18px]  lg:text-[20px] font-bold'>Skills</motion.h1>
+                                        <motion.p variants={textItem} className='text-[#BDBDBD] text-[12px] lg:text-[14px]'>Osinski, Kohler and Bashirian 74-102565</motion.p>
                                     </motion.div>
                                 </motion.div>
                                 <motion.div
@@ -224,14 +224,14 @@ function FullStack() {
                                                 y: -3
                                             }}
                                             whileTap={{ scale: 0.95 }}
-                                            className="px-3 py-1.5 rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54] cursor-pointer"
+                                            className="pt-[3px] pb-[4px] px-[10px]  rounded-[8px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#8F74BF54] cursor-pointer"
                                         >
                                             {itemText}
                                         </motion.div>
                                     ))}
                                 </motion.div>
                                 <div className='pt-[20px] lg:pt-[39px]'>
-                                    <h1 className='text-[#FFFFFF] text-[20px] font-bold mb-2 lg:mb-1'>Portfolio Links</h1>
+                                    <h1 className='text-[#FFFFFF] text-[18px] leading-[48px] lg:text-[20px] font-bold lg:mb-1'>Portfolio Links</h1>
 
                                     <motion.div
                                         className="flex gap-2"
@@ -268,12 +268,12 @@ function FullStack() {
                                 <div>
                                     <motion.h1
                                         variants={textItem}
-                                        className='text-[#FFFFFF] text-[20px] leading-[30px] font-bold max-w-[310px]'
+                                        className='text-[#FFFFFF] text-[18px] leading-[24px] lg:text-[20px] lg:leading-[30px] font-bold max-w-[282px] lg:max-w-[300px]'
                                     >
                                         Full-Stack Developer and a little bit of everything
                                     </motion.h1>
 
-                                    <div className='space-y-1 text-[#BDBDBD] text-[14px] leading-[24px] max-w-[400px]'>
+                                    <div className='space-y-1 text-[#BDBDBD] text-[12px] leading-[20px] lg:text-[14px] lg:leading-[24px] max-w-[400px]'>
 
                                         <motion.p variants={textItem} className=' pt-[16px] lg:pt-[24px]'>
                                             I'm Ankush Kumar, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
