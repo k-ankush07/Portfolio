@@ -74,7 +74,7 @@ function Profile() {
       variants={container}
     >
       <div className="container">
-        <div className="px-[19px] sm:px-0 ">
+        <div className="px-[19px] sm:px-2 md:px-0 ">
           <div className="border border-[#1f1c1c] rounded-[8px] overflow-hidden">
 
           {/* HEADER BG */}
@@ -185,7 +185,7 @@ function Profile() {
                     <motion.div
                       key={i}
                       variants={skillItem}
-                      className="px-3 py-1.5 rounded-[8px] text-[12px] leading-[18px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#2c273c]"
+                      className="pt-[3px] pb-[5px] px-[10px] rounded-[8px] text-[12px] leading-[18px] bg-[#8F74BF1A] text-[#FFAF7B] border border-[#2c273c]"
                     >
                       {skill}
                     </motion.div>

@@ -8,7 +8,7 @@ function Built() {
     <section>
 
       <motion.div
-        className='lg:flex px-2 sm:px-0'
+        className='lg:flex px-2 md:px-0'
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

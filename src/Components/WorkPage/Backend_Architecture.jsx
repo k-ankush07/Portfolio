@@ -11,7 +11,7 @@ function Backend_Architecture() {
     <section className='pt-[20px] lg:pt-[40px]'>
 
       <motion.div
-        className='px-2 sm:px-0 lg:flex'
+        className='px-2 md:px-0 lg:flex'
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

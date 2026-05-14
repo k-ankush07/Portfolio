@@ -67,7 +67,7 @@ function Nextproject() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-[#BDBDBD] text-[12px] sm:text-[16px] leading-[12px] sm:leading-[24px] text-center"
+              className="text-[#BDBDBD] text-[12px] sm:text-[16px] pt-[9px] leading-[12px] sm:leading-[24px] text-center"
             >
               Open communication, async updates, zero surprises
             </motion.p>

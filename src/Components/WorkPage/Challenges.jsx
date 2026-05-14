@@ -8,7 +8,7 @@ import image85 from "../../assets/Images/image 85.svg"
 
 function Challenges() {
   return (
-    <section className='pt-[20px] px-2 sm:px-0 lg:pt-[40px]'>
+    <section className='pt-[20px] px-2 md:px-0 lg:pt-[40px]'>
 
       <motion.div
         className='lg:flex'

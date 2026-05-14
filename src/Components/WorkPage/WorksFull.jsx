@@ -8,7 +8,7 @@ import { Paragraph, Heading } from "./WorkTypo";
 
 function WorksFull() {
     return (
-        <section className=' px-2 sm:px-0 pt-[10px] lg:pt-[40px]'>
+        <section className=' px-2 md:px-0 pt-[10px] lg:pt-[40px]'>
 
             <motion.div
                 className=' lg:flex'

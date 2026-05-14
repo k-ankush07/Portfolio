@@ -109,7 +109,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
 });
 
     return (
-        <section ref={sectionRef} className="relative  px-2 lg:px-0   ">
+        <section ref={sectionRef} className="relative  px-2 md:px-0   ">
             <div
                 className="container relative" >
 

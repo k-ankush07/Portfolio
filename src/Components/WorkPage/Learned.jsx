@@ -10,7 +10,7 @@ import image86 from "../../assets/Images/image 86.svg"
 
 function Learned() {
   return (
-    <section className='pt-[20px] px-2 sm:px-0 lg:pt-[40px]'>
+    <section className='pt-[20px] px-2 md:px-0 lg:pt-[40px]'>
 
       <motion.div
         className='lg:flex'
@@ -26,7 +26,7 @@ function Learned() {
         />
 
         <motion.div
-          className='pb-[20px] lg:pt-[38px] lg:pb-[40px] lg:pl-[51px] lg:w-[67%] lg:border-t border-b lg:border-l border-[#FFFFFF]/10'
+          className='pb-[20px] lg:pt-[38px] lg:pb-[40px] lg:pl-[51px]  lg:w-[67%] lg:border-t border-b lg:border-l border-[#FFFFFF]/10'
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}

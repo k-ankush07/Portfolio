@@ -29,7 +29,7 @@ function WebApp({ single }) {
 
 
 
-                    <div className=' relative px-2 pt-[40px] lg:pt-0 lg:px-0 lg:border-r-[1px]  lg:border-[#FFFFFF]/10 lg:w-[50%]'>
+                    <div className=' relative px-2 pt-[40px] lg:pt-0 md:px-0 lg:border-r-[1px]  lg:border-[#FFFFFF]/10 lg:w-[50%]'>
                         {/* top section  */}
                         <div className='lg:pr-[57px] '>
                             <div className='  flex justify-between'>
@@ -74,7 +74,7 @@ function WebApp({ single }) {
                     {/* 2nd  */}
 
                     {!single && (
-                        <div className=' relative  px-2 lg:px-0 pt-[40px] lg:pt-[220px]  lg:w-[50%]'>
+                        <div className=' relative  px-2 lg:px-0 pt-[40px] lg:pt-[211px]  lg:w-[50%]'>
                             <div className=' lg:pl-[58px]'>
                                 <div className='   flex justify-between'>
                                     <p className='text-[#BDBDBD] text-[12px]  lg:text-[14px] leading-[24px]'>01-Web App</p>

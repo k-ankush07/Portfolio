@@ -12,7 +12,7 @@ import image86 from "../../assets/Images/image 86.svg"
 function Backend_ArchitectureSecond() {
 
   return (
-    <section className='pt-[20px] px-2 sm:px-0 lg:pt-[40px]'>
+    <section className='pt-[20px] px-2 md:px-0 lg:pt-[40px]'>
 
       <motion.div
         className='lg:flex'

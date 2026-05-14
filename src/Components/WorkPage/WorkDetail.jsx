@@ -162,7 +162,7 @@ function WorkDetail() {
 
                     {/* top heading */}
                     <motion.div
-                        className='px-2 sm:px-0'
+                        className='px-2 md:px-0'
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
@@ -211,7 +211,7 @@ function WorkDetail() {
 
                     {/* details section */}
                     <motion.div
-                        className='lg:flex px-2 sm:px-0'
+                        className='lg:flex px-2 md:px-0'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
