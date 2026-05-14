@@ -29,7 +29,7 @@ function Web_Project() {
   return (
     <section className="px-2 md:px-0 xl:px-0 overflow-hidden" ref={sectionRef}>
       <div className="container">
-        <div className="flex justify-center pb-[20px] lg:pb-0 relative rounded-xl border border-white/10">
+        <div className="flex justify-center pb-[25px] lg:pb-0 relative rounded-xl border border-white/10">
 
           <div className="w-full relative   lg:pb-0 overflow-hidden">
 
@@ -51,9 +51,9 @@ function Web_Project() {
                     <li>• Reliable Support</li>
                   </ul>
                 </div>
-                <span className=" border-1 border-[#4E0FBF] animate-spread-left-bottom absolute left-4 -bottom-3 sm:-bottom-4 sm:left-[-10px] xl:-bottom-4  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-md flex items-center justify-center gap-[6px]">
-                  <span className="text-[#4e0fbf]">●</span>
-                  <h1 className="text-[8px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold">
+                <span className=" border-1 border-[#4E0FBF] animate-spread-left-bottom absolute left-3 -bottom-3 sm:-bottom-4 sm:left-[-10px] xl:-bottom-4  xl:left-1/2 xl:-translate-x-1/2 bg-[#8f74bf] text-white text-[16px] px-1 md:px-2 md:py-1 rounded-[5px] flex items-center justify-center gap-[6px]">
+                  <span className="text-[#4e0fbf] ">●</span>
+                  <h1 className="text-[9px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold ">
                     Why Choose Me
                   </h1>
                 </span>
@@ -117,9 +117,9 @@ function Web_Project() {
 
                   </ul>
                 </div>
-                <span className=" animate-spread-center-bottom bottom_text absolute left-4 -bottom-3 sm:left-[-22px] sm:-bottom-4  xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] border-1 border-[#D70216] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center gap-1">
+                <span className=" animate-spread-center-bottom bottom_text absolute left-3 -bottom-3 sm:left-[-22px] sm:-bottom-4  xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#d76d77] border-1 border-[#D70216] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-[5px] flex items-center gap-1">
                   <span className="text-[#d70216]">●</span>
-                  <p className="text-[8px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold">
+                  <p className="text-[9px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold">
                     Business Analytics
                   </p>
                 </span>
@@ -150,9 +150,9 @@ function Web_Project() {
                     </li>
                   </ul>
                 </div>
-                <span className=" border-1 border-[#00DD51] animate-spread-right-bottom absolute left-3 -bottom-3 sm:left-[-22px]  sm:-bottom-4 xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-md flex items-center  justify-center gap-1">
+                <span className=" border-1 border-[#00DD51] animate-spread-right-bottom absolute left-2 -bottom-3 sm:left-[-22px]  sm:-bottom-4 xl:-bottom-4 xl:left-1/2 xl:-translate-x-1/2 bg-[#14aa4b] text-white text-[14px] px-1 md:px-2 md:py-1 rounded-[5px] flex items-center  justify-center gap-1">
                   <span className="  text-[#00dd51]">●</span>
-                  <p className="text-[8px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold">Full Stack Developer</p>
+                  <p className="text-[9px] md:text-[14px] leading-[15px] lg:leading-[24px] font-bold">Full Stack Developer</p>
                 </span>
               </div>
 

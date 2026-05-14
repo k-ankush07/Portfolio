@@ -26,7 +26,7 @@ function Policy({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden px-2"
+          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden px-2 md:px-0"
         >
 
           {/* LEFT SIDE */}

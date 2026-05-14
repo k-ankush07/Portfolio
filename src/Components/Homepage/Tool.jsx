@@ -326,7 +326,7 @@ function Tool() {
                 ))}
               </motion.span>
             </h1>
-            <p className="text-[14px] lg:text-[18px] text-[#FFFFFF]  leading-[20px] lg:leading-[27px] max-w-[308px] lg:max-w-full">
+            <p className="text-[14px] lg:text-[18px] pt-[6px] sm:pt-0 text-[#FFFFFF]  leading-[20px] lg:leading-[27px] max-w-[308px] lg:max-w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit Suspendisse varius enim tristique.
             </p>
           </div>

@@ -32,7 +32,7 @@ function ToolWeTrust() {
 
 
     return (
-        <div className='about_class flex relative w-full md:w-[33.3%] mb-0 cursor-pointer'
+        <div className='about_class flex relative w-full xl:w-[33.3%] mb-0 cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -46,7 +46,7 @@ function ToolWeTrust() {
                         centeredSlides={true}
                         loop={true}
                          breakpoints={{
-        480: { slidesPerView: 3 },   // small screens
+        480: { slidesPerView: 5 },   // small screens
         1280: { slidesPerView: 4 },   // md and above
     }}
                         autoplay={{

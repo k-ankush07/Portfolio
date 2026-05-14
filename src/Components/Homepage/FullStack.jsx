@@ -96,7 +96,7 @@ function FullStack() {
     const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
     const socialIcons = [Overlay11, Overlay10, Overlay8, Overlay9];
     return (
-        <section className=' px-3 md:px-0 '>
+        <section className=' px-2 md:px-0 '>
 
             <div className='container '>
                 <div className='bg-[#000000] xl:flex   border  items-center  border-[#292929] rounded-[8px] relative pt-[29px] pb-[25px] pr-[28px] pl-[30px]  lg:py-0  lg:px-0 lg:pt-[39px] lg:pb-[38px] lg:pl-[40px] lg:pr-[59px]'>
@@ -175,7 +175,7 @@ function FullStack() {
 
                     <div className='md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%]'>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between sm:border-r-[1px]  border-gray-600 pr-[67px] pt-[32px] xl:pt-0 '>
+                        <div className=' sm:flex  justify-between md:border-r-[1px]  border-[#FFFFFF]/10 pr-[67px] pt-[32px] xl:pt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}
@@ -258,7 +258,7 @@ function FullStack() {
 
                         {/* 3rd section */}
                         <motion.div
-                            className='flex pt-[31px]  lg:justify-center items-center sm:pt-0 sm:pl-[67px]'
+                            className='flex pt-[31px]  lg:justify-center items-center md:pt-0 md:pl-[67px]'
                             variants={textContainer}
                             initial="hidden"
                             whileInView="show"

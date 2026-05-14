@@ -10,7 +10,7 @@ import {motion} from "framer-motion"
 function Blogs() {
         const [isHovered, setIsHovered] = useState(false);
   return (
-       <div className='flex relative w-full sm:w-[49%] md:w-[33.3%] cursor-pointer'
+       <div className='flex relative w-full sm:w-[49%] xl:w-[33.3%] cursor-pointer'
           onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}    
        >
@@ -37,7 +37,7 @@ function Blogs() {
                         </div>
                     </div>
                   
-                    <div className={`flex w-[100%] justify-center items-start px-[93px] sm:px-[10px] xl:px-[66px] pb-[20px] 
+                    <div className={`flex w-[100%] justify-center items-start px-[93px]  sm:px-[66px] pb-[20px] 
                       `}>
                          <img src={fullimage} alt='image' className={` w-[100%] transition-all duration-400  ${isHovered ? "scale-105" : "scale-100"}`} />
                      

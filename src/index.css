@@ -338,6 +338,17 @@ opacity: 0;
     padding: 17px 0 0 13px !important;
   }
 }
+@media (min-width : 320px) and (max-width : 424px){
+  .animate-spread-left-bottom{
+    left:15px;
+  }
+  .bottom_text{
+    left: 16px;
+  }
+  .animate-spread-right-bottom{
+     left: 16px;
+  }
+}
 @media (min-width: 320px) {
   .work_class .inner_work {
     padding: 17px 0 0 20px 
@@ -436,7 +447,7 @@ opacity: 0;
 }
 
 
-@media (max-width:767px) {
+@media (max-width:1024px) {
   .dolor_container {
     flex-wrap: wrap;
   }

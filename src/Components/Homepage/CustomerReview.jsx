@@ -8,7 +8,7 @@ function CustomerReview() {
 
   return (
     <div
-      className=" customer_class flex relative w-full sm:w-[49%] md:w-[33.3%] cursor-pointer group"
+      className=" customer_class flex relative w-full sm:w-[49%] xl:w-[33.3%] cursor-pointer group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -18,7 +18,7 @@ function CustomerReview() {
         <img
           src={customercard}
           alt=""
-          className={` card1-about cardsimp  absolute left-4  -top-14 sm:-top-8 lg:-top-10 xl:-top-16 w-[40%] transition-all duration-500 ease-out
+          className={` card1-about cardsimp  absolute left-4  -top-14 sm:-top-10 md:-top-14 lg:-top-16  w-[40%] transition-all duration-500 ease-out
             ${isHovered ? " translate-y-4 rotate-8 " : "translate-x-0 scale-100 translate-y-0 rotate-0"}
           `}
         />
