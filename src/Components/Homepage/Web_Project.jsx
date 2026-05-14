@@ -41,7 +41,7 @@ function Web_Project() {
 
               {/* Card 1 — starts center, spreads LEFT */}
               <div className={`relative  cards-width w-[33.3%] h-[100%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
-                <div className="bg-[#0e0c13] rounded-[5px] lg:rounded-[8px] w-full sm:w-[200px] pt-[13px] pl-[11px] pr-[15px] pb-[18px] lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px]  border border-white/10">
+                <div className="bg-[#8F74BF54]/30 rounded-[5px] lg:rounded-[8px] w-full sm:w-[200px] pt-[13px] pl-[11px] pr-[15px] pb-[18px] lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px]  border border-[#8F74BF54]">
                   {/* <img src={Line24} alt="lines" className="mb-3 w-full" /> */}
                   <div className="h-2 border-t border-dashed border-[#8F74BF] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-[8px] md:text-[12px] text-gray-300 font-bold space-y-3 sm:space-y-[10px]">
@@ -61,8 +61,8 @@ function Web_Project() {
 
               {/* Card 2 — starts center, spreads UP */}
               <div className={`relative cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end  ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
-                <div className="bg-[#1d0f10] w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
-                lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-white/10">
+                <div className="bg-[#D76D771A] w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
+                lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-[#D76D7754]">
                   {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
                   <div className="h-2 border-t border-dashed border-[#D76D77] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-gray-300 space-y-3 sm:space-y-[10px]">
@@ -127,8 +127,8 @@ function Web_Project() {
 
               {/* Card 3 — starts center, spreads RIGHT */}
               <div className={`relative  cards-width w-[33.3%] flex justify-center xl:justify-end p-[1px] ${visible ? 'animate-spread-right' : 'opacity-0'}`}>
-                <div className="bg-[#021007] w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
-                lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-white/10">
+                <div className="bg-[#16A34A1A]/70 w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
+                lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border-[1px] border-[#0d4622]">
                   {/* <img src={Line26} alt="lines" className="mb-3 w-full" /> */}
                   <div className="h-2 border-t border-dashed border-[#16A34A] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-[8px] md:text-[12px] text-gray-300 space-y-3 sm:space-y-[10px]">
