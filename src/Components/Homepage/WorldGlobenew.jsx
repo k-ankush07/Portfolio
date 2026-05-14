@@ -102,96 +102,17 @@ const getSize = () => ({
     []
   );
 
-//   return (
-//     <div
-//       className="w-full overflow-hidden flex justify-center items-center"
-//       style={{
-//         height: `${size.height}px`,
-//       }}
-//     >
-//       <Globe
-//         ref={globeRef}
-//         width={size.width}
-//         height={size.height}
-//         backgroundColor="rgba(0,0,0,0)"
-//         animateIn={false}
 
-//         globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-
-//         showAtmosphere={true}
-//         atmosphereColor="#202940"
-//         atmosphereAltitude={0.15}
-
-//         // Arcs
-//         arcsData={arcs}
-//         arcColor={() => "#60a5fa"}
-//         arcStroke={0.5}
-//         arcAltitude={0.22}
-//         arcDashLength={0.35}
-//         arcDashGap={0.18}
-//         arcDashAnimateTime={4000}
-
-//         // Points
-//         pointsData={cities}
-//         pointLat="lat"
-//         pointLng="lng"
-//         pointColor={() => "#60a5fa"}
-//         pointRadius={0.28}
-
-//         // Labels
-//         labelsData={cities}
-//         labelLat="lat"
-//         labelLng="lng"
-//         labelText="label"
-//         labelSize={1.2}
-//         labelDotRadius={0.25}
-//         labelColor={() => "#ffffff"}
-//       />
-//     </div>
-//   );
+  
 return (
-  <div
+
+   <div
     className="w-full flex justify-center items-center overflow-hidden"
     style={{
       width: "100%",
       height: `${size.height}px`,
     }}
   >
-    {/* <Globe
-      ref={globeRef}
-      width={size.width}
-      height={size.height}
-      backgroundColor="rgba(0,0,0,0)"
-      animateIn={false}
-
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-
-      showAtmosphere={true}
-      atmosphereColor="#202940"
-      atmosphereAltitude={0.15}
-
-      arcsData={arcs}
-      arcColor={() => "#60a5fa"}
-      arcStroke={0.5}
-      arcAltitude={0.22}
-      arcDashLength={0.35}
-      arcDashGap={0.18}
-      arcDashAnimateTime={4000}
-
-      pointsData={cities}
-      pointLat="lat"
-      pointLng="lng"
-      pointColor={() => "#60a5fa"}
-      pointRadius={0.28}
-
-      labelsData={cities}
-      labelLat="lat"
-      labelLng="lng"
-      labelText="label"
-      labelSize={1.7}
-      labelDotRadius={0.25}
-      labelColor={() => "#ffffff"}
-    /> */}
 
     <Globe
   ref={globeRef}
@@ -236,6 +157,7 @@ return (
   labelColor={() => "#ffffff"}
 />
   </div>
+
 );
 
 };

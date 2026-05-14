@@ -34,6 +34,7 @@ function App() {
 
   return (
     <>
+    
       <Navbar />
       <ScrollToTop />
 
@@ -67,6 +68,7 @@ function App() {
       <ConceptToCreation />
 
       <Footer />
+
     </>
   );
 }

@@ -46,7 +46,7 @@ function AboutPage() {
  
     </div>
     <div className='container  z-50'>
-     <div className='flex flex-col xl:flex-row gap-[10px] px-2 lg:px-0 main_about_class '>
+     <div className='flex flex-col xl:flex-row gap-[10px] px-2 sm:px-0 main_about_class '>
        <Nextproject />
       <div className='xl:w-[35%] space-y-2 flex flex-col sm:flex-row xl:flex-col gap-[9px]'>
         <ToolWeTrust />

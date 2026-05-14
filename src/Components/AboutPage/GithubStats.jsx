@@ -2,7 +2,7 @@ import React from "react";
 import gitbottomblur from "../../assets/Images/gitbottomblur.svg";
 
 function GithubStats({ githubData = {} }) {
-
+ 
   
   const stats = [
     {
@@ -22,6 +22,8 @@ function GithubStats({ githubData = {} }) {
     },
   ];
 
+    
+
   return (
     <div className="pt-[6px] lg:pt-[12px] ">
       <div className="grid grid-cols-3 gap-[7px] lg:gap-[10px] lg:pb-[40px] relative">
@@ -30,7 +32,7 @@ function GithubStats({ githubData = {} }) {
             key={index}
             className="relative border  border-[#292929] rounded-[8px] pt-[15px] pb-[20px] pl-[20px] pr-[20px] lg:pt-[44px] lg:pb-[44px] lg:pr-[39px] lg:pl-[41px]  overflow-hidden"
           > 
-            <div className="absolute right-0 top-0 overflow-hidden rounded-[8px]">
+            <div className="absolute right-0 top-0 rounded-[8px]">
               <img src={gitbottomblur} alt="blur image" />
             </div>
 

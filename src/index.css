@@ -871,6 +871,11 @@ opacity: 0;
   
 }
 
+@media (min-width:1024px){
+ .main_about_class .innerNext{
+  padding: 53px 139px 54px 139px;
+  }
+}
 
 
 
