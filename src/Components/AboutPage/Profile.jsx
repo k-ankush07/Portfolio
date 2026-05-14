@@ -68,7 +68,7 @@ function Profile() {
 
   return (
     <motion.section
-      className="pt-[96px] lg:pt-[60px] text-white"
+      className="pt-[40px] lg:pt-[60px] text-white"
       initial="hidden"
       animate="show"
       variants={container}

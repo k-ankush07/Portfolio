@@ -105,9 +105,10 @@ export default function Navbar() {
       <div className="container">
         <MobileNavbar />
 
-        <div className="h-[72px] bg-[#000000]  hidden md:block text-white relative">
+        <div className="  flex justify-between items-center py-[20px] hidden md:flex   text-white relative">
+          
           {/* LEFT LOGO */}
-          <div className="absolute top-[25px] z-50">
+          <div className=" z-50">
             <Link
               to="/"
               onClick={() => {
@@ -120,18 +121,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* RIGHT ICON */}
-          <div className="absolute top-[23px] right-0 z-50">
-            <Link
-              to="/contact"
-              onClick={() => {
-                setOpen(false);
-                setIsPinned(false);
-              }}
-            >
-              <img src={logo2} alt="icon" />
-            </Link>
-          </div>
 
           {/* CENTER NAVBAR */}
           <motion.div
@@ -139,7 +128,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-[16px] left-1/2  -translate-x-1/2 z-[200] motion-layer"
+            className="  motion-layer relative"
           >
             <motion.div
               initial={{ width: "150px" }}
@@ -151,7 +140,7 @@ export default function Navbar() {
                   : "376px",
               }}
               transition={{ duration: 0.35 }}
-              className="bg-[#191919] backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] motion-layer"
+              className="bg-[#191919] absolute left-1/2 -top-[19px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] motion-layer"
             >
               {/* TOP NAV */}
               <div className="flex justify-center relative overflow-hidden">
@@ -320,6 +309,19 @@ export default function Navbar() {
               </div>
             </motion.div>
           </motion.div>
+          
+          {/* RIGHT ICON */}
+          <div className=" right-0 z-50">
+            <Link
+              to="/contact"
+              onClick={() => {
+                setOpen(false);
+                setIsPinned(false);
+              }}
+            >
+              <img src={logo2} alt="icon" />
+            </Link>
+          </div> 
         </div>
       </div>
     </section>

@@ -156,7 +156,7 @@ function WorkDetail() {
     ];
 
     return (
-        <section className='pt-[96px] lg:pt-[100px] lato-regular overflow-hidden'>
+        <section className='pt-[35px] lg:pt-[100px] lato-regular overflow-hidden'>
             <div className='container'>
                 <div>
 

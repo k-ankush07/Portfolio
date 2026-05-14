@@ -62,7 +62,7 @@ export default function MobileNavbar() {
         initial={{ opacity: 0, y: -20, scale: 0.9 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.4 }}
-        className="md:hidden fixed top-[16px] left-1/2 -translate-x-1/2 z-50"
+        className="md:hidden inline-flex justify-center items-center w-full pt-[16px] z-50"
       >
         <div className="flex items-center justify-center px-4 py-[6px] bg-[rgba(48,48,48,0.8)] backdrop-blur-xl border border-white/10 rounded-full min-w-[130px] relative overflow-hidden">
           
