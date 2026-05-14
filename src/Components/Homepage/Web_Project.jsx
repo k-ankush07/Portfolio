@@ -37,7 +37,7 @@ function Web_Project() {
             <img src={linepurple} alt="line" className="absolute right-0 z-1" />
 
             {/* Cards */}
-            <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center   pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
+            <div className="cards_section flex   gap-[6px] sm:gap-[40px] sm:flex-row items-center   pt-[24px] pb-[20px] pl-[18px] pr-[18px]  xl:gap-[143px] lg:pt-[60px] sm:pb-[30px]   lg:pb-[51px] lg:pl-[75px] lg:pr-[76px]">
 
               {/* Card 1 — starts center, spreads LEFT */}
               <div className={`relative  cards-width w-[33.3%] h-[100%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
