@@ -48,7 +48,7 @@ function Nextproject() {
   return (
     <>
       <div className=' next-Project bg-[#000000]  rounded-[8px] xl:w-[60%] z-10 group'>
-        <div className='innerNext group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[54px] lg:pr-[108px] lg:pl-[107px]  rounded-[8px] border border-[#292929]   cursor-pointer'
+        <div className='innerNext group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[54px]   rounded-[8px] border border-[#292929]   cursor-pointer'
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >

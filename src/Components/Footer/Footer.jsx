@@ -8,7 +8,7 @@ import GradientBorderButton from "../Homepage/GradientBorderButton";
 import { Link } from "react-router-dom";
 function Footer() {
     return (
-        <section className="pb-[21px] px-2 sm:px-0 pt-[20px]  sm:pt-[40px] ">
+        <section className="pb-[60px] px-2 sm:px-0 pt-[20px]  sm:pt-[40px] ">
             <div className="container">
                 <footer className=" lato-regular text-gray-400 pt-[30px] pl-[30px] pr-[31px] pb-[22px] lg:pt-[53px]  lg:pl-[64px]  lg:pr-[98px] lg:pb-[30px] rounded-[16px] border border-[#292929]  mx-auto ">
 

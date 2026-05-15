@@ -11,7 +11,7 @@ function ConceptToCreation() {
     return (
         <section className='pt-[20px] px-2 md:px-0 lg:pt-[40px]'>
             <div className='container'>
-                <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px] lg:pl-[214px] lg:pr-[214px]'>
+                <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px]'>
 
                     <img src={Background1} className='absolute left-0 top-0' />
                     <img src={Background2} className='absolute xl:left-40 bottom-0 top-0 h-[100%]' />

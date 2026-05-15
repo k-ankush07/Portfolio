@@ -30,10 +30,10 @@ function Explore() {
   };
   return (
     <>
-      <section className=' px-2 pt-[31px] md:px-0 lg:pt-[0]   lg:pb-0'>
+      <section className=' px-2 pt-[31px] lg:pt-[48px] md:px-0   '>
 
         <div className='container'>
-          <div className='text-center bg-[#000000] text-[#FFFFFF]  pb-[22px] lg:pb-0 lg:pt-[33px] lg:py-0  '>
+          <div className='text-center  text-[#FFFFFF]  pb-[22px] lg:pb-0   '>
             <div className=' text-[30px] lg:text-[44px] leading-[40px] font-bold flex  justify-center w-[100%]     '>
 
               <h2 className='tool_div  '>
@@ -56,7 +56,7 @@ function Explore() {
             </div>
             <p className='text-[18px] mt-2 text-[#BDBDBD] hidden md:block lg:mt-[11px]'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className='flex gap-[10px] justify-around dolor_container lg:gap-[9px]  lg:pt-[33px] '>
+          <div className=' outerTool flex gap-[10px] justify-around dolor_container lg:gap-[9px]  lg:pt-[33px] '>
             <ToolWeTrust />
             <CustomerReview />
             <Blogs />
