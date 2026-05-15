@@ -10,7 +10,7 @@ import {motion} from "framer-motion"
 function Blogs() {
         const [isHovered, setIsHovered] = useState(false);
   return (
-       <div className='flex relative w-full sm:w-[49%] xl:w-[33.3%] cursor-pointer'
+       <div className='flex  w-full sm:w-[49%] xl:w-[33.3%] cursor-pointer'
           onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}    
        >

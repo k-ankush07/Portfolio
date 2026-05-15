@@ -340,6 +340,9 @@ padding-top: 15px;
 
       }
 
+      .main_about_class .about_child .swiper{
+  padding:  10px 0;
+}
 /* work section */
 @media (min-width:320px) and (max-width:374px){
    .work_class .inner_work {
@@ -823,6 +826,8 @@ padding-top: 15px;
 .main_about_class .about_child{
   padding:  0;
 }
+
+
 .main_about_class .swiper-slide {
   width: auto !important;
 }

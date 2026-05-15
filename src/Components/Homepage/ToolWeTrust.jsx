@@ -32,7 +32,7 @@ function ToolWeTrust() {
 
 
     return (
-        <div className='about_class flex relative w-full xl:w-[33.3%] mb-0 cursor-pointer'
+        <div className='about_class flex w-full xl:w-[33.3%] mb-0 cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
