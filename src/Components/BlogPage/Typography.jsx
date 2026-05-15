@@ -35,7 +35,7 @@ export const Title = ({ children }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, amount: 0.3 }}
-    className="text-[18px] lg:text-[44px] leading-[50px] lg:leading-[76.8px] font-bold text-white"
+    className="text-[30px] pt-[4px] sm:pt-[0] sm:text-[35px] lg:text-[44px] leading-[40px] sm:leading-[50px] lg:leading-[76.8px] font-bold text-white"
   >
     {children}
   </motion.h1>
@@ -47,7 +47,7 @@ export const Subtitle = ({ children }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, amount: 0.4 }}
-    className="text-[12px] lg:text-[18px] leading-[19px] lg:leading-[27px] text-[#FFFFFF]"
+    className="text-[12px] pt-[4px] sm:pt-0 lg:text-[18px] leading-[19px] lg:leading-[27px] text-[#FFFFFF]"
   >
     {children}
   </motion.p>

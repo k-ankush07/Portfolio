@@ -28,7 +28,7 @@ function BlogTopText() {
    <section>
      
           <div className="text-center text-[#FFFFFF] border-t-1 border-white/10 m-0 px-0">
-        <div className="text-[30px] lg:pt-[20px] md:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
+        <div className="text-[30px] sm:text-[35px] lg:pt-[20px] lg:text-[44px] leading-[76px] font-bold flex  gap-2 justify-center">
          <h2>More</h2>{" "}
 
           <motion.span
