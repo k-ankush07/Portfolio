@@ -26,7 +26,7 @@ function Journey() {
 
   return (
         <div className="text-center text-[#FFFFFF] pt-[32px]   pb-[15px]    lg:pb-[33px] lg:pt-[38px]">
-        <div className="text-[30px] md:text-[44px] lg:leading-[76px] font-bold">
+        <div className="text-[30px] sm:text-[35px] lg:text-[44px] lg:leading-[76px] font-bold">
          The{" "}
 
           <motion.span
@@ -50,7 +50,7 @@ function Journey() {
         </div>
 
         <div className="flex justify-center">
-          <p className="text-[12px] md:text-[18px] ">
+          <p className="text-[12px] sm:text-[16px] lg:text-[18px] ">
            Crafting Experiences That Bring Ideas to Life
           </p>
         </div>

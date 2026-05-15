@@ -18,7 +18,7 @@ function Blogs() {
                   
                       <div className={`flex items-center justify-between pt-[16px] pb-[11px] pl-[18px] pr-[20px] lg:pt-[20px] lg:pb-[19px] lg:pl-[36px] lg:pr-[21px] transition-all duration-400
                         `}>
-                        <h1 className='text-[#FFFFFF]  text-[16px] sm:text-[13px] lg:text-[18px]  xl:text-[20px] font-bold'>Latest Blogs & Insights</h1>
+                        <h1 className='text-[#FFFFFF]  text-[16px] sm:text-[18px] lg:[20px] font-bold'>Latest Blogs & Insights</h1>
                         <div className='flex justify-end items-end ' >
                           
         <motion.img

@@ -92,7 +92,7 @@ function ToolWeTrust() {
                         `}>
 
                         <h1
-                            className={`text-[#FFFFFF] text-[16px] sm:text-[13px] lg:text-[18px] xl:text-[20px] font-bold 
+                            className={`text-[#FFFFFF] text-[16px] sm:text-[18px] lg:text-[20px]  font-bold 
                            
                         `}
                         >

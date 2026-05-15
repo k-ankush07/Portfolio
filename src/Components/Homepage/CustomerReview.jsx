@@ -27,7 +27,7 @@ function CustomerReview() {
         <img
           src={arrow2}
           alt=""
-          className={` card2-about cardsimp1 absolute right-10  top-5 sm:right-5 sm:top-5 md:top-6 lg:12 xl:top-7 w-[55%] transition-all duration-500 ease-out
+          className={` card2-about cardsimp1 absolute right-10  top-5 sm:right-5 sm:top-5 md:top-1 lg:12 xl:top-7 w-[55%] transition-all duration-500 ease-out
             ${isHovered ? " translate-y-2 -rotate-5 " : "translate-x-0 translate-y-0 rotate-0"}
           `}
         />
@@ -39,7 +39,7 @@ function CustomerReview() {
              
             `}
           >
-            <h1 className=" customer-text text-white text-[16px] sm:text-[13px] lg:text-[18px] xl:text-[20px] font-bold">
+            <h1 className=" customer-text text-white text-[16px] sm:text-[18px] lg:text-[20px] font-bold">
               Customer reviews/Feedback
             </h1>
 

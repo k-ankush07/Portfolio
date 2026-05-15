@@ -28,7 +28,7 @@ function PrivacyText({colorText,first_letter,para}) {
 
   return (
     <div className="text-center text-[#FFFFFF] pt-[35px] lg:pt-[100px]  lato-regular">
-        <div className="text-[30px] md:text-[44px]  lg:leading-[76px] font-bold flex  gap-2 justify-center">
+        <div className="text-[30px] sm:text-[35px] lg:text-[44px]  lg:leading-[76px] font-bold flex  gap-2 justify-center">
          <h2>{first_letter}</h2>{" "}
 
           <motion.span
@@ -52,7 +52,7 @@ function PrivacyText({colorText,first_letter,para}) {
         </div>
 
         <div className="flex justify-center  lg:pb-[33px]">
-          <p className="text-[14px] md:text-[18px] ">
+          <p className="text-[14px] sm:text-[16px] lg:text-[18px] ">
           {para}
           </p>
         </div>
