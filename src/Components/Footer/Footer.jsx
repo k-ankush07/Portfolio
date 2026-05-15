@@ -13,7 +13,7 @@ function Footer() {
                 <footer className=" lato-regular text-gray-400 pt-[30px] pl-[30px] pr-[31px] pb-[22px] lg:pt-[53px]  lg:pl-[64px]  lg:pr-[98px] lg:pb-[30px] rounded-[16px] border border-[#292929]  mx-auto ">
 
                     {/* TOP SECTION */}
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-[13px] lg:pb-[30px] ">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-[13px] lg:pb-[33px] ">
 
                         {/* LEFT */}
                         <div className="w-full lg:w-[36%] flex flex-col">
