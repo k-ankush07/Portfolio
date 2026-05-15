@@ -116,18 +116,18 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                 <div
 
                     className=" border-t-1  border-white/10  lg:pt-[60px] ">
-                    <div className="hidden lg:block absolute left-[30%] top-15 h-[87%] w-px bg-white/10"></div>
+                    <div className="hidden lg:block absolute left-[30.2%] top-15 h-[87%] w-px bg-white/10"></div>
                  
                     <motion.div
                         style={{ height: smoothLineHeight  }}
-                        className="hidden lg:block absolute left-[30%] top-15 w-px bg-white origin-top"
+                        className="hidden lg:block absolute left-[30.2%] top-15 w-px bg-white origin-top"
                     />
                     <motion.div
                         style={{
                             top: smoothLineHeight ,
-                            marginTop: "40px",
+                            marginTop: "50px",
                         }}
-                        className="hidden lg:block absolute left-[30%] top-15 -translate-x-1/2"
+                        className="hidden lg:block absolute left-[30.2%] top-15 -translate-x-1/2"
                     >
                         <img src={smallicon} alt="icon" />
                     </motion.div>
