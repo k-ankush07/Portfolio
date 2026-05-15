@@ -119,7 +119,7 @@ function Nextproject() {
             </div>
           </motion.div>
           {/* </div> */}
-          <div className=' mt-6'>
+          <div className=' mt-6 lg:mt-0'>
             <motion.img
               src={arrow}
               alt="arrow"

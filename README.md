@@ -20,7 +20,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-
-
-
-
+resolve testing bugs Of Home, about, work, terms, and navbar
