@@ -44,7 +44,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
-        <Route path="/terms&condition" element={<TermsPage />} />
+        <Route path="/terms-condition" element={<TermsPage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/work-detail" element={<WorkDetailPage />} />
 {/* 

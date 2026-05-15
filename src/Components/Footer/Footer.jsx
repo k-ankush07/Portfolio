@@ -63,7 +63,7 @@ function Footer() {
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Links</li>
                                     <li className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">RSS</li>
                                     <Link to="/privacy-policy" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Privacy</Link>
-                                    <Link to="/terms&condition" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</Link>
+                                    <Link to="/terms-condition" className="text-[#BDBDBD]  cursor-pointer hover:text-gray-100">Terms</Link>
                                    
                                 </ul>
                             </div>
@@ -80,7 +80,7 @@ function Footer() {
 
                             <div className="flex justify-center pt-[11px] md:pt-0 gap-[23px]">
                                 <Link to="/privacy-policy" className=" cursor-pointer hover:text-gray-100">Privacy Policy</Link>
-                                <Link to="/terms&condition" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link>
+                                <Link to="/terms-condition" className=" cursor-pointer hover:text-gray-100">Terms of Use</Link>
 
                             </div>
                         </div>
