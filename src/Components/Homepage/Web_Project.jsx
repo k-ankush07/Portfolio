@@ -160,10 +160,10 @@ function Web_Project() {
 
             {/* Bottom CTA */}
             <div className="  pb-[5px] lg:pt-[0px] lg:pb-[40px] text-center flex flex-col items-center w-full">
-              <h2 className="text-white leading-[33px] text-[18px] xl:text-[20px] font-bold">
+              <h2 className="text-white leading-[33px] text-[18px] lg:text-[20px] font-bold">
                 Let's Build Your Next Web Project
               </h2>
-              <p className="text-[#BDBDBD] text-center  text-[12px] leading-[18px] lg:leading-[24px] xl:text-[16px] w-[300px] lg:w-full">
+              <p className="text-[#BDBDBD] text-center  text-[12px] leading-[18px] lg:leading-[24px] lg:text-[16px] w-[300px] lg:w-full">
                 Need a fast, scalable, and modern web application? I can help
                 turn your idea into a fully functional product.
               </p>

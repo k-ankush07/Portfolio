@@ -42,7 +42,7 @@ function Policy({
             </span>
 
             <div>
-              <h2 className="text-[28px] leading-[35px] lg:text-[40px] font-bold lg:leading-[48px]">
+              <h2 className="text-[28px] leading-[35px] sm:text-[30px]  lg:text-[40px] font-bold lg:leading-[48px]">
                 {heading} <br/>  {subheading}
               </h2>
               
@@ -61,7 +61,7 @@ function Policy({
 
             {/* Top paragraph */}
             <div className="lg:border-l-2 border-[#FFFFFF]/10 lg:pr-[60px]  lg:pl-[57px]">
-              <p className="text-[14px] text-[#BDBDBD] leading-[19px] lg:leading-[24px] ">
+              <p className="text-[14px] text-[#BDBDBD] leading-[19px] sm:leading-[22px] lg:leading-[24px] ">
                 {para1}
               </p>
 
@@ -90,7 +90,7 @@ function Policy({
 
                     {/* Content */}
                     <div>
-                      <h3 className="text-[20px] font-bold text-[#FFFFFF]">
+                      <h3 className="text-[16px] sm:text-[18px] lg:text-[20px] font-bold text-[#FFFFFF]">
                         {card.heading}
                       </h3>
                       <p className="text-[14px] text-[#BDBDBD] leading-[19px]  ">
