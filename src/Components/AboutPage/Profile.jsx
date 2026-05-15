@@ -169,7 +169,7 @@ function Profile() {
             >
 
               {/* WORK */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px] md:pr-[92px] md:pb-[101px] rounded-[8px]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px]  rounded-[8px]">
                 <h3 className="text-[18px] sm:text-[20px] pb-[4px]  font-bold lg:pb-[8px]">Work</h3>
                 <p className="text-[12px] lg:text-[14px]  text-[#BDBDBD]">
                   Osinski, Kohler and Bashirian 74-102565
@@ -177,10 +177,10 @@ function Profile() {
               </motion.div>
 
               {/* SKILLS */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:pt-[32px] md:pl-[30px] md:pb-[30px] md:pr-[57px] rounded-[8px] ">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c]  md:pt-[32px] md:pl-[30px] md:pb-[30px]  rounded-[8px] ">
                 <h3 className="text-[18px] pb-[4px] sm:text-[20px] font-bold lg:pb-[8px]">Skills</h3>
                 <p className="text-[12px] lg:text-[14px] text-[#BDBDBD]">Osinski, Kohler and Bashirian 74-102565</p>
-                <motion.div className="flex flex-wrap gap-[10px] pt-[9px]" variants={container}>
+                <motion.div className="flex flex-wrap gap-[10px] pt-[9px] lg:max-w-[303px]" variants={container}>
                   {skills.map((skill, i) => (
                     <motion.div
                       key={i}
@@ -194,7 +194,7 @@ function Profile() {
               </motion.div>
 
               {/* PORTFOLIO */}
-              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px] md:pb-[30px] md:pr-[154px] rounded-[8px]">
+              <motion.div variants={item} className="md:bg-[#0E0C13] md:border-1 md:border-[#201c2c] md:pt-[32px] md:pl-[30px] md:pb-[30px] rounded-[8px]">
                 <h3 className="text-[18px] sm:text-[20px] font-bold pb-2 md:pb-[10px]">
                   Portfolio Links
                 </h3>

@@ -105,7 +105,7 @@ export default function Navbar() {
       <div className="container">
         <MobileNavbar />
 
-        <div className="  flex justify-between items-center py-[20px] hidden md:flex   text-white relative">
+        <div className="  flex justify-between items-center py-[16px] hidden md:flex   text-white relative">
           
           {/* LEFT LOGO */}
           <div className=" z-50">
@@ -140,7 +140,7 @@ export default function Navbar() {
                   : "376px",
               }}
               transition={{ duration: 0.35 }}
-              className="bg-[#191919] absolute left-1/2 -top-[19px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] "
+              className="bg-[#191919] absolute left-1/2 -top-[18px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] "
             >
               {/* TOP NAV */}
               <div className="flex justify-center relative overflow-hidden">
