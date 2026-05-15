@@ -496,6 +496,7 @@ padding-top: 15px;
     height: 20px;
     width: 20px;
   }
+  
 }
 
 @media (min-width:351px) and (max-width:402px) {
@@ -504,6 +505,9 @@ padding-top: 15px;
     height: 25px;
     width: 25px;
   }
+  /* .concept-para{
+    font-size: 13px;;
+  } */
 }
 
 @media(min-width:411px) and (max-width:529px) {
@@ -703,6 +707,7 @@ padding-top: 15px;
    font-size: 27px;
     max-width: 370px; 
   }
+  
   .Recent_text{
     font-size: 28px;
   }

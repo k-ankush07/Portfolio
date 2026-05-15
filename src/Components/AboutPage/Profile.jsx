@@ -106,14 +106,14 @@ function Profile() {
 
                   <motion.h2
                     variants={item}
-                    className=" text-[21px] lg:text-[34px] leading-[42px] lg:pt-[23px] font-bold"
+                    className=" text-[21px] sm:text-[30px] lg:text-[34px] leading-[42px] lg:pt-[23px] font-bold"
                   >
                     Jenny Wilson
                   </motion.h2>
 
                   <motion.p
                     variants={item}
-                    className="text-[#BDBDBD] text-[12px] lg:text-[20px] "
+                    className="text-[#BDBDBD] text-[12px] sm:text-[16px] lg:text-[20px] "
                   >
                     Product Designer @ Google
                   </motion.p>
@@ -221,15 +221,15 @@ function Profile() {
                 Full-Stack Developer and a little bit of everything
               </motion.h3>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] leading-[24px] text-[#BDBDBD]">
+              <motion.p variants={item} className="text-[12px] sm:text-[13px] lg:text-[14px] leading-[24px] text-[#BDBDBD]">
               I'm Ankush Kumar, a proactive full-stack developer passionate about  creating dynamic web experiences. From frontend to backend, I thrive on  solving complex problems with clean, efficient code. My expertise spans  React, Next.js, and Node.js, and I'm always eager to learn more.
               </motion.p>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
+              <motion.p variants={item} className="text-[12px] sm:text-[13px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
                When I'm not immersed in work, I'm exploring new ideas and staying curious.  Life's about balance, and I love embracing every part of it.
               </motion.p>
 
-              <motion.p variants={item} className="text-[12px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
+              <motion.p variants={item} className="text-[12px] sm:text-[13px] lg:text-[14px] text-[#BDBDBD] leading-[24px]">
                 I believe in waking up each day eager to make a difference!
               </motion.p>
             </motion.div>

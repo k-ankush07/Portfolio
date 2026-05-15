@@ -53,12 +53,12 @@ function ConceptToCreation() {
                         viewport={{ once: true }}
                     >
                         <div>
-                            <h1 className='text-[15px] leading-[17px] text-center pb-[10px] lg:text-[24px] font-bold lg:pb-[20px] lg:leading-[27px]'>
+                            <h1 className='concept-para text-[15px] leading-[17px] text-center pb-[10px] lg:text-[24px] font-bold lg:pb-[20px] lg:leading-[27px]'>
                                 I'm available for full-time roles & freelance projects.
                             </h1>
 
                             <div className='flex justify-center'>
-                                <p className='text-[12px] w-[260px] lg:w-[450px]  lg:text-[18px]  lg:leading-[30px] opacity-90 text-center'>
+                                <p className='text-[12px] w-[260px] sm:w-[300px] lg:w-[450px]  lg:text-[18px]  sm:text-[14px] lg:leading-[30px] opacity-90 text-center'>
                                     I thrive on crafting dynamic web applications, and
                                     delivering seamless user experiences.
                                 </p>
