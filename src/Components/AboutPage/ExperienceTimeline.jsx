@@ -199,7 +199,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                                 >
                                     <motion.h2
                                         variants={item}
-                                        className="text-[24px] leading-[48px] lg:text-[40px] lg:leading-[48px] font-bold"
+                                        className="text-[26px] leading-[48px] lg:text-[40px] lg:leading-[48px] font-bold"
                                     >
                                         {exp.role1}{" "}
                                         <span className="bg-[linear-gradient(to_right,#FF9A8B,#FF6A88,#FFB199)] bg-clip-text text-transparent">
