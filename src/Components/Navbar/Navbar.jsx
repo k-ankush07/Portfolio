@@ -128,7 +128,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="  motion-layer relative"
+            className="   relative"
           >
             <motion.div
               initial={{ width: "150px" }}
@@ -140,7 +140,7 @@ export default function Navbar() {
                   : "376px",
               }}
               transition={{ duration: 0.35 }}
-              className="bg-[#191919] absolute left-1/2 -top-[19px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] motion-layer"
+              className="bg-[#191919] absolute left-1/2 -top-[19px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] "
             >
               {/* TOP NAV */}
               <div className="flex justify-center relative overflow-hidden">
@@ -166,7 +166,7 @@ export default function Navbar() {
                       y: showGreeting ? 10 : 0,
                     }}
                     transition={{ duration: 0.25 }}
-                    className="flex items-center gap-1 motion-layer"
+                    className="flex items-center gap-1"
                   >
                     {navLinks.map((item) => (
                       <button
