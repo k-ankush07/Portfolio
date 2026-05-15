@@ -133,9 +133,9 @@ function ViewDetail() {
           >
 
             {/* text */}
-            <div className="inner_work pt-[17px] pl-[20px] pr-[90px] xl:pl-[36px] xl:pt-[25px]  flex justify-between">
+            <div className="inner_work pt-[17px] pl-[20px]  xl:pl-[36px] xl:pt-[25px]  flex justify-between">
               <p
-                className="text-Web max-w-[400px] text-[14px] sm:text-[20px] leading-[17px] sm:leading-[33px] text-white origin-left transition-all duration-300 ease-out"
+                className="text-Web max-w-[290px] sm:max-w-[330px] lg:max-w-[450px] text-[14px] sm:text-[16px] lg:text-[20px] leading-[17px] sm:leading-[33px] text-white origin-left transition-all duration-300 ease-out"
                 style={{
                   transform: hovered ? "scale(1.03)" : "scale(1)",
                 }}

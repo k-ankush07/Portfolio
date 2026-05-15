@@ -105,7 +105,7 @@ function RecruiterOne({ index, desc }) {
                       />
                       <motion.h1
                         variants={itemVariants}
-                        className="text-[20px] sm:text-[26px] lg:text-[40px] font-bold leading-tight text-left lg:text-left"
+                        className="text-[20px] sm:text-[35px] lg:text-[40px] font-bold leading-tight text-left lg:text-left"
                       >
                         Recruiter
                         <motion.span

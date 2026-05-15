@@ -34,7 +34,7 @@ function Explore() {
 
         <div className='container'>
           <div className='text-center  text-[#FFFFFF]  pb-[22px] lg:pb-0   '>
-            <div className=' text-[30px] lg:text-[44px] leading-[40px] font-bold flex  justify-center w-[100%]     '>
+            <div className=' text-[30px] sm:text-[35px] sm:leading-[40px] lg:text-[44px] leading-[40px] font-bold flex  justify-center w-[100%]     '>
 
               <h2 className='tool_div  '>
                 Explore, experiment {' '}
@@ -54,7 +54,7 @@ function Explore() {
                 </motion.span>
               </h2>
             </div>
-            <p className='text-[18px] mt-2 text-[#BDBDBD] hidden md:block lg:mt-[11px]'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className=' text-[14px] sm:text-[16px] lg:text-[18px] mt-2 text-[#BDBDBD] hidden md:block lg:mt-[11px]'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className=' outerTool flex gap-[10px] justify-around dolor_container lg:gap-[9px]  lg:pt-[33px] '>
             <ToolWeTrust />

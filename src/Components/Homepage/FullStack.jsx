@@ -104,7 +104,7 @@ function FullStack() {
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
                     <div className='md:flex  xl:pr-[67px]  xl:w-[30%] '>
-                        <div className='border pt-[40px] pb-[40px] px-[49px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                        <div className='border pt-[30px] lg:pt-[40px] pb-[30px] lg:pb-[40px]  xl:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -116,10 +116,10 @@ function FullStack() {
                                 className='text-center mt-4'>
                                 <motion.h1
                                     variants={textItem}
-                                    className='text-[21px] lg:text-[24px] leading-[42px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    className='text-[21px] lg:text-[24px] leading-[42px] sm:text-[30px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
                                 <motion.p
                                     variants={textItem}
-                                    className=' text-[12px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                                    className=' text-[12px] sm:text-[13px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
                             </motion.div>
                             <div className='flex justify-center'>
                                 <div className="flex justify-center">
@@ -129,7 +129,7 @@ function FullStack() {
                                         <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
                                         {/* CONTENT */}
-                                        <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] leading-[15px] lg:leading-[18px] xl:px-4 text-white">
+                                        <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] leading-[15px] lg:leading-[18px] xl:px-2 text-white">
 
                                             <span className="text-[#FFAF7B] px-1 py-1">
                                                 <FaLocationDot />
@@ -164,7 +164,7 @@ function FullStack() {
 
 
                             <div className='flex justify-center'>
-                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-[55px] mt-[17px] sm:px-15 xl:px-16 text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] '>
+                                <Link to=""><button className=' btn-slide cursor-pointer relative z-1 rounded-[500px] bg-[#FFFFFF]  py-3 px-[55px] mt-[17px] sm:px-15 xl:px-14 text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] '>
                                     Hire Me
                                 </button></Link>
                             </div>

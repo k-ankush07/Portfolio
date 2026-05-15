@@ -310,7 +310,7 @@ function Tool() {
 
         <div className="flex justify-between items-end pb-[20px] lg:pb-[30px]">
           <div>
-            <h1 className="tool_text text-white text-[30px] sm:text-[44px] font-bold leading-[30px] sm:leading-[76px]">
+            <h1 className="tool_text text-white text-[30px] sm:text-[35px] sm:leading-[50px] lg:text-[44px] font-bold leading-[30px] lg:leading-[76px]">
               Tools we{" "}
               <motion.span
                 className="inline-block bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent"
@@ -326,7 +326,7 @@ function Tool() {
                 ))}
               </motion.span>
             </h1>
-            <p className="text-[14px] lg:text-[18px] pt-[6px] sm:pt-0 text-[#FFFFFF]  leading-[20px] lg:leading-[27px] max-w-[308px] lg:max-w-full">
+            <p className="text-[14px]  sm:text-[16px] lg:text-[18px] pt-[6px] sm:pt-0 text-[#FFFFFF]  leading-[20px] lg:leading-[27px] max-w-[308px] sm:max-w-[370px] lg:max-w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit Suspendisse varius enim tristique.
             </p>
           </div>

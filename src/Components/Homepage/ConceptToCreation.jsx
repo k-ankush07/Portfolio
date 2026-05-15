@@ -30,13 +30,13 @@ function ConceptToCreation() {
 
                     {/* Heading */}
                     <motion.div
-                        className='concent-text text-[30px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] lg:w-full'
+                        className='concent-text text-[30px] sm:text-[35px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] sm:w-[350px] lg:w-full'
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className='text-center leading-[30px] lg:leading-[58px]'>
+                        <h2 className='text-center leading-[30px] sm:leading-[40px] lg:leading-[58px]'>
                             Concept to Creation{" "}
                             <span className="bg-gradient-to-r from-[#D76D77] via-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent">
                                 Let’s Make It Happen.
