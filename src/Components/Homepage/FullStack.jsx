@@ -116,7 +116,7 @@ function FullStack() {
                                 className='text-center mt-4'>
                                 <motion.h1
                                     variants={textItem}
-                                    className='text-[21px] lg:text-[24px] leading-[42px] sm:text-[30px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    className='text-[21px]  leading-[42px] sm:text-[24px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
                                 <motion.p
                                     variants={textItem}
                                     className=' text-[12px] sm:text-[13px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>

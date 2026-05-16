@@ -20,7 +20,7 @@ function Web_Project() {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.99 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
