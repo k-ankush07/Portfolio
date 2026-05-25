@@ -33,8 +33,6 @@ function ToolWeTrust() {
 
     return (
         <div className='about_class flex w-full xl:w-[33.3%] mb-0 cursor-pointer'
-            onTouchStart={() => setIsHovered(true)}
-            onTouchEnd={() => setIsHovered(false)}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
