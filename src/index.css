@@ -94,7 +94,9 @@ body {
    padding: 15px  0px
 }
 
-
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 .firsts_slider .swiper-slide {
   width: auto !important;
   display: flex;
