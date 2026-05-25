@@ -52,7 +52,7 @@ function Nextproject() {
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >
-          <img src={Blur} alt='blur gradient' className='absolute right-0 overflow-hidden top-0 opacity-85 transition-all duration-400 group-hover:opacity-100' />
+          <img src={Blur} alt='blur gradient' className='absolute right-0 overflow-hidden top-0 opacity-85 transition-all duration-400 group-hover:opacity-100 pointer-events-none z-0' />
           <div className="text-[#FFFFFF]  relative z-50">
             <motion.h2
               initial={{ opacity: 0, y: 40 }}
