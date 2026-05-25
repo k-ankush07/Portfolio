@@ -51,18 +51,18 @@ function Skills() {
                     momentum: false,
                   }}
                   loopAdditionalSlides={10}
-                  // autoplay={{
-                  //   delay: 1,
-                  //   disableOnInteraction: false,
-                  // }}
+                  autoplay={{
+                    delay: 1,
+                    disableOnInteraction: false,
+                  }}
                   speed={5000}
-                  // onSwiper={(swiper) => {
-                  //   setTimeout(() => swiper.autoplay.start(), 500);
+                  onSwiper={(swiper) => {
+                    setTimeout(() => swiper.autoplay.start(), 500);
 
-                  //   // Touch completely disable karo
-                  //   swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
-                  //   swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
-                  // }}
+                    // Touch completely disable karo
+                    swiper.el.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: false });
+                    swiper.el.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+                  }}
                 >
                   <SwiperSlide>
                     <div className="main-class">
