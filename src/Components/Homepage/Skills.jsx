@@ -27,7 +27,7 @@ function Skills() {
 
 
       <div className=' relative bg-[#000000] rounded-[8px] inline-block xl:w-[40%] firsts_slider group '>
-        <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 opacity-85 transition-all duration-400 group-hover:opacity-100 ' />
+        <img src={Blur} alt='blur effect' className='  absolute right-0 -z-0 opacity-85 transition-all duration-400 group-hover:opacity-100  pointer-events-non' />
         <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[24px] h-[100%] lg:pt-[53px] pb-[33px] lg:pb-[73px]'>
           <div className='text-center '>
             <h1 className='text-[#FFFFFF] text-[18px] sm:text-[24px] leading-[29px] sm:leading-[36px] font-bold'>Skills / Tech Stack</h1>

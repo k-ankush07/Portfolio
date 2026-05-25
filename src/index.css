@@ -46,6 +46,10 @@ body {
 .skill_slider{
   height: 100%;
   
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
   
   
 }
@@ -53,7 +57,26 @@ body {
   touch-action: none;
   pointer-events: none; 
 } 
+.swiper-slide {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
 
+.skill_slider {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Critical for iOS SVG sharpness */
+  -webkit-font-smoothing: antialiased;
+  image-rendering: pixelated;
+}
+
+.main-class {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  isolation: isolate;
+}
 
 .slider {
   width: 100%;
@@ -456,21 +479,7 @@ padding-top: 15px;
 }
 }
 
-.swiper-wrapper {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform;
-}
 
-/* Fix 3: The slide containers */
-.main-class {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
 
 
 @media (min-width:1024px){
@@ -479,13 +488,6 @@ padding-top: 15px;
   }
   .skill_slider{
   height: 100%!important;
-   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  image-rendering: -webkit-optimize-contrast; /* sharpens on Safari */
 }
 }
 
