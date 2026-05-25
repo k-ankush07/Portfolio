@@ -57,26 +57,7 @@ body {
   touch-action: none;
   pointer-events: none; 
 } 
-.swiper-slide {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-}
 
-.skill_slider {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* Critical for iOS SVG sharpness */
-  -webkit-font-smoothing: antialiased;
-  image-rendering: pixelated;
-}
-
-.main-class {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  isolation: isolate;
-}
 
 .slider {
   width: 100%;
@@ -131,7 +112,21 @@ body {
   justify-content: center;
  
 }
+.firsts_slider {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Prevents iOS Safari zoom bug */
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
 
+/* Stop Swiper from inheriting wrong scale context */
+.firsts_slider .swiper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 .firsts_slider .swiper-slide img {
   width: 100%;
   /* height: auto; */
