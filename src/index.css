@@ -12,6 +12,7 @@ body {
   background-color: #000000;
 }
 
+
 /* global.css */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -44,6 +45,19 @@ body {
 }
 .skill_slider{
   height: 100%;
+    /* iPhone Safari blur fix */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  perspective: 1000;
+  -webkit-perspective: 1000;
+
+  image-rendering: -webkit-optimize-contrast;
+
+  will-change: transform;
 }
 .slider .swiper {
   touch-action: none;
@@ -332,6 +346,7 @@ opacity: 0;
 }
 .skill_slider{
   height: 100%!important;
+  
 }
 
 .PrivacyPage-page .last-sections {
