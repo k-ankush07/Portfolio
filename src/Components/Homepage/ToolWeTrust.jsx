@@ -45,10 +45,10 @@ function ToolWeTrust() {
                         spaceBetween={20}
                         centeredSlides={true}
                         loop={true}
-                         breakpoints={{
-        480: { slidesPerView: 5 },   // small screens
-        1280: { slidesPerView: 4 },   // md and above
-    }}
+                        breakpoints={{
+                            480: { slidesPerView: 5 },   // small screens
+                            1280: { slidesPerView: 4 },   // md and above
+                        }}
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,
