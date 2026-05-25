@@ -46,6 +46,7 @@ function Skills() {
                   slidesPerView="auto"
                   loop={true}
                   allowTouchMove={false}
+                  
                   freeMode={{
                     enabled: true,
                     momentum: false,

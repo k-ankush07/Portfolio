@@ -33,10 +33,8 @@ function ToolWeTrust() {
 
     return (
         <div className='about_class flex w-full xl:w-[33.3%] mb-0 cursor-pointer'
-              onMouseEnter={() => setIsHovered(true)}
-  onMouseLeave={() => setIsHovered(false)}
-  onTouchStart={() => setIsHovered(true)}
-  onTouchEnd={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             <div className=' about_classinner border-[1px] border-[#292929] rounded-[8px]   pt-[39px] pb-[16px] lg:pt-[70px] lg:pb-[20px]  w-[100%]  '>
                 <div className=' about_child mainTool flex  justify-center items-end '>
