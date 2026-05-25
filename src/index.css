@@ -46,10 +46,6 @@ body {
 .skill_slider{
   height: 100%;
   
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
   
   
 }
@@ -112,21 +108,7 @@ body {
   justify-content: center;
  
 }
-.firsts_slider {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* Prevents iOS Safari zoom bug */
-  -webkit-overflow-scrolling: touch;
-  overflow: hidden;
-}
 
-/* Stop Swiper from inheriting wrong scale context */
-.firsts_slider .swiper {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
 .firsts_slider .swiper-slide img {
   width: 100%;
   /* height: auto; */
