@@ -57,11 +57,8 @@ function App() {
 
       
       {isLoading && (
-        <div className=" flex items-center justify-center pointer-events-none">
-          <div className="">
-
-          </div>
-        </div>
+       <>
+       </>
       )}
 
 
