@@ -77,12 +77,12 @@ body {
   white-space: nowrap;
 }
 
-/* .skill_slider {
+.skill_slider {
   height: 26px;
   width: auto;
   object-fit: contain;
   display: block;
-} */
+}
 
 /* disable interaction */
 .slider .slick-track {
