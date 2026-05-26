@@ -78,9 +78,9 @@ body {
 }
 
 .skill_slider {
-  height: 26px;
-  width: auto;
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
   display: block;
 }
 
