@@ -43,12 +43,9 @@ body {
 .main-class{
   height: 21px;
 }
-.skill_slider{
+/* .skill_slider{
   height: 100%;
-  
-  
-  
-}
+} */
 .slider .swiper {
   touch-action: none;
   pointer-events: none; 
@@ -80,12 +77,12 @@ body {
   white-space: nowrap;
 }
 
-.skill_slider {
+/* .skill_slider {
   height: 26px;
   width: auto;
   object-fit: contain;
   display: block;
-}
+} */
 
 /* disable interaction */
 .slider .slick-track {
@@ -321,7 +318,9 @@ opacity: 0;
   color:#FFFFFF;
 }
 
-
+/* .skill_slider {
+  aspect-ratio: 2 / 4 !important;
+} */
 
 .github-calendar text {
  fill: #BDBDBD; /* gray-200 */
@@ -334,10 +333,9 @@ opacity: 0;
 .github-calendar div {
   color: #BDBDBD;
 }
-.skill_slider{
+/* .skill_slider{
   height: 100%!important;
-  
-}
+} */
 
 .PrivacyPage-page .last-sections {
     padding: 0 !important;
@@ -463,9 +461,9 @@ padding-top: 15px;
   .main-class{
     height: 30px !important;
   }
-  .skill_slider{
+  /* .skill_slider{
   height: 100%!important;
-}
+} */
 }
 
 @media (max-width: 1023px) {
@@ -476,7 +474,7 @@ padding-top: 15px;
 }
 
 
-@media (max-width:1024px) {
+@media (max-width:1280px) {
   .dolor_container {
     flex-wrap: wrap;
   }
