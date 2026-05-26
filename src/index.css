@@ -41,10 +41,18 @@ body {
   padding: 0px 0px;
 }
 .main-class{
-  height: 21px;
+  height: 28px;
+  width: 100px;
 }
 /* .skill_slider{
   height: 100%;
+   object-fit: contain;
+} */
+/* .skill_slider {
+  height: 26px;
+  width: auto;
+ 
+  display: block;
 } */
 .slider .swiper {
   touch-action: none;
@@ -77,12 +85,7 @@ body {
   white-space: nowrap;
 }
 
-.skill_slider {
-  /* height: 26px;
-  width: 26px; */
-  object-fit: none;
-  /* display: block; */
-}
+
 
 /* disable interaction */
 .slider .slick-track {
@@ -318,9 +321,6 @@ opacity: 0;
   color:#FFFFFF;
 }
 
-/* .skill_slider {
-  aspect-ratio: 2 / 4 !important;
-} */
 
 .github-calendar text {
  fill: #BDBDBD; /* gray-200 */
@@ -333,9 +333,7 @@ opacity: 0;
 .github-calendar div {
   color: #BDBDBD;
 }
-/* .skill_slider{
-  height: 100%!important;
-} */
+
 
 .PrivacyPage-page .last-sections {
     padding: 0 !important;
@@ -461,9 +459,7 @@ padding-top: 15px;
   .main-class{
     height: 30px !important;
   }
-  /* .skill_slider{
-  height: 100%!important;
-} */
+
 }
 
 @media (max-width: 1023px) {
