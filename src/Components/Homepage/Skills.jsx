@@ -19,7 +19,7 @@ import image13 from "../../assets/Images/skillsimage (12).svg"
 import image14 from "../../assets/Images/skillsimage (13).svg"
 import image15 from "../../assets/Images/skillsimage (14).svg"
 import magnifying from "../../assets/Images/magnifying.svg"
-
+// images
 function Skills() {
 
   return (
