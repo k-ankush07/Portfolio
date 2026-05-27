@@ -96,7 +96,7 @@ function RecruiterOne({ index, desc }) {
                     <motion.div
                       variants={itemVariants}
                       className="flex items-center gap-2 sm:gap-3 text-white   lg:mb-[5px] flex-wrap"
-                      whileHover={{ y: -3 }}
+                    
                     >
                       <img
                         src={shopify}
@@ -110,8 +110,6 @@ function RecruiterOne({ index, desc }) {
                         Recruiter
                         <motion.span
                           className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
-                          whileHover={{ scale: 1.03, rotate: [0, 2, -2, 0] }}
-                          transition={{ duration: 0.4 }}
                         >
                           One
                         </motion.span>

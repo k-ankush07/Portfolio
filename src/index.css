@@ -44,16 +44,7 @@ body {
   height: 28px;
   width: 100px;
 }
-/* .skill_slider{
-  height: 100%;
-   object-fit: contain;
-} */
-/* .skill_slider {
-  height: 26px;
-  width: auto;
- 
-  display: block;
-} */
+
 .slider .swiper {
   touch-action: none;
   pointer-events: none; 
@@ -239,7 +230,7 @@ img.toolWeTrust {
 .left-image  { transform: rotate(-10deg)  !important; }
 .right-image { transform: rotate(10deg)  !important; }
 
-.group:hover .center-image{transform: scale(0.90);}
+.group:hover .center-image{transform: scale(0.95);}
 .group:hover .left-image  { transform: rotate(0deg) !important; }
 .group:hover .right-image { transform: rotate( 0deg) !important; }
   .group:hover .right-image { transform: scale(0.92) !important;} 

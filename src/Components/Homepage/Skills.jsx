@@ -53,7 +53,7 @@ function Skills() {
                   }}
                   loopAdditionalSlides={10}
                   autoplay={{
-                    delay: 0,
+                    delay: 1,
                     disableOnInteraction: false,
                   }}
                   speed={5000}
@@ -168,7 +168,7 @@ function Skills() {
                   allowTouchMove={false}
                   loopAdditionalSlides={10}
                   autoplay={{
-                    delay: 0,
+                    delay: 1,
                     disableOnInteraction: false,
                   }}
                   dir="rtl"
@@ -366,7 +366,7 @@ function Skills() {
                   }}
                   loopAdditionalSlides={10}
                   autoplay={{
-                    delay: 0,
+                    delay: 1,
                     disableOnInteraction: false,
                   }}
                   speed={5000}
