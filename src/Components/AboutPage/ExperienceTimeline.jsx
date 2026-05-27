@@ -10,8 +10,10 @@ import pnpm from "../../assets/Images/rsection (4).svg";
 import PostgreSQL from "../../assets/Images/rsection (1).svg";
 import Redis from "../../assets/Images/rsection (2).svg";
 import Vercel from "../../assets/Images/rsection (3).svg";
-import Roboto from "../../assets/Images/roboto-logo 1.svg";
-import Github from "../../assets/Images/abc.svg";
+// import Roboto from "../../assets/Images/roboto-logo 1.svg";
+// import Github from "../../assets/Images/abc.svg";
+import Roboto from "../../assets/Images/roboto.svg";
+import Github from "../../assets/Images/git.svg";
 
 function ExperienceTimeline() {
     const data = [
@@ -168,7 +170,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                                     </span>
 
                                     <div className="flex items-center gap-[10px] pt-[12px] lg:pt-[15px]">
-                                        <img src={exp.logo} alt="logo" />
+                                        <img src={exp.logo} alt="logo" className=" h-[34px] w-[34px] lg:h-[37px] lg:w-[37px]" />
                                         <h2 className="text-[26px] lg:text-[40px] lg:leading-[48px] font-bold">
                                             {exp.company}
                                         </h2>
