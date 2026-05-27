@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import Line24 from "../../assets/Images/Line 24.png";
-import Line25 from "../../assets/Images/Line 25.png";
-import Line26 from "../../assets/Images/Line 26.png";
 import arrow from "../../assets/Images/arrow.svg";
-import DownArrow from "../../assets/Images/Vector.png";
-import vector13 from "../../assets/Images/Vector13.png";
-import vector16 from "../../assets/Images/Vector16.png";
-import linepurple from "../../assets/Images/linepurple.png";
+import DownArrow from "../../assets/Images/4.svg";
+// import vector13 from "../../assets/Images/Vector13.png";
+import vector13 from "../../assets/Images/5.svg";
+import vector16 from "../../assets/Images/6.svg";
+// import vector16 from "../../assets/Images/Vector16.png";
+import linepurple from "../../assets/Images/7.svg";
+// import linepurple from "../../assets/Images/linepurple.png";
 import { motion } from "framer-motion"
 function Web_Project() {
   const sectionRef = useRef(null);
@@ -42,7 +42,7 @@ function Web_Project() {
               {/* Card 1 — starts center, spreads LEFT */}
               <div className={`relative  cards-width w-[33.3%] h-[100%] p-[1px] flex justify-center xl:justify-end   ${visible ? 'animate-spread-left' : 'opacity-0'}`}>
                 <div className="bg-[#8F74BF54]/30 rounded-[5px] lg:rounded-[8px] w-full sm:w-[200px] pt-[13px] pl-[11px] pr-[15px] pb-[18px] lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px]  border border-[#8F74BF54]">
-                  {/* <img src={Line24} alt="lines" className="mb-3 w-full" /> */}
+
                   <div className="h-2 border-t border-dashed border-[#8F74BF] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-[8px] md:text-[12px] leading-[16px] md:leading-[26px] text-gray-300 font-bold ">
                     <li>• Clean & Modern Code</li>
@@ -63,7 +63,7 @@ function Web_Project() {
               <div className={`relative cards-width w-[33.3%] p-[1px] flex justify-center xl:justify-end  ${visible ? 'animate-spread-up' : 'opacity-0'}`}>
                 <div className="bg-[#D76D771A] w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
                 lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border border-[#D76D7754]">
-                  {/* <img src={Line25} alt="lines" className="mb-3 w-full" /> */}
+
                   <div className="h-2 border-t border-dashed border-[#D76D77] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-gray-300 ">
 
@@ -129,7 +129,6 @@ function Web_Project() {
               <div className={`relative  cards-width w-[33.3%] flex justify-center xl:justify-end p-[1px] ${visible ? 'animate-spread-right' : 'opacity-0'}`}>
                 <div className="bg-[#16A34A1A]/70 w-full sm:w-[200px] rounded-[5px] lg:rounded-[8px] pt-[13px] pl-[11px] pr-[15px] pb-[18px]
                 lg:pt-[22px] lg:pl-[19px] lg:pb-[30px] lg:pr-[25px] border-[1px] border-[#0d4622]">
-                  {/* <img src={Line26} alt="lines" className="mb-3 w-full" /> */}
                   <div className="h-2 border-t border-dashed border-[#16A34A] pb-[4px] lg:pb-[10px] w-full"></div>
                   <ul className="text-[8px] md:text-[12px] leading-[16px] md:leading-[26px] text-gray-300 ">
                     <li className="flex justify-between">

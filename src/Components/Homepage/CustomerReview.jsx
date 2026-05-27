@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import arrow from "../../assets/Images/arrow.svg"
-import customercard from "../../assets/Images/customercard.svg"
-import arrow2 from "../../assets/Images/SVG.svg"
+// import customercard from "../../assets/Images/customercard.svg"
+// import arrow2 from "../../assets/Images/SVG.svg"
+import customercard from "../../assets/Images/2.svg"
+import arrow2 from "../../assets/Images/1.svg"
 import {motion} from "framer-motion"
 function CustomerReview() {
   const [isHovered, setIsHovered] = useState(false);
