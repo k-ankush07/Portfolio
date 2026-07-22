@@ -29,7 +29,6 @@ function Modern_Scalable() {
            
 
               <div className="absolute inset-0   top-[250px] md:top-[370px] lg:top-[270px] flex justify-center items-center opacity-80"
-               style={{ pointerEvents: "none" }}
               >
                    <WorldGlobenew /> 
               </div>
