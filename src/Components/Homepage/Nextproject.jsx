@@ -131,7 +131,7 @@ function Nextproject() {
                 {/* main center image */}
                 {/* <img src={skilss4} alt='images' className='absolute scale-100  group-hover:scale-105  group-hover:border-2 group-hover:rounded-full group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px]  max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px]  md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px]  lg:left-55 lg:top-[80px] z-50 full_image '
                 /> */}
-                sfbdsusgfudsgfdewfsdfredqwdwefedsadadzawsdadaw
+                sfbdsusgfudsgfdewfsdfredqwdwefedsadadzawsdadawswsa
                 <img
                   src={skilss4}
                   alt="images"
