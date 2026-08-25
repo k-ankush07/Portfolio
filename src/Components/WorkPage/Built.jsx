@@ -1,79 +1,93 @@
 
-
 import React from 'react'
 import { motion } from "framer-motion";
 
-function Built() {
+function Built({ websitePt, websitebp, funparapt, image, fum, websiteRedesign, fumpara, reverse = false , leftwidth , rightwidth, ptsection, borderTop,borderColor , pointes=[], buttonText, buttonLink="#"}) {
   return (
-    <section>
-
+    <section className={`${ptsection}  `}>
       <motion.div
-        className='lg:flex px-2 md:px-0'
+        className={`lg:flex px-2 md:px-0  ${reverse ? "lg:flex-row-reverse" : ""} ${borderTop} ${borderColor} `}
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
 
-        {/* left side */}
+        {/* image side */}
         <motion.div
-          className='pt-[20px] pb-[10px] lg:pt-[42px] lg:pb-[37px] lg:w-[33%] lg:border-b border-[#FFFFFF]/10'
-          initial={{ opacity: 0, x: -40 }}
+          className={`pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px] ${leftwidth} border-b border-[#FFFFFF]/10 ${
+            reverse ? "lg:pl-[40px]" : "lg:pr-[40px]"
+          }`}
+          initial={{ opacity: 0, x: reverse ? 40 : -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.7 }}
           viewport={{ once: true }}
         >
-
-          <div className='flex'>
-
-            <motion.p
-              whileHover={{
-                scale: 1.1,
-                rotate: 3
-              }}
-              transition={{ duration: 0.3 }}
-              className='border-[1px] border-[#8F74BF54] text-[#FFAF7B] bg-[#8F74BF1A] text-[12px] leading-[18px] rounded-[6px] px-[6px] py-[4px] cursor-pointer'
-            >
-              01
-            </motion.p>
-
-          </div>
-
-          <motion.h2
-            className='text-[28px] sm:text-[30] lg:text-[40px] leading-[48px] font-bold text-[#FFFFFF] pt-[8px] lg:pt-[14px]'
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Why I Built This
-          </motion.h2>
-
+          <img  className=" w-full" src={image} alt='image' />
         </motion.div>
 
-        {/* right side */}
+        {/* text side */}
         <motion.div
-          className='pb-[20px] lg:pt-[38px] lg:pb-[33px] lg:pl-[51px] lg:w-[67%] border-b lg:border-l border-[#FFFFFF]/10'
-          initial={{ opacity: 0, x: 40 }}
+          className={`flex flex-col justify-center pt-[20px]   ${rightwidth} lg:border-b ${
+            reverse ? "lg:border-r " : "lg:border-l lg:pl-[40px] lg:pt-[38px] lg:pb-[33px]"
+          } border-[#FFFFFF]/10`}
+          initial={{ opacity: 0, x: reverse ? -40 : 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           viewport={{ once: true }}
         >
-
-          <motion.p
+          <motion.div
             className='text-[#BDBDBD] text-[14px] leading-[24px]'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 1 }}
             viewport={{ once: true }}
           >
-            Most EdTech codebases I'd seen were monoliths held together by duct tape — tangled auth, payment flows with no observability, and frontend/backend types that drifted silently until something broke in production. I wanted to build one properly. Not to prove I could use the tech, but to prove I could make the hard calls: where to draw module boundaries, how to handle a payment webhook that fires twice, what breaks when your server cold-starts mid-token-refresh.
-          </motion.p>
+            <h2 className='text-white text-[24px] lg:text-[40px] lg:leading-[48px] font-bold'>{fum}</h2>
+            <p className={`text-[18px] lg:text-[24px] text-[#FFFFFF] leading-[33px]  ${websitePt} ${websitebp}`}>{websiteRedesign}</p>
+            <p 
+              className={`text-[14px] leading-[24px] text-[#BDBDBD] lg:w-[600px] ${funparapt}`}
+              dangerouslySetInnerHTML={{ __html: fumpara }}
+            />
 
+            {/* points list */}
+            {pointes.length > 0 && (
+              <ul className='flex flex-col gap-[12px] pt-[20px]'>
+                {pointes.map((point, index) => (
+                  <motion.li
+                    key={index}
+                    className='flex items-center gap-[10px] leading-[24px] text-[14px] lg:text-[16px] text-[#BDBDBD]'
+                    initial={{ opacity: 0, x: reverse ? -20 : 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 + index * 0.15, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className='flex-shrink-0 w-[6px] h-[6px] rounded-full bg-[#BDBDBD]' />
+                    <span>{point}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            )}
+
+            {/* button */}
+            {buttonText && (
+              <motion.a
+                href={buttonLink}
+                className='inline-block mt-[20px] w-fit px-[25px] py-[12px] rounded-[500px] bg-white text-[#000000] text-[16px] '
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {buttonText}
+              </motion.a>
+            )}
+          </motion.div>
         </motion.div>
 
       </motion.div>
-
     </section>
   )
 }

@@ -6,7 +6,7 @@ import image from "../../assets/Images/image 82.svg"
 import SectionHeader from './SectionHeader'
 import { Paragraph, Heading } from "./WorkTypo";
 
-function WorksFull() {
+function WorksFull( ) {
     return (
         <section className=' px-2 md:px-0 pt-[10px] lg:pt-[40px]'>
 
@@ -18,7 +18,7 @@ function WorksFull() {
                 viewport={{ once: true }}
             >
 
-                <SectionHeader number="02" title="How It Works" />
+                <SectionHeader />
 
                 <motion.div
                     className=' lg:pt-[38px] lg:pb-[34px] lg:pl-[51px] lg:w-[67%] lg:border-t border-b lg:border-l border-[#FFFFFF]/10'

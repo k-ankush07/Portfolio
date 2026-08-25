@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-const SectionHeader = ({ number, title, className = "" }) => {
+const SectionHeader = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
-      className={`pt-[20px] pb-[10px] lg:pt-[42px] lg:pb-[37px] lg:w-[57%] xl:[33%] border-t lg:border-b border-[#FFFFFF]/10 ${className}`}
+      className={`pt-[20px] pb-[10px] lg:pt-[42px] lg:pb-[37px] lg:w-[57%] xl:[33%] lg:border-t lg:border-b lg:border-[#FFFFFF]/10 ${className}`}
     >
 
       <div className="flex">
