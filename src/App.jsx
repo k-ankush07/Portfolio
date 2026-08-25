@@ -1,3 +1,78 @@
+// import { Routes, Route, useLocation } from "react-router-dom";
+// import { useEffect, useState } from "react";
+
+// import Navbar from "./Components/Navbar/Navbar.jsx";
+// import Footer from "./Components/Footer/Footer.jsx";
+// import HomePage from "./Pages/HomePage.jsx";
+// import AboutPage from "./Pages/AboutPage.jsx";
+// import PrivacyPage from "./Pages/PrivacyPage.jsx";
+// import ConceptToCreation from "./Components/Homepage/ConceptToCreation.jsx";
+// import ScrollToTop from "./Components/ScrollToTop.jsx";
+// import TermsPage from "./Pages/TermsPage.jsx";
+// import BlogPage from "./Pages/BlogPage.jsx";
+// import WorkPage from "./Pages/WorkPage.jsx";
+// import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
+
+
+// function App() {
+//   const location = useLocation();
+//   const [displayLocation, setDisplayLocation] = useState(location);
+//   const [isLoading, setIsLoading] = useState(false);
+
+//   useEffect(() => {
+//     if (location !== displayLocation) {
+//       setIsLoading(true);
+
+//       const timer = setTimeout(() => {
+//         setDisplayLocation(location);
+//         setIsLoading(false);
+//       }, 300);
+
+//       return () => clearTimeout(timer);
+//     }
+//   }, [location, displayLocation]);
+
+//   return (
+//     <>
+    
+//       <Navbar />
+//       <ScrollToTop />
+
+
+//       <Routes location={displayLocation}>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/about" element={<AboutPage />} />
+//         <Route path="/blog" element={<BlogPage />} />
+//         <Route path="/privacy-policy" element={<PrivacyPage />} />
+//         <Route path="/terms-condition" element={<TermsPage />} />
+//         <Route path="/work" element={<WorkPage />} />
+//         <Route path="/work-detail" element={<WorkDetailPage />} />
+// {/* 
+//         <Route path="/guestbook" element={<Guestbook />} />
+//         <Route path="/bucket-list" element={<BucketList />} />
+//         <Route path="/links" element={<Links />} />
+//         <Route path="/uses" element={<Uses />} />
+//         <Route path="/attribution" element={<Attribution />} /> */}
+//       </Routes>
+
+      
+//       {isLoading && (
+//        <>
+//        </>
+//       )}
+
+
+//       <ConceptToCreation />
+
+//       <Footer />
+
+//     </>
+//   );
+// }
+
+// export default App;
+
+
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -12,7 +87,6 @@ import TermsPage from "./Pages/TermsPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
 import WorkPage from "./Pages/WorkPage.jsx";
 import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
-
 
 function App() {
   const location = useLocation();
@@ -33,11 +107,9 @@ function App() {
   }, [location, displayLocation]);
 
   return (
-    <>
-    
+    <div className="bg-[var(--bg-primary)] text-[var(--text-primary)] min-h-screen transition-colors duration-300">
       <Navbar />
       <ScrollToTop />
-
 
       <Routes location={displayLocation}>
         <Route path="/" element={<HomePage />} />
@@ -55,18 +127,15 @@ function App() {
         <Route path="/attribution" element={<Attribution />} /> */}
       </Routes>
 
-      
       {isLoading && (
-       <>
-       </>
+        <>
+        </>
       )}
-
 
       <ConceptToCreation />
 
       <Footer />
-
-    </>
+    </div>
   );
 }
 
