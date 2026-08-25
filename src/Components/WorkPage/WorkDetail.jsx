@@ -469,8 +469,8 @@ The challenge was to bring all of these elements together without creating a typ
             ptsection="lg:pt-[40px]"
             borderTop="lg:border-t"
             borderColor="lg:border-[#FFFFFF]/10"
-            leftwidth="lg:w-[47%]"
-            rightwidth="lg:w-[53%]"
+            leftwidth="lg:w-[53%]"
+            rightwidth="lg:w-[47%]"
             image={secondLastSection}
             fum="Key Outcomes"
             funparapt="pt-[20px]"
@@ -489,6 +489,7 @@ The challenge was to bring all of these elements together without creating a typ
 
           <Built
             reverse
+            paddinBottom="pb-[10px] lg:pb-[52px]"
             ptsection="lg:pt-[40px]"
             borderTop="lg:border-t"
             borderColor="lg:border-[#FFFFFF]/10"

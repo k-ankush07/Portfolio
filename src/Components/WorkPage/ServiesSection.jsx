@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 
 function ServicesSection() {
-  const [selected, setSelected] = useState("service-1")
+  const [selectedServices, setSelectedServices] = useState([])
+  const [selectedNiches, setSelectedNiches] = useState([])
 
   const ServicesArray = [
     { id: 1, Name: "Conversion optimization" },
@@ -27,30 +28,47 @@ function ServicesSection() {
     { id: 9, topic: "Supplements" },
   ]
 
+  const toggleService = (itemId) => {
+    setSelectedServices((prev) =>
+      prev.includes(itemId)
+        ? prev.filter((id) => id !== itemId)
+        : [...prev, itemId]
+    )
+  }
+
+  const toggleNiche = (itemId) => {
+    setSelectedNiches((prev) =>
+      prev.includes(itemId)
+        ? prev.filter((id) => id !== itemId)
+        : [...prev, itemId]
+    )
+  }
+
   return (
-    <section className="container">
-      <div className="pb-[48px]">
+    <section className="container ">
+      <div className=" px-2 md:px-0 pb-[48px] pt-[32px] lg:pt-0">
 
         {/* Services */}
-        <p className="text-[#BDBDBD] pb-[10px]">
+        <p className="text-[14px] lg:text-[18px] leading-[24px] text-[#BDBDBD] pb-[10px] ">
           Services
         </p>
 
-        <div className="flex gap-4 lg:flex-wrap">
+        <div className="flex flex-wrap gap-[10px] lg:flex-wrap">
           {ServicesArray.map((item) => {
             const itemId = `service-${item.id}`
+            const isSelected = selectedServices.includes(itemId)
 
             return (
               <div
                 key={itemId}
-                onClick={() => setSelected(itemId)}
-                className={`p-2 rounded-[5px] cursor-pointer transition-all duration-200 ${
-                  selected === itemId
+                onClick={() => toggleService(itemId)}
+                className={` py-[16px]  lg:py-[12px] px-[20px] border-[1px] border-[#FFFFFF1A]/10 rounded-[5px] cursor-pointer transition-all duration-200 ${
+                  isSelected
                     ? "bg-white text-black"
                     : "bg-[#232323] text-white"
                 }`}
               >
-                <p className="text-[18px]">
+                <p className=" text-[12px] lg:text-[18px]">
                   {item.Name}
                 </p>
               </div>
@@ -59,26 +77,27 @@ function ServicesSection() {
         </div>
 
         {/* Niche */}
-        <div className="mt-8">
-          <p className="text-[#BDBDBD] pb-[10px]">
+        <div className=" pt-[15px] lg:pt-[20px]">
+          <p className=" text-[14px] lg:text-[18px] leading-[24px] text-[#BDBDBD] pb-[10px] ">
             Niche
           </p>
 
-          <div className="flex gap-4 lg:flex-wrap">
+          <div className="flex flex-wrap gap-[10px]  lg:flex-wrap">
             {ArtArray.map((item) => {
               const itemId = `niche-${item.id}`
+              const isSelected = selectedNiches.includes(itemId)
 
               return (
                 <div
                   key={itemId}
-                  onClick={() => setSelected(itemId)}
-                  className={`p-2 rounded-[5px] cursor-pointer transition-all duration-200 ${
-                    selected === itemId
+                  onClick={() => toggleNiche(itemId)}
+                  className={`py-[12px] px-[19px] rounded-[5px] cursor-pointer transition-all duration-200 ${
+                    isSelected
                       ? "bg-white text-black"
                       : "bg-[#232323] text-white"
                   }`}
                 >
-                  <p className="text-[18px]">
+                  <p className=" text-[12px] lg:text-[18px]">
                     {item.topic}
                   </p>
                 </div>

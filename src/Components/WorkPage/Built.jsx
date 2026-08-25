@@ -2,9 +2,9 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-function Built({ websitePt, websitebp, funparapt, image, fum, websiteRedesign, fumpara, reverse = false , leftwidth , rightwidth, ptsection, borderTop,borderColor , pointes=[], buttonText, buttonLink="#"}) {
+function Built({ websitePt, websitebp, funparapt, paddinBottom,image, fum, websiteRedesign, fumpara, reverse = false , leftwidth , rightwidth, ptsection, borderTop,borderColor , pointes=[], buttonText, buttonLink="#"}) {
   return (
-    <section className={`${ptsection}  `}>
+    <section className={`${ptsection}  ${paddinBottom} `}>
       <motion.div
         className={`lg:flex px-2 md:px-0  ${reverse ? "lg:flex-row-reverse" : ""} ${borderTop} ${borderColor} `}
         initial={{ opacity: 0, y: 60 }}
