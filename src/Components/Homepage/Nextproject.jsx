@@ -112,8 +112,13 @@ function Nextproject() {
                   variants={item} src={skilss7} alt='images' className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px] left-[18%] top-[44px] max-xs:top-[36px] md:left-[90px] md:top-[51px] lg:left-25 lg:top-28 left-center  `}
                 />
                 {/* main center image */}
-                <img src={skilss4} alt='images' className='absolute scale-100  group-hover:scale-105 border-2 group-hover:border-2 group-hover:rounded-full group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px]  max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px]  md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px]  lg:left-55 lg:top-[80px] z-50 full_image '
-                />
+                {/* <img src={skilss4} alt='images' className='absolute scale-100  group-hover:scale-105  group-hover:border-2 group-hover:rounded-full group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px]  max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px]  md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px]  lg:left-55 lg:top-[80px] z-50 full_image '
+                /> */}
+                <img
+  src={skilss4}
+  alt='images'
+  className='absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px] lg:left-55 lg:top-[80px] z-50 full_image'
+/>
               </div>
               <img src={curveLine} alt='curve line' className=" " />
 
