@@ -4,6 +4,7 @@ import Skills from "../Components/Homepage/Skills"
 import Next_Project from "../Components/Homepage/Next_Project"
 import Nextproject from '../Components/Homepage/Nextproject'
 import SkillsSlick from '../Components/Homepage/SkillsSlick'
+import VideoSection from '../Components/Homepage/VideoSection'
 
 function SkillAndMordenPage() {
   return (
@@ -12,12 +13,13 @@ function SkillAndMordenPage() {
       <section className='' >
         <div className='container'>
         
-            <div className=' xl:-mt-[49px]  pb-[10px] pt-[20px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
+            <div className='select-none xl:-mt-[49px]  pb-[10px] pt-[20px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
               <Skills />
-              {/* <SkillsSlick /> */}
-               
-              {/* <Next_Project /> */}
-              <Nextproject />
+
+
+
+               <VideoSection />
+              {/* <Nextproject /> */}
             </div>
   
         </div>
