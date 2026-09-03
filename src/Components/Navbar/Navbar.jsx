@@ -341,7 +341,6 @@ import { FaBook, FaCreditCard } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
-import { useTheme } from "../../Context/ThemeContext";
 
 const menuItems = [
   {
@@ -385,7 +384,7 @@ export default function Navbar() {
   const [isPinned, setIsPinned] = useState(false);
   const [showGreeting, setShowGreeting] = useState(true);
 
-  const { isDark, toggleTheme } = useTheme();
+
 
   const closeTimer = useRef(null);
   const navigate = useNavigate();
