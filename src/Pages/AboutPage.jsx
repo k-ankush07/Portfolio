@@ -12,12 +12,14 @@ import Collaboration from '../Components/AboutPage/Collaboration';
 import GithubStats from '../Components/AboutPage/GithubStats';
 import Profile from '../Components/AboutPage/Profile';
 import ExperienceTimeline from '../Components/AboutPage/ExperienceTimeline';
+import InfoSection from '../Components/AboutPage/InfoSection';
 
 
 function AboutPage() {
   return (
     <div className=' lato-regular'>
-      <Profile />
+      {/* <Profile /> */}
+      <InfoSection />
     
        <Journey />
        <ExperienceTimeline />

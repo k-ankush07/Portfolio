@@ -338,21 +338,21 @@ function Developers({ }) {
                         </Swiper>
                     </div>
 
-                    {/* 👇 naya block add kiya — custom pagination pill + play/pause button */}
-                    <div className="flex items-center justify-center gap-3 pt-[30px]">
+                   
+                    <div className="flex items-center justify-center gap-3 pt-[10px]">
                         <div className="flex items-center gap-2">
                             {developersData.slice(0, 8).map((_, i) => (
                                 <button
                                     key={i}
                                     onClick={() => swiperRef.current?.slideToLoop(i)}
-                                    className={`h-[8px] rounded-full transition-all duration-300 relative overflow-hidden bg-[#3a3a3a] ${
+                                    className={`h-[8px] rounded-full transition-all cursor-pointer duration-300 relative overflow-hidden bg-[#3a3a3a] ${
                                         i === activeIndex ? "w-[32px]" : "w-[8px]"
                                     }`}
                                 >
                                     {i === activeIndex && (
                                         <span
                                             key={activeIndex + "-" + isPlaying}
-                                            className="absolute top-0 left-0 h-full bg-white rounded-full"
+                                            className="absolute top-0 left-0 h-full bg-white  rounded-full"
                                             style={{
                                                 animation: isPlaying
                                                     ? `fillBar ${AUTOPLAY_DELAY}ms linear forwards`

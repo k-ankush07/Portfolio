@@ -148,7 +148,7 @@ function WhatYouGet() {
   const current = badges[index];
 
   return (
-    <section className=" px-2 md:px-0 w-full xl:w-[40%] ">
+    <section className=" px-2 md:px-0 w-full lg:w-[40%] ">
      
       <div className=" flex flex-col border-[1px] border-[#292929] rounded-[8px] relative  overflow-hidden">
         <img
@@ -169,7 +169,7 @@ function WhatYouGet() {
         <div className="relative flex justify-center items-center h-[33px] lg:h-[63px] pt-[20px]">
           <div
             key={index}
-            className="badge-slide flex items-center gap-[10.7px] bg-[#000000] rounded-[1070px] px-[11px] py-[7px] lg:py-[10.7px] lg:px-[16.05px] shadow-[inset_-1.07px_1.07px_0px_0px_#FFFFFF80] z-20"
+            className="badge-slide flex items-center gap-[10.7px] bg-[#000000] rounded-[1070px] px-[11px] py-[7px]  md:py-[10.7px] md:px-[16.05px] shadow-[inset_-1.07px_1.07px_0px_0px_#FFFFFF80] z-20"
           >
             <span className="flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
               <img
@@ -179,10 +179,10 @@ function WhatYouGet() {
               />
             </span>
             <div>
-              <p className="text-[#FFFFFF] text-[10px] leading-[10px] lg:text-[14px] font-bold lg:leading-[15px]">
+              <p className="text-[#FFFFFF] text-[10px] leading-[10px] md:text-[12px] md:leading-[12px] lg:text-[14px] font-bold lg:leading-[15px]">
                 {current.title}
               </p>
-              <p className="text-[#C0C0C0] text-[7px] leading-[7px] lg:text-[10px] lg:leading-[10px] pt-[3px]">
+              <p className="text-[#C0C0C0] text-[7px] leading-[7px] md:text-[9px] md:leading-[9px]  lg:text-[10px] lg:leading-[10px] pt-[3px]">
                 {current.desc}
               </p>
             </div>
