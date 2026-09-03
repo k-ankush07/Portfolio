@@ -2,9 +2,11 @@ import React from 'react'
 import videoImage from "../../assets/Images/VideoImage.svg"
 function VideoSection() {
   return (
-    <div className='text-white h-full w-full z-1 cursor-pointer'>
-       <img className='h-[100%] w-[100%]' src={videoImage} alt='video_Image' />
+    <section className=' px-2 md:px-0 w-full   xl:w-[60%] ' >
+      <div className= 'h-[100%] z-1 cursor-pointer'>
+       <img className=' h-[100%] w-[100%] object-cover rounded-[8px]' src={videoImage} alt='video_Image' />
     </div>
+    </section>
   )
 }
 

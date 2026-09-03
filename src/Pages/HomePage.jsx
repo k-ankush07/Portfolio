@@ -12,6 +12,7 @@ import SkillAndMordenPage from './SkillAndMordenPage'
 import Journey from '../Components/AboutPage/Journey'
 import Engineer from '../Components/AboutPage/Engineer'
 import WhatYouGet from '../Components/Homepage/WhatYouGet'
+import VideoSection from '../Components/Homepage/VideoSection'
 
 
 function HomePage() {
@@ -21,8 +22,11 @@ function HomePage() {
     
    <Modern_Scalable />  
     <SkillAndMordenPage />
-    <WhatYouGet />
-<Web_Project />
+    <div className="container flex flex-col  xl:flex-row gap-[49px]   xl:gap-[7px] ">
+      <VideoSection />
+      <WhatYouGet />
+    </div>
+{/* <Web_Project /> */}
 <Recent__Work />
 <ViewAll />
 <Tool />
