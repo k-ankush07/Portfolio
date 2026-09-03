@@ -33,7 +33,7 @@ function Nextproject() {
 const container = {
   hidden: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.09,
       staggerDirection: -1, // ulta order me gayab hongi (last aayi wo pehle jayegi)
     },
   },
@@ -46,12 +46,19 @@ const container = {
   const item = {
   hidden: {
     opacity: 0,
+    scale: 0.5,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
+    },
   },
   show: {
     opacity: 1,
+    scale: 1,
     transition: {
-      duration: 0.4,
-      ease: "easeOut",
+      type: "spring",
+      bounce: 0.55,
+      duration: 0.7,
     },
   },
 };
@@ -98,7 +105,7 @@ const container = {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-[#BDBDBD] text-[12px] sm:text-[16px] pt-[9px] leading-[12px] sm:leading-[24px] text-center"
+              className="text-[#BDBDBD] text-[12px] sm:text-[16px] pt-[4px] leading-[12px] sm:leading-[24px] text-center"
             >
               Open communication, async updates, zero surprises
             </motion.p>
@@ -110,7 +117,7 @@ const container = {
             initial="hidden"
             animate={show ? "show" : "hidden"}
           >
-            <div className="xl:pl-[10px]  lg:pt-[59px]  relative">
+            <div className="xl:pl-[10px]  lg:pt-[26px]  relative">
               <div>
                 {/* left bottom */}
                 <motion.img
@@ -131,7 +138,7 @@ const container = {
                   variants={item}
                   src={skilss2}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 right-1 -top-0 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-17 `}
+                  className={`absolute h-[36px] w-[36px] z-50 right-1 -top-0 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-9 `}
                 />
                 {/* right bottom */}
                 {/* <motion.img
@@ -145,14 +152,14 @@ const container = {
                   variants={item}
                   src={skilss3}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 right-[86px] top-[44px]  md:right-[140px] md:top-[130px] md:h-[48px] md:w-[48px]  lg:right-32 lg:top-50 left-center-5  `}
+                  className={`absolute h-[36px] w-[36px] z-50 right-[86px] top-[44px]  md:right-[140px] md:top-[130px] md:h-[48px] md:w-[48px]  lg:right-35 lg:top-40 left-center-5  `}
                 />
                 {/* left center */}
                 <motion.img
                   variants={item}
                   src={skilss7}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px] left-[27%] top-[40px] max-xs:top-[36px] md:left-[170px] md:top-[10px] lg:left-38 lg:top-17 left-center  `}
+                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px] left-[27%] top-[40px] max-xs:top-[36px] md:left-[170px] md:top-[10px] lg:left-42 lg:top-8 left-center  `}
                 />
                 {/* main center image */}
                 {/* <img src={skilss4} alt='images' className='absolute scale-100  group-hover:scale-105  group-hover:border-2 group-hover:rounded-full group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px]  max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px]  md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px]  lg:left-55 lg:top-[80px] z-50 full_image '
@@ -161,7 +168,7 @@ const container = {
                 <img
                   src={skilss4}
                   alt="images"
-                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px] lg:left-55 lg:top-[90px] z-50 full_image"
+                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[100px] lg:w-[100px] lg:left-60 lg:top-[72px] z-50 full_image"
                 />
               </div>
               <img src={clippath} alt="curve line" className=" " />
