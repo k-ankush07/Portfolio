@@ -31,19 +31,23 @@
 import React, { useState, useEffect } from "react";
 import WhatYouGetImage from "../../assets/Images/whatyouget.svg";
 import boximage from "../../assets/Images/boximage.svg";
-import icon from "../../assets/Images/icon.svg";
+import icons from "../../assets/Images/icon.svg";
 
 const badges = [
   {
-    icon: "⚡",
+    icon: icons,
     title: "Loads Instantly",
     desc: "Fast loads, happy users, better...",
   },
-  { icon: "🎯", title: "Pixel Perfect", desc: "Every pixel placed with care" },
   {
-    icon: "🛡️",
+    icon: icons,
+    title: "Pixel Perfect",
+    desc: "Fast loads, happy users, better...",
+  },
+  {
+    icon: icons,
     title: "Reliable Code",
-    desc: "Tested, stable, production ready",
+    desc: "Fast loads, happy users, better...",
   },
 ];
 
@@ -61,7 +65,7 @@ function WhatYouGet() {
 
   return (
     <section className="container">
-      <div className="lg:w-[35%] border-[1px] border-[#292929] rounded-[8px] relative mb-10 overflow-hidden h-[389px]">
+      <div className="lg:w-[35%] border-[1px] border-[#292929] rounded-[8px] relative mb-10 overflow-hidden max-h-[389px]">
         <img
           src={WhatYouGetImage}
           alt="leftBlur image"
@@ -72,24 +76,31 @@ function WhatYouGet() {
           <h2 className="text-[#BDBDBD] font-bold text-[16px] leading-[16px]">
             WHAT YOU GET
           </h2>
-          <p className="text-[#FCFCFC] text-[20px] leading-[26px] font-light pt-[6px]">
+          <p className="bg-gradient-to-r from-[#FFFFFF] to-[#FCFCFC] bg-clip-text text-transparent text-[20px] leading-[26px] font-light pt-[6px]">
             Pixel-perfect websites, clean UI & reliable development
           </p>
         </div>
 
-        <div className="relative flex justify-center items-center h-[70px]">
+        <div className="relative flex justify-center items-center h-[60px]">
           <div
             key={index}
             className="badge-slide flex items-center gap-[10.7px] bg-[#000000] rounded-[1070px] py-[10.7px] px-[16.05px] shadow-[inset_-1.07px_1.07px_0px_0px_#FFFFFF80] z-20"
           >
-            <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
-              {current.icon}
+            <span className="  flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
+              <img
+                src={current.icon}
+                alt={current.title}
+                className="w-full h-full"
+              />
             </span>
+            {/* <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
+              {current.icon}
+            </span> */}
             <div>
-              <p className="text-[#FFFFFF] text-[14px] font-semibold leading-[15px]">
+              <p className="text-[#FFFFFF] text-[14px] font-bold leading-[15px]">
                 {current.title}
               </p>
-              <p className="text-[#C0C0C0] text-[10px] leading-[10px]">
+              <p className="text-[#C0C0C0] text-[10px] leading-[10px] pt-[3px]">
                 {current.desc}
               </p>
             </div>
