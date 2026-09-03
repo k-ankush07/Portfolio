@@ -29,7 +29,7 @@ function WebApp({ single }) {
 
 
 
-                    <div className=' relative px-2 pt-[40px] lg:pt-0 md:px-0 lg:border-r-[1px]  lg:border-[#FFFFFF]/10 lg:w-[50%]'>
+                    <div className=' relative  pt-[40px] lg:pt-0  lg:border-r-[1px]  lg:border-[#FFFFFF]/10 lg:w-[50%]'>
                         {/* top section  */}
                         <div className='lg:pr-[57px] '>
                             <div className='  flex justify-between'>

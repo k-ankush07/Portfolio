@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f5f5f5;
   --text-primary: #000000;
@@ -18,7 +18,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
 
 html {
@@ -475,7 +475,7 @@ padding-top: 15px;
 @media (max-width: 1023px) {
   .image_background {
     background-image: none !important;
-    background-color: #000000;
+    /* background-color: #000000; */
   }
 }
 
@@ -696,9 +696,8 @@ padding-top: 15px;
 
 @media (min-width:320px) and (max-width: 339px){
   .font_section{
-   font-size: 25px;
+   font-size: 22px;
     max-width: 370px; 
-    padding: 0px 2px;
   }
   .Recent_text{
     font-size: 28px;
@@ -716,7 +715,7 @@ padding-top: 15px;
 }
 @media (min-width:340px) and (max-width: 352px){
   .font_section{
-   font-size: 27px;
+   font-size: 24px;
     max-width: 370px; 
     padding: 0px 2px ;
   }
@@ -742,14 +741,14 @@ padding-top: 15px;
 }
 @media (min-width:353px) and (max-width: 359px){
   .font_section{
-   font-size: 28px;
+   font-size: 25px;
     max-width: 370px; 
   }
 }
 
 @media (min-width:360px) and (max-width:371px){
   .font_section{
-    font-size: 29px;
+    font-size: 26px;
    max-width: 370px;
   }
 }
@@ -769,7 +768,7 @@ padding-top: 15px;
 @media (min-width:372px) and (max-width: 400px){
   .font_section{
     max-width: 364px;
-    font-size: 28px;
+    font-size: 27px;
     margin:auto
   }
  
@@ -777,7 +776,7 @@ padding-top: 15px;
 @media (min-width:401px) and (max-width: 424px){
   .font_section{
     max-width: 369px;
-    font-size: 30px;
+    font-size: 29px;
     margin:auto
   }
  
@@ -785,7 +784,7 @@ padding-top: 15px;
 @media (min-width:425px) and (max-width: 499px){
   .font_section{
     max-width: 418px;
-    font-size: 34px;
+    font-size: 31px;
     margin:auto
   }
  

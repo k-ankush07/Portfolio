@@ -42,7 +42,7 @@ function WorkDetail() {
   ];
 
   return (
-    <section className="pt-[35px] lg:pt-[100px] lato-regular overflow-hidden">
+    <section className="pt-[35px] lg:pt-[100px] lato-regular overflow-hidden px-[20px] md:px-0">
       <div className="container">
         <div>
           {/* top heading */}

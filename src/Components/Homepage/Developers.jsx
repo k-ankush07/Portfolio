@@ -276,7 +276,7 @@ function Developers({ }) {
     };
     return (
         <>
-            <section className=' px-2 md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
+            <section className=' px-[20px] md:px-0 pt-[24px]  lg:pt-[49px] lg:py-0'>
                 <div className='container'>
                     <div className=''>
                          <h1 className=' developer_text text-[30px] sm:text-[35px] lg:text-[44px] leading-[35px] sm:leading-[57px] font-bold text-[#FFFFFF] text-center'>

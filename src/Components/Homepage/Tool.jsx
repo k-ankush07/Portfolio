@@ -305,7 +305,7 @@ function Tool() {
   }, [start]);
 
   return (
-    <section className="pb-[20px] pt-[40px] lg:pt-[41px] lg:pb[0px]  px-2 sm:px-0 sm:pb-[40px]">
+    <section className="pb-[20px] pt-[40px] lg:pt-[41px] lg:pb[0px]  px-[20px]  sm:px-0 sm:pb-[40px]">
       <div className="container">
 
         <div className="flex justify-between items-end pb-[20px] lg:pb-[30px]">

@@ -78,7 +78,7 @@ function Github() {
   }, []);
 
   return (
-    <section className="pb-[40px] px-2 sm:px-0 lg:pb-0">
+    <section className="pb-[40px] lg:pb-0">
   <div className="container ">
     <div className="relative flex items-center justify-center">
 

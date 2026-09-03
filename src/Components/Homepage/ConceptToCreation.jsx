@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRightLong } from "react-icons/fa6";
 function ConceptToCreation() {
     return (
-        <section className='pt-[20px] px-2 md:px-0 lg:pt-[40px]'>
+        <section className='pt-[20px] px-[20px] md:px-0 lg:pt-[40px]'>
             <div className='container'>
                 <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px]'>
 

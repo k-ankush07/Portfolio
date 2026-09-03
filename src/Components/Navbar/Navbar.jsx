@@ -648,7 +648,7 @@ export default function Navbar() {
               <img src={logo2} alt="icon" />
             </Link>
 
-            <div className="w-[40px] h-[40px] rounded-full bg-[#191919] dark:bg-white overflow-hidden flex items-center justify-center transition-colors duration-300">
+            {/* <div className="w-[40px] h-[40px] rounded-full bg-[#191919] dark:bg-white overflow-hidden flex items-center justify-center transition-colors duration-300">
               <button
                 className="cursor-pointer flex items-center justify-center"
                 onClick={toggleTheme}
@@ -658,8 +658,8 @@ export default function Navbar() {
                 ) : (
                   <CiDark className="text-xl text-white" />
                 )}
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

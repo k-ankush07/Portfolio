@@ -24,7 +24,7 @@ function Collaboration() {
     },
   };
   return (
-    <div className='px-[9px] pt-[20px] md:pt-[0]'>
+    <div className=' pt-[20px] md:pt-[0]'>
       <div className="text-center text-[#FFFFFF] pt-[14px]    border-t-1 border-[#FFFFFF]/10 sm:border-none lg:pt-[40px] lg:pb-[18px]">
            <div className="text-[30px] leading-[76px] sm:text-[35px] lg:text-[44px] font-bold">
            Code &{" "}

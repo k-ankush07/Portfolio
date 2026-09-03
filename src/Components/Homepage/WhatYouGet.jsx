@@ -148,7 +148,7 @@ function WhatYouGet() {
   const current = badges[index];
 
   return (
-    <section className=" px-2 md:px-0 w-full lg:w-[40%] ">
+    <section className=" px-[20px]  md:px-0 w-full lg:w-[40%] ">
      
       <div className=" flex flex-col border-[1px] border-[#292929] rounded-[8px] relative  overflow-hidden">
         <img

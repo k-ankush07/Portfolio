@@ -30,7 +30,7 @@ function Explore() {
   };
   return (
     <>
-      <section className=' px-2 pt-[31px] lg:pt-[48px] md:px-0   '>
+      <section className=' px-[20px] pt-[31px] lg:pt-[48px] md:px-0   '>
 
         <div className='container'>
           <div className='text-center  text-[#FFFFFF]  pb-[22px] lg:pb-0   '>

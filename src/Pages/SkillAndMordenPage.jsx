@@ -13,7 +13,7 @@ function SkillAndMordenPage() {
       <section className='' >
         <div className='container'>
         
-            <div className='select-none xl:-mt-[49px]  pb-[10px] pt-[20px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col px-2 md:px-0 xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
+            <div className='select-none px-[20px] md:px-0 xl:-mt-[49px]  pb-[10px] pt-[58px]  lg:pb-[9px] xl:pt-[-15px] flex flex-col  xl:px-0  xl:flex-row sm:justify-center gap-[10px]'>
               <Skills />
 
 

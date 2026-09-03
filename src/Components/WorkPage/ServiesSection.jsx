@@ -46,7 +46,7 @@ function ServicesSection() {
 
   return (
     <section className="container ">
-      <div className=" px-2 md:px-0 pb-[48px] pt-[32px] lg:pt-0">
+      <div className=" px-[20px] md:px-0 pb-[48px] pt-[32px] lg:pt-0">
 
         {/* Services */}
         <p className="text-[14px] lg:text-[18px] leading-[24px] text-[#BDBDBD] pb-[10px] ">

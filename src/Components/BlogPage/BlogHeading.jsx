@@ -37,7 +37,7 @@ const fadeUp = {
 
 function BlogHeading() {
   return (
-    <section className="pt-[40px] lg:pt-[100px] px-2 md:px-0 lato-regular">
+    <section className="pt-[40px] lg:pt-[100px] px-[20px]  md:px-0 lato-regular">
       <div className="container text-center  text-white ">
 
         {/* Breadcrumb */}

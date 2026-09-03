@@ -15,7 +15,7 @@ function Policy({
 }) {
   return (
     <section
-      className="sticky top-20 flex items-center lg:pb-[20px]"
+      className="sticky top-20 flex items-center lg:pb-[20px] bg-[#0a0a0a] lg:bg-none"
       style={{ zIndex: 10 }}
     >
       <div className="container">
@@ -26,7 +26,7 @@ function Policy({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden px-2 md:px-0 pt-[20px]  lg:pt-[60px]"
+          className="image_background rounded-[16px] flex flex-col lg:flex-row overflow-hidden  pt-[20px]  lg:pt-[60px]"
         >
 
           {/* LEFT SIDE */}

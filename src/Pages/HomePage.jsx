@@ -18,7 +18,7 @@ import VideoSection from '../Components/Homepage/VideoSection'
 function HomePage() {
   return (
    <>
-   <div className='lato-regular'>
+   <div className='lato-regular '>
     
    <Modern_Scalable />  
     <SkillAndMordenPage />

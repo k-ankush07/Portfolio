@@ -14,7 +14,7 @@ function TermsHeading() {
 
   return (
     <>
-    <div className='lato-regular'>
+    <div className='lato-regular px-[20px] md:px-0 '>
       
         <PrivacyText  colorText='Use' first_letter="Terms of" para="Please review the terms that govern your use of this website." />
      <Policy

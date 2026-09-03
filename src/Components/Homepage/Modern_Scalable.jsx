@@ -25,7 +25,7 @@ function Modern_Scalable() {
         <div className="container">
           {/* <div className="  "> */}
 
-            <div className="  lg:pt-[0px]  xl:pb-[182px] relative   flex   justify-center text-center text-[var(--text-primary)] overflow-hidden  ">
+            <div className="  lg:pt-[0px]  xl:pb-[182px] relative   flex   justify-center text-center text-[#ffffff] overflow-hidden  ">
            
 
               <div className="absolute inset-0   top-[250px] md:top-[370px] lg:top-[270px] flex justify-center items-center opacity-80"
@@ -34,7 +34,7 @@ function Modern_Scalable() {
               </div>
 
               {/* Content */}
-              <div className="relative z-10  ">
+              <div className="relative z-10 px-[20px] md:px-0 ">
 
                 {/* Badge */}
 
@@ -47,7 +47,7 @@ function Modern_Scalable() {
 
                   {/* Content (always visible) */}
                   {/* <div className="relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white"> */}
-                  <div className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-[var(--text-primary)] transition-all duration-700 ease-out
+                  <div className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-[#ffffff] transition-all duration-700 ease-out
           ${show ? "opacity-100 -translate-y-0" : "opacity-0 -translate-y-10"}`}>
 
                     <div className="bg-[#df7a78] rounded-md px-1 py-1 flex items-center gap-1 text-[12px]">
@@ -79,9 +79,9 @@ function Modern_Scalable() {
                 <div className="px-5" >
 
                   <div className="flex justify-center items-center pt-[15px] md:pt-[21px] ">
-                    <p className={`name-text text-[var(--text-primary)] text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
+                    <p className={`name-text text-[#ffffff] text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-                      <span className="font-normal text-[var(--text-primary)]">👋 Hello,</span>{" "}
+                      <span className="font-normal text-[#ffffff]">👋 Hello,</span>{" "}
                       I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
                     </p>
                   </div>

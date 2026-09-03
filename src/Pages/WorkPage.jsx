@@ -11,7 +11,7 @@ function WorkPage() {
         <PrivacyText  colorText='Work' first_letter="Curated" para="A showcase of my best and most impactful projects." />
     </div>
     <ServicesSection />
-  <div className='lg:pb-[20px] work_class'>
+  <div className='lg:pb-[20px] work_class px-[20px] md:px-0'>
      <WebApp />
    <WebApp />
    <WebApp single  />
