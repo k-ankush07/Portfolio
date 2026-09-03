@@ -21,31 +21,56 @@ function Nextproject() {
   const showClass =
     "opacity-100 scale-100 translate-y-0 transition-all duration-700";
 
-  const container = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.15, //  delay between each image
-      },
-    },
-  };
+  // const container = {
+  //   hidden: {},
+  //   show: {
+  //     transition: {
+  //       staggerChildren: 0.15, //  delay between each image
+  //     },
+  //   },
+  // };
 
+const container = {
+  hidden: {
+    transition: {
+      staggerChildren: 0.1,
+      staggerDirection: -1, // ulta order me gayab hongi (last aayi wo pehle jayegi)
+    },
+  },
+  show: {
+    transition: {
+      staggerChildren: 0.15, // delay between each image
+    },
+  },
+};
   const item = {
-    hidden: {
-      opacity: 0,
-      scale: 0.6,
-      y: -30,
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
     },
-    show: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.1,
-        ease: "easeOut",
-      },
-    },
-  };
+  },
+};
+  // const item = {
+  //   hidden: {
+  //     opacity: 0,
+  //     scale: 0.6,
+  //     y: -30,
+  //   },
+  //   show: {
+  //     opacity: 1,
+  //     scale: 1,
+  //     y: 0,
+  //     transition: {
+  //       duration: 0.1,
+  //       ease: "easeOut",
+  //     },
+  //   },
+  // };
   return (
     <>
       <div className=" next-Project bg-[#000000]  rounded-[8px] xl:w-[60%] z-10 group">
@@ -92,7 +117,7 @@ function Nextproject() {
                   variants={item}
                   src={skilss5}
                   alt="images"
-     className={`absolute h-[36px] w-[36px] z-50  md:h-[48px] md:w-[48px] -left-3 -bottom-2 md:left-[130px] md:bottom-[-3px]  lg:bottom-0 lg:left-33 `}
+     className={`absolute h-[36px] w-[36px] z-50  md:h-[48px] md:w-[48px] left-4 -bottom-0 md:left-[130px] md:bottom-[-3px]  lg:bottom-0 lg:left-33  left-bottom`}
                 />
                 {/* left top */}
                 <motion.img
@@ -106,7 +131,7 @@ function Nextproject() {
                   variants={item}
                   src={skilss2}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 -right-1 -top-2 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-17 `}
+                  className={`absolute h-[36px] w-[36px] z-50 right-1 -top-0 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-17 `}
                 />
                 {/* right bottom */}
                 {/* <motion.img
@@ -127,7 +152,7 @@ function Nextproject() {
                   variants={item}
                   src={skilss7}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px] left-[18%] top-[44px] max-xs:top-[36px] md:left-[170px] md:top-[10px] lg:left-38 lg:top-17 left-center  `}
+                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px] left-[27%] top-[40px] max-xs:top-[36px] md:left-[170px] md:top-[10px] lg:left-38 lg:top-17 left-center  `}
                 />
                 {/* main center image */}
                 {/* <img src={skilss4} alt='images' className='absolute scale-100  group-hover:scale-105  group-hover:border-2 group-hover:rounded-full group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px]  max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[26px] sm:h-[100px] sm:w-[100px]  md:left-[41%] md:top-[25px] md:h-[100px] md:w-[100px] lg:h-[117px] lg:w-[117px]  lg:left-55 lg:top-[80px] z-50 full_image '
