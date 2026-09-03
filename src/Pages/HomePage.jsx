@@ -22,7 +22,7 @@ function HomePage() {
     
    <Modern_Scalable />  
     <SkillAndMordenPage />
-    <div className="container flex flex-col  lg:flex-row gap-[49px]   lg:gap-[7px] ">
+    <div className="container flex flex-col pt-[49px]   lg:flex-row gap-[49px]   lg:gap-[7px] ">
       <VideoSection />
       <WhatYouGet />
     </div>
