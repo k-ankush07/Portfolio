@@ -107,7 +107,7 @@ function App() {
   }, [location, displayLocation]);
 
   return (
-    <div className="#0a0a0a  min-h-screen transition-colors duration-300">
+    <div className="bg-[#0a0a0a] text-[#ffffff] min-h-screen transition-colors duration-300">
       <Navbar />
       <ScrollToTop />
 
