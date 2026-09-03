@@ -2,6 +2,18 @@ import React from 'react'
 import arrow from "../../assets/Images/arrow.svg"
 import RecruiterOne from "./RecruiterOne"
 import {motion} from "framer-motion"
+import first from "../../assets/Images/1st.svg";
+import second from "../../assets/Images/2nd.svg";
+import third from "../../assets/Images/3rd.svg";
+import fourth from "../../assets/Images/4th.svg";
+import fifth from "../../assets/Images/5th.svg";
+import sixth from "../../assets/Images/6th.svg";
+import seventh from "../../assets/Images/7th.svg";
+import eighth from "../../assets/Images/8th.svg";
+import ninth from "../../assets/Images/9th.svg";
+import ten from "../../assets/Images/10th.svg";
+import eleven from "../../assets/Images/11th.svg";
+import twelve from "../../assets/Images/12th.svg";
 function ViewAll() {
   
   return (
@@ -9,9 +21,26 @@ function ViewAll() {
    
    <div className='container'>
     <div className="flex flex-col">
-        <RecruiterOne index={0}  desc=" is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', " />
-        <RecruiterOne index={1} desc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney  " />
-        <RecruiterOne index={2} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  " />
+        <RecruiterOne index={0}  desc=" is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', "
+        leftImg={third}
+  centerImg={second}
+  rightImg={first}
+        />
+        <RecruiterOne index={1} desc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney  " 
+        leftImg={sixth}
+  centerImg={fifth}
+  rightImg={fourth}
+        />
+        <RecruiterOne index={2} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  "
+        leftImg={ninth}
+  centerImg={eighth}
+  rightImg={seventh}
+        />
+        <RecruiterOne index={3} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  "
+        leftImg={ten}
+  centerImg={eleven}
+  rightImg={twelve}
+        />
       </div>
 
 

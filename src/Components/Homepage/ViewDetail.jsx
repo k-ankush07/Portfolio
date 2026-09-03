@@ -9,7 +9,7 @@ import rightimage from "../../assets/Images/newimages (4).svg";
 // import leftimage from "../../assets/Images/newLeft.png";
 // import rightimage from "../../assets/Images/newright.png";
 
-function ViewDetail() {
+function ViewDetail({ leftImg, centerImg, rightImg }) {
   const containerRef = useRef(null);
 
   const mouse = useRef({ x: 0, y: 0 });
@@ -71,7 +71,6 @@ function ViewDetail() {
     let x = e.clientX - rect.left;
     let y = e.clientY - rect.top;
 
-
     // outside check yahi andar hona chahiye
     const isOutside =
       x < -BUFFER ||
@@ -104,8 +103,6 @@ function ViewDetail() {
     }));
   };
 
-
-
   const handleLeave = () => {
     setHovered(false);
 
@@ -132,10 +129,7 @@ function ViewDetail() {
         }}
       >
         <div className="  rounded-[17px] lg:rounded-[26px] bg-[#181818] px-[2px] py-[2px] lg:px-1 lg:py-1">
-          <div className="relative overflow-visible  bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]"
-
-          >
-
+          <div className="relative overflow-visible  bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]">
             {/* text */}
             <div className="inner_work pt-[17px] pl-[20px]  xl:pl-[36px] xl:pt-[25px]  flex justify-between">
               <p
@@ -149,14 +143,12 @@ function ViewDetail() {
               </p>
             </div>
 
-
             {/* main div for images */}
             <div className="inner_main relative flex justify-center  overflow-hidden items-end  mt-[12px] lg:mt-[27px]">
-
               {/* Left Image */}
               <div className="w-[33%]  ">
                 <img
-                  src={leftimage}
+                  src={leftImg}
                   alt="left Image"
                   className="
         left-image h-full w-full absolute
@@ -169,7 +161,7 @@ function ViewDetail() {
               {/* Center Image */}
               <div className="w-[34%] z-[99] overflow-hidden">
                 <img
-                  src={centerimage}
+                  src={centerImg}
                   alt="center Image"
                   className="
       center-image 
@@ -181,14 +173,13 @@ function ViewDetail() {
               {/* Right Image */}
               <div className="w-[33%]">
                 <img
-                  src={rightimage}
+                  src={rightImg}
                   alt="right Image"
                   className="
         right-image  h-full w-full absolute -z-0 
       "
                 />
               </div>
-
             </div>
             {/* cursor */}
             {visible && (

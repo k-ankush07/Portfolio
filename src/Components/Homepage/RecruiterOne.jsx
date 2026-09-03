@@ -14,7 +14,7 @@ import {
   motion,
 } from "framer-motion";
 
-function RecruiterOne({ index, desc }) {
+function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -88,7 +88,7 @@ function RecruiterOne({ index, desc }) {
                     variants={itemVariants}
                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
                   >
-                    <ViewDetail />
+                    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg} />
                   </motion.div>
 
                   {/* Right */}
