@@ -141,7 +141,8 @@ function Nextproject() {
               <img src={curveLine} alt="curve line" className=" " />
             </div>
           </motion.div>
-          {/* </div> */}
+
+          
           <div className=" mt-6 lg:mt-0">
             <motion.img
               src={arrow}

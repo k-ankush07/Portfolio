@@ -1,6 +1,24 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, FreeMode } from "swiper/modules";
+// import Blur from "../../assets/Images/Gradient+Blur.svg"
+// import Border4 from "../../assets/Images/linesbg.svg"
+// import image1 from "../../assets/Images/TypeScript.svg"
+// import image2 from "../../assets/Images/skillsimage (1).svg"
+// import image3 from "../../assets/Images/skillsimage (2).svg"
+// import image4 from "../../assets/Images/skillsimage (3).svg"
+// import image5 from "../../assets/Images/skillsimage (4).svg"
+// import image6 from "../../assets/Images/skillsimage (5).svg"
+// import image7 from "../../assets/Images/skillsimage (6).svg"
+// import image8 from "../../assets/Images/skillsimage (7).svg"
+// import image9 from "../../assets/Images/skillsimage (8).svg"
+// import image10 from "../../assets/Images/skillsimage (9).svg"
+// import image11 from "../../assets/Images/skillsimage (10).svg"
+// import image12 from "../../assets/Images/skillsimage (11).svg"
+// import image13 from "../../assets/Images/skillsimage (12).svg"
+// import image14 from "../../assets/Images/skillsimage (13).svg"
+// import image15 from "../../assets/Images/skillsimage (14).svg"
+
 import Blur from "../../assets/Images/Gradient+Blur.svg"
 import Border4 from "../../assets/Images/linesbg.svg"
 import image1 from "../../assets/Images/Group 1707480026.png"
@@ -18,7 +36,6 @@ import image12 from "../../assets/Images/Group 1707480037.png"
 import image13 from "../../assets/Images/Group 1707480038.png"
 import image14 from "../../assets/Images/Group 1707480039.png"
 import image15 from "../../assets/Images/Group 1707480040.png"
-import magnifying from "../../assets/Images/magnifying.svg"
 // images
 function Skills() {
 
@@ -73,18 +90,18 @@ function Skills() {
 
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image2} alt="Next.js" className=" skill_slider" />
+                      <img src={image2} alt="Next.js" className="skill_slider" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image3} alt="pnpm" className=" skill_slider" />
+                      <img src={image3} alt="pnpm" className="skill_slider" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image4} alt="Docker" className=" skill_slider" />
+                      <img src={image4} alt="Docker" className="skill_slider" />
                     </div>
 
 
@@ -92,24 +109,24 @@ function Skills() {
 
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image5} alt="Next.js" className=" skill_slider" />
+                      <img src={image5} alt="Next.js" className="skill_slider" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image1} alt="Docker" className=" skill_slider" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="main-class">
-                      <img src={image2} alt="Next.js" className=" skill_slider" />
+                      <img src={image1} alt="Docker" className="skill_slider" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image3} alt="pnpm" className=" skill_slider" />
+                      <img src={image2} alt="Next.js" className="skill_slider" />
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="main-class">
+                      <img src={image3} alt="pnpm" className="skill_slider" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>

@@ -18,8 +18,8 @@ function SkillAndMordenPage() {
 
 
 
-               <VideoSection />
-              {/* <Nextproject /> */}
+               {/* <VideoSection /> */}
+              <Nextproject />
             </div>
   
         </div>

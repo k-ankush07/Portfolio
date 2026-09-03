@@ -11,6 +11,7 @@ import ConceptToCreation from '../Components/Homepage/ConceptToCreation'
 import SkillAndMordenPage from './SkillAndMordenPage'
 import Journey from '../Components/AboutPage/Journey'
 import Engineer from '../Components/AboutPage/Engineer'
+import WhatYouGet from '../Components/Homepage/WhatYouGet'
 
 
 function HomePage() {
@@ -20,6 +21,7 @@ function HomePage() {
     
    <Modern_Scalable />  
     <SkillAndMordenPage />
+    <WhatYouGet />
 <Web_Project />
 <Recent__Work />
 <ViewAll />

@@ -945,4 +945,32 @@ padding-top: 15px;
 
 
 
+@keyframes badgeSlideIntoBox {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(70px) scale(0.7);
+  }
+}
 
+.badge-slide {
+  animation: badgeSlideIntoBox 2.2s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .badge-slide {
+    animation: none;
+    opacity: 1;
+  }
+}
