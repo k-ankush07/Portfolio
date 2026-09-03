@@ -696,8 +696,9 @@ padding-top: 15px;
 
 @media (min-width:320px) and (max-width: 339px){
   .font_section{
-   font-size: 26px;
+   font-size: 25px;
     max-width: 370px; 
+    padding: 0px 2px;
   }
   .Recent_text{
     font-size: 28px;
@@ -717,6 +718,7 @@ padding-top: 15px;
   .font_section{
    font-size: 27px;
     max-width: 370px; 
+    padding: 0px 2px ;
   }
   
   .Recent_text{
