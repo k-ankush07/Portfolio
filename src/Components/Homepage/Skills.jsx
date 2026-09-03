@@ -90,7 +90,7 @@ function Skills() {
 
                   <SwiperSlide>
                     <div className="main-class">
-                      <img src={image2} alt="Next.js" className="skill_slider" />
+                      <img src={image2} alt="Next.js" className="skill_slider h-full" />
                     </div>
                   </SwiperSlide>
 
