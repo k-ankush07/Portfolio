@@ -83,7 +83,7 @@ function InfoSection() {
         <div className="flex  px-[27px]">
           <div className="border-[1px] border-[#FFFFFF] rounded-[18px] lg:rounded-[30px] p-[15px] ">
             <div className="border-[1px] rounded-[18px] lg:rounded-[30px] border-[#FFFFFF]/30">
-              <img src={userImage} alt="User"  className="max-w-max-[449.px] scale-110 lg:scale-105"/>
+              <img src={userImage} alt="User"  className="scale-110 lg:scale-105"/>
             </div>
           </div>
         </div>
