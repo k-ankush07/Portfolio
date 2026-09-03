@@ -64,7 +64,8 @@ function WhatYouGet() {
   const current = badges[index];
 
   return (
-    <section className="container">
+   <div className="px-2 md:px-0">
+     <section className="container">
       <div className="lg:w-[35%] border-[1px] border-[#292929] rounded-[8px] relative mb-10 overflow-hidden max-h-[389px]">
         <img
           src={WhatYouGetImage}
@@ -72,35 +73,35 @@ function WhatYouGet() {
           className="absolute right-0"
         />
 
-        <div className=" pt-[45px] px-[50px] ">
-          <h2 className="text-[#BDBDBD] font-bold text-[16px] leading-[16px]">
+        <div className=" pt-[30px] pl-[30px] lg:pt-[45px] lg:px-[50px] ">
+          <h2 className="text-[#BDBDBD] font-bold text-[10px] leading-[10px] lg:text-[16px] lg:leading-[16px]">
             WHAT YOU GET
           </h2>
-          <p className="bg-gradient-to-r from-[#FFFFFF] to-[#FCFCFC] bg-clip-text text-transparent text-[20px] leading-[26px] font-light pt-[6px]">
+          <p className="bg-gradient-to-r from-[#FFFFFF] to-[#FCFCFC] bg-clip-text text-transparent text-[14px] leading-[14px] lg:text-[20px] lg:leading-[26px] font-light pt-[5px]  lg:pt-[6px]">
             Pixel-perfect websites, clean UI & reliable development
           </p>
         </div>
 
-        <div className="relative flex justify-center items-center h-[60px]">
+        <div className="relative flex justify-center items-center h-[33px] lg:h-[63px] pt-[20px]">
           <div
             key={index}
-            className="badge-slide flex items-center gap-[10.7px] bg-[#000000] rounded-[1070px] py-[10.7px] px-[16.05px] shadow-[inset_-1.07px_1.07px_0px_0px_#FFFFFF80] z-20"
+            className="badge-slide flex items-center gap-[10.7px] bg-[#000000] rounded-[1070px] px-[11px] py-[7px] lg:py-[10.7px] lg:px-[16.05px] shadow-[inset_-1.07px_1.07px_0px_0px_#FFFFFF80] z-20 "
           >
             <span className="  flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
               <img
                 src={current.icon}
                 alt={current.title}
-                className="w-full h-full"
+                className="w-[21px] h-[21px] lg:w-[28px] lg:h-[28px]"
               />
             </span>
             {/* <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#1c1c1c] text-white">
               {current.icon}
             </span> */}
             <div>
-              <p className="text-[#FFFFFF] text-[14px] font-bold leading-[15px]">
+              <p className="text-[#FFFFFF] text-[10px] leading-[10px] lg:text-[14px] font-bold lg:leading-[15px]">
                 {current.title}
               </p>
-              <p className="text-[#C0C0C0] text-[10px] leading-[10px] pt-[3px]">
+              <p className="text-[#C0C0C0] text-[7px] leading-[7px]  lg:text-[10px] lg:leading-[10px] pt-[3px]">
                 {current.desc}
               </p>
             </div>
@@ -111,11 +112,12 @@ function WhatYouGet() {
           <img
             src={boximage}
             alt="box image"
-            className="relative z-10  pl-[26px] pr-[26px] "
+            className="relative z-10 px-[51px]  lg:px-[26px] "
           />
         </div>
       </div>
     </section>
+   </div>
   );
 }
 
