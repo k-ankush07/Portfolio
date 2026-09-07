@@ -82,7 +82,7 @@ function ExperienceTimeline() {
             date: "May 2019- Feb 2022",
             logo: Github,
             company: "HubSyntax",
-            textpara:"USA",
+            // textpara:"USA",
             position:"Freelancer - Remote",
             role1: "Open Source",
             role2: "Developer",
@@ -217,16 +217,22 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                                         </h2>
                                     </div>
 
+
+                                   
                                     <div className="text-[14px] pt-[14px] lg:pt-[15px] text-[#BDBDBD] space-y-[6px] ">
+                                         {exp.textpara ? <>
                                         <p className="flex gap-[10px] items-center">
                                             <img src={newlocation} alt="" />
                                             {exp.textpara}
                                         </p>
+                                        </> : ""}
                                         <p className="flex gap-2 items-center">
                                             <img src={work} alt="" />
                                             {exp.position}
                                         </p>
                                     </div>
+                                    
+                                    
                                 </motion.div>
 
                                 {/* RIGHT SIDE */}
