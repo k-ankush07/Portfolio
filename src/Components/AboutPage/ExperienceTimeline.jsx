@@ -23,8 +23,8 @@ function ExperienceTimeline() {
             company: "BlueStout",
             textpara:"USA",
             position:"Freelancer- Remote",
-            role1: "Frontend",
-            role2: "Engineer",
+            role1: "Shopify Developer & ",
+            role2: "CRO Specialist",
             points: [
                 {
                     // p: "Architected Headless Systems (Sanity/Contentful): ",
@@ -58,8 +58,8 @@ function ExperienceTimeline() {
             company: "EcombitHub",
             textpara:"USA",
             position:"Freelancer - Remote",
-            role1: "Open Source",
-            role2: "Developer",
+            role1: "Shopify &",
+            role2: "CRO Developer ",
             points: [
                 {
                     s: "Built scalable, component-based UIs in TypeScript, JavaScript ES6+, SCSS and Liquid across 25+ enterprise Shopify storefronts.",
@@ -84,7 +84,7 @@ function ExperienceTimeline() {
             company: "HubSyntax",
             // textpara:"USA",
             position:"Freelancer - Remote",
-            role1: "Open Source",
+            role1: "Shopify",
             role2: "Developer",
             points: [
                 {
