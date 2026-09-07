@@ -3,7 +3,7 @@
 import React from 'react'
 import { MdStarRate } from "react-icons/md";
 
-function Cards({ desc, name, picture, bg }) {
+function Cards({ desc, name, picture, bg,ownertext }) {
   return (
     <div className='bg-[#181818] 
       pt-[25px] pb-[25px] px-[21px] 
@@ -55,7 +55,7 @@ function Cards({ desc, name, picture, bg }) {
           </h1>
 
           <p className='text-[#BDBDBD] text-[11px] leading-[20px] lg:text-[12px] lg:leading-[24px]'>
-            Senior Frontend Developer
+            {ownertext}
           </p>
         </div>
       </div>

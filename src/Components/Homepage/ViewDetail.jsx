@@ -132,7 +132,7 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
           <div className="relative overflow-visible  bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]">
             {/* text */}
             <div className="inner_work pt-[17px] pl-[20px]  xl:pl-[36px] xl:pt-[25px]  flex justify-between">
-              <p
+              {/* <p
                 className="text-Web max-w-[290px] sm:max-w-[330px] lg:max-w-[450px] text-[14px] sm:text-[16px] lg:text-[20px] leading-[17px] sm:leading-[25px] lg:leading-[30px] text-white font-bold transition-all duration-300 ease-out"
                 style={{
                   transform: hovered ? "scale(1.03)" : "scale(1)",
@@ -140,7 +140,7 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
               >
                 Developed a recruitment platform to connect job seekers and
                 recruiters
-              </p>
+              </p> */}
             </div>
 
             {/* main div for images */}

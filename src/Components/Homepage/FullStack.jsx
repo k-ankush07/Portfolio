@@ -268,24 +268,27 @@ function FullStack() {
                                 <div>
                                     <motion.h1
                                         variants={textItem}
-                                        className='text-[#FFFFFF] text-[18px] leading-[24px] lg:text-[20px] lg:leading-[30px] font-bold max-w-[282px] lg:max-w-[300px]'
+                                        className='text-[#FFFFFF] text-[18px] leading-[24px] lg:text-[20px] lg:leading-[30px] font-bold max-w-[282px] lg:max-w-[310px]'
                                     >
-                                        Full-Stack Developer and a little bit of everything
+                                        {/* Full-Stack Developer and a little bit of everything */}
+                                        Shopify Developer, CRO Specialist, and a Little Bit of Myself
+
                                     </motion.h1>
 
                                     <div className='space-y-1 text-[#BDBDBD] text-[12px] leading-[20px] lg:text-[14px] lg:leading-[24px] max-w-[400px]'>
 
                                         <motion.p variants={textItem} className=' pt-[16px] lg:pt-[24px]'>
-                                            I'm Ankush Kumar, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend to backend, I thrive on solving complex problems with clean, efficient code. My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
+                                            I'm Ankush, a Shopify Developer and conversion specialist passionate about building and scaling ecommerce brands. I handle both frontend and backend development, from creating custom Shopify stores and optimizing store performance to improving user journeys and conversion rates. I have gained a lot of valuable experience from previous work and achieved what i set out to do. Build fully custom code stores, integrate AI workflows, a/b test, store optimization, custom theme and app development, speed optimization, and SEO practices. I enjoy learning latest technologies, testing different ideas, and finding better ways to improve store results.
                                         </motion.p>
 
                                         <motion.p variants={textItem}>
-                                            When I'm not immersed in work, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.
+                                           When I'm not working on Shopify stores, I'm exploring new technologies, studying ecommerce trends, and looking for better ways to create seamless shopping experiences.
+
                                         </motion.p>
 
-                                        <motion.p variants={textItem}>
+                                        {/* <motion.p variants={textItem}>
                                             I believe in waking up each day eager to make a difference!
-                                        </motion.p>
+                                        </motion.p> */}
 
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ import {
   motion,
 } from "framer-motion";
 
-function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
+function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,points = []}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -81,7 +81,7 @@ function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
               transition={{ duration: 0.8 }}
             >
               <div className=" lg:pb-[10px] "> 
-                <div className="image_background flex flex-col lg:flex-row pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
+                <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
 
                   {/* Left */}
                   <motion.div
@@ -92,7 +92,7 @@ function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
                   </motion.div>
 
                   {/* Right */}
-                  <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-auto">
+                  <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-[40%] ">
                     <motion.div
                       variants={itemVariants}
                       className="flex items-center gap-2 sm:gap-3 text-white   lg:mb-[5px] flex-wrap"
@@ -107,18 +107,18 @@ function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
                         variants={itemVariants}
                         className="text-[20px] sm:text-[35px] lg:text-[40px] font-bold leading-tight text-left lg:text-left"
                       >
-                        Recruiter
-                        <motion.span
+                        {headingText}
+                        {/* <motion.span
                           className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
                         >
                           One
-                        </motion.span>
+                        </motion.span> */}
                       </motion.h1>
                     </motion.div>
 
                     <motion.div
                       variants={itemVariants}
-                      className="md:max-w-[430px] mb-2 w-full hidden lg:block"
+                      className=" mb-2 w-full hidden lg:block"
                     >
                       <motion.p
                         variants={itemVariants}
@@ -130,7 +130,7 @@ function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
                       </motion.p>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                       variants={itemVariants}
                       className="mb-8 lg:mb-2 space-y-[7px] w-full hidden lg:block"
                     >
@@ -161,11 +161,49 @@ function RecruiterOne({ index, desc ,leftImg, centerImg, rightImg}) {
                             }}
                           />
                           <span className="text-[#BDBDBD] text-[14px] leading-[24px] ">
-                            Lorem ipsum dolor sit amet consectetur.
+                            {points}
                           </span>
                         </motion.div>
                       ))}
-                    </motion.div>
+                    </motion.div> */}
+                    <motion.div
+  variants={itemVariants}
+  className="mb-8 lg:mb-2 flex flex-col justify-between gap-[10px] w-full hidden lg:block "
+>
+  {points.map((point, i) => (
+    <motion.div
+      key={i}
+      variants={itemVariants}
+      className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
+    >
+      <motion.img
+        src={star}
+        alt="star"
+        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-[3px]"
+        animate={{
+          opacity: [0.7, 1, 0.7],
+          filter: [
+            'brightness(1)',
+            'brightness(2) drop-shadow(0 0 6px #FFAF7B)',
+            'brightness(1)'
+          ],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: 'loop',
+          delay: i * 0.4,
+          ease: 'easeInOut',
+        }}
+      />
+      <span className="text-[#BDBDBD] text-[14px] leading-[24px]">
+        {point}
+      </span>
+    </motion.div>
+  ))}
+</motion.div>
+
+
                     <motion.div
                       className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px] lg:pt-[23px]"
                       variants={container}

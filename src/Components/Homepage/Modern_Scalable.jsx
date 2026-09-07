@@ -28,7 +28,7 @@ function Modern_Scalable() {
             <div className="  lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-[#ffffff] overflow-hidden  ">
            
 
-              <div className="absolute inset-0   top-[250px] md:top-[370px] lg:top-[525px] flex justify-center items-center opacity-80"
+              <div className="absolute inset-0   top-[250px] md:top-[500px] lg:top-[525px] flex justify-center items-center opacity-80"
               >
                    <WorldGlobenew /> 
               </div>
@@ -67,11 +67,14 @@ function Modern_Scalable() {
                 <div className="flex flex-col justify-center  mt-[11px]">
                   <h1 className={`font_section text-[34px] sm:text-[38px] px] lg:text-[60px] xl:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-                    Full Stack Developer Building{" "}
+                    {/* Full Stack Developer Building{" "} */}
+                    Shopify Developer Building {" "} 
                     <span className="bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] bg-clip-text text-transparent">
-                      Modern & Scalable
+                      {/* Modern & Scalable */}
+                      CRO-Focused
                     </span>{" "}
-                    Web Applications
+                    {/* Web Applications */}
+                    Ecommerce Experiences
                   </h1>
                 </div>
 
@@ -82,7 +85,7 @@ function Modern_Scalable() {
                     <p className={`name-text text-[#ffffff] text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                       <span className="font-normal text-[#ffffff]">👋 Hello,</span>{" "}
-                      I'm Ankush Kumar a Full Stack Developer Building Modern & Scalable Web Applications
+                     I’m Ankush, a Shopify developer and Conversion Rate Optimization specialist with 8 years of experience building high-performing ecommerce stores.
                     </p>
                   </div>
                 </div>

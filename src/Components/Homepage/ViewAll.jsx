@@ -1,13 +1,21 @@
-import React from 'react'
-import arrow from "../../assets/Images/arrow.svg"
-import RecruiterOne from "./RecruiterOne"
-import {motion} from "framer-motion"
-import first from "../../assets/Images/1st.svg";
-import second from "../../assets/Images/2nd.svg";
-import third from "../../assets/Images/3rd.svg";
-import fourth from "../../assets/Images/4th.svg";
-import fifth from "../../assets/Images/5th.svg";
-import sixth from "../../assets/Images/6th.svg";
+import React from "react";
+import arrow from "../../assets/Images/arrow.svg";
+import RecruiterOne from "./RecruiterOne";
+import { motion } from "framer-motion";
+
+import first from "../../assets/Images/new1.svg";
+import second from "../../assets/Images/new2.svg";
+import third from "../../assets/Images/new3.svg";
+import fourth from "../../assets/Images/new4 (1).svg";
+import fifth from "../../assets/Images/new4 (2).svg";
+import sixth from "../../assets/Images/new4 (3).svg";
+
+// import first from "../../assets/Images/1st.svg";
+// import second from "../../assets/Images/2nd.svg";
+// import third from "../../assets/Images/3rd.svg";
+// import fourth from "../../assets/Images/4th.svg";
+// import fifth from "../../assets/Images/5th.svg";
+// import sixth from "../../assets/Images/6th.svg";
 import seventh from "../../assets/Images/7th.svg";
 import eighth from "../../assets/Images/8th.svg";
 import ninth from "../../assets/Images/9th.svg";
@@ -15,56 +23,106 @@ import ten from "../../assets/Images/10th.svg";
 import eleven from "../../assets/Images/11th.svg";
 import twelve from "../../assets/Images/12th.svg";
 function ViewAll() {
-  
   return (
-   <>
-   
-   <div className='container'>
-    <div className="flex flex-col px-[20px] md:px-0">
-        <RecruiterOne index={0}  desc=" is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', "
-        leftImg={third}
-  centerImg={second}
-  rightImg={first}
-        />
-        <RecruiterOne index={1} desc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney  " 
-        leftImg={sixth}
-  centerImg={fifth}
-  rightImg={fourth}
-        />
-        <RecruiterOne index={2} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  "
-        leftImg={ninth}
-  centerImg={eighth}
-  rightImg={seventh}
-        />
-        <RecruiterOne index={3} desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look  "
-        leftImg={ten}
-  centerImg={eleven}
-  rightImg={twelve}
-        />
+    <>
+      <div className="container">
+        <div className="flex flex-col px-[20px] md:px-0">
+          <RecruiterOne
+            index={0}
+            headingText="TryFum"
+            points={[
+              "Custom Shopify theme development and section customization tailored to the provided designs.",
+              "Advanced product selection experience with flavor options, product variants, bundles, and product information.",
+              "Subscription and recurring-purchase functionality with optimized flows for repeat customers.",
+              "Conversion-focused PDP improvements, including bundle selection, product benefits, social proof, and sticky purchase actions.",
+              "Responsive, performance-focused storefront development across desktop, tablet, and mobile."
+            ]}
+            desc=" A high-converting DTC eCommerce store developed to showcase FÜM nicotine-free products and guide customers toward the right products, flavors, and bundles."
+            
+            leftImg={third}
+            centerImg={second}
+            rightImg={first}
+          />
+          <RecruiterOne
+            index={1}
+            headingText="Syncform"
+            desc="A Shopify form builder built to help merchants create and manage custom forms without complex development. "
+            points={[
+              "Developed custom form-building functionality for creating flexible forms based on different merchant requirements.",
+              "Built the complete frontend and backend of the Shopify app, handling the project from development to feature implementation.",
+              "Built customizable form fields, layouts, validation, and submission workflows.",
+              "Developed the core app functionality and Shopify integration to connect forms with merchants’ stores.",
+              "Improved the UI and overall user experience to make form creation simple and easy to navigate.",
+              "Developed responsive interfaces that work consistently across desktop, tablet, and mobile devices."
+            ]}
+            leftImg={sixth}
+            centerImg={fifth}
+            rightImg={fourth}
+          />
+          <RecruiterOne
+            index={2}
+            headingText=" Cart Plus"
+            desc="A Shopify cart drawer app built to improve the shopping experience and increase cart conversions. The app focuses on cart customization, upselling, product recommendations, rewards, and a smoother checkout journey."
+            points={[
+              "Completely handling both frontend and backend development from feature development to ongoing improvements.",
+              "Customizable cart drawer with dynamic product updates and cart management.",
+              "Built customizable form fields, layouts, validation, and submission workflows.",
+              "Upsell and cross-sell features that promote relevant products inside the cart.",
+              "Worked on the overall app experience to make the cart faster, smoother, and easier for merchants and their customers to use.",
+            ]}
+            leftImg={ninth}
+            centerImg={eighth}
+            rightImg={seventh}
+          />
+          <RecruiterOne
+            index={3}
+            headingText="Woahbros"
+            desc="A workwear eCommerce store focused on flame-resistant clothing and gear for welders and hardworking professionals"
+            points={[
+              "Custom Shopify storefront development and theme customization.",
+              "Developed product pages for FR shirts, welding gear, tees, hats, and accessories.",
+              "Integrated Klaviyo to support email marketing and customer communication.",
+              "Customized the cart drawer with product recommendations, free-shipping messaging, and quick add-to-cart functionality.",
+              "Implemented conversion-focused sections highlighting product quality, customer reviews, guarantees, and brand messaging.",
+            ]}
+            leftImg={ten}
+            centerImg={eleven}
+            rightImg={twelve}
+          />
+          <RecruiterOne
+            index={3}
+            headingText="Smash"
+            desc="A fitness and nutrition eCommerce store selling supplements such as creatine gummies, pre-workout gummies, nitric oxide products, and performance-focused formulas."
+            points={[
+              "Designed the complete storefront UI, including layouts, product presentation, and visual elements based on the brand’s identity.",
+              "Developed product pages with detailed product information, benefits, reviews, and purchase options.",
+              "Built engaging product sections to showcase creatine gummies, pre-workout products, and other supplements.",
+              "Optimized the storefront structure to improve product discovery and guide customers toward relevant products.",
+            ]}
+            leftImg={ten}
+            centerImg={eleven}
+            rightImg={twelve}
+          />
+        </div>
+
+        <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center pt-[17px] lg:pt-[12px]">
+          <div className="flex gap-3 justify-center items-center group cursor-pointer">
+            <h1 className="transition-all duration-300 group-hover:bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] group-hover:bg-clip-text group-hover:text-transparent ">
+              View all Projects
+            </h1>
+
+            <motion.img
+              src={arrow}
+              alt="arrow"
+              className="lg:h-10 lg:w-10 group-hover:scale-110 transition-all duration-500"
+              // whileHover={{ scale: 1.15 }}
+              // transition={{ duration: 0.3 }}
+            />
+          </div>
+        </div>
       </div>
-
-
-    <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center pt-[17px] lg:pt-[12px]">
-  
-  <div className="flex gap-3 justify-center items-center group cursor-pointer">
-    
-    <h1 className="transition-all duration-300 group-hover:bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] group-hover:bg-clip-text group-hover:text-transparent ">
-      View all Projects
-    </h1>
-
-    <motion.img
-      src={arrow}
-      alt="arrow"
-      className="lg:h-10 lg:w-10 group-hover:scale-110 transition-all duration-500"
-      // whileHover={{ scale: 1.15 }}
-      // transition={{ duration: 0.3 }}
-    />
-
-  </div>
-</div>
-   </div>
-   </>
-  )
+    </>
+  );
 }
 
-export default ViewAll
+export default ViewAll;
