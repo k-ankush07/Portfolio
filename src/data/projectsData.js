@@ -200,7 +200,7 @@ const projectsData = {
         reverse: true,
         websiteRedesign: "",
         image: image2,
-        fum: "My Contribution:",
+        fum: "My Contribution",
         pointes: [
           "UI/UX Design",
           "Shopify App Development",
@@ -211,91 +211,91 @@ const projectsData = {
         buttonText: "View the final experience",
         buttonLink: "https://apps.shopify.com/syncform",
       },
-      {
-        websitePt: "pt-[20px]",
-        borderTop: "lg:border-t",
-        borderColor: "lg:border-[#FFFFFF]/10",
-        ptsection: "lg:pt-[40px]",
-        leftwidth: "lg:w-[53%]",
-        rightwidth: "lg:w-[47%]",
-        websiteRedesign: "",
-        image: image3,
-        fum: "The Challenge",
-        fumpara:
-          "Syncform's old store looked generic and didn't reflect the brand's fashion-forward identity. <br/><br/> Product discovery was difficult, with no clear way to browse by style or collection. <br/><br/> The goal was to design a visually striking, easy-to-navigate store that felt as premium as the products themselves.",
-      },
+    //   {
+    //     websitePt: "pt-[20px]",
+    //     borderTop: "lg:border-t",
+    //     borderColor: "lg:border-[#FFFFFF]/10",
+    //     ptsection: "lg:pt-[40px]",
+    //     leftwidth: "lg:w-[53%]",
+    //     rightwidth: "lg:w-[47%]",
+    //     websiteRedesign: "",
+    //     image: image3,
+    //     fum: "The Challenge",
+    //     fumpara:
+    //       "Syncform's old store looked generic and didn't reflect the brand's fashion-forward identity. <br/><br/> Product discovery was difficult, with no clear way to browse by style or collection. <br/><br/> The goal was to design a visually striking, easy-to-navigate store that felt as premium as the products themselves.",
+    //   },
     ],
 
     keyInfo: {
-      title: "Key Areas of Improvement",
-      items: [
-        {
-          number: 1,
-          heading: "Visual Identity Overhaul",
-          description:
-            "A bold new design language was introduced across the store.",
-          bullets: [
-            "Custom typography and color palette.",
-            "Editorial-style product photography layout.",
-            "Consistent brand tone throughout.",
-          ],
-        },
-        {
-          number: 2,
-          heading: "Improved Product Discovery",
-          description:
-            "Collections are now easier to browse and filter.",
-          bullets: [
-            "Added collection-based filtering.",
-            "Introduced a lookbook-style gallery.",
-            "Simplified category navigation.",
-          ],
-        },
-        {
-          number: 3,
-          heading: "Mobile Experience",
-          description:
-            "The mobile store was redesigned for smoother browsing.",
-          bullets: [
-            "Optimized touch navigation.",
-            "Faster mobile page loads.",
-            "Simplified mobile checkout.",
-          ],
-        },
+    //   title: "Key Areas of Improvement",
+    //   items: [
+    //     {
+    //       number: 1,
+    //       heading: "Visual Identity Overhaul",
+    //       description:
+    //         "A bold new design language was introduced across the store.",
+    //       bullets: [
+    //         "Custom typography and color palette.",
+    //         "Editorial-style product photography layout.",
+    //         "Consistent brand tone throughout.",
+    //       ],
+    //     },
+    //     {
+    //       number: 2,
+    //       heading: "Improved Product Discovery",
+    //       description:
+    //         "Collections are now easier to browse and filter.",
+    //       bullets: [
+    //         "Added collection-based filtering.",
+    //         "Introduced a lookbook-style gallery.",
+    //         "Simplified category navigation.",
+    //       ],
+    //     },
+    //     {
+    //       number: 3,
+    //       heading: "Mobile Experience",
+    //       description:
+    //         "The mobile store was redesigned for smoother browsing.",
+    //       bullets: [
+    //         "Optimized touch navigation.",
+    //         "Faster mobile page loads.",
+    //         "Simplified mobile checkout.",
+    //       ],
+    //     },
 
-        { sectionHeading: "Process" },
-        {
-          headinginner: "Brand Discovery",
-          descriptioninner:
-            "Studied Syncform's fashion positioning to define the visual direction.",
-        },
-        {
-          headinginner: "Design System",
-          descriptioninner:
-            "Built a reusable component library for consistent styling.",
-        },
-        {
-          headinginner: "Development",
-          descriptioninner:
-            "Implemented the design into a fully custom Shopify theme.",
-        },
+    //     { sectionHeading: "Process" },
+    //     {
+    //       headinginner: "Brand Discovery",
+    //       descriptioninner:
+    //         "Studied Syncform's fashion positioning to define the visual direction.",
+    //     },
+    //     {
+    //       headinginner: "Design System",
+    //       descriptioninner:
+    //         "Built a reusable component library for consistent styling.",
+    //     },
+    //     {
+    //       headinginner: "Development",
+    //       descriptioninner:
+    //         "Implemented the design into a fully custom Shopify theme.",
+    //     },
 
-        { sectionHeading: "Key Features" },
-        {
-          headinginner: "Lookbook Gallery",
-          descriptioninner:
-            "Showcases outfits in an editorial, scrollable format.",
-        },
-        {
-          headinginner: "Collection Filters",
-          descriptioninner:
-            "Lets shoppers quickly narrow down by style, size, and color.",
-        },
-      ],
-      cards: [
-        { label: "Before", image: imagefull },
-        { label: "After", image: imagefull2 },
-      ],
+    //     { sectionHeading: "Key Features" },
+    //     {
+    //       headinginner: "Lookbook Gallery",
+    //       descriptioninner:
+    //         "Showcases outfits in an editorial, scrollable format.",
+    //     },
+    //     {
+    //       headinginner: "Collection Filters",
+    //       descriptioninner:
+    //         "Lets shoppers quickly narrow down by style, size, and color.",
+    //     },
+    //   ],
+    //   cards: [
+    //     { label: "Before", image: imagefull },
+    //     { label: "After", image: imagefull2 },
+    //   ],
     },
 
     afterSections: [

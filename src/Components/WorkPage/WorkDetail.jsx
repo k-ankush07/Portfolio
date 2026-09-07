@@ -770,7 +770,7 @@ function WorkDetail({ project }) {
             <Built key={idx} {...section} />
           ))}
 
-          <ImageSection />
+          {/* <ImageSection /> */}
 
           <KeyInfoSection
             title={project.keyInfo.title}
