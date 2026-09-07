@@ -9,18 +9,22 @@ import third from "../../assets/Images/new3.svg";
 import fourth from "../../assets/Images/new4 (1).svg";
 import fifth from "../../assets/Images/new4 (2).svg";
 import sixth from "../../assets/Images/new4 (3).svg";
-
+import seventh from "../../assets/Images/new5 (1).svg";
+import eighth from "../../assets/Images/new5 (2).svg";
+import ninth from "../../assets/Images/new5 (3).svg";
+import ten from "../../assets/Images/new6 (1).svg";
+import eleven from "../../assets/Images/new6 (2).svg";
 // import first from "../../assets/Images/1st.svg";
 // import second from "../../assets/Images/2nd.svg";
 // import third from "../../assets/Images/3rd.svg";
 // import fourth from "../../assets/Images/4th.svg";
 // import fifth from "../../assets/Images/5th.svg";
 // import sixth from "../../assets/Images/6th.svg";
-import seventh from "../../assets/Images/7th.svg";
-import eighth from "../../assets/Images/8th.svg";
-import ninth from "../../assets/Images/9th.svg";
-import ten from "../../assets/Images/10th.svg";
-import eleven from "../../assets/Images/11th.svg";
+// import seventh from "../../assets/Images/7th.svg";
+// import eighth from "../../assets/Images/8th.svg";
+// import ninth from "../../assets/Images/9th.svg";
+// import ten from "../../assets/Images/10th.svg";
+// import eleven from "../../assets/Images/11th.svg";
 import twelve from "../../assets/Images/12th.svg";
 function ViewAll() {
   return (
@@ -70,9 +74,9 @@ function ViewAll() {
               "Upsell and cross-sell features that promote relevant products inside the cart.",
               "Worked on the overall app experience to make the cart faster, smoother, and easier for merchants and their customers to use.",
             ]}
-            leftImg={ninth}
-            centerImg={eighth}
-            rightImg={seventh}
+            leftImg={ten}
+            centerImg={eleven}
+            // rightImg={seventh}
           />
           <RecruiterOne
             index={3}
@@ -99,9 +103,9 @@ function ViewAll() {
               "Built engaging product sections to showcase creatine gummies, pre-workout products, and other supplements.",
               "Optimized the storefront structure to improve product discovery and guide customers toward relevant products.",
             ]}
-            leftImg={ten}
-            centerImg={eleven}
-            rightImg={twelve}
+            leftImg={ninth}
+            centerImg={eighth}
+            rightImg={seventh}
           />
         </div>
 

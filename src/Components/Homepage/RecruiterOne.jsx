@@ -88,7 +88,7 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                     variants={itemVariants}
                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
                   >
-                    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg} />
+                    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg}   />
                   </motion.div>
 
                   {/* Right */}
