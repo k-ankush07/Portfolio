@@ -80,6 +80,7 @@ function Built({ websitePt, websitebp, funparapt, paddinBottom,image, fum, websi
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                target='_blank'
               >
                 {buttonText}
               </motion.a>

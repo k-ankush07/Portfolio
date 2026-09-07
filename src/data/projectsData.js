@@ -209,7 +209,7 @@ const projectsData = {
           "Performance & Usability",
         ],
         buttonText: "View the final experience",
-        buttonLink: "#",
+        buttonLink: "https://apps.shopify.com/syncform",
       },
       {
         websitePt: "pt-[20px]",
