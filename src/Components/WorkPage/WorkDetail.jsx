@@ -612,9 +612,9 @@ function WorkDetail({ project }) {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="border-b border-[#FFFFFF]/10 lg:w-[60%] pt-[20px] pb-[20px] lg:pr-[80px] lg:pt-[32px] lg:pb-[47px]">
+            <div className="border-b border-[#FFFFFF]/10 lg:w-[50%] pt-[20px] pb-[20px] lg:pr-[80px] lg:pt-[32px] lg:pb-[47px]">
               <div className="flex justify-between">
-                <motion.div
+                {/* <motion.div
                   className="flex flex-col gap-[15px] lg:gap-[24px]"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -640,10 +640,10 @@ function WorkDetail({ project }) {
                       {project.updated}
                     </p>
                   </div>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
-                  className="flex flex-col gap-[15px] lg:gap-[24px]"
+                  className="flex justify-between gap-[15px] w-full lg:gap-[24px]"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9 }}
@@ -670,7 +670,7 @@ function WorkDetail({ project }) {
                   </div>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                   className="flex flex-col gap-[15px] lg:gap-[24px]"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -696,13 +696,13 @@ function WorkDetail({ project }) {
                       {project.source}
                     </p>
                   </div>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
 
             {/* right section */}
             <motion.div
-              className="lg:w-[40%]"
+              className="lg:w-[50%]"
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}
