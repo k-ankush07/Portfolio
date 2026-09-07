@@ -18,48 +18,89 @@ import Github from "../../assets/Images/git.svg";
 function ExperienceTimeline() {
     const data = [
         {
-            date: "Jan 2025 – Present",
+            date: "May 2026 — Present",
             logo: Roboto,
-            company: "Roboto Studio",
+            company: "BlueStout",
+            textpara:"USA",
+            position:"Freelancer- Remote",
             role1: "Frontend",
             role2: "Engineer",
             points: [
                 {
-                    p: "Architected Headless Systems (Sanity/Contentful): ",
-                    s: "Designed reusable page-builder blocks and Data Modeling structures.  Optimized GROQ queries, improving content delivery speed by 25% across  7+ production sites.",
+                    // p: "Architected Headless Systems (Sanity/Contentful): ",
+                    s: "Developed custom Shopify themes and components, provided ongoing technical support to partner brands, and ensured seamless project delivery through cross-functional collaboration.",
                 },
                 {
-                    p: "AI-Native Development & AEO:",
-                    s: " : Accelerated  delivery using an agentic stack (Claude Code, MCP). Implemented Next.js  (SSG/ISR) with a focus on Answer Engine Optimization (AEO) and SEO,  boosting user engagement by 25%.",
+                    // p: "AI-Native Development & AEO:",
+                    s: "Spearheaded the development and execution of comprehensive CRO strategies to optimize web performance and enhance user engagement",
                 },
                 {
-                    p: "Scalable Infrastructure:",
-                    s: " Managed multi-repo  environments using Turborepo and TypeScript. Established type-safe  standards and CLI-based automation to reduce production defects by 15%.",
+                    // p: "Scalable Infrastructure:",
+                    s: "Conducted extensive A/B testing and multivariate testing to evaluate and optimize website elements, including landing pages and sales funnels.",
                 },
                 {
-                    p: "Accessibility & Engineering Standards:",
-                    s: " Shipped  WCAG 2.1 AA compliant interfaces for UK/USA clients. Managed  high-velocity sprints in Linear/Agile, maintaining 99% compliance with  strict international accessibility regulations.",
+                    // p: "Accessibility & Engineering Standards:",
+                    s: "Conducted in-depth website audits to evaluate user experience, design effectiveness, and overall site performance, providing actionable recommendations",
+                },
+                {
+                    // p: "Accessibility & Engineering Standards:",
+                    s: "Collaborated closely with the eCommerce team to support product launches, resolve Shopify issues, and execute high-impact promotions seamlessly.",
+                },
+                {
+                    // p: "Accessibility & Engineering Standards:",
+                    s: "Managing store setup, migrations, performance optimization, and SEO configurations.",
                 },
             ],
         },
         {
-            date: "Nov 2024 – Present",
+            date: "March 2022- April 2026",
             logo: Github,
-            company: "GitHub",
+            company: "EcombitHub",
+            textpara:"USA",
+            position:"Freelancer - Remote",
             role1: "Open Source",
             role2: "Developer",
             points: [
                 {
-                    s: "Develop and maintain open-source repositories focused on modern web  infrastructure and developer productivity, achieving significant  community adoption (70+ stars on flagship projects).",
+                    s: "Built scalable, component-based UIs in TypeScript, JavaScript ES6+, SCSS and Liquid across 25+ enterprise Shopify storefronts.",
                 },
                 {
-                    s: "Engineered UI components and technical documentation for a leading React ecosystem (20K+ GitHub stars), expanding the library's collection of  high-performance, accessible components.",
+                    s: "Managed end-to-end front-end project processes, ensuring quality and consistency throughout development. ",
                 },
                 {
-                    s: "Refined component logic and TypeScript definitions, ensuring seamless  integration, type-safety, and a superior developer experience (DX) for  thousands of downstream users",
+                    s: "Enforced WCAG 2.1 AA compliance and improved Lighthouse performance scores through mobile-first design, structured code reviews and asset optimisation",
                 },
                 {
-                    s: "Collaborated with global maintainers to uphold rigorous engineering  standards, focusing on modern web aesthetics, optimized rendering  patterns, and performance-first architecture.",
+                    s: 'Building bespoke product forms with custom volumetric discounting, and a multi-step "build your own bundle" experience used across the product range.',
+                },
+                {
+                    s: "Using Git, Shopify CLI, Clarity, and AI tools to improve workflows and performance.",
+                },
+            ],
+        },
+        {
+            date: "May 2019- Feb 2022",
+            logo: Github,
+            company: "HubSyntax",
+            textpara:"USA",
+            position:"Freelancer - Remote",
+            role1: "Open Source",
+            role2: "Developer",
+            points: [
+                {
+                    s: "Developed pixel-perfect websites from design mockups into a proprietary CMS using HTML5, CSS, and JavaScript, responsive web design, SEO & accessibility best practices.",
+                },
+                {
+                    s: "Directed app development flows and UI/UX design processes, guiding teams from concept and wireframes through to final interactive experiences",
+                },
+                {
+                    s: "Developed comprehensive digital strategies that addressed client pain points and aligned with their business goals.",
+                },
+                {
+                    s: 'Built AI-powered automation workflows using Claude and Make to replace repetitive manual work.',
+                },
+                {
+                    s: "Managing store setup, migrations, performance optimization, and SEO configurations. ",
                 },
             ],
         },
@@ -179,11 +220,11 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                                     <div className="text-[14px] pt-[14px] lg:pt-[15px] text-[#BDBDBD] space-y-[6px] ">
                                         <p className="flex gap-[10px] items-center">
                                             <img src={newlocation} alt="" />
-                                            London Area, United Kingdom
+                                            {exp.textpara}
                                         </p>
                                         <p className="flex gap-2 items-center">
                                             <img src={work} alt="" />
-                                            Full-time · Remote
+                                            {exp.position}
                                         </p>
                                     </div>
                                 </motion.div>
@@ -216,7 +257,7 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
                                             className="text-[12px] lg:text-[14px] leading-[22px] lg:leading-[24px] pb-[7px]  lg:pt-[5px] font-bold text-[#FFFFFF]"
                                         >
                                             {pt.p}
-                                            <span className="text-[#A0A0A0]">{pt.s}</span>
+                                            • <span className="text-[#A0A0A0]">{pt.s}</span>
                                         </motion.p>
                                     ))}
 
