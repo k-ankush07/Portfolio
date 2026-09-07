@@ -122,15 +122,15 @@ function ServicesSection({
   onToggleNiche,
 }) {
   const ServicesArray = [
-    { id: 1, Name: "Conversion optimization" },
+    { id: 1, Name: "Conversion Rate Optimization" },
     { id: 2, Name: "Shopify store development" },
-    { id: 3, Name: "Custom Shopify development" },
-    { id: 4, Name: "Speed optimization" },
-    { id: 5, Name: "Subscription optimization" },
-    { id: 6, Name: "UI/UX design" },
-    { id: 7, Name: "Landing page" },
-    { id: 8, Name: "Shopify Theme Customization" },
-    { id: 9, Name: "Shopify App" },
+    { id: 3, Name: "Custom Shopify Development" },
+    { id: 4, Name: "Shopify Store Optimization" },
+    { id: 5, Name: "Speed Optimization" },
+    { id: 6, Name: "UI/UX Design" },
+    { id: 7, Name: "Ecommerce Development" },
+    { id: 8, Name: "Custom Theme Development" },
+    { id: 9, Name: "Shopify App Development" },
   ]
 
   const ArtArray = [

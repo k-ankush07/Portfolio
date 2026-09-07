@@ -238,7 +238,9 @@ import third from "../assets/Images/new3.svg";
 import fourth from "../assets/Images/new4 (1).svg";
 import fifth from "../assets/Images/new4 (2).svg";
 import sixth from "../assets/Images/new4 (3).svg";
-
+import seventh from "../assets/Images/new5 (1).svg";
+import eighth from "../assets/Images/new5 (2).svg";
+import ninth from "../assets/Images/new5 (3).svg";
 
 const projects = [
   {
@@ -257,9 +259,8 @@ const projects = [
     id: 2,
     title: "Syncform",
     tags: [
-      "UI/UX design",
-      "Shopify store development",
-      "Fashion",
+      "Shopify App Development",
+      "Custom Shopify Development",
     ],
     leftImg: fourth,
     centerImg: fifth,
@@ -269,9 +270,8 @@ const projects = [
     id: 3,
     title: "Cart Plus",
     tags: [
-      "Speed optimization",
-      "Subscription optimization",
-      "Supplements",
+      "Shopify App Development",
+      "Custom Shopify Development",
     ],
     leftImg: first,
     centerImg: second,
@@ -294,15 +294,38 @@ const projects = [
     id: 5,
     title: "Smash",
     tags: [
-      "Shopify App",
-      "Art Gallery",
-      "Food & Beverages",
-      "Home & Furniture",
-      "Jewelry",
+      "Custom Shopify Development",
+      "Shopify Store Optimization",
+      "UI/UX Design",
     ],
-    leftImg: first,
-    centerImg: second,
-    rightImg: third,
+    leftImg: seventh,
+    centerImg: eighth,
+    rightImg: ninth,
+  },
+   {
+    id: 6,
+    title: "Vittelo",
+    tags: [
+      "Custom Shopify Development",
+      "Shopify Store Optimization",
+      "UI/UX Design",
+      "Ecommerce Development"
+    ],
+    leftImg: seventh,
+    centerImg: eighth,
+    rightImg: ninth,
+  },
+   {
+    id: 7,
+    title: "Smash",
+    tags: [
+      "Custom Shopify Development",
+      "Shopify Store Optimization",
+      "UI/UX Design",
+    ],
+    leftImg: seventh,
+    centerImg: eighth,
+    rightImg: ninth,
   },
 ]
 
