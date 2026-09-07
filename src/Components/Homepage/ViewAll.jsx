@@ -3,10 +3,10 @@ import arrow from "../../assets/Images/arrow.svg";
 import RecruiterOne from "./RecruiterOne";
 import { motion } from "framer-motion";
 
-import first from "../../assets/Images/new1.svg";
+import first from "../../assets/Images/blacksale.svg";
 import second from "../../assets/Images/new2.svg";
 import third from "../../assets/Images/new3.svg";
-import fourth from "../../assets/Images/new4 (1).svg";
+import fourth from "../../assets/Images/response.svg";
 import fifth from "../../assets/Images/new4 (2).svg";
 import sixth from "../../assets/Images/new4 (3).svg";
 import seventh from "../../assets/Images/new5 (1).svg";
@@ -14,6 +14,9 @@ import eighth from "../../assets/Images/new5 (2).svg";
 import ninth from "../../assets/Images/new5 (3).svg";
 import ten from "../../assets/Images/new6 (1).svg";
 import eleven from "../../assets/Images/new6 (2).svg";
+import new7 from "../../assets/Images/new7 (1).svg";
+import new71 from "../../assets/Images/new7 (2).svg";
+import new72 from "../../assets/Images/new7 (3).svg";
 // import first from "../../assets/Images/1st.svg";
 // import second from "../../assets/Images/2nd.svg";
 // import third from "../../assets/Images/3rd.svg";
@@ -89,12 +92,12 @@ function ViewAll() {
               "Customized the cart drawer with product recommendations, free-shipping messaging, and quick add-to-cart functionality.",
               "Implemented conversion-focused sections highlighting product quality, customer reviews, guarantees, and brand messaging.",
             ]}
-            leftImg={ten}
-            centerImg={eleven}
-            rightImg={twelve}
+            leftImg={new71}
+            centerImg={new7}
+            rightImg={new72}
           />
           <RecruiterOne
-            index={3}
+            index={4}
             headingText="Smash"
             desc="A fitness and nutrition eCommerce store selling supplements such as creatine gummies, pre-workout gummies, nitric oxide products, and performance-focused formulas."
             points={[

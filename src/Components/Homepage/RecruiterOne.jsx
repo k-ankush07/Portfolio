@@ -13,6 +13,7 @@ import ViewDetail from "./ViewDetail";
 import {
   motion,
 } from "framer-motion";
+import CardSection from "./CardSection";
 
 function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,points = []}) {
   const containerVariants = {
@@ -84,12 +85,24 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                 <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
 
                   {/* Left */}
-                  <motion.div
+                  {/* Left */}
+<motion.div
+  variants={itemVariants}
+  className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
+>
+  {index === 2 ? (
+    <CardSection />
+  ) : (
+    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg} />
+  )}
+</motion.div>
+                  {/* <motion.div
                     variants={itemVariants}
                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
                   >
+                    <CardSection />
                     <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg}   />
-                  </motion.div>
+                  </motion.div> */}
 
                   {/* Right */}
                   <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-[40%] ">

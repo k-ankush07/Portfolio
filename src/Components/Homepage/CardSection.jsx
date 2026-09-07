@@ -1,22 +1,16 @@
-import React, { useRef, useState, useEffect } from "react";
-import mobile from "../../assets/Images/image 67.svg";
+import React, { useRef, useState, useEffect } from 'react'
+import ten from "../../assets/Images/new6 (1).svg";
+import eleven from "../../assets/Images/new6 (2).svg";
 import circleImage from "../../assets/Images/circlesvg.svg";
-import centerimage from "../../assets/Images/newimages (1).svg";
-import leftimage from "../../assets/Images/newimages (3).svg";
-import rightimage from "../../assets/Images/newimages (4).svg";
 
-// import centerimage from "../../assets/Images/newphone.png";
-// import leftimage from "../../assets/Images/newLeft.png";
-// import rightimage from "../../assets/Images/newright.png";
-
-function ViewDetail({ leftImg, centerImg, rightImg }) {
+function CardSection() {
   const containerRef = useRef(null);
 
   const mouse = useRef({ x: 0, y: 0 });
   const circle = useRef({ x: 0, y: 0 });
 
   const [visible, setVisible] = useState(false);
-  const [hovered, setHovered] = useState(false); // text zoom
+  const [hovered, setHovered] = useState(false);
   const [circleSize, setCircleSize] = useState(110);
 
   const [style, setStyle] = useState({
@@ -37,11 +31,12 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
       }
     };
 
-    handleResize(); // run once
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   const BUFFER = circleSize / 2;
 
   useEffect(() => {
@@ -71,7 +66,6 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
     let x = e.clientX - rect.left;
     let y = e.clientY - rect.top;
 
-    // outside check yahi andar hona chahiye
     const isOutside =
       x < -BUFFER ||
       x > rect.width + BUFFER ||
@@ -118,70 +112,51 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
   };
 
   return (
-    <div className="w-full">
+    <section className='container'>
       <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleLeave}
-        className="w-full relative  inline-block  rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer "
+        className='w-full relative inline-block rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer'
         style={{
           transform: hovered ? "scale(1.01)" : "scale(1)",
         }}
       >
-        <div className="rounded-[17px] lg:rounded-[26px] bg-[#181818] px-[2px] py-[2px] lg:px-1 lg:py-1">
-          <div className="relative overflow-visible  bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]">
+        <div className='rounded-[17px] lg:rounded-[26px] bg-[#181818] px-[2px] py-[2px] lg:px-1 lg:py-1'>
+          <div className='relative overflow-visible bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]'>
+
             {/* text */}
-            <div className="inner_work pt-[17px] pl-[20px]  xl:pl-[36px] xl:pt-[25px]  flex justify-between">
-              {/* <p
-                className="text-Web max-w-[290px] sm:max-w-[330px] lg:max-w-[450px] text-[14px] sm:text-[16px] lg:text-[20px] leading-[17px] sm:leading-[25px] lg:leading-[30px] text-white font-bold transition-all duration-300 ease-out"
+            <div className='inner_work  pl-[20px] xl:pl-[36px] xl:pt-[25px]'>
+              {/* <p ... /> */}
+            </div>
+
+            {/* main div for overlapping images */}
+            <div className='inner_main relative overflow-hidden  h-[170px] sm:h-[380px] lg:px-[70px]'>
+              {/* back image */}
+              <img
+                src={eleven}
+                alt='dashboard preview'
+                className='absolute left-1/2 top-7 sm:top-14 lg:top-9 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] -rotate-6  transition-transform duration-300 ease-out'
                 style={{
-                  transform: hovered ? "scale(1.03)" : "scale(1)",
+                  transform: hovered
+                    ? "translateX(-50%) rotate(-8deg) scale(1.02)"
+                    : "translateX(-50%) rotate(-6deg)",
                 }}
-              >
-                Developed a recruitment platform to connect job seekers and
-                recruiters
-              </p> */}
+              />
+              {/* front image */}
+              <img
+                src={ten}
+                alt='merchant page preview'
+                className='absolute left-1/2 top-10 sm:top-34 lg:top-24 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] rotate-[8deg]  transition-transform duration-300 ease-out'
+                style={{
+                  transform: hovered
+                    ? "translateX(-50%) rotate(10deg) scale(1.02)"
+                    : "translateX(-50%) rotate(8deg)",
+                }}
+              />
             </div>
 
-            {/* main div for images */}
-            <div className="inner_main relative flex justify-center  overflow-hidden items-end  mt-[12px] lg:mt-[27px]">
-              {/* Left Image */}
-              <div className="w-[33%]  ">
-                <img
-                  src={leftImg}
-                  alt="left Image"
-                  className="
-        left-image h-full w-full absolute
-        
-
-      "
-                />
-              </div>
-
-              {/* Center Image */}
-              <div className="w-[34%] z-[99] overflow-hidden">
-                <img
-                  src={centerImg}
-                  alt="center Image"
-                  className="
-      center-image 
-       
-      "
-                />
-              </div>
-
-              {/* Right Image */}
-              <div className="w-[33%]">
-                <img
-                  src={rightImg}
-                  alt="right Image"
-                  className="
-        right-image  h-full w-full absolute -z-0 
-      "
-                />
-              </div>
-            </div>
-            {/* cursor */}
+            {/* cursor circle */}
             {visible && (
               <img
                 src={circleImage}
@@ -201,8 +176,8 @@ function ViewDetail({ leftImg, centerImg, rightImg }) {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }
 
-export default ViewDetail;
+export default CardSection

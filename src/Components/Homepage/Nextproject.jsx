@@ -96,7 +96,7 @@ const container = {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className=" text-next sm:w-full text-[18px] sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
+              className=" text-next sm:w-full z-50 text-[18px] sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
             >
               Let's work together on your next project
             </motion.h2>

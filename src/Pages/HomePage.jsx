@@ -13,6 +13,7 @@ import Journey from '../Components/AboutPage/Journey'
 import Engineer from '../Components/AboutPage/Engineer'
 import WhatYouGet from '../Components/Homepage/WhatYouGet'
 import VideoSection from '../Components/Homepage/VideoSection'
+import CardSection from '../Components/Homepage/CardSection'
 
 function HomePage() {
   return (
@@ -25,6 +26,7 @@ function HomePage() {
       <VideoSection />
       <WhatYouGet />
     </div>
+    {/* <CardSection /> */}
 {/* <Web_Project /> */}
 
 <Recent__Work />

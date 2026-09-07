@@ -32,9 +32,9 @@ function InfoSection() {
   const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
   return (
     <section className="container">
-      <div className="  flex flex-col-reverse xl:flex-row lg:justify-between gap-[23px] lg:gap-[92px]  pt-[60px]">
+      <div className="  flex flex-col-reverse lg:flex-row lg:justify-between gap-[23px] lg:gap-[92px]  pt-[60px]">
         {/* left section  */}
-        <div className="max-w-[689px] ">
+        <div className="max-w-[689px] lg:w-[50%] ">
           <div className="max-w-[500px] ">
             <h2 className=" text-[30px] leading-[27px] lg:text-[40px] text-[#FCFCFC] lg:leading-[48px] font-bold ">
               I’m Ankush, a  <br />
@@ -74,11 +74,13 @@ function InfoSection() {
                 </motion.div>
           </div>
         </div>
-        <div className="flex  px-[27px]">
-          <div className="border-[1px] border-[#FFFFFF] rounded-[18px] lg:rounded-[30px] p-[15px] ">
+        <div className="flex lg:w-[50%] px-[27px] ">
+          <div>
+            <div className="border-[1px] lg:shrink-0 border-[#FFFFFF] rounded-[18px] lg:rounded-[30px] p-[15px] ">
             <div className="border-[1px] rounded-[18px] lg:rounded-[30px] border-[#FFFFFF]/30">
-              <img src={userImage} alt="User"  className="scale-110 lg:scale-105"/>
+              <img src={userImage} alt="User"  className=" w-full   h-auto object-cover  scale-110  md:scale-105"/>
             </div>
+          </div>
           </div>
         </div>
       </div>
