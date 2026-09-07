@@ -131,14 +131,14 @@ const container = {
                   variants={item}
                   src={skilss6}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px]  -left-3 -top-2 md:-left-[10px] md:top-[8px] lg:-left-3  lg:top-17 `}
+                  className={`absolute h-[36px] w-[36px] z-50 md:h-[48px] md:w-[48px]  -left-3 -top-2 md:-left-[10px] md:top-[8px] lg:-left-3  lg:top-8 left_top `}
                 />
                 {/* right top */}
                 <motion.img
                   variants={item}
                   src={skilss2}
                   alt="images"
-                  className={`absolute h-[36px] w-[36px] z-50 right-1 -top-0 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-9 `}
+                  className={`absolute h-[36px] w-[36px] z-50 right-1 -top-0 md:h-[48px] md:w-[48px] md:right-[10px] md:top-[16px] lg:right-6 lg:top-9  right_top`}
                 />
                 {/* right bottom */}
                 {/* <motion.img
@@ -168,7 +168,7 @@ const container = {
                 <img
                   src={skilss4}
                   alt="images"
-                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[41%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[100px] lg:w-[100px] lg:left-60 lg:top-[72px] z-50 full_image"
+                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[40.5%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[100px] lg:w-[100px] lg:left-57 lg:top-[71px] xl:left-60 z-50 full_image"
                 />
               </div>
               <img src={clippath} alt="curve line" className=" " />
