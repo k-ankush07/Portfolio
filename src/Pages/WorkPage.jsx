@@ -232,16 +232,24 @@ import PrivacyText from '../Components/BlogPage/PrivacyText'
 import WebApp from '../Components/WorkPage/WebApp'
 import ServicesSection from '../Components/WorkPage/ServiesSection'
 
-import first from "../assets/Images/new1.svg";
+import first from "../assets/Images/blacksale.svg";
 import second from "../assets/Images/new2.svg";
 import third from "../assets/Images/new3.svg";
-import fourth from "../assets/Images/new4 (1).svg";
+import fourth from "../assets/Images/response.svg";
 import fifth from "../assets/Images/new4 (2).svg";
 import sixth from "../assets/Images/new4 (3).svg";
 import seventh from "../assets/Images/new5 (1).svg";
 import eighth from "../assets/Images/new5 (2).svg";
 import ninth from "../assets/Images/new5 (3).svg";
-
+import new7 from "../assets/Images/new7 (1).svg";
+import new71 from "../assets/Images/new7 (2).svg";
+import new72 from "../assets/Images/new7 (3).svg";
+import new8 from "../assets/Images/new8 (1).svg";
+import new81 from "../assets/Images/new8 (2).svg";
+import new82 from "../assets/Images/new8 (3).svg";
+import happy from "../assets/Images/happy.svg";
+import ten from "../assets/Images/new6 (1).svg";
+import eleven from "../assets/Images/new6 (2).svg";
 const projects = [
   {
     id: 1,
@@ -250,9 +258,9 @@ const projects = [
       "Conversion optimization",
       "Custom Shopify development",
     ],
-    leftImg: first,
+    leftImg: third,
     centerImg: second,
-    rightImg: third,
+    rightImg: first,
   },
   {
     id: 2,
@@ -261,9 +269,9 @@ const projects = [
       "Shopify App Development",
       "Custom Shopify Development",
     ],
-    leftImg: fourth,
+    leftImg: sixth,
     centerImg: fifth,
-    rightImg: sixth,
+    rightImg: fourth,
   },
   {
     id: 3,
@@ -273,9 +281,8 @@ const projects = [
       "Custom Shopify Development",
       
     ],
-    leftImg: first,
-    centerImg: second,
-    rightImg: third,
+    leftImg: ten,
+    centerImg: eleven,
   },
   {
     id: 4,
@@ -283,9 +290,9 @@ const projects = [
     tags: [
       "Shopify Theme Customization",
     ],
-    leftImg: first,
-    centerImg: second,
-    rightImg: third,
+    leftImg: new72,
+    centerImg: new71,
+    rightImg: new7,
   },
   {
     id: 5,
@@ -308,9 +315,9 @@ const projects = [
       "UI/UX Design",
       "Ecommerce Development"
     ],
-    leftImg: seventh,
-    centerImg: eighth,
-    rightImg: ninth,
+    leftImg: new82,
+    centerImg: new81,
+    rightImg: new8,
   },
    {
     id: 7,
@@ -320,9 +327,7 @@ const projects = [
       "Conversion Rate Optimization",
       "Speed Optimization",
     ],
-    leftImg: seventh,
-    centerImg: eighth,
-    rightImg: ninth,
+    centerImg: happy,
   },
 ]
 
@@ -401,6 +406,11 @@ function WorkPage() {
               rightImg2={projB?.rightImg}
                tags={projA.tags}
                tags2={projB?.tags}
+               idA={projA.id}
+                idB={projB?.id}
+                frontimg={projA.leftImg}
+              backimg={projA.centerImg}
+                
             />
           )
         })}

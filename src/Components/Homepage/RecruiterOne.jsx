@@ -91,7 +91,10 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
   className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
 >
   {index === 2 ? (
-    <CardSection />
+    <CardSection  frontimg={leftImg}
+    backimg={centerImg}
+    frontRotate={13}
+    backRotate={-8} />
   ) : (
     <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg} />
   )}

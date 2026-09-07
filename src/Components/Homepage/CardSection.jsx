@@ -1,9 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react'
-import ten from "../../assets/Images/new6 (1).svg";
-import eleven from "../../assets/Images/new6 (2).svg";
 import circleImage from "../../assets/Images/circlesvg.svg";
 
-function CardSection() {
+function CardSection({
+  frontimg,
+  backimg,
+  frontRotate = 8,      // front image ka rotation angle (degree)
+  backRotate = -6,      // back image ka rotation angle (degree)
+  frontHoverRotate,     // hover pe front rotation (default: frontRotate + 2)
+  backHoverRotate,      // hover pe back rotation (default: backRotate - 2)
+}) {
   const containerRef = useRef(null);
 
   const mouse = useRef({ x: 0, y: 0 });
@@ -19,6 +24,12 @@ function CardSection() {
     scale: 0,
     opacity: 0,
   });
+
+  // agar backimg nahi diya to single-image mode
+  const isSingle = !backimg;
+
+  const resolvedFrontHover = frontHoverRotate ?? frontRotate + 2;
+  const resolvedBackHover = backHoverRotate ?? backRotate - 2;
 
   useEffect(() => {
     const handleResize = () => {
@@ -132,28 +143,45 @@ function CardSection() {
 
             {/* main div for overlapping images */}
             <div className='inner_main relative overflow-hidden  h-[170px] sm:h-[380px] lg:px-[70px]'>
-              {/* back image */}
-              <img
-                src={eleven}
-                alt='dashboard preview'
-                className='absolute left-1/2 top-7 sm:top-14 lg:top-9 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] -rotate-6  transition-transform duration-300 ease-out'
-                style={{
-                  transform: hovered
-                    ? "translateX(-50%) rotate(-8deg) scale(1.02)"
-                    : "translateX(-50%) rotate(-6deg)",
-                }}
-              />
-              {/* front image */}
-              <img
-                src={ten}
-                alt='merchant page preview'
-                className='absolute left-1/2 top-10 sm:top-34 lg:top-24 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] rotate-[8deg]  transition-transform duration-300 ease-out'
-                style={{
-                  transform: hovered
-                    ? "translateX(-50%) rotate(10deg) scale(1.02)"
-                    : "translateX(-50%) rotate(8deg)",
-                }}
-              />
+
+              {isSingle ? (
+                // Single image mode
+                <img
+                  src={frontimg}
+                  alt='preview'
+                  className='absolute left-1/2 top-10 sm:top-16 lg:top-20 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-300 ease-out'
+                  style={{
+                    transform: hovered
+                      ? "translateX(-50%) scale(1.02)"
+                      : "translateX(-50%)",
+                  }}
+                />
+              ) : (
+                <>
+                  {/* back image */}
+                  <img
+                    src={backimg}
+                    alt='dashboard preview'
+                    className='absolute left-1/2 top-7 sm:top-14 lg:top-10 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] transition-transform duration-300 ease-out'
+                    style={{
+                      transform: hovered
+                        ? `translateX(-50%) rotate(${resolvedBackHover}deg) scale(1.02)`
+                        : `translateX(-50%) rotate(${backRotate}deg)`,
+                    }}
+                  />
+                  {/* front image */}
+                  <img
+                    src={frontimg}
+                    alt='merchant page preview'
+                    className='absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-transform duration-300 ease-out'
+                    style={{
+                      transform: hovered
+                        ? `translateX(-50%) rotate(${resolvedFrontHover}deg) scale(1.02)`
+                        : `translateX(-50%) rotate(${frontRotate}deg)`,
+                    }}
+                  />
+                </>
+              )}
             </div>
 
             {/* cursor circle */}
