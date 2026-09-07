@@ -150,7 +150,7 @@ import ProjectTitle from './ProjectTitle';
 import { Link } from 'react-router-dom';
 
 
-function WebApp({ single ,leftImg, centerImg, rightImg,leftImg2, centerImg2, rightImg2 ,title, highlight,title2, highlight2, slug, slug2}) {
+function WebApp({ single ,leftImg, centerImg, rightImg,leftImg2, centerImg2, rightImg2 ,title, highlight,title2, highlight2, slug, slug2, tags, tags2}) {
     const logos = [
         new2,new3,new1,new5,new4,new6,
         new1,new2,new3,new4,new5,new6,
@@ -197,6 +197,18 @@ function WebApp({ single ,leftImg, centerImg, rightImg,leftImg2, centerImg2, rig
                                         <img key={i} src={img} alt="logo" className='' />
                                     ))}
                                 </div>
+                                 {tags?.length > 0 && (
+                                <div className="flex flex-wrap gap-[8px] pt-[12px]">
+                                    {tags.map((tag, i) => (
+                                        <span
+                                            key={i}
+                                            className="text-[11px] lg:text-[12px] leading-[16px] text-[#9DB8FF] bg-[#1B2340] border border-[#3E4A7A]/50 px-[10px] py-[5px] rounded-[6px]"
+                                        >
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
 
                             </div>
                         </div>
@@ -242,6 +254,18 @@ function WebApp({ single ,leftImg, centerImg, rightImg,leftImg2, centerImg2, rig
                                         <img key={i} src={img} alt="logo" className='' />
                                     ))}
                                 </div>
+                                  {tags2?.length > 0 && (
+                                <div className="flex flex-wrap gap-[8px] pt-[12px]">
+                                    {tags2.map((tag, i) => (
+                                        <span
+                                            key={i}
+                                            className="text-[11px] lg:text-[12px] leading-[16px] text-[#9DB8FF] bg-[#1B2340] border border-[#3E4A7A]/50 px-[10px] py-[5px] rounded-[6px]"
+                                        >
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
 
                             </div>
                             </div>

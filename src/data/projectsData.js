@@ -990,6 +990,183 @@ const projectsData = {
       },
     ],
   },
+  happystuf: {
+    title: "Happy Stuf",
+    highlight: "",
+    description:
+      "Happy Stuf is a wellness and supplement brand that sells vitamins, gummies, powders, and targeted wellness products. Its product range focuses on everyday needs such as energy, sleep, immunity, performance, recovery, and overall wellness. The store features different supplements and formulas created to support specific wellness goals and fit into everyday routines.",
+    role: "Shopify Developer",
+    visit: "https://happystuf.com/",
+
+    sections: [
+      // {
+      //   websitePt: "pt-[20px]",
+      //   websitebp: "pb-[20px]",
+      //   leftwidth: "lg:w-[53%]",
+      //   rightwidth: "lg:w-[47%]",
+      //   image: image99,
+      //   fum: "Smash — One App, Many Stores",
+      //   websiteRedesign: "Shopify App · Multi-Niche Support",
+      //   fumpara:
+      //     "Smash was built as a Shopify App to give sellers across very different niches — art, food, furniture, and jewelry — a flexible way to customize their storefronts.",
+      // },
+      {
+        borderTop: "lg:border-t",
+        borderColor: "lg:border-[#FFFFFF]/10",
+        ptsection: "lg:pt-[40px]",
+        leftwidth: "lg:w-[47%]",
+        rightwidth: "lg:w-[53%]",
+        reverse: true,
+        websiteRedesign: "",
+        image: image2,
+        fum: "My Contribution",
+        pointes: [
+          "E-commerce Development",
+          "Conversion Rate Optimization (CRO)",
+          "UI/UX Design",
+          "Strategic guidance",
+        ],
+        buttonText: "View the final experience",
+        buttonLink: "https://www.vittelo.com/",
+      },
+      {
+        websitePt: "pt-[20px]",
+        borderTop: "lg:border-t",
+        borderColor: "lg:border-[#FFFFFF]/10",
+        ptsection: "lg:pt-[40px]",
+        leftwidth: "lg:w-[53%]",
+        rightwidth: "lg:w-[47%]",
+        websiteRedesign: "",
+        image: image3,
+        fum: "Challenges",
+        fumpara:
+          "The old Vittelo website had an outdated UI, inconsistent page layouts, and slow-loading pages that affected the overall shopping experience. <br/><br/> Product information and visuals also needed a clearer structure so customers could better understand the belts, their fit, and key benefits.<br/><br/> The existing layout wasn’t fully responsive, making the store harder to navigate and browse on mobile devices.",
+      },
+    ],
+
+    keyInfo: {
+      title: "Key Areas of Improvement",
+      items: [
+        {
+          number: 1,
+          heading: "Website Structure:",
+          description:
+            "Reworked the overall page structure to create a clearer content flow and make it easier for customers to move through the storefront. Key sections were arranged around product discovery, benefits, customization, and purchase.",
+          // bullets: [
+          //   "Created niche-specific layout modules.",
+          //   "Allowed merchants to mix and match sections.",
+          //   "Reduced setup time for new stores.",
+          // ],
+        },
+        {
+          number: 2,
+          heading: "Visual Hierarchy:",
+          description:
+            "Improved the visual hierarchy across the website by refining typography, spacing, imagery, and section placement. Important product details and benefits now stand out more clearly without making the pages feel cluttered.",
+          // bullets: [
+          //   "Added drag-and-drop section builder.",
+          //   "Included live preview while editing.",
+          //   "Simplified app installation flow.",
+          // ],
+        },
+        {
+          number: 3,
+          heading: "Product Presentation:",
+          description:
+            " Restructured product content and visuals to give customers a clearer understanding of the belts, their features, fit, and benefits. Product-focused sections were also arranged to create a more consistent presentation throughout the store.",
+          // bullets: [
+          //   "Reduced app load time on storefronts.",
+          //   "Optimized image handling per niche.",
+          //   "Ensured consistent performance at scale.",
+          // ],
+        },
+        {
+          number: 4,
+          heading: "Custom Belt Builder:",
+          description:
+            "Built a custom belt customization section where customers can select their preferred buckle and create a belt based on their personal style. The experience was structured to make the available choices easy to understand and navigate.",
+          // bullets: [
+          //   "Reduced app load time on storefronts.",
+          //   "Optimized image handling per niche.",
+          //   "Ensured consistent performance at scale.",
+          // ],
+        },
+        {
+          number: 5,
+          heading: "Shopify Implementation:",
+          description:
+            " Turned the approved design direction into a functional Shopify storefront using theme customization and custom sections. The development focused on matching the new layouts while keeping the storefront flexible for Vittelo’s products and content.",
+          // bullets: [
+          //   "Reduced app load time on storefronts.",
+          //   "Optimized image handling per niche.",
+          //   "Ensured consistent performance at scale.",
+          // ],
+        },
+
+        // { sectionHeading: "Process" },
+        // {
+        //   headinginner: "Niche Research",
+        //   descriptioninner:
+        //     "Studied layout needs across art, food, furniture, and jewelry sellers.",
+        // },
+        // {
+        //   headinginner: "App Architecture",
+        //   descriptioninner:
+        //     "Designed a modular system that adapts to different merchant needs.",
+        // },
+        // {
+        //   headinginner: "Dashboard Development",
+        //   descriptioninner:
+        //     "Built an intuitive dashboard for merchants to configure their store.",
+        // },
+
+        // { sectionHeading: "Key Features" },
+        // {
+        //   headinginner: "Modular Layout Builder",
+        //   descriptioninner:
+        //     "Lets merchants build a storefront suited to their niche.",
+        // },
+        // {
+        //   headinginner: "Live Preview",
+        //   descriptioninner:
+        //     "Merchants see changes in real time while customizing.",
+        // },
+      ],
+      cards: [
+        { label: "Before", image: imagefull },
+        { label: "After", image: imagefull2 },
+      ],
+    },
+
+    afterSections: [
+      {
+        ptsection: "lg:pt-[40px]",
+        borderTop: "lg:border-t",
+        borderColor: "lg:border-[#FFFFFF]/10",
+        leftwidth: "lg:w-[53%]",
+        rightwidth: "lg:w-[47%]",
+        image: secondLastSection,
+        fum: "Outcome:",
+        funparapt: "pt-[20px]",
+        fumpara:
+          "<b>The redesign made Vittelo’s products easier to understand by organizing the belt features, fit, benefits, and customization options around the customer’s buying journey. The custom belt builder gives customers a more direct way to choose their preferred buckle and create a belt that fits their style, while the new Shopify sections give Vittelo more flexibility to present its products and content.",
+      },
+      {
+        reverse: true,
+        paddinBottom: "pb-[10px] lg:pb-[52px]",
+        ptsection: "lg:pt-[40px]",
+        borderTop: "lg:border-t",
+        borderColor: "lg:border-[#FFFFFF]/10",
+        leftwidth: "lg:w-[47%]",
+        rightwidth: "lg:w-[53%]",
+        image: newImage,
+        fum: "What I Learned:",
+        funparapt: "pt-[20px]",
+        fumpara:
+          "This project taught me how to design a product customization flow that feels simple and intuitive. I also learned how to present multiple product choices without making the buying process feel overwhelming.",
+      },
+    ],
+  },
 
 };
 

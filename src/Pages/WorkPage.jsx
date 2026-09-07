@@ -249,7 +249,6 @@ const projects = [
     tags: [
       "Conversion optimization",
       "Custom Shopify development",
-      "Health",
     ],
     leftImg: first,
     centerImg: second,
@@ -272,6 +271,7 @@ const projects = [
     tags: [
       "Shopify App Development",
       "Custom Shopify Development",
+      
     ],
     leftImg: first,
     centerImg: second,
@@ -281,10 +281,7 @@ const projects = [
     id: 4,
     title: "Woahbros",
     tags: [
-      "Landing page",
       "Shopify Theme Customization",
-      "Auto & Moto",
-      "Cosmetics",
     ],
     leftImg: first,
     centerImg: second,
@@ -317,11 +314,11 @@ const projects = [
   },
    {
     id: 7,
-    title: "Smash",
+    title: "Happy Stuf",
     tags: [
-      "Custom Shopify Development",
       "Shopify Store Optimization",
-      "UI/UX Design",
+      "Conversion Rate Optimization",
+      "Speed Optimization",
     ],
     leftImg: seventh,
     centerImg: eighth,
@@ -342,11 +339,11 @@ function WorkPage() {
     )
   }
 
-  const toggleNiche = (name) => {
-    setSelectedNiches((prev) =>
-      prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]
-    )
-  }
+  // const toggleNiche = (name) => {
+  //   setSelectedNiches((prev) =>
+  //     prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]
+  //   )
+  // }
 
   const filteredProjects = useMemo(() => {
     if (selectedServices.length === 0 && selectedNiches.length === 0) {
@@ -356,14 +353,13 @@ function WorkPage() {
       const matchesService =
         selectedServices.length === 0 ||
         selectedServices.some((s) => p.tags.includes(s))
-      const matchesNiche =
-        selectedNiches.length === 0 ||
-        selectedNiches.some((n) => p.tags.includes(n))
-      return matchesService && matchesNiche
+      // const matchesNiche =
+      //   selectedNiches.length === 0 ||
+      //   selectedNiches.some((n) => p.tags.includes(n))
+      return matchesService 
     })
-  }, [selectedServices, selectedNiches])
+  }, [selectedServices])
 
-  // WebApp ek call me 2 projects dikhata hai, isliye pair bana rahe hain
   const pairs = []
   for (let i = 0; i < filteredProjects.length; i += 2) {
     pairs.push(filteredProjects.slice(i, i + 2))
@@ -381,9 +377,9 @@ function WorkPage() {
 
       <ServicesSection
         selectedServices={selectedServices}
-        selectedNiches={selectedNiches}
+        // selectedNiches={selectedNiches}
         onToggleService={toggleService}
-        onToggleNiche={toggleNiche}
+        // onToggleNiche={toggleNiche}
       />
 
       <div className='lg:pb-[20px] work_class px-[20px] md:px-0'>
@@ -403,6 +399,8 @@ function WorkPage() {
               leftImg2={projB?.leftImg}
               centerImg2={projB?.centerImg}
               rightImg2={projB?.rightImg}
+               tags={projA.tags}
+               tags2={projB?.tags}
             />
           )
         })}

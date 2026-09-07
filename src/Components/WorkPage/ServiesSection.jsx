@@ -133,17 +133,17 @@ function ServicesSection({
     { id: 9, Name: "Shopify App Development" },
   ]
 
-  const ArtArray = [
-    { id: 1, topic: "Art Gallery" },
-    { id: 2, topic: "Auto & Moto" },
-    { id: 3, topic: "Cosmetics" },
-    { id: 4, topic: "Fashion" },
-    { id: 5, topic: "Food & Beverages" },
-    { id: 6, topic: "Health" },
-    { id: 7, topic: "Home & Furniture" },
-    { id: 8, topic: "Jewelry" },
-    { id: 9, topic: "Supplements" },
-  ]
+  // const ArtArray = [
+  //   { id: 1, topic: "Art Gallery" },
+  //   { id: 2, topic: "Auto & Moto" },
+  //   { id: 3, topic: "Cosmetics" },
+  //   { id: 4, topic: "Fashion" },
+  //   { id: 5, topic: "Food & Beverages" },
+  //   { id: 6, topic: "Health" },
+  //   { id: 7, topic: "Home & Furniture" },
+  //   { id: 8, topic: "Jewelry" },
+  //   { id: 9, topic: "Supplements" },
+  // ]
 
   return (
     <section className="container">
@@ -170,7 +170,7 @@ function ServicesSection({
         </div>
 
         {/* Niche */}
-        <div className="pt-[15px] lg:pt-[20px]">
+        {/* <div className="pt-[15px] lg:pt-[20px]">
           <p className="text-[14px] lg:text-[18px] leading-[24px] text-[#BDBDBD] pb-[10px]">
             Niche
           </p>
@@ -190,7 +190,7 @@ function ServicesSection({
               )
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
