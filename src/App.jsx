@@ -118,7 +118,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/terms-condition" element={<TermsPage />} />
         <Route path="/work" element={<WorkPage />} />
-        <Route path="/work-detail" element={<WorkDetailPage />} />
+        <Route path="/work/:title" element={<WorkDetailPage />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />
