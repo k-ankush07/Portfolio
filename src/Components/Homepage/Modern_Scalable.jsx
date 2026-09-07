@@ -28,7 +28,7 @@ function Modern_Scalable() {
             <div className="  lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-[#ffffff] overflow-hidden  ">
            
 
-              <div className="absolute inset-0   top-[250px] md:top-[370px] lg:top-[270px] flex justify-center items-center opacity-80"
+              <div className="absolute inset-0   top-[250px] md:top-[370px] lg:top-[525px] flex justify-center items-center opacity-80"
               >
                    <WorldGlobenew /> 
               </div>
