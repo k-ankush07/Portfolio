@@ -61,36 +61,6 @@ const getSize = () => ({
     });
   }, [isMobile]);
 
-  const [globeReady, setGlobeReady] = useState(false);
-
-// Set starting position ONLY after globe internals are ready
-useEffect(() => {
-  if (!globeRef.current || !globeReady) return;
-
-  const controls = globeRef.current.controls();
-
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.08;
-  controls.enableZoom = false;
-  controls.enablePan = false;
-  controls.autoRotate = false;
-
-  globeRef.current.pointOfView(
-    {
-      lat: isMobile ? 10 : 15,
-      lng: 20,
-      altitude: isMobile ? 2 : 1.4,
-    },
-    0 // instant, no animation
-  );
-
-  const t = setTimeout(() => {
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.8;
-  }, 50);
-
-  return () => clearTimeout(t);
-}, [isMobile, globeReady]);
   // Cities
   const cities = useMemo(
     () => [
@@ -147,7 +117,6 @@ return (
 
     <Globe
   ref={globeRef}
-   onGlobeReady={() => setGlobeReady(true)}
   width={size.width}
   height={size.height}
 
