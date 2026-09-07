@@ -14,7 +14,6 @@ import Engineer from '../Components/AboutPage/Engineer'
 import WhatYouGet from '../Components/Homepage/WhatYouGet'
 import VideoSection from '../Components/Homepage/VideoSection'
 
-
 function HomePage() {
   return (
    <>
