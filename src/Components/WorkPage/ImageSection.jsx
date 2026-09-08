@@ -1,10 +1,23 @@
-import React from "react";
-import fullImage from "../../assets/Images/fullImage.svg";
-function ImageSection({project}) {
+
+function ImageSection({ project }) {
+  const [mobileImg, desktopImg] = project.imgsection || [];
+
   return (
-    <section className="container ">
-      <div className=" px-2 md:px-0 pt-[30px] pb-[30px]  lg:pt-[40px] lg:pb-[40px]">
-        <img className="w-full h-full" src={project.imgsection} alt="full iamge" />
+    <section>
+      <div className="pt-[30px] pb-[30px] lg:pt-[40px] lg:pb-[40px]">
+        {/* Mobile: bothimage */}
+        <img
+          className="w-full h-full shrink-0 block lg:hidden"
+          src={mobileImg}
+          alt="mobile view image"
+        />
+
+        {/* Desktop: fullImage */}
+        <img
+          className="w-full h-full shrink-0 hidden lg:block"
+          src={desktopImg}
+          alt="desktop view image"
+        />
       </div>
     </section>
   );

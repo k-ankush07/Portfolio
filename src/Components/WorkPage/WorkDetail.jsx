@@ -253,7 +253,7 @@ function WorkDetail({ project }) {
         <OurContribution project={project} />
         <Challenge project={project} />
         <ImplementationProcess project={project} />
-        <div>
+        <div className="flex flex-col-reverse lg:flex-col">
           <ImageSection  project={project} />
           <KeyAreas project={project} />
         </div>
