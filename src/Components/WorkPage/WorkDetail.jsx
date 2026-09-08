@@ -766,13 +766,13 @@ function WorkDetail({ project }) {
             </motion.div>
           </motion.div>
 
-          {project.sections.map((section, idx) => (
+          {/* {project.sections.map((section, idx) => (
             <Built key={idx} {...section} />
-          ))}
+          ))} */}
 
           {/* <ImageSection /> */}
 
-          <KeyInfoSection
+          {/* <KeyInfoSection
             title={project.keyInfo.title}
             items={project.keyInfo.items}
             cards={project.keyInfo.cards}
@@ -780,13 +780,8 @@ function WorkDetail({ project }) {
 
           {project.afterSections.map((section, idx) => (
             <Built key={`after-${idx}`} {...section} />
-          ))}
+          ))} */}
 
-          {/* <WorksFull /> */}
-          {/* <Backend_Architecture />
-                    <Backend_ArchitectureSecond />
-                    <Challenges />
-                    <Learned /> */}
         </div>
       </div>
     </section>
