@@ -65,6 +65,8 @@ function WoahBrospAGE() {
         ],
     
         outcomeimage: out,
+        contentwidth:35,
+        imgwidth:65,
         outcomeheading: "Outcomes",
         outcomepoints: [
           "Reduced abandoned cart rates",

@@ -11,7 +11,7 @@ function FirstSection({ project }) {
       >
         {/* image section */}
         <div
-          className={`lg:w-[50%] pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px] ${
+          className={` lg:w-[50%] pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px] ${
             project.reverseFirstSection ? "lg:pl-[40px]" : "lg:pr-[40px]"
           }`}
         >
