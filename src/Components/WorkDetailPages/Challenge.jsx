@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Challenge({project}) {
+    if (!project?.Challheading && !project?.Challdesc && !project.challenge) {
+    return null;
+  }
   return (
     <>
      <div className='lg:pt-[40px] '>

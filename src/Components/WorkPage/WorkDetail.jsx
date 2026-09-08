@@ -21,6 +21,8 @@ import ImplementationProcess from "../WorkDetailPages/ImplementationProcess";
 import KeyAreas from "../WorkDetailPages/KeyAreas";
 import Outcomes from "../WorkDetailPages/Outcomes";
 import WhatILearned from "../WorkDetailPages/WhatILearned";
+import ChallengesNew from "../WorkDetailPages/ChallengesNew";
+import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
 
 
 function WorkDetail({ project }) {
@@ -253,10 +255,12 @@ function WorkDetail({ project }) {
 
         <FirstSection project={project} />
         <OurContribution project={project} />
+        <ChallengesNew  project={project} />
         <Challenge project={project} />
         <ImplementationProcess project={project} />
         <div className="flex flex-col-reverse lg:flex-col">
           <ImageSection  project={project} />
+          <KeyAreasNew  project={project}  />
           <KeyAreas project={project} />
         </div>
         <Outcomes project={project} />
