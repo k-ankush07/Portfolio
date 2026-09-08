@@ -15,6 +15,12 @@ import BlogPage from "./Pages/BlogPage.jsx";
 import WorkPage from "./Pages/WorkPage.jsx";
 import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
 import TryFumPage from "./Components/WorkDetailPages/TryFumPage.jsx";
+import RetroSpecPage from "./Components/WorkDetailPages/RetroSpecPage.jsx";
+
+
+
+
+
 
 function App() {
   const location = useLocation();
@@ -48,6 +54,7 @@ function App() {
         <Route path="/work" element={<WorkPage />} />
         <Route path="/work/:title" element={<WorkDetailPage />} />
         <Route path="/work/tryfum" element={<TryFumPage />} />
+        <Route path="/work/retrospec" element={<RetroSpecPage />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />

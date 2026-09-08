@@ -1,6 +1,8 @@
 
 function ImageSection({ project }) {
+  
   const [mobileImg, desktopImg] = project.imgsection || [];
+  console.log("mobileImg",project)
 
   return (
     <section>

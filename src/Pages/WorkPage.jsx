@@ -22,7 +22,7 @@ import lone2 from "../assets/Images/newlone (2).svg"
 function WorkPage() {
 
   const projects = [
-  { id: 1, title: "TryFum",       leftImg: first, centerImg: second, rightImg: third,
+  { id: 1, title: "TryFum", leftImg: first, centerImg: second, rightImg: third,
     tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health", "Wellness"] },
   { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro1,
     tags: ["Shopify Store Development", "Custom Shopify App", "Shopify Theme Customization"], niches: ["Sports"] },

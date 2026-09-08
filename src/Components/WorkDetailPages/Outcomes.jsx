@@ -1,12 +1,16 @@
 import React from "react";
 
 function Outcomes({ project }) {
+  if (!project?.outcomeheading && (!project?.outcomepoints || project.outcomepoints.length === 0)) {
+    return null;
+  }
+
   return (
     <>
       <div className="lg:pt-[40px] ">
         <div className="flex flex-col-reverse lg:flex-row  lg:border-t lg:border-b border-[#FFFFFF]/10">
           {/* image section  */}
-          <div className=" lg:w-[50%] pt-[20px] pb-[30px] lg:pt-[40px] lg:pb-[40px]  lg:pr-[40px] border-b  border-[#FFFFFF]/10">
+          <div className=" lg:w-[50%] pt-[20px] pb-[30px] lg:pt-[40px] lg:pb-[40px]  lg:pr-[40px] border-b  lg:border-b-0 border-[#FFFFFF]/10">
             <img src={project.outcomeimage} alt="iMAGE" />
           </div>
 

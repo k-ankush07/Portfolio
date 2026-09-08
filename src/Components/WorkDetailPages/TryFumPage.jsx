@@ -51,7 +51,7 @@ function TryFumPage() {
     keyPoints: [
       {
         heading: "Flavor Selection:",
-        desc: "I worked on the flavor-selection process where customers can choose from multiple FÜM Core flavors such as Mango, Crisp Mint, Peach Blush, Sparkling Grapefruit, Spearmint Ice, and other options. The selection interface also shows flavor characteristics such as sweetness, throat hit, and flavor notes.",
+        desc: " I worked on the flavor-selection process where customers can choose from multiple FÜM Core flavors such as Mango, Crisp Mint, Peach Blush, Sparkling Grapefruit, Spearmint Ice, and other options. The selection interface also shows flavor characteristics such as sweetness, throat hit, and flavor notes.",
       },
       {
         heading: "Bundle Selection:",
@@ -63,11 +63,11 @@ function TryFumPage() {
       },
       {
         heading: "Accessory Upsells:",
-        desc: "Add accessory selection directly into the product journey, including Toppers, FÜM Base, and alternative device barrels. This gives customers the option to add accessories while they build their main product package.",
+        desc: " Add accessory selection directly into the product journey, including Toppers, FÜM Base, and alternative device barrels. This gives customers the option to add accessories while they build their main product package.",
       },
       {
         heading: "Product Page Optimization:",
-        desc: "I optimized the product pages directly around the purchasing flow, including product details, flavor options, pricing, subscription choices, and key product benefits in a clear structure. This approach gives customers relevant information while they make their selections.",
+        desc: "I optimized the product pages directly around the purchasing flow, including product details, flavor options, pricing, subscription choices, and key product benefits in a clear structure. This approach gives customers relevant information while they make their selections",
       },
     ],
 
