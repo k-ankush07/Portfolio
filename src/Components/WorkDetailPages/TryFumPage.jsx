@@ -12,7 +12,7 @@ import firstdouble from "../../assets/Images/firstdouble.svg";
 import secondsingle from "../../assets/Images/secondsinle.svg";
 import bothimage from "../../assets/Images/bothimage.svg";
 import outcomeimage from "../../assets/Images/outcomeimage.svg";
-function TryFum() {
+function TryFumPage() {
   const project = {
     id: 1,
     slug: "tryfum",
@@ -92,4 +92,4 @@ function TryFum() {
   );
 }
 
-export default TryFum;
+export default TryFumPage;

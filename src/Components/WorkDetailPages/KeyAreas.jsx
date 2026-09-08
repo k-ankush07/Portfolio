@@ -26,7 +26,7 @@ function KeyAreas({project}) {
         </div>
 
         {/* image section  */}
-        <div className='lg:w-[60%] flex flex-col lg:pl-[40px] justify-center  items-center lg:border-l border-b pb-[42px] lg:pb-0  border-[#FFFFFF]/10 lg:pt-[40px]  lg:pb-[40px] '>
+        <div className='lg:w-[60%] flex flex-col lg:pl-[40px] justify-center  items-center lg:border-l border-b lg:border-b-0 pb-[42px] lg:pb-0  border-[#FFFFFF]/10 lg:pt-[40px]  lg:pb-[40px] '>
             <img src={project.firstdbl} alt='first Image ' />
             <img src={project.secondsngl} alt='second image ' />
         </div>

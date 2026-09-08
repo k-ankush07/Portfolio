@@ -6,7 +6,7 @@ function OurContribution({ project = { project } }) {
       <div className=" pt-[30px] lg:pt-[40px] ">
        <div className="flex flex-col-reverse lg:flex-row">
  {/* contribution section */}
-        <div className="lg:w-[50%] flex flex-col lg:justify-center lg:items-center pt-[20px] lg:pt-0 lg:pr-[40px]">
+        <div className="lg:w-[40%] flex flex-col lg:justify-center lg:items-center pt-[20px] lg:pt-0 lg:pr-[40px]">
 
            <div>
              <h2 className=" text-[24px]  lg:text-[40px] lg:leading-[48px] font-bold text-[#FFFFFF]">{project.our}</h2>
@@ -34,7 +34,7 @@ function OurContribution({ project = { project } }) {
         </div>
 
         {/* image section */}
-        <div className="lg:w-[50%]">
+        <div className="lg:w-[60%]">
           <div className="border-b pb-[30px] lg:pb-0 lg:border-b-0 lg:border-l border-[#FFFFFF]/10 lg:pl-[40px]  lg:pt-[40px] lg:pb-[40px] ">
             <img src={project.contrubutionimage} alt="contribution image " />
              
