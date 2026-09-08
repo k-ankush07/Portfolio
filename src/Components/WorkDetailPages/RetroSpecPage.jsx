@@ -13,6 +13,7 @@ function RetroSpecPage() {
         slug: "RetroSpec",
         title: "RetroSpec",
         image: image100,
+        reverseFirstSection: true,
         heading: "FÜM — The Good Habit",
         desc: "Retrospec is a DTC outdoor and active-lifestyle brand that sells products designed for everyday movement, recreation, fitness, and outdoor adventures. Its product range covers bikes and e-bikes, skateboards, scooters, paddle boards, snow gear, camping equipment, fitness products, and outdoor accessories, giving customers products for different activities throughout the year. The brand focuses on making outdoor products accessible, practical, and affordable while maintaining a strong emphasis on product design and everyday usability.",
         role: " Shopify App Developer",
