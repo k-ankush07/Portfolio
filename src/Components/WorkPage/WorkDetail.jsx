@@ -19,6 +19,8 @@ import OurContribution from "../WorkDetailPages/OurContribution";
 import Challenge from "../WorkDetailPages/Challenge";
 import ImplementationProcess from "../WorkDetailPages/ImplementationProcess";
 import KeyAreas from "../WorkDetailPages/KeyAreas";
+import Outcomes from "../WorkDetailPages/Outcomes";
+import WhatILearned from "../WorkDetailPages/WhatILearned";
 
 
 function WorkDetail({ project }) {
@@ -257,6 +259,8 @@ function WorkDetail({ project }) {
           <ImageSection  project={project} />
           <KeyAreas project={project} />
         </div>
+        <Outcomes project={project} />
+        <WhatILearned project={project} />
         {/* {project.sections.map((section, idx) => (
             <Built key={idx} {...section} />
           ))} */}
