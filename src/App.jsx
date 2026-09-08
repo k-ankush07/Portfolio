@@ -18,6 +18,7 @@ import TryFumPage from "./Components/WorkDetailPages/TryFumPage.jsx";
 import RetroSpecPage from "./Components/WorkDetailPages/RetroSpecPage.jsx";
 import WoahBrosPage from "./Components/WorkDetailPages/WoahBrosPage.jsx"
 import Doinkrollerz from "./Components/WorkDetailPages/Doinkrollerz.jsx";
+import ApmzeePage from "./Components/WorkDetailPages/ApmzeePage.jsx";
 
 
 
@@ -58,6 +59,7 @@ function App() {
         <Route path="/work/retrospec" element={<RetroSpecPage />} />
         <Route path="/work/woahbros" element={<WoahBrosPage />} />
         <Route path="/work/doinkrollerz" element={<Doinkrollerz />} />
+        <Route path="/work/apmzee" element={<ApmzeePage />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />

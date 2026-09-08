@@ -33,6 +33,7 @@ function Doinkrollerz() {
             btnname: "View the final experience",
             btnLink: "https://www.doinkrollerz.com/",
             challengenew: image997,
+            reversechallengeSection: true,
             Challheadingnew: "Challenges",
             Challdescnew:
               "The biggest issue was that people didn't understand how the DoinkRoller actually worked just by looking at normal photos. Visitors come to the store, get confused, and leave without buying anything. <br/> <br/> Additionally, the store had low Average Order Value (AOV) because customers bought a single rolling tool and overlooked complementary accessories like papers, grinders, and ashtrays. <br/> <br/> Most of the store's traffic came from mobile, but the old site was really hard to use on a mobile screen.",
