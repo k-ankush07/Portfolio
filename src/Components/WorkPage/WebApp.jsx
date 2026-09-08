@@ -260,9 +260,8 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import ProjectTitle from "./ProjectTitle";
 import { Link } from "react-router-dom";
 
-
-const CARDSECTION_DOUBLE_IDS = [2,4,6]; 
-const CARDSECTION_SINGLE_IDS = [];  
+const CARDSECTION_DOUBLE_IDS = [2, 4, 6];
+const CARDSECTION_SINGLE_IDS = [];
 
 function WebApp({
   single,
@@ -275,17 +274,31 @@ function WebApp({
   title,
   highlight,
   title2,
-  idA, 
-  idB, 
+  idA,
+  idB,
+  tags,
+  tags2,
 }) {
   const logos = [
-    new2, new3, new1, new5, new4, new6,
-    new1, new2, new3, new4, new5, new6,
+    new2,
+    new3,
+    new1,
+    new5,
+    new4,
+    new6,
+    new1,
+    new2,
+    new3,
+    new4,
+    new5,
+    new6,
   ];
 
   const renderPreview = (id, l, c, r) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
-      return <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} />;
+      return (
+        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} />
+      );
     }
     if (CARDSECTION_SINGLE_IDS.includes(id)) {
       return <CardSection frontimg={c} />;
@@ -300,7 +313,11 @@ function WebApp({
           <div className=" relative  pt-[40px] lg:pt-0  lg:border-r-[1px]  lg:border-[#FFFFFF]/10 lg:w-[50%]">
             <div className="lg:pr-[57px] ">
               <div className="  flex justify-between"></div>
-              <ProjectTitle logo={shopify} title={title} highlight={highlight} />
+              <ProjectTitle
+                logo={shopify}
+                title={title}
+                highlight={highlight}
+              />
             </div>
             <div className=" h-0 lg:h-[28px] flex  items-center">
               <div className=" hidden lg:block h-[1px] w-full  bg-white/10"></div>
@@ -325,6 +342,18 @@ function WebApp({
                     <img key={i} src={img} alt="logo" className="" />
                   ))}
                 </div>
+                {tags?.length > 0 && (
+                  <div className="flex flex-wrap gap-[8px] pt-[12px]">
+                    {tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="text-[11px] lg:text-[12px] leading-[16px] text-[#9DB8FF] bg-[#1B2340] border border-[#3E4A7A]/50 px-[10px] py-[5px] rounded-[6px]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -357,6 +386,18 @@ function WebApp({
                       <img key={i} src={img} alt="logo" className="" />
                     ))}
                   </div>
+                  {tags2?.length > 0 && (
+                    <div className="flex flex-wrap gap-[8px] pt-[12px]">
+                      {tags2.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="text-[11px] lg:text-[12px] leading-[16px] text-[#9DB8FF] bg-[#1B2340] border border-[#3E4A7A]/50 px-[10px] py-[5px] rounded-[6px]"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

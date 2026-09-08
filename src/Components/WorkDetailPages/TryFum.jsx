@@ -1,0 +1,60 @@
+import React from "react";
+import WorkDetail from "../WorkPage/WorkDetail";
+import first from "../../assets/Images/new1.svg";
+import second from "../../assets/Images/new2.svg";
+import third from "../../assets/Images/new3.svg";
+import firstImg from "../../assets/Images/FIRST.svg";
+import contribution from "../../assets/Images/contribution.svg";
+import newchall from "../../assets/Images/newchall.svg";
+import impimg from "../../assets/Images/impimg.svg";
+import fullImage from "../../assets/Images/fullImage.svg";
+import firstdouble from "../../assets/Images/firstdouble.svg";
+import secondsingle from "../../assets/Images/secondsinle.svg";
+function TryFum() {
+  const project = {
+    id: 1,
+    slug: "tryfum",
+    title: "TryFum",
+    image: firstImg,
+    heading: "FÜM — The Good Habit",
+    desc: "FÜM is a DTC eCommerce brand that provides nicotine-free products designed to help people replace smoking and vaping habits. The brand sells reusable flavored-air devices, flavor cores, and accessory products through its online store.",
+    role: "Full Stack Shopify Developer",
+    visit: " https://tryfum.com/",
+    our: "Our Contribution",
+    contrubutionimage: contribution,
+    points: [
+      "Custom Shopify development",
+      "Theme customization",
+      "CRO optimization",
+      "Custom sections",
+      "Upsell",
+      "UX improvements",
+      "Mobile optimization",
+      "Performance optimization",
+    ],
+    btnname: "View the final experience",
+    btnLink: "https://tryfum.com/",
+    challenge:newchall,
+    Challheading:"Challenges",
+    Challdesc:"The client wanted to increase online sales, improve product discovery, and make it easier for customers to understand and choose the right FÜM products<br/> <br/> One of the key challenges was managing a variety of flavors and presenting them clearly without overwhelming customers. Another challenge involved creating an intuitive product-selection flow so customers could easily choose their preferred flavors. <br/> <br/> We also had to maintain consistent product information across multiple variants while keeping the storefront fast, responsive, and easy to navigate on mobile device",
+    implementimage: impimg,
+    impheading:"Implementation Process",
+    impheadesc:"I started with discovery, clarifying their website’s needs and requirements. By analyzing the existing Shopify store, product catalog, customer journey, and overall user experience. I identified areas where customers could face friction, especially when browsing the wide range of flavors, selecting products, and exploring different bundles <br/> <br/> I customized the Shopify theme and developed reusable Shopify 2.0 sections to create a flexible and scalable storefront. I worked on key product sections to present product benefits, flavor options, variants, and reviews <br/> <br/> I worked on the bundle and subscription experience to simplify product selection and purchasing. I refined the product layouts, CTAs, navigation, and supporting content to create a smoother customer journey from product discovery to checkout.",
+   imgsection :fullImage,
+   keyheading:"Key Areas of Improvement",
+   firstdbl:firstdouble,
+   secondsngl: secondsingle,
+   headingkey:"",
+   desckey:""
+  };
+
+  return (
+    <>
+      <section className="container">
+        <WorkDetail project={project} />
+      </section>
+    </>
+  );
+}
+
+export default TryFum;

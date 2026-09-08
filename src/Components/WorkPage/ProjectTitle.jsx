@@ -12,10 +12,10 @@ function ProjectTitle({ logo, title, highlight }) {
       <h1 className="text-[26px] sm:text-[35px] lg:text-[40px] font-bold leading-[48px] text-left lg:text-left">
         {title}
 
-        <span className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block">
+        {/* <span className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block">
           {" "}
           {highlight}
-        </span>
+        </span> */}
       </h1>
     </div>
   );

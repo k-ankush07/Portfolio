@@ -24,8 +24,7 @@ function Footer() {
                             />
 
                             <p className="text-[16px] text-[#BDBDBD] opacity-80 max-w-[320px] pt-[14px] pb-[28px] lg:pt-[24px] lg:pb-[21px] leading-[26px]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Suspendisse varius enim in eros elementum tristique.
+                                I’m Ankush — a Shopify Developer, CRO Specialist, freelancer, and problem solver. Thanks for checking out my site!
                             </p>
 
                             <GradientBorderButton data="Available for work" />

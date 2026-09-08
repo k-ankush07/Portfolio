@@ -87,6 +87,7 @@ import TermsPage from "./Pages/TermsPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
 import WorkPage from "./Pages/WorkPage.jsx";
 import WorkDetailPage from "./Pages/WorkDetailPage.jsx";
+import TryFum from "./Components/WorkDetailPages/TryFum.jsx";
 
 function App() {
   const location = useLocation();
@@ -119,6 +120,7 @@ function App() {
         <Route path="/terms-condition" element={<TermsPage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/work/:title" element={<WorkDetailPage />} />
+        <Route path="/work/tryfum" element={<TryFum />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />
