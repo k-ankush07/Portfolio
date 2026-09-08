@@ -19,6 +19,19 @@ function KeyAreas({project}) {
                   <p className='text-[#BDBDBD] text-[14px] leading-[24px] pt-[4px]'>
                     {item.desc}
                   </p>
+                    {item.bullets?.length > 0 && (
+                    <ul className='flex flex-col gap-[8px] lg:gap-[20px] pt-[20px] pl-[8px]'>
+                      {item.bullets.map((bullet, j) => (
+                        <li key={j} className='flex items-start gap-[8px]  text-[14px] leading-[24px] text-[#BDBDBD]'>
+                          <span className='text-[#BDBDBD]'>•</span>
+                          <span>
+                            <span className='text-[24px] leading-[24px]  font-bold text-[#BDBDBD]'>{bullet.label}</span>{" "}
+                            <span className='text-[#BDBDBD] text-[14px] leading-[24px] pt-[4px]'>{bullet.text}</span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>
