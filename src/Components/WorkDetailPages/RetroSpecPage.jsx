@@ -6,7 +6,8 @@ import challengeimg from "../../assets/Images/image 99 (3).svg"
 import processimg from "../../assets/Images/image 99 (4).svg"
 import first from "../../assets/Images/group1 (1).svg"
 import fresh from "../../assets/Images/fresh.svg"
-import image1001 from "../../assets/Images/image 100 (1).svg"
+// import image1001 from "../../assets/Images/image 100 (1).svg"
+import image1001 from "../../assets/Images/RetroSpec.mp4"
 function RetroSpecPage() {
       const project = {
         id: 1,
@@ -38,8 +39,8 @@ function RetroSpecPage() {
           "To enhance the customer experience, I developed a Custom Shopify App. I first structured the product data and mapped the different product types, variants, sizes, and purchasing options. Then, I connected the app with Shopify’s product data so the interface could display and manage the required options dynamically. Also, created reusable components for product information and options, which reduced repeated development across different product templates",
         imgsection: [fresh, first],
         keyheading: "Key Areas of Improvements",
-        firstdbl: image1001,
-        // secondsngl: fresh,
+        // firstdbl: image1001,
+        secondsngl: image1001,
         keyPoints: [
           {
             heading: "Simplified Product Selection:",

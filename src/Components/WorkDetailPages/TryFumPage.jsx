@@ -9,7 +9,8 @@ import newchall from "../../assets/Images/newchall.svg";
 import impimg from "../../assets/Images/impimg.svg";
 import fullImage from "../../assets/Images/fullImage.svg";
 import firstdouble from "../../assets/Images/firstdouble.svg";
-import secondsingle from "../../assets/Images/secondsinle.svg";
+// import secondsingle from "../../assets/Images/secondsinle.svg";
+import secondsingle from "../../assets/Images/tryfum.mp4";
 import bothimage from "../../assets/Images/bothimage.svg";
 import outcomeimage from "../../assets/Images/outcomeimage.svg";
 function TryFumPage() {

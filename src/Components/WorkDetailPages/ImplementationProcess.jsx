@@ -20,7 +20,7 @@ function ImplementationProcess({ project }) {
 
           {/* image section  */}
           <div className=" lg:w-[50%] pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px]  lg:pl-[40px]  border-b lg:border-b-0 lg:border-t-0 lg:border-l border-[#FFFFFF]/10">
-            <img src={project.implementimage} alt="iMAGE" />
+            <img src={project.implementimage} alt="iMAGE" className="w-full" />
           </div>
         </div>
       </div>
