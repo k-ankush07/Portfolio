@@ -55,6 +55,9 @@ import KeyAeasApmzee from "../WorkDetailPages/Apmzee/KeyAeasApmzee";
 import OutcomesApmzee from "../WorkDetailPages/Apmzee/OutcomesApmzee";
 import FirstSectionLonepouches from "../WorkDetailPages/Lonepouches/FirstSectionLonepouches";
 import OurContributionProcessLonepouches from "../WorkDetailPages/Lonepouches/OurContributionProcessLonepouches";
+import ChallengeLonepouches from "../WorkDetailPages/Lonepouches/ChallengeLonepouches";
+import ImplementationProcessLonepouches from "../WorkDetailPages/Lonepouches/ImplementationProcessLonepouches";
+import ImageSectionLonepouches from "../WorkDetailPages/Lonepouches/ImageSectionLonepouches";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -344,6 +347,9 @@ function WorkDetail({ project }) {
         {/* 6th Lonepouches Page */}
         <FirstSectionLonepouches  project={project} />
         <OurContributionProcessLonepouches  project={project} />
+        <ChallengeLonepouches   project={project} />
+        <ImplementationProcessLonepouches project={project}  />
+        <ImageSectionLonepouches  project={project} />
         
       </div>
     </section>
