@@ -12,7 +12,7 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import Built from "./Built";
 import ImageSection from "./ImageSection";
 import KeyInfoSection from "./KeyInfoSection";
-import FirstSection from "../WorkDetailPages/Tryfum/FirstSection";
+
 import OurContribution from "../WorkDetailPages/Tryfum/OurContribution";
 import Challenge from "../WorkDetailPages/Tryfum/Challenge";
 import ImplementationProcess from "../WorkDetailPages/Tryfum/ImplementationProcess";
@@ -22,13 +22,14 @@ import WhatILearned from "../WorkDetailPages/Tryfum/WhatILearned";
 import ChallengesNew from "../WorkDetailPages/ChallengesNew";
 import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
 import Process from "../WorkDetailPages/Process";
+import FirstSection from "../WorkDetailPages/Tryfum/FirstSection"
 import FirstSectionRetroSpec from "../WorkDetailPages/RetroSpec/FirstSectionRetroSpec";
 import OurContributionRetroSpec from "../WorkDetailPages/RetroSpec/OurContributionRetroSpec";
 import ChallengeRetroSpec from "../WorkDetailPages/RetroSpec/ChallengeRetroSpec";
 import ImplementationProcessRetroSpec from "../WorkDetailPages/RetroSpec/ImplementationProcessRetroSpec";
 import KeyAeasRetroSpec from "../WorkDetailPages/RetroSpec/KeyAeasRetroSpec";
 import WhatILearnedRetroSpec from "../WorkDetailPages/RetroSpec/WhatILearnedRetroSpec";
-import FirstSectionWoahBros from "../WorkDetailPages/WoahBros/FirstSectionWoahBros";
+import FirstSectionWoahBros  from "../WorkDetailPages/WoahBros/FirstSectionWoahBros"
 import OurContributionWoahBros from "../WorkDetailPages/WoahBros/OurContributionWoahBros";
 import ChallengeWoahBros from "../WorkDetailPages/WoahBros/ChallengeWoahBros";
 import ImplementationProcessWoahBros from "../WorkDetailPages/WoahBros/ImplementationProcessWoahBros";
@@ -45,6 +46,8 @@ import ImageSectionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/ImageSecti
 import KeyAeasDoinkrollerz from "../WorkDetailPages/Doinkrollerz/KeyAeasDoinkrollerz";
 import OutcomesDoinkrollerz from "../WorkDetailPages/Doinkrollerz/OutcomesDoinkrollerz";
 import WhatILearnedDoinkrollerz from "../WorkDetailPages/Doinkrollerz/WhatILearnedDoinkrollerz";
+import FirstSectionApmzee from "../WorkDetailPages/Apmzee/FirstSectionApmzee";
+import OurContributionProcessApmzee from "../WorkDetailPages/Apmzee/OurContributionProcessApmzee";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -321,7 +324,10 @@ function WorkDetail({ project }) {
         <KeyAeasDoinkrollerz project={project}  />
         <OutcomesDoinkrollerz project={project} />
         <WhatILearnedDoinkrollerz project={project}  />
-        
+
+        {/* 5th Apmzee Page */}
+        <FirstSectionApmzee  project={project} />
+        <OurContributionProcessApmzee project={project}  />
         
       </div>
     </section>

@@ -1,35 +1,43 @@
 import React from 'react'
 
-function FirsrtSectionDoinkrollerz({ project }) {
-  if (!project?.headingDoinkrollerz && !project?.descDoinkrollerz && !project?.imageDoinkrollerz) {
+function FirstSection({ project }) {
+  if (!project?.heading && !project?.desc && !project?.image) {
     return null;
   }
 
   return (
     <div className="lg:pt-[40px]">
       <div
-        className={`flex flex-col lg:flex-row-reverse lg:border-t lg:border-b border-white/10`}
+        className={`flex flex-col lg:flex-row lg:border-t lg:border-b border-white/10`}
       >
         {/* Image section */}
         <div
-          className={`w-full lg:w-[70%] pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px] lg:pl-[40px] `}
+          className={`lg:w-[50%] lg:pr-[40px] lg:border-r  border-[#FFFF]/10 pt-[30px] pb-[20px] lg:pt-[40px]  lg:pb-[40px] `}
         >
-          <img src={project.imageDoinkrollerz} alt="image" className="w-full h-auto" />
+          <img
+            src={project.image}
+            alt="image"
+            className="w-full h-auto"
+          />
         </div>
 
         {/* Content section */}
         <div
-          className={`w-full lg:w-[30%]  flex flex-col justify-center  border-r pr-[40px] border-t lg:border-t-0 border-white/10 `}
+          className={`w-full lg:w-[50%] flex flex-col justify-center pr-0 border-t lg:border-t-0 border-white/10 `}
         >
           <div
-            className={`w-full pt-[20px] lg:pt-0`}
+            className={`w-full pt-[20px] lg:pt-0 ${
+              project.reverseFirstSection
+                ? "lg:pr-[40px]"
+                : "lg:pl-[40px]"
+            }`}
           >
             <h2 className="text-[24px] lg:text-[40px] leading-[48px] font-bold text-white">
-              {project.headingDoinkrollerz}
+              {project.heading}
             </h2>
 
             <p className="text-[#BDBDBD] text-[14px] leading-[24px] pt-[20px]">
-              {project.descDoinkrollerz}
+              {project.desc}
             </p>
           </div>
         </div>
@@ -38,4 +46,4 @@ function FirsrtSectionDoinkrollerz({ project }) {
   )
 }
 
-export default FirsrtSectionDoinkrollerz
+export default FirstSection
