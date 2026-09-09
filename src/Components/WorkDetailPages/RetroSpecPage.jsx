@@ -13,6 +13,8 @@ function RetroSpecPage() {
         id: 1,
         slug: "RetroSpec",
         title: "RetroSpec",
+        reverseMobile: false,
+        reverseDesktop: false,
         image: image100,
         reverseFirstSection: true,
         heading: "FÜM — The Good Habit",

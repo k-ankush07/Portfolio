@@ -50,7 +50,9 @@ function KeyAreasNew({project}) {
 
         {/* image section */}
         <div className=' flex flex-col  justify-center  items-center  border-b lg:border-b-0 pb-[42px] lg:pb-0 border-[#FFFFFF]/10 lg:pt-[40px] lg:pb-[40px]'>
-          {project.firstdblnew && <img src={project.firstdblnew} alt='first image'  className='w-full' />}
+          <div>
+            {project.firstdblnew && <img src={project.firstdblnew} alt='first image'  className='w-full' />}
+          </div>
           {project.secondsnglnew && (
             project.secondsnglnew.endsWith?.(".mp4") || project.secondsnglnew.endsWith?.(".webm") ? (
               <video

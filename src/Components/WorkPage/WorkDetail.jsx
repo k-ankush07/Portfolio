@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -23,7 +21,6 @@ import Outcomes from "../WorkDetailPages/Outcomes";
 import WhatILearned from "../WorkDetailPages/WhatILearned";
 import ChallengesNew from "../WorkDetailPages/ChallengesNew";
 import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
-
 
 function WorkDetail({ project }) {
   const logos = [
@@ -255,12 +252,17 @@ function WorkDetail({ project }) {
 
         <FirstSection project={project} />
         <OurContribution project={project} />
-        <ChallengesNew  project={project} />
+        <ChallengesNew project={project} />
         <Challenge project={project} />
         <ImplementationProcess project={project} />
-        <div className="flex flex-col-reverse lg:flex-col">
-          <ImageSection  project={project} />
-          <KeyAreasNew  project={project}  />
+        {/* <div className="flex flex-col-reverse lg:flex-col"> */}
+        <div
+          className={`flex ${project.reverseMobile ? "flex-col-reverse" : "flex-col"} ${
+            project.reverseDesktop ? "lg:flex-col-reverse" : "lg:flex-col"
+          }`}
+        >
+          <ImageSection project={project} />
+          <KeyAreasNew project={project} />
           <KeyAreas project={project} />
         </div>
         <Outcomes project={project} />
@@ -269,9 +271,9 @@ function WorkDetail({ project }) {
             <Built key={idx} {...section} />
           ))} */}
 
-          {/* <ImageSection /> */}
+        {/* <ImageSection /> */}
 
-          {/* <KeyInfoSection
+        {/* <KeyInfoSection
             title={project.keyInfo.title}
             items={project.keyInfo.items}
             cards={project.keyInfo.cards}
@@ -280,7 +282,6 @@ function WorkDetail({ project }) {
           {project.afterSections.map((section, idx) => (
             <Built key={`after-${idx}`} {...section} />
           ))} */}
-
       </div>
     </section>
   );

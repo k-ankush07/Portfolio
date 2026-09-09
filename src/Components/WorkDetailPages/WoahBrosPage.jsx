@@ -15,6 +15,8 @@ function WoahBrospAGE() {
         slug: "woahbros",
         title: "WoahBros",
         image: image101,
+        reverseMobile: false,
+        reverseDesktop: false,
         heading: "WoahBros — The Good Habit",
         desc: "WoahBros is an eCommerce brand focused on flame-resistant (FR) workwear and welding gear for welders and industrial professionals. The store combines safety-focused products with bold, distinctive designs that appeal to the welding community. Its catalog includes FR shirts, welding hoods, gloves, arm pads, T-shirts, hoodies, hats, and stickers.",
         role: "Shopify and Klaviyo Developer",

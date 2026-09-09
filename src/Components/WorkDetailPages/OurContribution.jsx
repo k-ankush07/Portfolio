@@ -35,7 +35,7 @@ function OurContribution({ project = { project } }) {
 
         {/* image section */}
         <div className="lg:w-[55%]">
-          <div className="border-b pb-[30px] lg:pb-0 lg:border-b-0 lg:border-l border-[#FFFFFF]/10 lg:pl-[40px]  lg:pt-[40px] lg:pb-[40px] ">
+          <div className="border-b pb-[20px] lg:pb-0 lg:border-b-0 lg:border-l border-[#FFFFFF]/10 lg:pl-[40px]  lg:pt-[40px] lg:pb-[40px] ">
             <img src={project.contrubutionimage} alt="contribution image "  className="w-full"/>
              
           </div>

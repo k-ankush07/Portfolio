@@ -9,12 +9,15 @@ import desktop from "../../assets/Images/desktop.svg"
 import key from "../../assets/Images/key.svg"
 import image993 from "../../assets/Images/image 99 (3).svg"
 import gif from "../../assets/Images/doinkrollerz.mp4"
+import outcomenew1 from "../../assets/Images/outcomenew1.svg"
 function Doinkrollerz() {
      const project = {
             id: 1,
             slug: "woahbros",
             title: "WoahBros",
             image: image1003,
+            reverseMobile: false,
+        reverseDesktop: false,
             reverseFirstSection: true,
             contentwidth:30,
             imagewidth:70,
@@ -64,9 +67,9 @@ function Doinkrollerz() {
               },
             ],
         
-            outcomeimage: image993,
-            // contentwidth:35,
-            // imgwidth:65,
+            outcomeimage: outcomenew1,
+            contentwidth:35,
+            imgwidth:65,
             outcomeheading: "Outcomes",
             outcomepoints: [
               "Increase conversion and AOV",
