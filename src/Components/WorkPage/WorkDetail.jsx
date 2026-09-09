@@ -53,6 +53,8 @@ import ImplementationProcessApmzee from "../WorkDetailPages/Apmzee/Implementatio
 import ImageSectionApmzee from "../WorkDetailPages/Apmzee/ImageSectionApmzee";
 import KeyAeasApmzee from "../WorkDetailPages/Apmzee/KeyAeasApmzee";
 import OutcomesApmzee from "../WorkDetailPages/Apmzee/OutcomesApmzee";
+import FirstSectionLonepouches from "../WorkDetailPages/Lonepouches/FirstSectionLonepouches";
+import OurContributionProcessLonepouches from "../WorkDetailPages/Lonepouches/OurContributionProcessLonepouches";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -338,6 +340,10 @@ function WorkDetail({ project }) {
         <ImageSectionApmzee project={project}  />
         <KeyAeasApmzee   project={project} />
         <OutcomesApmzee  project={project} />
+
+        {/* 6th Lonepouches Page */}
+        <FirstSectionLonepouches  project={project} />
+        <OurContributionProcessLonepouches  project={project} />
         
       </div>
     </section>
