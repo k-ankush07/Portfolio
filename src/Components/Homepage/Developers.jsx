@@ -310,7 +310,7 @@ function Developers({}) {
   const [isPlaying, setIsPlaying] = useState(true);
   const AUTOPLAY_DELAY = 2500;
 
-  const DESC_MAX_LENGTH = 150;
+  const DESC_MAX_LENGTH = 190;
 
   const truncateText = (text, maxLength = DESC_MAX_LENGTH) => {
     if (!text) return text;
