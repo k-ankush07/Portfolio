@@ -15,7 +15,7 @@ function KeyAeasRetroSpec({ project }) {
     <div className="pt-[30px] lg:pt-[40px]   lg:pt-0">
       <div
        
-        className={`flex flex-col-reverse lg:flex-row  lg:border-t border-b pb-[30px] border-[#FFFFFF]/10  `}
+        className={`flex flex-col-reverse lg:flex-row  lg:border-t border-b pb-[30px] lg:pb-0 border-[#FFFFFF]/10  `}
       >
         {/* content section */}
         <div
