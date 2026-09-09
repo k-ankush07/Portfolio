@@ -11,7 +11,7 @@ function OutcomesApmzee({ project }) {
   const isVideo = project?.outcomeimageApmzee?.toLowerCase().endsWith(".mp4");
 
   return (
-    <div className=" pt-[30px]  pb-[20px] lg:pb-0 lg:pt-[80px]">
+    <div className=" pt-[30px]  pb-[20px] lg:pb-0 lg:pt-[88px]">
       <div
         className={` flex flex-col-reverse lg:flex-row   lg:border-t lg:border-b border-white/10 `}
       >

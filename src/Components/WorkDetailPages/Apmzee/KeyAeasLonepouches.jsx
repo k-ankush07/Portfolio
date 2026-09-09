@@ -11,7 +11,7 @@ function KeyAeasLonepouches({project}) {
   }
 
   return (
-     <div className=" pt-[30px] pb-[30px]  lg:pb-0 lg:pt-[41px] ">
+     <div className=" pt-[30px]   lg:pb-0 lg:pt-[41px] ">
       <div
 
         className={`flex flex-col-reverse lg:flex-row-reverse p lg:border-t lg:border-b border-[#FFFFFF]/10 lg:px-[117px] `}
