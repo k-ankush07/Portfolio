@@ -3,6 +3,7 @@ import WorkDetail from '../WorkPage/WorkDetail';
 import lion from "../../assets/Images/lion.svg"
 import contrinew from "../../assets/Images/contrinew.svg"
 import challengenew from "../../assets/Images/challengenew.svg"
+import pimage from "../../assets/Images/pimage.svg"
 function Lonepouches() {
     const project = {
         id: 1,
@@ -32,12 +33,13 @@ function Lonepouches() {
         btnLink: "https://lonepouches.com/",
         challenge: challengenew,
         Challheading: "Challenges",
+        challengeimagepl: 81,
         Challdesc:
           "The primary challenges for the Lone Pouches project were optimizing the store while maintaining compliance and a smooth shopping experience. The project required a strict age-verification process that did not interrupt the customer journey. The theme upgrade also needed to maintain existing app integrations, subscription functionality, and strong mobile performance without disrupting the live store.",
-        // implementimage: impimg,
-        impheading: "Implementation Process",
-        impheadesc:
-          "I started with discovery, clarifying their website’s needs and requirements. By analyzing the existing Shopify store, product catalog, customer journey, and overall user experience. I identified areas where customers could face friction, especially when browsing the wide range of flavors, selecting products, and exploring different bundles <br/> <br/> I customized the Shopify theme and developed reusable Shopify 2.0 sections to create a flexible and scalable storefront. I worked on key product sections to present product benefits, flavor options, variants, and reviews <br/> <br/> I worked on the bundle and subscription experience to simplify product selection and purchasing. I refined the product layouts, CTAs, navigation, and supporting content to create a smoother customer journey from product discovery to checkout.",
+        implementimageprocess: pimage,
+        impheadingprocess: "Implementation Process",
+        impheadescprocess:
+          "I first deeply analyzed the existing Shopify store to identify areas for improvement across the Lone Pouches. Based on the findings, upgrade the theme with cleaner layouts and improved navigation, optimized the subscription experience, refined product pages with clearer information and stronger CTAs, and improved mobile responsiveness.",
         // imgsection: [bothimage, fullImage],
         keyheading: "Key Areas of Improvement",
         // firstdbl: firstdouble,

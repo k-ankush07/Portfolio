@@ -21,6 +21,7 @@ import Outcomes from "../WorkDetailPages/Outcomes";
 import WhatILearned from "../WorkDetailPages/WhatILearned";
 import ChallengesNew from "../WorkDetailPages/ChallengesNew";
 import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
+import Process from "../WorkDetailPages/Process";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -255,6 +256,7 @@ function WorkDetail({ project }) {
         <ChallengesNew project={project} />
         <Challenge project={project} />
         <ImplementationProcess project={project} />
+        <Process  project={project} />
         {/* <div className="flex flex-col-reverse lg:flex-col"> */}
         <div
           className={`flex ${project.reverseMobile ? "flex-col-reverse" : "flex-col"} ${

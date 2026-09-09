@@ -23,6 +23,7 @@ function WoahBrospAGE() {
         visit: "https://woahbros.us/",
         our: "My Contribution",
         contrubutionimage: my,
+        constributionitemcenter:"item-center",
         points: [
           "Landing Page Development",
           "Theme Upgrade",

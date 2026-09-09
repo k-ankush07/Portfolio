@@ -1,13 +1,16 @@
 import React from "react";
 
 function ImplementationProcess({ project }) {
+  if (!project?.impheading && !project?.impheadesc && !project?.implementimage) {
+    return null;
+  }
   return (
     <>
       <div className="lg:pt-[40px] ">
         <div className="flex flex-col-reverse lg:flex-row  lg:border-t lg:border-b border-[#FFFFFF]/10">
           {/* content section  */}
           <div className="lg:w-[50%] lg:flex flex-col items-center justify-center">
-            <div className="pt-[20px] lg:pt-0 lg:pr-[40px]">
+            <div className=" pt-[20px] lg:pt-0 lg:pr-[40px]">
               <h2 className="text-[24px] lg:text-[40px] leading-[48px] font-bold text-[#FFFFFF]">
                 {project.impheading}
               </h2>

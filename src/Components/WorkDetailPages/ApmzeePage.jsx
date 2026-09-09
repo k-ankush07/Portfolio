@@ -27,6 +27,7 @@ function ApmzeePage() {
                 visit: " https://apmzee.com/",
                 our: "My Contribution",
                 contrubutionimage: image1012,
+                // constributionitemcenter:"item-center",
                 points: [
                   "Theme Customization",
                   "Conversion Rate Optimization (CRO)",

@@ -27,6 +27,7 @@ function TryFumPage() {
     visit: " https://tryfum.com/",
     our: "Our Contribution",
     contrubutionimage: contribution,
+    constributionitemcenter:"item-center",
     points: [
       "Custom Shopify development",
       "Theme customization",
