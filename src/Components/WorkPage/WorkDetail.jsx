@@ -48,6 +48,10 @@ import OutcomesDoinkrollerz from "../WorkDetailPages/Doinkrollerz/OutcomesDoinkr
 import WhatILearnedDoinkrollerz from "../WorkDetailPages/Doinkrollerz/WhatILearnedDoinkrollerz";
 import FirstSectionApmzee from "../WorkDetailPages/Apmzee/FirstSectionApmzee";
 import OurContributionProcessApmzee from "../WorkDetailPages/Apmzee/OurContributionProcessApmzee";
+import ChallengeApmzee from "../WorkDetailPages/Apmzee/ChallengeApmzee";
+import ImplementationProcessApmzee from "../WorkDetailPages/Apmzee/ImplementationProcessApmzee";
+import ImageSectionApmzee from "../WorkDetailPages/Apmzee/ImageSectionApmzee";
+import KeyAeasApmzee from "../WorkDetailPages/Apmzee/KeyAeasApmzee";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -328,6 +332,10 @@ function WorkDetail({ project }) {
         {/* 5th Apmzee Page */}
         <FirstSectionApmzee  project={project} />
         <OurContributionProcessApmzee project={project}  />
+        <ChallengeApmzee project={project}  />
+        <ImplementationProcessApmzee  project={project}  />
+        <ImageSectionApmzee project={project}  />
+        <KeyAeasApmzee   project={project} />
         
       </div>
     </section>
