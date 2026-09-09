@@ -52,6 +52,7 @@ import ChallengeApmzee from "../WorkDetailPages/Apmzee/ChallengeApmzee";
 import ImplementationProcessApmzee from "../WorkDetailPages/Apmzee/ImplementationProcessApmzee";
 import ImageSectionApmzee from "../WorkDetailPages/Apmzee/ImageSectionApmzee";
 import KeyAeasApmzee from "../WorkDetailPages/Apmzee/KeyAeasApmzee";
+import OutcomesApmzee from "../WorkDetailPages/Apmzee/OutcomesApmzee";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -336,6 +337,7 @@ function WorkDetail({ project }) {
         <ImplementationProcessApmzee  project={project}  />
         <ImageSectionApmzee project={project}  />
         <KeyAeasApmzee   project={project} />
+        <OutcomesApmzee  project={project} />
         
       </div>
     </section>
