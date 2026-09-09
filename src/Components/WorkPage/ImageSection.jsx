@@ -8,7 +8,7 @@ if (!mobileImg && !desktopImg) {
   }
   return (
     <section>
-      <div className="pt-[30px] pb-[0px] lg:pt-[40px] lg:pb-[40px]">
+      <div className="">
         {/* Mobile: bothimage */}
         <img
           className="w-full h-full shrink-0 block lg:hidden"

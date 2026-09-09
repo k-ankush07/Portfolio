@@ -24,6 +24,16 @@ import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
 import Process from "../WorkDetailPages/Process";
 import FirstSectionRetroSpec from "../WorkDetailPages/RetroSpec/FirstSectionRetroSpec";
 import OurContributionRetroSpec from "../WorkDetailPages/RetroSpec/OurContributionRetroSpec";
+import ChallengeRetroSpec from "../WorkDetailPages/RetroSpec/ChallengeRetroSpec";
+import ImplementationProcessRetroSpec from "../WorkDetailPages/RetroSpec/ImplementationProcessRetroSpec";
+import KeyAeasRetroSpec from "../WorkDetailPages/RetroSpec/KeyAeasRetroSpec";
+import WhatILearnedRetroSpec from "../WorkDetailPages/RetroSpec/WhatILearnedRetroSpec";
+import FirstSectionWoahBros from "../WorkDetailPages/WoahBros/FirstSectionWoahBros";
+import OurContributionWoahBros from "../WorkDetailPages/WoahBros/OurContributionWoahBros";
+import ChallengeWoahBros from "../WorkDetailPages/WoahBros/ChallengeWoahBros";
+import ImplementationProcessWoahBros from "../WorkDetailPages/WoahBros/ImplementationProcessWoahBros";
+import KeyAreasWoahBros from "../WorkDetailPages/WoahBros/KeyAreasWoahBros";
+import OutcomesWoahBros from "../WorkDetailPages/WoahBros/OutcomesWoahBros";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -275,33 +285,21 @@ function WorkDetail({ project }) {
         {/* 2nd page FirstSection.jsx  */}
         <FirstSectionRetroSpec  project={project}/>
         <OurContributionRetroSpec project={project} />
+        <ChallengeRetroSpec  project={project} />
+        <ImplementationProcessRetroSpec project={project} />
+        <ImageSection project={project} />
+        <KeyAeasRetroSpec project={project} />
+        <WhatILearnedRetroSpec project={project} />
 
-        {/* <Process  project={project} /> */}
-        {/* <div
-          className={`flex ${project.reverseMobile ? "flex-col-reverse" : "flex-col"} ${
-            project.reverseDesktop ? "lg:flex-col-reverse" : "lg:flex-col"
-          }`}
-        >
-          <ImageSection project={project} />
-          <KeyAreasNew project={project} />
-          <KeyAreas project={project} />
-        </div> */}
+        {/* 3rd WoahBros Page  */}
+        <FirstSectionWoahBros  project={project} /> 
+        <OurContributionWoahBros  project={project} />
+        <ChallengeWoahBros project={project}  />
+        <ImplementationProcessWoahBros project={project}  />
+        <ImageSection project={project} />
+        <KeyAreasWoahBros project={project} />
+        <OutcomesWoahBros project={project} />
         
-        {/* {project.sections.map((section, idx) => (
-            <Built key={idx} {...section} />
-          ))} */}
-
-        {/* <ImageSection /> */}
-
-        {/* <KeyInfoSection
-            title={project.keyInfo.title}
-            items={project.keyInfo.items}
-            cards={project.keyInfo.cards}
-          />
-
-          {project.afterSections.map((section, idx) => (
-            <Built key={`after-${idx}`} {...section} />
-          ))} */}
       </div>
     </section>
   );

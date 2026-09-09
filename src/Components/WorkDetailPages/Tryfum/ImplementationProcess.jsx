@@ -6,7 +6,7 @@ function ImplementationProcess({ project }) {
   }
   return (
     <>
-      <div className="lg:pt-[40px] ">
+      <div className="pb-[30px] lg:pb-[40px] lg:pt-[40px] ">
         <div className="flex flex-col-reverse lg:flex-row  lg:border-t lg:border-b border-[#FFFFFF]/10">
           {/* content section  */}
           <div className="lg:w-[50%] lg:flex flex-col items-center justify-center">

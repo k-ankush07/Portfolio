@@ -39,7 +39,7 @@ function RetroSpecPage() {
     impheadingRetroSpec: "Implementation Process",
     impheadescRetroSpec:
       "To enhance the customer experience, I developed a Custom Shopify App. I first structured the product data and mapped the different product types, variants, sizes, and purchasing options. Then, I connected the app with Shopify's product data so the interface could display and manage the required options dynamically. Also, created reusable components for product information and options, which reduced repeated development across different product templates",
-    imgsectionRetroSpec: [fresh, first],
+    imgsection: [fresh, first],
     keyheadingRetroSpec: "Key Areas of Improvements",
     secondsnglRetroSpec: image1001,
     keyPointsRetroSpec: [
