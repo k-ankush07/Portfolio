@@ -8,6 +8,7 @@ import first from "../assets/Images/new1.svg";
 import second from "../assets/Images/new2.svg";
 import third from "../assets/Images/new3.svg";
 import restro1 from "../assets/Images/restro (2).svg"
+import restro from "../assets/Images/restro.svg"
 import woa1 from "../assets/Images/newwoa (1).svg"
 import woa2 from "../assets/Images/newwoa (2).svg"
 import woa3 from "../assets/Images/newwoa (3).svg"
@@ -24,7 +25,7 @@ function WorkPage() {
   const projects = [
   { id: 1, title: "TryFum", leftImg: first, centerImg: second, rightImg: third,
     tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health", "Wellness"] },
-  { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro1,
+  { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro,
     tags: ["Shopify Store Development", "Custom Shopify App", "Shopify Theme Customization"], niches: ["Sports"] },
   { id: 3, title: "WoahBros",     leftImg: woa1, centerImg: woa2, rightImg: woa3,
     tags: ["Shopify Store Optimization","Klaviyo Optimization"], niches: ["Apparel"] },

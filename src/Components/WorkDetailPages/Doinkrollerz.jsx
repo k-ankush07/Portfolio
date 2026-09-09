@@ -35,7 +35,10 @@ function Doinkrollerz() {
             ],
             btnname: "View the final experience",
             btnLink: "https://www.doinkrollerz.com/",
+            showBordercontent:true,
+            showBorderImage:true,
             challengenew: image997,
+            // mobilechallenegImage:"",
             reversechallengeSection: true,
             Challheadingnew: "Challenges",
             Challdescnew:

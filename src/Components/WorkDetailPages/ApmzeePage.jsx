@@ -6,6 +6,11 @@ import image10172 from "../../assets/Images/o.svg"
 import image101723 from "../../assets/Images/t.svg"
 import first from "../../assets/Images/first1 (1).svg"
 import first1 from "../../assets/Images/first1 (2).svg"
+import challenegmobile from "../../assets/Images/challenegmobile.svg"
+import new341 from "../../assets/Images/new34 (1).svg"
+import new342 from "../../assets/Images/new34 (2).svg"
+import new3422 from "../../assets/Images/Apmzee 2.svg"
+import Apmzee from "../../assets/Images/Apmzee.mp4"
 
 function ApmzeePage() {
      const project = {
@@ -30,19 +35,24 @@ function ApmzeePage() {
                 btnname: "View the final experience",
                 btnLink: " https://apmzee.com/",
                 challengenew: image10172,
+                mobilechallenegImage:challenegmobile,
                 // reversechallengeSection: true,
-                // Challheadingnew: "Challenges",
+                Challheadingnew: "Challenges",
+                showBordercontent:false,
+                showBorderImage:true,
                 Challdescnew:
-                  "The primary goal is to optimize the Product and Collection pages, focusing on user interface improvements to make customer journey more seamless and enjoyable <br/> <br/> Apmzee had a Concept Shopify theme with several code issues adversely affecting website page load speed and the overall customer experience. This was especially a concern on mobile devices. In addition, they lacked an upsell strategy and were looking at UX improvements and increasing their conversion rate and average order value (AOV).",
+                  "The primary goal is to optimize the Product and Collection pages, focusing on user interface improvements to make customer journey more seamless and enjoyable. <br/> <br/> Apmzee had a Concept Shopify theme with several code issues adversely affecting website page load speed and the overall customer experience. This was especially a concern on mobile devices. In addition, they lacked an upsell strategy and were looking at UX improvements and increasing their conversion rate and average order value (AOV).",
                 implementimage:image101723 ,
                 impheading: "Implementation Process",
                 impheadesc:
-                  "I started by auditing the existing Concept Shopify theme, focusing on the Product and Collection pages, mobile experience, theme structure, and overall customer journey. I identified areas where the existing layout, navigation, content hierarchy, and theme code created friction for customers. I then optimized the Liquid, CSS, and JavaScript code to remove unnecessary elements, improve asset loading, and create a faster storefront experience on desktop, tablet, and mobile.",
-                // imgsection: [phone, desktop],
-                keyheadingnew: "Key Areas of Improvements",
-                firstdblnew: first,
-                // secondsnglnew: gif,
-                keyPointsnew: [
+                  "I started by auditing the existing Concept Shopify theme, focusing on the Product and Collection pages, mobile experience, theme structure, and overall customer journey. I identified areas where the existing layout, navigation, content hierarchy, and theme code created friction for customers. I then optimized the Liquid, CSS, and JavaScript code to remove unnecessary elements, improve asset loading, and create a faster storefront experience on desktop, tablet, and mobile",
+                imgsection: [new341, new342],
+                keyheading: "Key Areas of Improvements",
+                firstdbl: first,
+                secondsngl: new3422,
+                paddingtopsecondimagemobile:25,
+                paddingtopsecondimage:40,
+                keyPoints: [
                   {
                     heading: "Product Page UX:",
                     desc: "Restructured product pages to present key product benefits, pricing, subscription options, reviews, product details, and CTAs in a clearer hierarchy. Improved the overall layout to help customers understand the product and make purchasing decisions faster.",
@@ -61,7 +71,7 @@ function ApmzeePage() {
                   },
                 ],
             
-                // outcomeimage: image993,
+                outcomeimage: Apmzee,
                 // contentwidth:35,
                 // imgwidth:65,
                 outcomeheading: "Key Outcomes",
