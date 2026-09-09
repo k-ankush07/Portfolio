@@ -1,6 +1,9 @@
 import React from "react";
 
 function OurContribution({ project = { project } }) {
+   if (!project?.our && (!project?.points || project.points.length === 0) && !project?.contrubutionimage) {
+    return null;
+  }
   const alignClass =
     project.constributionitemcenter === "item-center" ? "lg:items-center" : "";
 

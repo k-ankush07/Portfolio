@@ -17,7 +17,7 @@ function Doinkrollerz() {
             title: "WoahBros",
             image: image1003,
             reverseMobile: false,
-        reverseDesktop: false,
+            reverseDesktop: false,
             reverseFirstSection: true,
             contentwidth:30,
             imagewidth:70,

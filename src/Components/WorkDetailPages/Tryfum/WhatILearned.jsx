@@ -1,6 +1,9 @@
 import React from 'react'
 
 function WhatILearned({project}) {
+   if (!project?.learnheading && !project?.learndesc) {
+    return null;
+  }
   return (
     <>
     <div className=' pt-[12px]  lg:pt-[40px] lg:text-center border-b border-[#FFFFFF]/10 lg:border-b-0'>

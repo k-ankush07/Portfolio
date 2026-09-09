@@ -3,10 +3,12 @@ function ImageSection({ project }) {
   
   const [mobileImg, desktopImg] = project.imgsection || [];
   console.log("mobileImg",project)
-
+if (!mobileImg && !desktopImg) {
+    return null;
+  }
   return (
     <section>
-      <div className="pt-[30px] pb-[30px] lg:pt-[40px] lg:pb-[40px]">
+      <div className="pt-[30px] pb-[0px] lg:pt-[40px] lg:pb-[40px]">
         {/* Mobile: bothimage */}
         <img
           className="w-full h-full shrink-0 block lg:hidden"

@@ -12,16 +12,18 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import Built from "./Built";
 import ImageSection from "./ImageSection";
 import KeyInfoSection from "./KeyInfoSection";
-import FirstSection from "../WorkDetailPages/FirstSection";
-import OurContribution from "../WorkDetailPages/OurContribution";
-import Challenge from "../WorkDetailPages/Challenge";
-import ImplementationProcess from "../WorkDetailPages/ImplementationProcess";
-import KeyAreas from "../WorkDetailPages/KeyAreas";
-import Outcomes from "../WorkDetailPages/Outcomes";
-import WhatILearned from "../WorkDetailPages/WhatILearned";
+import FirstSection from "../WorkDetailPages/Tryfum/FirstSection";
+import OurContribution from "../WorkDetailPages/Tryfum/OurContribution";
+import Challenge from "../WorkDetailPages/Tryfum/Challenge";
+import ImplementationProcess from "../WorkDetailPages/Tryfum/ImplementationProcess";
+import KeyAreas from "../WorkDetailPages/Tryfum/KeyAreas";
+import Outcomes from "../WorkDetailPages/Tryfum/Outcomes";
+import WhatILearned from "../WorkDetailPages/Tryfum/WhatILearned";
 import ChallengesNew from "../WorkDetailPages/ChallengesNew";
 import KeyAreasNew from "../WorkDetailPages/KeyAreasNew";
 import Process from "../WorkDetailPages/Process";
+import FirstSectionRetroSpec from "../WorkDetailPages/RetroSpec/FirstSectionRetroSpec";
+import OurContributionRetroSpec from "../WorkDetailPages/RetroSpec/OurContributionRetroSpec";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -251,14 +253,31 @@ function WorkDetail({ project }) {
           </motion.div>
         </div>
 
+        {/* tryfum components */}
         <FirstSection project={project} />
         <OurContribution project={project} />
         <ChallengesNew project={project} />
         <Challenge project={project} />
         <ImplementationProcess project={project} />
-        <Process  project={project} />
-        {/* <div className="flex flex-col-reverse lg:flex-col"> */}
-        <div
+       <div
+          className={`flex ${project.reverseMobile ? "flex-col-reverse" : "flex-col"} ${
+            project.reverseDesktop ? "lg:flex-col-reverse" : "lg:flex-col"
+          }`}
+        >
+          <ImageSection project={project} />
+          {/* <KeyAreasNew project={project} /> */}
+          <KeyAreas project={project} />
+        </div>
+        <Outcomes project={project} />
+        <WhatILearned project={project} />
+
+
+        {/* 2nd page FirstSection.jsx  */}
+        <FirstSectionRetroSpec  project={project}/>
+        <OurContributionRetroSpec project={project} />
+
+        {/* <Process  project={project} /> */}
+        {/* <div
           className={`flex ${project.reverseMobile ? "flex-col-reverse" : "flex-col"} ${
             project.reverseDesktop ? "lg:flex-col-reverse" : "lg:flex-col"
           }`}
@@ -266,9 +285,8 @@ function WorkDetail({ project }) {
           <ImageSection project={project} />
           <KeyAreasNew project={project} />
           <KeyAreas project={project} />
-        </div>
-        <Outcomes project={project} />
-        <WhatILearned project={project} />
+        </div> */}
+        
         {/* {project.sections.map((section, idx) => (
             <Built key={idx} {...section} />
           ))} */}

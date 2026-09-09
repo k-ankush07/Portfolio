@@ -20,7 +20,6 @@ function TryFumPage() {
     title: "TryFum",
     image: firstImg,
     reverseMobile: true,
-        reverseDesktop: false,
     heading: "FÜM — The Good Habit",
     desc: "FÜM is a DTC eCommerce brand that provides nicotine-free products designed to help people replace smoking and vaping habits. The brand sells reusable flavored-air devices, flavor cores, and accessory products through its online store.",
     role: "Full Stack Shopify Developer",
@@ -76,6 +75,7 @@ function TryFumPage() {
     ],
 
     outcomeimage: outcomeimage,
+    showMobileImageBorder:true,
     outcomeheading: "Outcomes",
     outcomepoints: [
       "Improved Clarity & Conversion",

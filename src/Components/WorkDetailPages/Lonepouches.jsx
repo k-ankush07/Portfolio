@@ -4,13 +4,18 @@ import lion from "../../assets/Images/lion.svg"
 import contrinew from "../../assets/Images/contrinew.svg"
 import challengenew from "../../assets/Images/challengenew.svg"
 import pimage from "../../assets/Images/pimage.svg"
+import double from "../../assets/Images/double.svg"
+import single from "../../assets/Images/single.svg"
+import lion1 from "../../assets/Images/lion12 (1).svg"
+import true1 from "../../assets/Images/true.svg"
+import Lonepouches1 from "../../assets/Images/Lonepouches.mp4"
 function Lonepouches() {
     const project = {
         id: 1,
         slug: "tryfum",
         title: "TryFum",
         image: lion,
-        reverseMobile: true,
+        reverseMobile: false,
         reverseDesktop: false,
         imagewidth: 63,     
         contentwidth: 37,
@@ -40,43 +45,50 @@ function Lonepouches() {
         impheadingprocess: "Implementation Process",
         impheadescprocess:
           "I first deeply analyzed the existing Shopify store to identify areas for improvement across the Lone Pouches. Based on the findings, upgrade the theme with cleaner layouts and improved navigation, optimized the subscription experience, refined product pages with clearer information and stronger CTAs, and improved mobile responsiveness.",
-        // imgsection: [bothimage, fullImage],
-        keyheading: "Key Areas of Improvement",
-        // firstdbl: firstdouble,
-        // secondsngl: secondsingle,
+        imgsection: [single, double],
+        reverseKeyAreas: true,   
+keyareaspx: 117,  
+        keyheading: "Key Areas of Improvements",
+        firstdbl: lion1,
+        secondsngl: Lonepouches1,
+        paddingtopsecondimagemobile:9,
+        paddingtopsecondimage:10,
         keyPoints: [
           {
-            heading: "Flavor Selection:",
-            desc: " I worked on the flavor-selection process where customers can choose from multiple FÜM Core flavors such as Mango, Crisp Mint, Peach Blush, Sparkling Grapefruit, Spearmint Ice, and other options. The selection interface also shows flavor characteristics such as sweetness, throat hit, and flavor notes.",
+            heading: "Theme Upgrade & Architecture Modernization:",
+            desc: " Upgrade the storefront to a high-performance Online Store 2.0 theme. Rebuilt the Liquid code structure, modularized page sections, remove unnecessary third-party apps, and optimized asset delivery to ensure sub-second mobile load speeds and seamless app compatibility.",
           },
           {
-            heading: "Bundle Selection:",
-            desc: "Create bundles so customers could quickly compare different bundles and choose the one that best matched their requirements, including Journey Pack, Everything Pack, Cores Bundle, and Complete Cores Bundle.",
+            heading: "Frictionless Age Verification Integration:",
+            desc: "Implemented a non-intrusive age-verification (21+) system that validates age seamlessly on store opens and before checkout, maintaining full regulatory compliance while preventing unnecessary drop-offs in the sales funnel.",
           },
           {
-            heading: "Subscription:",
-            desc: "Integrate subscription purchasing across key bundle offerings, including the Journey Pack and Everything Pack, giving customers a straightforward way to select recurring purchases alongside one-time purchase options. The store currently promotes Cores Club with a 30% savings message.",
+            heading: "Variant & Bundle Display Optimization:",
+            desc: "Built custom product template layouts and intuitive selector interfaces for multi-variant combinations. Developed dedicated 'Variety Pack' UI modules to simplify complex purchasing options and drive higher average order value (AOV).",
           },
           {
-            heading: "Accessory Upsells:",
-            desc: " Add accessory selection directly into the product journey, including Toppers, FÜM Base, and alternative device barrels. This gives customers the option to add accessories while they build their main product package.",
-          },
-          {
-            heading: "Product Page Optimization:",
-            desc: "I optimized the product pages directly around the purchasing flow, including product details, flavor options, pricing, subscription choices, and key product benefits in a clear structure. This approach gives customers relevant information while they make their selections",
+            heading: "Conversion Optimization:",
+            desc: "Because ad platform policies strictly limit paid acquisition for nicotine products, the site layout had to maximize organic traffic conversions. Optimizing single-page checkout flows, mobile navigation, trust badging, and strategic capture popups significantly improved overall site conversion rate and customer lifetime value..",
           },
         ],
-    
-        // outcomeimage: outcomeimage,
+        reverseOutcome: true,
+        outcomeContentEnd: true,     
+        outcomeImageBorderMobile: false,  
+        // outcomeimagepbmobile: 30,
+        outcomecontentmaxw: 293,      
+        outcomepx: 152,
+        imgwidth: 60,
+        contentwidth: 40,
+        outcomeimage: true1,
         outcomeheading: "Outcomes",
         outcomepoints: [
-          "Improved Clarity & Conversion",
-          "Mobile-Optimized Buying Experience",
-          "Improved overall customer journey from product selection to checkout.",
-          "Increased conversions through CRO and UX improvements.",
+          "Lift in overall site conversion rate",
+          "Reduced subscriber churn & higher retention",
+          "Mobile & desktop load times cut off",
+          "Higher average order value",
         ],
-        learnheading: "What I Learned",
-        learndesc: "This project strengthened my ability to work with a complex DTC eCommerce brand and make practical decisions around product presentation and customer behavior. I also deeper my understanding of building conversion-focused Shopify storefronts for products with multiple variants and purchasing options. It helped to balance design flexibility, business goals, custom Shopify development, responsive UX, performance, and conversion optimization within Shopify.",
+        learnheading: "What I learned",
+        learndesc: "Working on the Lone Pouches project enhanced my expertise in modern theme engineering, regulated e-commerce UX, and organic conversion strategies. Upgrading to a modular Shopify OS 2.0, eliminating app bloat, and optimizing mobile speeds directly boost search rankings and customer retention. .",
       };
   return (
     <section className="container">
