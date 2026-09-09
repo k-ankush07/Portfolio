@@ -11,13 +11,13 @@ function OutcomesWoahBros({ project }) {
   const isVideo = project?.outcomeimageWoahBros?.toLowerCase().endsWith(".mp4");
 
   return (
-    <div className=" pt-[30px] pb-[10px] lg:pb-0 lg:pt-[40px]">
+    <div className=" pt-[30px]  lg:pt-[40px]">
       <div
         className={`flex flex-col-reverse lg:flex-row px-0  lg:border-t lg:border-b border-white/10 `}
       >
         {/* Image/Video section */}
         <div
-          className={`w-full lg:w-[60%]  pb-[30px] flex justify-center items-center  pt-[20px] lg:pr-[40px] lg:pl-[178px]  border-r border-[#FFFF]/10 lg:pt-[41px] lg:pb-[41px] lg:border-b-0 border-white/10 border-b  `}
+          className={`w-full lg:w-[60%]  pb-[36px] flex justify-center items-center  pt-[20px] lg:pr-[40px] lg:pl-[178px]  lg:border-r border-[#FFFF]/10 lg:pt-[41px] lg:pb-[41px] lg:border-b-0 border-white/10 border-b  `}
         >
           {isVideo ? (
             <video

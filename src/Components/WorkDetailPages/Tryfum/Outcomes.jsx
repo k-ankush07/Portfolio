@@ -17,7 +17,7 @@ function Outcomes({ project }) {
   const showMobileImageBorder = project.outcomeImageBorderMobile;
 
   return (
-    <div className=" pt-[30px] pb-[10px] lg:pb-0 lg:pt-[40px]">
+    <div className=" pt-[30px]   lg:pt-[40px]">
       <div
         style={{
           "--outcome-px": `${project.outcomepx ?? 0}px`,

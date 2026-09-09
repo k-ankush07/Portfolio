@@ -15,12 +15,12 @@ function KeyAreas({ project }) {
   const isReversed = project.reverseKeyAreas;
 
   return (
-    <div className="lg:border-t lg:border-b border-[#FFFFFF]/10 pt-[52px] lg:pt-0">
+    <div className=" pt-[30px] pb-[30px]  lg:pb-0 lg:pt-[41px] ">
       <div
         style={{
           "--keyareas-px": `${project.keyareaspx ?? 0}px`,
         }}
-        className={`flex flex-col-reverse px-0 lg:px-[var(--keyareas-px)] ${
+        className={`flex flex-col-reverse px-0 lg:px-[var(--keyareas-px)] lg:border-t lg:border-b border-[#FFFFFF]/10 ${
           isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >

@@ -34,6 +34,11 @@ import ChallengeWoahBros from "../WorkDetailPages/WoahBros/ChallengeWoahBros";
 import ImplementationProcessWoahBros from "../WorkDetailPages/WoahBros/ImplementationProcessWoahBros";
 import KeyAreasWoahBros from "../WorkDetailPages/WoahBros/KeyAreasWoahBros";
 import OutcomesWoahBros from "../WorkDetailPages/WoahBros/OutcomesWoahBros";
+import WhatILearnedWoahBros from "../WorkDetailPages/WoahBros/WhatILearnedWoahBros";
+import ImageSectionRetroSpec from "../WorkDetailPages/RetroSpec/ImageSectionRetroSpec";
+import ImageSectionWoahBros from "../WorkDetailPages/WoahBros/ImageSectionWoahBros";
+import FirsrtSectionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/FirsrtSectionDoinkrollerz";
+import OurContributionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/OurContributionDoinkrollerz";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -287,7 +292,7 @@ function WorkDetail({ project }) {
         <OurContributionRetroSpec project={project} />
         <ChallengeRetroSpec  project={project} />
         <ImplementationProcessRetroSpec project={project} />
-        <ImageSection project={project} />
+        <ImageSectionRetroSpec project={project} />
         <KeyAeasRetroSpec project={project} />
         <WhatILearnedRetroSpec project={project} />
 
@@ -296,9 +301,15 @@ function WorkDetail({ project }) {
         <OurContributionWoahBros  project={project} />
         <ChallengeWoahBros project={project}  />
         <ImplementationProcessWoahBros project={project}  />
-        <ImageSection project={project} />
+        <ImageSectionWoahBros project={project} />
         <KeyAreasWoahBros project={project} />
         <OutcomesWoahBros project={project} />
+        <WhatILearnedWoahBros project={project} />
+
+        {/* 4th Doinkrollerz Page  */}
+        <FirsrtSectionDoinkrollerz project={project} /> 
+        <OurContributionDoinkrollerz project={project} />
+        
         
       </div>
     </section>

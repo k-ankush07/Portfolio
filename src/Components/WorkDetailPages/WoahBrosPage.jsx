@@ -46,7 +46,7 @@ function WoahBrospAGE() {
     impheadescWoahBros:
       "I first reviewed the existing Shopify theme, customer journey, and available customer touchpoints to identify where the store could collect more customer data. During our initial work and store analysis, we identified several key challenges that the client was facing. The store needed better opportunities to collect customer data, a more structured theme experience, and stronger landing pages to support customer engagement. <br/> <br/> I connected the customer data collection points with Klaviyo and structured the required customer properties and events for marketing automation.",
 
-    imgsection: [woa1, woa2],
+    imgsectionWoahBros: [woa1, woa2],
     keyheadingWoahBros: "Key Areas of Improvements",
     firstdblWoahBros: first,
     secondsnglWoahBros: second,
