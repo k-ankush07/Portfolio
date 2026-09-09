@@ -58,6 +58,7 @@ import OurContributionProcessLonepouches from "../WorkDetailPages/Lonepouches/Ou
 import ChallengeLonepouches from "../WorkDetailPages/Lonepouches/ChallengeLonepouches";
 import ImplementationProcessLonepouches from "../WorkDetailPages/Lonepouches/ImplementationProcessLonepouches";
 import ImageSectionLonepouches from "../WorkDetailPages/Lonepouches/ImageSectionLonepouches";
+import KeyAeasLonepouches from "../WorkDetailPages/Apmzee/KeyAeasLonepouches";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -350,6 +351,7 @@ function WorkDetail({ project }) {
         <ChallengeLonepouches   project={project} />
         <ImplementationProcessLonepouches project={project}  />
         <ImageSectionLonepouches  project={project} />
+        <KeyAeasLonepouches project={project} />
         
       </div>
     </section>
