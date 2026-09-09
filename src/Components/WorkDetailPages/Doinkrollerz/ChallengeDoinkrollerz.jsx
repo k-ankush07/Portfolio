@@ -7,9 +7,9 @@ function ChallengeDoinkrollerz({ project }) {
 
   return (
     <div className="lg:pt-[40px] ">
-      <div className={` lg:flex  `} >
+      <div className={` flex flex-col lg:flex-col-reverse lg:border-t border-[#FFFF]/10  `} >
         <div
-          className={`w-full pt-[30px] pb-[20px] lg:pt-[80px] lg:pb-[40px] lg:pr-[40px] `}
+          className={`w-full pt-[30px] pb-[20px] lg:pt-[80px] lg:pb-[40px] lg:pr-[40px] border-b lg:border-b border-[#FFFF]/10 `}
         >
           {project.mobilechallenegImageDoinkrollerz ? (
             <>
@@ -24,7 +24,7 @@ function ChallengeDoinkrollerz({ project }) {
         <div
           className={`w-full items-center justify-center`}
         >
-          <div className="pt-[20px] lg:pt-0 ">
+          <div className="pt-[20px] lg:pt-0  ">
             <h2 className="text-[24px] lg:text-[40px] leading-[48px] font-bold text-[#FFFFFF]">
               {project.ChallheadingnewDoinkrollerz}
             </h2>

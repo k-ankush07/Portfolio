@@ -39,6 +39,12 @@ import ImageSectionRetroSpec from "../WorkDetailPages/RetroSpec/ImageSectionRetr
 import ImageSectionWoahBros from "../WorkDetailPages/WoahBros/ImageSectionWoahBros";
 import FirsrtSectionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/FirsrtSectionDoinkrollerz";
 import OurContributionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/OurContributionDoinkrollerz";
+import ChallengeDoinkrollerz from "../WorkDetailPages/Doinkrollerz/ChallengeDoinkrollerz";
+import ImplementationProcessDoinkrollerz from "../WorkDetailPages/Doinkrollerz/ImplementationProcessDoinkrollerz";
+import ImageSectionDoinkrollerz from "../WorkDetailPages/Doinkrollerz/ImageSectionDoinkrollerz";
+import KeyAeasDoinkrollerz from "../WorkDetailPages/Doinkrollerz/KeyAeasDoinkrollerz";
+import OutcomesDoinkrollerz from "../WorkDetailPages/Doinkrollerz/OutcomesDoinkrollerz";
+import WhatILearnedDoinkrollerz from "../WorkDetailPages/Doinkrollerz/WhatILearnedDoinkrollerz";
 
 function WorkDetail({ project }) {
   const logos = [
@@ -309,6 +315,12 @@ function WorkDetail({ project }) {
         {/* 4th Doinkrollerz Page  */}
         <FirsrtSectionDoinkrollerz project={project} /> 
         <OurContributionDoinkrollerz project={project} />
+        <ChallengeDoinkrollerz project={project} />
+        <ImplementationProcessDoinkrollerz project={project}  />
+        <ImageSectionDoinkrollerz project={project} />
+        <KeyAeasDoinkrollerz project={project}  />
+        <OutcomesDoinkrollerz project={project} />
+        <WhatILearnedDoinkrollerz project={project}  />
         
         
       </div>
