@@ -9,7 +9,7 @@ import rightimage from "../../assets/Images/newimages (4).svg";
 // import leftimage from "../../assets/Images/newLeft.png";
 // import rightimage from "../../assets/Images/newright.png";
 
-function ViewDetail({ leftImg, centerImg, rightImg, niche }) {
+function ViewDetail({ leftImg, centerImg, rightImg ,niche }) {
   const containerRef = useRef(null);
 
   const mouse = useRef({ x: 0, y: 0 });
@@ -142,17 +142,17 @@ function ViewDetail({ leftImg, centerImg, rightImg, niche }) {
                 recruiters
               </p> */}
               {niche?.length > 0 && (
-                <div className="flex flex-wrap gap-[6px]">
-                  {niche.map((n, i) => (
-                    <span
-                      key={i}
-                      className="bg-white text-black text-[11px] sm:text-[12px] lg:text-[13px] font-semibold px-[12px] py-[5px] rounded-full"
-                    >
-                      {n}
-                    </span>
-                  ))}
-                </div>
-              )}
+    <div className="flex flex-wrap gap-[6px]">
+      {niche.map((n, i) => (
+        <span
+          key={i}
+          className="bg-white text-black text-[11px] sm:text-[12px] lg:text-[13px] font-semibold px-[12px] py-[5px] rounded-full"
+        >
+          {n}
+        </span>
+      ))}
+    </div>
+  )}
             </div>
 
             {/* main div for images */}
