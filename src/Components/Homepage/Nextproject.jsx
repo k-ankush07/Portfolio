@@ -30,38 +30,38 @@ function Nextproject() {
   //   },
   // };
 
-const container = {
-  hidden: {
-    transition: {
-      staggerChildren: 0.09,
-      staggerDirection: -1, // ulta order me gayab hongi (last aayi wo pehle jayegi)
+  const container = {
+    hidden: {
+      transition: {
+        staggerChildren: 0.09,
+        staggerDirection: -1, // ulta order me gayab hongi (last aayi wo pehle jayegi)
+      },
     },
-  },
-  show: {
-    transition: {
-      staggerChildren: 0.15, // delay between each image
+    show: {
+      transition: {
+        staggerChildren: 0.15, // delay between each image
+      },
     },
-  },
-};
+  };
   const item = {
-  hidden: {
-    opacity: 0,
-    scale: 0.5,
-    transition: {
-      duration: 0.3,
-      ease: "easeIn",
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+      transition: {
+        duration: 0.3,
+        ease: "easeIn",
+      },
     },
-  },
-  show: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: "spring",
-      bounce: 0.55,
-      duration: 0.7,
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.55,
+        duration: 0.7,
+      },
     },
-  },
-};
+  };
   // const item = {
   //   hidden: {
   //     opacity: 0,
@@ -82,7 +82,7 @@ const container = {
     <>
       <div className=" next-Project bg-[#000000]  rounded-[8px] xl:w-[60%] z-10 group">
         <div
-          className="innerNext group bg-[#000000] h-[100%] relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[50px]   rounded-[8px] border border-[#292929]   cursor-pointer"
+          className="innerNext group bg-[#000000] h-[100%]   relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[50px]   rounded-[8px] border border-[#292929]   cursor-pointer"
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >
@@ -91,12 +91,12 @@ const container = {
             alt="blur gradient"
             className="absolute right-0 overflow-hidden top-0 opacity-85 transition-all duration-400 group-hover:opacity-100 pointer-events-none z-0"
           />
-          <div className="text-[#FFFFFF]  relative z-50">
+          {/* <div className="text-[#FFFFFF]  relative z-50">
             <motion.h2
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className=" text-next sm:w-full z-50 text-[18px] sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
+              className=" text-next sm:w-full  text-[18px] z-50 sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
             >
               Let's work together on your next project
             </motion.h2>
@@ -109,8 +109,28 @@ const container = {
             >
               Open communication, async updates, zero surprises
             </motion.p>
-          </div>
+          </div> */}
+          <div className="text-[#FFFFFF]  relative z-50">
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className=" text-next sm:w-full  text-[18px] z-50 sm:text-[24px] leading-[17px] sm:leading-[33px] text-center font-bold"
+              style={{ userSelect: "text", WebkitUserSelect: "text" }}
+            >
+              Let's work together on your next project
+            </motion.h2>
 
+            <motion.p
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="text-[#BDBDBD] text-[12px] sm:text-[16px] pt-[4px] leading-[12px] sm:leading-[24px] text-center"
+              style={{ userSelect: "text", WebkitUserSelect: "text" }}
+            >
+              Open communication, async updates, zero surprises
+            </motion.p>
+          </div>
           <motion.div
             className="relative pt-4 lg:pt-[0px]"
             variants={container}
@@ -124,7 +144,7 @@ const container = {
                   variants={item}
                   src={skilss5}
                   alt="images"
-     className={`absolute h-[36px] w-[36px] z-50  md:h-[48px] md:w-[48px] left-4 -bottom-0 md:left-[130px] md:bottom-[-3px]  lg:bottom-0 lg:left-33  left-bottom`}
+                  className={`absolute h-[36px] w-[36px] z-50  md:h-[48px] md:w-[48px] left-4 -bottom-0 md:left-[130px] md:bottom-[-3px]  lg:bottom-0 lg:left-33  left-bottom`}
                 />
                 {/* left top */}
                 <motion.img
@@ -175,7 +195,6 @@ const container = {
             </div>
           </motion.div>
 
-          
           <div className=" mt-6 lg:mt-0">
             <motion.img
               src={arrow}
