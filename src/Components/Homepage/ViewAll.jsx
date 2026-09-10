@@ -33,7 +33,7 @@ function ViewAll() {
   return (
     <>
       <div className="container">
-        <div className="flex flex-col px-[20px] md:px-0">
+        <div className="flex flex-col px-[20px] md:px-0 ">
           <RecruiterOne
             index={0}
             headingText="TryFum"

@@ -60,24 +60,23 @@ function ToolWeTrust() {
           >
             {images.map((img, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-
                 <div
-    className={`transition-all duration-400 border-1 border-transparent p-1`}
-    style={{
-        transitionDelay: isHovered
-            ? `${index * 40}ms`
-            : `${(images.length - index) * 30}ms`
-    }}
->
-    <img
-        src={img}
-        alt=""
-        className={`toolWeTrust p-2 border transition-all duration-400 rounded-xl
+                  className={`transition-all duration-400 border-1 border-transparent p-1`}
+                  style={{
+                    transitionDelay: isHovered
+                      ? `${index * 40}ms`
+                      : `${(images.length - index) * 30}ms`,
+                  }}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className={`toolWeTrust p-2 border transition-all duration-400 rounded-xl
             ${activeIndex === index ? "scale-105" : "scale-90"}
             ${isHovered ? "border-purple-500 -translate-y-2" : "border-transparent"}
         `}
-    />
-</div>
+                  />
+                </div>
                 {/* <div
                   className={`transition-all duration-400  border-1 p-1
                                         

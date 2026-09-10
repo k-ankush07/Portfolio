@@ -69,7 +69,7 @@ function RecruiterOne({
 
   return (
     <section
-      className="sticky py-0 sm:py-0 flex items-start top-22 "
+      className="sticky py-0 sm:py-0 flex items-start top-22 bg-[#0a0a0a] lg:bg-none "
       style={{
         zIndex: 10 + index,
       }}

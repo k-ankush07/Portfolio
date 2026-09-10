@@ -11,7 +11,7 @@ function ConceptToCreation() {
     return (
         <section className='pt-[20px] px-[20px] md:px-0 lg:pt-[40px]'>
             <div className='container'>
-                <div className='relative flex flex-col justify-center items-center border border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px]'>
+                <div className='relative flex flex-col justify-center items-center border  border-[#292929] rounded-[8px] md:py-10 lato-regular overflow-hidden pt-[29px] pl-[33px] pr-[33px] pb-[29px] lg:pt-[66px] lg:pb-[65px]'>
 
                     <img src={Background1} className='absolute left-0 top-0' />
                     <img src={Background2} className='absolute xl:left-40 bottom-0 top-0 h-[100%]' />
@@ -30,7 +30,7 @@ function ConceptToCreation() {
 
                     {/* Heading */}
                     <motion.div
-                        className='concent-text text-[30px] sm:text-[35px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] sm:w-[350px] lg:w-full'
+                        className='concent-text text-[30px] z-50 sm:text-[35px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] sm:w-[350px] lg:w-full'
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
