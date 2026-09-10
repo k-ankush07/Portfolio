@@ -4,10 +4,11 @@ import circleImage from "../../assets/Images/circlesvg.svg";
 function CardSection({
   frontimg,
   backimg,
-  frontRotate = 8,      // front image ka rotation angle (degree)
-  backRotate = -6,      // back image ka rotation angle (degree)
-  frontHoverRotate,     // hover pe front rotation (default: frontRotate + 2)
-  backHoverRotate,      // hover pe back rotation (default: backRotate - 2)
+  frontRotate = 8,      
+  backRotate = -6,      
+  frontHoverRotate,    
+  backHoverRotate,    
+  niche   
 }) {
   const containerRef = useRef(null);
 
@@ -139,6 +140,11 @@ function CardSection({
             {/* text */}
             <div className='inner_work  pl-[20px] xl:pl-[36px] xl:pt-[25px]'>
               {/* <p ... /> */}
+              {niche && (
+      <span className="bg-white text-black text-[11px] sm:text-[12px] lg:text-[13px] font-semibold px-[12px] py-[5px] rounded-full">
+        {niche}
+      </span>
+    )}
             </div>
 
             {/* main div for overlapping images */}

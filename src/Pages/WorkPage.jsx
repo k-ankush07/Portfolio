@@ -93,9 +93,11 @@ function WorkPage() {
             key={p1.id}
             single={!p2}
             leftImg={p1.leftImg} centerImg={p1.centerImg} rightImg={p1.rightImg}
-            title={p1.title} idA={p1.id} tags={[...p1.tags, ...p1.niches]}   
+            title={p1.title} idA={p1.id} tags={p1.tags}
+  niche={p1.niches[0]}  
             leftImg2={p2?.leftImg} centerImg2={p2?.centerImg} rightImg2={p2?.rightImg}
-            title2={p2?.title} idB={p2?.id} tags2={p2 ? [...p2.tags, ...p2.niches] : []}
+            title2={p2?.title} idB={p2?.id} tags2={p2 ? p2.tags : []}
+  niche2={p2?.niches[0]}
           />
         ))}
       </div>

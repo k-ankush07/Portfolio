@@ -31,6 +31,7 @@ function WebApp({
   idB,
   tags,
   tags2,
+  niche, niche2,
 }) {
   const logos = [
     new2,
@@ -50,13 +51,13 @@ function WebApp({
   const renderPreview = (id, l, c, r) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
       return (
-        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} />
+        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={niche} />
       );
     }
     if (CARDSECTION_SINGLE_IDS.includes(id)) {
-      return <CardSection frontimg={c} />;
+      return <CardSection frontimg={c} niche={niche} />;
     }
-    return <ViewDetail leftImg={l} centerImg={c} rightImg={r} />;
+    return <ViewDetail leftImg={l} centerImg={c} rightImg={r} niche={niche} />;
   };
 
   return (
@@ -81,7 +82,7 @@ function WebApp({
 
             <div className=" pt-[16px] lg:pt-0 lg:pr-[57px]  ">
               <Link to={`/work/${title?.toLowerCase()}`}>
-                {renderPreview(idA, leftImg, centerImg, rightImg)}
+                {renderPreview(idA, leftImg, centerImg, rightImg,niche)}
               </Link>
 
               <div className="pt-[20px] lg:pt-[24px]">
@@ -125,7 +126,7 @@ function WebApp({
               </div>
               <div className=" pt-[16px]  lg:pt-0 lg:pl-[57px]">
                 <Link to={`/work/${title2?.toLowerCase()}`}>
-                  {renderPreview(idB, leftImg2, centerImg2, rightImg2)}
+                  {renderPreview(idB, leftImg2, centerImg2, rightImg2,niche2)}
                 </Link>
 
                 <div className="pt-[20px] lg:pt-[24px]">
