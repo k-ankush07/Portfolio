@@ -61,6 +61,19 @@ import ImageSectionLonepouches from "../WorkDetailPages/Lonepouches/ImageSection
 import KeyAeasLonepouches from "../WorkDetailPages/Lonepouches/KeyAeasLonepouches";
 import OutcomesLonepouches from "../WorkDetailPages/Lonepouches/OutcomesLonepouches";
 import WhatILearnedLonepouches from "../WorkDetailPages/Lonepouches/WhatILearnedLonepouches";
+import FirstSectionHoperoza from "../WorkDetailPages/Hoperoza/FirstSectionHoperoza";
+import OurContributionProcessHoperoza from "../WorkDetailPages/Hoperoza/OurContributionProcessHoperoza";
+import ChallengeHoperoza from "../WorkDetailPages/Hoperoza/ChallengeHoperoza";
+import ImplementationProcessHoperoza from "../WorkDetailPages/Hoperoza/ImplementationProcessHoperoza";
+import ImageSectionHoperoza from "../WorkDetailPages/Hoperoza/ImageSectionHoperoza";
+import KeyAeasHoperoza from "../WorkDetailPages/Hoperoza/KeyAeasHoperoza";
+import FirstSectionVittelo from "../WorkDetailPages/Vittelo/FirstSectionVittelo";
+import OurContributionProcessVittelo from "../WorkDetailPages/Vittelo/OurContributionProcessVittelo";
+import ChallengeVittelo from "../WorkDetailPages/Vittelo/ChallengeVittelo";
+import ImplementationProcessVittelo from "../WorkDetailPages/Vittelo/ImplementationProcessVittelo";
+import ImageSectionVittelo from "../WorkDetailPages/Vittelo/ImageSectionVittelo";
+import KeyAeasVittelo from "../WorkDetailPages/Vittelo/KeyAeasVittelo";
+import OutcomesVittelo from "../WorkDetailPages/Vittelo/OutcomesVittelo";
 
 function WorkDetail({ project }) {
   const logos = [ 
@@ -84,7 +97,7 @@ function WorkDetail({ project }) {
 
   return (
     <section className="pt-[35px] lg:pt-[100px] lato-regular overflow-hidden px-[20px] md:px-0">
-      <div className="container">
+      <div className="">
         <div>
           {/* top heading */}
           <motion.div
@@ -325,6 +338,7 @@ function WorkDetail({ project }) {
         <ImplementationProcessWoahBros project={project}  />
         <ImageSectionWoahBros project={project} />
         <KeyAreasWoahBros project={project} />
+        <KeyAreasWoahBros project={project} />
         <OutcomesWoahBros project={project} />
         <WhatILearnedWoahBros project={project} />
 
@@ -356,6 +370,25 @@ function WorkDetail({ project }) {
         <KeyAeasLonepouches project={project} />
         <OutcomesLonepouches  project={project} />
         <WhatILearnedLonepouches project={project} />
+
+
+        {/* 7th Hoperoza Page */}
+        <FirstSectionHoperoza  project={project} />
+        <OurContributionProcessHoperoza   project={project} />
+        <ChallengeHoperoza   project={project} />
+        <ImplementationProcessHoperoza  project={project} />
+        <ImageSectionHoperoza  project={project} />
+        <KeyAeasHoperoza  project={project} />
+
+        {/* 8th Vittelo Page  */}
+        <FirstSectionVittelo project={project}   />
+        <OurContributionProcessVittelo project={project}   />
+        <ChallengeVittelo project={project}   />
+        <ImplementationProcessVittelo project={project}   />
+        <ImageSectionVittelo  project={project}   />
+        <KeyAeasVittelo  project={project}   />
+        <OutcomesVittelo  project={project}   />
+        
         
       </div>
     </section>

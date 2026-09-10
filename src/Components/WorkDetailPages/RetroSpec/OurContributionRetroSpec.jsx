@@ -22,7 +22,7 @@ function OurContributionRetroSpec({ project }) {
               {project.ourRetroSpec}
             </h2>
             {project.pointsRetroSpec?.length > 0 && (
-              <ul className=" pt-[20px] lg:pt-[16px] flex flex-col gap-[5px] lg:gap-[10px]">
+              <ul className=" pt-[20px] flex flex-col gap-[5px] lg:gap-[10px]">
                 {project.pointsRetroSpec.map((point, i) => (
                   <li key={i} className="text-[14px] leading-[24px]  text-[#BDBDBD]">
                     <span className="text-[#BDBDBD]">•</span> {point}

@@ -19,12 +19,19 @@ import apm2 from "../assets/Images/newapm (2).svg"
 import apm3 from "../assets/Images/newapm (3).svg"
 import lone1 from "../assets/Images/newlone (1).svg"
 import lone2 from "../assets/Images/newlone (2).svg"
+import hora1 from "../assets/Images/hora(1).svg"
+import hora2 from "../assets/Images/hora (2).svg"
+import hora3 from "../assets/Images/hora (3).svg"
+import vitoole1 from "../assets/Images/vitoole (1).svg"
+import vitoole2 from "../assets/Images/vitoole (2).svg"
+import vitoole3 from "../assets/Images/vitoole (3).svg"
+
 
 function WorkPage() {
 
   const projects = [
   { id: 1, title: "TryFum", leftImg: first, centerImg: second, rightImg: third,
-    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health & Wellness","Apparel"] },
+    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health & Wellness"] },
   { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro,
     tags: ["Shopify Store Development", "Custom Shopify App", "Shopify Theme Customization"], niches: ["Sports"] },
   { id: 3, title: "WoahBros",     leftImg: woa1, centerImg: woa2, rightImg: woa3,
@@ -35,6 +42,10 @@ function WorkPage() {
     tags: ["Shopify Store Development","Shopify Theme Customization","Conversion Optimization","Speed Optimization"], niches: ["Health & Wellness"] },
   { id: 6, title: "Lonepouches",  leftImg: lone2, centerImg: lone1,
     tags: ["Custom Shopify Development", "Subscription Optimization"], niches: ["Health & Wellness"] },
+  { id: 7, title: "Hoperoza",  leftImg: hora1, centerImg: hora2,rightImg: hora3,
+    tags: ["Shopify Custom Development", "Custom Theme Development","Speed Optimization"], niches: ["Fashion"] },
+  { id: 8, title: "Vittelo",  leftImg: vitoole1, centerImg: vitoole2,rightImg: vitoole3,
+    tags: ["Custom Shopify Development", "Shopify Store Optimization","UI/UX Design","Ecommerce Development"], niches: ["Fashion & Accessories"] },
 ]
 
  const [selectedServices, setSelectedServices] = useState([])

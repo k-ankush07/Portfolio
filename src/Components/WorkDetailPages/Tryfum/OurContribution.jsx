@@ -23,7 +23,7 @@ function OurContribution({ project = { project } }) {
                 {project.our}
               </h2>
               {project.points?.length > 0 && (
-                <ul className=" pt-[20px] lg:pt-[16px] flex flex-col gap-[5px] lg:gap-[10px]">
+                <ul className=" pt-[20px] flex flex-col gap-[5px] lg:gap-[10px]">
                   {project.points.map((point, i) => (
                     <li key={i} className="text-[14px] leading-[24px]  text-[#BDBDBD]">
                       <span className="text-[#BDBDBD]">•</span> {point}

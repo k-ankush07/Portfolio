@@ -21,7 +21,7 @@ function OurContributionWoahBros({ project }) {
               {project.ourWoahBros}
             </h2>
             {project.pointsWoahBros?.length > 0 && (
-              <ul className=" pt-[20px] lg:pt-[16px] flex flex-col gap-[5px] lg:gap-[10px]">
+              <ul className=" pt-[20px] flex flex-col gap-[5px] lg:gap-[10px]">
                 {project.pointsWoahBros.map((point, i) => (
                   <li key={i} className="text-[14px] leading-[24px]  text-[#BDBDBD]">
                     <span className="text-[#BDBDBD]">•</span> {point}

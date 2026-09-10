@@ -20,6 +20,8 @@ import WoahBrosPage from "./Components/WorkDetailPages/WoahBrosPage.jsx"
 import Doinkrollerz from "./Components/WorkDetailPages/Doinkrollerz.jsx";
 import ApmzeePage from "./Components/WorkDetailPages/ApmzeePage.jsx";
 import Lonepouches from "./Components/WorkDetailPages/Lonepouches.jsx";
+import HoperozaPage from "./Components/WorkDetailPages/HoperozaPage.jsx";
+import VitteloPage from "./Components/WorkDetailPages/VitteloPage.jsx";
 
 
 
@@ -62,6 +64,8 @@ function App() {
         <Route path="/work/doinkrollerz" element={<Doinkrollerz />} />
         <Route path="/work/apmzee" element={<ApmzeePage />} />
         <Route path="/work/lonepouches" element={<Lonepouches />} />
+        <Route path="/work/hoperoza" element={<HoperozaPage/>} />
+        <Route path="/work/vittelo" element={<VitteloPage />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />
