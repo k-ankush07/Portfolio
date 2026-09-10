@@ -16,7 +16,7 @@ function ApmzeePage() {
   const project = {
     id: 1,
     slug: "apmzee",
-    title: "WoahBros",
+    title: "Apmzee",
 
     imageApmzee: image101,
     reverseFirstSectionApmzee: true,

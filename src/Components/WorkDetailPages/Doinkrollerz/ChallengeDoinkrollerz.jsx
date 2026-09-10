@@ -6,30 +6,23 @@ function ChallengeDoinkrollerz({ project }) {
   }
 
   return (
-    <div className="lg:pt-[40px] ">
-      <div className={` flex flex-col lg:flex-col-reverse lg:border-t border-[#FFFF]/10  `} >
+    <div className='lg:pt-[41px] '>
+      <div className='lg:flex lg:flex-row-reverse  lg:border-t lg:border-b border-[#FFFFFF]/10'>
+        {/* image section  */}
         <div
-          className={`w-full pt-[30px] pb-[20px] lg:pt-[80px] lg:pb-[40px] lg:pr-[40px] border-b lg:border-b border-[#FFFF]/10 `}
+          className='lg:w-[50%] pt-[30px] pb-[20px] lg:pt-[40px] lg:pb-[40px]   lg:pl-[40px]'
         >
-          {project.mobilechallenegImageDoinkrollerz ? (
-            <>
-              <img src={project.mobilechallenegImageDoinkrollerz} alt="iMAGE" className="w-full lg:hidden" />
-              <img src={project.challengenewDoinkrollerz} alt="iMAGE" className="w-full hidden lg:block" />
-            </>
-          ) : (
-            <img src={project.challengenewDoinkrollerz} alt="iMAGE" className="w-full" />
-          )}
+          <img src={project.challengenewDoinkrollerz} alt='iMAGE' className='w-full' />
         </div>
 
-        <div
-          className={`w-full items-center justify-center`}
-        >
-          <div className="pt-[20px] lg:pt-0  ">
-            <h2 className="text-[24px] lg:text-[40px] leading-[48px] font-bold text-[#FFFFFF]">
+        {/* content section  */}
+        <div className='lg:w-[50%] lg:flex flex-col items-center justify-center border-t lg:border-t-0 lg:border-r border-[#FFFFFF]/10'>
+          <div className='pt-[20px] lg:pt-0 lg:pr-[40px]'>
+            <h2 className='text-[24px] lg:text-[40px] leading-[48px] font-bold text-[#FFFFFF]'>
               {project.ChallheadingnewDoinkrollerz}
             </h2>
             <p
-              className="text-[#BDBDBD] text-[14px] leading-[24px] pt-[20px]"
+              className='text-[#BDBDBD] text-[14px] leading-[24px] pt-[20px]'
               dangerouslySetInnerHTML={{ __html: project.ChalldescnewDoinkrollerz }}
             />
           </div>

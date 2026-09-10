@@ -2,20 +2,20 @@ import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
 import image1003 from "../../assets/Images/firstdion.svg"
 import no from "../../assets/Images/no.svg"
-import image997 from "../../assets/Images/image 99 (7).svg"
+import image997 from "../../assets/Images/dionchallenge.svg"
 import image998 from "../../assets/Images/image 99 (8).svg"
 import phone from "../../assets/Images/phone.svg"
 import desktop from "../../assets/Images/desktop.svg"
-import key from "../../assets/Images/key.svg"
+import key from "../../assets/Images/beforeafterdion.svg"
 import image993 from "../../assets/Images/image 99 (3).svg"
 import gif from "../../assets/Images/doinkrollerz.mp4"
-import outcomenew1 from "../../assets/Images/outcomenew1.svg"
+import outcomenew1 from "../../assets/Images/dionoutcome.svg"
 
 function Doinkrollerz() {
   const project = {
     id: 1,
-    slug: "woahbros",
-    title: "WoahBros",
+    slug: "Doinkrollerz",
+    title: "Doinkrollerz",
 
     imageDoinkrollerz: image1003,
     reverseMobileDoinkrollerz: false,

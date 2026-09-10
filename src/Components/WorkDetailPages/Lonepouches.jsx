@@ -13,8 +13,8 @@ import Lonepouches1 from "../../assets/Images/Lonepouches.mp4"
 function Lonepouches() {
   const project = {
     id: 1,
-    slug: "tryfum",
-    title: "TryFum",
+    slug: "lonepouches",
+    title: "Lonepouches",
 
     imageLonepouches: lion,
     reverseMobileLonepouches: false,

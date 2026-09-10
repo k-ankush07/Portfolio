@@ -17,7 +17,7 @@ function OutcomesDoinkrollerz({ project }) {
       >
         {/* Image/Video section */}
         <div
-          className={`w-full lg:w-[70%] pb-[17px] lg:pl-[95px] lg:pr-[40px] border-r border-white/10   flex justify-center items-center pt-[20px] lg:pt-[41px] lg:pb-[41px] lg:border-b-0 border-white/10 border-b `}
+          className={`w-full lg:w-[75%] pb-[17px] lg:pl-[95px] lg:pr-[40px] border-r border-white/10   flex justify-center items-center pt-[20px] lg:pt-[41px] lg:pb-[41px] lg:border-b-0 border-white/10 border-b `}
         >
           {isVideo ? (
             <video
@@ -39,7 +39,7 @@ function OutcomesDoinkrollerz({ project }) {
 
         {/* Content section */}
         <div
-          className={`w-full lg:w-[30%]  lg:pl-[40px] flex flex-col justify-center  border-b lg:border-b-0 border-white/10 pb-[20px] lg:pb-0 `}
+          className={`w-full lg:w-[25%]  lg:pl-[40px] flex flex-col justify-center  border-b lg:border-b-0 border-white/10 pb-[20px] lg:pb-0 `}
         >
           <div className={`w-full `}>
             <h2 className="text-[24px] lg:text-[40px] leading-[48px] font-bold text-white">
