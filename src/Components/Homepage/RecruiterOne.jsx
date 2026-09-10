@@ -10,12 +10,18 @@ import Redis from "../../assets/Images/rsection (2).svg";
 import Vercel from "../../assets/Images/rsection (3).svg";
 import ViewDetail from "./ViewDetail";
 
-import {
-  motion,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import CardSection from "./CardSection";
 
-function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,points = []}) {
+function RecruiterOne({
+  index,
+  headingText,
+  desc,
+  leftImg,
+  centerImg,
+  rightImg,
+  points = [],
+}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -63,16 +69,14 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
 
   return (
     <section
-      className="sticky py-0 sm:py-0 flex items-start top-22 " 
+      className="sticky py-0 sm:py-0 flex items-start top-22 "
       style={{
         zIndex: 10 + index,
       }}
     >
       <div className="container">
-
         <div className="w-full h-full flex items-start justify-center">
           <div className="  px-2 sm:px-0 w-full flex-1 flex flex-col justify-center">
-
             <motion.div
               className="w-full lg:px-0"
               variants={containerVariants}
@@ -81,24 +85,29 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8 }}
             >
-              <div className=" lg:pb-[10px] "> 
+              <div className=" lg:pb-[10px] ">
                 <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
-
                   {/* Left */}
                   {/* Left */}
-<motion.div
-  variants={itemVariants}
-  className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
->
-  {index === 2 ? (
-    <CardSection  frontimg={leftImg}
-    backimg={centerImg}
-    frontRotate={13}
-    backRotate={-8} />
-  ) : (
-    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg} />
-  )}
-</motion.div>
+                  <motion.div
+                    variants={itemVariants}
+                    className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
+                  >
+                    {index === 2 ? (
+                      <CardSection
+                        frontimg={leftImg}
+                        backimg={centerImg}
+                        frontRotate={13}
+                        backRotate={-8}
+                      />
+                    ) : (
+                      <ViewDetail
+                        leftImg={leftImg}
+                        centerImg={centerImg}
+                        rightImg={rightImg}
+                      />
+                    )}
+                  </motion.div>
                   {/* <motion.div
                     variants={itemVariants}
                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
@@ -112,7 +121,6 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                     <motion.div
                       variants={itemVariants}
                       className="flex items-center gap-2 sm:gap-3 text-white   lg:mb-[5px] flex-wrap"
-                    
                     >
                       <img
                         src={shopify}
@@ -139,8 +147,6 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                       <motion.p
                         variants={itemVariants}
                         className="text-[#BDBDBD] leading-[24px] text-[14px] "
-
-
                       >
                         {desc}
                       </motion.p>
@@ -183,42 +189,41 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                       ))}
                     </motion.div> */}
                     <motion.div
-  variants={itemVariants}
-  className="mb-8 lg:mb-2 flex flex-col justify-between gap-[10px] w-full hidden lg:block "
->
-  {points.map((point, i) => (
-    <motion.div
-      key={i}
-      variants={itemVariants}
-      className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
-    >
-      <motion.img
-        src={star}
-        alt="star"
-        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-[3px]"
-        animate={{
-          opacity: [0.7, 1, 0.7],
-          filter: [
-            'brightness(1)',
-            'brightness(2) drop-shadow(0 0 6px #FFAF7B)',
-            'brightness(1)'
-          ],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          repeatType: 'loop',
-          delay: i * 0.4,
-          ease: 'easeInOut',
-        }}
-      />
-      <span className="text-[#BDBDBD] text-[14px] leading-[24px]">
-        {point}
-      </span>
-    </motion.div>
-  ))}
-</motion.div>
-
+                      variants={itemVariants}
+                      className="mb-8 lg:mb-2 flex flex-col justify-between gap-[10px] w-full hidden lg:block "
+                    >
+                      {points.map((point, i) => (
+                        <motion.div
+                          key={i}
+                          variants={itemVariants}
+                          className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
+                        >
+                          <motion.img
+                            src={star}
+                            alt="star"
+                            className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-[3px]"
+                            animate={{
+                              opacity: [0.7, 1, 0.7],
+                              filter: [
+                                "brightness(1)",
+                                "brightness(2) drop-shadow(0 0 6px #FFAF7B)",
+                                "brightness(1)",
+                              ],
+                            }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              repeatType: "loop",
+                              delay: i * 0.4,
+                              ease: "easeInOut",
+                            }}
+                          />
+                          <span className="text-[#BDBDBD] text-[14px] leading-[24px]">
+                            {point}
+                          </span>
+                        </motion.div>
+                      ))}
+                    </motion.div>
 
                     <motion.div
                       className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px] lg:pt-[23px]"
@@ -227,8 +232,22 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
                       whileInView="show"
                       viewport={{ once: true, amount: 0.7 }}
                     >
-                      {[Bun, Docker, Next, pnpm, PostgreSQL, Redis, Vercel,Bun].map((img, i) => (
-                        <motion.img key={i} variants={item} src={img} alt="logo" />
+                      {[
+                        Bun,
+                        Docker,
+                        Next,
+                        pnpm,
+                        PostgreSQL,
+                        Redis,
+                        Vercel,
+                        Bun,
+                      ].map((img, i) => (
+                        <motion.img
+                          key={i}
+                          variants={item}
+                          src={img}
+                          alt="logo"
+                        />
                       ))}
                     </motion.div>
                   </div>
@@ -237,11 +256,8 @@ function RecruiterOne({ index, headingText,desc ,leftImg, centerImg, rightImg,po
             </motion.div>
           </div>
         </div>
-
       </div>
     </section>
   );
 }
 export default RecruiterOne;
-
-

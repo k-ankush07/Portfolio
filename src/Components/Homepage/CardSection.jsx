@@ -186,13 +186,24 @@ function CardSection({
                   <img
                     src={frontimg}
                     alt="merchant page preview"
+                    className="absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-all duration-500 ease-out"
+                    style={{
+                      transform: hovered
+                        ? `translateX(-50%) translateY(0) rotate(${resolvedFrontHover}deg) scale(1.02)`
+                        : `translateX(-50%) translateY(60px) rotate(${frontRotate}deg)`,
+                      opacity: hovered ? 1 : 0,
+                    }}
+                  />
+                  {/* <img
+                    src={frontimg}
+                    alt="merchant page preview"
                     className="absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-transform duration-300 ease-out"
                     style={{
                       transform: hovered
                         ? `translateX(-50%) rotate(${resolvedFrontHover}deg) scale(1.02)`
                         : `translateX(-50%) rotate(${frontRotate}deg)`,
                     }}
-                  />
+                  /> */}
                 </>
               )}
             </div>
