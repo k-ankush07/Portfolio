@@ -7,7 +7,7 @@ function ImplementationProcessLonepouches({project}) {
   }
   return (
     <div className="pb-[30px] lg:pb-[40px] lg:pt-[41px] ">
-      <div className="flex flex-col-reverse lg:flex-row  lg:border-t lg:border-b border-[#FFFFFF]/10 lg:px-[256px]">
+      <div className="flex flex-col-reverse lg:flex-row   lg:border-t lg:border-b border-[#FFFFFF]/10">
         {/* content section  */}
         <div className="lg:w-[50%] lg:flex flex-col items-center justify-center">
           <div className=" pt-[20px] lg:pt-0 lg:pr-[39px]">

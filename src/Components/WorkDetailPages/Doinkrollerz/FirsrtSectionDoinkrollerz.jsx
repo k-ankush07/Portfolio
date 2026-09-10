@@ -12,14 +12,14 @@ function FirsrtSectionDoinkrollerz({project}) {
         {/* Image section */}
         <div
           
-          className={`w-full lg:w-[70%]  pt-[30px] pb-[20px]  lg:pl-[40px] lg:border-l border-white/10 lg:pt-[40px] lg:pb-[40px] `}
+          className={`w-full lg:w-[50%]  pt-[30px] pb-[20px]  lg:pl-[40px] lg:border-l border-white/10 lg:pt-[40px] lg:pb-[40px] `}
         >
           <img src={project.imageDoinkrollerz} alt="image" className="w-full h-auto" />
         </div>
 
         {/* Content section */}
         <div
-          className={`w-full lg:w-[30%]   flex flex-col justify-center pr-0 lg:pr-[40px]  border-t lg:border-t-0 border-white/10 `}
+          className={`w-full lg:w-[50%]   flex flex-col justify-center pr-0 lg:pr-[40px]  border-t lg:border-t-0 border-white/10 `}
         >
           <div
             className={`w-full pt-[20px] lg:pt-0`}

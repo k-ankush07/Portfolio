@@ -58,12 +58,12 @@ import OurContributionProcessLonepouches from "../WorkDetailPages/Lonepouches/Ou
 import ChallengeLonepouches from "../WorkDetailPages/Lonepouches/ChallengeLonepouches";
 import ImplementationProcessLonepouches from "../WorkDetailPages/Lonepouches/ImplementationProcessLonepouches";
 import ImageSectionLonepouches from "../WorkDetailPages/Lonepouches/ImageSectionLonepouches";
-import KeyAeasLonepouches from "../WorkDetailPages/Apmzee/KeyAeasLonepouches";
-import OutcomesLonepouches from "../WorkDetailPages/Apmzee/OutcomesLonepouches";
-import WhatILearnedLonepouches from "../WorkDetailPages/Apmzee/WhatILearnedLonepouches";
+import KeyAeasLonepouches from "../WorkDetailPages/Lonepouches/KeyAeasLonepouches";
+import OutcomesLonepouches from "../WorkDetailPages/Lonepouches/OutcomesLonepouches";
+import WhatILearnedLonepouches from "../WorkDetailPages/Lonepouches/WhatILearnedLonepouches";
 
 function WorkDetail({ project }) {
-  const logos = [
+  const logos = [ 
     new2,
     new3,
     new1,

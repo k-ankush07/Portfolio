@@ -2,13 +2,13 @@ import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
 import image101 from  "../../assets/Images/image 101.svg"
 import my from  "../../assets/Images/my.svg"
-import image99 from  "../../assets/Images/image 99 (5).svg"
+import image99 from  "../../assets/Images/project.svg"
 import image66 from  "../../assets/Images/image 99 (6).svg"
 import woa1 from  "../../assets/Images/woa (1).svg"
 import woa2 from  "../../assets/Images/woa (2).svg"
 import first from  "../../assets/Images/first4 (1).svg"
 import second from  "../../assets/Images/first4 (2).svg"
-import out from  "../../assets/Images/out.svg"
+import out from  "../../assets/Images/outcome.svg"
 
 function WoahBrospAGE() {
   const project = {

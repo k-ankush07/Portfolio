@@ -71,15 +71,6 @@ function WorkPage() {
   }
   return (
     <>
-    {/* <div className='   lg:pb-[15px]'>
-        <PrivacyText  colorText='Work' first_letter="Curated" para="A showcase of my best and most impactful projects." />
-    </div>
-    <ServicesSection />
-  <div className='lg:pb-[20px] work_class px-[20px] md:px-0'>
-     <WebApp  leftImg={first} centerImg={second} rightImg={third}  leftImg2={restro1} centerImg2={restro}  title="TryFum"   title2="RetroSpec"   idA={1} idB={2} />
-   <WebApp leftImg={woa1} centerImg={woa2} rightImg={woa3}  leftImg2={dan2} centerImg2={dan1}  title="WoahBros"   title2="Doinkrollerz"   idA={3} idB={4} />
-   <WebApp  leftImg={apm1} centerImg={apm2} rightImg={apm3}  leftImg2={lone2} centerImg2={lone1}  title="Apmzee"   title2="Lonepouches"   idA={5} idB={6} />
-  </div> */}
    
     <div className='lg:pb-[15px]'>
         <PrivacyText colorText='Work' first_letter="Curated" para="A showcase of my best and most impactful projects." />

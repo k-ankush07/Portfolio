@@ -14,7 +14,7 @@ function KeyAeasLonepouches({project}) {
      <div className=" pt-[30px]   lg:pb-0 lg:pt-[41px] ">
       <div
 
-        className={`flex flex-col-reverse lg:flex-row-reverse p lg:border-t lg:border-b border-[#FFFFFF]/10 lg:px-[117px] `}
+        className={`flex flex-col-reverse lg:flex-row-reverse p lg:border-t lg:border-b border-[#FFFFFF]/10 xl:px-[117px] `}
       >
         {/* content section */}
         <div
@@ -64,7 +64,7 @@ function KeyAeasLonepouches({project}) {
         >
           <div className="w-full  lg:pr-[40px] ">
             {project.firstdblLonepouches && (
-              <img src={project.firstdblLonepouches} alt="first image" className="w-full" />
+              <img src={project.firstdblLonepouches} alt="first image" className="w-full " />
             )}
             {project.secondsnglLonepouches &&
               (project.secondsnglLonepouches.endsWith?.(".mp4") ||

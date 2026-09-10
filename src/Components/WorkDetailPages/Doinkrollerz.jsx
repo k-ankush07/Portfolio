@@ -1,6 +1,6 @@
 import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
-import image1003 from "../../assets/Images/image 100 (3).svg"
+import image1003 from "../../assets/Images/firstdion.svg"
 import no from "../../assets/Images/no.svg"
 import image997 from "../../assets/Images/image 99 (7).svg"
 import image998 from "../../assets/Images/image 99 (8).svg"

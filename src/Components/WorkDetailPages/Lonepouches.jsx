@@ -1,12 +1,12 @@
 import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
-import lion from "../../assets/Images/lion.svg"
+import lion from "../../assets/Images/firstnewlion.svg"
 import contrinew from "../../assets/Images/contrinew.svg"
-import challengenew from "../../assets/Images/challengenew.svg"
-import pimage from "../../assets/Images/pimage.svg"
+import challengenew from "../../assets/Images/linonew.svg"
+import pimage from "../../assets/Images/newr.svg"
 import double from "../../assets/Images/double.svg"
 import single from "../../assets/Images/single.svg"
-import lion1 from "../../assets/Images/lion12 (1).svg"
+import lion1 from "../../assets/Images/keynew.svg"
 import true1 from "../../assets/Images/true.svg"
 import Lonepouches1 from "../../assets/Images/Lonepouches.mp4"
 
