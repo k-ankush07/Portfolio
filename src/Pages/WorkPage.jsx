@@ -47,7 +47,7 @@ function WorkPage() {
     tags: ["Shopify Custom Development", "Custom Theme Development","Speed Optimization"], niches: ["Fashion"] },
   { id: 8, title: "Vittelo",  leftImg: vitoole1, centerImg: vitoole2,rightImg: vitoole3,
     tags: ["Custom Shopify Development", "Shopify Store Optimization","UI/UX Design","Ecommerce Development"], niches: ["Fashion & Accessories"] },
-  { id: 9, title: "Happy Stuf",  leftImg: happyouter,
+  { id: 9, title: "happystuf",  leftImg: happyouter,
     tags: ["Shopify Store Optimization", "Conversion Rate Optimization","Speed Optimization"], niches: ["Health & Wellness"] },
 ]
 
