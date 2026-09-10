@@ -78,7 +78,7 @@ function KeyAreas({ project }) {
               : "lg:pl-[40px] lg:border-l lg:pr-[40px]"
           }`}
         >
-          <div className="w-full lg:px-[89px]">
+          <div className="w-full xl:px-[89px]">
             {project.firstdbl && (
               <img src={project.firstdbl} alt="first image" className="w-full" />
             )}
