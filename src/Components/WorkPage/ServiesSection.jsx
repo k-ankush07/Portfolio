@@ -117,13 +117,13 @@
 import React from "react"
 
 export const ServicesArray = [
-  { id: 1, Name: "Conversion optimization" },
-  { id: 2, Name: "Shopify store development" },
-  { id: 3, Name: "Custom Shopify development" },
-  { id: 4, Name: "Speed optimization" },
-  { id: 5, Name: "Subscription optimization" },
-  { id: 6, Name: "UI/UX design" },
-  { id: 7, Name: "Landing page" },
+  { id: 1, Name: "Conversion Optimization" },
+  { id: 2, Name: "Shopify Store Development" },
+  { id: 3, Name: "Custom Shopify Development" },
+  { id: 4, Name: "Speed Optimization" },
+  { id: 5, Name: "Subscription Optimization" },
+  { id: 6, Name: "UI/UX Design" },
+  { id: 7, Name: "Landing Page" },
   { id: 8, Name: "Shopify Theme Customization" },
   { id: 9, Name: "Shopify App" },
   { id: 10, Name: "Klaviyo Optimization" },
