@@ -13,7 +13,7 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import ProjectTitle from "./ProjectTitle";
 import { Link } from "react-router-dom";
 
-const CARDSECTION_DOUBLE_IDS = [2, 4, 6];
+const CARDSECTION_DOUBLE_IDS = [2, 4, 6, 9];
 const CARDSECTION_SINGLE_IDS = [];
 
 function WebApp({

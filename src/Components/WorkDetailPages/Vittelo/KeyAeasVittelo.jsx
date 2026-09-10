@@ -14,7 +14,7 @@ function KeyAeasVittelo({project}) {
       <div className={` border-t lg:border-b border-[#FFFFFF]/10 flex flex-col-reverse lg:flex-row  `}>
         {/* content section */}
         <div className={`lg:w-[50%]  lg:pt-[40px] lg:pb-[10px] lg:pr-[40px] lg:border-r border-[#FFFF]/10 `}>
-          <h2 className="max-w-[525px] text-[#FFFFFF] pt-[20px] lg:pt-0 text-[24px] lg:text-[40px] leading-[48px] font-bold">
+          <h2 className="max-w-[525px] text-[#FFFFFF]  lg:pt-0 text-[24px] lg:text-[40px] leading-[48px] font-bold">
             {project.keyheadingVittelo}
           </h2>
 
@@ -54,7 +54,7 @@ function KeyAeasVittelo({project}) {
 
         {/* image section */}
         <div
-          className={`lg:w-[50%] pt-[20px] lg:pt-0  border-b lg:border-b-0 pb-[42px] lg:pb-0 border-[#FFFFFF]/10 lg:pl-[40px] lg:pt-[40px] lg:pb-[40px] `}
+          className={`lg:w-[50%] pt-[20px] lg:pt-0 pb-[40px] lg:pb-0 border-[#FFFFFF]/10 lg:pl-[40px] lg:pt-[40px] lg:pb-[40px] `}
         >
           <div className="w-full ">
             {project.firstdblVittelo && (

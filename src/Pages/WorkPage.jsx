@@ -25,6 +25,7 @@ import hora3 from "../assets/Images/hora (3).svg"
 import vitoole1 from "../assets/Images/vitoole (1).svg"
 import vitoole2 from "../assets/Images/vitoole (2).svg"
 import vitoole3 from "../assets/Images/vitoole (3).svg"
+import happyouter from "../assets/Images/happyouter.svg"
 
 
 function WorkPage() {
@@ -46,6 +47,8 @@ function WorkPage() {
     tags: ["Shopify Custom Development", "Custom Theme Development","Speed Optimization"], niches: ["Fashion"] },
   { id: 8, title: "Vittelo",  leftImg: vitoole1, centerImg: vitoole2,rightImg: vitoole3,
     tags: ["Custom Shopify Development", "Shopify Store Optimization","UI/UX Design","Ecommerce Development"], niches: ["Fashion & Accessories"] },
+  { id: 9, title: "Happy Stuf",  leftImg: happyouter,
+    tags: ["Shopify Store Optimization", "Conversion Rate Optimization","Speed Optimization"], niches: ["Health & Wellness"] },
 ]
 
  const [selectedServices, setSelectedServices] = useState([])

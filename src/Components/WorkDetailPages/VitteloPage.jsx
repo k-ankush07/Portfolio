@@ -77,8 +77,8 @@ function VitteloPage() {
             outcomeimageVittelo: Vittelo,
             outcomeheadingVittelo: "Outcome",
             outcomepointsVittelo: "The redesign made Vittelo’s products easier to understand by organizing the belt features, fit, benefits, and customization options around the customer’s buying journey. The custom belt builder gives customers a more direct way to choose their preferred buckle and create a belt that fits their style, while the new Shopify sections give Vittelo more flexibility to present its products and content. ",
-             learnheadingLonepouches: "What I learned",
-    learndescLonepouches: "This project taught me how to design a product customization flow that feels simple and intuitive. I also learned how to present multiple product choices without making the buying process feel overwhelming.",
+             learnheadingVittelo: "What I learned",
+    learndescVittelo: "This project taught me how to design a product customization flow that feels simple and intuitive. I also learned how to present multiple product choices without making the buying process feel overwhelming.",
           };
   return (
     <section className="container">

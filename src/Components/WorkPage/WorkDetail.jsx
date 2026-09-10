@@ -74,6 +74,7 @@ import ImplementationProcessVittelo from "../WorkDetailPages/Vittelo/Implementat
 import ImageSectionVittelo from "../WorkDetailPages/Vittelo/ImageSectionVittelo";
 import KeyAeasVittelo from "../WorkDetailPages/Vittelo/KeyAeasVittelo";
 import OutcomesVittelo from "../WorkDetailPages/Vittelo/OutcomesVittelo";
+import WhatILearnedVittelo from "../WorkDetailPages/Vittelo/WhatILearnedVittelo";
 
 function WorkDetail({ project }) {
   const logos = [ 
@@ -388,6 +389,7 @@ function WorkDetail({ project }) {
         <ImageSectionVittelo  project={project}   />
         <KeyAeasVittelo  project={project}   />
         <OutcomesVittelo  project={project}   />
+        <WhatILearnedVittelo  project={project}   />
         
         
       </div>

@@ -160,11 +160,12 @@ function CardSection({
                 <img
                   src={frontimg}
                   alt="preview"
-                  className="absolute left-1/2 top-10 sm:top-16 lg:top-20 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-300 ease-out"
+                  className="absolute left-1/2 top-10 sm:top-16 lg:top-15 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-500 ease-in-out"
                   style={{
+                    transformOrigin: "bottom center",
                     transform: hovered
-                      ? "translateX(-50%) scale(1.02)"
-                      : "translateX(-50%)",
+                      ? "translateX(-50%) rotate(3deg) scale(1.09)"
+                      : "translateX(-50%) rotate(0deg) scale(1)",
                   }}
                 />
               ) : (
