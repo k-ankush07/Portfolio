@@ -1,18 +1,25 @@
 import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
-
+import happyfirst from "../../assets/Images/happyfirst.svg"
+import happycontribution from "../../assets/Images/happycontri.svg"
+import happychallenge from "../../assets/Images/happychallenge.svg"
+import happyimplement from "../../assets/Images/hapyimplement.svg"
+import mobilehappy from "../../assets/Images/mobilehappy.svg"
+import desktophappy from "../../assets/Images/desktophappy.svg"
+import lionhappy from "../../assets/Images/lionhappy.svg"
+import HAPPYSTUF from "../../assets/Images/HAPPYSTUF.mp4"
 function HappyStufPage() {
       const project = {
          id: 1,
          slug: "happystuf",
          title: "Happy Stuf",
-        //  imageHappyStuf: image100,
+         imageHappyStuf: happyfirst,
          headingHappyStuf: "Happy Stuf — The Good Habit",
          descHappyStuf: "Happy Stuf is a wellness and supplement brand that sells vitamins, gummies, powders, and targeted wellness products. Its product range focuses on everyday needs such as energy, sleep, immunity, performance, recovery, and overall wellness. The store features different supplements and formulas created to support specific wellness goals and fit into everyday routines.",
          role: "Shopify Developer",
          visit: " https://happystuf.com/",
          ourHappyStuf: "My Contribution",
-        //  contrubutionimageHappyStuf: restroour,
+         contrubutionimageHappyStuf: happycontribution,
          pointsHappyStuf: [
            "Shopify Store Optimization",
            "Conversion Rate Optimization (CRO)",
@@ -22,17 +29,17 @@ function HappyStufPage() {
          ],
          btnnameHappyStuf: "View the final experience",
          btnLinkHappyStuf: " https://happystuf.com/",
-        //  challengeHappyStuf: challengeimg,
+         challengeHappyStuf: happychallenge,
          ChallheadingHappyStuf: "Challenges",
          ChalldescHappyStuf:
            "Happy Stuf had a growing range of vitamins, gummies, powders, and wellness formulas, but the store did not make it easy for shoppers to browse products based on their specific wellness needs. <br/> <br/>Product pages also lacked a strong purchase flow. Key product information, benefits, and buying elements competed for attention, making it harder for visitors to understand a product and move confidently toward checkout.<br/> <br/>The storefront also carried unnecessary elements and resources that affected page load times. This became more noticeable on mobile, where slower loading could interrupt the shopping experience. ",
-        //  implementimageHappyStuf: processimg,
+         implementimageHappyStuf: happyimplement,
          impheadingHappyStuf: "Implementation Process",
          impheadescHappyStuf:
            "I started by reviewing the existing store structure, product organization, and shopping journey, then reorganized product discovery around key wellness benefits. I refined the product pages to give product information, benefits, quantity options, and purchase actions a clearer hierarchy.<br/> <br/>I also removed unnecessary storefront elements and resources to improve page loading, then refined the desktop and mobile layouts for a cleaner and more consistent shopping experience.",
-        //  imgsectionHappyStuf: [fresh, first],
+         imgsectionHappyStuf: [mobilehappy, desktophappy],
          keyheadingHappyStuf: "Key Areas of Improvement",
-        //  secondsnglHappyStuf: image1001,
+         secondsnglHappyStuf: lionhappy,
          keyPointsHappyStuf: [
            {
              heading: "Intuitive, Goal-Oriented Product Discovery:",
@@ -47,7 +54,7 @@ function HappyStufPage() {
              desc: "Improved the quantity-based purchase experience by clearly presenting single and multi-unit options, along with the savings for buying more, so shoppers can compare choices at a glance.",
            },
          ],
-        //  outcomeimageHappyStuf: outcomeimage,
+         outcomeimageHappyStuf: HAPPYSTUF,
         outcomeheadingHappyStuf: "Outcomes",
         outcomepointsHappyStuf: [
         "Simplified product discovery",

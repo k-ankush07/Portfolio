@@ -26,6 +26,7 @@ import vitoole1 from "../assets/Images/vitoole (1).svg"
 import vitoole2 from "../assets/Images/vitoole (2).svg"
 import vitoole3 from "../assets/Images/vitoole (3).svg"
 import happyouter from "../assets/Images/happyouter.svg"
+import sofaouter from "../assets/Images/sofaouter.svg"
 
 
 function WorkPage() {
@@ -47,8 +48,10 @@ function WorkPage() {
     tags: ["Shopify Custom Development", "Custom Theme Development","Speed Optimization"], niches: ["Fashion"] },
   { id: 8, title: "Vittelo",  leftImg: vitoole1, centerImg: vitoole2,rightImg: vitoole3,
     tags: ["Custom Shopify Development", "Shopify Store Optimization","UI/UX Design","Ecommerce Development"], niches: ["Fashion & Accessories"] },
-  { id: 9, title: "happystuf",  leftImg: happyouter,
+  { id: 9, title: "Happy Stuf",  leftImg: happyouter,rotate: 4 ,
     tags: ["Shopify Store Optimization", "Conversion Rate Optimization","Speed Optimization"], niches: ["Health & Wellness"] },
+  { id: 10, title: "Sofa Direct",  leftImg: sofaouter,rotate: -4 ,
+    tags: ["UI/UX Design", "Speed Optimization","Custom Theme Development"], niches: ["Furniture & Home"] },
 ]
 
  const [selectedServices, setSelectedServices] = useState([])
@@ -112,6 +115,8 @@ function WorkPage() {
             leftImg2={p2?.leftImg} centerImg2={p2?.centerImg} rightImg2={p2?.rightImg}
             title2={p2?.title} idB={p2?.id} tags2={p2 ? p2.tags : []}
  niche2={p2?.niches}
+ rotate={p1.rotate}
+  rotate2={p2?.rotate}
           />
         ))}
       </div>

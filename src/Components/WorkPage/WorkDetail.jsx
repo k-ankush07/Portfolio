@@ -75,6 +75,14 @@ import ImageSectionVittelo from "../WorkDetailPages/Vittelo/ImageSectionVittelo"
 import KeyAeasVittelo from "../WorkDetailPages/Vittelo/KeyAeasVittelo";
 import OutcomesVittelo from "../WorkDetailPages/Vittelo/OutcomesVittelo";
 import WhatILearnedVittelo from "../WorkDetailPages/Vittelo/WhatILearnedVittelo";
+import FirstSectionHappyStuf from "../WorkDetailPages/HappyStuf/FirstSectionHappyStuf";
+import OurContributionHappyStuf from "../WorkDetailPages/HappyStuf/OurContributionHappyStuf";
+import ChallengeHappyStuf from "../WorkDetailPages/HappyStuf/ChallengeHappyStuf";
+import ImplementationProcessHappyStuf from "../WorkDetailPages/HappyStuf/ImplementationProcessHappyStuf";
+import ImageSectionHappyStuf from "../WorkDetailPages/HappyStuf/ImageSectionHappyStuf";
+import KeyAeaslionHappyStuf from "../WorkDetailPages/HappyStuf/KeyAeaslionHappyStuf";
+import OutcomesHappyStuf from "../WorkDetailPages/HappyStuf/OutcomesHappyStuf";
+import WhatILearnedHappyStuf from "../WorkDetailPages/HappyStuf/WhatILearnedHappyStuf";
 
 function WorkDetail({ project }) {
   const logos = [ 
@@ -390,6 +398,16 @@ function WorkDetail({ project }) {
         <KeyAeasVittelo  project={project}   />
         <OutcomesVittelo  project={project}   />
         <WhatILearnedVittelo  project={project}   />
+
+        {/* 9th Happy Stuf page  */}
+        <FirstSectionHappyStuf project={project}  />
+        <OurContributionHappyStuf project={project}  />
+        <ChallengeHappyStuf project={project}  />
+        <ImplementationProcessHappyStuf project={project}  />
+        <ImageSectionHappyStuf project={project}  />
+        <KeyAeaslionHappyStuf project={project}  />
+        <OutcomesHappyStuf project={project}  />
+        <WhatILearnedHappyStuf project={project}  />
         
         
       </div>

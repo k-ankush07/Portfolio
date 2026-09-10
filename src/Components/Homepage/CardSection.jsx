@@ -9,6 +9,7 @@ function CardSection({
   frontHoverRotate,
   backHoverRotate,
   niche,
+  singleRotate = 6,
 }) {
   const containerRef = useRef(null);
 
@@ -164,7 +165,7 @@ function CardSection({
                   style={{
                     transformOrigin: "bottom center",
                     transform: hovered
-                      ? "translateX(-50%) rotate(3deg) scale(1.09)"
+                      ? `translateX(-50%) rotate(${singleRotate}deg)  scale(1.09)`
                       : "translateX(-50%) rotate(0deg) scale(1)",
                   }}
                 />

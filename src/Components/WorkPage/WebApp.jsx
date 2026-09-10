@@ -13,7 +13,7 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import ProjectTitle from "./ProjectTitle";
 import { Link } from "react-router-dom";
 
-const CARDSECTION_DOUBLE_IDS = [2, 4, 6, 9];
+const CARDSECTION_DOUBLE_IDS = [2, 4, 6, 9,10];
 const CARDSECTION_SINGLE_IDS = [];
 
 function WebApp({
@@ -32,6 +32,7 @@ function WebApp({
   tags,
   tags2,
   niche, niche2,
+  rotate, rotate2,
 }) {
   const logos = [
     new2,
@@ -48,14 +49,14 @@ function WebApp({
     new6,
   ];
 
-  const renderPreview = (id, l, c, r,n) => {
+  const renderPreview = (id, l, c, r,n,rot) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
       return (
-        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={n} />
+        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={n} singleRotate={rot} />
       );
     }
     if (CARDSECTION_SINGLE_IDS.includes(id)) {
-      return <CardSection frontimg={c} niche={n} />;
+      return <CardSection frontimg={c} niche={n} singleRotate={rot} />;
     }
     return <ViewDetail leftImg={l} centerImg={c} rightImg={r} niche={n} />;
   };
@@ -82,7 +83,7 @@ function WebApp({
 
             <div className=" pt-[16px] lg:pt-0 lg:pr-[57px]  ">
               <Link to={`/work/${title?.toLowerCase()}`}>
-                {renderPreview(idA, leftImg, centerImg, rightImg,niche)}
+                {renderPreview(idA, leftImg, centerImg, rightImg,niche , rotate)}
               </Link>
 
               <div className="pt-[20px] lg:pt-[24px]">
@@ -126,7 +127,7 @@ function WebApp({
               </div>
               <div className=" pt-[16px]  lg:pt-0 lg:pl-[57px]">
                 <Link to={`/work/${title2?.toLowerCase()}`}>
-                  {renderPreview(idB, leftImg2, centerImg2, rightImg2,niche2)}
+                  {renderPreview(idB, leftImg2, centerImg2, rightImg2,niche2 , rotate2)}
                 </Link>
 
                 <div className="pt-[20px] lg:pt-[24px]">
