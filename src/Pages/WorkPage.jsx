@@ -24,7 +24,7 @@ function WorkPage() {
 
   const projects = [
   { id: 1, title: "TryFum", leftImg: first, centerImg: second, rightImg: third,
-    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health & Wellness"] },
+    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health & Wellness","Apparel"] },
   { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro,
     tags: ["Shopify Store Development", "Custom Shopify App", "Shopify Theme Customization"], niches: ["Sports"] },
   { id: 3, title: "WoahBros",     leftImg: woa1, centerImg: woa2, rightImg: woa3,

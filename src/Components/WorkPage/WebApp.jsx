@@ -48,16 +48,16 @@ function WebApp({
     new6,
   ];
 
-  const renderPreview = (id, l, c, r) => {
+  const renderPreview = (id, l, c, r,n) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
       return (
-        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={niche} />
+        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={n} />
       );
     }
     if (CARDSECTION_SINGLE_IDS.includes(id)) {
-      return <CardSection frontimg={c} niche={niche} />;
+      return <CardSection frontimg={c} niche={n} />;
     }
-    return <ViewDetail leftImg={l} centerImg={c} rightImg={r} niche={niche} />;
+    return <ViewDetail leftImg={l} centerImg={c} rightImg={r} niche={n} />;
   };
 
   return (
