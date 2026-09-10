@@ -24,7 +24,7 @@ function WorkPage() {
 
   const projects = [
   { id: 1, title: "TryFum", leftImg: first, centerImg: second, rightImg: third,
-    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health", "Wellness"] },
+    tags: ["Shopify Store development ", "Conversion optimization","Custom store development", "Shopify theme Customization", "Subscription optimization"], niches: ["Health & Wellness"] },
   { id: 2, title: "RetroSpec",    leftImg: restro1, centerImg: restro,
     tags: ["Shopify Store Development", "Custom Shopify App", "Shopify Theme Customization"], niches: ["Sports"] },
   { id: 3, title: "WoahBros",     leftImg: woa1, centerImg: woa2, rightImg: woa3,
@@ -32,9 +32,9 @@ function WorkPage() {
   { id: 4, title: "Doinkrollerz", leftImg: dan2, centerImg: dan1,
     tags: ["Shopify Store Optimization","Conversion Optimization","Speed Customization"], niches: ["Lifestyle"] },
   { id: 5, title: "Apmzee",       leftImg: apm1, centerImg: apm2, rightImg: apm3,
-    tags: ["Shopify Store Development","Shopify Theme Customization","Conversion Optimization","Speed Optimization"], niches: ["Health","Wellness"] },
+    tags: ["Shopify Store Development","Shopify Theme Customization","Conversion Optimization","Speed Optimization"], niches: ["Health & Wellness"] },
   { id: 6, title: "Lonepouches",  leftImg: lone2, centerImg: lone1,
-    tags: ["Custom Shopify Development", "Subscription Optimization"], niches: ["Health","Wellness"] },
+    tags: ["Custom Shopify Development", "Subscription Optimization"], niches: ["Health & Wellness"] },
 ]
 
  const [selectedServices, setSelectedServices] = useState([])
