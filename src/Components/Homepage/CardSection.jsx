@@ -1,14 +1,14 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from "react";
 import circleImage from "../../assets/Images/circlesvg.svg";
 
 function CardSection({
   frontimg,
   backimg,
-  frontRotate = 8,      
-  backRotate = -6,      
-  frontHoverRotate,    
-  backHoverRotate,    
-  niche   
+  frontRotate = 8,
+  backRotate = -6,
+  frontHoverRotate,
+  backHoverRotate,
+  niche,
 }) {
   const containerRef = useRef(null);
 
@@ -124,38 +124,43 @@ function CardSection({
   };
 
   return (
-    <section className='container'>
+    <section className="container">
       <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleLeave}
-        className='w-full relative inline-block rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer'
+        className="w-full relative inline-block rounded-[18px] lg:rounded-[28px] p-[1px] lg:p-[1.1px] bg-gradient-to-r from-[#3A1C71] via-[#DF7A78] to-[#DF7A78] transition-all duration-300 ease-out group cursor-pointer"
         style={{
           transform: hovered ? "scale(1.01)" : "scale(1)",
         }}
       >
-        <div className='rounded-[17px] lg:rounded-[26px] bg-[#181818] px-[2px] py-[2px] lg:px-1 lg:py-1'>
-          <div className='relative overflow-visible bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]'>
-
+        <div className="rounded-[17px] lg:rounded-[26px] bg-[#181818] px-[2px] py-[2px] lg:px-1 lg:py-1">
+          <div className="relative overflow-visible bg-gradient-to-b from-[#5F219E] to-[#C6A3EA] rounded-[17px] lg:rounded-[26px]">
             {/* text */}
-            <div className='inner_work  pl-[20px] xl:pl-[36px] xl:pt-[25px]'>
+            <div className="inner_work  pl-[20px] xl:pl-[36px] xl:pt-[25px]">
               {/* <p ... /> */}
-              {niche && (
-      <span className="bg-white text-black text-[11px] sm:text-[12px] lg:text-[13px] font-semibold px-[12px] py-[5px] rounded-full">
-        {niche}
-      </span>
-    )}
+              {niche?.length > 0 && (
+                <div className="flex flex-wrap gap-[6px]">
+                  {niche.map((n, i) => (
+                    <span
+                      key={i}
+                      className="bg-white text-black text-[11px] sm:text-[12px] lg:text-[13px] font-semibold px-[12px] py-[5px] rounded-full"
+                    >
+                      {n}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* main div for overlapping images */}
-            <div className='inner_main relative overflow-hidden  h-[170px] sm:h-[380px] lg:px-[70px]'>
-
+            <div className="inner_main relative overflow-hidden  h-[170px] sm:h-[380px] lg:px-[70px]">
               {isSingle ? (
                 // Single image mode
                 <img
                   src={frontimg}
-                  alt='preview'
-                  className='absolute left-1/2 top-10 sm:top-16 lg:top-20 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-300 ease-out'
+                  alt="preview"
+                  className="absolute left-1/2 top-10 sm:top-16 lg:top-20 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-300 ease-out"
                   style={{
                     transform: hovered
                       ? "translateX(-50%) scale(1.02)"
@@ -167,8 +172,8 @@ function CardSection({
                   {/* back image */}
                   <img
                     src={backimg}
-                    alt='dashboard preview'
-                    className='absolute left-1/2 top-7 sm:top-14 lg:top-10 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] transition-transform duration-300 ease-out'
+                    alt="dashboard preview"
+                    className="absolute left-1/2 top-7 sm:top-14 lg:top-10 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] transition-transform duration-300 ease-out"
                     style={{
                       transform: hovered
                         ? `translateX(-50%) rotate(${resolvedBackHover}deg) scale(1.02)`
@@ -178,8 +183,8 @@ function CardSection({
                   {/* front image */}
                   <img
                     src={frontimg}
-                    alt='merchant page preview'
-                    className='absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-transform duration-300 ease-out'
+                    alt="merchant page preview"
+                    className="absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-transform duration-300 ease-out"
                     style={{
                       transform: hovered
                         ? `translateX(-50%) rotate(${resolvedFrontHover}deg) scale(1.02)`
@@ -211,7 +216,7 @@ function CardSection({
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default CardSection
+export default CardSection;
