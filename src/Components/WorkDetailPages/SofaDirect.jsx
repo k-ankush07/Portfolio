@@ -1,57 +1,79 @@
 import React from 'react'
 import WorkDetail from '../WorkPage/WorkDetail';
+import sofafirst from "../../assets/Images/sofafirst.svg"
+import sofacontri from "../../assets/Images/sofacontri.svg"
+import sofachallenge from "../../assets/Images/sofachallenge.svg"
+import sofaimplii from "../../assets/Images/sofaimplii.svg"
+import journeysofa1 from "../../assets/Images/journeysofa (1).svg"
+import journeysofa2 from "../../assets/Images/journeysofa (2).svg"
+import sofakey from "../../assets/Images/sofakey.svg"
+import sofaout from "../../assets/Images/sofaout.svg"
+import sofachallenge2 from "../../assets/Images/sofachallenge2.svg"
 
 function SofaDirect() {
     const project = {
         id: 1,
-        slug: "SofaDirect",
+        slug: "sofadirect",
         title: "SofaDirect",
-        // imageSofaDirect: image100,
-        headingSofaDirect: "SofaDirect — The Good Habit",
-        descSofaDirect: "SofaDirect is a DTC outdoor and active-lifestyle brand that sells products designed for everyday movement, recreation, fitness, and outdoor adventures. Its product range covers bikes and e-bikes, skateboards, scooters, paddle boards, snow gear, camping equipment, fitness products, and outdoor accessories, giving customers products for different activities throughout the year. The brand focuses on making outdoor products accessible, practical, and affordable while maintaining a strong emphasis on product design and everyday usability.",
-        role: " Shopify App Developer",
-        visit: "https://SofaDirect.com/",
-        ourSofaDirect: "Our Contribution",
-        // contrubutionimageSofaDirect: restroour,
+        imageSofaDirect: sofafirst,
+        headingSofaDirect: "Sofa Direct",
+        descSofaDirect: "Sofa Direct is a UK-based e-commerce store specializing in sofas, corner sofas, recliners, sofa beds, armchairs, and other furniture products. The website features a large product catalogue with multiple purchasing options and product discovery paths based on type, size, colour, material, brand, and price.",
+        role: "Shopify Developer and Designer",
+        visit: "https://sofa-direct.co.uk/",
+        ourSofaDirect: "My Contribution",
+        contrubutionimageSofaDirect: sofacontri,
         pointsSofaDirect: [
-          "Custom Shopify App",
-          "Custom Functionality",
-          "Admin & Storefront Integration",
-          "Shopify API Integrations",
+          "Ecommerce Development",
+          "Theme Customization",
+          "UI/UX Design",
+          "UX Improvement",
+          "Performance Optimization",
         ],
         btnnameSofaDirect: "View the final experience",
-        btnLinkSofaDirect: "https://SofaDirect.com/",
-        // challengeSofaDirect: challengeimg,
-        ChallheadingSofaDirect: "Challenges",
+        btnLinkSofaDirect: "https://sofa-direct.co.uk/",
+        challengeSofaDirect: sofachallenge,
+        mobilechallenegImageHoperoza: sofachallenge2,
+        // ChallheadingSofaDirect: "Challenges",
         ChalldescSofaDirect:
-          "As SofaDirect expanded its product catalog across bikes, skateboards, accessories, and different product variants, customers needed a simpler way to explore and compare their options. The client needed an interface that organized product choices, variants, and key details while reducing the need to manage similar content across multiple product templates.",
-        // implementimageSofaDirect: processimg,
+          "When taking on the project, the primary challenge was that the storefront lacked visual consistency and clean navigation across its main shopping pages, making it difficult for customers to naturally browse and evaluate sofa specifications on both desktop and mobile. Additionally, the default Shopify setup was too rigid for the brand’s specific needs, requiring custom Liquid components and tailor-made sections rather than generic templates. At the same time, the site was bogged down by leftover scripts and unoptimized media, which meant I had to tackle a thorough front-end cleanup to strip out unnecessary bloat and bring overall load speeds up to standard. ",
+        implementimageSofaDirect: sofaimplii,
         impheadingSofaDirect: "Implementation Process",
         impheadescSofaDirect:
-          "To enhance the customer experience, I developed a Custom Shopify App. I first structured the product data and mapped the different product types, variants, sizes, and purchasing options. Then, I connected the app with Shopify's product data so the interface could display and manage the required options dynamically. Also, created reusable components for product information and options, which reduced repeated development across different product templates",
-        // imgsectionSofaDirect: [fresh, first],
-        keyheadingSofaDirect: "Key Areas of Improvements",
-        // secondsnglSofaDirect: image1001,
+          "I kicked off the project by auditing the storefront’s key templates and performance bottlenecks to identify where users were dropping off. From there, I wireframed and designed cleaner, mobile-friendly layouts in Figma to bring visual consistency to the browsing experience. During development, I moved beyond the default theme constraints by building custom Liquid components, streamlining the product detail views, and styling responsive elements to make navigation feel seamless. Finally, I went through a thorough code and asset cleanup—removing redundant scripts, optimizing image delivery, and minifying front-end files to ensure the store loaded fast and ran smoothly across all devices.",
+        imgsectionSofaDirect: [journeysofa2, journeysofa1],
+        keyheadingSofaDirect: "Key Areas of Improvement",
+        secondsnglSofaDirect: sofakey,
         keyPointsSofaDirect: [
           {
-            heading: "Simplified Product Selection:",
-            desc: " I made it easier for customers to explore different products, sizes, and variants without navigating multiple pages.",
+            heading: "Integrated Delivery & Service Upsell Module:",
+            desc: " Built a unified delivery and installation module directly into the product template, pairing an instant postcode-based lead time checker with selectable service add-ons—including Premier Assembly & Packaging Recycling and Old Sofa Removal—to eliminate fulfillment doubts upfront while driving higher average order value (AOV) before checkout.",
           },
           {
-            heading: "Shopify API Integration:",
-            desc: " I connected the custom app with Shopify APIs to retrieve and manage product, variant, inventory, and pricing data dynamically.",
+            heading: "Structured Spec Tabs & Trust Architecture:",
+            desc: " Replaced dense product copy with expandable tap-to-read specification accordions, dimensions breakdowns, and visual trust banners (warranty, delivery terms, and phone order options).",
           },
           {
-            heading: "Real-Time Product Data:",
-            desc: "I structured API-based data handling so the interface could display updated product and variant information.",
+            heading: "Front-End Asset & Speed Optimization:",
+            desc: " Streamlined front-end assets by minifying CSS/JavaScript, optimizing image delivery for high-res furniture swatches, and removing redundant render-blocking scripts to ensure smooth mobile performance.",
           },
           {
-            heading: "Improved Purchase Flow:",
-            desc: "I connected product selection directly with the Shopify storefront flow to reduce unnecessary navigation and friction.",
+            heading: "Mobile-First UX & Layout Architecture:",
+            desc: "Redesigned key shopping templates with a mobile-first mindset, restructuring product card layouts, category filters, and product detail hierarchy. By introducing tap-friendly touchpoints, sticky purchase flows, and intuitive visual cues, I eliminated navigation friction and made evaluating large furniture effortless on smaller screens.",
           },
         ],
+         outcomeimageSofaDirect: sofaout,
+            outcomeheadingSofaDirect: "Outcomes",
+            outcomepointsSofaDirect: [
+              "Improved product discovery across a large catalogue",
+              "Clearer category and collection navigation",
+              "Better presentation of products and promotional content",
+              "Improved responsive experience",
+              "More consistent UI across key e-commerce pages",
+              "Better balance between visual content and performance",
+              "A more polished and conversion-focused storefront",
+            ],
         learnheadingSofaDirect: "What I Learned",
-        learndescSofaDirect: "This project taught me that building a custom Shopify app is not just about connecting APIs and developing features. I learned how important it is to understand the client product structure first and then develop the app around how customers actually shop. I also gained practical experience in handling complex Shopify data, managing different product variants dynamically, and building reusable components that make future updates easier. ",
+        learndescSofaDirect: "This project taught me how to balance a large product catalog with custom Shopify development, mobile UX, and performance. I also learned how thoughtful product layouts and simpler navigation can make it easier for customers to explore and compare furniture across different devices.",
       };
   return (
     <section className="container">

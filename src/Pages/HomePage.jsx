@@ -1,43 +1,42 @@
-import React from 'react'
-import Modern_Scalable from '../Components/Homepage/Modern_Scalable'
-import Web_Project from '../Components/Homepage/Web_Project'
-import Recent__Work from '../Components/Homepage/Recent__Work'
-import ViewAll from '../Components/Homepage/ViewAll'
-import Tool from '../Components/Homepage/Tool'
-import FullStack from '../Components/Homepage/FullStack'
-import Developers from '../Components/Homepage/Developers'
-import Explore from '../Components/Homepage/Explore'
-import ConceptToCreation from '../Components/Homepage/ConceptToCreation'
-import SkillAndMordenPage from './SkillAndMordenPage'
-import Journey from '../Components/AboutPage/Journey'
-import Engineer from '../Components/AboutPage/Engineer'
-import WhatYouGet from '../Components/Homepage/WhatYouGet'
-import VideoSection from '../Components/Homepage/VideoSection'
-import CardSection from '../Components/Homepage/CardSection'
+import React from "react";
+import Modern_Scalable from "../Components/Homepage/Modern_Scalable";
+import Web_Project from "../Components/Homepage/Web_Project";
+import Recent__Work from "../Components/Homepage/Recent__Work";
+import ViewAll from "../Components/Homepage/ViewAll";
+import Tool from "../Components/Homepage/Tool";
+import FullStack from "../Components/Homepage/FullStack";
+import Developers from "../Components/Homepage/Developers";
+import Explore from "../Components/Homepage/Explore";
+import ConceptToCreation from "../Components/Homepage/ConceptToCreation";
+import SkillAndMordenPage from "./SkillAndMordenPage";
+import Journey from "../Components/AboutPage/Journey";
+import Engineer from "../Components/AboutPage/Engineer";
+import WhatYouGet from "../Components/Homepage/WhatYouGet";
+import VideoSection from "../Components/Homepage/VideoSection";
+import CardSection from "../Components/Homepage/CardSection";
 
 function HomePage() {
   return (
-   <>
-   <div className='lato-regular '>
-    
-   <Modern_Scalable />  
-    <SkillAndMordenPage />
-    <div className="container flex flex-col pt-[49px]   lg:flex-row gap-[49px]   lg:gap-[7px] ">
-      <VideoSection />
-      <WhatYouGet />
-    </div>
-    {/* <CardSection /> */}
-{/* <Web_Project /> */}
+    <>
+      <div className="lato-regular ">
+        <Modern_Scalable />
+        <SkillAndMordenPage />
+        <div className="container flex flex-col pt-[49px]   lg:flex-row gap-[49px]   lg:gap-[7px] ">
+          <VideoSection />
+          <WhatYouGet />
+        </div>
+        {/* <CardSection /> */}
+        {/* <Web_Project /> */}
 
-<Recent__Work />
-<ViewAll />
-<Tool />
-<FullStack /> 
-<Developers   />
-<Explore />
-</div>
-   </>
-  )
+        <Recent__Work />
+        <ViewAll />
+        <Tool />
+        <FullStack />
+        <Developers />
+        <Explore />
+      </div>
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;

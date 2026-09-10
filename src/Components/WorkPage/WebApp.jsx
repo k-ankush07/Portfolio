@@ -33,6 +33,7 @@ function WebApp({
   tags2,
   niche, niche2,
   rotate, rotate2,
+  slug,slug2
 }) {
   const logos = [
     new2,
@@ -82,7 +83,7 @@ function WebApp({
             </div>
 
             <div className=" pt-[16px] lg:pt-0 lg:pr-[57px]  ">
-              <Link to={`/work/${title?.toLowerCase()}`}>
+              <Link to={`/work/${slug || title?.toLowerCase()}`}>
                 {renderPreview(idA, leftImg, centerImg, rightImg,niche , rotate)}
               </Link>
 
@@ -126,7 +127,7 @@ function WebApp({
                 <img src={smallicon} alt="icon" />
               </div>
               <div className=" pt-[16px]  lg:pt-0 lg:pl-[57px]">
-                <Link to={`/work/${title2?.toLowerCase()}`}>
+                <Link to={`/work/${slug2 ||title2?.toLowerCase()}`}>
                   {renderPreview(idB, leftImg2, centerImg2, rightImg2,niche2 , rotate2)}
                 </Link>
 

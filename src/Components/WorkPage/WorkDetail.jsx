@@ -83,6 +83,14 @@ import ImageSectionHappyStuf from "../WorkDetailPages/HappyStuf/ImageSectionHapp
 import KeyAeaslionHappyStuf from "../WorkDetailPages/HappyStuf/KeyAeaslionHappyStuf";
 import OutcomesHappyStuf from "../WorkDetailPages/HappyStuf/OutcomesHappyStuf";
 import WhatILearnedHappyStuf from "../WorkDetailPages/HappyStuf/WhatILearnedHappyStuf";
+import FirstSectionSofaDirect from "../WorkDetailPages/SofaDirect/FirstSectionSofaDirect";
+import OurContributionSofaDirect from "../WorkDetailPages/SofaDirect/OurContributionSofaDirect";
+import ChallengeSofaDirect from "../WorkDetailPages/SofaDirect/ChallengeSofaDirect";
+import ImplementationProcessSofaDirect from "../WorkDetailPages/SofaDirect/ImplementationProcessSofaDirect";
+import ImageSectionSofaDirect from "../WorkDetailPages/SofaDirect/ImageSectionSofaDirect";
+import KeyAeasSofaDirect from "../WorkDetailPages/SofaDirect/KeyAeasSofaDirect";
+import OutcomesSofaDirect from "../WorkDetailPages/SofaDirect/OutcomesSofaDirect";
+import WhatILearnedSofaDirect from "../WorkDetailPages/SofaDirect/WhatILearnedSofaDirect";
 
 function WorkDetail({ project }) {
   const logos = [ 
@@ -408,6 +416,16 @@ function WorkDetail({ project }) {
         <KeyAeaslionHappyStuf project={project}  />
         <OutcomesHappyStuf project={project}  />
         <WhatILearnedHappyStuf project={project}  />
+
+        {/* 10th SofaDirect Page */}
+        <FirstSectionSofaDirect  project={project}  />
+        <OurContributionSofaDirect  project={project}  />
+        <ChallengeSofaDirect  project={project}  />
+        <ImplementationProcessSofaDirect  project={project}  />
+        <ImageSectionSofaDirect  project={project}  />
+        <KeyAeasSofaDirect  project={project}  />
+        <OutcomesSofaDirect  project={project}  />
+        <WhatILearnedSofaDirect  project={project}  />
         
         
       </div>

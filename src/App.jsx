@@ -23,6 +23,7 @@ import Lonepouches from "./Components/WorkDetailPages/Lonepouches.jsx";
 import HoperozaPage from "./Components/WorkDetailPages/HoperozaPage.jsx";
 import VitteloPage from "./Components/WorkDetailPages/VitteloPage.jsx";
 import HappyStufPage from "./Components/WorkDetailPages/HappyStufPage.jsx";
+import SofaDirect from "./Components/WorkDetailPages/SofaDirect.jsx";
 
 
 
@@ -68,6 +69,7 @@ function App() {
         <Route path="/work/hoperoza" element={<HoperozaPage/>} />
         <Route path="/work/vittelo" element={<VitteloPage />} />
         <Route path="/work/happystuf" element={<HappyStufPage />} />
+        <Route path="/work/sofadirect" element={<SofaDirect />} />
 {/* 
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/bucket-list" element={<BucketList />} />
