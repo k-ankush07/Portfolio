@@ -130,14 +130,11 @@ export const ServicesArray = [
 ]
 
 export const ArtArray = [
-  { id: 1, topic: "Health" },
-  { id: 2, topic: "Wellness" },
-  { id: 3, topic: "Sports" },
-  { id: 4, topic: "Apparel" },
-  { id: 5, topic: "Food & Beverages" },
-  { id: 6, topic: "Home & Furniture" },
-  { id: 7, topic: "Jewelry" },
-  { id: 8, topic: "Supplements" },
+  { id: 1, topic: "Apparel " },
+  { id: 2, topic: "Fashion & Accessories" },
+  { id: 3, topic: "Health & Wellness" },
+  { id: 4, topic: "Lifestyle" },
+  { id: 5, topic: "Sports" },
 ]
 
 function ServicesSection({
