@@ -86,12 +86,16 @@ const skillItem = {
 
 function FullStack() {
     const skills = [
+        "Web Development",
+        "CRO",
+        "A/B Testing",
+        "AI Automation",
+        "Performance Optimization",
+        "Speed Optimization",
+        "SEO",
         "Brand Design",
-        "UI Design",
-        "Figma",
-        "Adobe After Effects",
-        "Sketch",
-        "Pen & Paper",
+        "UI/UX",
+        "Analytics & Tracking",
     ];
     const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
     const socialIcons = [Overlay11, Overlay10, Overlay8, Overlay9];
@@ -103,8 +107,8 @@ function FullStack() {
                     <img src={background1} alt=' ' className='absolute bottom-0 -left-10 lg:right-70 opacity-20 overflow-hidden' />
                     <img src={background2} alt=' ' className='absolute bottom-0 right-0 opacity-25 overflow-hidden' />
                     {/* first card section */}
-                    <div className='md:flex  xl:pr-[67px]  xl:w-[30%] '>
-                        <div className='border pt-[30px] lg:pt-[40px] pb-[30px] lg:pb-[40px]  2xl:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
+                    <div className='md:flex  xl:pr-[67px]  xl:w-[30%]  '>
+                        <div className='border pt-[30px] lg:pt-[40px] pb-[30px] z-50 lg:pb-[40px]  2xl:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] '>
                             <div className=' flex justify-center '>
                                 <img src={cardCircle} alt='card circle' />
                             </div>
@@ -113,22 +117,22 @@ function FullStack() {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true, amount: 0.3 }}
-                                className='text-center mt-4'>
+                                className='text-center mt-4 z-50'>
                                 <motion.h1
                                     variants={textItem}
-                                    className='text-[21px]  leading-[42px] sm:text-[24px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Jenny Wilson</motion.h1>
+                                    className='text-[21px]  leading-[42px] sm:text-[24px] lg:leading-[48px] font-bold text-[#FFFFFF]'>Ankush Kumar</motion.h1>
                                 <motion.p
                                     variants={textItem}
-                                    className=' text-[12px] sm:text-[13px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Product Designer @ Google</motion.p>
+                                    className=' text-[12px] sm:text-[13px] lg:text-[14px] leading-[21px] lg:leading-[24px] text-[#BDBDBD]'>Shopify Developer & CRO Specialist</motion.p>
                             </motion.div>
-                            <div className='flex justify-center'>
+                            {/* <div className='flex justify-center'>
                                 <div className="flex justify-center">
                                     <div className="relative inline-block mt-[11px] rounded-md p-[1.5px] overflow-hidden">
 
-                                        {/* SLOW ROTATING BORDER */}
+                                       
                                         <span className="absolute -inset-[250%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(#3A1C71,#DF7A78,#DF7A78,#3A1C71)]"></span>
 
-                                        {/* CONTENT */}
+                                       
                                         <div className="relative z-10 flex items-center gap-1 rounded-md bg-[#181818] px-2 py-1.5 text-[10.59px] sm:text-[12px] leading-[15px] lg:leading-[18px] xl:px-2 text-white">
 
                                             <span className="text-[#FFAF7B] px-1 py-1">
@@ -142,7 +146,7 @@ function FullStack() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <motion.div
                                 className="flex justify-center gap-[8px] pt-[17px]"
                                 variants={container}
@@ -173,7 +177,7 @@ function FullStack() {
                     </div>
 
 
-                    <div className='md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%]'>
+                    <div className='md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%] z-50   '>
                         {/* second section */}
                         <div className=' sm:flex  justify-between md:border-r-[1px]  border-[#FFFFFF]/10 pr-[67px] pt-[32px] xl:pt-0 '>
                             <div className='w-[100%]'>
@@ -194,7 +198,13 @@ function FullStack() {
                                         variants={textItem}
                                         className='text-[#BDBDBD] text-[12px] lg:text-[14px]'
                                     >
-                                        Osinski, Kohler and Bashirian 74-102565
+                                        8+ Years of Experience
+                                    </motion.p>
+                                    <motion.p
+                                        variants={textItem}
+                                        className='text-[#BDBDBD] text-[12px] lg:text-[14px]'
+                                    >
+                                       Shopify Development, CRO & E-commerce  
                                     </motion.p>
 
 
@@ -205,7 +215,7 @@ function FullStack() {
                                         viewport={{ once: true, amount: 0.3 }}>
                                         <motion.h1
                                             variants={textItem} className='text-[#FFFFFF] text-[18px]  lg:text-[20px] font-bold'>Skills</motion.h1>
-                                        <motion.p variants={textItem} className='text-[#BDBDBD] text-[12px] lg:text-[14px]'>Osinski, Kohler and Bashirian 74-102565</motion.p>
+                                        {/* <motion.p variants={textItem} className='text-[#BDBDBD] text-[12px] lg:text-[14px]'>Osinski, Kohler and Bashirian 74-102565</motion.p> */}
                                     </motion.div>
                                 </motion.div>
                                 <motion.div
