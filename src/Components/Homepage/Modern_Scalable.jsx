@@ -27,10 +27,10 @@ function Modern_Scalable() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 px-[20px] md:px-0 xl:pb-[173px] ">
+            <div className="relative z-10 px-[20px] md:px-0 xl:pb-[173px] pointer-events-none not-[]: ">
               {/* Badge */}
 
-              <div className="inline-block group relative  rounded-[7px] cursor-pointer z-50">
+              <div className="inline-block group relative  rounded-[7px] cursor-pointer z-50 pointer-events-auto">
                 {/* Gradient border (hidden by default) */}
                 <div className="absolute inset-0  rounded-[8px] h-[100%] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 opacity-0 group-hover:opacity-100 transition duration-600 ">
                   <div className="w-full h-full rounded-[8px] bg-[#0b0f19]" />

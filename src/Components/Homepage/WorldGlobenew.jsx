@@ -225,10 +225,11 @@ const WorldGlobenew = () => {
     controls.autoRotateSpeed = 0.8;
 
     controls.enableDamping = true;
-    controls.dampingFactor = 0.08;
+    controls.dampingFactor = 0.08;  
 
     controls.enableZoom = false;
     controls.enablePan = false;
+    
 
     globeRef.current.pointOfView({
       lat: isMobile ? 10 : 15,
