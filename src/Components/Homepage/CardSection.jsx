@@ -161,7 +161,7 @@ function CardSection({
                 <img
                   src={frontimg}
                   alt="preview"
-                  className="absolute left-1/2 top-10 sm:top-16 lg:top-15 h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-500 ease-in-out"
+                  className="absolute left-1/2 top-10 sm:top-16 lg:top-15  h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-500 ease-in-out"
                   style={{
                     transformOrigin: "bottom center",
                     transform: hovered
