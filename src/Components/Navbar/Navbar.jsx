@@ -466,7 +466,7 @@ export default function Navbar() {
             <motion.div
               initial={{ width: "150px" }}
               animate={{
-                width: showGreeting ? "150px" : open ? "700px" : "376px",
+                width: showGreeting ? "160px" : open ? "700px" : "376px",
               }}
               transition={{ duration: 0.35 }}
               className="bg-[#191919] absolute left-1/2 -top-[18px] -translate-x-1/2 backdrop-blur-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,0.7)] overflow-hidden rounded-[22px] "
