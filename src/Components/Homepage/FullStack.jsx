@@ -105,14 +105,13 @@ function FullStack() {
     "UI/UX",
     "Analytics & Tracking",
   ];
-  // const logos = [Overlay12, Overlay13, Overlay15];
-  // const socialIcons = [ Overlay10, Overlay8, Overlay9];
-  const logos = [
-    { img: Overlay12, link: "https://your-link-4.com" },
-    { img: Overlay13, link: "https://your-link-5.com" },
-    { img: Overlay14, link: "https://your-link-6.com" },
-    { img: Overlay15, link: "https://your-link-7.com" },
-  ];
+
+ const logos = [
+    { img: Overlay12, link: credly },
+    { img: Overlay13, link: linkedin },
+    // { img: Overlay14, link: "https://your-link-6.com" },
+    { img: Overlay15, link: github },
+];
   const socialIcons = [
     { img: Overlay10, link: emailLink },
     { img: Overlay8, link: calendlyLink },

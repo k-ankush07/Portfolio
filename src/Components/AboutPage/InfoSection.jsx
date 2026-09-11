@@ -6,6 +6,10 @@ import Overlay13 from "../../assets/Images/Overlay (43).svg";
 import Overlay14 from "../../assets/Images/Overlay (44).svg";
 import Overlay15 from "../../assets/Images/Overlay (45).svg";
 function InfoSection() {
+
+    const github = import.meta.env.VITE_GITHUB;
+  const linkedin = import.meta.env.VITE_LINKEDIN;
+  const credly = import.meta.env.VITE_CREDLY;
      const container = {
     hidden: {},
     show: {
@@ -29,7 +33,12 @@ function InfoSection() {
     },
   };
 
-  const logos = [Overlay12, Overlay13, Overlay14, Overlay15];
+   const logos = [
+      { img: Overlay12, link: credly },
+      { img: Overlay13, link: linkedin },
+      // { img: Overlay14, link: "https://your-link-6.com" },
+      { img: Overlay15, link: github },
+  ];
   return (
     <section className="container">
       <div className="  flex flex-col-reverse lg:flex-row lg:justify-between gap-[23px] lg:gap-[92px]  pt-[60px]">
@@ -61,7 +70,22 @@ function InfoSection() {
               what's next.
             </p> */}
             <motion.div className="flex gap-[11px] pt-[17px]  lg:pt-[30px]" variants={container}>
-                  {logos.map((img, i) => (
+  {logos.map(({ img, link }, i) => (
+    <motion.a
+      key={i}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      variants={item}
+      whileHover={{ scale: 1.1 }}
+      className="cursor-pointer"
+    >
+      <img src={img} alt="logo" />
+    </motion.a>
+  ))}
+</motion.div>
+            {/* <motion.div className="flex gap-[11px] pt-[17px]  lg:pt-[30px]" variants={container}>
+                  {logos.map((img, link,i) => (
                     <motion.img
                       key={i}
                       src={img}
@@ -71,7 +95,7 @@ function InfoSection() {
                       alt="logo"
                     />
                   ))}
-                </motion.div>
+                </motion.div> */}
           </div>
         </div>
         <div className="flex lg:w-[50%] px-[27px] ">
