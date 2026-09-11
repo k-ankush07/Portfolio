@@ -31,6 +31,7 @@ import webhook from "../../assets/Images/syncform (11).svg"
 import mongodb from "../../assets/Images/syncform (12).svg"
 import cicd from "../../assets/Images/syncform (13).svg"
 import git from "../../assets/Images/cart.svg"
+import bootstrap from "../../assets/Images/boot.svg"
 function Doinkrollerz() {
   const project = {
     id: 1,

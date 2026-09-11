@@ -27,6 +27,9 @@ import vitoole2 from "../assets/Images/vitoole (2).svg";
 import vitoole3 from "../assets/Images/vitoole (3).svg";
 import happyouter from "../assets/Images/happyouter.svg";
 import sofaouter from "../assets/Images/sofaouter.svg";
+import ape1 from "../assets/Images/ape (1).svg";
+import ape2 from "../assets/Images/ape (2).svg";
+import ape3 from "../assets/Images/ape (3).svg";
 //first 
 import liquid from "../assets/Images/tryfumimages (1).svg"
 import html from "../assets/Images/tryfumimages (2).svg"
@@ -116,9 +119,9 @@ function WorkPage() {
       title: "Apmzee",
       logo:[{html,css,sass,scscss,jquery,javascript,graphql}],
       slug: "apmzee",
-      leftImg: apm1,
-      centerImg: apm2,
-      rightImg: apm3,
+      leftImg: ape3,
+      centerImg: ape1,
+      rightImg: ape2,
       tags: [
         "Shopify Store Development",
         "Shopify Theme Customization",
