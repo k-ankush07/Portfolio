@@ -41,7 +41,7 @@ function ToolWeTrust() {
             modules={[Autoplay]}
             slidesPerView={4}
             //  slidesPerView={2}
-            spaceBetween={20}
+            spaceBetween={0}
             centeredSlides={true}
             loop={true}
             breakpoints={{

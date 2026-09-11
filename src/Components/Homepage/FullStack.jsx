@@ -179,7 +179,7 @@ function FullStack() {
 
                     <div className='md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%] z-50   '>
                         {/* second section */}
-                        <div className=' sm:flex  justify-between md:border-r-[1px]  border-[#FFFFFF]/10 pr-[67px] pt-[32px] xl:pt-0 '>
+                        <div className=' sm:flex  justify-between md:border-r-[1px] w-[287px] lg:w-auto  border-[#FFFFFF]/10 xl:pr-[67px] pt-[32px] xl:pt-0 '>
                             <div className='w-[100%]'>
                                 <motion.div
                                     variants={textContainer}

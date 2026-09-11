@@ -29,6 +29,28 @@ import new72 from "../../assets/Images/new7 (3).svg";
 // import ten from "../../assets/Images/10th.svg";
 // import eleven from "../../assets/Images/11th.svg";
 import twelve from "../../assets/Images/12th.svg";
+import Bun from "../../assets/Images/rsection (1).svg";
+import Docker from "../../assets/Images/rsection (2).svg";
+import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+import restfull from "../../assets/Images/syncform (10).svg"
+import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
+import { Link } from "react-router-dom";
 function ViewAll() {
   return (
     <>
@@ -36,6 +58,8 @@ function ViewAll() {
         <div className="flex flex-col px-[20px] md:px-0 ">
           <RecruiterOne
             index={0}
+            link="/work/tryfum"
+            techStack={[liquid, html, css,javascript,jquery,]}
             headingText="TryFum"
             points={[
               "Custom Shopify theme development and section customization tailored to the provided designs.",
@@ -52,6 +76,8 @@ function ViewAll() {
           />
           <RecruiterOne
             index={1}
+            link="/work/syncform"
+            techStack={[html ,css, javascript,jquery,react,typescript,nodejs,tailwind,express,scscss,adminapi,storeapi,graphql,restfull,webhook,mongodb,cicd]}
             headingText="Syncform"
             desc="A Shopify form builder built to help merchants create and manage custom forms without complex development. "
             points={[
@@ -68,6 +94,8 @@ function ViewAll() {
           />
           <RecruiterOne
             index={2}
+            link="/work/cartplus"
+            techStack={[react,typescript,tailwind,jquery,nodejs,express,html,css,scscss,adminapi,storeapi,graphql,restfull,webhook,mongodb,git]}
             headingText=" Cart Plus"
             desc="A Shopify cart drawer app built to improve the shopping experience and increase cart conversions. The app focuses on cart customization, upselling, product recommendations, rewards, and a smoother checkout journey."
             points={[
@@ -83,6 +111,8 @@ function ViewAll() {
           />
           <RecruiterOne
             index={3}
+            link="/work/woahbros"
+            techStack={[html,scscss,liquid,jquery,javascript,graphql]}
             headingText="Woahbros"
             desc="A workwear eCommerce store focused on flame-resistant clothing and gear for welders and hardworking professionals"
             points={[
@@ -98,6 +128,8 @@ function ViewAll() {
           />
           <RecruiterOne
             index={4}
+            link="/work/smash"
+            techStack={[html,css,jquery,liquid,scscss,javascript]}
             headingText="Smash"
             desc="A fitness and nutrition eCommerce store selling supplements such as creatine gummies, pre-workout gummies, nitric oxide products, and performance-focused formulas."
             points={[
@@ -113,7 +145,8 @@ function ViewAll() {
         </div>
 
         <div className="text-[#FFFFFF] text-[14px] md:text-[16px] flex justify-center pt-[17px] lg:pt-[12px]">
-          <div className="flex gap-3 justify-center items-center group cursor-pointer">
+          <Link to="/work" >
+          <div className="flex gap-[9px]  xl:gap-[10px] justify-center items-center group cursor-pointer">
             <h1 className="transition-all duration-300 group-hover:bg-[linear-gradient(to_right,#8F74BF_0%,#B57FA5_40%,#D76D77_99%,#FFAF7B_100%)] group-hover:bg-clip-text group-hover:text-transparent ">
               View all Projects
             </h1>
@@ -126,6 +159,7 @@ function ViewAll() {
               // transition={{ duration: 0.3 }}
             />
           </div>
+          </Link>
         </div>
       </div>
     </>

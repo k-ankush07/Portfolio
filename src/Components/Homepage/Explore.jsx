@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function Explore() {
 
-  const trustText = `&& say hello`;
+  const trustText = `& say hello`;
 
   const container = {
     hidden: {},

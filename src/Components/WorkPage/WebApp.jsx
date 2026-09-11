@@ -33,22 +33,24 @@ function WebApp({
   tags2,
   niche, niche2,
   rotate, rotate2,
-  slug,slug2
+  slug,slug2,
+ logos = [],
+  logos2 = [],  
 }) {
-  const logos = [
-    new2,
-    new3,
-    new1,
-    new5,
-    new4,
-    new6,
-    new1,
-    new2,
-    new3,
-    new4,
-    new5,
-    new6,
-  ];
+  // const logos = [
+  //   new2,
+  //   new3,
+  //   new1,
+  //   new5,
+  //   new4,
+  //   new6,
+  //   new1,
+  //   new2,
+  //   new3,
+  //   new4,
+  //   new5,
+  //   new6,
+  // ];
 
   const renderPreview = (id, l, c, r,n,rot) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
@@ -88,14 +90,14 @@ function WebApp({
               </Link>
 
               <div className="pt-[20px] lg:pt-[24px]">
-                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  sm:max-w-[450px] xl:hidden">
+                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  ">
                   {logos.slice(0, 8).map((img, i) => (
-                    <img key={i} src={img} alt="logo" className="" />
+                    <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
                   ))}
                 </div>
                 <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
-                  {logos.slice(0, 13).map((img, i) => (
-                    <img key={i} src={img} alt="logo" className="" />
+                  {logos.map((img, i) => (
+                    <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
                   ))}
                 </div>
                 {tags?.length > 0 && (
@@ -132,16 +134,16 @@ function WebApp({
                 </Link>
 
                 <div className="pt-[20px] lg:pt-[24px]">
-                  <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  sm:max-w-[450px] xl:hidden">
-                    {logos.slice(0, 8).map((img, i) => (
-                      <img key={i} src={img} alt="logo" className="" />
+                  <div className="flex flex-wrap gap-[6px] sm:gap-[11px]">
+                    {logos2.map((img, i) => (
+                      <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
                     ))}
                   </div>
-                  <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
-                    {logos.slice(0, 13).map((img, i) => (
+                  {/* <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
+                    {logos2.slice(0, 13).map((img, i) => (
                       <img key={i} src={img} alt="logo" className="" />
                     ))}
-                  </div>
+                  </div> */}
                   {tags2?.length > 0 && (
                     <div className="flex flex-wrap gap-[8px] pt-[12px]">
                       {tags2.map((tag, i) => (

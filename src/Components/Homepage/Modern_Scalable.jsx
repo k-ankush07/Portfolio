@@ -20,16 +20,16 @@ function Modern_Scalable() {
         <div className="container">
           {/* <div className="  "> */}
 
-          <div className="  lg:pt-[0px]  xl:pb-[133px] relative   flex   justify-center text-center text-[#ffffff] overflow-hidden  ">
+          <div className="  lg:pt-[0px]  relative   flex   justify-center text-center text-[#ffffff] overflow-hidden  ">
             <div className="absolute inset-0   top-[500px] md:top-[550px] lg:top-[600px] flex justify-center items-center opacity-80">
               <WorldGlobenew />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 px-[20px] md:px-0 ">
+            <div className="relative z-10 px-[20px] md:px-0 xl:pb-[173px] ">
               {/* Badge */}
 
-              <div className="inline-block group relative  rounded-[8px] cursor-pointer z-50">
+              <div className="inline-block group relative  rounded-[7px] cursor-pointer z-50">
                 {/* Gradient border (hidden by default) */}
                 <div className="absolute inset-0  rounded-[8px] h-[100%] p-[1.5px] bg-gradient-to-r from-[#DF7A78] via-[#DF7A78] to-purple-500 opacity-0 group-hover:opacity-100 transition duration-600 ">
                   <div className="w-full h-full rounded-[8px] bg-[#0b0f19]" />
@@ -38,22 +38,22 @@ function Modern_Scalable() {
                 {/* Content (always visible) */}
                 {/* <div className="relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-white"> */}
                 <div
-                  className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] sm:text-[12px] text-[#ffffff] transition-all duration-700 ease-out
+                  className={`relative flex items-center gap-2 px-2 py-1.5 text-[10.59px] leading-[15px]  sm:text-[12px] text-[#ffffff] transition-all duration-700 ease-out
           ${show ? "opacity-100 -translate-y-0" : "opacity-0 -translate-y-10"}`}
                 >
-                  <div className="bg-[#df7a78] rounded-md px-1 py-1 flex items-center gap-1 text-[12px]">
-                    <img src={emoji} alt="emoji" />
-                    <span>Upcoming</span>
+                  <div className="bg-[#df7a78] rounded-[5px] px-[5px]  flex items-center gap-1 font-bold">
+                    <img src={emoji} alt="emoji" className="py-[4px] " />
+                    <span className="py-[6px]">Upcoming</span>
                   </div>
 
-                  <span className="text-[#c58962] font-bold text-sweep">
+                  <span className="text-[#c58962] font-bold text-sweep py-[6px] ">
                     Nextnode is launching soon!
                   </span>
                 </div>
               </div>
 
               {/* Heading */}
-              <div className="flex flex-col justify-center  mt-[11px]">
+              <div className="flex flex-col justify-center  pt-[11px] lg:pt-[19px]">
                 <h1
                   className={`font_section text-[34px] sm:text-[38px] px] lg:text-[60px] xl:text-[64px] font-bold leading-[42px] lg:leading-[76px] transition-all duration-700 ease-out
                     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -70,13 +70,13 @@ function Modern_Scalable() {
               </div>
 
               {/* Subtext */}
-              <div className="px-5">
+              <div className="">
                 <div className="flex justify-center items-center pt-[15px] md:pt-[21px] ">
                   <p
-                    className={`name-text text-[#ffffff] text-[16px] max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
+                    className={`name-text text-[#ffffff]  text-[16px] leading-[25px]  sm:max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                   >
-                    <span className="font-normal text-[#ffffff]">
+                    <span className="font-bold text-[#ffffff]">
                       👋 Hello,
                     </span>{" "}
                     I’m Ankush, a Shopify developer and Conversion Rate

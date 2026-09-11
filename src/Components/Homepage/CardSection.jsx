@@ -435,7 +435,7 @@ function CardSection({
               )}
             </div>
 
-            {/* ✅ FIX: cursor circle ab transform: translate3d use karta hai (top/left nahi) */}
+            {/*  FIX: cursor circle ab transform: translate3d use karta hai (top/left nahi) */}
             {visible && (
               <img
                 src={circleImage}

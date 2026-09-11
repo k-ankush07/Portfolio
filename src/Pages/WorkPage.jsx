@@ -27,13 +27,29 @@ import vitoole2 from "../assets/Images/vitoole (2).svg";
 import vitoole3 from "../assets/Images/vitoole (3).svg";
 import happyouter from "../assets/Images/happyouter.svg";
 import sofaouter from "../assets/Images/sofaouter.svg";
+//first 
+import liquid from "../assets/Images/tryfumimages (1).svg"
+import html from "../assets/Images/tryfumimages (2).svg"
+import css from "../assets/Images/tryfumimages (3).svg"
+import jquery from "../assets/Images/tryfumimages (4).svg"
+import javascript from "../assets/Images/tryfumimages (5).svg"
+// 2nd 
 
+import restfull from "../assets/Images/syncform (10).svg"
+import adminapi from "../assets/Images/syncform (7).svg"
+import react from "../assets/Images/syncform (1).svg"
+import typescript from "../assets/Images/syncform (2).svg"
+import nodejs from "../assets/Images/syncform (3).svg"
+
+// 3rd
+import graphql from "../assets/Images/syncform (9).svg"
 function WorkPage() {
   const projects = [
     {
       id: 1,
       title: "TryFum",
       slug: "tryfum",
+      logo:[{liquid,html,css,jquery,javascript}],
       leftImg: first,
       centerImg: second,
       rightImg: third,
@@ -48,6 +64,7 @@ function WorkPage() {
     },
     {
       id: 2,
+      logo:[{liquid,html,css,jquery,javascript,restfull,adminapi,react,typescript,nodejs}],
       title: "RetroSpec",
       slug: "retrospec",
       leftImg: restro1,
@@ -61,6 +78,7 @@ function WorkPage() {
     },
     {
       id: 3,
+      logo:[{html,scscss,liquid,jquery,javascript,graphql}],
       title: "WoahBros",
       slug: "woahbros",
       leftImg: woa1,
@@ -237,6 +255,8 @@ function WorkPage() {
             niche2={p2?.niches}
             rotate={p1.rotate}
             rotate2={p2?.rotate}
+            logos={p1.logo ? Object.values(p1.logo[0]) : []}
+            logos2={p2?.logo ? Object.values(p2.logo[0]) : []}
           />
         ))}
       </div>

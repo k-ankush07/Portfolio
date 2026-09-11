@@ -82,7 +82,7 @@ function Nextproject() {
     <>
       <div className=" next-Project bg-[#000000]  rounded-[8px] xl:w-[60%] z-10 group">
         <div
-          className="innerNext group bg-[#000000] h-[100%]   relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pt-[53px] lg:pb-[50px]   rounded-[8px] border border-[#292929]   cursor-pointer"
+          className="innerNext group bg-[#000000] h-[100%]   relative flex flex-col justify-center items-center pt-[28px] pb-[39px] pl-[38px] pr-[39px] lg:pl-0 lg:pr-0 lg:pt-[53px] lg:pb-[50px]   rounded-[8px] border border-[#292929]   cursor-pointer"
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >
@@ -137,7 +137,7 @@ function Nextproject() {
             initial="hidden"
             animate={show ? "show" : "hidden"}
           >
-            <div className="xl:pl-[10px]  lg:pt-[26px]  relative">
+            <div className="lg:pt-[26px]  relative">
               <div>
                 {/* left bottom */}
                 <motion.img

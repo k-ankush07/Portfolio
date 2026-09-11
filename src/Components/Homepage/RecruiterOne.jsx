@@ -287,6 +287,7 @@ import ViewDetail from "./ViewDetail";
 
 import { motion } from "framer-motion";
 import CardSection from "./CardSection";
+import { Link } from "react-router-dom";
 
 function RecruiterOne({
   index,
@@ -296,6 +297,8 @@ function RecruiterOne({
   centerImg,
   rightImg,
   points = [],
+  techStack=[],
+  link = "/work",
 }) {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -346,7 +349,7 @@ function RecruiterOne({
       className="sticky py-0 sm:py-0 flex items-start top-22 bg-[#0a0a0a] lg:bg-none "
       style={{
         zIndex: 10 + index,
-        // ✅ FIX: offscreen sections ka rendering/paint skip karo jab tak visible na ho
+        //  FIX: offscreen sections ka rendering/paint skip karo jab tak visible na ho
         contentVisibility: "auto",
         containIntrinsicSize: "1000px",
       }}
@@ -363,7 +366,9 @@ function RecruiterOne({
               transition={{ duration: 0.8 }}
             >
               <div className=" lg:pb-[10px] ">
+                    <Link to={link} className="block">
                 <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
+                  
                   {/* Left */}
                   <motion.div
                     variants={itemVariants}
@@ -426,7 +431,7 @@ function RecruiterOne({
                           variants={itemVariants}
                           className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
                         >
-                          {/* ✅ FIX: filter/drop-shadow hata diya, sirf opacity animate ho rahi hai — 
+                          {/*  FIX: filter/drop-shadow hata diya, sirf opacity animate ho rahi hai — 
                               yeh GPU pe halka padta hai, especially jab 25+ stars simultaneously animate ho rahe hon */}
                           <motion.img
                             src={star}
@@ -451,27 +456,21 @@ function RecruiterOne({
                     </motion.div>
 
                     <motion.div
-                      className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px] lg:pt-[23px]"
+                      className="flex flex-wrap gap-[9px]    xl:gap-[11px] pt-[20px] lg:pt-[23px]"
                       variants={container}
                       initial="hidden"
                       whileInView="show"
                       viewport={{ once: true, amount: 0.7 }}
                     >
-                      {[
-                        Bun,
-                        Docker,
-                        Next,
-                        pnpm,
-                        PostgreSQL,
-                        Redis,
-                        Vercel,
-                        Bun,
-                      ].map((img, i) => (
-                        <motion.img key={i} variants={item} src={img} alt="logo" />
+                      {techStack.map((img, i) => (
+                        <motion.img key={i} variants={item} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
                       ))}
                     </motion.div>
                   </div>
+
+
                 </div>
+              </Link>
               </div>
             </motion.div>
           </div>

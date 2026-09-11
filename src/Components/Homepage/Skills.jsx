@@ -90,7 +90,7 @@ function Skills() {
         <div className='border border-[#292929] bg-[#000000] rounded-[8px] pt-[24px] h-[100%] lg:pt-[53px] pb-[33px] lg:pb-[73px]'>
           <div className='text-center'>
             <h1 className='text-[#FFFFFF] text-[18px] sm:text-[24px] leading-[29px] sm:leading-[36px] font-bold'>Skills / Tech Stack</h1>
-            <p className='text-[#BDBDBD] text-[12px] sm:text-[16px] leading-[20px] sm:leading-[24px]'>Tools and Technologies I Work With</p>
+            <p className='text-[#BDBDBD] text-[12px] sm:text-[16px] pt-[4px] leading-[20px] sm:leading-[24px]'>Tools and Technologies I Work With</p>
           </div>
 
           <div className="relative">
