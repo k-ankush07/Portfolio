@@ -14,7 +14,8 @@ import Vercel from "../../assets/Images/rsection (3).svg";
 // import Github from "../../assets/Images/abc.svg";
 import Roboto from "../../assets/Images/roboto.svg";
 import Github from "../../assets/Images/git.svg";
-
+ import hublogo from "../../assets/Images/hublogo.svg"
+ import ecomlogo from "../../assets/Images/ecomlogo.svg"
 function ExperienceTimeline() {
     const data = [
         {
@@ -54,7 +55,7 @@ function ExperienceTimeline() {
         },
         {
             date: "March 2022- April 2026",
-            logo: Github,
+            logo: ecomlogo,
             company: "EcombitHub",
             textpara:"USA",
             position:"Freelancer - Remote",
@@ -80,7 +81,7 @@ function ExperienceTimeline() {
         },
         {
             date: "May 2019- Feb 2022",
-            logo: Github,
+            logo: hublogo,
             company: "HubSyntax",
             // textpara:"USA",
             position:"Freelancer - Remote",

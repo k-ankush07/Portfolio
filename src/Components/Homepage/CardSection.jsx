@@ -155,13 +155,13 @@ function CardSection({
             </div>
 
             {/* main div for overlapping images */}
-            <div className="inner_main relative overflow-hidden  h-[170px] sm:h-[380px] lg:px-[70px]">
+            <div className=" relative overflow-hidden  h-[170px] sm:h-[400px] lg:h-[255px] xl:h-[380px] lg:px-[70px]">
               {isSingle ? (
                 // Single image mode
                 <img
                   src={frontimg}
                   alt="preview"
-                  className="absolute left-1/2 top-10 sm:top-16 lg:top-15  h-[200px] sm:h-auto lg:w-[467px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-500 ease-in-out"
+                  className="absolute left-1/2 top-10 sm:top-16 lg:top-15  h-[200px] sm:h-auto lg:w-[300px] xl:w-[400px] left-[50%] right-[50%] rounded-xl shadow-2xl transition-transform duration-500 ease-in-out"
                   style={{
                     transformOrigin: "bottom center",
                     transform: hovered
@@ -175,7 +175,7 @@ function CardSection({
                   <img
                     src={backimg}
                     alt="dashboard preview"
-                    className="absolute left-1/2 top-7 sm:top-14 lg:top-10 h-[200px] sm:h-auto lg:w-[85%] lg:w-[467px] left-[50%] right-[50%] transition-transform duration-300 ease-out"
+                    className="absolute left-1/2 top-7 sm:top-14 lg:top-10   h-[200px] sm:h-auto lg:w-[300px] xl:w-[400px] left-[50%] right-[50%] transition-transform duration-300 ease-out"
                     style={{
                       transform: hovered
                         ? `translateX(-50%) rotate(${resolvedBackHover}deg) scale(1.02)`
@@ -186,7 +186,7 @@ function CardSection({
                   <img
                     src={frontimg}
                     alt="merchant page preview"
-                    className="absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[467px] left-[47%] right-[53%] transition-all duration-500 ease-out"
+                    className="absolute left-1/2 top-10 sm:top-34 lg:top-15 h-[200px] sm:h-auto  lg:w-[300px] xl:w-[400px] left-[47%] right-[53%] transition-all duration-500 ease-out"
                     style={{
                       transform: hovered
                         ? `translateX(-50%) translateY(0) rotate(${resolvedFrontHover}deg) scale(1.02)`
