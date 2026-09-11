@@ -29,6 +29,8 @@ import SofaDirect from "./Components/WorkDetailPages/SofaDirect.jsx";
 
 
 
+
+
 function App() {
   const location = useLocation();
   const [displayLocation, setDisplayLocation] = useState(location);
