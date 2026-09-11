@@ -8,6 +8,27 @@ import first from "../../assets/Images/group1 (1).svg"
 import fresh from "../../assets/Images/fresh.svg"
 import image1001 from "../../assets/Images/RetroSpec.mp4"
 
+import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+import restfull from "../../assets/Images/syncform (10).svg"
+import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
+
+
 function RetroSpecPage() {
   const project = {
     id: 1,
@@ -20,6 +41,7 @@ function RetroSpecPage() {
     headingRetroSpec: "Retrospec — The Good Habit",
     descRetroSpec: "Retrospec is a DTC outdoor and active-lifestyle brand that sells products designed for everyday movement, recreation, fitness, and outdoor adventures. Its product range covers bikes and e-bikes, skateboards, scooters, paddle boards, snow gear, camping equipment, fitness products, and outdoor accessories, giving customers products for different activities throughout the year. The brand focuses on making outdoor products accessible, practical, and affordable while maintaining a strong emphasis on product design and everyday usability.",
     role: " Shopify App Developer",
+    logo:[{liquid,html,css,jquery,javascript,restfull,adminapi,react,typescript,nodejs}],
     visit: "https://retrospec.com/",
     ourRetroSpec: "Our Contribution",
     contrubutionimageRetroSpec: restroour,

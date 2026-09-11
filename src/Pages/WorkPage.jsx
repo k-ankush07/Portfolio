@@ -43,13 +43,23 @@ import nodejs from "../assets/Images/syncform (3).svg"
 
 // 3rd
 import graphql from "../assets/Images/syncform (9).svg"
+import scscss from "../assets/Images/syncform (6).svg"
+
+//4th
+import bootstrap from "../assets/Images/boot.svg"
+//5th
+import sass from "../assets/Images/sass.svg"
+//6th
+import webhook from "../assets/Images/syncform (11).svg"
+//10th
+import storeapi from "../assets/Images/syncform (8).svg"
 function WorkPage() {
   const projects = [
     {
       id: 1,
       title: "TryFum",
       slug: "tryfum",
-      logo:[{liquid,html,css,jquery,javascript}],
+      logo:[{liquid, html, css,javascript,jquery,}],
       leftImg: first,
       centerImg: second,
       rightImg: third,
@@ -90,6 +100,7 @@ function WorkPage() {
     {
       id: 4,
       title: "Doinkrollerz",
+      logo:[{html,css,jquery,liquid,scscss,javascript,bootstrap}],
       slug: "doinkrollerz",
       leftImg: dan2,
       centerImg: dan1,
@@ -103,6 +114,7 @@ function WorkPage() {
     {
       id: 5,
       title: "Apmzee",
+      logo:[{html,css,sass,scscss,jquery,javascript,graphql}],
       slug: "apmzee",
       leftImg: apm1,
       centerImg: apm2,
@@ -118,6 +130,7 @@ function WorkPage() {
     {
       id: 6,
       title: "Lonepouches",
+      logo:[{html,css,scscss,jquery,javascript,webhook}],
       slug: "lonepouches",
       leftImg: lone2,
       centerImg: lone1,
@@ -127,6 +140,7 @@ function WorkPage() {
     {
       id: 7,
       title: "Hoperoza",
+      logo:[{html,css,jquery,liquid,scscss,javascript}],
       slug: "hoperoza",
       leftImg: hora1,
       centerImg: hora2,
@@ -141,6 +155,7 @@ function WorkPage() {
     {
       id: 8,
       title: "Vittelo",
+      logo:[{html,css,jquery,scscss,javascript}],
       slug: "vittelo",
       leftImg: vitoole1,
       centerImg: vitoole2,
@@ -156,6 +171,7 @@ function WorkPage() {
     {
       id: 9,
       title: "Happy Stuf",
+      logo:[{html,css,jquery,scscss,javascript,sass}],
       slug: "happystuf",
       leftImg: happyouter,
       rotate: 4,
@@ -169,6 +185,7 @@ function WorkPage() {
     {
       id: 10,
       title: "Sofa Direct",
+      logo:[{html,css,jquery,scscss,javascript,sass,liquid,adminapi,storeapi}],
       slug: "sofadirect",
       leftImg: sofaouter,
       rotate: -4,

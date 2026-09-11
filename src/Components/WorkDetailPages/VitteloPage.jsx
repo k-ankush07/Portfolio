@@ -9,6 +9,26 @@ import vitolejourney2 from "../../assets/Images/vitolejourney (2).svg"
 import vitolekey from "../../assets/Images/vitolekey.svg"
 import Vittelo from "../../assets/Images/Vittelo.mp4"
 
+
+ import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+import restfull from "../../assets/Images/syncform (10).svg"
+import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
 function VitteloPage() {
        const project = {
             id: 1,
@@ -22,6 +42,7 @@ function VitteloPage() {
             descVittelo: "Vittelo is a Canada-based belt brand focused on creating durable, comfortable belts that offer a better fit for everyday wear. The brand resolves common issues with traditional belts, such as cracking, stretching, and inconsistent fit, by creating belts that look great, feel comfortable, and adjust just right every time. Built for durability and easy everyday wear, Vittelo combines practical design with a modern style that fits the way people move.",
         
             role: "Shopify Developer and Designer",
+            logo:[{html,css,jquery,scscss,javascript}],
             visit: " https://www.vittelo.com/",
         
             ourVittelo: "My Contribution",

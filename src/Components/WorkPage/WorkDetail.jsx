@@ -93,24 +93,25 @@ import OutcomesSofaDirect from "../WorkDetailPages/SofaDirect/OutcomesSofaDirect
 import WhatILearnedSofaDirect from "../WorkDetailPages/SofaDirect/WhatILearnedSofaDirect";
 
 function WorkDetail({ project }) {
-  const logos = [ 
-    new2,
-    new3,
-    new1,
-    new5,
-    new4,
-    new6,
-    new1,
-    new2,
-    new3,
-    new4,
-    new5,
-    new6,
-  ];
+  // const logos = [ 
+  //   new2,
+  //   new3,
+  //   new1,
+  //   new5,
+  //   new4,
+  //   new6,
+  //   new1,
+  //   new2,
+  //   new3,
+  //   new4,
+  //   new5,
+  //   new6,
+  // ];
 
   if (!project) {
     return null;
   }
+  const logos = project.logo ? Object.values(project.logo[0]) : [];
 
   return (
     <section className="pt-[35px] lg:pt-[100px] lato-regular overflow-hidden px-[20px] md:px-0">
@@ -269,8 +270,8 @@ function WorkDetail({ project }) {
 
                   <div className="pt-[6px]">
                     {/* mobile */}
-                    <div className="flex flex-wrap gap-[6px] lg:gap-[11px] max-w-[400px] sm:hidden">
-                      {logos.slice(0, 8).map((img, i) => (
+                    <div className="flex flex-wrap gap-[6px] lg:gap-[11px] ">
+                      {logos.map((img, i) => (
                         <motion.img
                           key={i}
                           src={img}
@@ -286,13 +287,13 @@ function WorkDetail({ project }) {
                             rotate: 5,
                           }}
                           viewport={{ once: true }}
-                          className="cursor-pointer"
+                          className="cursor-pointer h-[20px] sm:h-[25px] w-auto"
                         />
                       ))}
                     </div>
 
                     {/* desktop */}
-                    <div className="hidden sm:max-w-[610px] sm:flex flex-wrap gap-[9px]">
+                    {/* <div className="hidden sm:max-w-[610px] sm:flex flex-wrap gap-[9px]">
                       {logos.slice(0, 13).map((img, i) => (
                         <motion.img
                           key={i}
@@ -312,7 +313,7 @@ function WorkDetail({ project }) {
                           className="cursor-pointer"
                         />
                       ))}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import shopify from "../../assets/Images/Vector (5).svg";
 import smallicon from "../../assets/Images/smallicon.svg";
@@ -13,7 +12,7 @@ import new6 from "../../assets/Images/new1 (6).svg";
 import ProjectTitle from "./ProjectTitle";
 import { Link } from "react-router-dom";
 
-const CARDSECTION_DOUBLE_IDS = [2, 4, 6, 9,10];
+const CARDSECTION_DOUBLE_IDS = [2, 4, 6, 9, 10];
 const CARDSECTION_SINGLE_IDS = [];
 
 function WebApp({
@@ -31,11 +30,14 @@ function WebApp({
   idB,
   tags,
   tags2,
-  niche, niche2,
-  rotate, rotate2,
-  slug,slug2,
- logos = [],
-  logos2 = [],  
+  niche,
+  niche2,
+  rotate,
+  rotate2,
+  slug,
+  slug2,
+  logos = [],
+  logos2 = [],
 }) {
   // const logos = [
   //   new2,
@@ -52,10 +54,17 @@ function WebApp({
   //   new6,
   // ];
 
-  const renderPreview = (id, l, c, r,n,rot) => {
+  const renderPreview = (id, l, c, r, n, rot) => {
     if (CARDSECTION_DOUBLE_IDS.includes(id)) {
       return (
-        <CardSection frontimg={l} backimg={c} frontRotate={8} backRotate={-6} niche={n} singleRotate={rot} />
+        <CardSection
+          frontimg={l}
+          backimg={c}
+          frontRotate={8}
+          backRotate={-6}
+          niche={n}
+          singleRotate={rot}
+        />
       );
     }
     if (CARDSECTION_SINGLE_IDS.includes(id)) {
@@ -86,20 +95,37 @@ function WebApp({
 
             <div className=" pt-[16px] lg:pt-0 lg:pr-[57px]  ">
               <Link to={`/work/${slug || title?.toLowerCase()}`}>
-                {renderPreview(idA, leftImg, centerImg, rightImg,niche , rotate)}
+                {renderPreview(
+                  idA,
+                  leftImg,
+                  centerImg,
+                  rightImg,
+                  niche,
+                  rotate,
+                )}
               </Link>
 
               <div className="pt-[20px] lg:pt-[24px]">
-                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]  ">
+                <div className="flex flex-wrap gap-[6px] sm:gap-[11px]">
                   {logos.slice(0, 8).map((img, i) => (
-                    <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
+                    <img
+                      key={i}
+                      src={img}
+                      alt="logo"
+                      className="h-[20px] sm:h-[25px] w-auto"
+                    />
                   ))}
                 </div>
-                <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
+                {/* <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">
                   {logos.map((img, i) => (
-                    <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
+                    <img
+                      key={i}
+                      src={img}
+                      alt="logo"
+                      className="h-[20px] sm:h-[25px] w-auto"
+                    />
                   ))}
-                </div>
+                </div> */}
                 {tags?.length > 0 && (
                   <div className="flex flex-wrap gap-[8px] pt-[12px]">
                     {tags.map((tag, i) => (
@@ -129,14 +155,26 @@ function WebApp({
                 <img src={smallicon} alt="icon" />
               </div>
               <div className=" pt-[16px]  lg:pt-0 lg:pl-[57px]">
-                <Link to={`/work/${slug2 ||title2?.toLowerCase()}`}>
-                  {renderPreview(idB, leftImg2, centerImg2, rightImg2,niche2 , rotate2)}
+                <Link to={`/work/${slug2 || title2?.toLowerCase()}`}>
+                  {renderPreview(
+                    idB,
+                    leftImg2,
+                    centerImg2,
+                    rightImg2,
+                    niche2,
+                    rotate2,
+                  )}
                 </Link>
 
                 <div className="pt-[20px] lg:pt-[24px]">
                   <div className="flex flex-wrap gap-[6px] sm:gap-[11px]">
                     {logos2.map((img, i) => (
-                      <img key={i} src={img} alt="logo" className="h-[20px] sm:h-[25px] w-auto" />
+                      <img
+                        key={i}
+                        src={img}
+                        alt="logo"
+                        className="h-[20px] sm:h-[25px] w-auto"
+                      />
                     ))}
                   </div>
                   {/* <div className="hidden sm:max-w-[610px] xl:flex flex-wrap gap-[11px]">

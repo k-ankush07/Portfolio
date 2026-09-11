@@ -13,6 +13,33 @@ import firstdouble from "../../assets/Images/firstdouble.svg";
 import secondsingle from "../../assets/Images/tryfum.mp4";
 import bothimage from "../../assets/Images/bothimage.svg";
 import outcomeimage from "../../assets/Images/outcomeimage.svg";
+
+//first 
+import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+// 2nd 
+
+import restfull from "../../assets/Images/syncform (10).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+
+// 3rd
+import graphql from "../../assets/Images/syncform (9).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+
+//4th
+import bootstrap from "../../assets/Images/boot.svg"
+//5th
+import sass from "../../assets/Images/sass.svg"
+//6th
+import webhook from "../../assets/Images/syncform (11).svg"
+//10th
+import storeapi from "../../assets/Images/syncform (8).svg"
 function TryFumPage() {
   const project = {
     id: 1,
@@ -23,6 +50,7 @@ function TryFumPage() {
     heading: "FÜM — The Good Habit",
     desc: "FÜM is a DTC eCommerce brand that provides nicotine-free products designed to help people replace smoking and vaping habits. The brand sells reusable flavored-air devices, flavor cores, and accessory products through its online store.",
     role: "Full Stack Shopify Developer",
+    logo:[{liquid, html, css,javascript,jquery,}],
     visit: " https://tryfum.com/",
     our: "Our Contribution",
     contrubutionimage: contribution,

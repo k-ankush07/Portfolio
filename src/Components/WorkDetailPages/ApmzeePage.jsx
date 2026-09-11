@@ -12,6 +12,26 @@ import new342 from "../../assets/Images/new34 (2).svg"
 import new3422 from "../../assets/Images/Apmzee 2.svg"
 import Apmzee from "../../assets/Images/Apmzee.mp4"
 
+
+ import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+import restfull from "../../assets/Images/syncform (10).svg"
+import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
 function ApmzeePage() {
   const project = {
     id: 1,
@@ -26,6 +46,7 @@ function ApmzeePage() {
     descApmzee: "APMZEE is a UK-based health and wellness ecommerce brand focused on active longevity, everyday performance, and long-term vitality. This is for primarily adults aged 30+, who want to maintain their energy, strength, mental sharpness, recovery, movement, and sleep as they get older. It is different from traditional supplements by presenting nutrition as part of a broader lifestyle and performance system.",
 
     role: "Shopify Developer",
+    logo:[{html,css,sass,scscss,jquery,javascript,graphql}],
     visit: " https://apmzee.com/",
 
     ourApmzee: "My Contribution",

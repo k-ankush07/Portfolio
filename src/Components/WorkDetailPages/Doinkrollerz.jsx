@@ -11,6 +11,26 @@ import image993 from "../../assets/Images/image 99 (3).svg"
 import gif from "../../assets/Images/doinkrollerz.mp4"
 import outcomenew1 from "../../assets/Images/dionoutcome.svg"
 
+
+ import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+import adminapi from "../../assets/Images/syncform (7).svg"
+import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+import restfull from "../../assets/Images/syncform (10).svg"
+import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
 function Doinkrollerz() {
   const project = {
     id: 1,
@@ -27,6 +47,7 @@ function Doinkrollerz() {
     descDoinkrollerz: "DoinkRollerz is an eCommerce brand that sells joint and blunt rolling tools along with smoking accessories. Its main product DoinkRoller making rolling faster, easier, and more consistent for beginners and experienced users. The store sells different roller sizes, multi-packs, rolling papers, grinders, pipes, ashtrays, and other accessories.",
 
     role: "Shopify Developer",
+    logo:[{html,css,jquery,liquid,scscss,javascript,bootstrap}],
     visit: "https://www.doinkrollerz.com/",
 
     ourDoinkrollerz: "My Contribution",
