@@ -188,7 +188,7 @@ function Nextproject() {
                 <img
                   src={skilss4}
                   alt="images"
-                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[40.5%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[100px] lg:w-[100px] lg:left-57 lg:top-[71px] xl:left-58 z-50 full_image"
+                  className="absolute scale-100 border-2 border-transparent rounded-full group-hover:scale-105 group-hover:border-[#D76D77] transition-all duration-300 h-[70px] w-[70px] left-[40.5%] max-xs:top-[14px] max-xs:h-[54px] max-xs:w-[54px] sm:left-[41%] top-[25px] sm:top-[45px] sm:h-[100px] sm:w-[100px] md:left-[41%] md:top-[45px] md:h-[100px] md:w-[100px] lg:h-[100px] lg:w-[100px] lg:left-57 lg:top-[71px] xl:left-57 z-50 full_image"
                 />
               </div>
               <img src={clippath} alt="curve line" className=" " />
