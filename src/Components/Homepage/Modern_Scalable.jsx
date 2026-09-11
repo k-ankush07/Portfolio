@@ -9,6 +9,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import WorldGlobenew from "./WorldGlobenew";
 
 function Modern_Scalable() {
+  const EMAIL = import.meta.env.VITE_EMAIL;
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -76,9 +77,7 @@ function Modern_Scalable() {
                     className={`name-text text-[#ffffff]  text-[16px] leading-[25px]  sm:max-w-[800px] sm:text-[18px] font-normal transition-all duration-700 ease-out
   ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                   >
-                    <span className="font-bold text-[#ffffff]">
-                      👋 Hello,
-                    </span>{" "}
+                    <span className="font-bold text-[#ffffff]">👋 Hello,</span>{" "}
                     I’m Ankush, a Shopify developer and Conversion Rate
                     Optimization specialist with 8 years of experience building
                     high-performing ecommerce stores.
@@ -98,11 +97,19 @@ function Modern_Scalable() {
                 </button>
 
                 {/* Icon Button */}
-                <div className="flex justify-center items-center group ">
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="flex justify-center items-center group"
+                >
+                  <div className="btn-slide border border-white px-2 group-hover:border-transparent cursor-pointer py-2 sm:py-3 sm:px-3 bg-white/20 rounded-full">
+                    <img src={messageIcon} alt="message" className="" />
+                  </div>
+                </a>
+                {/* <div className="flex justify-center items-center group ">
                   <div className=" btn-slide  border border-white px-2 group-hover:border-transparent cursor-pointer py-2 sm:py-3 sm:px-3 bg-white/20 rounded-full">
                     <img src={messageIcon} alt="message" className=" " />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
