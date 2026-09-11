@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/Images/Vector (3).svg";
 import logo2 from "../../assets/Images/Vector (4).svg";
 import { NavLink } from "react-router-dom";
-
+import { FaArrowRightLong, FaLinkedin, FaGithub } from "react-icons/fa6"; 
 import { FaHome, FaRegUserCircle, FaProjectDiagram, FaAddressBook } from "react-icons/fa";
 import { FaBlogger } from "react-icons/fa6";
 import { IoLogoBitbucket } from "react-icons/io";
@@ -14,7 +14,8 @@ import { MdOutlineAttribution } from "react-icons/md";
 export default function MobileNavbar() {
   const [open, setOpen] = useState(false);
   const [showGreeting, setShowGreeting] = useState(true);
-
+const github = import.meta.env.VITE_GITHUB;
+    const linkedin = import.meta.env.VITE_LINKEDIN;
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowGreeting(false);
@@ -26,24 +27,24 @@ export default function MobileNavbar() {
     { name: "Home", path: "/", icon: <FaHome /> },
     { name: "About", path: "/about", icon: <FaRegUserCircle /> },
     { name: "Work", path: "/work", icon: <FaProjectDiagram /> },
-    { name: "Blog", path: "/blog", icon: <FaBlogger /> },
-    { name: "Guestbook", path: "/guestbook", icon: <FaAddressBook /> },
-    { name: "Bucket List", path: "/bucket-list", icon: <IoLogoBitbucket /> },
+    // { name: "Blog", path: "/blog", icon: <FaBlogger /> },
+    // { name: "Guestbook", path: "/guestbook", icon: <FaAddressBook /> },
+    // { name: "Bucket List", path: "/bucket-list", icon: <IoLogoBitbucket /> },
     { name: "Book a call", path: "/contact", icon: <BiSolidPhoneCall /> },
-    { name: "Uses", path: "/uses", icon: <PiHouseSimpleFill /> },
-    { name: "Attribution", path: "/attribution", icon: <MdOutlineAttribution /> },
-    { name: "Links", path: "/links", icon: <PiLinkSimpleBreakFill /> },
+    // { name: "Uses", path: "/uses", icon: <PiHouseSimpleFill /> },
+    // { name: "Attribution", path: "/attribution", icon: <MdOutlineAttribution /> },
+    // { name: "Links", path: "/links", icon: <PiLinkSimpleBreakFill /> },
   ];
 
   const connect = [
     { name: "GitHub", url: "https://github.com/k-ankush07" },
     { name: "LinkedIn", url: "" },
-    { name: "X (Twitter)", url: "" },
+    // { name: "X (Twitter)", url: "" },
   ];
 
   const legal = [
-    { name: "Privacy Policy", path: "/privacy-policy" },
-    { name: "Terms of Use", path: "/terms-condition" },
+    // { name: "Privacy Policy", path: "/privacy-policy" },
+    // { name: "Terms of Use", path: "/terms-condition" },
   ];
 
   const getGreeting = () => {
@@ -56,7 +57,7 @@ export default function MobileNavbar() {
   };
 
   return (
-    <div className="lato-regular ">
+    <div className="lato-regular z-[99999] ">
       {/* TOP BAR */}
       <motion.div
         initial={{ opacity: 0, y: -20, scale: 0.9 }}
@@ -152,23 +153,16 @@ export default function MobileNavbar() {
               {/* Connect */}
               <h3 className="text-white/40 text-sm mb-2">Connect</h3>
               <div className="flex gap-3 mb-4">
-                {connect.map((item) => (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={item.name}
-                    onClick={() => setOpen(false)}
-                  >
-                    <div className="px-4 py-1 bg-white/5 rounded-xl text-[11px] hover:bg-white/10">
-                      {item.name}
-                    </div>
-                  </a>
-                ))}
+                <a href={linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-[20px] cursor-pointer transition-all duration-300 hover:scale-110 hover:text-[#FFAF7B]" />
+        </a>
+        <a href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-[20px] cursor-pointer transition-all duration-300 hover:scale-110 hover:text-[#FFAF7B]" />
+        </a>
               </div>
 
               {/* Legal */}
-              <h3 className="text-white/40 text-sm mb-2">Legal</h3>
+              {/* <h3 className="text-white/40 text-sm mb-2">Legal</h3>
               <div className="flex gap-3">
                 {legal.map((item) => (
                   <NavLink
@@ -190,7 +184,7 @@ export default function MobileNavbar() {
                     )}
                   </NavLink>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </>
         )}

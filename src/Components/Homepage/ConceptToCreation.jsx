@@ -30,7 +30,7 @@ function ConceptToCreation() {
 
                     {/* Heading */}
                     <motion.div
-                        className='concent-text text-[30px] z-50 sm:text-[35px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] sm:w-[350px] lg:w-full'
+                        className='concent-text text-[30px] z-20 sm:text-[35px] lg:text-[44px] font-bold text-[#FFFFFF] pt-[13px] sm:pt-7 lg:pt-[17px] w-[321px] sm:w-[350px] lg:w-full'
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
