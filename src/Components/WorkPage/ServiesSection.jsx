@@ -130,7 +130,7 @@ export const ServicesArray = [
 ]
 
 export const ArtArray = [
-  { id: 1, topic: "Apparel " },
+  { id: 1, topic: "Apparel" },
   { id: 2, topic: "Fashion & Accessories" },
   { id: 3, topic: "Health & Wellness" },
   { id: 4, topic: "Lifestyle" },
