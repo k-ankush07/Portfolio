@@ -92,7 +92,8 @@ function FullStack() {
 
   const emailLink = `mailto:${EMAIL}`;
   const calendlyLink = CALENDLY;
-  const whatsappLink = `https://wa.me/${WHATSAPP.replace(/[^0-9]/g, "")}`;
+  // const whatsappLink = `https://wa.me/${WHATSAPP.replace(/[^0-9]/g, "")}`;
+  const whatsappLink = `csjdkcj`;
   const skills = [
     "Web Development",
     "CRO",
