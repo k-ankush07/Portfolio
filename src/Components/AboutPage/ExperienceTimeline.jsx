@@ -16,6 +16,41 @@ import Roboto from "../../assets/Images/roboto.svg";
 import Github from "../../assets/Images/git.svg";
  import hublogo from "../../assets/Images/hublogo.svg"
  import ecomlogo from "../../assets/Images/ecomlogo.svg"
+
+
+
+ import liquid from "../../assets/Images/tryfumimages (1).svg"
+import html from "../../assets/Images/tryfumimages (2).svg"
+import css from "../../assets/Images/tryfumimages (3).svg"
+import jquery from "../../assets/Images/tryfumimages (4).svg"
+import sass from "../../assets/Images/sass.svg"
+import javascript from "../../assets/Images/tryfumimages (5).svg"
+import react from "../../assets/Images/syncform (1).svg"
+import typescript from "../../assets/Images/syncform (2).svg"
+import nodejs from "../../assets/Images/syncform (3).svg"
+import tailwind from "../../assets/Images/syncform (4).svg"
+import express from "../../assets/Images/syncform (5).svg"
+import scscss from "../../assets/Images/syncform (6).svg"
+// import adminapi from "../../assets/Images/syncform (7).svg"
+// import storeapi from "../../assets/Images/syncform (8).svg"
+import graphql from "../../assets/Images/syncform (9).svg"
+// import restfull from "../../assets/Images/syncform (10).svg"
+// import webhook from "../../assets/Images/syncform (11).svg"
+import mongodb from "../../assets/Images/syncform (12).svg"
+// import cicd from "../../assets/Images/syncform (13).svg"
+import git from "../../assets/Images/cart.svg"
+import laravel from "../../assets/Images/aboutpage (1).svg"
+import mysql from "../../assets/Images/aboutpage (5).svg"
+import postsql from "../../assets/Images/aboutpage (6).svg"
+import docker from "../../assets/Images/aboutpage (7).svg"
+import rube from "../../assets/Images/aboutpage (8).svg"
+import next from "../../assets/Images/about.svg"
+import vanilla from "../../assets/Images/aboutlogo (1).svg"
+import vue from "../../assets/Images/aboutlogo (2).svg"
+import angular from "../../assets/Images/aboutlogo (3).svg"
+import php from "../../assets/Images/aboutlogo (4).svg"
+import figma from "../../assets/Images/aboutlogo (5).svg"
+import bootstrap from "../../assets/Images/boot.svg"
 function ExperienceTimeline() {
     const data = [
         {
@@ -23,6 +58,7 @@ function ExperienceTimeline() {
             logo: Roboto,
             company: "BlueStout",
             textpara:"USA",
+             logos: [typescript,react,nodejs,express,next,vanilla,vue,angular,graphql,jquery,git,tailwind,bootstrap,mongodb,figma,php,laravel,rube],
             position:"Freelancer- Remote",
             role1: "Shopify Developer & ",
             role2: "CRO Specialist",
@@ -57,6 +93,7 @@ function ExperienceTimeline() {
             date: "March 2022- April 2026",
             logo: ecomlogo,
             company: "EcombitHub",
+            logos: [html, css, sass, jquery, javascript, react,nodejs, scscss,tailwind,typescript, git,laravel,mysql,postsql,docker,rube,next,git,mongodb],
             textpara:"USA",
             position:"Freelancer - Remote",
             role1: "Shopify &",
@@ -83,6 +120,7 @@ function ExperienceTimeline() {
             date: "May 2019- Feb 2022",
             logo: hublogo,
             company: "HubSyntax",
+            logos: [html, css, sass, jquery, javascript, react, typescript, git],
             // textpara:"USA",
             position:"Freelancer - Remote",
             role1: "Shopify",
@@ -270,16 +308,17 @@ const smoothMobileLineHeight = useSpring(mobileLineHeight, {
 
                                     {/* Icons */}
                                     <motion.div
-                                        className="flex flex-wrap gap-[9px]  pt-[17px] lg:pt-[33px] sm:w-[320px] lg:w-[384px]"
+                                        className="flex flex-wrap gap-[9px]  pt-[17px] lg:pt-[33px] "
                                         variants={container}
                                     >
-                                        {[Docker, Bun, Next, pnpm, PostgreSQL, Redis, Vercel].map((img, i) => (
+                                        {exp.logos.map((img, i) => (
                                             <motion.img
                                                 key={i}
                                                 variants={item}
                                                 whileHover={{ scale: 1.15 }}
                                                 src={img}
                                                 alt="logo"
+                                                className="h-[20px] sm:h-[25px] w-auto"
                                             />
                                         ))}
                                     </motion.div>
