@@ -98,7 +98,7 @@ function Modern_Scalable() {
 
                 {/* Icon Button */}
                 <a
-                  href={`mailto:${EMAIL}`}
+                  href={`mailto:${EMAIL}`} target="_blank"
                   className="flex justify-center items-center group"
                 >
                   <div className="btn-slide border border-white px-2 group-hover:border-transparent cursor-pointer py-2 sm:py-3 sm:px-3 bg-white/20 rounded-full">
