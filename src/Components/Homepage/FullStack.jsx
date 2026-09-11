@@ -137,7 +137,7 @@ const whatsappLink = WHATSAPP
           />
           {/* first card section */}
           <div className="md:flex  xl:pr-[67px]  xl:w-[30%]  ">
-            <div className="border pt-[30px] lg:pt-[40px] pb-[30px] z-50 lg:pb-[40px]  2xl:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] ">
+            <div className="border pt-[30px] lg:pt-[40px] pb-[30px] z-20 lg:pb-[40px]  2xl:px-[75px] border-[#8F74BF54] w-full rounded-[8px] bg-[#8F74BF1A] ">
               <div className=" flex justify-center ">
                 <img src={cardCircle} alt="card circle" />
               </div>
@@ -234,7 +234,7 @@ const whatsappLink = WHATSAPP
             </div>
           </div>
 
-          <div className="md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%] z-50   ">
+          <div className="md:flex sm:pt-[10px] xl:pt-[0px]  xl:w-[70%] z-20   ">
             {/* second section */}
             <div className=" sm:flex  justify-between md:border-r-[1px] w-[287px] lg:w-auto  border-[#FFFFFF]/10 xl:pr-[67px] pt-[32px] xl:pt-0 ">
               <div className="w-[100%]">
