@@ -88,12 +88,15 @@ function FullStack() {
 
   const EMAIL = import.meta.env.VITE_EMAIL;
   const CALENDLY = import.meta.env.VITE_CALENDLY;
-  const WHATSAPP = import.meta.env.VITE_WHATSAPP;
+  // const WHATSAPP = import.meta.env.VITE_WHATSAPP;
 
   const emailLink = `mailto:${EMAIL}`;
   const calendlyLink = CALENDLY;
   // const whatsappLink = `https://wa.me/${WHATSAPP.replace(/[^0-9]/g, "")}`;
-  const whatsappLink = `csjdkcj`;
+  const WHATSAPP = import.meta.env.VITE_WHATSAPP || "";
+const whatsappLink = WHATSAPP
+  ? `https://wa.me/${WHATSAPP.replace(/[^0-9]/g, "")}`
+  : "#";
   const skills = [
     "Web Development",
     "CRO",
