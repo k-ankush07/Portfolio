@@ -1,4 +1,279 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
+// import shopify from "../../assets/Images/Vector (5).svg";
+// import star from "../../assets/Images/star.svg";
+// import Bun from "../../assets/Images/rsection (1).svg";
+// import Docker from "../../assets/Images/rsection (2).svg";
+// import Next from "../../assets/Images/rsection (3).svg";
+// import pnpm from "../../assets/Images/rsection (4).svg";
+// import PostgreSQL from "../../assets/Images/rsection (1).svg";
+// import Redis from "../../assets/Images/rsection (2).svg";
+// import Vercel from "../../assets/Images/rsection (3).svg";
+// import ViewDetail from "./ViewDetail";
+
+// import { motion } from "framer-motion";
+// import CardSection from "./CardSection";
+
+// function RecruiterOne({
+//   index,
+//   headingText,
+//   desc,
+//   leftImg,
+//   centerImg,
+//   rightImg,
+//   points = [],
+// }) {
+//   const containerVariants = {
+//     hidden: { opacity: 0 },
+//     show: {
+//       opacity: 1,
+//       transition: {
+//         staggerChildren: 0.08,
+//         delayChildren: 0.2,
+//       },
+//     },
+//   };
+//   const container = {
+//     hidden: { opacity: 1 },
+//     show: {
+//       opacity: 1,
+//       transition: {
+//         staggerChildren: 0.15,
+//       },
+//     },
+//   };
+//   const item = {
+//     hidden: { opacity: 0, y: 20, scale: 0.8 },
+//     show: {
+//       opacity: 1,
+//       y: 0,
+//       scale: 1,
+//       transition: {
+//         duration: 0.5,
+//         ease: "easeOut",
+//       },
+//     },
+//   };
+
+//   // const itemVariants = {
+//   //   hidden: { opacity: 0, y: 20, scale: 0.95 },
+//   //   show: {
+//   //     opacity: 1,
+//   //     y: 0,
+//   //     scale: 1,
+//   //     transition: {
+//   //       duration: 0.5,
+//   //       ease: "easeOut",
+//   //     },
+//   //   },
+//   // };
+//   const itemVariants = {
+//   hidden: { opacity: 0, y: 20 },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeOut",
+//     },
+//   },
+// };
+
+//   return (
+//     <section
+//       className="sticky py-0 sm:py-0 flex items-start top-22 bg-[#0a0a0a] lg:bg-none "
+//       style={{
+//         zIndex: 10 + index,
+//       }}
+//     >
+//       <div className="container">
+//         <div className="w-full h-full flex items-start justify-center">
+//           <div className="  px-2 sm:px-0 w-full flex-1 flex flex-col justify-center">
+//             <motion.div
+//               className="w-full lg:px-0"
+//               variants={containerVariants}
+//               initial="hidden"
+//               whileInView="show"
+//               viewport={{ once: true, amount: 0.2 }}
+//               transition={{ duration: 0.8 }}
+//             >
+//               <div className=" lg:pb-[10px] ">
+//                 <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
+//                   {/* Left */}
+//                   {/* Left */}
+//                   <motion.div
+//                     variants={itemVariants}
+//                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
+//                   >
+//                     {index === 2 ? (
+//                       <CardSection
+//                         frontimg={leftImg}
+//                         backimg={centerImg}
+//                         frontRotate={13}
+//                         backRotate={-8}
+//                       />
+//                     ) : (
+//                       <ViewDetail
+//                         leftImg={leftImg}
+//                         centerImg={centerImg}
+//                         rightImg={rightImg}
+//                       />
+//                     )}
+//                   </motion.div>
+//                   {/* <motion.div
+//                     variants={itemVariants}
+//                     className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
+//                   >
+//                     <CardSection />
+//                     <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg}   />
+//                   </motion.div> */}
+
+//                   {/* Right */}
+//                   <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-[40%] ">
+//                     <motion.div
+//                       variants={itemVariants}
+//                       className="flex items-center gap-2 sm:gap-3 text-white   lg:mb-[5px] flex-wrap"
+//                     >
+//                       <img
+//                         src={shopify}
+//                         alt="shopify logo"
+//                         className="h-[28px] w-[24px] sm:h-[42px] sm:w-[37px] flex-shrink-0"
+//                       />
+//                       <motion.h1
+//                         variants={itemVariants}
+//                         className="text-[20px] sm:text-[35px] lg:text-[40px] font-bold leading-tight text-left lg:text-left"
+//                       >
+//                         {headingText}
+//                         {/* <motion.span
+//                           className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
+//                         >
+//                           One
+//                         </motion.span> */}
+//                       </motion.h1>
+//                     </motion.div>
+
+//                     <motion.div
+//                       variants={itemVariants}
+//                       className=" mb-2 w-full hidden lg:block"
+//                     >
+//                       <motion.p
+//                         variants={itemVariants}
+//                         className="text-[#BDBDBD] leading-[24px] text-[14px] "
+//                       >
+//                         {desc}
+//                       </motion.p>
+//                     </motion.div>
+
+//                     {/* <motion.div
+//                       variants={itemVariants}
+//                       className="mb-8 lg:mb-2 space-y-[7px] w-full hidden lg:block"
+//                     >
+//                       {[1, 2, 3].map((_, i) => (
+//                         <motion.div
+//                           key={i}
+//                           variants={itemVariants}
+//                           className="flex items-center gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
+//                         >
+//                           <motion.img
+//                             src={star}
+//                             alt="star"
+//                             className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+//                             animate={{
+//                               opacity: [0.7, 1, 0.7],
+//                               filter: [
+//                                 'brightness(1)',
+//                                 'brightness(2) drop-shadow(0 0 6px #FFAF7B)',
+//                                 'brightness(1)'
+//                               ],
+//                             }}
+//                             transition={{
+//                               duration: 2,
+//                               repeat: Infinity,
+//                               repeatType: 'loop',
+//                               delay: i * 0.4,
+//                               ease: 'easeInOut',
+//                             }}
+//                           />
+//                           <span className="text-[#BDBDBD] text-[14px] leading-[24px] ">
+//                             {points}
+//                           </span>
+//                         </motion.div>
+//                       ))}
+//                     </motion.div> */}
+//                     <motion.div
+//                       variants={itemVariants}
+//                       className="mb-8 lg:mb-2 flex flex-col justify-between gap-[10px] w-full hidden lg:block "
+//                     >
+//                       {points.map((point, i) => (
+//                         <motion.div
+//                           key={i}
+//                           variants={itemVariants}
+//                           className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
+//                         >
+//                           <motion.img
+//                             src={star}
+//                             alt="star"
+//                             className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-[3px]"
+//                             animate={{
+//                               opacity: [0.7, 1, 0.7],
+//                               filter: [
+//                                 "brightness(1)",
+//                                 "brightness(2) drop-shadow(0 0 6px #FFAF7B)",
+//                                 "brightness(1)",
+//                               ],
+//                             }}
+//                             transition={{
+//                               duration: 2,
+//                               repeat: Infinity,
+//                               repeatType: "loop",
+//                               delay: i * 0.4,
+//                               ease: "easeInOut",
+//                             }}
+//                           />
+//                           <span className="text-[#BDBDBD] text-[14px] leading-[24px]">
+//                             {point}
+//                           </span>
+//                         </motion.div>
+//                       ))}
+//                     </motion.div>
+
+//                     <motion.div
+//                       className="flex flex-wrap gap-[9px] sm:w-[400px] lg:w-[384px] pt-[20px] lg:pt-[23px]"
+//                       variants={container}
+//                       initial="hidden"
+//                       whileInView="show"
+//                       viewport={{ once: true, amount: 0.7 }}
+//                     >
+//                       {[
+//                         Bun,
+//                         Docker,
+//                         Next,
+//                         pnpm,
+//                         PostgreSQL,
+//                         Redis,
+//                         Vercel,
+//                         Bun,
+//                       ].map((img, i) => (
+//                         <motion.img
+//                           key={i}
+//                           variants={item}
+//                           src={img}
+//                           alt="logo"
+//                         />
+//                       ))}
+//                     </motion.div>
+//                   </div>
+//                 </div>
+//               </div>
+//             </motion.div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+// export default RecruiterOne;
+
+import React from "react";
 import shopify from "../../assets/Images/Vector (5).svg";
 import star from "../../assets/Images/star.svg";
 import Bun from "../../assets/Images/rsection (1).svg";
@@ -54,35 +329,26 @@ function RecruiterOne({
     },
   };
 
-  // const itemVariants = {
-  //   hidden: { opacity: 0, y: 20, scale: 0.95 },
-  //   show: {
-  //     opacity: 1,
-  //     y: 0,
-  //     scale: 1,
-  //     transition: {
-  //       duration: 0.5,
-  //       ease: "easeOut",
-  //     },
-  //   },
-  // };
   const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
     },
-  },
-};
+  };
 
   return (
     <section
       className="sticky py-0 sm:py-0 flex items-start top-22 bg-[#0a0a0a] lg:bg-none "
       style={{
         zIndex: 10 + index,
+        // ✅ FIX: offscreen sections ka rendering/paint skip karo jab tak visible na ho
+        contentVisibility: "auto",
+        containIntrinsicSize: "1000px",
       }}
     >
       <div className="container">
@@ -98,7 +364,6 @@ function RecruiterOne({
             >
               <div className=" lg:pb-[10px] ">
                 <div className="image_background flex flex-col lg:flex-row  pt-[20px] pb-[13px]  lg:gap-[55px] lg:pl-[40px]  lg:pb-[40px]  lg:pt-[40px] lg:pr-[53px]">
-                  {/* Left */}
                   {/* Left */}
                   <motion.div
                     variants={itemVariants}
@@ -119,13 +384,6 @@ function RecruiterOne({
                       />
                     )}
                   </motion.div>
-                  {/* <motion.div
-                    variants={itemVariants}
-                    className="w-full lg:w-[60%] rounded-xl flex relative mx-auto lg:mx-0"
-                  >
-                    <CardSection />
-                    <ViewDetail leftImg={leftImg} centerImg={centerImg} rightImg={rightImg}   />
-                  </motion.div> */}
 
                   {/* Right */}
                   <div className="flex flex-col justify-center pt-[23px] lg:pt-0 w-full lg:w-[40%] ">
@@ -143,11 +401,6 @@ function RecruiterOne({
                         className="text-[20px] sm:text-[35px] lg:text-[40px] font-bold leading-tight text-left lg:text-left"
                       >
                         {headingText}
-                        {/* <motion.span
-                          className="bg-gradient-to-r from-[#D76D77] to-[#FFAF7B] bg-clip-text text-transparent inline-block "
-                        >
-                          One
-                        </motion.span> */}
                       </motion.h1>
                     </motion.div>
 
@@ -163,42 +416,6 @@ function RecruiterOne({
                       </motion.p>
                     </motion.div>
 
-                    {/* <motion.div
-                      variants={itemVariants}
-                      className="mb-8 lg:mb-2 space-y-[7px] w-full hidden lg:block"
-                    >
-                      {[1, 2, 3].map((_, i) => (
-                        <motion.div
-                          key={i}
-                          variants={itemVariants}
-                          className="flex items-center gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
-                        >
-                          <motion.img
-                            src={star}
-                            alt="star"
-                            className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                            animate={{
-                              opacity: [0.7, 1, 0.7],
-                              filter: [
-                                'brightness(1)',
-                                'brightness(2) drop-shadow(0 0 6px #FFAF7B)',
-                                'brightness(1)'
-                              ],
-                            }}
-                            transition={{
-                              duration: 2,
-                              repeat: Infinity,
-                              repeatType: 'loop',
-                              delay: i * 0.4,
-                              ease: 'easeInOut',
-                            }}
-                          />
-                          <span className="text-[#BDBDBD] text-[14px] leading-[24px] ">
-                            {points}
-                          </span>
-                        </motion.div>
-                      ))}
-                    </motion.div> */}
                     <motion.div
                       variants={itemVariants}
                       className="mb-8 lg:mb-2 flex flex-col justify-between gap-[10px] w-full hidden lg:block "
@@ -209,17 +426,14 @@ function RecruiterOne({
                           variants={itemVariants}
                           className="flex items-start gap-3 text-[#BDBDBD] leading-[24px] text-[13px] sm:text-[14px]"
                         >
+                          {/* ✅ FIX: filter/drop-shadow hata diya, sirf opacity animate ho rahi hai — 
+                              yeh GPU pe halka padta hai, especially jab 25+ stars simultaneously animate ho rahe hon */}
                           <motion.img
                             src={star}
                             alt="star"
                             className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-[3px]"
                             animate={{
                               opacity: [0.7, 1, 0.7],
-                              filter: [
-                                "brightness(1)",
-                                "brightness(2) drop-shadow(0 0 6px #FFAF7B)",
-                                "brightness(1)",
-                              ],
                             }}
                             transition={{
                               duration: 2,
@@ -253,12 +467,7 @@ function RecruiterOne({
                         Vercel,
                         Bun,
                       ].map((img, i) => (
-                        <motion.img
-                          key={i}
-                          variants={item}
-                          src={img}
-                          alt="logo"
-                        />
+                        <motion.img key={i} variants={item} src={img} alt="logo" />
                       ))}
                     </motion.div>
                   </div>
